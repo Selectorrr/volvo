@@ -28,6 +28,7 @@ angular.module('volvoApp')
      */
     .constant('LANGUAGES', [
         'en', 'fr'
+        , 'ru'
         //JHipster will add new languages here
     ]
 );
