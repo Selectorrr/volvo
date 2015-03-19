@@ -1,0 +1,19 @@
+{
+  "generator-jhipster": {
+    "baseName": "volvo",
+    "packageName": "com.volvo.metis",
+    "packageFolder": "com/volvo/metis",
+    "authenticationType": "xauth",
+    "hibernateCache": "no",
+    "clusteredHttpSession": "no",
+    "websocket": "no",
+    "databaseType": "mongodb",
+    "devDatabaseType": "mongodb",
+    "prodDatabaseType": "mongodb",
+    "useCompass": true,
+    "buildTool": "maven",
+    "frontendBuilder": "grunt",
+    "javaVersion": "8",
+    "rememberMeKey": "b16e61c00fc60ac1d6b0817cd24f1de523d18c33"
+  }
+}
