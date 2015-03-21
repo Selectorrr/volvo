@@ -338,7 +338,7 @@ public class TabNewCars implements Serializable {
     private RowContent statisticsUnpaidCarsQuantityInStock;
 
     /**
-     * Статистика --> Кол-во Демо а/м в шоу руме
+     * Статистика --> Кол-во а/м выставленных в шоу-руме
      */
     private RowContent statisticsCarsQuantityInShowroom;
 
@@ -353,9 +353,13 @@ public class TabNewCars implements Serializable {
     private RowContent statisticsSoldExtendedGuaranteeQuantity;
 
     /**
-     * Статистика --> Площадь шоурума
+     * Статистика --> Площадь шоурума (м2)
      */
     private RowContent statisticsShowroomArea;
+
+    /**
+     * ----------------------------------------------
+     */
 
     public RowContent getNewVolvoRetailC30() {
         return newVolvoRetailC30;

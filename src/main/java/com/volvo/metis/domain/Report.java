@@ -24,5 +24,49 @@ public class Report extends AbstractAuditingEntity implements Serializable {
      */
     private TabNewCars tabNewCars;
 
+    /**
+     * Вкладка "Подержанные автомобили"
+     */
+    private TabSecondHandCars tabSecondHandCars;
+
+    /**
+     * Вкладка "Слес. цех"
+     */
+    private TabFlittingShop tabFlittingShop;
+
+    /**
+     * Вкладка "Кузовной цех"
+     */
+    private TabBodyShop tabBodyShop;
+
+    /**
+     * Вкладка "Запчасти"
+     */
+    private TabSpares tabSpares;
+
+    /**
+     * Вкладка "Другие отделы"
+     */
+    private TabOtherDepartments tabOtherDepartments;
+
+    /**
+     * Вкладка "Непрямые расходы"
+     */
+    private TabIndirectCharges tabIndirectCharges;
+
+    /**
+     * Вкладка "Баланс"
+     */
+    private TabBalance tabBalance;
+
+    /**
+     * Вкладка "Итоговые данные"
+     */
+    private TabTotalData tabTotalData;
+
+    /**
+     * Вкладка "Численность персонала"
+     */
+    private TabStaffQuantity tabStaffQuantity;
 
 }
