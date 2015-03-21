@@ -97,9 +97,9 @@ angular.module('volvoApp', ['LocalStorageModule', 'tmh.dynamicLocale',
             urlTemplate: 'i18n/{lang}/{part}.json'
         });
 
-        $translateProvider.preferredLanguage('en');
-        $translateProvider.useCookieStorage();
+        $translateProvider.preferredLanguage('ru');
+        //$translateProvider.useCookieStorage();
 
         tmhDynamicLocaleProvider.localeLocationPattern('bower_components/angular-i18n/angular-locale_{{locale}}.js');
-        tmhDynamicLocaleProvider.useCookieStorage('NG_TRANSLATE_LANG_KEY');
+        //tmhDynamicLocaleProvider.useCookieStorage('NG_TRANSLATE_LANG_KEY');
     });
