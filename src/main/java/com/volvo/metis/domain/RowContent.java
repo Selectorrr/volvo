@@ -1,42 +1,21 @@
 package com.volvo.metis.domain;
 
-import org.springframework.data.annotation.Id;
-import org.springframework.data.mongodb.core.mapping.Document;
-import org.springframework.data.mongodb.core.mapping.Field;
-
 import java.io.Serializable;
 
 /**
  * Данные в строке
  */
-@Document(collection = "T_ROW_CONTENT")
-public class RowContent extends AbstractAuditingEntity implements Serializable {
+public class RowContent implements Serializable {
 
-    @Id
-    private String id;
-
-    @Field("first")
     private Double first;
 
-    @Field("second")
     private Double second;
 
-    @Field("third")
     private Double third;
 
-    @Field("fourth")
     private Double fourth;
 
-    @Field("fifth")
     private Double fifth;
-
-    public String getId() {
-        return id;
-    }
-
-    public void setId(String id) {
-        this.id = id;
-    }
 
     public Double getFirst() {
         return first;
