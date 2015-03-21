@@ -2,7 +2,6 @@ package com.volvo.metis.web.rest;
 
 import com.codahale.metrics.annotation.Timed;
 import com.volvo.metis.domain.Authority;
-import com.volvo.metis.domain.User;
 import com.volvo.metis.repository.UserRepository;
 import com.volvo.metis.security.SecurityUtils;
 import com.volvo.metis.service.MailService;
@@ -14,7 +13,10 @@ import org.slf4j.LoggerFactory;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RestController;
 
 import javax.inject.Inject;
 import javax.servlet.http.HttpServletRequest;
@@ -54,32 +56,12 @@ public class AccountResource {
             .orElseGet(() -> userRepository.findOneByEmail(userDTO.getEmail())
                     .map(user -> new ResponseEntity<>("e-mail address already in use", HttpStatus.BAD_REQUEST))
                     .orElseGet(() -> {
-                        User user = userService.createUserInformation(userDTO.getLogin(), userDTO.getPassword(),
+                        userService.createUserInformation(userDTO.getLogin(), userDTO.getPassword(),
                             userDTO.getFirstName(), userDTO.getLastName(), userDTO.getEmail().toLowerCase(),
                             userDTO.getLangKey());
-                        String baseUrl = request.getScheme() + // "http"
-                            "://" +                                // "://"
-                            request.getServerName() +              // "myhost"
-                            ":" +                                  // ":"
-                            request.getServerPort();               // "80"
-
-                        mailService.sendActivationEmail(user, baseUrl);
                         return new ResponseEntity<>(HttpStatus.CREATED);
                     })
             );
-    }
-
-    /**
-     * GET  /activate -> activate the registered user.
-     */
-    @RequestMapping(value = "/activate",
-        method = RequestMethod.GET,
-        produces = MediaType.APPLICATION_JSON_VALUE)
-    @Timed
-    public ResponseEntity<String> activateAccount(@RequestParam(value = "key") String key) {
-        return Optional.ofNullable(userService.activateRegistration(key))
-            .map(user -> new ResponseEntity<String>(HttpStatus.OK))
-            .orElse(new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR));
     }
 
     /**
@@ -111,7 +93,8 @@ public class AccountResource {
                     user.getLastName(),
                     user.getEmail(),
                     user.getLangKey(),
-                    user.getAuthorities().stream().map(Authority::getName).collect(Collectors.toCollection(LinkedList::new))),
+                    user.getAuthorities().stream().map(Authority::getName).collect(Collectors.toCollection(LinkedList::new)),
+                    user.getActivated()),
                 HttpStatus.OK))
             .orElse(new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR));
     }

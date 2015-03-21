@@ -31,13 +31,15 @@ public class UserDTO {
     @Size(min = 2, max = 5)
     private String langKey;
 
+    private Boolean activated;
+
     private List<String> roles;
 
     public UserDTO() {
     }
 
     public UserDTO(String login, String password, String firstName, String lastName, String email, String langKey,
-                   List<String> roles) {
+                   List<String> roles, Boolean activated) {
         this.login = login;
         this.password = password;
         this.firstName = firstName;
@@ -45,6 +47,7 @@ public class UserDTO {
         this.email = email;
         this.langKey = langKey;
         this.roles = roles;
+        this.activated = activated;
     }
 
     public String getPassword() {
@@ -75,6 +78,14 @@ public class UserDTO {
         return roles;
     }
 
+    public Boolean getActivated() {
+        return activated;
+    }
+
+    public void setActivated(Boolean activated) {
+        this.activated = activated;
+    }
+
     @Override
     public String toString() {
         return "UserDTO{" +
@@ -85,6 +96,7 @@ public class UserDTO {
             ", email='" + email + '\'' +
             ", langKey='" + langKey + '\'' +
             ", roles=" + roles +
+            ", activated=" + activated +
             '}';
     }
 }

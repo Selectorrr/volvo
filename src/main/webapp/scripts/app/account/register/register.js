@@ -7,7 +7,7 @@ angular.module('volvoApp')
                 parent: 'account',
                 url: '/register',
                 data: {
-                    roles: [],
+                    roles: ['ROLE_ADMIN'],
                     pageTitle: 'register.title'
                 },
                 views: {

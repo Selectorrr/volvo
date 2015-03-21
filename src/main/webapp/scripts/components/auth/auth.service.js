@@ -51,6 +51,9 @@ angular.module('volvoApp')
                                 $state.go('login');
                             }
                         }
+                        if ($rootScope.toState.name !== "password" && Principal.isActivationNeed()) {
+                            $state.go('password');
+                        }
                     });
             },
             createAccount: function (account, callback) {
@@ -78,22 +81,11 @@ angular.module('volvoApp')
                     }.bind(this)).$promise;
             },
 
-            activateAccount: function (key, callback) {
-                var cb = callback || angular.noop;
-
-                return Activate.get(key,
-                    function (response) {
-                        return cb(response);
-                    },
-                    function (err) {
-                        return cb(err);
-                    }.bind(this)).$promise;
-            },
-
             changePassword: function (newPassword, callback) {
                 var cb = callback || angular.noop;
 
                 return Password.save(newPassword, function () {
+                    Principal.setActivated(true);
                     return cb();
                 }, function (err) {
                     return cb(err);

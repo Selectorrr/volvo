@@ -32,6 +32,15 @@ angular.module('volvoApp')
 
                 return false;
             },
+            isActivationNeed: function () {
+                if (!this.isIdentityResolved() || !this.isAuthenticated()) {
+                    return false;
+                }
+                return !_identity.activated;
+            },
+            setActivated: function (val) {
+                _identity.activated = val;
+            },
             authenticate: function (identity) {
                 _identity = identity;
                 _authenticated = identity !== null;

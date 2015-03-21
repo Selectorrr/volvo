@@ -7,7 +7,7 @@ angular.module('volvoApp')
                 parent: 'site',
                 url: '/',
                 data: {
-                    roles: []
+                    roles: ['ROLE_USER','ROLE_ADMIN']
                 },
                 views: {
                     'content@': {
@@ -16,6 +16,11 @@ angular.module('volvoApp')
                     }
                 },
                 resolve: {
+                    authorize: ['Auth',
+                        function (Auth) {
+                            return Auth.authorize();
+                        }
+                    ],
                     mainTranslatePartialLoader: ['$translate', '$translatePartialLoader', function ($translate, $translatePartialLoader) {
                         $translatePartialLoader.addPart('main');
                         return $translate.refresh();

@@ -7,7 +7,7 @@ angular.module('volvoApp')
                 parent: 'site',
                 url: '/error',
                 data: {
-                    roles: [],
+                    roles: ['ROLE_USER','ROLE_ADMIN'],
                     pageTitle: 'errors.title'
                 },
                 views: {

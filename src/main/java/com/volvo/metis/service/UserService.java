@@ -6,17 +6,13 @@ import com.volvo.metis.repository.AuthorityRepository;
 import com.volvo.metis.repository.UserRepository;
 import com.volvo.metis.security.SecurityUtils;
 import com.volvo.metis.service.util.RandomUtil;
-import org.joda.time.DateTime;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
 import javax.inject.Inject;
 import java.util.HashSet;
-import java.util.List;
-import java.util.Optional;
 import java.util.Set;
 
 /**
@@ -35,20 +31,6 @@ public class UserService {
 
     @Inject
     private AuthorityRepository authorityRepository;
-
-    public Optional<User> activateRegistration(String key) {
-        log.debug("Activating user for activation key {}", key);
-        userRepository.findOneByActivationKey(key)
-            .map(user -> {
-                // activate given user for the registration key.
-                user.setActivated(true);
-                user.setActivationKey(null);
-                userRepository.save(user);
-                log.debug("Activated user: {}", user);
-                return user;
-            });
-        return Optional.empty();
-    }
 
     public User createUserInformation(String login, String password, String firstName, String lastName, String email,
                                       String langKey) {
@@ -88,6 +70,7 @@ public class UserService {
         userRepository.findOneByLogin(SecurityUtils.getCurrentLogin()).ifPresent(u -> {
             String encryptedPassword = passwordEncoder.encode(password);
             u.setPassword(encryptedPassword);
+            u.setActivated(true);
             userRepository.save(u);
             log.debug("Changed password for User: {}", u);
         });
@@ -99,20 +82,4 @@ public class UserService {
         return currentUser;
     }
 
-    /**
-     * Not activated users should be automatically deleted after 3 days.
-     * <p/>
-     * <p>
-     * This is scheduled to get fired everyday, at 01:00 (am).
-     * </p>
-     */
-    @Scheduled(cron = "0 0 1 * * ?")
-    public void removeNotActivatedUsers() {
-        DateTime now = new DateTime();
-        List<User> users = userRepository.findAllByActivatedIsFalseAndCreatedDateBefore(now.minusDays(3));
-        for (User user : users) {
-            log.debug("Deleting not activated user {}", user.getLogin());
-            userRepository.delete(user);
-        }
-    }
 }
