@@ -9,12 +9,14 @@ import java.util.List;
 
 public class UserDTO {
 
+    @Size(max = 50)
+    private String id;
+
     @Pattern(regexp = "^[a-z0-9]*$")
     @NotNull
     @Size(min = 1, max = 50)
     private String login;
 
-    @NotNull
     @Size(min = 5, max = 100)
     private String password;
 
@@ -39,7 +41,7 @@ public class UserDTO {
     }
 
     public UserDTO(String login, String password, String firstName, String lastName, String email, String langKey,
-                   List<String> roles, Boolean activated) {
+                   List<String> roles, Boolean activated, String id) {
         this.login = login;
         this.password = password;
         this.firstName = firstName;
@@ -48,6 +50,7 @@ public class UserDTO {
         this.langKey = langKey;
         this.roles = roles;
         this.activated = activated;
+        this.id = id;
     }
 
     public String getPassword() {
@@ -86,6 +89,14 @@ public class UserDTO {
         this.activated = activated;
     }
 
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
+
     @Override
     public String toString() {
         return "UserDTO{" +
@@ -97,6 +108,7 @@ public class UserDTO {
             ", langKey='" + langKey + '\'' +
             ", roles=" + roles +
             ", activated=" + activated +
+            ", id=" + id +
             '}';
     }
 }

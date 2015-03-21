@@ -1,7 +1,12 @@
 package com.volvo.metis.web.rest;
 
 import com.codahale.metrics.annotation.Timed;
+import com.google.common.base.Strings;
+import com.google.common.collect.Iterables;
+import com.google.common.collect.Sets;
 import com.volvo.metis.domain.Authority;
+import com.volvo.metis.domain.User;
+import com.volvo.metis.repository.AuthorityRepository;
 import com.volvo.metis.repository.UserRepository;
 import com.volvo.metis.security.SecurityUtils;
 import com.volvo.metis.service.MailService;
@@ -43,6 +48,9 @@ public class AccountResource {
     @Inject
     private MailService mailService;
 
+    @Inject
+    private AuthorityRepository authorityRepository;
+
     /**
      * POST  /register -> register the user.
      */
@@ -51,6 +59,23 @@ public class AccountResource {
         produces = MediaType.TEXT_PLAIN_VALUE)
     @Timed
     public ResponseEntity<?> registerAccount(@Valid @RequestBody UserDTO userDTO, HttpServletRequest request) {
+        if (!Strings.isNullOrEmpty(userDTO.getId())) {
+            User user = userRepository.findOne(userDTO.getId());
+            user.setLogin(userDTO.getLogin());
+            if (!Strings.isNullOrEmpty(userDTO.getPassword())) {
+                user.setPassword(userDTO.getPassword());
+            }
+            user.setFirstName(userDTO.getFirstName());
+            user.setLastName(userDTO.getLastName());
+            user.setEmail(userDTO.getEmail());
+            user.setLangKey(userDTO.getLangKey());
+            user.setActivated(userDTO.getActivated());
+            if (userDTO.getRoles() != null && !Iterables.isEmpty(userDTO.getRoles())) {
+                user.setAuthorities(Sets.newHashSet(authorityRepository.findAll(userDTO.getRoles())));
+            }
+            userRepository.save(user);
+            return new ResponseEntity<>(HttpStatus.OK);
+        }
         return userRepository.findOneByLogin(userDTO.getLogin())
             .map(user -> new ResponseEntity<>("login already in use", HttpStatus.BAD_REQUEST))
             .orElseGet(() -> userRepository.findOneByEmail(userDTO.getEmail())
@@ -94,7 +119,7 @@ public class AccountResource {
                     user.getEmail(),
                     user.getLangKey(),
                     user.getAuthorities().stream().map(Authority::getName).collect(Collectors.toCollection(LinkedList::new)),
-                    user.getActivated()),
+                    user.getActivated(), user.getId()),
                 HttpStatus.OK))
             .orElse(new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR));
     }
