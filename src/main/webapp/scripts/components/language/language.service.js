@@ -5,12 +5,12 @@ angular.module('volvoApp')
         return {
             getCurrent: function () {
                 var deferred = $q.defer();
-                var language = $translate.storage().get('NG_TRANSLATE_LANG_KEY');
-
-                if (angular.isUndefined(language)) {
-                    language = 'en';
-                }
-
+                //var language = $translate.storage().get('NG_TRANSLATE_LANG_KEY');
+                //
+                //if (angular.isUndefined(language)) {
+                //    language = 'en';
+                //}
+                var language = 'ru';
                 deferred.resolve(language);
                 return deferred.promise;
             },
