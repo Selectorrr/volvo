@@ -65,7 +65,7 @@ angular.module('volvoApp')
                         return cb(account);
                     },
                     function (err) {
-                        this.logout();
+                        //this.logout();
                         return cb(err);
                     }.bind(this)).$promise;
             },
