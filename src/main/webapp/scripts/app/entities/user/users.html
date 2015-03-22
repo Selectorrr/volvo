@@ -107,7 +107,7 @@
                             <label translate="global.form.newpassword">New password</label>
                             <input type="password" class="form-control" name="password"
                                    placeholder="{{'global.form.newpassword.placeholder' | translate}}"
-                                   ng-model="user.password" ng-minlength=5 ng-maxlength=50 ng-required={{isCreate}}>
+                                   ng-model="user.password" ng-minlength=5 ng-maxlength=50 ng-required='isCreate'>
 
                             <div ng-show="form.password.$dirty && form.password.$invalid">
                                 <p class="help-block"
@@ -135,7 +135,7 @@
                             <label translate="global.form.confirmpassword">New password confirmation</label>
                             <input type="password" class="form-control" name="confirmPassword"
                                    placeholder="{{'global.form.confirmpassword.placeholder' | translate}}"
-                                   ng-model="confirmPassword" ng-minlength=5 ng-maxlength=50 ng-required={{isCreate}}>
+                                   ng-model="confirmPassword" ng-minlength=5 ng-maxlength=50 ng-required='isCreate'>
 
                             <div ng-show="form.confirmPassword.$dirty && form.confirmPassword.$invalid">
                                 <p class="help-block"
