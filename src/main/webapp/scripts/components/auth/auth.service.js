@@ -12,7 +12,8 @@ angular.module('volvoApp')
                     Principal.identity(true).then(function (account) {
                         // After the login the language will be changed to
                         // the language selected by the user during his registration
-                        $translate.use(account.langKey);
+                        //$translate.use(account.langKey);
+                        $translate.use('ru');
                     });
                     deferred.resolve(data);
 
