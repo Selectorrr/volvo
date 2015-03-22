@@ -1,19 +1,21 @@
+/**
+ * Created by Selector on 22.03.2015.
+ */
 'use strict';
 
 angular.module('volvoApp')
     .config(function ($stateProvider) {
         $stateProvider
-            .state('home', {
-                parent: 'site',
-                url: '',
-                abstract: true,
+            .state('tabSecondHandCars', {
+                parent: 'home',
+                url: '/tabSecondHandCars',
                 data: {
-                    roles: ['ROLE_USER','ROLE_ADMIN']
+                    roles: ['ROLE_USER', 'ROLE_ADMIN']
                 },
                 views: {
-                    'content@': {
-                        templateUrl: 'scripts/app/main/main.html',
-                        controller: 'MainController'
+                    'tab-content@home': {
+                        templateUrl: 'scripts/app/tabs/tabSecondHandCars/tabSecondHandCars.html',
+                        controller: 'TabSecondHandCarsController'
                     }
                 },
                 resolve: {

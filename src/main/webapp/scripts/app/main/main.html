@@ -1,15 +1,43 @@
 <div ng-cloak>
     <div class="row">
-        <div class="col-md-8">
-            <div ng-switch="isAuthenticated()">
-                <div class="alert alert-success" ng-switch-when="true"
-                     translate="main.logged.message" translate-values="{username: '{{account.login}}'}">
-                    You are logged in as user "Admin".
-                </div>
-
-                <div class="alert alert-warning" ng-switch-when="false" translate="global.messages.info.authenticated">
-                    If you want to <a href="#/login">authenticate</a>, you can try the default login="admin" and
-                    password="admin".
+        <div class="col-xs-12">
+            <div role="tabpanel">
+                <ul class="nav nav-pills" role="tablist">
+                    <li role="presentation" ui-sref-active="active">
+                        <a ui-sref="tabNewCars">Новые автомобили</a>
+                    </li>
+                    <li role="presentation" ui-sref-active="active">
+                        <a ui-sref="tabSecondHandCars">Подержанные автомобили</a>
+                    </li>
+                    <li role="presentation" ui-sref-active="active">
+                        <a ui-sref="tabFlittingShop">Слес. цех</a>
+                    </li>
+                    <li role="presentation" ui-sref-active="active">
+                        <a ui-sref="tabBodyShop">Кузовной цех</a>
+                    </li>
+                    <li role="presentation" ui-sref-active="active">
+                        <a ui-sref="tabSpares">Запчасти</a>
+                    </li>
+                    <li role="presentation" ui-sref-active="active">
+                        <a ui-sref="tabOtherDepartments">Другие отделы</a>
+                    </li>
+                    <li role="presentation" ui-sref-active="active">
+                        <a ui-sref="tabIndirectCharges">Непрямые расходы</a>
+                    </li>
+                    <li role="presentation" ui-sref-active="active">
+                        <a ui-sref="tabBalance">Баланс</a>
+                    </li>
+                    <li role="presentation" ui-sref-active="active">
+                        <a ui-sref="tabTotalData">Итоговые данные</a>
+                    </li>
+                    <li role="presentation" ui-sref-active="active">
+                        <a ui-sref="tabStaffQuantity">Численность персонала</a>
+                    </li>
+                </ul>
+                <div class="tab-content">
+                    <div role="tabpanel" class="tab-pane active">
+                        <div ui-view="tab-content" ng-cloak=""></div>
+                    </div>
                 </div>
             </div>
         </div>
