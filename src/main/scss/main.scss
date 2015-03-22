@@ -5,7 +5,7 @@ $icon-font-path: "../../bower_components/bootstrap-sass/assets/fonts/bootstrap/"
 // endbower
 
 body {
-    background: #fafafa;
+    background: #ffffff;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: #333;
 }
@@ -111,3 +111,6 @@ ul#strength {
 }
 
 /* end Password strength bar style */
+.table div.form-group {
+    margin-bottom: 0;
+}

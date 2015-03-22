@@ -53,7 +53,8 @@ angular.module('volvoApp')
                 name: '@',
                 mask: '@',
                 placeholder: '@',
-                pattern: '@'
+                pattern: '@',
+                disabled: '='
             },
             compile: function compile(tElement, tAttrs, transclude) {
                 var $input = $(tElement).find('input');
@@ -66,9 +67,9 @@ angular.module('volvoApp')
                     $input.attr('ng-pattern', tAttrs.pattern);
                 }
             },
-            template: '<div class="form-group" ng-class="{\'has-error\':validation(name)}">' +
-            '<label>{{label}}</label>' +
-            '<input type="{{type}}" class="form-control" ng-model="model" ng-required=required ui-mask="{{mask}}">' +
+            template: '<div class="form-group form-group-sm" ng-class="{\'has-error\':validation(name)}">' +
+            '<label ng-show="label">{{label}}</label>' +
+            '<input type="{{type}}" class="form-control" ng-model="model" ng-required=required ui-mask="{{mask}}" ng-disabled="disabled">' +
             '<span class="help-inline text-danger" ng-show="validation(name)">{{validation(name)}}</span>' +
             '</div>'
         };
