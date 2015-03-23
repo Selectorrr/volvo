@@ -8658,3 +8658,65 @@ ul#strength {
 .table div.form-group {
   margin-bottom: 0;
 }
+
+@media -sass-debug-info {
+    filename {
+        font-family: file\:\/\/C\:\/Users\/Selector\/Desktop\/volvo\/src\/main\/scss\/main\.scss
+    }
+
+    line {
+        font-family: \00003118
+    }
+}
+
+.nav.nav-tabs {
+    border-bottom: none;
+}
+
+@media -sass-debug-info {
+    filename {
+        font-family: file\:\/\/C\:\/Users\/Selector\/Desktop\/volvo\/src\/main\/scss\/main\.scss
+    }
+
+    line {
+        font-family: \00003122
+    }
+}
+
+.nav.nav-tabs li {
+    display: table-cell;
+    width: 1%;
+    float: none;
+}
+
+@media -sass-debug-info {
+    filename {
+        font-family: file\:\/\/C\:\/Users\/Selector\/Desktop\/volvo\/src\/main\/scss\/main\.scss
+    }
+
+    line {
+        font-family: \00003128
+    }
+}
+
+.nav.nav-tabs li a {
+    border-bottom: 1px solid #ddd;
+    border-radius: 4px 4px 0 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+@media -sass-debug-info {
+    filename {
+        font-family: file\:\/\/C\:\/Users\/Selector\/Desktop\/volvo\/src\/main\/scss\/main\.scss
+    }
+
+    line {
+        font-family: \00003136
+    }
+}
+
+.nav-tabs > li.active > a {
+    border-bottom-color: #fff !important;
+}

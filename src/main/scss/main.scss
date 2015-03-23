@@ -114,3 +114,25 @@ ul#strength {
 .table div.form-group {
     margin-bottom: 0;
 }
+
+.nav.nav-tabs {
+    border-bottom: none;
+}
+
+.nav.nav-tabs li {
+    display: table-cell;
+    width: 1%;
+    float: none;
+}
+
+.nav.nav-tabs li a {
+    border-bottom: 1px solid #ddd;
+    border-radius: 4px 4px 0 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.nav-tabs > li.active > a {
+    border-bottom-color: #fff !important;
+}
