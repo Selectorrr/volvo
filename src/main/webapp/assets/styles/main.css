@@ -8679,9 +8679,18 @@ ul#strength {
   margin-bottom: 0;
   text-align: center;
   padding: 10px 10px;
+    min-height: 60px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Selector\/Desktop\/volvo\/src\/main\/scss\/main\.scss}line{font-family:\00003139}}
+@media -sass-debug-info {
+    filename {
+        font-family: file\:\/\/C\:\/Users\/Selector\/Desktop\/volvo\/src\/main\/scss\/main\.scss
+    }
+
+    line {
+        font-family: \00003140
+    }
+}
 .nav-tabs > li.active > a {
   border-bottom-color: #fff !important;
 }
