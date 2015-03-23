@@ -11,7 +11,7 @@
     <h3 translate="metrics.jvm.title">JVM Metrics</h3>
 
     <div class="row" ng-hide="updatingMetrics">
-        <div class="col-md-4">
+        <div class="col-xs-4">
             <b translate="metrics.jvm.memory.title">Memory</b>
 
             <p>{{'metrics.jvm.memory.total' | translate}} ({{metrics.gauges['jvm.memory.total.used'].value / 1000000 |
@@ -54,7 +54,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-md-4">
+        <div class="col-xs-4">
             <b translate="metrics.jvm.threads.title">Threads</b> (Total: {{metrics.gauges['jvm.threads.count'].value}})
             <a class="hand" ng-click="refreshThreadDumpData()" data-toggle="modal" data-target="#threadDump"><i
                 class="glyphicon glyphicon-eye-open"></i></a>
@@ -109,24 +109,24 @@
                 </div>
             </div>
         </div>
-        <div class="col-md-4">
+        <div class="col-xs-4">
             <b translate="metrics.jvm.gc.title">Garbage collections</b>
 
             <div class="row">
-                <div class="col-md-9" translate="metrics.jvm.gc.marksweepcount">Mark Sweep count</div>
-                <div class="col-md-3 text-right">{{metrics.gauges['jvm.garbage.PS-MarkSweep.count'].value}}</div>
+                <div class="col-xs-9" translate="metrics.jvm.gc.marksweepcount">Mark Sweep count</div>
+                <div class="col-xs-3 text-right">{{metrics.gauges['jvm.garbage.PS-MarkSweep.count'].value}}</div>
             </div>
             <div class="row">
-                <div class="col-md-9" translate="metrics.jvm.gc.marksweeptime">Mark Sweep time</div>
-                <div class="col-md-3 text-right">{{metrics.gauges['jvm.garbage.PS-MarkSweep.time'].value}}ms</div>
+                <div class="col-xs-9" translate="metrics.jvm.gc.marksweeptime">Mark Sweep time</div>
+                <div class="col-xs-3 text-right">{{metrics.gauges['jvm.garbage.PS-MarkSweep.time'].value}}ms</div>
             </div>
             <div class="row">
-                <div class="col-md-9" translate="metrics.jvm.gc.scavengecount">Scavenge count</div>
-                <div class="col-md-3 text-right">{{metrics.gauges['jvm.garbage.PS-Scavenge.count'].value}}</div>
+                <div class="col-xs-9" translate="metrics.jvm.gc.scavengecount">Scavenge count</div>
+                <div class="col-xs-3 text-right">{{metrics.gauges['jvm.garbage.PS-Scavenge.count'].value}}</div>
             </div>
             <div class="row">
-                <div class="col-md-9" translate="metrics.jvm.gc.scavengetime">Scavenge time</div>
-                <div class="col-md-3 text-right">{{metrics.gauges['jvm.garbage.PS-Scavenge.time'].value}}ms</div>
+                <div class="col-xs-9" translate="metrics.jvm.gc.scavengetime">Scavenge time</div>
+                <div class="col-xs-3 text-right">{{metrics.gauges['jvm.garbage.PS-Scavenge.time'].value}}ms</div>
             </div>
         </div>
     </div>
