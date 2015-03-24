@@ -4,6 +4,18 @@
 'use strict';
 
 angular.module('volvoApp')
-    .controller('TabNewCarsController', function ($scope, Principal) {
+    .controller('TabNewCarsController', function ($scope, ReportService) {
+
+        $scope.model = {};
+
+        ReportService.tabNewCars().then(function (tabNewCars) {
+            $scope.model = tabNewCars.data;
+            console.log($scope.model);
+        });
+
+        $scope.autoSaving = function () {
+            console.log('auto saving..');
+            ReportService.saveTabNewCars($scope.model);
+        }
 
     });

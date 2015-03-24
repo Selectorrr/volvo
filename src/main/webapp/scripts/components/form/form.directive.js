@@ -69,7 +69,7 @@ angular.module('volvoApp')
             },
             template: '<div class="form-group form-group-sm" ng-class="{\'has-error\':validation(name)}">' +
             '<label ng-show="label">{{label}}</label>' +
-            '<input type="{{type}}" class="form-control" ng-model="model" ng-required=required ui-mask="{{mask}}" ng-disabled="disabled">' +
+            '<input type="{{type}}" class="form-control" ng-model="model" onblur="console.log(\'blur..\')" ng-required=required ui-mask="{{mask}}" ng-disabled="disabled">' +
             '<span class="help-inline text-danger" ng-show="validation(name)">{{validation(name)}}</span>' +
             '</div>'
         };
