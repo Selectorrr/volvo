@@ -7,7 +7,7 @@ angular.module('volvoApp')
                 return $http.get('/api/current-report', {});
             },
             saveReport: function (reportToSave){
-                return $http.post('/api/save-report', {report: reportToSave});
+                return $http.post('/api/save-report', reportToSave);
             }
         };
     });

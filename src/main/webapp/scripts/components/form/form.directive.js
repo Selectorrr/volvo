@@ -55,7 +55,7 @@ angular.module('volvoApp')
                 placeholder: '@',
                 pattern: '@',
                 disabled: '=',
-                onBlur: '&'
+                onBlur: '='
             },
             compile: function compile(tElement, tAttrs, transclude) {
                 var $input = $(tElement).find('input');
