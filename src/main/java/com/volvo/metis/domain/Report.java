@@ -168,9 +168,6 @@ public class Report extends AbstractAuditingEntity implements Serializable {
     public static Report createNewReport(String type) {
         Report report = new Report();
         report.setType(type);
-        // TODO: set other tabs
-        report.setTabNewCars(new TabNewCars());
-        report.setTabSecondHandCars(new TabSecondHandCars());
-        return report;  //To change body of created methods use File | Settings | File Templates.
+        return report;
     }
 }

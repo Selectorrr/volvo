@@ -27,6 +27,9 @@ angular.module('volvoApp')
                     mainTranslatePartialLoader: ['$translate', '$translatePartialLoader', function ($translate, $translatePartialLoader) {
                         $translatePartialLoader.addPart('main');
                         return $translate.refresh();
+                    }],
+                    currentReport: ['ReportService', function(ReportService) {
+                        return ReportService.currentReport();
                     }]
                 }
             });

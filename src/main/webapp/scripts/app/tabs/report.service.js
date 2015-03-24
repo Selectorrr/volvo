@@ -3,11 +3,11 @@
 angular.module('volvoApp')
     .factory('ReportService', function ReportService($http) {
         return {
-            tabNewCars: function () {
-                return $http.get('/api/current-report/tab-new-cars', {});
+            currentReport: function () {
+                return $http.get('/api/current-report', {});
             },
-            saveTabNewCars: function (tab){
-                return $http.post('/api/current-report/save-tab-new-cars', {tabNewCars: tab});
+            saveReport: function (report){
+                return $http.post('/api/save-report', {report: report});
             }
         };
     });

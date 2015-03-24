@@ -1,7 +1,6 @@
 package com.volvo.metis.service;
 
 import com.volvo.metis.domain.Report;
-import com.volvo.metis.domain.TabNewCars;
 import com.volvo.metis.domain.User;
 import com.volvo.metis.repository.ReportRepository;
 import org.joda.time.DateTime;
@@ -11,7 +10,6 @@ import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
 
 import javax.inject.Inject;
-import java.util.List;
 
 /**
  * Service class for managing reports.
@@ -28,7 +26,7 @@ public class ReportService {
     private ReportRepository reportRepository;
 
 
-    public TabNewCars getCurrentTabNewCars() {
+    public Report getCurrentReport() {
         User user = userService.getUserWithAuthorities();
         Report report = getCurrentReport(user);
         if (report == null) {
@@ -37,13 +35,10 @@ public class ReportService {
             reportRepository.save(report);
             log.debug("Created new report for user with id {} and login {}", user.getId(), user.getLogin());
         }
-        return report.getTabNewCars();
+        return report;
     }
 
-    public void saveCurrentTabNewCars(TabNewCars tabNewCars) {
-        User user = userService.getUserWithAuthorities();
-        Report report = getCurrentReport(user);
-        report.setTabNewCars(tabNewCars);
+    public void saveReport(Report report) {
         reportRepository.save(report);
     }
 
@@ -53,7 +48,6 @@ public class ReportService {
         LocalDateTime end = localDateTime.withDayOfMonth(31).withHourOfDay(23).withMinuteOfHour(59).withSecondOfMinute(59).withMillisOfSecond(999);
         DateTime dateTimeStart = start.toDateTime();
         DateTime dateTimeEnd = end.toDateTime();
-        List<Report> reportList = reportRepository.findAllByCreatedByAndCreatedDateBetween(user.getLogin(), dateTimeStart, dateTimeEnd);
-        return reportList.isEmpty() ? null : reportList.get(0);
+        return reportRepository.findOneByCreatedByAndCreatedDateBetween(user.getLogin(), dateTimeStart, dateTimeEnd);
     }
 }
