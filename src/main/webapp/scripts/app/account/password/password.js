@@ -7,7 +7,7 @@ angular.module('volvoApp')
                 parent: 'account',
                 url: '/password',
                 data: {
-                    roles: ['ROLE_USER'],
+                    roles: ['ROLE_USER', 'ROLE_ADMIN'],
                     pageTitle: 'global.menu.account.password'
                 },
                 views: {
