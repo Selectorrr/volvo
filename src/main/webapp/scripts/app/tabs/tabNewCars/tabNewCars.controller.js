@@ -10,32 +10,42 @@ angular.module('volvoApp')
         $scope.model = currentReport.data;
 
         $scope.newVolvoRetailTable = [
-            $scope.model.tabNewCars.newVolvoRetailC30,
-            $scope.model.tabNewCars.newVolvoRetailS40,
-            $scope.model.tabNewCars.newVolvoRetailV40,
-            $scope.model.tabNewCars.newVolvoRetailS60,
-            $scope.model.tabNewCars.newVolvoRetailXc60,
-            $scope.model.tabNewCars.newVolvoRetailC70,
-            $scope.model.tabNewCars.newVolvoRetailXc70,
-            $scope.model.tabNewCars.newVolvoRetailS80,
-            $scope.model.tabNewCars.newVolvoRetailXc90,
-            $scope.model.tabNewCars.newVolvoRetailV60,
-            $scope.model.tabNewCars.newVolvoRetailTotal
+            getValue($scope.model, 'tabNewCars', 'newVolvoRetailC30'),
+            getValue($scope.model, 'tabNewCars', 'newVolvoRetailS40'),
+            getValue($scope.model, 'tabNewCars', 'newVolvoRetailV40'),
+            getValue($scope.model, 'tabNewCars', 'newVolvoRetailS60'),
+            getValue($scope.model, 'tabNewCars', 'newVolvoRetailXc60'),
+            getValue($scope.model, 'tabNewCars', 'newVolvoRetailC70'),
+            getValue($scope.model, 'tabNewCars', 'newVolvoRetailXc70'),
+            getValue($scope.model, 'tabNewCars', 'newVolvoRetailS80'),
+            getValue($scope.model, 'tabNewCars', 'newVolvoRetailXc90'),
+            getValue($scope.model, 'tabNewCars', 'newVolvoRetailV60'),
+            getValue($scope.model, 'tabNewCars', 'newVolvoRetailTotal')
         ];
 
         $scope.newVolvoFlitTable = [
-            $scope.model.tabNewCars.newVolvoFlitC30,
-            $scope.model.tabNewCars.newVolvoFlitS40,
-            $scope.model.tabNewCars.newVolvoFlitV40,
-            $scope.model.tabNewCars.newVolvoFlitS60,
-            $scope.model.tabNewCars.newVolvoFlitXc60,
-            $scope.model.tabNewCars.newVolvoFlitC70,
-            $scope.model.tabNewCars.newVolvoFlitXc70,
-            $scope.model.tabNewCars.newVolvoFlitS80,
-            $scope.model.tabNewCars.newVolvoFlitXc90,
-            $scope.model.tabNewCars.newVolvoFlitV60,
-            $scope.model.tabNewCars.newVolvoFlitTotal
+            getValue($scope.model, 'tabNewCars', 'newVolvoFlitC30'),
+            getValue($scope.model, 'tabNewCars', 'newVolvoFlitS40'),
+            getValue($scope.model, 'tabNewCars', 'newVolvoFlitV40'),
+            getValue($scope.model, 'tabNewCars', 'newVolvoFlitS60'),
+            getValue($scope.model, 'tabNewCars', 'newVolvoFlitXc60'),
+            getValue($scope.model, 'tabNewCars', 'newVolvoFlitC70'),
+            getValue($scope.model, 'tabNewCars', 'newVolvoFlitXc70'),
+            getValue($scope.model, 'tabNewCars', 'newVolvoFlitS80'),
+            getValue($scope.model, 'tabNewCars', 'newVolvoFlitXc90'),
+            getValue($scope.model, 'tabNewCars', 'newVolvoFlitV60'),
+            getValue($scope.model, 'tabNewCars', 'newVolvoFlitTotal')
         ];
+
+        function getValue (model, tab, row) {
+            if (!model[tab]) {
+                model[tab] = {};
+            }
+            if (!model[tab][row]) {
+                model[tab][row] = {};
+            }
+            return model[tab][row];
+        }
 
         $scope.autoSaving = function () {
             ReportService.saveReport($scope.model);
@@ -82,7 +92,11 @@ angular.module('volvoApp')
             if (flit && flit[type]) {
                 result += flit[type];
             }
-            $scope.model.tabNewCars.newVolvoTotal[type] = result;
+            var newVolvoTotal = $scope.model.tabNewCars.newVolvoTotal;
+            if (!newVolvoTotal) {
+                newVolvoTotal = {};
+            }
+            newVolvoTotal[type] = result;
             return result;
         }
 
