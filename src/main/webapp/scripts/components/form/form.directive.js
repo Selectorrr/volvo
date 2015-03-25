@@ -147,7 +147,7 @@ angular.module('volvoApp')
             require: 'ngModel',
             link: function (scope, element, attrs, modelCtrl) {
                 modelCtrl.$parsers.push(function (inputValue) {
-                    var transformedInput = parseFloat(inputValue.toString().replace(/\D/g, ''));
+                    var transformedInput = parseFloat(!inputValue.toString() ? 0 : inputValue.toString().replace(/\D/g, ''));
                     if (!isNaN(transformedInput) && transformedInput != inputValue) {
                         modelCtrl.$setViewValue(transformedInput);
                         modelCtrl.$render();
