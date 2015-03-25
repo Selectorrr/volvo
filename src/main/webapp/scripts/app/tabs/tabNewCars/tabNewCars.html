@@ -15,163 +15,170 @@
             <th scope="row" class="col-xs-1">A1</th>
             <td class="col-xs-3">C30</td>
             <td class="col-xs-2">
-                <my-input type="number" model="model.tabNewCars.newVolvoRetailC30.first"
-                          on-blur="autoSavingAndCalculations"></my-input>
+                <my-input type="number" model="model.tabNewCars.newVolvoRetailC30.first" on-blur="autoSaving"></my-input>
             </td>
             <td class="col-xs-2">
-                <my-input model="model.tabNewCars.newVolvoRetailC30.second" on-blur="autoSavingAndCalculations"></my-input>
+                <my-input type="number" is-rub="true" model="model.tabNewCars.newVolvoRetailC30.second" on-blur="autoSaving"></my-input>
             </td>
             <td class="col-xs-2">
-                <my-input model="model.tabNewCars.newVolvoRetailC30.third" on-blur="autoSavingAndCalculations"></my-input>
+                <my-input type="number" is-rub="true" model="model.tabNewCars.newVolvoRetailC30.third" on-blur="autoSaving"></my-input>
             </td>
             <td class="col-xs-2">
-                <my-input type="number" disabled="true" model="model.tabNewCars.newVolvoRetailC30.fourth"></my-input>
+                <my-input type="number" is-rub="true" disabled="true" model="model.tabNewCars.newVolvoRetailC30.fourth"
+                        value="{{recalculateGrossProfit(model.tabNewCars.newVolvoRetailC30)}}"></my-input>
             </td>
         </tr>
         <tr>
             <th scope="row" class="col-xs-1">A2</th>
             <td class="col-xs-3">S40</td>
             <td class="col-xs-2">
-                <my-input model="model.tabNewCars.newVolvoRetailS40.first" on-blur="autoSavingAndCalculations"></my-input>
+                <my-input type="number" model="model.tabNewCars.newVolvoRetailS40.first" on-blur="autoSaving"></my-input>
             </td>
             <td class="col-xs-2">
-                <my-input model="model.tabNewCars.newVolvoRetailS40.second" on-blur="autoSavingAndCalculations"></my-input>
+                <my-input type="number" is-rub="true" model="model.tabNewCars.newVolvoRetailS40.second" on-blur="autoSaving"></my-input>
             </td>
             <td class="col-xs-2">
-                <my-input model="model.tabNewCars.newVolvoRetailS40.third" on-blur="autoSavingAndCalculations"></my-input>
+                <my-input type="number" is-rub="true" model="model.tabNewCars.newVolvoRetailS40.third" on-blur="autoSaving"></my-input>
             </td>
             <td class="col-xs-2">
-                <my-input disabled="true" model="model.tabNewCars.newVolvoRetailS40.fourth" value="{{
-                model.tabNewCars.newVolvoRetailS40.first +
-                 model.tabNewCars.newVolvoRetailS40.second}}"></my-input>
+                <my-input type="number" is-rub="true" disabled="true" model="model.tabNewCars.newVolvoRetailS40.fourth"
+                          value="{{recalculateGrossProfit(model.tabNewCars.newVolvoRetailS40)}}"></my-input>
             </td>
         </tr>
         <tr>
             <th scope="row" class="col-xs-1">A3</th>
             <td class="col-xs-3">V40</td>
             <td class="col-xs-2">
-                <my-input model="model.tabNewCars.newVolvoRetailV40.first" on-blur="autoSavingAndCalculations"></my-input>
+                <my-input type="number" model="model.tabNewCars.newVolvoRetailV40.first" on-blur="autoSaving"></my-input>
             </td>
             <td class="col-xs-2">
-                <my-input model="model.tabNewCars.newVolvoRetailV40.second" on-blur="autoSavingAndCalculations"></my-input>
+                <my-input type="number" is-rub="true" model="model.tabNewCars.newVolvoRetailV40.second" on-blur="autoSaving"></my-input>
             </td>
             <td class="col-xs-2">
-                <my-input model="model.tabNewCars.newVolvoRetailV40.third" on-blur="autoSavingAndCalculations"></my-input>
+                <my-input type="number" is-rub="true" model="model.tabNewCars.newVolvoRetailV40.third" on-blur="autoSaving"></my-input>
             </td>
             <td class="col-xs-2">
-                <my-input disabled="true" model="model.tabNewCars.newVolvoRetailV40.fourth"></my-input>
+                <my-input type="number" is-rub="true" disabled="true" model="model.tabNewCars.newVolvoRetailV40.fourth"
+                          value="{{recalculateGrossProfit(model.tabNewCars.newVolvoRetailV40)}}"></my-input>
             </td>
         </tr>
         <tr>
             <th scope="row" class="col-xs-1">A4</th>
             <td class="col-xs-3">S60</td>
             <td class="col-xs-2">
-                <my-input model="model.tabNewCars.newVolvoRetailS60.first" on-blur="autoSavingAndCalculations"></my-input>
+                <my-input type="number" model="model.tabNewCars.newVolvoRetailS60.first" on-blur="autoSaving"></my-input>
             </td>
             <td class="col-xs-2">
-                <my-input model="model.tabNewCars.newVolvoRetailS60.second" on-blur="autoSavingAndCalculations"></my-input>
+                <my-input type="number" is-rub="true" model="model.tabNewCars.newVolvoRetailS60.second" on-blur="autoSaving"></my-input>
             </td>
             <td class="col-xs-2">
-                <my-input model="model.tabNewCars.newVolvoRetailS60.third" on-blur="autoSavingAndCalculations"></my-input>
+                <my-input type="number" is-rub="true" model="model.tabNewCars.newVolvoRetailS60.third" on-blur="autoSaving"></my-input>
             </td>
             <td class="col-xs-2">
-                <my-input disabled="true" model="model.tabNewCars.newVolvoRetailS60.fourth"></my-input>
+                <my-input type="number" is-rub="true" disabled="true" model="model.tabNewCars.newVolvoRetailS60.fourth"
+                          value="{{recalculateGrossProfit(model.tabNewCars.newVolvoRetailS60)}}"></my-input>
             </td>
         </tr>
         <tr>
             <th scope="row" class="col-xs-1">A5</th>
             <td class="col-xs-3">XC60</td>
             <td class="col-xs-2">
-                <my-input model="model.tabNewCars.newVolvoRetailXc60.first" on-blur="autoSavingAndCalculations"></my-input>
+                <my-input type="number" model="model.tabNewCars.newVolvoRetailXc60.first" on-blur="autoSaving"></my-input>
             </td>
             <td class="col-xs-2">
-                <my-input model="model.tabNewCars.newVolvoRetailXc60.second" on-blur="autoSavingAndCalculations"></my-input>
+                <my-input type="number" is-rub="true" model="model.tabNewCars.newVolvoRetailXc60.second" on-blur="autoSaving"></my-input>
             </td>
             <td class="col-xs-2">
-                <my-input model="model.tabNewCars.newVolvoRetailXc60.third" on-blur="autoSavingAndCalculations"></my-input>
+                <my-input type="number" is-rub="true" model="model.tabNewCars.newVolvoRetailXc60.third" on-blur="autoSaving"></my-input>
             </td>
             <td class="col-xs-2">
-                <my-input disabled="true" model="model.tabNewCars.newVolvoRetailXc60.fourth"></my-input>
+                <my-input type="number" is-rub="true" disabled="true" model="model.tabNewCars.newVolvoRetailXc60.fourth"
+                          value="{{recalculateGrossProfit(model.tabNewCars.newVolvoRetailXc60)}}"></my-input>
             </td>
         </tr>
         <tr>
             <th scope="row" class="col-xs-1">A6</th>
             <td class="col-xs-3">C70</td>
             <td class="col-xs-2">
-                <my-input model="model.tabNewCars.newVolvoRetailC70.first" on-blur="autoSavingAndCalculations"></my-input>
+                <my-input type="number" model="model.tabNewCars.newVolvoRetailC70.first" on-blur="autoSaving"></my-input>
             </td>
             <td class="col-xs-2">
-                <my-input model="model.tabNewCars.newVolvoRetailC70.second" on-blur="autoSavingAndCalculations"></my-input>
+                <my-input type="number" is-rub="true" model="model.tabNewCars.newVolvoRetailC70.second" on-blur="autoSaving"></my-input>
             </td>
             <td class="col-xs-2">
-                <my-input model="model.tabNewCars.newVolvoRetailC70.third" on-blur="autoSavingAndCalculations"></my-input>
+                <my-input type="number" is-rub="true" model="model.tabNewCars.newVolvoRetailC70.third" on-blur="autoSaving"></my-input>
             </td>
             <td class="col-xs-2">
-                <my-input disabled="true" model="model.tabNewCars.newVolvoRetailC70.fourth"></my-input>
+                <my-input type="number" is-rub="true" disabled="true" model="model.tabNewCars.newVolvoRetailC70.fourth"
+                          value="{{recalculateGrossProfit(model.tabNewCars.newVolvoRetailC70)}}"></my-input>
             </td>
         </tr>
         <tr>
             <th scope="row" class="col-xs-1">A8</th>
             <td class="col-xs-3">XC70</td>
             <td class="col-xs-2">
-                <my-input model="model.tabNewCars.newVolvoRetailXc70.first" on-blur="autoSavingAndCalculations"></my-input>
+                <my-input type="number" model="model.tabNewCars.newVolvoRetailXc70.first" on-blur="autoSaving"></my-input>
             </td>
             <td class="col-xs-2">
-                <my-input model="model.tabNewCars.newVolvoRetailXc70.second" on-blur="autoSavingAndCalculations"></my-input>
+                <my-input type="number" is-rub="true" model="model.tabNewCars.newVolvoRetailXc70.second" on-blur="autoSaving"></my-input>
             </td>
             <td class="col-xs-2">
-                <my-input model="model.tabNewCars.newVolvoRetailXc70.third" on-blur="autoSavingAndCalculations"></my-input>
+                <my-input type="number" is-rub="true" model="model.tabNewCars.newVolvoRetailXc70.third" on-blur="autoSaving"></my-input>
             </td>
             <td class="col-xs-2">
-                <my-input disabled="true" model="model.tabNewCars.newVolvoRetailXc70.fourth"></my-input>
+                <my-input type="number" is-rub="true" disabled="true" model="model.tabNewCars.newVolvoRetailXc70.fourth"
+                          value="{{recalculateGrossProfit(model.tabNewCars.newVolvoRetailXc70)}}"></my-input>
             </td>
         </tr>
         <tr>
             <th scope="row" class="col-xs-1">A9</th>
             <td class="col-xs-3">S80</td>
             <td class="col-xs-2">
-                <my-input model="model.tabNewCars.newVolvoRetailS80.first" on-blur="autoSavingAndCalculations"></my-input>
+                <my-input type="number" model="model.tabNewCars.newVolvoRetailS80.first" on-blur="autoSaving"></my-input>
             </td>
             <td class="col-xs-2">
-                <my-input model="model.tabNewCars.newVolvoRetailS80.second" on-blur="autoSavingAndCalculations"></my-input>
+                <my-input type="number" is-rub="true" model="model.tabNewCars.newVolvoRetailS80.second" on-blur="autoSaving"></my-input>
             </td>
             <td class="col-xs-2">
-                <my-input model="model.tabNewCars.newVolvoRetailS80.third" on-blur="autoSavingAndCalculations"></my-input>
+                <my-input type="number" is-rub="true" model="model.tabNewCars.newVolvoRetailS80.third" on-blur="autoSaving"></my-input>
             </td>
             <td class="col-xs-2">
-                <my-input disabled="true" model="model.tabNewCars.newVolvoRetailS80.fourth"></my-input>
+                <my-input type="number" is-rub="true" disabled="true" model="model.tabNewCars.newVolvoRetailS80.fourth"
+                          value="{{recalculateGrossProfit(model.tabNewCars.newVolvoRetailS80)}}"></my-input>
             </td>
         </tr>
         <tr>
             <th scope="row" class="col-xs-1">A10</th>
             <td class="col-xs-3">XC90</td>
             <td class="col-xs-2">
-                <my-input model="model.tabNewCars.newVolvoRetailXc90.first" on-blur="autoSavingAndCalculations"></my-input>
+                <my-input type="number" model="model.tabNewCars.newVolvoRetailXc90.first" on-blur="autoSaving"></my-input>
             </td>
             <td class="col-xs-2">
-                <my-input model="model.tabNewCars.newVolvoRetailXc90.second" on-blur="autoSavingAndCalculations"></my-input>
+                <my-input type="number" is-rub="true" model="model.tabNewCars.newVolvoRetailXc90.second" on-blur="autoSaving"></my-input>
             </td>
             <td class="col-xs-2">
-                <my-input model="model.tabNewCars.newVolvoRetailXc90.third" on-blur="autoSavingAndCalculations"></my-input>
+                <my-input type="number" is-rub="true" model="model.tabNewCars.newVolvoRetailXc90.third" on-blur="autoSaving"></my-input>
             </td>
             <td class="col-xs-2">
-                <my-input disabled="true" model="model.tabNewCars.newVolvoRetailXc90.fourth"></my-input>
+                <my-input type="number" is-rub="true" disabled="true" model="model.tabNewCars.newVolvoRetailXc90.fourth"
+                          value="{{recalculateGrossProfit(model.tabNewCars.newVolvoRetailXc90)}}"></my-input>
             </td>
         </tr>
         <tr>
             <th scope="row" class="col-xs-1">A11</th>
             <td class="col-xs-3">V60</td>
             <td class="col-xs-2">
-                <my-input model="model.tabNewCars.newVolvoRetailV60.first" on-blur="autoSavingAndCalculations"></my-input>
+                <my-input type="number" model="model.tabNewCars.newVolvoRetailV60.first" on-blur="autoSaving"></my-input>
             </td>
             <td class="col-xs-2">
-                <my-input model="model.tabNewCars.newVolvoRetailV60.second" on-blur="autoSavingAndCalculations"></my-input>
+                <my-input type="number" is-rub="true" model="model.tabNewCars.newVolvoRetailV60.second" on-blur="autoSaving"></my-input>
             </td>
             <td class="col-xs-2">
-                <my-input model="model.tabNewCars.newVolvoRetailV60.third" on-blur="autoSavingAndCalculations"></my-input>
+                <my-input type="number" is-rub="true" model="model.tabNewCars.newVolvoRetailV60.third" on-blur="autoSaving"></my-input>
             </td>
             <td class="col-xs-2">
-                <my-input disabled="true" model="model.tabNewCars.newVolvoRetailV60.fourth"></my-input>
+                <my-input type="number" is-rub="true" disabled="true" model="model.tabNewCars.newVolvoRetailV60.fourth"
+                          value="{{recalculateGrossProfit(model.tabNewCars.newVolvoRetailV60)}}"></my-input>
             </td>
         </tr>
         </tbody>
@@ -180,16 +187,16 @@
             <th scope="row" class="col-xs-1">A20</th>
             <th class="col-xs-3">Итого Новые а/м Volvo Розница</th>
             <th class="col-xs-2">
-                <my-input disabled="true" model="model.tabNewCars.newVolvoRetailTotal.first"></my-input>
+                <my-input type="number" disabled="true" model="model.tabNewCars.newVolvoRetailTotal.first"></my-input>
             </th>
             <th class="col-xs-2">
-                <my-input disabled="true" model="model.tabNewCars.newVolvoRetailTotal.second"></my-input>
+                <my-input type="number" is-rub="true" disabled="true" model="model.tabNewCars.newVolvoRetailTotal.second"></my-input>
             </th>
             <th class="col-xs-2">
-                <my-input disabled="true" model="model.tabNewCars.newVolvoRetailTotal.third"></my-input>
+                <my-input type="number" is-rub="true" disabled="true" model="model.tabNewCars.newVolvoRetailTotal.third"></my-input>
             </th>
             <th class="col-xs-2">
-                <my-input disabled="true" model="model.tabNewCars.newVolvoRetailTotal.fourth"></my-input>
+                <my-input type="number" is-rub="true" disabled="true" model="model.tabNewCars.newVolvoRetailTotal.fourth"></my-input>
             </th>
         </tr>
         </tfoot>
@@ -213,160 +220,170 @@
             <th scope="row" class="col-xs-1">A31</th>
             <td class="col-xs-3">C30</td>
             <td class="col-xs-2">
-                <my-input model="model.tabNewCars.newVolvoFlitC30.first" on-blur="autoSavingAndCalculations"></my-input>
+                <my-input type="number" model="model.tabNewCars.newVolvoFlitC30.first" on-blur="autoSaving"></my-input>
             </td>
             <td class="col-xs-2">
-                <my-input model="model.tabNewCars.newVolvoFlitC30.second" on-blur="autoSavingAndCalculations"></my-input>
+                <my-input type="number" is-rub="true" model="model.tabNewCars.newVolvoFlitC30.second" on-blur="autoSaving"></my-input>
             </td>
             <td class="col-xs-2">
-                <my-input model="model.tabNewCars.newVolvoFlitC30.third" on-blur="autoSavingAndCalculations"></my-input>
+                <my-input type="number" is-rub="true" model="model.tabNewCars.newVolvoFlitC30.third" on-blur="autoSaving"></my-input>
             </td>
             <td class="col-xs-2">
-                <my-input disabled="true" model="model.tabNewCars.newVolvoFlitC30.fourth"></my-input>
+                <my-input type="number" is-rub="true" disabled="true" model="model.tabNewCars.newVolvoFlitC30.fourth"
+                          value="{{recalculateGrossProfit(model.tabNewCars.newVolvoFlitC30)}}"></my-input>
             </td>
         </tr>
         <tr>
             <th scope="row" class="col-xs-1">A32</th>
             <td class="col-xs-3">S40</td>
             <td class="col-xs-2">
-                <my-input model="model.tabNewCars.newVolvoFlitS40.first" on-blur="autoSavingAndCalculations"></my-input>
+                <my-input type="number" model="model.tabNewCars.newVolvoFlitS40.first" on-blur="autoSaving"></my-input>
             </td>
             <td class="col-xs-2">
-                <my-input model="model.tabNewCars.newVolvoFlitS40.second" on-blur="autoSavingAndCalculations"></my-input>
+                <my-input type="number" is-rub="true" model="model.tabNewCars.newVolvoFlitS40.second" on-blur="autoSaving"></my-input>
             </td>
             <td class="col-xs-2">
-                <my-input model="model.tabNewCars.newVolvoFlitS40.third" on-blur="autoSavingAndCalculations"></my-input>
+                <my-input type="number" is-rub="true" model="model.tabNewCars.newVolvoFlitS40.third" on-blur="autoSaving"></my-input>
             </td>
             <td class="col-xs-2">
-                <my-input disabled="true" model="model.tabNewCars.newVolvoFlitS40.fourth"></my-input>
+                <my-input type="number" is-rub="true" disabled="true" model="model.tabNewCars.newVolvoFlitS40.fourth"
+                          value="{{recalculateGrossProfit(model.tabNewCars.newVolvoFlitS40)}}"></my-input>
             </td>
         </tr>
         <tr>
             <th scope="row" class="col-xs-1">A33</th>
             <td class="col-xs-3">V40</td>
             <td class="col-xs-2">
-                <my-input model="model.tabNewCars.newVolvoFlitV40.first" on-blur="autoSavingAndCalculations"></my-input>
+                <my-input type="number" model="model.tabNewCars.newVolvoFlitV40.first" on-blur="autoSaving"></my-input>
             </td>
             <td class="col-xs-2">
-                <my-input model="model.tabNewCars.newVolvoFlitV40.second" on-blur="autoSavingAndCalculations"></my-input>
+                <my-input type="number" is-rub="true" model="model.tabNewCars.newVolvoFlitV40.second" on-blur="autoSaving"></my-input>
             </td>
             <td class="col-xs-2">
-                <my-input model="model.tabNewCars.newVolvoFlitV40.third" on-blur="autoSavingAndCalculations"></my-input>
+                <my-input type="number" is-rub="true" model="model.tabNewCars.newVolvoFlitV40.third" on-blur="autoSaving"></my-input>
             </td>
             <td class="col-xs-2">
-                <my-input disabled="true" model="model.tabNewCars.newVolvoFlitV40.fourth"></my-input>
+                <my-input type="number" is-rub="true" disabled="true" model="model.tabNewCars.newVolvoFlitV40.fourth"
+                          value="{{recalculateGrossProfit(model.tabNewCars.newVolvoFlitV40)}}"></my-input>
             </td>
         </tr>
         <tr>
             <th scope="row" class="col-xs-1">A34</th>
             <td class="col-xs-3">S60</td>
             <td class="col-xs-2">
-                <my-input model="model.tabNewCars.newVolvoFlitS60.first" on-blur="autoSavingAndCalculations"></my-input>
+                <my-input type="number" model="model.tabNewCars.newVolvoFlitS60.first" on-blur="autoSaving"></my-input>
             </td>
             <td class="col-xs-2">
-                <my-input model="model.tabNewCars.newVolvoFlitS60.second" on-blur="autoSavingAndCalculations"></my-input>
+                <my-input type="number" is-rub="true" model="model.tabNewCars.newVolvoFlitS60.second" on-blur="autoSaving"></my-input>
             </td>
             <td class="col-xs-2">
-                <my-input model="model.tabNewCars.newVolvoFlitS60.third" on-blur="autoSavingAndCalculations"></my-input>
+                <my-input type="number" is-rub="true" model="model.tabNewCars.newVolvoFlitS60.third" on-blur="autoSaving"></my-input>
             </td>
             <td class="col-xs-2">
-                <my-input disabled="true" model="model.tabNewCars.newVolvoFlitS60.fourth"></my-input>
+                <my-input type="number" is-rub="true" disabled="true" model="model.tabNewCars.newVolvoFlitS60.fourth"
+                          value="{{recalculateGrossProfit(model.tabNewCars.newVolvoFlitS60)}}"></my-input>
             </td>
         </tr>
         <tr>
             <th scope="row" class="col-xs-1">A35</th>
             <td class="col-xs-3">XC60</td>
             <td class="col-xs-2">
-                <my-input model="model.tabNewCars.newVolvoFlitXc60.first" on-blur="autoSavingAndCalculations"></my-input>
+                <my-input type="number" model="model.tabNewCars.newVolvoFlitXc60.first" on-blur="autoSaving"></my-input>
             </td>
             <td class="col-xs-2">
-                <my-input model="model.tabNewCars.newVolvoFlitXc60.second" on-blur="autoSavingAndCalculations"></my-input>
+                <my-input type="number" is-rub="true" model="model.tabNewCars.newVolvoFlitXc60.second" on-blur="autoSaving"></my-input>
             </td>
             <td class="col-xs-2">
-                <my-input model="model.tabNewCars.newVolvoFlitXc60.third" on-blur="autoSavingAndCalculations"></my-input>
+                <my-input type="number" is-rub="true" model="model.tabNewCars.newVolvoFlitXc60.third" on-blur="autoSaving"></my-input>
             </td>
             <td class="col-xs-2">
-                <my-input disabled="true" model="model.tabNewCars.newVolvoFlitXc60.fourth"></my-input>
+                <my-input type="number" is-rub="true" disabled="true" model="model.tabNewCars.newVolvoFlitXc60.fourth"
+                          value="{{recalculateGrossProfit(model.tabNewCars.newVolvoFlitXc60)}}"></my-input>
             </td>
         </tr>
         <tr>
             <th scope="row" class="col-xs-1">A36</th>
             <td class="col-xs-3">C70</td>
             <td class="col-xs-2">
-                <my-input model="model.tabNewCars.newVolvoFlitC70.first" on-blur="autoSavingAndCalculations"></my-input>
+                <my-input type="number" model="model.tabNewCars.newVolvoFlitC70.first" on-blur="autoSaving"></my-input>
             </td>
             <td class="col-xs-2">
-                <my-input model="model.tabNewCars.newVolvoFlitC70.second" on-blur="autoSavingAndCalculations"></my-input>
+                <my-input type="number" is-rub="true" model="model.tabNewCars.newVolvoFlitC70.second" on-blur="autoSaving"></my-input>
             </td>
             <td class="col-xs-2">
-                <my-input model="model.tabNewCars.newVolvoFlitC70.third" on-blur="autoSavingAndCalculations"></my-input>
+                <my-input type="number" is-rub="true" model="model.tabNewCars.newVolvoFlitC70.third" on-blur="autoSaving"></my-input>
             </td>
             <td class="col-xs-2">
-                <my-input disabled="true" model="model.tabNewCars.newVolvoFlitC70.fourth"></my-input>
+                <my-input type="number" is-rub="true" disabled="true" model="model.tabNewCars.newVolvoFlitC70.fourth"
+                          value="{{recalculateGrossProfit(model.tabNewCars.newVolvoFlitC70)}}"></my-input>
             </td>
         </tr>
         <tr>
             <th scope="row" class="col-xs-1">A38</th>
             <td class="col-xs-3">XC70</td>
             <td class="col-xs-2">
-                <my-input model="model.tabNewCars.newVolvoFlitXc70.first" on-blur="autoSavingAndCalculations"></my-input>
+                <my-input type="number" model="model.tabNewCars.newVolvoFlitXc70.first" on-blur="autoSaving"></my-input>
             </td>
             <td class="col-xs-2">
-                <my-input model="model.tabNewCars.newVolvoFlitXc70.second" on-blur="autoSavingAndCalculations"></my-input>
+                <my-input type="number" is-rub="true" model="model.tabNewCars.newVolvoFlitXc70.second" on-blur="autoSaving"></my-input>
             </td>
             <td class="col-xs-2">
-                <my-input model="model.tabNewCars.newVolvoFlitXc70.third" on-blur="autoSavingAndCalculations"></my-input>
+                <my-input type="number" is-rub="true" model="model.tabNewCars.newVolvoFlitXc70.third" on-blur="autoSaving"></my-input>
             </td>
             <td class="col-xs-2">
-                <my-input disabled="true" model="model.tabNewCars.newVolvoFlitXc70.fourth"></my-input>
+                <my-input type="number" is-rub="true" disabled="true" model="model.tabNewCars.newVolvoFlitXc70.fourth"
+                          value="{{recalculateGrossProfit(model.tabNewCars.newVolvoFlitXc70)}}"></my-input>
             </td>
         </tr>
         <tr>
             <th scope="row" class="col-xs-1">A39</th>
             <td class="col-xs-3">S80</td>
             <td class="col-xs-2">
-                <my-input model="model.tabNewCars.newVolvoFlitS80.first" on-blur="autoSavingAndCalculations"></my-input>
+                <my-input type="number" model="model.tabNewCars.newVolvoFlitS80.first" on-blur="autoSaving"></my-input>
             </td>
             <td class="col-xs-2">
-                <my-input model="model.tabNewCars.newVolvoFlitS80.second" on-blur="autoSavingAndCalculations"></my-input>
+                <my-input type="number" is-rub="true" model="model.tabNewCars.newVolvoFlitS80.second" on-blur="autoSaving"></my-input>
             </td>
             <td class="col-xs-2">
-                <my-input model="model.tabNewCars.newVolvoFlitS80.third" on-blur="autoSavingAndCalculations"></my-input>
+                <my-input type="number" is-rub="true" model="model.tabNewCars.newVolvoFlitS80.third" on-blur="autoSaving"></my-input>
             </td>
             <td class="col-xs-2">
-                <my-input disabled="true" model="model.tabNewCars.newVolvoFlitS80.fourth"></my-input>
+                <my-input type="number" is-rub="true" disabled="true" model="model.tabNewCars.newVolvoFlitS80.fourth"
+                          value="{{recalculateGrossProfit(model.tabNewCars.newVolvoFlitS80)}}"></my-input>
             </td>
         </tr>
         <tr>
             <th scope="row" class="col-xs-1">A40</th>
             <td class="col-xs-3">XC90</td>
             <td class="col-xs-2">
-                <my-input model="model.tabNewCars.newVolvoFlitXc90.first" on-blur="autoSavingAndCalculations"></my-input>
+                <my-input type="number" model="model.tabNewCars.newVolvoFlitXc90.first" on-blur="autoSaving"></my-input>
             </td>
             <td class="col-xs-2">
-                <my-input model="model.tabNewCars.newVolvoFlitXc90.second" on-blur="autoSavingAndCalculations"></my-input>
+                <my-input type="number" is-rub="true" model="model.tabNewCars.newVolvoFlitXc90.second" on-blur="autoSaving"></my-input>
             </td>
             <td class="col-xs-2">
-                <my-input model="model.tabNewCars.newVolvoFlitXc90.third" on-blur="autoSavingAndCalculations"></my-input>
+                <my-input type="number" is-rub="true" model="model.tabNewCars.newVolvoFlitXc90.third" on-blur="autoSaving"></my-input>
             </td>
             <td class="col-xs-2">
-                <my-input disabled="true" model="model.tabNewCars.newVolvoFlitXc90.fourth"></my-input>
+                <my-input type="number" is-rub="true" disabled="true" model="model.tabNewCars.newVolvoFlitXc90.fourth"
+                          value="{{recalculateGrossProfit(model.tabNewCars.newVolvoFlitXc90)}}"></my-input>
             </td>
         </tr>
         <tr>
             <th scope="row" class="col-xs-1">A41</th>
             <td class="col-xs-3">V60</td>
             <td class="col-xs-2">
-                <my-input model="model.tabNewCars.newVolvoFlitV60.first" on-blur="autoSavingAndCalculations"></my-input>
+                <my-input type="number" model="model.tabNewCars.newVolvoFlitV60.first" on-blur="autoSaving"></my-input>
             </td>
             <td class="col-xs-2">
-                <my-input model="model.tabNewCars.newVolvoFlitV60.second" on-blur="autoSavingAndCalculations"></my-input>
+                <my-input type="number" is-rub="true" model="model.tabNewCars.newVolvoFlitV60.second" on-blur="autoSaving"></my-input>
             </td>
             <td class="col-xs-2">
-                <my-input model="model.tabNewCars.newVolvoFlitV60.third" on-blur="autoSavingAndCalculations"></my-input>
+                <my-input type="number" is-rub="true" model="model.tabNewCars.newVolvoFlitV60.third" on-blur="autoSaving"></my-input>
             </td>
             <td class="col-xs-2">
-                <my-input disabled="true" model="model.tabNewCars.newVolvoFlitV60.fourth"></my-input>
+                <my-input type="number" is-rub="true" disabled="true" model="model.tabNewCars.newVolvoFlitV60.fourth"
+                          value="{{recalculateGrossProfit(model.tabNewCars.newVolvoFlitV60)}}"></my-input>
             </td>
         </tr>
         </tbody>
@@ -375,16 +392,16 @@
             <th scope="row" class="col-xs-1">A50</th>
             <th class="col-xs-3">Итого Новые а/м Volvo Флит</th>
             <th class="col-xs-2">
-                <my-input disabled="true" model="model.tabNewCars.newVolvoFlitTotal.first"></my-input>
+                <my-input type="number" disabled="true" model="model.tabNewCars.newVolvoFlitTotal.first"></my-input>
             </th>
             <th class="col-xs-2">
-                <my-input disabled="true" model="model.tabNewCars.newVolvoFlitTotal.second"></my-input>
+                <my-input type="number" is-rub="true" disabled="true" model="model.tabNewCars.newVolvoFlitTotal.second"></my-input>
             </th>
             <th class="col-xs-2">
-                <my-input disabled="true" model="model.tabNewCars.newVolvoFlitTotal.third"></my-input>
+                <my-input type="number" is-rub="true" disabled="true" model="model.tabNewCars.newVolvoFlitTotal.third"></my-input>
             </th>
             <th class="col-xs-2">
-                <my-input disabled="true" model="model.tabNewCars.newVolvoFlitTotal.fourth"></my-input>
+                <my-input type="number" is-rub="true" disabled="true" model="model.tabNewCars.newVolvoFlitTotal.fourth"></my-input>
             </th>
         </tr>
         </tfoot>
@@ -398,16 +415,16 @@
             <th scope="row" class="col-xs-1">A100</th>
             <td class="col-xs-3">Итого продажи а/м Volvo</td>
             <td class="col-xs-2">
-                <my-input model="model.tabNewCars.newVolvoTotal.first" on-blur="autoSavingAndCalculations"></my-input>
+                <my-input type="number" model="model.tabNewCars.newVolvoTotal.first" on-blur="autoSaving"></my-input>
             </td>
             <td class="col-xs-2">
-                <my-input model="model.tabNewCars.newVolvoTotal.second" on-blur="autoSavingAndCalculations"></my-input>
+                <my-input type="number" is-rub="true" model="model.tabNewCars.newVolvoTotal.second" on-blur="autoSaving"></my-input>
             </td>
             <td class="col-xs-2">
-                <my-input model="model.tabNewCars.newVolvoTotal.third" on-blur="autoSavingAndCalculations"></my-input>
+                <my-input type="number" is-rub="true" model="model.tabNewCars.newVolvoTotal.third" on-blur="autoSaving"></my-input>
             </td>
             <td class="col-xs-2">
-                <my-input disabled="true" model="model.tabNewCars.newVolvoTotal.fourth"></my-input>
+                <my-input type="number" is-rub="true" disabled="true" model="model.tabNewCars.newVolvoTotal.fourth"></my-input>
             </td>
         </tr>
     </table>

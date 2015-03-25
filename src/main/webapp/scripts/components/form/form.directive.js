@@ -55,7 +55,9 @@ angular.module('volvoApp')
                 placeholder: '@',
                 pattern: '@',
                 disabled: '=',
-                onBlur: '='
+                isRub: '=',
+                onBlur: '=',
+                value: '@'
             },
             compile: function compile(tElement, tAttrs, transclude) {
                 var $input = $(tElement).find('input');
@@ -71,11 +73,10 @@ angular.module('volvoApp')
                     $input.attr('number-only', true);
                 }
             },
-            template: '<div class="form-group form-group-sm" ng-class="{\'has-error\':validation(name)}">' +
-            '<label ng-show="label">{{label}}</label>' +
-            '<input class="form-control" ng-model="model" ng-blur="onBlur()" ng-required=required ui-mask="{{mask}}" ng-disabled="disabled">' +
-            '<span class="help-inline text-danger" ng-show="validation(name)">{{validation(name)}}</span>' +
-            '</div>'
+            template: '<div class="input-group input-group-sm">' +
+                      '<span ng-show="isRub" class="input-group-addon glyphicon-ruble"></span>' +
+                      '<input value="value" class="form-control" aria-describedby="sizing-addon3" ng-model="model" ng-blur="onBlur()" ng-required=required ng-disabled="disabled">' +
+                      '</div>'
         };
     }).directive('mySelect', function () {
         return {
