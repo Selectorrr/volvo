@@ -14,13 +14,19 @@ angular.module('volvoApp')
                 $scope.doNotMatch = 'ERROR';
             } else {
                 $scope.doNotMatch = null;
-                Auth.changePassword($scope.password).then(function () {
-                    $scope.error = null;
-                    $scope.success = 'OK';
-                }).catch(function () {
+                var onError = function () {
                     $scope.success = null;
                     $scope.error = 'ERROR';
-                });
+                };
+                Auth.changePassword($scope.password).then(function () {
+                    Auth.login({
+                        username: $scope.account.login,
+                        password: $scope.password
+                    }).then(function () {
+                        $scope.error = null;
+                        $scope.success = 'OK';
+                    }).catch(onError);
+                }).catch(onError);
             }
         };
     });

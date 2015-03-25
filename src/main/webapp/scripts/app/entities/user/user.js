@@ -17,6 +17,11 @@ angular.module('volvoApp')
                     }
                 },
                 resolve: {
+                    authorize: ['Auth',
+                        function (Auth) {
+                            return Auth.authorize();
+                        }
+                    ],
                     translatePartialLoader: ['$translate', '$translatePartialLoader', function ($translate, $translatePartialLoader) {
                         $translatePartialLoader.addPart('user');
                         $translatePartialLoader.addPart('register');
@@ -38,6 +43,11 @@ angular.module('volvoApp')
                     }
                 },
                 resolve: {
+                    authorize: ['Auth',
+                        function (Auth) {
+                            return Auth.authorize();
+                        }
+                    ],
                     translatePartialLoader: ['$translate', '$translatePartialLoader', function ($translate, $translatePartialLoader) {
                         $translatePartialLoader.addPart('user');
                         return $translate.refresh();
