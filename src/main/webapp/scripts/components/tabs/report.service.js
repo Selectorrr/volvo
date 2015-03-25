@@ -6,7 +6,7 @@ angular.module('volvoApp')
             currentReport: function () {
                 return $http.get('/api/current-report', {});
             },
-            saveReport: function (reportToSave){
+            saveReport: function (reportToSave) {
                 return $http.post('/api/save-report', reportToSave);
             }
         };
