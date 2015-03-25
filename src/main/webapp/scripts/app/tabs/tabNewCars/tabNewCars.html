@@ -320,7 +320,8 @@
             </td>
             <td class="col-xs-2">
                 <my-input type="number" is-rub="true" disabled="true" model="model.tabNewCars.newVolvoFlitC30.fourth"
-                          value="{{recalculateGrossProfit(model.tabNewCars.newVolvoFlitC30)}}"></my-input>
+                          value="{{model.tabNewCars.newVolvoFlitC30.fourth =
+                          model.tabNewCars.newVolvoFlitC30.second - model.tabNewCars.newVolvoFlitC30.third}}"></my-input>
             </td>
         </tr>
         <tr>
@@ -339,7 +340,8 @@
             </td>
             <td class="col-xs-2">
                 <my-input type="number" is-rub="true" disabled="true" model="model.tabNewCars.newVolvoFlitS40.fourth"
-                          value="{{recalculateGrossProfit(model.tabNewCars.newVolvoFlitS40)}}"></my-input>
+                          value="{{model.tabNewCars.newVolvoFlitS40.fourth =
+                          model.tabNewCars.newVolvoFlitS40.second - model.tabNewCars.newVolvoFlitS40.third}}"></my-input>
             </td>
         </tr>
         <tr>
@@ -358,7 +360,8 @@
             </td>
             <td class="col-xs-2">
                 <my-input type="number" is-rub="true" disabled="true" model="model.tabNewCars.newVolvoFlitV40.fourth"
-                          value="{{recalculateGrossProfit(model.tabNewCars.newVolvoFlitV40)}}"></my-input>
+                          value="{{model.tabNewCars.newVolvoFlitV40.fourth =
+                          model.tabNewCars.newVolvoFlitV40.second - model.tabNewCars.newVolvoFlitV40.third}}"></my-input>
             </td>
         </tr>
         <tr>
@@ -377,7 +380,8 @@
             </td>
             <td class="col-xs-2">
                 <my-input type="number" is-rub="true" disabled="true" model="model.tabNewCars.newVolvoFlitS60.fourth"
-                          value="{{recalculateGrossProfit(model.tabNewCars.newVolvoFlitS60)}}"></my-input>
+                          value="{{model.tabNewCars.newVolvoFlitS60.fourth =
+                          model.tabNewCars.newVolvoFlitS60.second - model.tabNewCars.newVolvoFlitS60.third}}"></my-input>
             </td>
         </tr>
         <tr>
@@ -396,7 +400,8 @@
             </td>
             <td class="col-xs-2">
                 <my-input type="number" is-rub="true" disabled="true" model="model.tabNewCars.newVolvoFlitXc60.fourth"
-                          value="{{recalculateGrossProfit(model.tabNewCars.newVolvoFlitXc60)}}"></my-input>
+                          value="{{model.tabNewCars.newVolvoFlitXc60.fourth =
+                          model.tabNewCars.newVolvoFlitXc60.second - model.tabNewCars.newVolvoFlitXc60.third}}"></my-input>
             </td>
         </tr>
         <tr>
@@ -415,7 +420,8 @@
             </td>
             <td class="col-xs-2">
                 <my-input type="number" is-rub="true" disabled="true" model="model.tabNewCars.newVolvoFlitC70.fourth"
-                          value="{{recalculateGrossProfit(model.tabNewCars.newVolvoFlitC70)}}"></my-input>
+                          value="{{model.tabNewCars.newVolvoFlitC70.fourth =
+                          model.tabNewCars.newVolvoFlitC70.second - model.tabNewCars.newVolvoFlitC70.third}}"></my-input>
             </td>
         </tr>
         <tr>
@@ -434,7 +440,8 @@
             </td>
             <td class="col-xs-2">
                 <my-input type="number" is-rub="true" disabled="true" model="model.tabNewCars.newVolvoFlitXc70.fourth"
-                          value="{{recalculateGrossProfit(model.tabNewCars.newVolvoFlitXc70)}}"></my-input>
+                          value="{{model.tabNewCars.newVolvoFlitXc70.fourth =
+                          model.tabNewCars.newVolvoFlitXc70.second - model.tabNewCars.newVolvoFlitXc70.third}}"></my-input>
             </td>
         </tr>
         <tr>
@@ -453,7 +460,8 @@
             </td>
             <td class="col-xs-2">
                 <my-input type="number" is-rub="true" disabled="true" model="model.tabNewCars.newVolvoFlitS80.fourth"
-                          value="{{recalculateGrossProfit(model.tabNewCars.newVolvoFlitS80)}}"></my-input>
+                          value="{{model.tabNewCars.newVolvoFlitS80.fourth =
+                          model.tabNewCars.newVolvoFlitS80.second - model.tabNewCars.newVolvoFlitS80.third}}"></my-input>
             </td>
         </tr>
         <tr>
@@ -472,7 +480,8 @@
             </td>
             <td class="col-xs-2">
                 <my-input type="number" is-rub="true" disabled="true" model="model.tabNewCars.newVolvoFlitXc90.fourth"
-                          value="{{recalculateGrossProfit(model.tabNewCars.newVolvoFlitXc90)}}"></my-input>
+                          value="{{model.tabNewCars.newVolvoFlitXc90.fourth =
+                          model.tabNewCars.newVolvoFlitXc90.second - model.tabNewCars.newVolvoFlitXc90.third}}"></my-input>
             </td>
         </tr>
         <tr>
@@ -491,7 +500,8 @@
             </td>
             <td class="col-xs-2">
                 <my-input type="number" is-rub="true" disabled="true" model="model.tabNewCars.newVolvoFlitV60.fourth"
-                          value="{{recalculateGrossProfit(model.tabNewCars.newVolvoFlitV60)}}"></my-input>
+                          value="{{model.tabNewCars.newVolvoFlitV60.fourth =
+                          model.tabNewCars.newVolvoFlitV60.second - model.tabNewCars.newVolvoFlitV60.third}}"></my-input>
             </td>
         </tr>
         </tbody>
@@ -501,19 +511,63 @@
             <th class="col-xs-3">Итого Новые а/м Volvo Флит</th>
             <th class="col-xs-2">
                 <my-input type="number" disabled="true" model="model.tabNewCars.newVolvoFlitTotal.first"
-                          value="{{recalculateNewVolvoFlitTotalByType('first')}}"></my-input>
+                          value="{{model.tabNewCars.newVolvoFlitTotal.first=
+            model.tabNewCars.newVolvoFlitC30.first+
+            model.tabNewCars.newVolvoFlitS40.first+
+            model.tabNewCars.newVolvoFlitV40.first+
+            model.tabNewCars.newVolvoFlitS60.first+
+            model.tabNewCars.newVolvoFlitXc60.first+
+            model.tabNewCars.newVolvoFlitC70.first+
+            model.tabNewCars.newVolvoFlitXc70.first+
+            model.tabNewCars.newVolvoFlitS80.first+
+            model.tabNewCars.newVolvoFlitXc90.first+
+            model.tabNewCars.newVolvoFlitV60.first
+                          }}"></my-input>
             </th>
             <th class="col-xs-2">
                 <my-input type="number" is-rub="true" disabled="true" model="model.tabNewCars.newVolvoFlitTotal.second"
-                          value="{{recalculateNewVolvoFlitTotalByType('second')}}"></my-input>
+                          value="{{model.tabNewCars.newVolvoFlitTotal.second=
+            model.tabNewCars.newVolvoFlitC30.second+
+            model.tabNewCars.newVolvoFlitS40.second+
+            model.tabNewCars.newVolvoFlitV40.second+
+            model.tabNewCars.newVolvoFlitS60.second+
+            model.tabNewCars.newVolvoFlitXc60.second+
+            model.tabNewCars.newVolvoFlitC70.second+
+            model.tabNewCars.newVolvoFlitXc70.second+
+            model.tabNewCars.newVolvoFlitS80.second+
+            model.tabNewCars.newVolvoFlitXc90.second+
+            model.tabNewCars.newVolvoFlitV60.second
+                          }}"></my-input>
             </th>
             <th class="col-xs-2">
                 <my-input type="number" is-rub="true" disabled="true" model="model.tabNewCars.newVolvoFlitTotal.third"
-                          value="{{recalculateNewVolvoFlitTotalByType('third')}}"></my-input>
+                          value="{{model.tabNewCars.newVolvoFlitTotal.third=
+            model.tabNewCars.newVolvoFlitC30.third+
+            model.tabNewCars.newVolvoFlitS40.third+
+            model.tabNewCars.newVolvoFlitV40.third+
+            model.tabNewCars.newVolvoFlitS60.third+
+            model.tabNewCars.newVolvoFlitXc60.third+
+            model.tabNewCars.newVolvoFlitC70.third+
+            model.tabNewCars.newVolvoFlitXc70.third+
+            model.tabNewCars.newVolvoFlitS80.third+
+            model.tabNewCars.newVolvoFlitXc90.third+
+            model.tabNewCars.newVolvoFlitV60.third
+                          }}"></my-input>
             </th>
             <th class="col-xs-2">
                 <my-input type="number" is-rub="true" disabled="true" model="model.tabNewCars.newVolvoFlitTotal.fourth"
-                          value="{{recalculateNewVolvoFlitTotalByType('fourth')}}"></my-input>
+                          value="{{model.tabNewCars.newVolvoFlitTotal.fourth=
+            model.tabNewCars.newVolvoFlitC30.fourth+
+            model.tabNewCars.newVolvoFlitS40.fourth+
+            model.tabNewCars.newVolvoFlitV40.fourth+
+            model.tabNewCars.newVolvoFlitS60.fourth+
+            model.tabNewCars.newVolvoFlitXc60.fourth+
+            model.tabNewCars.newVolvoFlitC70.fourth+
+            model.tabNewCars.newVolvoFlitXc70.fourth+
+            model.tabNewCars.newVolvoFlitS80.fourth+
+            model.tabNewCars.newVolvoFlitXc90.fourth+
+            model.tabNewCars.newVolvoFlitV60.fourth
+                          }}"></my-input>
             </th>
         </tr>
         </tfoot>
@@ -528,19 +582,23 @@
             <td class="col-xs-3">Итого продажи а/м Volvo</td>
             <td class="col-xs-2">
                 <my-input type="number" model="model.tabNewCars.newVolvoTotal.first" on-blur="autoSaving"
-                          value="{{recalculateNewVolvoTotalByType('first')}}"></my-input>
+                          value="{{model.tabNewCars.newVolvoTotal.first =
+                          model.tabNewCars.newVolvoRetailTotal.first + model.tabNewCars.newVolvoFlitTotal.first}}"></my-input>
             </td>
             <td class="col-xs-2">
                 <my-input type="number" is-rub="true" model="model.tabNewCars.newVolvoTotal.second" on-blur="autoSaving"
-                          value="{{recalculateNewVolvoTotalByType('second')}}"></my-input>
+                          value="{{model.tabNewCars.newVolvoTotal.second =
+                          model.tabNewCars.newVolvoRetailTotal.second + model.tabNewCars.newVolvoFlitTotal.second}}"></my-input>
             </td>
             <td class="col-xs-2">
                 <my-input type="number" is-rub="true" model="model.tabNewCars.newVolvoTotal.third" on-blur="autoSaving"
-                          value="{{recalculateNewVolvoTotalByType('third')}}"></my-input>
+                          value="{{model.tabNewCars.newVolvoTotal.third =
+                          model.tabNewCars.newVolvoRetailTotal.third + model.tabNewCars.newVolvoFlitTotal.third}}"></my-input>
             </td>
             <td class="col-xs-2">
                 <my-input type="number" is-rub="true" disabled="true" model="model.tabNewCars.newVolvoTotal.fourth"
-                          value="{{recalculateNewVolvoTotalByType('fourth')}}"></my-input>
+                          value="{{model.tabNewCars.newVolvoTotal.fourth =
+                          model.tabNewCars.newVolvoRetailTotal.fourth + model.tabNewCars.newVolvoFlitTotal.fourth}}"></my-input>
             </td>
         </tr>
     </table>
