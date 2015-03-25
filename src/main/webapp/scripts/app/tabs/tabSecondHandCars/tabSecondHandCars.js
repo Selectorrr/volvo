@@ -9,9 +9,6 @@ angular.module('volvoApp')
             .state('tabSecondHandCars', {
                 parent: 'home',
                 url: '/tabSecondHandCars',
-                data: {
-                    roles: ['ROLE_USER', 'ROLE_ADMIN']
-                },
                 views: {
                     'tab-content@home': {
                         templateUrl: 'scripts/app/tabs/tabSecondHandCars/tabSecondHandCars.html',

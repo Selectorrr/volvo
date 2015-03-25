@@ -8,7 +8,7 @@ angular.module('volvoApp')
                 url: '',
                 abstract: true,
                 data: {
-                    roles: ['ROLE_USER','ROLE_ADMIN']
+                    roles: ['ROLE_USER']
                 },
                 views: {
                     'content@': {
