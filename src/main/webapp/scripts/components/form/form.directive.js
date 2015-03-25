@@ -74,8 +74,8 @@ angular.module('volvoApp')
                 }
             },
             template: '<div class="input-group input-group-sm">' +
-                      '<span ng-show="isRub" class="input-group-addon glyphicon-ruble"></span>' +
                       '<input value="value" class="form-control" aria-describedby="sizing-addon3" ng-model="model" ng-blur="onBlur()" ng-required=required ng-disabled="disabled">' +
+                      '<span ng-show="isRub" class="input-group-addon glyphicon-ruble"></span>' +
                       '</div>'
         };
     }).directive('mySelect', function () {
