@@ -48,6 +48,6 @@ public class ReportService {
         LocalDateTime end = localDateTime.withDayOfMonth(31).withHourOfDay(23).withMinuteOfHour(59).withSecondOfMinute(59).withMillisOfSecond(999);
         DateTime dateTimeStart = start.toDateTime();
         DateTime dateTimeEnd = end.toDateTime();
-        return reportRepository.findOneByCreatedByAndCreatedDateBetween(user.getLogin(), dateTimeStart, dateTimeEnd);
+        return reportRepository.findOneByCreatedByAndCreatedDateBetween(user.getId(), dateTimeStart, dateTimeEnd);
     }
 }
