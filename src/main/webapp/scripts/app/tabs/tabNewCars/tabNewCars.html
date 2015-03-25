@@ -187,16 +187,20 @@
             <th scope="row" class="col-xs-1">A20</th>
             <th class="col-xs-3">Итого Новые а/м Volvo Розница</th>
             <th class="col-xs-2">
-                <my-input type="number" disabled="true" model="model.tabNewCars.newVolvoRetailTotal.first"></my-input>
+                <my-input type="number" disabled="true" model="model.tabNewCars.newVolvoRetailTotal.first"
+                        value="{{recalculateNewVolvoRetailTotalByType('first')}}"></my-input>
             </th>
             <th class="col-xs-2">
-                <my-input type="number" is-rub="true" disabled="true" model="model.tabNewCars.newVolvoRetailTotal.second"></my-input>
+                <my-input type="number" is-rub="true" disabled="true" model="model.tabNewCars.newVolvoRetailTotal.second"
+                          value="{{recalculateNewVolvoRetailTotalByType('second')}}"></my-input>
             </th>
             <th class="col-xs-2">
-                <my-input type="number" is-rub="true" disabled="true" model="model.tabNewCars.newVolvoRetailTotal.third"></my-input>
+                <my-input type="number" is-rub="true" disabled="true" model="model.tabNewCars.newVolvoRetailTotal.third"
+                          value="{{recalculateNewVolvoRetailTotalByType('third')}}"></my-input>
             </th>
             <th class="col-xs-2">
-                <my-input type="number" is-rub="true" disabled="true" model="model.tabNewCars.newVolvoRetailTotal.fourth"></my-input>
+                <my-input type="number" is-rub="true" disabled="true" model="model.tabNewCars.newVolvoRetailTotal.fourth"
+                          value="{{recalculateNewVolvoRetailTotalByType('fourth')}}"></my-input>
             </th>
         </tr>
         </tfoot>
@@ -392,16 +396,20 @@
             <th scope="row" class="col-xs-1">A50</th>
             <th class="col-xs-3">Итого Новые а/м Volvo Флит</th>
             <th class="col-xs-2">
-                <my-input type="number" disabled="true" model="model.tabNewCars.newVolvoFlitTotal.first"></my-input>
+                <my-input type="number" disabled="true" model="model.tabNewCars.newVolvoFlitTotal.first"
+                          value="{{recalculateNewVolvoFlitTotalByType('first')}}"></my-input>
             </th>
             <th class="col-xs-2">
-                <my-input type="number" is-rub="true" disabled="true" model="model.tabNewCars.newVolvoFlitTotal.second"></my-input>
+                <my-input type="number" is-rub="true" disabled="true" model="model.tabNewCars.newVolvoFlitTotal.second"
+                          value="{{recalculateNewVolvoFlitTotalByType('second')}}"></my-input>
             </th>
             <th class="col-xs-2">
-                <my-input type="number" is-rub="true" disabled="true" model="model.tabNewCars.newVolvoFlitTotal.third"></my-input>
+                <my-input type="number" is-rub="true" disabled="true" model="model.tabNewCars.newVolvoFlitTotal.third"
+                          value="{{recalculateNewVolvoFlitTotalByType('third')}}"></my-input>
             </th>
             <th class="col-xs-2">
-                <my-input type="number" is-rub="true" disabled="true" model="model.tabNewCars.newVolvoFlitTotal.fourth"></my-input>
+                <my-input type="number" is-rub="true" disabled="true" model="model.tabNewCars.newVolvoFlitTotal.fourth"
+                          value="{{recalculateNewVolvoFlitTotalByType('fourth')}}"></my-input>
             </th>
         </tr>
         </tfoot>
@@ -415,16 +423,20 @@
             <th scope="row" class="col-xs-1">A100</th>
             <td class="col-xs-3">Итого продажи а/м Volvo</td>
             <td class="col-xs-2">
-                <my-input type="number" model="model.tabNewCars.newVolvoTotal.first" on-blur="autoSaving"></my-input>
+                <my-input type="number" model="model.tabNewCars.newVolvoTotal.first" on-blur="autoSaving"
+                          value="{{recalculateNewVolvoTotalByType('first')}}"></my-input>
             </td>
             <td class="col-xs-2">
-                <my-input type="number" is-rub="true" model="model.tabNewCars.newVolvoTotal.second" on-blur="autoSaving"></my-input>
+                <my-input type="number" is-rub="true" model="model.tabNewCars.newVolvoTotal.second" on-blur="autoSaving"
+                          value="{{recalculateNewVolvoTotalByType('second')}}"></my-input>
             </td>
             <td class="col-xs-2">
-                <my-input type="number" is-rub="true" model="model.tabNewCars.newVolvoTotal.third" on-blur="autoSaving"></my-input>
+                <my-input type="number" is-rub="true" model="model.tabNewCars.newVolvoTotal.third" on-blur="autoSaving"
+                          value="{{recalculateNewVolvoTotalByType('third')}}"></my-input>
             </td>
             <td class="col-xs-2">
-                <my-input type="number" is-rub="true" disabled="true" model="model.tabNewCars.newVolvoTotal.fourth"></my-input>
+                <my-input type="number" is-rub="true" disabled="true" model="model.tabNewCars.newVolvoTotal.fourth"
+                          value="{{recalculateNewVolvoTotalByType('fourth')}}"></my-input>
             </td>
         </tr>
     </table>
