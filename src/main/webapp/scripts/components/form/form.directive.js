@@ -67,10 +67,13 @@ angular.module('volvoApp')
                 if (tAttrs.pattern) {
                     $input.attr('ng-pattern', tAttrs.pattern);
                 }
+                if (tAttrs.type === "number") {
+                    $input.attr('number-only', true);
+                }
             },
             template: '<div class="form-group form-group-sm" ng-class="{\'has-error\':validation(name)}">' +
             '<label ng-show="label">{{label}}</label>' +
-            '<input type="{{type}}" class="form-control" ng-model="model" ng-blur="onBlur()" ng-required=required ui-mask="{{mask}}" ng-disabled="disabled">' +
+            '<input class="form-control" ng-model="model" ng-blur="onBlur()" ng-required=required ui-mask="{{mask}}" ng-disabled="disabled">' +
             '<span class="help-inline text-danger" ng-show="validation(name)">{{validation(name)}}</span>' +
             '</div>'
         };
@@ -137,5 +140,19 @@ angular.module('volvoApp')
             '</div>' +
             '<div class="help-inline text-danger" ng-show="validation(name)">{{validation(name)}}</div>' +
             '</div>'
+        };
+    }).directive('numberOnly', function () {
+        return {
+            require: 'ngModel',
+            link: function (scope, element, attrs, modelCtrl) {
+                modelCtrl.$parsers.push(function (inputValue) {
+                    var transformedInput = parseFloat(inputValue.toString().replace(/\D/g, ''));
+                    if (!isNaN(transformedInput) && transformedInput != inputValue) {
+                        modelCtrl.$setViewValue(transformedInput);
+                        modelCtrl.$render();
+                    }
+                    return transformedInput;
+                });
+            }
         };
     });
