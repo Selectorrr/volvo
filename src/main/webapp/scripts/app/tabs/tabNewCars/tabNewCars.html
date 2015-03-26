@@ -291,7 +291,6 @@
     </table>
 </div>
 
-
 <div class="table-responsive">
     <table class="table table-hover table-bordered table-condensed">
         <thead>
@@ -581,17 +580,17 @@
             <th scope="row" class="col-xs-1">A100</th>
             <td class="col-xs-3">Итого продажи а/м Volvo</td>
             <td class="col-xs-2">
-                <my-input type="number" model="model.tabNewCars.newVolvoTotal.first" on-blur="autoSaving"
+                <my-input type="number" disabled="true"model="model.tabNewCars.newVolvoTotal.first"
                           value="{{model.tabNewCars.newVolvoTotal.first =
                           model.tabNewCars.newVolvoRetailTotal.first + model.tabNewCars.newVolvoFlitTotal.first}}"></my-input>
             </td>
             <td class="col-xs-2">
-                <my-input type="number" is-rub="true" model="model.tabNewCars.newVolvoTotal.second" on-blur="autoSaving"
+                <my-input type="number" is-rub="true" disabled="true" model="model.tabNewCars.newVolvoTotal.second"
                           value="{{model.tabNewCars.newVolvoTotal.second =
                           model.tabNewCars.newVolvoRetailTotal.second + model.tabNewCars.newVolvoFlitTotal.second}}"></my-input>
             </td>
             <td class="col-xs-2">
-                <my-input type="number" is-rub="true" model="model.tabNewCars.newVolvoTotal.third" on-blur="autoSaving"
+                <my-input type="number" is-rub="true" disabled="true" model="model.tabNewCars.newVolvoTotal.third"
                           value="{{model.tabNewCars.newVolvoTotal.third =
                           model.tabNewCars.newVolvoRetailTotal.third + model.tabNewCars.newVolvoFlitTotal.third}}"></my-input>
             </td>
@@ -603,3 +602,797 @@
         </tr>
     </table>
 </div>
+
+<div class="table-responsive">
+<table class="table table-hover table-bordered table-condensed">
+<thead>
+<tr>
+    <th colspan="2" class="col-xs-4">Прочие доходы</th>
+    <th class="col-xs-2"></th>
+    <th class="col-xs-2"></th>
+    <th class="col-xs-2"></th>
+    <th class="col-xs-2">ВП</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+    <th scope="row" class="col-xs-1">A161</th>
+    <td class="col-xs-3">Доход от кредитования (Программа Вольво) - новые а/м</td>
+    <td class="col-xs-2">
+    </td>
+    <td class="col-xs-2">
+    </td>
+    <td class="col-xs-2">
+    </td>
+    <td class="col-xs-2">
+        <my-input type="number" is-rub="true" model="model.tabNewCars.otherIncomingVolvoCreditingIncoming.fourth"
+                  on-blur="autoSaving"></my-input>
+    </td>
+</tr>
+<tr>
+    <th scope="row" class="col-xs-1">A162</th>
+    <td class="col-xs-3">Доход от страхования (Программа Вольво) - новые а/м</td>
+    <td class="col-xs-2">
+    </td>
+    <td class="col-xs-2">
+    </td>
+    <td class="col-xs-2">
+    </td>
+    <td class="col-xs-2">
+        <my-input type="number" is-rub="true" model="model.tabNewCars.otherIncomingVolvoInsuranceIncoming.fourth"
+                  on-blur="autoSaving"></my-input>
+    </td>
+</tr>
+<tr>
+    <th scope="row" class="col-xs-1">A163</th>
+    <td class="col-xs-3">Доход от кредитования - новые а/м</td>
+    <td class="col-xs-2">
+    </td>
+    <td class="col-xs-2">
+    </td>
+    <td class="col-xs-2">
+    </td>
+    <td class="col-xs-2">
+        <my-input type="number" is-rub="true" model="model.tabNewCars.otherIncomingCreditingIncoming.fourth"
+                  on-blur="autoSaving"></my-input>
+    </td>
+</tr>
+<tr>
+    <th scope="row" class="col-xs-1">A164</th>
+    <td class="col-xs-3">Доход от страхования - новые а/м</td>
+    <td class="col-xs-2">
+    </td>
+    <td class="col-xs-2">
+    </td>
+    <td class="col-xs-2">
+    </td>
+    <td class="col-xs-2">
+        <my-input type="number" is-rub="true" model="model.tabNewCars.otherIncomingInsuranceIncoming.fourth"
+                  on-blur="autoSaving"></my-input>
+    </td>
+</tr>
+<tr>
+    <th scope="row" class="col-xs-1">A165</th>
+    <td class="col-xs-3">Авизо (начисленные)</td>
+    <td class="col-xs-2">
+    </td>
+    <td class="col-xs-2">
+    </td>
+    <td class="col-xs-2">
+    </td>
+    <td class="col-xs-2">
+        <my-input type="number" is-rub="true" model="model.tabNewCars.otherIncomingAccrualAviso.fourth"
+                  on-blur="autoSaving"></my-input>
+    </td>
+</tr>
+<tr>
+    <th scope="row" class="col-xs-1">A166</th>
+    <td class="col-xs-3">Авизо (полученные)</td>
+    <td class="col-xs-2">
+    </td>
+    <td class="col-xs-2">
+    </td>
+    <td class="col-xs-2">
+    </td>
+    <td class="col-xs-2">
+        <my-input type="number" is-rub="true" model="model.tabNewCars.otherIncomingDerivedAviso.fourth"
+                  on-blur="autoSaving"></my-input>
+    </td>
+</tr>
+<tr>
+    <th scope="row" class="col-xs-1">A169</th>
+    <td class="col-xs-3">Предпродажн. подготовка</td>
+    <td class="col-xs-2">
+    </td>
+    <td class="col-xs-2">
+        <my-input type="number" is-rub="true" model="model.tabNewCars.otherIncomingPreSalePreparation.second"
+                  on-blur="autoSaving"></my-input>
+    </td>
+    <td class="col-xs-2">
+        <my-input type="number" is-rub="true" model="model.tabNewCars.otherIncomingPreSalePreparation.third"
+                  on-blur="autoSaving"></my-input>
+    </td>
+    <td class="col-xs-2">
+        <my-input type="number" is-rub="true" disabled="true" model="model.tabNewCars.otherIncomingPreSalePreparation.fourth"
+                  value="{{model.tabNewCars.otherIncomingPreSalePreparation.fourth =
+                          model.tabNewCars.otherIncomingPreSalePreparation.second - model.tabNewCars.otherIncomingPreSalePreparation.third}}"></my-input>
+    </td>
+</tr>
+<tr>
+    <th scope="row" class="col-xs-1">A170</th>
+    <td class="col-xs-3">Продажа расширенной гарантии</td>
+    <td class="col-xs-2">
+    </td>
+    <td class="col-xs-2">
+        <my-input type="number" is-rub="true" model="model.tabNewCars.otherIncomingExtendedGuaranteeSale.second"
+                  on-blur="autoSaving"></my-input>
+    </td>
+    <td class="col-xs-2">
+        <my-input type="number" is-rub="true" model="model.tabNewCars.otherIncomingExtendedGuaranteeSale.third"
+                  on-blur="autoSaving"></my-input>
+    </td>
+    <td class="col-xs-2">
+        <my-input type="number" is-rub="true" disabled="true" model="model.tabNewCars.otherIncomingExtendedGuaranteeSale.fourth"
+                  value="{{model.tabNewCars.otherIncomingExtendedGuaranteeSale.fourth =
+                          model.tabNewCars.otherIncomingExtendedGuaranteeSale.second - model.tabNewCars.otherIncomingExtendedGuaranteeSale.third}}"></my-input>
+    </td>
+</tr>
+<tr>
+    <th scope="row" class="col-xs-1">A171</th>
+    <td class="col-xs-3">Другие доходы/расходы</td>
+    <td class="col-xs-2">
+    </td>
+    <td class="col-xs-2">
+        <my-input type="number" is-rub="true" model="model.tabNewCars.otherIncomingOtherIncomingCharges.second"
+                  on-blur="autoSaving"></my-input>
+    </td>
+    <td class="col-xs-2">
+        <my-input type="number" is-rub="true" model="model.tabNewCars.otherIncomingOtherIncomingCharges.third"
+                  on-blur="autoSaving"></my-input>
+    </td>
+    <td class="col-xs-2">
+        <my-input type="number" is-rub="true" disabled="true" model="model.tabNewCars.otherIncomingOtherIncomingCharges.fourth"
+                  value="{{model.tabNewCars.otherIncomingOtherIncomingCharges.fourth =
+                          model.tabNewCars.otherIncomingOtherIncomingCharges.second - model.tabNewCars.otherIncomingOtherIncomingCharges.third}}"></my-input>
+    </td>
+</tr>
+<tr>
+    <th scope="row" class="col-xs-1">A172</th>
+    <td class="col-xs-3">Аксессуары</td>
+    <td class="col-xs-2">
+    </td>
+    <td class="col-xs-2">
+        <my-input type="number" is-rub="true" model="model.tabNewCars.otherIncomingAccessories.second"
+                  on-blur="autoSaving"></my-input>
+    </td>
+    <td class="col-xs-2">
+        <my-input type="number" is-rub="true" model="model.tabNewCars.otherIncomingAccessories.third"
+                  on-blur="autoSaving"></my-input>
+    </td>
+    <td class="col-xs-2">
+        <my-input type="number" is-rub="true" disabled="true" model="model.tabNewCars.otherIncomingAccessories.fourth"
+                  value="{{model.tabNewCars.otherIncomingAccessories.fourth =
+                          model.tabNewCars.otherIncomingAccessories.second - model.tabNewCars.otherIncomingAccessories.third}}"></my-input>
+    </td>
+</tr>
+</tbody>
+<tfoot>
+<tr>
+    <th scope="row" class="col-xs-1">A180</th>
+    <th class="col-xs-3">Итого прочие доходы</th>
+    <th class="col-xs-2">
+    </th>
+    <th class="col-xs-2">
+        <my-input type="number" is-rub="true" disabled="true"
+                  model="model.tabNewCars.otherIncomingTotal.second"
+                  value="{{model.tabNewCars.otherIncomingTotal.second=
+            model.tabNewCars.otherIncomingPreSalePreparation.second+
+            model.tabNewCars.otherIncomingExtendedGuaranteeSale.second+
+            model.tabNewCars.otherIncomingOtherIncomingCharges.second+
+            model.tabNewCars.otherIncomingAccessories.second}}"></my-input>
+    </th>
+    <th class="col-xs-2">
+        <my-input type="number" is-rub="true" disabled="true" model="model.tabNewCars.otherIncomingTotal.third"
+                  value="{{model.tabNewCars.otherIncomingTotal.third=
+            model.tabNewCars.otherIncomingPreSalePreparation.third+
+            model.tabNewCars.otherIncomingExtendedGuaranteeSale.third+
+            model.tabNewCars.otherIncomingOtherIncomingCharges.third+
+            model.tabNewCars.otherIncomingAccessories.third}}"></my-input>
+    </th>
+    <th class="col-xs-2">
+        <!-- TODO -->
+        <my-input type="number" is-rub="true" disabled="true"
+                  model="model.tabNewCars.otherIncomingTotal.fourth"
+                  value="{{model.tabNewCars.otherIncomingTotal.fourth=0}}"></my-input>
+    </th>
+</tr>
+</tfoot>
+</table>
+</div>
+
+<div class="table-responsive">
+    <table class="table table-hover table-bordered table-condensed">
+        <tbody>
+        <tr>
+            <th scope="row" class="col-xs-1">A200</th>
+            <td class="col-xs-3">Валовая Прибыль отдела продаж новых а/м</td>
+            <td class="col-xs-2">
+                <my-input type="number" disabled="true" model="model.tabNewCars.grossProfitNewCarsDepartment.first"
+                          value="{{model.tabNewCars.grossProfitNewCarsDepartment.first=model.tabNewCars.newVolvoTotal.first}}"></my-input>
+            </td>
+            <td class="col-xs-2">
+                <my-input type="number" is-rub="true" disabled="true" model="model.tabNewCars.grossProfitNewCarsDepartment.second"
+                          value="{{model.tabNewCars.grossProfitNewCarsDepartment.second =
+                          model.tabNewCars.newVolvoTotal.second + model.tabNewCars.otherIncomingTotal.second}}"></my-input>
+            </td>
+            <td class="col-xs-2">
+                <my-input type="number" is-rub="true" disabled="true" model="model.tabNewCars.grossProfitNewCarsDepartment.third"
+                          value="{{model.tabNewCars.grossProfitNewCarsDepartment.third =
+                          model.tabNewCars.newVolvoTotal.third + model.tabNewCars.otherIncomingTotal.third}}"></my-input>
+            </td>
+            <td class="col-xs-2">
+                <my-input type="number" is-rub="true" disabled="true" model="model.tabNewCars.grossProfitNewCarsDepartment.fourth"
+                          value="{{model.tabNewCars.grossProfitNewCarsDepartment.fourth =
+                          model.tabNewCars.newVolvoTotal.fourth + model.tabNewCars.otherIncomingTotal.fourth}}"></my-input>
+            </td>
+        </tr>
+    </table>
+</div>
+
+<div class="table-responsive">
+<table class="table table-hover table-bordered table-condensed">
+<thead>
+<tr>
+    <th colspan="2" class="col-xs-4">Переменные расходы</th>
+    <th class="col-xs-2"></th>
+    <th class="col-xs-2"></th>
+    <th class="col-xs-2"></th>
+    <th class="col-xs-2">Сумма</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+    <th scope="row" class="col-xs-1">A201</th>
+    <td class="col-xs-3">Оклад продавцов</td>
+    <td class="col-xs-2">
+    </td>
+    <td class="col-xs-2">
+    </td>
+    <td class="col-xs-2">
+    </td>
+    <td class="col-xs-2">
+        <my-input type="number" is-rub="true" model="model.tabNewCars.fluctuatingChargesSellerSalary.fourth"
+                  on-blur="autoSaving"></my-input>
+    </td>
+</tr>
+<tr>
+    <th scope="row" class="col-xs-1">A202</th>
+    <td class="col-xs-3">Комиссионные продавцов</td>
+    <td class="col-xs-2">
+    </td>
+    <td class="col-xs-2">
+    </td>
+    <td class="col-xs-2">
+    </td>
+    <td class="col-xs-2">
+        <my-input type="number" is-rub="true" model="model.tabNewCars.fluctuatingChargesSellerCommissions.fourth"
+                  on-blur="autoSaving"></my-input>
+    </td>
+</tr>
+<tr>
+    <th scope="row" class="col-xs-1">A203</th>
+    <td class="col-xs-3">Налоги на з/п</td>
+    <td class="col-xs-2">
+    </td>
+    <td class="col-xs-2">
+    </td>
+    <td class="col-xs-2">
+    </td>
+    <td class="col-xs-2">
+        <my-input type="number" is-rub="true" model="model.tabNewCars.fluctuatingChargesSalaryTax.fourth"
+                  on-blur="autoSaving"></my-input>
+    </td>
+</tr>
+<tr>
+    <th scope="row" class="col-xs-1">A210</th>
+    <td class="col-xs-3">Всего затрат на продуктивный персонал</td>
+    <td class="col-xs-2">
+    </td>
+    <td class="col-xs-2">
+    </td>
+    <td class="col-xs-2">
+    </td>
+    <td class="col-xs-2">
+        <my-input type="number" is-rub="true" disabled="true" model="model.tabNewCars.fluctuatingChargesTotalProductiveStaffCharges.fourth"
+                  value="{{model.tabNewCars.fluctuatingChargesTotalProductiveStaffCharges.fourth =
+                           model.tabNewCars.fluctuatingChargesSellerSalary.fourth +
+                           model.tabNewCars.fluctuatingChargesSellerCommissions.fourth +
+                           model.tabNewCars.fluctuatingChargesSalaryTax.fourth}}"></my-input>
+    </td>
+</tr>
+<tr>
+    <th scope="row" class="col-xs-1">A212</th>
+    <td class="col-xs-3">Расходы по склад-ию а/м</td>
+    <td class="col-xs-2">
+    </td>
+    <td class="col-xs-2">
+    </td>
+    <td class="col-xs-2">
+    </td>
+    <td class="col-xs-2">
+        <my-input type="number" is-rub="true" model="model.tabNewCars.fluctuatingChargesStoringCharges.fourth"
+                  on-blur="autoSaving"></my-input>
+    </td>
+</tr>
+<tr>
+    <th scope="row" class="col-xs-1">A213</th>
+    <td class="col-xs-3">Другие переменные расходы</td>
+    <td class="col-xs-2">
+    </td>
+    <td class="col-xs-2">
+    </td>
+    <td class="col-xs-2">
+    </td>
+    <td class="col-xs-2">
+        <my-input type="number" is-rub="true" model="model.tabNewCars.fluctuatingChargesOtherVaryingCharges.fourth"
+                  on-blur="autoSaving"></my-input>
+    </td>
+</tr>
+<tr>
+    <th scope="row" class="col-xs-1">A220</th>
+    <td class="col-xs-3">Итого переменные расходы</td>
+    <td class="col-xs-2">
+    </td>
+    <td class="col-xs-2">
+    </td>
+    <td class="col-xs-2">
+    </td>
+    <td class="col-xs-2">
+        <my-input type="number" is-rub="true" disabled="true" model="model.tabNewCars.fluctuatingChargesTotalFluctuatingCharge.fourth"
+                  value="{{model.tabNewCars.fluctuatingChargesTotalFluctuatingCharge.fourth =
+                          model.tabNewCars.fluctuatingChargesTotalProductiveStaffCharges.fourth +
+                           model.tabNewCars.fluctuatingChargesStoringCharges.fourth +
+                           model.tabNewCars.fluctuatingChargesOtherVaryingCharges.fourth}}"></my-input>
+    </td>
+</tr>
+</table>
+</div>
+
+<div class="table-responsive">
+    <table class="table table-hover table-bordered table-condensed">
+        <tbody>
+        <tr>
+            <th scope="row" class="col-xs-1">A230</th>
+            <td class="col-xs-3">Переменная ВП</td>
+            <td class="col-xs-2">
+            </td>
+            <td class="col-xs-2">
+            </td>
+            <td class="col-xs-2">
+            </td>
+            <td class="col-xs-2">
+                <!-- TODO -->
+                <my-input type="number" is-rub="true" disabled="true" model="model.tabNewCars.fluctuatingChargesGrossProfit.fourth"
+                          value="{{model.tabNewCars.fluctuatingChargesGrossProfit.fourth =
+                          0}}"></my-input>
+            </td>
+        </tr>
+    </table>
+</div>
+
+<div class="table-responsive">
+    <table class="table table-hover table-bordered table-condensed">
+        <thead>
+        <tr>
+            <th colspan="2" class="col-xs-4">Расходы по отделу</th>
+            <th class="col-xs-2"></th>
+            <th class="col-xs-2"></th>
+            <th class="col-xs-2"></th>
+            <th class="col-xs-2">Сумма</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <th scope="row" class="col-xs-1">A231</th>
+            <td class="col-xs-3">Зарплата непродуктивного персонала</td>
+            <td class="col-xs-2">
+            </td>
+            <td class="col-xs-2">
+            </td>
+            <td class="col-xs-2">
+            </td>
+            <td class="col-xs-2">
+                <my-input type="number" is-rub="true" model="model.tabNewCars.departmentChargesNonproductiveStaffSalary.fourth"
+                          on-blur="autoSaving"></my-input>
+            </td>
+        </tr>
+        <tr>
+            <th scope="row" class="col-xs-1">A232</th>
+            <td class="col-xs-3">Налоги на з/п</td>
+            <td class="col-xs-2">
+            </td>
+            <td class="col-xs-2">
+            </td>
+            <td class="col-xs-2">
+            </td>
+            <td class="col-xs-2">
+                <my-input type="number" is-rub="true" model="model.tabNewCars.departmentChargesSalaryTax.fourth"
+                          on-blur="autoSaving"></my-input>
+            </td>
+        </tr>
+        <tr>
+            <th scope="row" class="col-xs-1">A233</th>
+            <td class="col-xs-3">Другие расходы на персонал</td>
+            <td class="col-xs-2">
+            </td>
+            <td class="col-xs-2">
+            </td>
+            <td class="col-xs-2">
+            </td>
+            <td class="col-xs-2">
+                <my-input type="number" is-rub="true" model="model.tabNewCars.departmentChargesOtherChargesOnStaff.fourth"
+                          on-blur="autoSaving"></my-input>
+            </td>
+        </tr>
+        <tr>
+            <th scope="row" class="col-xs-1">A234</th>
+            <td class="col-xs-3">Обучение</td>
+            <td class="col-xs-2">
+            </td>
+            <td class="col-xs-2">
+            </td>
+            <td class="col-xs-2">
+            </td>
+            <td class="col-xs-2">
+                <my-input type="number" is-rub="true" model="model.tabNewCars.departmentChargesEducation.fourth"
+                          on-blur="autoSaving"></my-input>
+            </td>
+        </tr>
+        <tr>
+            <th scope="row" class="col-xs-1">A240</th>
+            <td class="col-xs-3">Итого расходы на адм. персонал отд. Продаж</td>
+            <td class="col-xs-2">
+            </td>
+            <td class="col-xs-2">
+            </td>
+            <td class="col-xs-2">
+            </td>
+            <td class="col-xs-2">
+                <my-input type="number" is-rub="true" disabled="true" model="model.tabNewCars.departmentChargesTotalAdministrationCharges.fourth"
+                          value="{{model.tabNewCars.departmentChargesTotalAdministrationCharges.fourth =
+                          model.tabNewCars.departmentChargesNonproductiveStaffSalary.fourth +
+                          model.tabNewCars.departmentChargesSalaryTax.fourth +
+                          model.tabNewCars.departmentChargesOtherChargesOnStaff.fourth +
+                          model.tabNewCars.departmentChargesEducation.fourth}}"></my-input>
+            </td>
+        </tr>
+        <tr>
+            <th scope="row" class="col-xs-1">A241</th>
+            <td class="col-xs-3">Реклама на новые а/м</td>
+            <td class="col-xs-2">
+            </td>
+            <td class="col-xs-2">
+            </td>
+            <td class="col-xs-2">
+            </td>
+            <td class="col-xs-2">
+                <my-input type="number" is-rub="true" model="model.tabNewCars.departmentChargesAdvertisingNewCars.fourth"
+                          on-blur="autoSaving"></my-input>
+            </td>
+        </tr>
+        <tr>
+            <th scope="row" class="col-xs-1">A242</th>
+            <td class="col-xs-3">Амортизация</td>
+            <td class="col-xs-2">
+            </td>
+            <td class="col-xs-2">
+            </td>
+            <td class="col-xs-2">
+            </td>
+            <td class="col-xs-2">
+                <my-input type="number" is-rub="true" model="model.tabNewCars.departmentChargesAmortization.fourth"
+                          on-blur="autoSaving"></my-input>
+            </td>
+        </tr>
+        <tr>
+            <th scope="row" class="col-xs-1">A243</th>
+            <td class="col-xs-3">Расходы на а/м компании</td>
+            <td class="col-xs-2">
+            </td>
+            <td class="col-xs-2">
+            </td>
+            <td class="col-xs-2">
+            </td>
+            <td class="col-xs-2">
+                <my-input type="number" is-rub="true" model="model.tabNewCars.departmentChargesCompanyCarsCharges.fourth"
+                          on-blur="autoSaving"></my-input>
+            </td>
+        </tr>
+        <tr>
+            <th scope="row" class="col-xs-1">A244</th>
+            <td class="col-xs-3">Консигнация</td>
+            <td class="col-xs-2">
+            </td>
+            <td class="col-xs-2">
+            </td>
+            <td class="col-xs-2">
+            </td>
+            <td class="col-xs-2">
+                <my-input type="number" is-rub="true" model="model.tabNewCars.departmentChargesConsignment.fourth"
+                          on-blur="autoSaving"></my-input>
+            </td>
+        </tr>
+        <tr>
+            <th scope="row" class="col-xs-1">A245</th>
+            <td class="col-xs-3">Выплата % по складу (Пени)</td>
+            <td class="col-xs-2">
+            </td>
+            <td class="col-xs-2">
+            </td>
+            <td class="col-xs-2">
+            </td>
+            <td class="col-xs-2">
+                <my-input type="number" is-rub="true" model="model.tabNewCars.departmentChargesPayingInterestByStockPenaltyFee.fourth"
+                          on-blur="autoSaving"></my-input>
+            </td>
+        </tr>
+        <tr>
+            <th scope="row" class="col-xs-1">A246</th>
+            <td class="col-xs-3">Выплата % по складу (Банк)</td>
+            <td class="col-xs-2">
+            </td>
+            <td class="col-xs-2">
+            </td>
+            <td class="col-xs-2">
+            </td>
+            <td class="col-xs-2">
+                <my-input type="number" is-rub="true" model="model.tabNewCars.departmentChargesPayingInterestByStockBank.fourth"
+                          on-blur="autoSaving"></my-input>
+            </td>
+        </tr>
+        <tr>
+            <th scope="row" class="col-xs-1">A247</th>
+            <td class="col-xs-3">Другие расходы</td>
+            <td class="col-xs-2">
+            </td>
+            <td class="col-xs-2">
+            </td>
+            <td class="col-xs-2">
+            </td>
+            <td class="col-xs-2">
+                <my-input type="number" is-rub="true" model="model.tabNewCars.departmentChargesOtherCharges.fourth"
+                          on-blur="autoSaving"></my-input>
+            </td>
+        </tr>
+        <tr>
+            <th scope="row" class="col-xs-1">A250</th>
+            <td class="col-xs-3">Всего расходов по отделу</td>
+            <td class="col-xs-2">
+            </td>
+            <td class="col-xs-2">
+            </td>
+            <td class="col-xs-2">
+            </td>
+            <td class="col-xs-2">
+                <my-input type="number" is-rub="true" model="model.tabNewCars.departmentChargesTotalDepartmentCharges.fourth"
+                          value="{{model.tabNewCars.departmentChargesTotalDepartmentCharges.fourth =
+                          model.tabNewCars.departmentChargesTotalAdministrationCharges.fourth +
+                          model.tabNewCars.departmentChargesAdvertisingNewCars.fourth +
+                          model.tabNewCars.departmentChargesAmortization.fourth +
+                          model.tabNewCars.departmentChargesCompanyCarsCharges.fourth +
+                          model.tabNewCars.departmentChargesConsignment.fourth +
+                          model.tabNewCars.departmentChargesPayingInterestByStockPenaltyFee.fourth +
+                          model.tabNewCars.departmentChargesPayingInterestByStockBank.fourth +
+                          model.tabNewCars.departmentChargesOtherCharges.fourth}}"></my-input>
+            </td>
+        </tr>
+    </table>
+</div>
+
+<div class="table-responsive">
+    <table class="table table-hover table-bordered table-condensed">
+        <tbody>
+        <tr>
+            <th scope="row" class="col-xs-1">A270</th>
+            <td class="col-xs-3">Прибыль по отделу</td>
+            <td class="col-xs-2">
+            </td>
+            <td class="col-xs-2">
+            </td>
+            <td class="col-xs-2">
+            </td>
+            <td class="col-xs-2">
+                <!-- TODO -->
+                <my-input type="number" is-rub="true" disabled="true" model="model.tabNewCars.departmentChargesTotalDepartmentIncoming.fourth"
+                          value="{{model.tabNewCars.departmentChargesTotalDepartmentIncoming.fourth =
+                          0}}"></my-input>
+            </td>
+        </tr>
+    </table>
+</div>
+
+<div class="table-responsive">
+<table class="table table-hover table-bordered table-condensed">
+<thead>
+<tr>
+    <th colspan="2" class="col-xs-4">Статистика</th>
+    <th class="col-xs-2">0-30</th>
+    <th class="col-xs-2">31-60</th>
+    <th class="col-xs-2">61-90</th>
+    <th class="col-xs-2">>90</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+    <th scope="row" class="col-xs-1">A271</th>
+    <td class="col-xs-3">Кол-во НА на складе</td>
+    <td class="col-xs-2">
+        <my-input type="number" model="model.tabNewCars.statisticsNewCarsQuantityInStock.first"
+                  on-blur="autoSaving"></my-input>
+    </td>
+    <td class="col-xs-2">
+        <my-input type="number" model="model.tabNewCars.statisticsNewCarsQuantityInStock.second"
+                  on-blur="autoSaving"></my-input>
+    </td>
+    <td class="col-xs-2">
+        <my-input type="number" model="model.tabNewCars.statisticsNewCarsQuantityInStock.third"
+                  on-blur="autoSaving"></my-input>
+    </td>
+    <td class="col-xs-2">
+        <my-input type="number" model="model.tabNewCars.statisticsNewCarsQuantityInStock.fourth"
+                  on-blur="autoSaving"></my-input>
+    </td>
+</tr>
+<tr>
+    <th scope="row" class="col-xs-1">A272</th>
+    <td class="col-xs-3">Стоим-ть НА на складе</td>
+    <td class="col-xs-2">
+        <my-input type="number" model="model.tabNewCars.statisticsNewCarsCostInStock.first"
+                  on-blur="autoSaving"></my-input>
+    </td>
+    <td class="col-xs-2">
+        <my-input type="number" model="model.tabNewCars.statisticsNewCarsCostInStock.second"
+                  on-blur="autoSaving"></my-input>
+    </td>
+    <td class="col-xs-2">
+        <my-input type="number" model="model.tabNewCars.statisticsNewCarsCostInStock.third"
+                  on-blur="autoSaving"></my-input>
+    </td>
+    <td class="col-xs-2">
+        <my-input type="number" model="model.tabNewCars.statisticsNewCarsCostInStock.fourth"
+                  on-blur="autoSaving"></my-input>
+    </td>
+</tr>
+</table>
+</div>
+
+<div class="table-responsive">
+    <table class="table table-hover table-bordered table-condensed">
+        <thead>
+        <tr>
+            <th colspan="2" class="col-xs-4"></th>
+            <th class="col-xs-2"></th>
+            <th class="col-xs-2"></th>
+            <th class="col-xs-2"></th>
+            <th class="col-xs-2">Кол-во</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <th scope="row" class="col-xs-1">A273</th>
+            <td class="col-xs-3">Кол-во НА в кредит</td>
+            <td class="col-xs-2">
+            </td>
+            <td class="col-xs-2">
+            </td>
+            <td class="col-xs-2">
+            </td>
+            <td class="col-xs-2">
+                <my-input type="number" model="model.tabNewCars.statisticsNewCarsQuantityOnCredit.fourth"
+                          on-blur="autoSaving"></my-input>
+            </td>
+        </tr>
+        <tr>
+            <th scope="row" class="col-xs-1">A275</th>
+            <td class="col-xs-3">Кол-во полностью оплаченных а/м на складе</td>
+            <td class="col-xs-2">
+            </td>
+            <td class="col-xs-2">
+            </td>
+            <td class="col-xs-2">
+            </td>
+            <td class="col-xs-2">
+                <my-input type="number" model="model.tabNewCars.statisticsFullyPaidCarsQuantityInStock.fourth"
+                          on-blur="autoSaving"></my-input>
+            </td>
+        </tr>
+        <tr>
+            <th scope="row" class="col-xs-1">A276</th>
+            <td class="col-xs-3">Кол-во неоплач. а/м на складе</td>
+            <td class="col-xs-2">
+            </td>
+            <td class="col-xs-2">
+            </td>
+            <td class="col-xs-2">
+            </td>
+            <td class="col-xs-2">
+                <my-input type="number" model="model.tabNewCars.statisticsUnpaidCarsQuantityInStock.fourth"
+                          on-blur="autoSaving"></my-input>
+            </td>
+        </tr>
+    </table>
+</div>
+
+<div class="table-responsive">
+    <table class="table table-hover table-bordered table-condensed">
+        <thead>
+        <tr>
+            <th colspan="2" class="col-xs-4"></th>
+            <th class="col-xs-2"></th>
+            <th class="col-xs-2"></th>
+            <th class="col-xs-2"></th>
+            <th class="col-xs-2">Всего</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <th scope="row" class="col-xs-1">A277</th>
+            <td class="col-xs-3">Кол-во а/м выставленных в шоу-руме</td>
+            <td class="col-xs-2">
+            </td>
+            <td class="col-xs-2">
+            </td>
+            <td class="col-xs-2">
+            </td>
+            <td class="col-xs-2">
+                <my-input type="number" model="model.tabNewCars.statisticsCarsQuantityInShowroom.fourth"
+                          on-blur="autoSaving"></my-input>
+            </td>
+        </tr>
+        <tr>
+            <th scope="row" class="col-xs-1">A278</th>
+            <td class="col-xs-3">Кол-во а/м для тест-драйва</td>
+            <td class="col-xs-2">
+            </td>
+            <td class="col-xs-2">
+            </td>
+            <td class="col-xs-2">
+            </td>
+            <td class="col-xs-2">
+                <my-input type="number" model="model.tabNewCars.statisticsCarsQuantityForTestDrive.fourth"
+                          on-blur="autoSaving"></my-input>
+            </td>
+        </tr>
+        <tr>
+            <th scope="row" class="col-xs-1">A279</th>
+            <td class="col-xs-3">Продано расширенных гарантийных обязательств</td>
+            <td class="col-xs-2">
+            </td>
+            <td class="col-xs-2">
+            </td>
+            <td class="col-xs-2">
+            </td>
+            <td class="col-xs-2">
+                <my-input type="number" model="model.tabNewCars.statisticsSoldExtendedGuaranteeQuantity.fourth"
+                          on-blur="autoSaving"></my-input>
+            </td>
+        </tr>
+        <tr>
+            <th scope="row" class="col-xs-1">A280</th>
+            <td class="col-xs-3">Площадь шоурума (м2)</td>
+            <td class="col-xs-2">
+            </td>
+            <td class="col-xs-2">
+            </td>
+            <td class="col-xs-2">
+            </td>
+            <td class="col-xs-2">
+                <my-input type="number" model="model.tabNewCars.statisticsShowroomArea.fourth"
+                          on-blur="autoSaving"></my-input>
+            </td>
+        </tr>
+    </table>
+</div>
+
+
+
