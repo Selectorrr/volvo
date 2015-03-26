@@ -1,5 +1,5 @@
 server:
-    port: 8080
+    port: 8090
 
 spring:
     profiles:
@@ -11,7 +11,7 @@ spring:
             database: volvo
 
     mail:
-        baseUrl: http://localhost:8080
+        baseUrl: http://localhost:8090
 
     thymeleaf:
         mode: XHTML
@@ -22,11 +22,11 @@ metrics:
     spark:
         enabled: false
         host: localhost
-        port: 9999
+        port: 9998
     graphite:
         enabled: false
         host: localhost
-        port: 2003
+        port: 2002
         prefix: volvo
 
 
