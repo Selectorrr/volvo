@@ -1210,3 +1210,189 @@
         </tr>
     </table>
 </div>
+
+<div class="table-responsive">
+<table class="table table-hover table-bordered table-condensed">
+<thead>
+<tr>
+    <th colspan="2" class="col-xs-4">Статистика</th>
+    <th class="col-xs-2">0-30</th>
+    <th class="col-xs-2">31-60</th>
+    <th class="col-xs-2">61-90</th>
+    <th class="col-xs-2">>90</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+    <th scope="row" class="col-xs-1">A271</th>
+    <td class="col-xs-3">Кол-во НА на складе</td>
+    <td class="col-xs-2">
+        <my-input type="number" model="model.tabNewCars.statisticsNewCarsQuantityInStock.first"
+                  on-blur="autoSaving"></my-input>
+    </td>
+    <td class="col-xs-2">
+        <my-input type="number" model="model.tabNewCars.statisticsNewCarsQuantityInStock.second"
+                  on-blur="autoSaving"></my-input>
+    </td>
+    <td class="col-xs-2">
+        <my-input type="number" model="model.tabNewCars.statisticsNewCarsQuantityInStock.third"
+                  on-blur="autoSaving"></my-input>
+    </td>
+    <td class="col-xs-2">
+        <my-input type="number" model="model.tabNewCars.statisticsNewCarsQuantityInStock.fourth"
+                  on-blur="autoSaving"></my-input>
+    </td>
+</tr>
+<tr>
+    <th scope="row" class="col-xs-1">A272</th>
+    <td class="col-xs-3">Стоим-ть НА на складе</td>
+    <td class="col-xs-2">
+        <my-input type="number" model="model.tabNewCars.statisticsNewCarsCostInStock.first"
+                  on-blur="autoSaving"></my-input>
+    </td>
+    <td class="col-xs-2">
+        <my-input type="number" model="model.tabNewCars.statisticsNewCarsCostInStock.second"
+                  on-blur="autoSaving"></my-input>
+    </td>
+    <td class="col-xs-2">
+        <my-input type="number" model="model.tabNewCars.statisticsNewCarsCostInStock.third"
+                  on-blur="autoSaving"></my-input>
+    </td>
+    <td class="col-xs-2">
+        <my-input type="number" model="model.tabNewCars.statisticsNewCarsCostInStock.fourth"
+                  on-blur="autoSaving"></my-input>
+    </td>
+</tr>
+</table>
+</div>
+
+<div class="table-responsive">
+    <table class="table table-hover table-bordered table-condensed">
+        <thead>
+        <tr>
+            <th colspan="2" class="col-xs-4"></th>
+            <th class="col-xs-2"></th>
+            <th class="col-xs-2"></th>
+            <th class="col-xs-2"></th>
+            <th class="col-xs-2">Кол-во</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <th scope="row" class="col-xs-1">A273</th>
+            <td class="col-xs-3">Кол-во НА в кредит</td>
+            <td class="col-xs-2">
+            </td>
+            <td class="col-xs-2">
+            </td>
+            <td class="col-xs-2">
+            </td>
+            <td class="col-xs-2">
+                <my-input type="number" model="model.tabNewCars.statisticsNewCarsQuantityOnCredit.fourth"
+                          on-blur="autoSaving"></my-input>
+            </td>
+        </tr>
+        <tr>
+            <th scope="row" class="col-xs-1">A275</th>
+            <td class="col-xs-3">Кол-во полностью оплаченных а/м на складе</td>
+            <td class="col-xs-2">
+            </td>
+            <td class="col-xs-2">
+            </td>
+            <td class="col-xs-2">
+            </td>
+            <td class="col-xs-2">
+                <my-input type="number" model="model.tabNewCars.statisticsFullyPaidCarsQuantityInStock.fourth"
+                          on-blur="autoSaving"></my-input>
+            </td>
+        </tr>
+        <tr>
+            <th scope="row" class="col-xs-1">A276</th>
+            <td class="col-xs-3">Кол-во неоплач. а/м на складе</td>
+            <td class="col-xs-2">
+            </td>
+            <td class="col-xs-2">
+            </td>
+            <td class="col-xs-2">
+            </td>
+            <td class="col-xs-2">
+                <my-input type="number" model="model.tabNewCars.statisticsUnpaidCarsQuantityInStock.fourth"
+                          on-blur="autoSaving"></my-input>
+            </td>
+        </tr>
+    </table>
+</div>
+
+<div class="table-responsive">
+    <table class="table table-hover table-bordered table-condensed">
+        <thead>
+        <tr>
+            <th colspan="2" class="col-xs-4"></th>
+            <th class="col-xs-2"></th>
+            <th class="col-xs-2"></th>
+            <th class="col-xs-2"></th>
+            <th class="col-xs-2">Всего</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <th scope="row" class="col-xs-1">A277</th>
+            <td class="col-xs-3">Кол-во а/м выставленных в шоу-руме</td>
+            <td class="col-xs-2">
+            </td>
+            <td class="col-xs-2">
+            </td>
+            <td class="col-xs-2">
+            </td>
+            <td class="col-xs-2">
+                <my-input type="number" model="model.tabNewCars.statisticsCarsQuantityInShowroom.fourth"
+                          on-blur="autoSaving"></my-input>
+            </td>
+        </tr>
+        <tr>
+            <th scope="row" class="col-xs-1">A278</th>
+            <td class="col-xs-3">Кол-во а/м для тест-драйва</td>
+            <td class="col-xs-2">
+            </td>
+            <td class="col-xs-2">
+            </td>
+            <td class="col-xs-2">
+            </td>
+            <td class="col-xs-2">
+                <my-input type="number" model="model.tabNewCars.statisticsCarsQuantityForTestDrive.fourth"
+                          on-blur="autoSaving"></my-input>
+            </td>
+        </tr>
+        <tr>
+            <th scope="row" class="col-xs-1">A279</th>
+            <td class="col-xs-3">Продано расширенных гарантийных обязательств</td>
+            <td class="col-xs-2">
+            </td>
+            <td class="col-xs-2">
+            </td>
+            <td class="col-xs-2">
+            </td>
+            <td class="col-xs-2">
+                <my-input type="number" model="model.tabNewCars.statisticsSoldExtendedGuaranteeQuantity.fourth"
+                          on-blur="autoSaving"></my-input>
+            </td>
+        </tr>
+        <tr>
+            <th scope="row" class="col-xs-1">A280</th>
+            <td class="col-xs-3">Площадь шоурума (м2)</td>
+            <td class="col-xs-2">
+            </td>
+            <td class="col-xs-2">
+            </td>
+            <td class="col-xs-2">
+            </td>
+            <td class="col-xs-2">
+                <my-input type="number" model="model.tabNewCars.statisticsShowroomArea.fourth"
+                          on-blur="autoSaving"></my-input>
+            </td>
+        </tr>
+    </table>
+</div>
+
+
+
