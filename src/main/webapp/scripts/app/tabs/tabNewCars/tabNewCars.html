@@ -1232,210 +1232,231 @@
     </my-foot>
 </my-table>
 
-<div class="table-responsive">
-<table class="table table-hover table-bordered table-condensed">
-<thead>
-<tr>
-    <th colspan="2" class="col-xs-4">Расходы по отделу</th>
-    <th class="col-xs-2"></th>
-    <th class="col-xs-2"></th>
-    <th class="col-xs-2"></th>
-    <th class="col-xs-2">Сумма</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-    <th scope="row" class="col-xs-1">A231</th>
-    <td class="col-xs-3">Зарплата непродуктивного персонала</td>
-    <td class="col-xs-2">
-    </td>
-    <td class="col-xs-2">
-    </td>
-    <td class="col-xs-2">
-    </td>
-    <td class="col-xs-2">
-        <my-input type="number" addon="glyphicon-ruble"
-                  model="model.tabNewCars.departmentChargesNonproductiveStaffSalary.fourth"
-                  on-blur="autoSaving"></my-input>
-    </td>
-</tr>
-<tr>
-    <th scope="row" class="col-xs-1">A232</th>
-    <td class="col-xs-3">Налоги на з/п</td>
-    <td class="col-xs-2">
-    </td>
-    <td class="col-xs-2">
-    </td>
-    <td class="col-xs-2">
-    </td>
-    <td class="col-xs-2">
-        <my-input type="number" addon="glyphicon-ruble" model="model.tabNewCars.departmentChargesSalaryTax.fourth"
-                  on-blur="autoSaving"></my-input>
-    </td>
-</tr>
-<tr>
-    <th scope="row" class="col-xs-1">A233</th>
-    <td class="col-xs-3">Другие расходы на персонал</td>
-    <td class="col-xs-2">
-    </td>
-    <td class="col-xs-2">
-    </td>
-    <td class="col-xs-2">
-    </td>
-    <td class="col-xs-2">
-        <my-input type="number" addon="glyphicon-ruble"
-                  model="model.tabNewCars.departmentChargesOtherChargesOnStaff.fourth"
-                  on-blur="autoSaving"></my-input>
-    </td>
-</tr>
-<tr>
-    <th scope="row" class="col-xs-1">A234</th>
-    <td class="col-xs-3">Обучение</td>
-    <td class="col-xs-2">
-    </td>
-    <td class="col-xs-2">
-    </td>
-    <td class="col-xs-2">
-    </td>
-    <td class="col-xs-2">
-        <my-input type="number" addon="glyphicon-ruble" model="model.tabNewCars.departmentChargesEducation.fourth"
-                  on-blur="autoSaving"></my-input>
-    </td>
-</tr>
-<tr>
-    <th scope="row" class="col-xs-1">A240</th>
-    <td class="col-xs-3">Итого расходы на адм. персонал отд. Продаж</td>
-    <td class="col-xs-2">
-    </td>
-    <td class="col-xs-2">
-    </td>
-    <td class="col-xs-2">
-    </td>
-    <td class="col-xs-2">
-        <my-input type="number" addon="glyphicon-ruble" disabled="true"
-                  model="model.tabNewCars.departmentChargesTotalAdministrationCharges.fourth"
-                  value="{{model.tabNewCars.departmentChargesTotalAdministrationCharges.fourth =
+<my-table>
+<my-head>
+    <my-row>
+        <my-cell cell-size="4"
+                 colspan="2"
+                 text="Расходы по отделу"></my-cell>
+        <my-cell></my-cell>
+        <my-cell></my-cell>
+        <my-cell></my-cell>
+        <my-cell text="Сумма"></my-cell>
+    </my-row>
+</my-head>
+<my-body>
+    <my-row>
+        <my-cell cell-size="1"
+                 text="A231">
+        </my-cell>
+        <my-cell cell-size="3"
+                 text="Зарплата непродуктивного персонала">
+        </my-cell>
+        <my-cell></my-cell>
+        <my-cell></my-cell>
+        <my-cell></my-cell>
+        <my-cell type="ruble"
+                 model="model.tabNewCars.departmentChargesNonproductiveStaffSalary.fourth"
+                 on-blur="autoSaving">
+        </my-cell>
+    </my-row>
+
+    <my-row>
+        <my-cell cell-size="1"
+                 text="A232">
+        </my-cell>
+        <my-cell cell-size="3"
+                 text="Налоги на з/п">
+        </my-cell>
+        <my-cell></my-cell>
+        <my-cell></my-cell>
+        <my-cell></my-cell>
+        <my-cell type="ruble"
+                 model="model.tabNewCars.departmentChargesSalaryTax.fourth"
+                 on-blur="autoSaving">
+        </my-cell>
+    </my-row>
+
+    <my-row>
+        <my-cell cell-size="1"
+                 text="A233">
+        </my-cell>
+        <my-cell cell-size="3"
+                 text="Другие расходы на персонал">
+        </my-cell>
+        <my-cell></my-cell>
+        <my-cell></my-cell>
+        <my-cell></my-cell>
+        <my-cell type="ruble"
+                 model="model.tabNewCars.departmentChargesOtherChargesOnStaff.fourth"
+                 on-blur="autoSaving">
+        </my-cell>
+    </my-row>
+
+    <my-row>
+        <my-cell cell-size="1"
+                 text="A234">
+        </my-cell>
+        <my-cell cell-size="3"
+                 text="Обучение">
+        </my-cell>
+        <my-cell></my-cell>
+        <my-cell></my-cell>
+        <my-cell></my-cell>
+        <my-cell type="ruble"
+                 model="model.tabNewCars.departmentChargesEducation.fourth"
+                 on-blur="autoSaving">
+        </my-cell>
+    </my-row>
+
+    <my-row>
+        <my-cell cell-size="1"
+                 text="A240">
+        </my-cell>
+        <my-cell cell-size="3"
+                 text="Итого расходы на адм. персонал отд. Продаж">
+        </my-cell>
+        <my-cell></my-cell>
+        <my-cell></my-cell>
+        <my-cell></my-cell>
+        <my-cell type="ruble"
+                 model="model.tabNewCars.departmentChargesTotalAdministrationCharges.fourth"
+                 disabled="true"
+                 value="{{model.tabNewCars.departmentChargesTotalAdministrationCharges.fourth =
                           model.tabNewCars.departmentChargesNonproductiveStaffSalary.fourth +
                           model.tabNewCars.departmentChargesSalaryTax.fourth +
                           model.tabNewCars.departmentChargesOtherChargesOnStaff.fourth +
-                          model.tabNewCars.departmentChargesEducation.fourth}}"></my-input>
-    </td>
-</tr>
-<tr>
-    <th scope="row" class="col-xs-1">A241</th>
-    <td class="col-xs-3">Реклама на новые а/м</td>
-    <td class="col-xs-2">
-    </td>
-    <td class="col-xs-2">
-    </td>
-    <td class="col-xs-2">
-    </td>
-    <td class="col-xs-2">
-        <my-input type="number" addon="glyphicon-ruble"
-                  model="model.tabNewCars.departmentChargesAdvertisingNewCars.fourth"
-                  on-blur="autoSaving"></my-input>
-    </td>
-</tr>
-<tr>
-    <th scope="row" class="col-xs-1">A242</th>
-    <td class="col-xs-3">Амортизация</td>
-    <td class="col-xs-2">
-    </td>
-    <td class="col-xs-2">
-    </td>
-    <td class="col-xs-2">
-    </td>
-    <td class="col-xs-2">
-        <my-input type="number" addon="glyphicon-ruble" model="model.tabNewCars.departmentChargesAmortization.fourth"
-                  on-blur="autoSaving"></my-input>
-    </td>
-</tr>
-<tr>
-    <th scope="row" class="col-xs-1">A243</th>
-    <td class="col-xs-3">Расходы на а/м компании</td>
-    <td class="col-xs-2">
-    </td>
-    <td class="col-xs-2">
-    </td>
-    <td class="col-xs-2">
-    </td>
-    <td class="col-xs-2">
-        <my-input type="number" addon="glyphicon-ruble"
-                  model="model.tabNewCars.departmentChargesCompanyCarsCharges.fourth"
-                  on-blur="autoSaving"></my-input>
-    </td>
-</tr>
-<tr>
-    <th scope="row" class="col-xs-1">A244</th>
-    <td class="col-xs-3">Консигнация</td>
-    <td class="col-xs-2">
-    </td>
-    <td class="col-xs-2">
-    </td>
-    <td class="col-xs-2">
-    </td>
-    <td class="col-xs-2">
-        <my-input type="number" addon="glyphicon-ruble" model="model.tabNewCars.departmentChargesConsignment.fourth"
-                  on-blur="autoSaving"></my-input>
-    </td>
-</tr>
-<tr>
-    <th scope="row" class="col-xs-1">A245</th>
-    <td class="col-xs-3">Выплата % по складу (Пени)</td>
-    <td class="col-xs-2">
-    </td>
-    <td class="col-xs-2">
-    </td>
-    <td class="col-xs-2">
-    </td>
-    <td class="col-xs-2">
-        <my-input type="number" addon="glyphicon-ruble"
-                  model="model.tabNewCars.departmentChargesPayingInterestByStockPenaltyFee.fourth"
-                  on-blur="autoSaving"></my-input>
-    </td>
-</tr>
-<tr>
-    <th scope="row" class="col-xs-1">A246</th>
-    <td class="col-xs-3">Выплата % по складу (Банк)</td>
-    <td class="col-xs-2">
-    </td>
-    <td class="col-xs-2">
-    </td>
-    <td class="col-xs-2">
-    </td>
-    <td class="col-xs-2">
-        <my-input type="number" addon="glyphicon-ruble"
-                  model="model.tabNewCars.departmentChargesPayingInterestByStockBank.fourth"
-                  on-blur="autoSaving"></my-input>
-    </td>
-</tr>
-<tr>
-    <th scope="row" class="col-xs-1">A247</th>
-    <td class="col-xs-3">Другие расходы</td>
-    <td class="col-xs-2">
-    </td>
-    <td class="col-xs-2">
-    </td>
-    <td class="col-xs-2">
-    </td>
-    <td class="col-xs-2">
-        <my-input type="number" addon="glyphicon-ruble" model="model.tabNewCars.departmentChargesOtherCharges.fourth"
-                  on-blur="autoSaving"></my-input>
-    </td>
-</tr>
-<tr>
-    <th scope="row" class="col-xs-1">A250</th>
-    <td class="col-xs-3">Всего расходов по отделу</td>
-    <td class="col-xs-2">
-    </td>
-    <td class="col-xs-2">
-    </td>
-    <td class="col-xs-2">
-    </td>
-    <td class="col-xs-2">
-        <my-input type="number" addon="glyphicon-ruble"
-                  model="model.tabNewCars.departmentChargesTotalDepartmentCharges.fourth"
-                  value="{{model.tabNewCars.departmentChargesTotalDepartmentCharges.fourth =
+                          model.tabNewCars.departmentChargesEducation.fourth}}">
+        </my-cell>
+    </my-row>
+
+    <my-row>
+        <my-cell cell-size="1"
+                 text="A241">
+        </my-cell>
+        <my-cell cell-size="3"
+                 text="Реклама на новые а/м">
+        </my-cell>
+        <my-cell></my-cell>
+        <my-cell></my-cell>
+        <my-cell></my-cell>
+        <my-cell type="ruble"
+                 model="model.tabNewCars.departmentChargesAdvertisingNewCars.fourth"
+                 on-blur="autoSaving">
+        </my-cell>
+    </my-row>
+
+    <my-row>
+        <my-cell cell-size="1"
+                 text="A242">
+        </my-cell>
+        <my-cell cell-size="3"
+                 text="Амортизация">
+        </my-cell>
+        <my-cell></my-cell>
+        <my-cell></my-cell>
+        <my-cell></my-cell>
+        <my-cell type="ruble"
+                 model="model.tabNewCars.departmentChargesAmortization.fourth"
+                 on-blur="autoSaving">
+        </my-cell>
+    </my-row>
+
+    <my-row>
+        <my-cell cell-size="1"
+                 text="A243">
+        </my-cell>
+        <my-cell cell-size="3"
+                 text="Расходы на а/м компании">
+        </my-cell>
+        <my-cell></my-cell>
+        <my-cell></my-cell>
+        <my-cell></my-cell>
+        <my-cell type="ruble"
+                 model="model.tabNewCars.departmentChargesCompanyCarsCharges.fourth"
+                 on-blur="autoSaving">
+        </my-cell>
+    </my-row>
+
+    <my-row>
+        <my-cell cell-size="1"
+                 text="A244">
+        </my-cell>
+        <my-cell cell-size="3"
+                 text="Консигнация">
+        </my-cell>
+        <my-cell></my-cell>
+        <my-cell></my-cell>
+        <my-cell></my-cell>
+        <my-cell type="ruble"
+                 model="model.tabNewCars.departmentChargesConsignment.fourth"
+                 on-blur="autoSaving">
+        </my-cell>
+    </my-row>
+
+    <my-row>
+        <my-cell cell-size="1"
+                 text="A245">
+        </my-cell>
+        <my-cell cell-size="3"
+                 text="Выплата % по складу (Пени)">
+        </my-cell>
+        <my-cell></my-cell>
+        <my-cell></my-cell>
+        <my-cell></my-cell>
+        <my-cell type="ruble"
+                 model="model.tabNewCars.departmentChargesPayingInterestByStockPenaltyFee.fourth"
+                 on-blur="autoSaving">
+        </my-cell>
+    </my-row>
+
+    <my-row>
+        <my-cell cell-size="1"
+                 text="A246">
+        </my-cell>
+        <my-cell cell-size="3"
+                 text="Выплата % по складу (Банк)">
+        </my-cell>
+        <my-cell></my-cell>
+        <my-cell></my-cell>
+        <my-cell></my-cell>
+        <my-cell type="ruble"
+                 model="model.tabNewCars.departmentChargesPayingInterestByStockBank.fourth"
+                 on-blur="autoSaving">
+        </my-cell>
+    </my-row>
+
+    <my-row>
+        <my-cell cell-size="1"
+                 text="A247">
+        </my-cell>
+        <my-cell cell-size="3"
+                 text="Другие расходы">
+        </my-cell>
+        <my-cell></my-cell>
+        <my-cell></my-cell>
+        <my-cell></my-cell>
+        <my-cell type="ruble"
+                 model="model.tabNewCars.departmentChargesOtherCharges.fourth"
+                 on-blur="autoSaving">
+        </my-cell>
+    </my-row>
+</my-body>
+<my-foot>
+    <my-row>
+        <my-cell cell-size="1"
+                 text="A250">
+        </my-cell>
+        <my-cell cell-size="3"
+                 text="Всего расходов по отделу">
+        </my-cell>
+        <my-cell></my-cell>
+        <my-cell></my-cell>
+        <my-cell></my-cell>
+        <my-cell type="ruble"
+                 model="model.tabNewCars.departmentChargesTotalDepartmentCharges.fourth"
+                 disabled="true"
+                 value="{{model.tabNewCars.departmentChargesTotalDepartmentCharges.fourth =
                           model.tabNewCars.departmentChargesTotalAdministrationCharges.fourth +
                           model.tabNewCars.departmentChargesAdvertisingNewCars.fourth +
                           model.tabNewCars.departmentChargesAmortization.fourth +
@@ -1443,34 +1464,35 @@
                           model.tabNewCars.departmentChargesConsignment.fourth +
                           model.tabNewCars.departmentChargesPayingInterestByStockPenaltyFee.fourth +
                           model.tabNewCars.departmentChargesPayingInterestByStockBank.fourth +
-                          model.tabNewCars.departmentChargesOtherCharges.fourth}}"></my-input>
-    </td>
-</tr>
-</table>
-</div>
+                          model.tabNewCars.departmentChargesOtherCharges.fourth}}">
+        </my-cell>
+    </my-row>
+</my-foot>
+</my-table>
 
-<div class="table-responsive">
-    <table class="table table-hover table-bordered table-condensed">
-        <tbody>
-        <tr>
-            <th scope="row" class="col-xs-1">A270</th>
-            <td class="col-xs-3">Прибыль по отделу</td>
-            <td class="col-xs-2">
-            </td>
-            <td class="col-xs-2">
-            </td>
-            <td class="col-xs-2">
-            </td>
-            <td class="col-xs-2">
-                <!-- TODO -->
-                <my-input type="number" addon="glyphicon-ruble" disabled="true"
-                          model="model.tabNewCars.departmentChargesTotalDepartmentIncoming.fourth"
-                          value="{{model.tabNewCars.departmentChargesTotalDepartmentIncoming.fourth =
-                          0}}"></my-input>
-            </td>
-        </tr>
-    </table>
-</div>
+<my-table>
+    <my-foot>
+        <my-row>
+            <my-cell cell-size="1"
+                     text="A270">
+            </my-cell>
+            <my-cell cell-size="3"
+                     text="Прибыль по отделу">
+            </my-cell>
+            <my-cell></my-cell>
+            <my-cell></my-cell>
+            <my-cell></my-cell>
+            <!--TODO-->
+            <my-cell type="ruble"
+                     model="model.tabNewCars.departmentChargesTotalDepartmentIncoming.fourth"
+                     disabled="true"
+                     value="{{model.tabNewCars.departmentChargesTotalDepartmentIncoming.fourth =
+                          0}}">
+            </my-cell>
+        </my-row>
+    </my-foot>
+</my-table>
+
 
 <div class="table-responsive">
     <table class="table table-hover table-bordered table-condensed">
