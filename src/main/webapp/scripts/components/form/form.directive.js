@@ -55,7 +55,7 @@ angular.module('volvoApp')
                 placeholder: '@',
                 pattern: '@',
                 disabled: '=',
-                isRub: '=',
+                addon: '=',
                 onBlur: '=',
                 value: '@'
             },
@@ -72,10 +72,13 @@ angular.module('volvoApp')
                 if (tAttrs.type === "number") {
                     $input.attr('number-only', true);
                 }
+                if (tAttrs.addon) {
+                    $input.parent().find('span').attr('class', 'input-group-addon ' + tAttrs.addon);
+                }
             },
             template: '<div class="input-group input-group-sm">' +
                       '<input value="value" class="form-control text-right" aria-describedby="sizing-addon3" ng-model="model" ng-blur="onBlur()" ng-required=required ng-disabled="disabled">' +
-                      '<span ng-show="isRub" class="input-group-addon glyphicon-ruble"></span>' +
+                      '<span></span>' +
                       '</div>'
         };
     }).directive('mySelect', function () {
