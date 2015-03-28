@@ -779,254 +779,299 @@
     </my-foot>
 </my-table>
 
-<div class="table-responsive">
-<table class="table table-hover table-bordered table-condensed">
-<thead>
-<tr>
-    <th colspan="2" class="col-xs-4">Прочие доходы</th>
-    <th class="col-xs-2"></th>
-    <th class="col-xs-2"></th>
-    <th class="col-xs-2"></th>
-    <th class="col-xs-2">ВП</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-    <th scope="row" class="col-xs-1">A161</th>
-    <td class="col-xs-3">Доход от кредитования (Программа Вольво) - новые а/м</td>
-    <td class="col-xs-2">
-    </td>
-    <td class="col-xs-2">
-    </td>
-    <td class="col-xs-2">
-    </td>
-    <td class="col-xs-2">
-        <my-input type="number" addon="glyphicon-ruble"
-                  model="model.tabNewCars.otherIncomingVolvoCreditingIncoming.fourth"
-                  on-blur="autoSaving"></my-input>
-    </td>
-</tr>
-<tr>
-    <th scope="row" class="col-xs-1">A162</th>
-    <td class="col-xs-3">Доход от страхования (Программа Вольво) - новые а/м</td>
-    <td class="col-xs-2">
-    </td>
-    <td class="col-xs-2">
-    </td>
-    <td class="col-xs-2">
-    </td>
-    <td class="col-xs-2">
-        <my-input type="number" addon="glyphicon-ruble"
-                  model="model.tabNewCars.otherIncomingVolvoInsuranceIncoming.fourth"
-                  on-blur="autoSaving"></my-input>
-    </td>
-</tr>
-<tr>
-    <th scope="row" class="col-xs-1">A163</th>
-    <td class="col-xs-3">Доход от кредитования - новые а/м</td>
-    <td class="col-xs-2">
-    </td>
-    <td class="col-xs-2">
-    </td>
-    <td class="col-xs-2">
-    </td>
-    <td class="col-xs-2">
-        <my-input type="number" addon="glyphicon-ruble" model="model.tabNewCars.otherIncomingCreditingIncoming.fourth"
-                  on-blur="autoSaving"></my-input>
-    </td>
-</tr>
-<tr>
-    <th scope="row" class="col-xs-1">A164</th>
-    <td class="col-xs-3">Доход от страхования - новые а/м</td>
-    <td class="col-xs-2">
-    </td>
-    <td class="col-xs-2">
-    </td>
-    <td class="col-xs-2">
-    </td>
-    <td class="col-xs-2">
-        <my-input type="number" addon="glyphicon-ruble" model="model.tabNewCars.otherIncomingInsuranceIncoming.fourth"
-                  on-blur="autoSaving"></my-input>
-    </td>
-</tr>
-<tr>
-    <th scope="row" class="col-xs-1">A165</th>
-    <td class="col-xs-3">Авизо (начисленные)</td>
-    <td class="col-xs-2">
-    </td>
-    <td class="col-xs-2">
-    </td>
-    <td class="col-xs-2">
-    </td>
-    <td class="col-xs-2">
-        <my-input type="number" addon="glyphicon-ruble" model="model.tabNewCars.otherIncomingAccrualAviso.fourth"
-                  on-blur="autoSaving"></my-input>
-    </td>
-</tr>
-<tr>
-    <th scope="row" class="col-xs-1">A166</th>
-    <td class="col-xs-3">Авизо (полученные)</td>
-    <td class="col-xs-2">
-    </td>
-    <td class="col-xs-2">
-    </td>
-    <td class="col-xs-2">
-    </td>
-    <td class="col-xs-2">
-        <my-input type="number" addon="glyphicon-ruble" model="model.tabNewCars.otherIncomingDerivedAviso.fourth"
-                  on-blur="autoSaving"></my-input>
-    </td>
-</tr>
-<tr>
-    <th scope="row" class="col-xs-1">A169</th>
-    <td class="col-xs-3">Предпродажн. подготовка</td>
-    <td class="col-xs-2">
-    </td>
-    <td class="col-xs-2">
-        <my-input type="number" addon="glyphicon-ruble" model="model.tabNewCars.otherIncomingPreSalePreparation.second"
-                  on-blur="autoSaving"></my-input>
-    </td>
-    <td class="col-xs-2">
-        <my-input type="number" addon="glyphicon-ruble" model="model.tabNewCars.otherIncomingPreSalePreparation.third"
-                  on-blur="autoSaving"></my-input>
-    </td>
-    <td class="col-xs-2">
-        <my-input type="number" addon="glyphicon-ruble" disabled="true"
-                  model="model.tabNewCars.otherIncomingPreSalePreparation.fourth"
-                  value="{{model.tabNewCars.otherIncomingPreSalePreparation.fourth =
-                          model.tabNewCars.otherIncomingPreSalePreparation.second - model.tabNewCars.otherIncomingPreSalePreparation.third}}"></my-input>
-    </td>
-</tr>
-<tr>
-    <th scope="row" class="col-xs-1">A170</th>
-    <td class="col-xs-3">Продажа расширенной гарантии</td>
-    <td class="col-xs-2">
-    </td>
-    <td class="col-xs-2">
-        <my-input type="number" addon="glyphicon-ruble"
-                  model="model.tabNewCars.otherIncomingExtendedGuaranteeSale.second"
-                  on-blur="autoSaving"></my-input>
-    </td>
-    <td class="col-xs-2">
-        <my-input type="number" addon="glyphicon-ruble"
-                  model="model.tabNewCars.otherIncomingExtendedGuaranteeSale.third"
-                  on-blur="autoSaving"></my-input>
-    </td>
-    <td class="col-xs-2">
-        <my-input type="number" addon="glyphicon-ruble" disabled="true"
-                  model="model.tabNewCars.otherIncomingExtendedGuaranteeSale.fourth"
-                  value="{{model.tabNewCars.otherIncomingExtendedGuaranteeSale.fourth =
-                          model.tabNewCars.otherIncomingExtendedGuaranteeSale.second - model.tabNewCars.otherIncomingExtendedGuaranteeSale.third}}"></my-input>
-    </td>
-</tr>
-<tr>
-    <th scope="row" class="col-xs-1">A171</th>
-    <td class="col-xs-3">Другие доходы/расходы</td>
-    <td class="col-xs-2">
-    </td>
-    <td class="col-xs-2">
-        <my-input type="number" addon="glyphicon-ruble"
-                  model="model.tabNewCars.otherIncomingOtherIncomingCharges.second"
-                  on-blur="autoSaving"></my-input>
-    </td>
-    <td class="col-xs-2">
-        <my-input type="number" addon="glyphicon-ruble" model="model.tabNewCars.otherIncomingOtherIncomingCharges.third"
-                  on-blur="autoSaving"></my-input>
-    </td>
-    <td class="col-xs-2">
-        <my-input type="number" addon="glyphicon-ruble" disabled="true"
-                  model="model.tabNewCars.otherIncomingOtherIncomingCharges.fourth"
-                  value="{{model.tabNewCars.otherIncomingOtherIncomingCharges.fourth =
-                          model.tabNewCars.otherIncomingOtherIncomingCharges.second - model.tabNewCars.otherIncomingOtherIncomingCharges.third}}"></my-input>
-    </td>
-</tr>
-<tr>
-    <th scope="row" class="col-xs-1">A172</th>
-    <td class="col-xs-3">Аксессуары</td>
-    <td class="col-xs-2">
-    </td>
-    <td class="col-xs-2">
-        <my-input type="number" addon="glyphicon-ruble" model="model.tabNewCars.otherIncomingAccessories.second"
-                  on-blur="autoSaving"></my-input>
-    </td>
-    <td class="col-xs-2">
-        <my-input type="number" addon="glyphicon-ruble" model="model.tabNewCars.otherIncomingAccessories.third"
-                  on-blur="autoSaving"></my-input>
-    </td>
-    <td class="col-xs-2">
-        <my-input type="number" addon="glyphicon-ruble" disabled="true"
-                  model="model.tabNewCars.otherIncomingAccessories.fourth"
-                  value="{{model.tabNewCars.otherIncomingAccessories.fourth =
-                          model.tabNewCars.otherIncomingAccessories.second - model.tabNewCars.otherIncomingAccessories.third}}"></my-input>
-    </td>
-</tr>
-</tbody>
-<tfoot>
-<tr>
-    <th scope="row" class="col-xs-1">A180</th>
-    <th class="col-xs-3">Итого прочие доходы</th>
-    <th class="col-xs-2">
-    </th>
-    <th class="col-xs-2">
-        <my-input type="number" addon="glyphicon-ruble" disabled="true"
-                  model="model.tabNewCars.otherIncomingTotal.second"
-                  value="{{model.tabNewCars.otherIncomingTotal.second=
-            model.tabNewCars.otherIncomingPreSalePreparation.second+
-            model.tabNewCars.otherIncomingExtendedGuaranteeSale.second+
-            model.tabNewCars.otherIncomingOtherIncomingCharges.second+
-            model.tabNewCars.otherIncomingAccessories.second}}"></my-input>
-    </th>
-    <th class="col-xs-2">
-        <my-input type="number" addon="glyphicon-ruble" disabled="true"
-                  model="model.tabNewCars.otherIncomingTotal.third"
-                  value="{{model.tabNewCars.otherIncomingTotal.third=
-            model.tabNewCars.otherIncomingPreSalePreparation.third+
-            model.tabNewCars.otherIncomingExtendedGuaranteeSale.third+
-            model.tabNewCars.otherIncomingOtherIncomingCharges.third+
-            model.tabNewCars.otherIncomingAccessories.third}}"></my-input>
-    </th>
-    <th class="col-xs-2">
-        <!-- TODO -->
-        <my-input type="number" addon="glyphicon-ruble" disabled="true"
-                  model="model.tabNewCars.otherIncomingTotal.fourth"
-                  value="{{model.tabNewCars.otherIncomingTotal.fourth=0}}"></my-input>
-    </th>
-</tr>
-</tfoot>
-</table>
-</div>
+<my-table>
+    <my-head>
+        <my-row>
+            <my-cell cell-size="4"
+                     colspan="2"
+                     text="Прочие доходы"></my-cell>
+            <my-cell></my-cell>
+            <my-cell></my-cell>
+            <my-cell></my-cell>
+            <my-cell text="ВП"></my-cell>
+        </my-row>
+    </my-head>
+    <my-body>
+        <my-row>
+            <my-cell cell-size="1"
+                     text="A161">
+            </my-cell>
+            <my-cell cell-size="3"
+                     text="Доход от кредитования (Программа Вольво) - новые а/м">
+            </my-cell>
+            <my-cell></my-cell>
+            <my-cell></my-cell>
+            <my-cell></my-cell>
+            <my-cell type="ruble"
+                     model="model.tabNewCars.otherIncomingVolvoCreditingIncoming.fourth"
+                     on-blur="autoSaving">
+            </my-cell>
+        </my-row>
 
-<div class="table-responsive">
-    <table class="table table-hover table-bordered table-condensed">
-        <tbody>
-        <tr>
-            <th scope="row" class="col-xs-1">A200</th>
-            <td class="col-xs-3">Валовая Прибыль отдела продаж новых а/м</td>
-            <td class="col-xs-2">
-                <my-input type="number" disabled="true" model="model.tabNewCars.grossProfitNewCarsDepartment.first"
-                          value="{{model.tabNewCars.grossProfitNewCarsDepartment.first=model.tabNewCars.newVolvoTotal.first}}"></my-input>
-            </td>
-            <td class="col-xs-2">
-                <my-input type="number" addon="glyphicon-ruble" disabled="true"
-                          model="model.tabNewCars.grossProfitNewCarsDepartment.second"
-                          value="{{model.tabNewCars.grossProfitNewCarsDepartment.second =
-                          model.tabNewCars.newVolvoTotal.second + model.tabNewCars.otherIncomingTotal.second}}"></my-input>
-            </td>
-            <td class="col-xs-2">
-                <my-input type="number" addon="glyphicon-ruble" disabled="true"
-                          model="model.tabNewCars.grossProfitNewCarsDepartment.third"
-                          value="{{model.tabNewCars.grossProfitNewCarsDepartment.third =
-                          model.tabNewCars.newVolvoTotal.third + model.tabNewCars.otherIncomingTotal.third}}"></my-input>
-            </td>
-            <td class="col-xs-2">
-                <my-input type="number" addon="glyphicon-ruble" disabled="true"
-                          model="model.tabNewCars.grossProfitNewCarsDepartment.fourth"
-                          value="{{model.tabNewCars.grossProfitNewCarsDepartment.fourth =
-                          model.tabNewCars.newVolvoTotal.fourth + model.tabNewCars.otherIncomingTotal.fourth}}"></my-input>
-            </td>
-        </tr>
-    </table>
-</div>
+        <my-row>
+            <my-cell cell-size="1"
+                     text="A162">
+            </my-cell>
+            <my-cell cell-size="3"
+                     text="Доход от страхования (Программа Вольво) - новые а/м">
+            </my-cell>
+            <my-cell></my-cell>
+            <my-cell></my-cell>
+            <my-cell></my-cell>
+            <my-cell type="ruble"
+                     model="model.tabNewCars.otherIncomingVolvoInsuranceIncoming.fourth"
+                     on-blur="autoSaving">
+            </my-cell>
+        </my-row>
+
+        <my-row>
+            <my-cell cell-size="1"
+                     text="A163">
+            </my-cell>
+            <my-cell cell-size="3"
+                     text="Доход от кредитования - новые а/м">
+            </my-cell>
+            <my-cell></my-cell>
+            <my-cell></my-cell>
+            <my-cell></my-cell>
+            <my-cell type="ruble"
+                     model="model.tabNewCars.otherIncomingCreditingIncoming.fourth"
+                     on-blur="autoSaving">
+            </my-cell>
+        </my-row>
+
+        <my-row>
+            <my-cell cell-size="1"
+                     text="A164">
+            </my-cell>
+            <my-cell cell-size="3"
+                     text="Доход от страхования - новые а/м">
+            </my-cell>
+            <my-cell></my-cell>
+            <my-cell></my-cell>
+            <my-cell></my-cell>
+            <my-cell type="ruble"
+                     model="model.tabNewCars.otherIncomingInsuranceIncoming.fourth"
+                     on-blur="autoSaving">
+            </my-cell>
+        </my-row>
+
+        <my-row>
+            <my-cell cell-size="1"
+                     text="A165">
+            </my-cell>
+            <my-cell cell-size="3"
+                     text="Авизо (начисленные)">
+            </my-cell>
+            <my-cell></my-cell>
+            <my-cell></my-cell>
+            <my-cell></my-cell>
+            <my-cell type="ruble"
+                     model="model.tabNewCars.otherIncomingAccrualAviso.fourth"
+                     on-blur="autoSaving">
+            </my-cell>
+        </my-row>
+
+        <my-row>
+            <my-cell cell-size="1"
+                     text="A166">
+            </my-cell>
+            <my-cell cell-size="3"
+                     text="Авизо (полученные)">
+            </my-cell>
+            <my-cell></my-cell>
+            <my-cell></my-cell>
+            <my-cell></my-cell>
+            <my-cell type="ruble"
+                     model="model.tabNewCars.otherIncomingDerivedAviso.fourth"
+                     on-blur="autoSaving">
+            </my-cell>
+        </my-row>
+
+        <my-row>
+            <my-cell cell-size="1"
+                     text="A169">
+            </my-cell>
+            <my-cell cell-size="3"
+                     text="Предпродажн. подготовка">
+            </my-cell>
+            <my-cell></my-cell>
+            <my-cell type="ruble"
+                     model="model.tabNewCars.otherIncomingPreSalePreparation.second"
+                     on-blur="autoSaving">
+
+            </my-cell>
+            <my-cell type="ruble"
+                     model="model.tabNewCars.otherIncomingPreSalePreparation.third"
+                     on-blur="autoSaving">
+            </my-cell>
+            <my-cell type="ruble"
+                     model="model.tabNewCars.otherIncomingPreSalePreparation.fourth"
+                     disabled="true"
+                     value="{{model.tabNewCars.otherIncomingPreSalePreparation.fourth =
+                          model.tabNewCars.otherIncomingPreSalePreparation.second -
+                          model.tabNewCars.otherIncomingPreSalePreparation.third}}">
+            </my-cell>
+        </my-row>
+
+        <my-row>
+            <my-cell cell-size="1"
+                     text="A170">
+            </my-cell>
+            <my-cell cell-size="3"
+                     text="Продажа расширенной гарантии">
+            </my-cell>
+            <my-cell></my-cell>
+            <my-cell type="ruble"
+                     model="model.tabNewCars.otherIncomingExtendedGuaranteeSale.second"
+                     on-blur="autoSaving">
+
+            </my-cell>
+            <my-cell type="ruble"
+                     model="model.tabNewCars.otherIncomingExtendedGuaranteeSale.third"
+                     on-blur="autoSaving">
+            </my-cell>
+            <my-cell type="ruble"
+                     model="model.tabNewCars.otherIncomingExtendedGuaranteeSale.fourth"
+                     disabled="true"
+                     value="{{model.tabNewCars.otherIncomingExtendedGuaranteeSale.fourth =
+                          model.tabNewCars.otherIncomingExtendedGuaranteeSale.second -
+                          model.tabNewCars.otherIncomingExtendedGuaranteeSale.third}}">
+            </my-cell>
+        </my-row>
+
+        <my-row>
+            <my-cell cell-size="1"
+                     text="A171">
+            </my-cell>
+            <my-cell cell-size="3"
+                     text="Другие доходы/расходы">
+            </my-cell>
+            <my-cell></my-cell>
+            <my-cell type="ruble"
+                     model="model.tabNewCars.otherIncomingOtherIncomingCharges.second"
+                     on-blur="autoSaving">
+
+            </my-cell>
+            <my-cell type="ruble"
+                     model="model.tabNewCars.otherIncomingOtherIncomingCharges.third"
+                     on-blur="autoSaving">
+            </my-cell>
+            <my-cell type="ruble"
+                     model="model.tabNewCars.otherIncomingOtherIncomingCharges.fourth"
+                     disabled="true"
+                     value="{{model.tabNewCars.otherIncomingOtherIncomingCharges.fourth =
+                          model.tabNewCars.otherIncomingOtherIncomingCharges.second -
+                          model.tabNewCars.otherIncomingOtherIncomingCharges.third}}">
+            </my-cell>
+        </my-row>
+
+        <my-row>
+            <my-cell cell-size="1"
+                     text="A172">
+            </my-cell>
+            <my-cell cell-size="3"
+                     text="Аксессуары">
+            </my-cell>
+            <my-cell></my-cell>
+            <my-cell type="ruble"
+                     model="model.tabNewCars.otherIncomingAccessories.second"
+                     on-blur="autoSaving">
+
+            </my-cell>
+            <my-cell type="ruble"
+                     model="model.tabNewCars.otherIncomingAccessories.third"
+                     on-blur="autoSaving">
+            </my-cell>
+            <my-cell type="ruble"
+                     model="model.tabNewCars.otherIncomingAccessories.fourth"
+                     disabled="true"
+                     value="{{model.tabNewCars.otherIncomingAccessories.fourth =
+                          model.tabNewCars.otherIncomingAccessories.second -
+                          model.tabNewCars.otherIncomingAccessories.third}}">
+            </my-cell>
+        </my-row>
+    </my-body>
+    <my-foot>
+
+        <my-row>
+            <my-cell cell-size="1"
+                     text="A180">
+            </my-cell>
+            <my-cell cell-size="3"
+                     text="Итого прочие доходы">
+            </my-cell>
+            <my-cell></my-cell>
+            <my-cell type="ruble"
+                     model="model.tabNewCars.otherIncomingTotal.second"
+                     disabled="true"
+                     value="{{model.tabNewCars.otherIncomingTotal.second=
+                            model.tabNewCars.otherIncomingPreSalePreparation.second+
+                            model.tabNewCars.otherIncomingExtendedGuaranteeSale.second+
+                            model.tabNewCars.otherIncomingOtherIncomingCharges.second+
+                            model.tabNewCars.otherIncomingAccessories.second}}">
+            </my-cell>
+            <my-cell type="ruble"
+                     model="model.tabNewCars.otherIncomingTotal.third"
+                     disabled="true"
+                     value="{{model.tabNewCars.otherIncomingTotal.third=
+                            model.tabNewCars.otherIncomingPreSalePreparation.third+
+                            model.tabNewCars.otherIncomingExtendedGuaranteeSale.third+
+                            model.tabNewCars.otherIncomingOtherIncomingCharges.third+
+                            model.tabNewCars.otherIncomingAccessories.third}}">
+            </my-cell>
+            <!-- TODO -->
+            <my-cell type="ruble"
+                     model="model.tabNewCars.otherIncomingTotal.fourth"
+                     disabled="true"
+                     value="{{model.tabNewCars.otherIncomingTotal.fourth=
+                            0}}">
+            </my-cell>
+        </my-row>
+
+
+    </my-foot>
+</my-table>
+
+<my-table>
+    <my-foot>
+        <my-row>
+            <my-cell cell-size="1"
+                     text="A200">
+            </my-cell>
+            <my-cell cell-size="3"
+                     text="Валовая Прибыль отдела продаж новых а/м">
+            </my-cell>
+            <my-cell type="number"
+                     model="model.tabNewCars.grossProfitNewCarsDepartment.first"
+                     disabled="true"
+                     value="{{model.tabNewCars.grossProfitNewCarsDepartment.first=
+                     model.tabNewCars.newVolvoTotal.first}}">
+            </my-cell>
+            <my-cell type="ruble"
+                     model="model.tabNewCars.grossProfitNewCarsDepartment.second"
+                     disabled="true"
+                     value="{{model.tabNewCars.grossProfitNewCarsDepartment.second =
+                          model.tabNewCars.newVolvoTotal.second +
+                          model.tabNewCars.otherIncomingTotal.second}}">
+            </my-cell>
+            <my-cell type="ruble"
+                     model="model.tabNewCars.grossProfitNewCarsDepartment.third"
+                     disabled="true"
+                     value="{{model.tabNewCars.grossProfitNewCarsDepartment.third =
+                          model.tabNewCars.newVolvoTotal.third +
+                          model.tabNewCars.otherIncomingTotal.third}}">
+            </my-cell>
+            <my-cell type="ruble"
+                     model="model.tabNewCars.grossProfitNewCarsDepartment.fourth"
+                     disabled="true"
+                     value="{{model.tabNewCars.grossProfitNewCarsDepartment.fourth =
+                          model.tabNewCars.newVolvoTotal.fourth +
+                          model.tabNewCars.otherIncomingTotal.fourth}}">
+            </my-cell>
+        </my-row>
+    </my-foot>
+</my-table>
 
 <div class="table-responsive">
     <table class="table table-hover table-bordered table-condensed">
