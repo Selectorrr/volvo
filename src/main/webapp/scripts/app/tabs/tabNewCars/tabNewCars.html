@@ -1,330 +1,372 @@
 <h2>Новые автомобили</h2>
 
-<!--<my-table>-->
-<!--<tbody>-->
-<!--<my-row>-->
-<!--<my-cell cell-class="col-xs-1"-->
-<!--type="text"-->
-<!--text="A1">-->
-<!--</my-cell>-->
-<!--<my-cell cell-class="col-xs-1"-->
-<!--type="number"-->
-<!--model="model.tabNewCars.newVolvoRetailC30.first"-->
-<!--addon="glyphicon-ruble">-->
-<!--</my-cell>-->
-<!--<my-cell cell-class="col-xs-1"-->
-<!--type="number"-->
-<!--model="model.tabNewCars.newVolvoRetailC30.fourth"-->
-<!--addon="glyphicon-ruble"-->
-<!--value="{{model.tabNewCars.newVolvoRetailC30.fourth =-->
-<!--model.tabNewCars.newVolvoRetailC30.second - model.tabNewCars.newVolvoRetailC30.third}}">-->
-<!--</my-cell>-->
-<!--</my-row>-->
-<!--</tbody>-->
-<!--</my-table>-->
+<my-table>
+    <my-head>
+        <my-row>
+            <my-cell cell-size="4"
+                     colspan="2"
+                     text="Новые а/м Volvo Розница"></my-cell>
+            <my-cell text="Кол-во"></my-cell>
+            <my-cell text="Выручка"></my-cell>
+            <my-cell text="Себ-ть"></my-cell>
+            <my-cell text="ВП"></my-cell>
+        </my-row>
+    </my-head>
+    <my-body>
+        <my-row>
+            <my-cell cell-size="1"
+                     text="A1">
+            </my-cell>
+            <my-cell cell-size="3"
+                     text="C30">
+            </my-cell>
+            <my-cell type="number"
+                     model="model.tabNewCars.newVolvoRetailC30.first"
+                     on-blur="autoSaving">
+            </my-cell>
+            <my-cell type="ruble"
+                     model="model.tabNewCars.newVolvoRetailC30.second"
+                     on-blur="autoSaving">
+            </my-cell>
+            <my-cell type="ruble"
+                     model="model.tabNewCars.newVolvoRetailC30.third"
+                     on-blur="autoSaving">
+            </my-cell>
+            <my-cell type="ruble"
+                     model="model.tabNewCars.newVolvoRetailC30.fourth"
+                     disabled="true"
+                     value="{{model.tabNewCars.newVolvoRetailC30.fourth =
+                        model.tabNewCars.newVolvoRetailC30.second - model.tabNewCars.newVolvoRetailC30.third}}">
+            </my-cell>
+        </my-row>
 
-<div class="table-responsive">
-<table class="table table-hover table-bordered table-condensed">
-<thead>
-<tr>
-    <th colspan="2" class="col-xs-4">Новые а/м Volvo Розница</th>
-    <th class="col-xs-2">Кол-во</th>
-    <th class="col-xs-2">Выручка</th>
-    <th class="col-xs-2">Себ-ть</th>
-    <th class="col-xs-2">ВП</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-    <th scope="row" class="col-xs-1">A1</th>
-    <td class="col-xs-3">C30</td>
-    <td class="col-xs-2">
-        <my-input type="number" model="model.tabNewCars.newVolvoRetailC30.first"
-                  on-blur="autoSaving"></my-input>
-    </td>
-    <td class="col-xs-2">
-        <my-input type="number" addon="glyphicon-ruble" model="model.tabNewCars.newVolvoRetailC30.second"
-                  on-blur="autoSaving"></my-input>
-    </td>
-    <td class="col-xs-2">
-        <my-input type="number" addon="glyphicon-ruble" model="model.tabNewCars.newVolvoRetailC30.third"
-                  on-blur="autoSaving"></my-input>
-    </td>
-    <td class="col-xs-2">
-        <my-input type="number" addon="glyphicon-ruble" disabled="true"
-                  model="model.tabNewCars.newVolvoRetailC30.fourth"
-                  value="{{model.tabNewCars.newVolvoRetailC30.fourth =
-                          model.tabNewCars.newVolvoRetailC30.second - model.tabNewCars.newVolvoRetailC30.third}}">
-        </my-input>
-    </td>
-</tr>
-<tr>
-    <th scope="row" class="col-xs-1">A2</th>
-    <td class="col-xs-3">S40</td>
-    <td class="col-xs-2">
-        <my-input type="number" model="model.tabNewCars.newVolvoRetailS40.first"
-                  on-blur="autoSaving"></my-input>
-    </td>
-    <td class="col-xs-2">
-        <my-input type="number" addon="glyphicon-ruble" model="model.tabNewCars.newVolvoRetailS40.second"
-                  on-blur="autoSaving"></my-input>
-    </td>
-    <td class="col-xs-2">
-        <my-input type="number" addon="glyphicon-ruble" model="model.tabNewCars.newVolvoRetailS40.third"
-                  on-blur="autoSaving"></my-input>
-    </td>
-    <td class="col-xs-2">
-        <my-input type="number" addon="glyphicon-ruble" disabled="true"
-                  model="model.tabNewCars.newVolvoRetailS40.fourth"
-                  value="{{model.tabNewCars.newVolvoRetailS40.fourth=
-                          model.tabNewCars.newVolvoRetailS40.second - model.tabNewCars.newVolvoRetailS40.third}}"></my-input>
-    </td>
-</tr>
-<tr>
-    <th scope="row" class="col-xs-1">A3</th>
-    <td class="col-xs-3">V40</td>
-    <td class="col-xs-2">
-        <my-input type="number" model="model.tabNewCars.newVolvoRetailV40.first"
-                  on-blur="autoSaving"></my-input>
-    </td>
-    <td class="col-xs-2">
-        <my-input type="number" addon="glyphicon-ruble" model="model.tabNewCars.newVolvoRetailV40.second"
-                  on-blur="autoSaving"></my-input>
-    </td>
-    <td class="col-xs-2">
-        <my-input type="number" addon="glyphicon-ruble" model="model.tabNewCars.newVolvoRetailV40.third"
-                  on-blur="autoSaving"></my-input>
-    </td>
-    <td class="col-xs-2">
-        <my-input type="number" addon="glyphicon-ruble" disabled="true"
-                  model="model.tabNewCars.newVolvoRetailV40.fourth"
-                  value="{{model.tabNewCars.newVolvoRetailV40.fourth =
-                          model.tabNewCars.newVolvoRetailV40.second - model.tabNewCars.newVolvoRetailV40.third}}"></my-input>
-    </td>
-</tr>
-<tr>
-    <th scope="row" class="col-xs-1">A4</th>
-    <td class="col-xs-3">S60</td>
-    <td class="col-xs-2">
-        <my-input type="number" model="model.tabNewCars.newVolvoRetailS60.first"
-                  on-blur="autoSaving"></my-input>
-    </td>
-    <td class="col-xs-2">
-        <my-input type="number" addon="glyphicon-ruble" model="model.tabNewCars.newVolvoRetailS60.second"
-                  on-blur="autoSaving"></my-input>
-    </td>
-    <td class="col-xs-2">
-        <my-input type="number" addon="glyphicon-ruble" model="model.tabNewCars.newVolvoRetailS60.third"
-                  on-blur="autoSaving"></my-input>
-    </td>
-    <td class="col-xs-2">
-        <my-input type="number" addon="glyphicon-ruble" disabled="true"
-                  model="model.tabNewCars.newVolvoRetailS60.fourth"
-                  value="{{model.tabNewCars.newVolvoRetailS60.fourth =
-                          model.tabNewCars.newVolvoRetailS60.second-model.tabNewCars.newVolvoRetailS60.third}}"></my-input>
-    </td>
-</tr>
-<tr>
-    <th scope="row" class="col-xs-1">A5</th>
-    <td class="col-xs-3">XC60</td>
-    <td class="col-xs-2">
-        <my-input type="number" model="model.tabNewCars.newVolvoRetailXc60.first"
-                  on-blur="autoSaving"></my-input>
-    </td>
-    <td class="col-xs-2">
-        <my-input type="number" addon="glyphicon-ruble" model="model.tabNewCars.newVolvoRetailXc60.second"
-                  on-blur="autoSaving"></my-input>
-    </td>
-    <td class="col-xs-2">
-        <my-input type="number" addon="glyphicon-ruble" model="model.tabNewCars.newVolvoRetailXc60.third"
-                  on-blur="autoSaving"></my-input>
-    </td>
-    <td class="col-xs-2">
-        <my-input type="number" addon="glyphicon-ruble" disabled="true"
-                  model="model.tabNewCars.newVolvoRetailXc60.fourth"
-                  value="{{model.tabNewCars.newVolvoRetailXc60.fourth=
-                          model.tabNewCars.newVolvoRetailXc60.second-model.tabNewCars.newVolvoRetailXc60.third}}"></my-input>
-    </td>
-</tr>
-<tr>
-    <th scope="row" class="col-xs-1">A6</th>
-    <td class="col-xs-3">C70</td>
-    <td class="col-xs-2">
-        <my-input type="number" model="model.tabNewCars.newVolvoRetailC70.first"
-                  on-blur="autoSaving"></my-input>
-    </td>
-    <td class="col-xs-2">
-        <my-input type="number" addon="glyphicon-ruble" model="model.tabNewCars.newVolvoRetailC70.second"
-                  on-blur="autoSaving"></my-input>
-    </td>
-    <td class="col-xs-2">
-        <my-input type="number" addon="glyphicon-ruble" model="model.tabNewCars.newVolvoRetailC70.third"
-                  on-blur="autoSaving"></my-input>
-    </td>
-    <td class="col-xs-2">
-        <my-input type="number" addon="glyphicon-ruble" disabled="true"
-                  model="model.tabNewCars.newVolvoRetailC70.fourth"
-                  value="{{model.tabNewCars.newVolvoRetailC70.fourth=
-                          model.tabNewCars.newVolvoRetailC70.second-model.tabNewCars.newVolvoRetailC70.third}}"></my-input>
-    </td>
-</tr>
-<tr>
-    <th scope="row" class="col-xs-1">A8</th>
-    <td class="col-xs-3">XC70</td>
-    <td class="col-xs-2">
-        <my-input type="number" model="model.tabNewCars.newVolvoRetailXc70.first"
-                  on-blur="autoSaving"></my-input>
-    </td>
-    <td class="col-xs-2">
-        <my-input type="number" addon="glyphicon-ruble" model="model.tabNewCars.newVolvoRetailXc70.second"
-                  on-blur="autoSaving"></my-input>
-    </td>
-    <td class="col-xs-2">
-        <my-input type="number" addon="glyphicon-ruble" model="model.tabNewCars.newVolvoRetailXc70.third"
-                  on-blur="autoSaving"></my-input>
-    </td>
-    <td class="col-xs-2">
-        <my-input type="number" addon="glyphicon-ruble" disabled="true"
-                  model="model.tabNewCars.newVolvoRetailXc70.fourth"
-                  value="{{model.tabNewCars.newVolvoRetailXc70.fourth=
-                          model.tabNewCars.newVolvoRetailXc70.second-model.tabNewCars.newVolvoRetailXc70.third}}"></my-input>
-    </td>
-</tr>
-<tr>
-    <th scope="row" class="col-xs-1">A9</th>
-    <td class="col-xs-3">S80</td>
-    <td class="col-xs-2">
-        <my-input type="number" model="model.tabNewCars.newVolvoRetailS80.first"
-                  on-blur="autoSaving"></my-input>
-    </td>
-    <td class="col-xs-2">
-        <my-input type="number" addon="glyphicon-ruble" model="model.tabNewCars.newVolvoRetailS80.second"
-                  on-blur="autoSaving"></my-input>
-    </td>
-    <td class="col-xs-2">
-        <my-input type="number" addon="glyphicon-ruble" model="model.tabNewCars.newVolvoRetailS80.third"
-                  on-blur="autoSaving"></my-input>
-    </td>
-    <td class="col-xs-2">
-        <my-input type="number" addon="glyphicon-ruble" disabled="true"
-                  model="model.tabNewCars.newVolvoRetailS80.fourth"
-                  value="{{model.tabNewCars.newVolvoRetailS80.fourth=
-                          model.tabNewCars.newVolvoRetailS80.second-model.tabNewCars.newVolvoRetailS80.third}}"></my-input>
-    </td>
-</tr>
-<tr>
-    <th scope="row" class="col-xs-1">A10</th>
-    <td class="col-xs-3">XC90</td>
-    <td class="col-xs-2">
-        <my-input type="number" model="model.tabNewCars.newVolvoRetailXc90.first"
-                  on-blur="autoSaving"></my-input>
-    </td>
-    <td class="col-xs-2">
-        <my-input type="number" addon="glyphicon-ruble" model="model.tabNewCars.newVolvoRetailXc90.second"
-                  on-blur="autoSaving"></my-input>
-    </td>
-    <td class="col-xs-2">
-        <my-input type="number" addon="glyphicon-ruble" model="model.tabNewCars.newVolvoRetailXc90.third"
-                  on-blur="autoSaving"></my-input>
-    </td>
-    <td class="col-xs-2">
-        <my-input type="number" addon="glyphicon-ruble" disabled="true"
-                  model="model.tabNewCars.newVolvoRetailXc90.fourth"
-                  value="{{model.tabNewCars.newVolvoRetailXc90.fourth=
-                          model.tabNewCars.newVolvoRetailXc90.second-model.tabNewCars.newVolvoRetailXc90.third}}"></my-input>
-    </td>
-</tr>
-<tr>
-    <th scope="row" class="col-xs-1">A11</th>
-    <td class="col-xs-3">V60</td>
-    <td class="col-xs-2">
-        <my-input type="number" model="model.tabNewCars.newVolvoRetailV60.first"
-                  on-blur="autoSaving"></my-input>
-    </td>
-    <td class="col-xs-2">
-        <my-input type="number" addon="glyphicon-ruble" model="model.tabNewCars.newVolvoRetailV60.second"
-                  on-blur="autoSaving"></my-input>
-    </td>
-    <td class="col-xs-2">
-        <my-input type="number" addon="glyphicon-ruble" model="model.tabNewCars.newVolvoRetailV60.third"
-                  on-blur="autoSaving"></my-input>
-    </td>
-    <td class="col-xs-2">
-        <my-input type="number" addon="glyphicon-ruble" disabled="true"
-                  model="model.tabNewCars.newVolvoRetailV60.fourth"
-                  value="{{model.tabNewCars.newVolvoRetailV60.fourth=
-                          model.tabNewCars.newVolvoRetailV60.second-model.tabNewCars.newVolvoRetailV60.third}}"></my-input>
-    </td>
-</tr>
-</tbody>
-<tfoot>
-<tr>
-    <th scope="row" class="col-xs-1">A20</th>
-    <th class="col-xs-3">Итого Новые а/м Volvo Розница</th>
-    <th class="col-xs-2">
-        <my-input type="number" disabled="true" model="model.tabNewCars.newVolvoRetailTotal.first"
-                  value="{{model.tabNewCars.newVolvoRetailTotal.first=
-            model.tabNewCars.newVolvoRetailC30.first+
-            model.tabNewCars.newVolvoRetailS40.first+
-            model.tabNewCars.newVolvoRetailV40.first+
-            model.tabNewCars.newVolvoRetailS60.first+
-            model.tabNewCars.newVolvoRetailXc60.first+
-            model.tabNewCars.newVolvoRetailC70.first+
-            model.tabNewCars.newVolvoRetailXc70.first+
-            model.tabNewCars.newVolvoRetailS80.first+
-            model.tabNewCars.newVolvoRetailXc90.first+
-            model.tabNewCars.newVolvoRetailV60.first
-                          }}"></my-input>
-    </th>
-    <th class="col-xs-2">
-        <my-input type="number" addon="glyphicon-ruble" disabled="true"
-                  model="model.tabNewCars.newVolvoRetailTotal.second"
-                  value="{{model.tabNewCars.newVolvoRetailTotal.second=
-            model.tabNewCars.newVolvoRetailC30.second+
-            model.tabNewCars.newVolvoRetailS40.second+
-            model.tabNewCars.newVolvoRetailV40.second+
-            model.tabNewCars.newVolvoRetailS60.second+
-            model.tabNewCars.newVolvoRetailXc60.second+
-            model.tabNewCars.newVolvoRetailC70.second+
-            model.tabNewCars.newVolvoRetailXc70.second+
-            model.tabNewCars.newVolvoRetailS80.second+
-            model.tabNewCars.newVolvoRetailXc90.second+
-            model.tabNewCars.newVolvoRetailV60.second}}"></my-input>
-    </th>
-    <th class="col-xs-2">
-        <my-input type="number" addon="glyphicon-ruble" disabled="true"
-                  model="model.tabNewCars.newVolvoRetailTotal.third"
-                  value="{{model.tabNewCars.newVolvoRetailTotal.third=
-            model.tabNewCars.newVolvoRetailC30.third+
-            model.tabNewCars.newVolvoRetailS40.third+
-            model.tabNewCars.newVolvoRetailV40.third+
-            model.tabNewCars.newVolvoRetailS60.third+
-            model.tabNewCars.newVolvoRetailXc60.third+
-            model.tabNewCars.newVolvoRetailC70.third+
-            model.tabNewCars.newVolvoRetailXc70.third+
-            model.tabNewCars.newVolvoRetailS80.third+
-            model.tabNewCars.newVolvoRetailXc90.third+
-            model.tabNewCars.newVolvoRetailV60.third}}"></my-input>
-    </th>
-    <th class="col-xs-2">
-        <my-input type="number" addon="glyphicon-ruble" disabled="true"
-                  model="model.tabNewCars.newVolvoRetailTotal.fourth"
-                  value="{{model.tabNewCars.newVolvoRetailTotal.fourth=
-            model.tabNewCars.newVolvoRetailC30.fourth+
-            model.tabNewCars.newVolvoRetailS40.fourth+
-            model.tabNewCars.newVolvoRetailV40.fourth+
-            model.tabNewCars.newVolvoRetailS60.fourth+
-            model.tabNewCars.newVolvoRetailXc60.fourth+
-            model.tabNewCars.newVolvoRetailC70.fourth+
-            model.tabNewCars.newVolvoRetailXc70.fourth+
-            model.tabNewCars.newVolvoRetailS80.fourth+
-            model.tabNewCars.newVolvoRetailXc90.fourth+
-            model.tabNewCars.newVolvoRetailV60.fourth}}"></my-input>
-    </th>
-</tr>
-</tfoot>
-</table>
-</div>
+        <my-row>
+            <my-cell cell-size="1"
+                     text="A2">
+            </my-cell>
+            <my-cell cell-size="3"
+                     text="S40">
+            </my-cell>
+            <my-cell type="number"
+                     model="model.tabNewCars.newVolvoRetailS40.first"
+                     on-blur="autoSaving">
+            </my-cell>
+            <my-cell type="ruble"
+                     model="model.tabNewCars.newVolvoRetailS40.second"
+                     on-blur="autoSaving">
+            </my-cell>
+            <my-cell type="ruble"
+                     model="model.tabNewCars.newVolvoRetailS40.third"
+                     on-blur="autoSaving">
+            </my-cell>
+            <my-cell type="ruble"
+                     model="model.tabNewCars.newVolvoRetailS40.fourth"
+                     disabled="true"
+                     value="{{model.tabNewCars.newVolvoRetailS40.fourth =
+                        model.tabNewCars.newVolvoRetailS40.second -
+                        model.tabNewCars.newVolvoRetailS40.third}}">
+            </my-cell>
+        </my-row>
+
+        <my-row>
+            <my-cell cell-size="1"
+                     text="A3">
+            </my-cell>
+            <my-cell cell-size="3"
+                     text="V40">
+            </my-cell>
+            <my-cell type="number"
+                     model="model.tabNewCars.newVolvoRetailV40.first"
+                     on-blur="autoSaving">
+            </my-cell>
+            <my-cell type="ruble"
+                     model="model.tabNewCars.newVolvoRetailV40.second"
+                     on-blur="autoSaving">
+            </my-cell>
+            <my-cell type="ruble"
+                     model="model.tabNewCars.newVolvoRetailV40.third"
+                     on-blur="autoSaving">
+            </my-cell>
+            <my-cell type="ruble"
+                     model="model.tabNewCars.newVolvoRetailV40.fourth"
+                     disabled="true"
+                     value="{{model.tabNewCars.newVolvoRetailV40.fourth =
+                        model.tabNewCars.newVolvoRetailV40.second -
+                        model.tabNewCars.newVolvoRetailV40.third}}">
+            </my-cell>
+        </my-row>
+
+        <my-row>
+            <my-cell cell-size="1"
+                     text="A4">
+            </my-cell>
+            <my-cell cell-size="3"
+                     text="S60">
+            </my-cell>
+            <my-cell type="number"
+                     model="model.tabNewCars.newVolvoRetailS60.first"
+                     on-blur="autoSaving">
+            </my-cell>
+            <my-cell type="ruble"
+                     model="model.tabNewCars.newVolvoRetailS60.second"
+                     on-blur="autoSaving">
+            </my-cell>
+            <my-cell type="ruble"
+                     model="model.tabNewCars.newVolvoRetailS60.third"
+                     on-blur="autoSaving">
+            </my-cell>
+            <my-cell type="ruble"
+                     model="model.tabNewCars.newVolvoRetailS60.fourth"
+                     disabled="true"
+                     value="{{model.tabNewCars.newVolvoRetailS60.fourth =
+                        model.tabNewCars.newVolvoRetailS60.second -
+                        model.tabNewCars.newVolvoRetailS60.third}}">
+            </my-cell>
+        </my-row>
+
+        <my-row>
+            <my-cell cell-size="1"
+                     text="A5">
+            </my-cell>
+            <my-cell cell-size="3"
+                     text="XC60">
+            </my-cell>
+            <my-cell type="number"
+                     model="model.tabNewCars.newVolvoRetailXc60.first"
+                     on-blur="autoSaving">
+            </my-cell>
+            <my-cell type="ruble"
+                     model="model.tabNewCars.newVolvoRetailXc60.second"
+                     on-blur="autoSaving">
+            </my-cell>
+            <my-cell type="ruble"
+                     model="model.tabNewCars.newVolvoRetailXc60.third"
+                     on-blur="autoSaving">
+            </my-cell>
+            <my-cell type="ruble"
+                     model="model.tabNewCars.newVolvoRetailXc60.fourth"
+                     disabled="true"
+                     value="{{model.tabNewCars.newVolvoRetailXc60.fourth =
+                        model.tabNewCars.newVolvoRetailXc60.second -
+                        model.tabNewCars.newVolvoRetailXc60.third}}">
+            </my-cell>
+        </my-row>
+
+        <my-row>
+            <my-cell cell-size="1"
+                     text="A6">
+            </my-cell>
+            <my-cell cell-size="3"
+                     text="C70">
+            </my-cell>
+            <my-cell type="number"
+                     model="model.tabNewCars.newVolvoRetailC70.first"
+                     on-blur="autoSaving">
+            </my-cell>
+            <my-cell type="ruble"
+                     model="model.tabNewCars.newVolvoRetailC70.second"
+                     on-blur="autoSaving">
+            </my-cell>
+            <my-cell type="ruble"
+                     model="model.tabNewCars.newVolvoRetailC70.third"
+                     on-blur="autoSaving">
+            </my-cell>
+            <my-cell type="ruble"
+                     model="model.tabNewCars.newVolvoRetailC70.fourth"
+                     disabled="true"
+                     value="{{model.tabNewCars.newVolvoRetailC70.fourth =
+                        model.tabNewCars.newVolvoRetailC70.second -
+                        model.tabNewCars.newVolvoRetailC70.third}}">
+            </my-cell>
+        </my-row>
+
+        <my-row>
+            <my-cell cell-size="1"
+                     text="A8">
+            </my-cell>
+            <my-cell cell-size="3"
+                     text="XC70">
+            </my-cell>
+            <my-cell type="number"
+                     model="model.tabNewCars.newVolvoRetailXc70.first"
+                     on-blur="autoSaving">
+            </my-cell>
+            <my-cell type="ruble"
+                     model="model.tabNewCars.newVolvoRetailXc70.second"
+                     on-blur="autoSaving">
+            </my-cell>
+            <my-cell type="ruble"
+                     model="model.tabNewCars.newVolvoRetailXc70.third"
+                     on-blur="autoSaving">
+            </my-cell>
+            <my-cell type="ruble"
+                     model="model.tabNewCars.newVolvoRetailXc70.fourth"
+                     disabled="true"
+                     value="{{model.tabNewCars.newVolvoRetailXc70.fourth =
+                        model.tabNewCars.newVolvoRetailXc70.second -
+                        model.tabNewCars.newVolvoRetailXc70.third}}">
+            </my-cell>
+        </my-row>
+
+        <my-row>
+            <my-cell cell-size="1"
+                     text="A9">
+            </my-cell>
+            <my-cell cell-size="3"
+                     text="S80">
+            </my-cell>
+            <my-cell type="number"
+                     model="model.tabNewCars.newVolvoRetailS80.first"
+                     on-blur="autoSaving">
+            </my-cell>
+            <my-cell type="ruble"
+                     model="model.tabNewCars.newVolvoRetailS80.second"
+                     on-blur="autoSaving">
+            </my-cell>
+            <my-cell type="ruble"
+                     model="model.tabNewCars.newVolvoRetailS80.third"
+                     on-blur="autoSaving">
+            </my-cell>
+            <my-cell type="ruble"
+                     model="model.tabNewCars.newVolvoRetailS80.fourth"
+                     disabled="true"
+                     value="{{model.tabNewCars.newVolvoRetailS80.fourth =
+                        model.tabNewCars.newVolvoRetailS80.second -
+                        model.tabNewCars.newVolvoRetailS80.third}}">
+            </my-cell>
+        </my-row>
+
+        <my-row>
+            <my-cell cell-size="1"
+                     text="A10">
+            </my-cell>
+            <my-cell cell-size="3"
+                     text="XC90">
+            </my-cell>
+            <my-cell type="number"
+                     model="model.tabNewCars.newVolvoRetailXc90.first"
+                     on-blur="autoSaving">
+            </my-cell>
+            <my-cell type="ruble"
+                     model="model.tabNewCars.newVolvoRetailXc90.second"
+                     on-blur="autoSaving">
+            </my-cell>
+            <my-cell type="ruble"
+                     model="model.tabNewCars.newVolvoRetailXc90.third"
+                     on-blur="autoSaving">
+            </my-cell>
+            <my-cell type="ruble"
+                     model="model.tabNewCars.newVolvoRetailXc90.fourth"
+                     disabled="true"
+                     value="{{model.tabNewCars.newVolvoRetailXc90.fourth =
+                        model.tabNewCars.newVolvoRetailXc90.second -
+                        model.tabNewCars.newVolvoRetailXc90.third}}">
+            </my-cell>
+        </my-row>
+
+        <my-row>
+            <my-cell cell-size="1"
+                     text="A11">
+            </my-cell>
+            <my-cell cell-size="3"
+                     text="V60">
+            </my-cell>
+            <my-cell type="number"
+                     model="model.tabNewCars.newVolvoRetailV60.first"
+                     on-blur="autoSaving">
+            </my-cell>
+            <my-cell type="ruble"
+                     model="model.tabNewCars.newVolvoRetailV60.second"
+                     on-blur="autoSaving">
+            </my-cell>
+            <my-cell type="ruble"
+                     model="model.tabNewCars.newVolvoRetailV60.third"
+                     on-blur="autoSaving">
+            </my-cell>
+            <my-cell type="ruble"
+                     model="model.tabNewCars.newVolvoRetailV60.fourth"
+                     disabled="true"
+                     value="{{model.tabNewCars.newVolvoRetailV60.fourth =
+                        model.tabNewCars.newVolvoRetailV60.second -
+                        model.tabNewCars.newVolvoRetailV60.third}}">
+            </my-cell>
+        </my-row>
+
+    </my-body>
+    <my-foot>
+
+        <my-row>
+            <my-cell cell-size="1"
+                     text="A20">
+            </my-cell>
+            <my-cell cell-size="3"
+                     text="Итого Новые а/м Volvo Розница">
+            </my-cell>
+            <my-cell type="number"
+                     model="model.tabNewCars.newVolvoRetailTotal.first"
+                     disabled="true"
+                     value="{{model.tabNewCars.newVolvoRetailTotal.first=
+                            model.tabNewCars.newVolvoRetailC30.first+
+                            model.tabNewCars.newVolvoRetailS40.first+
+                            model.tabNewCars.newVolvoRetailV40.first+
+                            model.tabNewCars.newVolvoRetailS60.first+
+                            model.tabNewCars.newVolvoRetailXc60.first+
+                            model.tabNewCars.newVolvoRetailC70.first+
+                            model.tabNewCars.newVolvoRetailXc70.first+
+                            model.tabNewCars.newVolvoRetailS80.first+
+                            model.tabNewCars.newVolvoRetailXc90.first+
+                            model.tabNewCars.newVolvoRetailV60.first
+                          }}">
+            </my-cell>
+            <my-cell type="ruble"
+                     model="model.tabNewCars.newVolvoRetailTotal.second"
+                     disabled="true"
+                     value="{{model.tabNewCars.newVolvoRetailTotal.second=
+                            model.tabNewCars.newVolvoRetailC30.second+
+                            model.tabNewCars.newVolvoRetailS40.second+
+                            model.tabNewCars.newVolvoRetailV40.second+
+                            model.tabNewCars.newVolvoRetailS60.second+
+                            model.tabNewCars.newVolvoRetailXc60.second+
+                            model.tabNewCars.newVolvoRetailC70.second+
+                            model.tabNewCars.newVolvoRetailXc70.second+
+                            model.tabNewCars.newVolvoRetailS80.second+
+                            model.tabNewCars.newVolvoRetailXc90.second+
+                            model.tabNewCars.newVolvoRetailV60.second}}">
+            </my-cell>
+            <my-cell type="ruble"
+                     model="model.tabNewCars.newVolvoRetailTotal.third"
+                     disabled="true"
+                     value="{{model.tabNewCars.newVolvoRetailTotal.third=
+                            model.tabNewCars.newVolvoRetailC30.third+
+                            model.tabNewCars.newVolvoRetailS40.third+
+                            model.tabNewCars.newVolvoRetailV40.third+
+                            model.tabNewCars.newVolvoRetailS60.third+
+                            model.tabNewCars.newVolvoRetailXc60.third+
+                            model.tabNewCars.newVolvoRetailC70.third+
+                            model.tabNewCars.newVolvoRetailXc70.third+
+                            model.tabNewCars.newVolvoRetailS80.third+
+                            model.tabNewCars.newVolvoRetailXc90.third+
+                            model.tabNewCars.newVolvoRetailV60.third}}">
+            </my-cell>
+            <my-cell type="ruble"
+                     model="model.tabNewCars.newVolvoRetailTotal.fourth"
+                     disabled="true"
+                     value="{{model.tabNewCars.newVolvoRetailTotal.fourth=
+                            model.tabNewCars.newVolvoRetailC30.fourth+
+                            model.tabNewCars.newVolvoRetailS40.fourth+
+                            model.tabNewCars.newVolvoRetailV40.fourth+
+                            model.tabNewCars.newVolvoRetailS60.fourth+
+                            model.tabNewCars.newVolvoRetailXc60.fourth+
+                            model.tabNewCars.newVolvoRetailC70.fourth+
+                            model.tabNewCars.newVolvoRetailXc70.fourth+
+                            model.tabNewCars.newVolvoRetailS80.fourth+
+                            model.tabNewCars.newVolvoRetailXc90.fourth+
+                            model.tabNewCars.newVolvoRetailV60.fourth}}">
+            </my-cell>
+        </my-row>
+
+    </my-foot>
+</my-table>
 
 <div class="table-responsive">
 <table class="table table-hover table-bordered table-condensed">

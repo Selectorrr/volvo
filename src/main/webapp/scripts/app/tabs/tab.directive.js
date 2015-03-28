@@ -14,6 +14,33 @@ angular.module('volvoApp')
                 '</div>'
         };
     })
+    .directive('myHead', function () {
+        return {
+            restrict: 'E',
+            transclude: true,
+            replace: true,
+            template:
+                '<thead ng-transclude></thead>'
+        };
+    })
+    .directive('myBody', function () {
+        return {
+            restrict: 'E',
+            transclude: true,
+            replace: true,
+            template:
+                '<tbody ng-transclude></tbody>'
+        };
+    })
+    .directive('myFoot', function () {
+        return {
+            restrict: 'E',
+            transclude: true,
+            replace: true,
+            template:
+                '<tfoot ng-transclude></tfoot>'
+        };
+    })
     .directive('myRow', function () {
         return {
             restrict: 'E',
@@ -30,7 +57,7 @@ angular.module('volvoApp')
             scope: {
                 type: '@',
                 colspan: '@',
-                cellClass: '@',
+                cellSize: '@',
                 onBlur: '=',
                 model: '=',
                 text: '@',
@@ -43,12 +70,12 @@ angular.module('volvoApp')
                 if (tAttrs.colspan) {
                     $td.attr('colspan', tAttrs.colspan);
                 }
-                if (tAttrs.cellClass) {
-                    $td.addClass(tAttrs.cellClass);
-                }
-                if (tAttrs.type === 'number') {
+                var cellSize = tAttrs.cellSize ? tAttrs.cellSize : 2;
+                $td.addClass('col-xs-' + cellSize);
+                if (tAttrs.type === 'number' || tAttrs.type === 'ruble') {
                     var myInput =
-                        '<my-input type="number" disabled="disabled" addon="' + tAttrs.addon + '" model="model" value="value" on-blur="onBlur()">' +
+                        '<my-input type="number" disabled="disabled" addon="' +
+                            (tAttrs.type === 'ruble' ? 'glyphicon-ruble' : '') + '" model="model" value="value" on-blur="onBlur">' +
                         '</my-input>';
                     $td.append(myInput);
                 }
