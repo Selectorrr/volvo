@@ -10,30 +10,31 @@
     <baseDirectory>${project.basedir}</baseDirectory>
     <fileSets>
         <fileSet>
-            <directory>./src/assembly</directory>
-            <outputDirectory>logs</outputDirectory>
-            <excludes>
-                <exclude>*/**</exclude>
-            </excludes>
-        </fileSet>
-        <fileSet>
-            <directory>./src/main/resources/config</directory>
-            <outputDirectory>conf</outputDirectory>
+            <directory>./src/main/scripts</directory>
             <includes>
-                <include>*-prod.yml</include>
+                <include>examples/**</include>
             </includes>
+            <outputDirectory/>
         </fileSet>
     </fileSets>
     <files>
         <file>
             <source>${project.build.directory}/${project.build.finalName}.war</source>
-            <outputDirectory>bin</outputDirectory>
-            <fileMode>0644</fileMode>
+            <outputDirectory>lib</outputDirectory>
             <destName>app.war</destName>
         </file>
         <file>
             <source>${project.basedir}/README.md</source>
             <outputDirectory/>
+        </file>
+        <file>
+            <source>./src/main/resources/config/application-prod.yml</source>
+            <outputDirectory>config</outputDirectory>
+        </file>
+        <file>
+            <source>./src/main/scripts/start.sh</source>
+            <outputDirectory>bin</outputDirectory>
+            <fileMode>0744</fileMode>
         </file>
     </files>
 </assembly>
