@@ -1,4 +1,4 @@
 #! /bin/sh
 
 exec 2>&1
-exec chpst -u root -P /home/cam/target/volvo-0.0.1-SNAPSHOT-bin/bin/start.sh
+exec chpst -u root -P /home/volvo/volvo/bin/start.sh
