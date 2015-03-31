@@ -8,11 +8,13 @@ angular.module('volvoApp')
             transclude: true,
             replace: true,
             scope: {
-                baseModel: '='
+                model: '=',
+                field: '@'
             },
             controller: ['$scope', function ($scope) {
+                $scope.model[$scope.field] = $scope.model[$scope.field] || {};
                 this.getTableModel = function () {
-                    return $scope.baseModel;
+                    return $scope.model[$scope.field];
                 }
             }],
             template: '<div class="table-responsive">' +
@@ -52,12 +54,12 @@ angular.module('volvoApp')
             replace: true,
             require: '^myTable',
             scope: {
-                baseModel: '@'
+                field: '@'
             }
             ,
             controller: ['$scope', function ($scope) {
                 this.getRowName = function () {
-                    return $scope.baseModel;
+                    return $scope.field;
                 }
             }],
             template: '<tr ng-transclude></tr>'
@@ -71,9 +73,9 @@ angular.module('volvoApp')
             scope: {
                 type: '@',
                 colspan: '@',
-                cellSize: '@',
+                size: '@',
                 onBlur: '=',
-                baseModel: '@',
+                field: '@',
                 text: '@',
                 disabled: '=',
                 addon: '@',
@@ -84,12 +86,12 @@ angular.module('volvoApp')
                 if (tAttrs.colspan) {
                     $td.attr('colspan', tAttrs.colspan);
                 }
-                var cellSize = tAttrs.cellSize ? tAttrs.cellSize : 2;
-                $td.addClass('col-xs-' + cellSize);
+                var size = tAttrs.size ? tAttrs.size : 2;
+                $td.addClass('col-xs-' + size);
                 if (tAttrs.type === 'number' || tAttrs.type === 'ruble') {
                     var myInput =
                         '<my-input type="number" disabled="disabled" addon="' +
-                        (tAttrs.type === 'ruble' ? 'glyphicon-ruble' : '') + '" model="model.' + tAttrs.baseModel +
+                        (tAttrs.type === 'ruble' ? 'glyphicon-ruble' : '') + '" model="model.' + tAttrs.field +
                         '" value="' + tAttrs.value + '" on-blur="onBlur">' +
                         '</my-input>';
                     $td.append(myInput);
@@ -101,8 +103,9 @@ angular.module('volvoApp')
                     post: function postLink(scope, tElement, tAttrs, controllers) {
                         var tableCtrl = controllers[0];
                         var rowCtrl = controllers[1];
-                        console.log(tableCtrl.getTableModel() + ' --> row');
-                        console.log(tableCtrl.getTableModel()[rowCtrl.getRowName()] + ' --> row');
+                        if (!tableCtrl.getTableModel()[rowCtrl.getRowName()]) {
+                            tableCtrl.getTableModel()[rowCtrl.getRowName()] = {};
+                        }
                         scope.model = tableCtrl.getTableModel()[rowCtrl.getRowName()];
                     }
                 }

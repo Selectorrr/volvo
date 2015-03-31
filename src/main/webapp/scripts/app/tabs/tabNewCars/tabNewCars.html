@@ -1,33 +1,30 @@
 <h2>Новые автомобили</h2>
 
-<my-table base-model="model.tabNewCars">
+<my-table model="model" field="tabNewCars">
     <my-body>
-        <my-row base-model="newVolvoRetailC30">
-
-            <my-cell cell-size="1"
-                     text="A1">
-            </my-cell>
-            <my-cell cell-size="3"
+        <my-row field="newVolvoRetailC30">
+            <my-cell size="1"
+                     text="A1"></my-cell>
+            <my-cell size="3"
                      text="C30">
             </my-cell>
             <my-cell type="number"
-                     base-model="first"
+                     field="first"
                      on-blur="autoSaving">
             </my-cell>
             <my-cell type="ruble"
-                     base-model="second"
+                     field="second"
                      on-blur="autoSaving">
             </my-cell>
             <my-cell type="ruble"
-                     base-model="third"
+                     field="third"
                      on-blur="autoSaving">
             </my-cell>
             <my-cell type="ruble"
-                     base-model="fourth"
+                     field="fourth"
                      disabled="true"
                      value="{{model.fourth = model.second - model.third}}">
             </my-cell>
-
         </my-row>
     </my-body>
 </my-table>
