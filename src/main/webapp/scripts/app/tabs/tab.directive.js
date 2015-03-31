@@ -16,9 +16,9 @@ angular.module('volvoApp')
                 }
             }],
             template: '<div class="table-responsive">' +
-                '<table class="table table-hover table-bordered table-condensed" ng-transclude>' +
-                '</table>' +
-                '</div>'
+            '<table class="table table-hover table-bordered table-condensed" ng-transclude>' +
+            '</table>' +
+            '</div>'
         };
     })
     .directive('myHead', function () {
@@ -89,8 +89,9 @@ angular.module('volvoApp')
                 if (tAttrs.type === 'number' || tAttrs.type === 'ruble') {
                     var myInput =
                         '<my-input type="number" disabled="disabled" addon="' +
-                            (tAttrs.type === 'ruble' ? 'glyphicon-ruble' : '') + '" model="model" value="'+ tAttrs.value+'" on-blur="onBlur">' +
-                            '</my-input>';
+                        (tAttrs.type === 'ruble' ? 'glyphicon-ruble' : '') + '" model="model.' + tAttrs.baseModel +
+                        '" value="' + tAttrs.value + '" on-blur="onBlur">' +
+                        '</my-input>';
                     $td.append(myInput);
                 }
                 return {
@@ -102,8 +103,7 @@ angular.module('volvoApp')
                         var rowCtrl = controllers[1];
                         console.log(tableCtrl.getTableModel() + ' --> row');
                         console.log(tableCtrl.getTableModel()[rowCtrl.getRowName()] + ' --> row');
-
-                        scope.model = tableCtrl.getTableModel()[rowCtrl.getRowName()][scope.baseModel];
+                        scope.model = tableCtrl.getTableModel()[rowCtrl.getRowName()];
                     }
                 }
             },
