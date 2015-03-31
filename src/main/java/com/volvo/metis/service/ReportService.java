@@ -44,10 +44,8 @@ public class ReportService {
 
     private Report getCurrentReport(User user) {
         LocalDateTime localDateTime = LocalDateTime.now();
-        LocalDateTime start = localDateTime.withDayOfMonth(1).withHourOfDay(0).withMinuteOfHour(0).withSecondOfMinute(0).withMillisOfSecond(0);
-        LocalDateTime end = localDateTime.withDayOfMonth(31).withHourOfDay(23).withMinuteOfHour(59).withSecondOfMinute(59).withMillisOfSecond(999);
-        DateTime dateTimeStart = start.toDateTime();
-        DateTime dateTimeEnd = end.toDateTime();
+        DateTime dateTimeStart = localDateTime.dayOfMonth().withMinimumValue().millisOfDay().withMinimumValue().toDateTime();
+        DateTime dateTimeEnd = localDateTime.dayOfMonth().withMaximumValue().millisOfDay().withMaximumValue().toDateTime();
         return reportRepository.findOneByCreatedByAndCreatedDateBetween(user.getId(), dateTimeStart, dateTimeEnd);
     }
 }
