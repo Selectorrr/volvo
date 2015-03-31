@@ -44,6 +44,7 @@ angular.module('volvoApp')
     }).directive('myInput', function () {
         return {
             restrict: 'E',
+            replace: true,
             scope: {
                 type: '@',
                 label: '@',
