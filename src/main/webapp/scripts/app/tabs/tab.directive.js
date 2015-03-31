@@ -7,10 +7,17 @@ angular.module('volvoApp')
             restrict: 'E',
             transclude: true,
             replace: true,
-            template:
-                '<div class="table-responsive">' +
-                    '<table class="table table-hover table-bordered table-condensed" ng-transclude>' +
-                    '</table>' +
+            scope: {
+                baseModel: '='
+            },
+            controller: ['$scope', function ($scope) {
+                this.getTableModel = function () {
+                    return $scope.baseModel;
+                }
+            }],
+            template: '<div class="table-responsive">' +
+                '<table class="table table-hover table-bordered table-condensed" ng-transclude>' +
+                '</table>' +
                 '</div>'
         };
     })
@@ -19,8 +26,7 @@ angular.module('volvoApp')
             restrict: 'E',
             transclude: true,
             replace: true,
-            template:
-                '<thead ng-transclude></thead>'
+            template: '<thead ng-transclude></thead>'
         };
     })
     .directive('myBody', function () {
@@ -28,8 +34,7 @@ angular.module('volvoApp')
             restrict: 'E',
             transclude: true,
             replace: true,
-            template:
-                '<tbody ng-transclude></tbody>'
+            template: '<tbody ng-transclude></tbody>'
         };
     })
     .directive('myFoot', function () {
@@ -37,8 +42,7 @@ angular.module('volvoApp')
             restrict: 'E',
             transclude: true,
             replace: true,
-            template:
-                '<tfoot ng-transclude></tfoot>'
+            template: '<tfoot ng-transclude></tfoot>'
         };
     })
     .directive('myRow', function () {
@@ -46,20 +50,30 @@ angular.module('volvoApp')
             restrict: 'E',
             transclude: true,
             replace: true,
-            template:
-                '<tr ng-transclude></tr>'
+            require: '^myTable',
+            scope: {
+                baseModel: '@'
+            }
+            ,
+            controller: ['$scope', function ($scope) {
+                this.getRowName = function () {
+                    return $scope.baseModel;
+                }
+            }],
+            template: '<tr ng-transclude></tr>'
         };
     })
     .directive('myCell', function () {
         return {
             restrict: 'E',
             replace: true,
+            require: ['^myTable', '^myRow'],
             scope: {
                 type: '@',
                 colspan: '@',
                 cellSize: '@',
                 onBlur: '=',
-                model: '=',
+                baseModel: '@',
                 text: '@',
                 disabled: '=',
                 addon: '@',
@@ -75,12 +89,24 @@ angular.module('volvoApp')
                 if (tAttrs.type === 'number' || tAttrs.type === 'ruble') {
                     var myInput =
                         '<my-input type="number" disabled="disabled" addon="' +
-                            (tAttrs.type === 'ruble' ? 'glyphicon-ruble' : '') + '" model="model" value="value" on-blur="onBlur">' +
-                        '</my-input>';
+                            (tAttrs.type === 'ruble' ? 'glyphicon-ruble' : '') + '" model="model" value="'+ tAttrs.value+'" on-blur="onBlur">' +
+                            '</my-input>';
                     $td.append(myInput);
                 }
+                return {
+                    pre: function preLink(scope, tElement, tAttrs, controllers) {
+
+                    },
+                    post: function postLink(scope, tElement, tAttrs, controllers) {
+                        var tableCtrl = controllers[0];
+                        var rowCtrl = controllers[1];
+                        console.log(tableCtrl.getTableModel() + ' --> row');
+                        console.log(tableCtrl.getTableModel()[rowCtrl.getRowName()] + ' --> row');
+
+                        scope.model = tableCtrl.getTableModel()[rowCtrl.getRowName()][scope.baseModel];
+                    }
+                }
             },
-            template:
-                '<td>{{text}}</td>'
+            template: '<td>{{text}}</td>'
         };
     });
