@@ -1,330 +1,283 @@
 <h2>Новые автомобили</h2>
 
 <my-table model="model" field="tabNewCars">
-    <my-body>
-        <my-row field="newVolvoRetailC30">
-            <my-cell size="1"
-                     text="A1"></my-cell>
-            <my-cell size="3"
-                     text="C30">
-            </my-cell>
-            <my-cell type="number"
-                     field="first"
-                     on-blur="autoSaving">
-            </my-cell>
-            <my-cell type="ruble"
-                     field="second"
-                     on-blur="autoSaving">
-            </my-cell>
-            <my-cell type="ruble"
-                     field="third"
-                     on-blur="autoSaving">
-            </my-cell>
-            <my-cell type="ruble"
-                     field="fourth"
-                     disabled="true"
-                     value="{{model.fourth = model.second - model.third}}">
-            </my-cell>
-        </my-row>
-    </my-body>
-</my-table>
+<my-head>
+    <my-row>
+        <my-cell cell-size="4"
+                 colspan="2"
+                 text="Новые а/м Volvo Розница"></my-cell>
+        <my-cell text="Кол-во"></my-cell>
+        <my-cell text="Выручка"></my-cell>
+        <my-cell text="Себ-ть"></my-cell>
+        <my-cell text="ВП"></my-cell>
+    </my-row>
+</my-head>
+<my-body>
+<my-row field="newVolvoRetailC30">
+    <my-cell cell-size="1"
+             text="A1">
+    </my-cell>
+    <my-cell cell-size="3"
+             text="C30">
+    </my-cell>
+    <my-cell type="number"
+             field="first"
+             on-blur="autoSaving">
+    </my-cell>
+    <my-cell type="ruble"
+             field="second"
+             on-blur="autoSaving">
+    </my-cell>
+    <my-cell type="ruble"
+             field="third"
+             on-blur="autoSaving">
+    </my-cell>
+    <my-cell type="ruble"
+             field="fourth"
+             disabled="true"
+             value="{{model.fourth = model.second - model.third}}">
+    </my-cell>
+</my-row>
 
-<!--<my-table>-->
-<!--<my-head>-->
-    <!--<my-row>-->
-        <!--<my-cell cell-size="4"-->
-                 <!--colspan="2"-->
-                 <!--text="Новые а/м Volvo Розница"></my-cell>-->
-        <!--<my-cell text="Кол-во"></my-cell>-->
-        <!--<my-cell text="Выручка"></my-cell>-->
-        <!--<my-cell text="Себ-ть"></my-cell>-->
-        <!--<my-cell text="ВП"></my-cell>-->
-    <!--</my-row>-->
-<!--</my-head>-->
-<!--<my-body>-->
-<!--<my-row>-->
-    <!--<my-cell cell-size="1"-->
-             <!--text="A1">-->
-    <!--</my-cell>-->
-    <!--<my-cell cell-size="3"-->
-             <!--text="C30">-->
-    <!--</my-cell>-->
-    <!--<my-cell type="number"-->
-             <!--model="model.tabNewCars.newVolvoRetailC30.first"-->
-             <!--on-blur="autoSaving">-->
-    <!--</my-cell>-->
-    <!--<my-cell type="ruble"-->
-             <!--model="model.tabNewCars.newVolvoRetailC30.second"-->
-             <!--on-blur="autoSaving">-->
-    <!--</my-cell>-->
-    <!--<my-cell type="ruble"-->
-             <!--model="model.tabNewCars.newVolvoRetailC30.third"-->
-             <!--on-blur="autoSaving">-->
-    <!--</my-cell>-->
-    <!--<my-cell type="ruble"-->
-             <!--model="model.tabNewCars.newVolvoRetailC30.fourth"-->
-             <!--disabled="true"-->
-             <!--value="{{model.tabNewCars.newVolvoRetailC30.fourth =-->
-                        <!--model.tabNewCars.newVolvoRetailC30.second - model.tabNewCars.newVolvoRetailC30.third}}">-->
-    <!--</my-cell>-->
-<!--</my-row>-->
+<my-row field="newVolvoRetailS40">
+    <my-cell cell-size="1"
+             text="A2">
+    </my-cell>
+    <my-cell cell-size="3"
+             text="S40">
+    </my-cell>
+    <my-cell type="number"
+             field="first"
+             on-blur="autoSaving">
+    </my-cell>
+    <my-cell type="ruble"
+             field="second"
+             on-blur="autoSaving">
+    </my-cell>
+    <my-cell type="ruble"
+             field="third"
+             on-blur="autoSaving">
+    </my-cell>
+    <my-cell type="ruble"
+             field="fourth"
+             disabled="true"
+             value="{{model.fourth = model.second - model.third}}">
+    </my-cell>
+</my-row>
 
-<!--<my-row>-->
-    <!--<my-cell cell-size="1"-->
-             <!--text="A2">-->
-    <!--</my-cell>-->
-    <!--<my-cell cell-size="3"-->
-             <!--text="S40">-->
-    <!--</my-cell>-->
-    <!--<my-cell type="number"-->
-             <!--model="model.tabNewCars.newVolvoRetailS40.first"-->
-             <!--on-blur="autoSaving">-->
-    <!--</my-cell>-->
-    <!--<my-cell type="ruble"-->
-             <!--model="model.tabNewCars.newVolvoRetailS40.second"-->
-             <!--on-blur="autoSaving">-->
-    <!--</my-cell>-->
-    <!--<my-cell type="ruble"-->
-             <!--model="model.tabNewCars.newVolvoRetailS40.third"-->
-             <!--on-blur="autoSaving">-->
-    <!--</my-cell>-->
-    <!--<my-cell type="ruble"-->
-             <!--model="model.tabNewCars.newVolvoRetailS40.fourth"-->
-             <!--disabled="true"-->
-             <!--value="{{model.tabNewCars.newVolvoRetailS40.fourth =-->
-                        <!--model.tabNewCars.newVolvoRetailS40.second --->
-                        <!--model.tabNewCars.newVolvoRetailS40.third}}">-->
-    <!--</my-cell>-->
-<!--</my-row>-->
+<my-row field="newVolvoRetailV40">
+    <my-cell cell-size="1"
+             text="A3">
+    </my-cell>
+    <my-cell cell-size="3"
+             text="V40">
+    </my-cell>
+    <my-cell type="number"
+             field="first"
+             on-blur="autoSaving">
+    </my-cell>
+    <my-cell type="ruble"
+             field="second"
+             on-blur="autoSaving">
+    </my-cell>
+    <my-cell type="ruble"
+             field="third"
+             on-blur="autoSaving">
+    </my-cell>
+    <my-cell type="ruble"
+             field="fourth"
+             disabled="true"
+             value="{{model.fourth = model.second - model.third}}">
+    </my-cell>
+</my-row>
 
-<!--<my-row>-->
-    <!--<my-cell cell-size="1"-->
-             <!--text="A3">-->
-    <!--</my-cell>-->
-    <!--<my-cell cell-size="3"-->
-             <!--text="V40">-->
-    <!--</my-cell>-->
-    <!--<my-cell type="number"-->
-             <!--model="model.tabNewCars.newVolvoRetailV40.first"-->
-             <!--on-blur="autoSaving">-->
-    <!--</my-cell>-->
-    <!--<my-cell type="ruble"-->
-             <!--model="model.tabNewCars.newVolvoRetailV40.second"-->
-             <!--on-blur="autoSaving">-->
-    <!--</my-cell>-->
-    <!--<my-cell type="ruble"-->
-             <!--model="model.tabNewCars.newVolvoRetailV40.third"-->
-             <!--on-blur="autoSaving">-->
-    <!--</my-cell>-->
-    <!--<my-cell type="ruble"-->
-             <!--model="model.tabNewCars.newVolvoRetailV40.fourth"-->
-             <!--disabled="true"-->
-             <!--value="{{model.tabNewCars.newVolvoRetailV40.fourth =-->
-                        <!--model.tabNewCars.newVolvoRetailV40.second --->
-                        <!--model.tabNewCars.newVolvoRetailV40.third}}">-->
-    <!--</my-cell>-->
-<!--</my-row>-->
+<my-row field="newVolvoRetailS60">
+    <my-cell cell-size="1"
+             text="A4">
+    </my-cell>
+    <my-cell cell-size="3"
+             text="S60">
+    </my-cell>
+    <my-cell type="number"
+             field="first"
+             on-blur="autoSaving">
+    </my-cell>
+    <my-cell type="ruble"
+             field="second"
+             on-blur="autoSaving">
+    </my-cell>
+    <my-cell type="ruble"
+             field="third"
+             on-blur="autoSaving">
+    </my-cell>
+    <my-cell type="ruble"
+             field="fourth"
+             disabled="true"
+             value="{{model.fourth = model.second - model.third}}">
+    </my-cell>
+</my-row>
 
-<!--<my-row>-->
-    <!--<my-cell cell-size="1"-->
-             <!--text="A4">-->
-    <!--</my-cell>-->
-    <!--<my-cell cell-size="3"-->
-             <!--text="S60">-->
-    <!--</my-cell>-->
-    <!--<my-cell type="number"-->
-             <!--model="model.tabNewCars.newVolvoRetailS60.first"-->
-             <!--on-blur="autoSaving">-->
-    <!--</my-cell>-->
-    <!--<my-cell type="ruble"-->
-             <!--model="model.tabNewCars.newVolvoRetailS60.second"-->
-             <!--on-blur="autoSaving">-->
-    <!--</my-cell>-->
-    <!--<my-cell type="ruble"-->
-             <!--model="model.tabNewCars.newVolvoRetailS60.third"-->
-             <!--on-blur="autoSaving">-->
-    <!--</my-cell>-->
-    <!--<my-cell type="ruble"-->
-             <!--model="model.tabNewCars.newVolvoRetailS60.fourth"-->
-             <!--disabled="true"-->
-             <!--value="{{model.tabNewCars.newVolvoRetailS60.fourth =-->
-                        <!--model.tabNewCars.newVolvoRetailS60.second --->
-                        <!--model.tabNewCars.newVolvoRetailS60.third}}">-->
-    <!--</my-cell>-->
-<!--</my-row>-->
+<my-row field="newVolvoRetailXc60">
+    <my-cell cell-size="1"
+             text="A5">
+    </my-cell>
+    <my-cell cell-size="3"
+             text="XC60">
+    </my-cell>
+    <my-cell type="number"
+             field="first"
+             on-blur="autoSaving">
+    </my-cell>
+    <my-cell type="ruble"
+             field="second"
+             on-blur="autoSaving">
+    </my-cell>
+    <my-cell type="ruble"
+             field="third"
+             on-blur="autoSaving">
+    </my-cell>
+    <my-cell type="ruble"
+             field="fourth"
+             disabled="true"
+             value="{{model.fourth = model.second - model.third}}">
+    </my-cell>
+</my-row>
 
-<!--<my-row>-->
-    <!--<my-cell cell-size="1"-->
-             <!--text="A5">-->
-    <!--</my-cell>-->
-    <!--<my-cell cell-size="3"-->
-             <!--text="XC60">-->
-    <!--</my-cell>-->
-    <!--<my-cell type="number"-->
-             <!--model="model.tabNewCars.newVolvoRetailXc60.first"-->
-             <!--on-blur="autoSaving">-->
-    <!--</my-cell>-->
-    <!--<my-cell type="ruble"-->
-             <!--model="model.tabNewCars.newVolvoRetailXc60.second"-->
-             <!--on-blur="autoSaving">-->
-    <!--</my-cell>-->
-    <!--<my-cell type="ruble"-->
-             <!--model="model.tabNewCars.newVolvoRetailXc60.third"-->
-             <!--on-blur="autoSaving">-->
-    <!--</my-cell>-->
-    <!--<my-cell type="ruble"-->
-             <!--model="model.tabNewCars.newVolvoRetailXc60.fourth"-->
-             <!--disabled="true"-->
-             <!--value="{{model.tabNewCars.newVolvoRetailXc60.fourth =-->
-                        <!--model.tabNewCars.newVolvoRetailXc60.second --->
-                        <!--model.tabNewCars.newVolvoRetailXc60.third}}">-->
-    <!--</my-cell>-->
-<!--</my-row>-->
+<my-row field="newVolvoRetailC70">
+    <my-cell cell-size="1"
+             text="A6">
+    </my-cell>
+    <my-cell cell-size="3"
+             text="C70">
+    </my-cell>
+    <my-cell type="number"
+             field="first"
+             on-blur="autoSaving">
+    </my-cell>
+    <my-cell type="ruble"
+             field="second"
+             on-blur="autoSaving">
+    </my-cell>
+    <my-cell type="ruble"
+             field="third"
+             on-blur="autoSaving">
+    </my-cell>
+    <my-cell type="ruble"
+             field="fourth"
+             disabled="true"
+             value="{{model.fourth = model.second - model.third}}">
+    </my-cell>
+</my-row>
 
-<!--<my-row>-->
-    <!--<my-cell cell-size="1"-->
-             <!--text="A6">-->
-    <!--</my-cell>-->
-    <!--<my-cell cell-size="3"-->
-             <!--text="C70">-->
-    <!--</my-cell>-->
-    <!--<my-cell type="number"-->
-             <!--model="model.tabNewCars.newVolvoRetailC70.first"-->
-             <!--on-blur="autoSaving">-->
-    <!--</my-cell>-->
-    <!--<my-cell type="ruble"-->
-             <!--model="model.tabNewCars.newVolvoRetailC70.second"-->
-             <!--on-blur="autoSaving">-->
-    <!--</my-cell>-->
-    <!--<my-cell type="ruble"-->
-             <!--model="model.tabNewCars.newVolvoRetailC70.third"-->
-             <!--on-blur="autoSaving">-->
-    <!--</my-cell>-->
-    <!--<my-cell type="ruble"-->
-             <!--model="model.tabNewCars.newVolvoRetailC70.fourth"-->
-             <!--disabled="true"-->
-             <!--value="{{model.tabNewCars.newVolvoRetailC70.fourth =-->
-                        <!--model.tabNewCars.newVolvoRetailC70.second --->
-                        <!--model.tabNewCars.newVolvoRetailC70.third}}">-->
-    <!--</my-cell>-->
-<!--</my-row>-->
+<my-row field="newVolvoRetailXc70">
+    <my-cell cell-size="1"
+             text="A8">
+    </my-cell>
+    <my-cell cell-size="3"
+             text="XC70">
+    </my-cell>
+    <my-cell type="number"
+             field="first"
+             on-blur="autoSaving">
+    </my-cell>
+    <my-cell type="ruble"
+             field="second"
+             on-blur="autoSaving">
+    </my-cell>
+    <my-cell type="ruble"
+             field="third"
+             on-blur="autoSaving">
+    </my-cell>
+    <my-cell type="ruble"
+             field="fourth"
+             disabled="true"
+             value="{{model.fourth = model.second - model.third}}">
+    </my-cell>
+</my-row>
 
-<!--<my-row>-->
-    <!--<my-cell cell-size="1"-->
-             <!--text="A8">-->
-    <!--</my-cell>-->
-    <!--<my-cell cell-size="3"-->
-             <!--text="XC70">-->
-    <!--</my-cell>-->
-    <!--<my-cell type="number"-->
-             <!--model="model.tabNewCars.newVolvoRetailXc70.first"-->
-             <!--on-blur="autoSaving">-->
-    <!--</my-cell>-->
-    <!--<my-cell type="ruble"-->
-             <!--model="model.tabNewCars.newVolvoRetailXc70.second"-->
-             <!--on-blur="autoSaving">-->
-    <!--</my-cell>-->
-    <!--<my-cell type="ruble"-->
-             <!--model="model.tabNewCars.newVolvoRetailXc70.third"-->
-             <!--on-blur="autoSaving">-->
-    <!--</my-cell>-->
-    <!--<my-cell type="ruble"-->
-             <!--model="model.tabNewCars.newVolvoRetailXc70.fourth"-->
-             <!--disabled="true"-->
-             <!--value="{{model.tabNewCars.newVolvoRetailXc70.fourth =-->
-                        <!--model.tabNewCars.newVolvoRetailXc70.second --->
-                        <!--model.tabNewCars.newVolvoRetailXc70.third}}">-->
-    <!--</my-cell>-->
-<!--</my-row>-->
+<my-row field="newVolvoRetailS80">
+    <my-cell cell-size="1"
+             text="A9">
+    </my-cell>
+    <my-cell cell-size="3"
+             text="S80">
+    </my-cell>
+    <my-cell type="number"
+             field="first"
+             on-blur="autoSaving">
+    </my-cell>
+    <my-cell type="ruble"
+             field="second"
+             on-blur="autoSaving">
+    </my-cell>
+    <my-cell type="ruble"
+             field="third"
+             on-blur="autoSaving">
+    </my-cell>
+    <my-cell type="ruble"
+             field="fourth"
+             disabled="true"
+             value="{{model.fourth = model.second - model.third}}">
+    </my-cell>
+</my-row>
 
-<!--<my-row>-->
-    <!--<my-cell cell-size="1"-->
-             <!--text="A9">-->
-    <!--</my-cell>-->
-    <!--<my-cell cell-size="3"-->
-             <!--text="S80">-->
-    <!--</my-cell>-->
-    <!--<my-cell type="number"-->
-             <!--model="model.tabNewCars.newVolvoRetailS80.first"-->
-             <!--on-blur="autoSaving">-->
-    <!--</my-cell>-->
-    <!--<my-cell type="ruble"-->
-             <!--model="model.tabNewCars.newVolvoRetailS80.second"-->
-             <!--on-blur="autoSaving">-->
-    <!--</my-cell>-->
-    <!--<my-cell type="ruble"-->
-             <!--model="model.tabNewCars.newVolvoRetailS80.third"-->
-             <!--on-blur="autoSaving">-->
-    <!--</my-cell>-->
-    <!--<my-cell type="ruble"-->
-             <!--model="model.tabNewCars.newVolvoRetailS80.fourth"-->
-             <!--disabled="true"-->
-             <!--value="{{model.tabNewCars.newVolvoRetailS80.fourth =-->
-                        <!--model.tabNewCars.newVolvoRetailS80.second --->
-                        <!--model.tabNewCars.newVolvoRetailS80.third}}">-->
-    <!--</my-cell>-->
-<!--</my-row>-->
+<my-row field="newVolvoRetailXc90">
+    <my-cell cell-size="1"
+             text="A10">
+    </my-cell>
+    <my-cell cell-size="3"
+             text="XC90">
+    </my-cell>
+    <my-cell type="number"
+             field="first"
+             on-blur="autoSaving">
+    </my-cell>
+    <my-cell type="ruble"
+             field="second"
+             on-blur="autoSaving">
+    </my-cell>
+    <my-cell type="ruble"
+             field="third"
+             on-blur="autoSaving">
+    </my-cell>
+    <my-cell type="ruble"
+             field="fourth"
+             disabled="true"
+             value="{{model.fourth = model.second - model.third}}">
+    </my-cell>
+</my-row>
 
-<!--<my-row>-->
-    <!--<my-cell cell-size="1"-->
-             <!--text="A10">-->
-    <!--</my-cell>-->
-    <!--<my-cell cell-size="3"-->
-             <!--text="XC90">-->
-    <!--</my-cell>-->
-    <!--<my-cell type="number"-->
-             <!--model="model.tabNewCars.newVolvoRetailXc90.first"-->
-             <!--on-blur="autoSaving">-->
-    <!--</my-cell>-->
-    <!--<my-cell type="ruble"-->
-             <!--model="model.tabNewCars.newVolvoRetailXc90.second"-->
-             <!--on-blur="autoSaving">-->
-    <!--</my-cell>-->
-    <!--<my-cell type="ruble"-->
-             <!--model="model.tabNewCars.newVolvoRetailXc90.third"-->
-             <!--on-blur="autoSaving">-->
-    <!--</my-cell>-->
-    <!--<my-cell type="ruble"-->
-             <!--model="model.tabNewCars.newVolvoRetailXc90.fourth"-->
-             <!--disabled="true"-->
-             <!--value="{{model.tabNewCars.newVolvoRetailXc90.fourth =-->
-                        <!--model.tabNewCars.newVolvoRetailXc90.second --->
-                        <!--model.tabNewCars.newVolvoRetailXc90.third}}">-->
-    <!--</my-cell>-->
-<!--</my-row>-->
+<my-row field="newVolvoRetailV60">
+    <my-cell cell-size="1"
+             text="A11">
+    </my-cell>
+    <my-cell cell-size="3"
+             text="V60">
+    </my-cell>
+    <my-cell type="number"
+             field="first"
+             on-blur="autoSaving">
+    </my-cell>
+    <my-cell type="ruble"
+             field="second"
+             on-blur="autoSaving">
+    </my-cell>
+    <my-cell type="ruble"
+             field="third"
+             on-blur="autoSaving">
+    </my-cell>
+    <my-cell type="ruble"
+             field="fourth"
+             disabled="true"
+             value="{{model.fourth = model.second - model.third}}">
+    </my-cell>
+</my-row>
 
-<!--<my-row>-->
-    <!--<my-cell cell-size="1"-->
-             <!--text="A11">-->
-    <!--</my-cell>-->
-    <!--<my-cell cell-size="3"-->
-             <!--text="V60">-->
-    <!--</my-cell>-->
-    <!--<my-cell type="number"-->
-             <!--model="model.tabNewCars.newVolvoRetailV60.first"-->
-             <!--on-blur="autoSaving">-->
-    <!--</my-cell>-->
-    <!--<my-cell type="ruble"-->
-             <!--model="model.tabNewCars.newVolvoRetailV60.second"-->
-             <!--on-blur="autoSaving">-->
-    <!--</my-cell>-->
-    <!--<my-cell type="ruble"-->
-             <!--model="model.tabNewCars.newVolvoRetailV60.third"-->
-             <!--on-blur="autoSaving">-->
-    <!--</my-cell>-->
-    <!--<my-cell type="ruble"-->
-             <!--model="model.tabNewCars.newVolvoRetailV60.fourth"-->
-             <!--disabled="true"-->
-             <!--value="{{model.tabNewCars.newVolvoRetailV60.fourth =-->
-                        <!--model.tabNewCars.newVolvoRetailV60.second --->
-                        <!--model.tabNewCars.newVolvoRetailV60.third}}">-->
-    <!--</my-cell>-->
-<!--</my-row>-->
+</my-body>
+<my-foot>
 
-<!--</my-body>-->
-<!--<my-foot>-->
-
-    <!--<my-row>-->
+    <!--TODO-->
+    <!--<my-row field="newVolvoRetailTotal">-->
         <!--<my-cell cell-size="1"-->
                  <!--text="A20">-->
         <!--</my-cell>-->
@@ -332,7 +285,7 @@
                  <!--text="Итого Новые а/м Volvo Розница">-->
         <!--</my-cell>-->
         <!--<my-cell type="number"-->
-                 <!--model="model.tabNewCars.newVolvoRetailTotal.first"-->
+                 <!--field="newVolvoRetailTotal.first"-->
                  <!--disabled="true"-->
                  <!--value="{{model.tabNewCars.newVolvoRetailTotal.first=-->
                             <!--model.tabNewCars.newVolvoRetailC30.first+-->
@@ -348,7 +301,7 @@
                           <!--}}">-->
         <!--</my-cell>-->
         <!--<my-cell type="ruble"-->
-                 <!--model="model.tabNewCars.newVolvoRetailTotal.second"-->
+                 <!--field="newVolvoRetailTotal.second"-->
                  <!--disabled="true"-->
                  <!--value="{{model.tabNewCars.newVolvoRetailTotal.second=-->
                             <!--model.tabNewCars.newVolvoRetailC30.second+-->
@@ -363,7 +316,7 @@
                             <!--model.tabNewCars.newVolvoRetailV60.second}}">-->
         <!--</my-cell>-->
         <!--<my-cell type="ruble"-->
-                 <!--model="model.tabNewCars.newVolvoRetailTotal.third"-->
+                 <!--field="newVolvoRetailTotal.third"-->
                  <!--disabled="true"-->
                  <!--value="{{model.tabNewCars.newVolvoRetailTotal.third=-->
                             <!--model.tabNewCars.newVolvoRetailC30.third+-->
@@ -378,7 +331,7 @@
                             <!--model.tabNewCars.newVolvoRetailV60.third}}">-->
         <!--</my-cell>-->
         <!--<my-cell type="ruble"-->
-                 <!--model="model.tabNewCars.newVolvoRetailTotal.fourth"-->
+                 <!--field="newVolvoRetailTotal.fourth"-->
                  <!--disabled="true"-->
                  <!--value="{{model.tabNewCars.newVolvoRetailTotal.fourth=-->
                             <!--model.tabNewCars.newVolvoRetailC30.fourth+-->
@@ -394,305 +347,287 @@
         <!--</my-cell>-->
     <!--</my-row>-->
 
-<!--</my-foot>-->
-<!--</my-table>-->
+</my-foot>
+</my-table>
 
-<!--<my-table>-->
-<!--<my-head>-->
-    <!--<my-row>-->
-        <!--<my-cell cell-size="4"-->
-                 <!--colspan="2"-->
-                 <!--text="Новые а/м Volvo Флит"></my-cell>-->
-        <!--<my-cell text="Кол-во"></my-cell>-->
-        <!--<my-cell text="Выручка"></my-cell>-->
-        <!--<my-cell text="Себ-ть"></my-cell>-->
-        <!--<my-cell text="ВП"></my-cell>-->
-    <!--</my-row>-->
-<!--</my-head>-->
-<!--<my-body>-->
-<!--<my-row>-->
-    <!--<my-cell cell-size="1"-->
-             <!--text="A31">-->
-    <!--</my-cell>-->
-    <!--<my-cell cell-size="3"-->
-             <!--text="C30">-->
-    <!--</my-cell>-->
-    <!--<my-cell type="number"-->
-             <!--model="model.tabNewCars.newVolvoFlitC30.first"-->
-             <!--on-blur="autoSaving">-->
-    <!--</my-cell>-->
-    <!--<my-cell type="ruble"-->
-             <!--model="model.tabNewCars.newVolvoFlitC30.second"-->
-             <!--on-blur="autoSaving">-->
-    <!--</my-cell>-->
-    <!--<my-cell type="ruble"-->
-             <!--model="model.tabNewCars.newVolvoFlitC30.third"-->
-             <!--on-blur="autoSaving">-->
-    <!--</my-cell>-->
-    <!--<my-cell type="ruble"-->
-             <!--model="model.tabNewCars.newVolvoFlitC30.fourth"-->
-             <!--disabled="true"-->
-             <!--value="{{model.tabNewCars.newVolvoFlitC30.fourth =-->
-                        <!--model.tabNewCars.newVolvoFlitC30.second - model.tabNewCars.newVolvoFlitC30.third}}">-->
-    <!--</my-cell>-->
-<!--</my-row>-->
+<my-table model="model" field="tabNewCars">
+<my-head>
+    <my-row>
+        <my-cell cell-size="4"
+                 colspan="2"
+                 text="Новые а/м Volvo Флит"></my-cell>
+        <my-cell text="Кол-во"></my-cell>
+        <my-cell text="Выручка"></my-cell>
+        <my-cell text="Себ-ть"></my-cell>
+        <my-cell text="ВП"></my-cell>
+    </my-row>
+</my-head>
+<my-body>
+<my-row field="newVolvoFlitC30">
+    <my-cell cell-size="1"
+             text="A31">
+    </my-cell>
+    <my-cell cell-size="3"
+             text="C30">
+    </my-cell>
+    <my-cell type="number"
+             field="first"
+             on-blur="autoSaving">
+    </my-cell>
+    <my-cell type="ruble"
+             field="second"
+             on-blur="autoSaving">
+    </my-cell>
+    <my-cell type="ruble"
+             field="third"
+             on-blur="autoSaving">
+    </my-cell>
+    <my-cell type="ruble"
+             field="fourth"
+             disabled="true"
+             value="{{model.fourth = model.second - model.third}}">
+    </my-cell>
+</my-row>
 
-<!--<my-row>-->
-    <!--<my-cell cell-size="1"-->
-             <!--text="A32">-->
-    <!--</my-cell>-->
-    <!--<my-cell cell-size="3"-->
-             <!--text="S40">-->
-    <!--</my-cell>-->
-    <!--<my-cell type="number"-->
-             <!--model="model.tabNewCars.newVolvoFlitS40.first"-->
-             <!--on-blur="autoSaving">-->
-    <!--</my-cell>-->
-    <!--<my-cell type="ruble"-->
-             <!--model="model.tabNewCars.newVolvoFlitS40.second"-->
-             <!--on-blur="autoSaving">-->
-    <!--</my-cell>-->
-    <!--<my-cell type="ruble"-->
-             <!--model="model.tabNewCars.newVolvoFlitS40.third"-->
-             <!--on-blur="autoSaving">-->
-    <!--</my-cell>-->
-    <!--<my-cell type="ruble"-->
-             <!--model="model.tabNewCars.newVolvoFlitS40.fourth"-->
-             <!--disabled="true"-->
-             <!--value="{{model.tabNewCars.newVolvoFlitS40.fourth =-->
-                        <!--model.tabNewCars.newVolvoFlitS40.second --->
-                        <!--model.tabNewCars.newVolvoFlitS40.third}}">-->
-    <!--</my-cell>-->
-<!--</my-row>-->
+<my-row field="newVolvoFlitS40">
+    <my-cell cell-size="1"
+             text="A32">
+    </my-cell>
+    <my-cell cell-size="3"
+             text="S40">
+    </my-cell>
+    <my-cell type="number"
+             field="first"
+             on-blur="autoSaving">
+    </my-cell>
+    <my-cell type="ruble"
+             field="second"
+             on-blur="autoSaving">
+    </my-cell>
+    <my-cell type="ruble"
+             field="third"
+             on-blur="autoSaving">
+    </my-cell>
+    <my-cell type="ruble"
+             field="fourth"
+             disabled="true"
+             value="{{model.fourth = model.second - model.third}}">
+    </my-cell>
+</my-row>
 
-<!--<my-row>-->
-    <!--<my-cell cell-size="1"-->
-             <!--text="A33">-->
-    <!--</my-cell>-->
-    <!--<my-cell cell-size="3"-->
-             <!--text="V40">-->
-    <!--</my-cell>-->
-    <!--<my-cell type="number"-->
-             <!--model="model.tabNewCars.newVolvoFlitV40.first"-->
-             <!--on-blur="autoSaving">-->
-    <!--</my-cell>-->
-    <!--<my-cell type="ruble"-->
-             <!--model="model.tabNewCars.newVolvoFlitV40.second"-->
-             <!--on-blur="autoSaving">-->
-    <!--</my-cell>-->
-    <!--<my-cell type="ruble"-->
-             <!--model="model.tabNewCars.newVolvoFlitV40.third"-->
-             <!--on-blur="autoSaving">-->
-    <!--</my-cell>-->
-    <!--<my-cell type="ruble"-->
-             <!--model="model.tabNewCars.newVolvoFlitV40.fourth"-->
-             <!--disabled="true"-->
-             <!--value="{{model.tabNewCars.newVolvoFlitV40.fourth =-->
-                        <!--model.tabNewCars.newVolvoFlitV40.second --->
-                        <!--model.tabNewCars.newVolvoFlitV40.third}}">-->
-    <!--</my-cell>-->
-<!--</my-row>-->
+<my-row field="newVolvoFlitV40">
+    <my-cell cell-size="1"
+             text="A33">
+    </my-cell>
+    <my-cell cell-size="3"
+             text="V40">
+    </my-cell>
+    <my-cell type="number"
+             field="first"
+             on-blur="autoSaving">
+    </my-cell>
+    <my-cell type="ruble"
+             field="second"
+             on-blur="autoSaving">
+    </my-cell>
+    <my-cell type="ruble"
+             field="third"
+             on-blur="autoSaving">
+    </my-cell>
+    <my-cell type="ruble"
+             field="fourth"
+             disabled="true"
+             value="{{model.fourth = model.second - model.third}}">
+    </my-cell>
+</my-row>
 
-<!--<my-row>-->
-    <!--<my-cell cell-size="1"-->
-             <!--text="A34">-->
-    <!--</my-cell>-->
-    <!--<my-cell cell-size="3"-->
-             <!--text="S60">-->
-    <!--</my-cell>-->
-    <!--<my-cell type="number"-->
-             <!--model="model.tabNewCars.newVolvoFlitS60.first"-->
-             <!--on-blur="autoSaving">-->
-    <!--</my-cell>-->
-    <!--<my-cell type="ruble"-->
-             <!--model="model.tabNewCars.newVolvoFlitS60.second"-->
-             <!--on-blur="autoSaving">-->
-    <!--</my-cell>-->
-    <!--<my-cell type="ruble"-->
-             <!--model="model.tabNewCars.newVolvoFlitS60.third"-->
-             <!--on-blur="autoSaving">-->
-    <!--</my-cell>-->
-    <!--<my-cell type="ruble"-->
-             <!--model="model.tabNewCars.newVolvoFlitS60.fourth"-->
-             <!--disabled="true"-->
-             <!--value="{{model.tabNewCars.newVolvoFlitS60.fourth =-->
-                        <!--model.tabNewCars.newVolvoFlitS60.second --->
-                        <!--model.tabNewCars.newVolvoFlitS60.third}}">-->
-    <!--</my-cell>-->
-<!--</my-row>-->
+<my-row field="newVolvoFlitS60">
+    <my-cell cell-size="1"
+             text="A34">
+    </my-cell>
+    <my-cell cell-size="3"
+             text="S60">
+    </my-cell>
+    <my-cell type="number"
+             field="first"
+             on-blur="autoSaving">
+    </my-cell>
+    <my-cell type="ruble"
+             field="second"
+             on-blur="autoSaving">
+    </my-cell>
+    <my-cell type="ruble"
+             field="third"
+             on-blur="autoSaving">
+    </my-cell>
+    <my-cell type="ruble"
+             field="fourth"
+             disabled="true"
+             value="{{model.fourth = model.second - model.third}}">
+    </my-cell>
+</my-row>
 
-<!--<my-row>-->
-    <!--<my-cell cell-size="1"-->
-             <!--text="A35">-->
-    <!--</my-cell>-->
-    <!--<my-cell cell-size="3"-->
-             <!--text="XC60">-->
-    <!--</my-cell>-->
-    <!--<my-cell type="number"-->
-             <!--model="model.tabNewCars.newVolvoFlitXc60.first"-->
-             <!--on-blur="autoSaving">-->
-    <!--</my-cell>-->
-    <!--<my-cell type="ruble"-->
-             <!--model="model.tabNewCars.newVolvoFlitXc60.second"-->
-             <!--on-blur="autoSaving">-->
-    <!--</my-cell>-->
-    <!--<my-cell type="ruble"-->
-             <!--model="model.tabNewCars.newVolvoFlitXc60.third"-->
-             <!--on-blur="autoSaving">-->
-    <!--</my-cell>-->
-    <!--<my-cell type="ruble"-->
-             <!--model="model.tabNewCars.newVolvoFlitXc60.fourth"-->
-             <!--disabled="true"-->
-             <!--value="{{model.tabNewCars.newVolvoFlitXc60.fourth =-->
-                        <!--model.tabNewCars.newVolvoFlitXc60.second --->
-                        <!--model.tabNewCars.newVolvoFlitXc60.third}}">-->
-    <!--</my-cell>-->
-<!--</my-row>-->
+<my-row field="newVolvoFlitXc60">
+    <my-cell cell-size="1"
+             text="A35">
+    </my-cell>
+    <my-cell cell-size="3"
+             text="XC60">
+    </my-cell>
+    <my-cell type="number"
+             field="first"
+             on-blur="autoSaving">
+    </my-cell>
+    <my-cell type="ruble"
+             field="second"
+             on-blur="autoSaving">
+    </my-cell>
+    <my-cell type="ruble"
+             field="third"
+             on-blur="autoSaving">
+    </my-cell>
+    <my-cell type="ruble"
+             field="fourth"
+             disabled="true"
+             value="{{model.fourth = model.second - model.third}}">
+    </my-cell>
+</my-row>
 
-<!--<my-row>-->
-    <!--<my-cell cell-size="1"-->
-             <!--text="A36">-->
-    <!--</my-cell>-->
-    <!--<my-cell cell-size="3"-->
-             <!--text="C70">-->
-    <!--</my-cell>-->
-    <!--<my-cell type="number"-->
-             <!--model="model.tabNewCars.newVolvoFlitC70.first"-->
-             <!--on-blur="autoSaving">-->
-    <!--</my-cell>-->
-    <!--<my-cell type="ruble"-->
-             <!--model="model.tabNewCars.newVolvoFlitC70.second"-->
-             <!--on-blur="autoSaving">-->
-    <!--</my-cell>-->
-    <!--<my-cell type="ruble"-->
-             <!--model="model.tabNewCars.newVolvoFlitC70.third"-->
-             <!--on-blur="autoSaving">-->
-    <!--</my-cell>-->
-    <!--<my-cell type="ruble"-->
-             <!--model="model.tabNewCars.newVolvoFlitC70.fourth"-->
-             <!--disabled="true"-->
-             <!--value="{{model.tabNewCars.newVolvoFlitC70.fourth =-->
-                        <!--model.tabNewCars.newVolvoFlitC70.second --->
-                        <!--model.tabNewCars.newVolvoFlitC70.third}}">-->
-    <!--</my-cell>-->
-<!--</my-row>-->
+<my-row field="newVolvoFlitC70">
+    <my-cell cell-size="1"
+             text="A36">
+    </my-cell>
+    <my-cell cell-size="3"
+             text="C70">
+    </my-cell>
+    <my-cell type="number"
+             field="first"
+             on-blur="autoSaving">
+    </my-cell>
+    <my-cell type="ruble"
+             field="second"
+             on-blur="autoSaving">
+    </my-cell>
+    <my-cell type="ruble"
+             field="third"
+             on-blur="autoSaving">
+    </my-cell>
+    <my-cell type="ruble"
+             field="fourth"
+             disabled="true"
+             value="{{model.fourth = model.second - model.third}}">
+    </my-cell>
+</my-row>
 
-<!--<my-row>-->
-    <!--<my-cell cell-size="1"-->
-             <!--text="A38">-->
-    <!--</my-cell>-->
-    <!--<my-cell cell-size="3"-->
-             <!--text="XC70">-->
-    <!--</my-cell>-->
-    <!--<my-cell type="number"-->
-             <!--model="model.tabNewCars.newVolvoFlitXc70.first"-->
-             <!--on-blur="autoSaving">-->
-    <!--</my-cell>-->
-    <!--<my-cell type="ruble"-->
-             <!--model="model.tabNewCars.newVolvoFlitXc70.second"-->
-             <!--on-blur="autoSaving">-->
-    <!--</my-cell>-->
-    <!--<my-cell type="ruble"-->
-             <!--model="model.tabNewCars.newVolvoFlitXc70.third"-->
-             <!--on-blur="autoSaving">-->
-    <!--</my-cell>-->
-    <!--<my-cell type="ruble"-->
-             <!--model="model.tabNewCars.newVolvoFlitXc70.fourth"-->
-             <!--disabled="true"-->
-             <!--value="{{model.tabNewCars.newVolvoFlitXc70.fourth =-->
-                        <!--model.tabNewCars.newVolvoFlitXc70.second --->
-                        <!--model.tabNewCars.newVolvoFlitXc70.third}}">-->
-    <!--</my-cell>-->
-<!--</my-row>-->
+<my-row field="newVolvoFlitXc70">
+    <my-cell cell-size="1"
+             text="A38">
+    </my-cell>
+    <my-cell cell-size="3"
+             text="XC70">
+    </my-cell>
+    <my-cell type="number"
+             field="first"
+             on-blur="autoSaving">
+    </my-cell>
+    <my-cell type="ruble"
+             field="second"
+             on-blur="autoSaving">
+    </my-cell>
+    <my-cell type="ruble"
+             field="third"
+             on-blur="autoSaving">
+    </my-cell>
+    <my-cell type="ruble"
+             field="fourth"
+             disabled="true"
+             value="{{model.fourth = model.second - model.third}}">
+    </my-cell>
+</my-row>
 
-<!--<my-row>-->
-    <!--<my-cell cell-size="1"-->
-             <!--text="A39">-->
-    <!--</my-cell>-->
-    <!--<my-cell cell-size="3"-->
-             <!--text="S80">-->
-    <!--</my-cell>-->
-    <!--<my-cell type="number"-->
-             <!--model="model.tabNewCars.newVolvoFlitS80.first"-->
-             <!--on-blur="autoSaving">-->
-    <!--</my-cell>-->
-    <!--<my-cell type="ruble"-->
-             <!--model="model.tabNewCars.newVolvoFlitS80.second"-->
-             <!--on-blur="autoSaving">-->
-    <!--</my-cell>-->
-    <!--<my-cell type="ruble"-->
-             <!--model="model.tabNewCars.newVolvoFlitS80.third"-->
-             <!--on-blur="autoSaving">-->
-    <!--</my-cell>-->
-    <!--<my-cell type="ruble"-->
-             <!--model="model.tabNewCars.newVolvoFlitS80.fourth"-->
-             <!--disabled="true"-->
-             <!--value="{{model.tabNewCars.newVolvoFlitS80.fourth =-->
-                        <!--model.tabNewCars.newVolvoFlitS80.second --->
-                        <!--model.tabNewCars.newVolvoFlitS80.third}}">-->
-    <!--</my-cell>-->
-<!--</my-row>-->
+<my-row field="newVolvoFlitS80">
+    <my-cell cell-size="1"
+             text="A39">
+    </my-cell>
+    <my-cell cell-size="3"
+             text="S80">
+    </my-cell>
+    <my-cell type="number"
+             field="first"
+             on-blur="autoSaving">
+    </my-cell>
+    <my-cell type="ruble"
+             field="second"
+             on-blur="autoSaving">
+    </my-cell>
+    <my-cell type="ruble"
+             field="third"
+             on-blur="autoSaving">
+    </my-cell>
+    <my-cell type="ruble"
+             field="fourth"
+             disabled="true"
+             value="{{model.fourth = model.second - model.third}}">
+    </my-cell>
+</my-row>
 
-<!--<my-row>-->
-    <!--<my-cell cell-size="1"-->
-             <!--text="A40">-->
-    <!--</my-cell>-->
-    <!--<my-cell cell-size="3"-->
-             <!--text="XC90">-->
-    <!--</my-cell>-->
-    <!--<my-cell type="number"-->
-             <!--model="model.tabNewCars.newVolvoFlitXc90.first"-->
-             <!--on-blur="autoSaving">-->
-    <!--</my-cell>-->
-    <!--<my-cell type="ruble"-->
-             <!--model="model.tabNewCars.newVolvoFlitXc90.second"-->
-             <!--on-blur="autoSaving">-->
-    <!--</my-cell>-->
-    <!--<my-cell type="ruble"-->
-             <!--model="model.tabNewCars.newVolvoFlitXc90.third"-->
-             <!--on-blur="autoSaving">-->
-    <!--</my-cell>-->
-    <!--<my-cell type="ruble"-->
-             <!--model="model.tabNewCars.newVolvoFlitXc90.fourth"-->
-             <!--disabled="true"-->
-             <!--value="{{model.tabNewCars.newVolvoFlitXc90.fourth =-->
-                        <!--model.tabNewCars.newVolvoFlitXc90.second --->
-                        <!--model.tabNewCars.newVolvoFlitXc90.third}}">-->
-    <!--</my-cell>-->
-<!--</my-row>-->
+<my-row field="newVolvoFlitXc90">
+    <my-cell cell-size="1"
+             text="A40">
+    </my-cell>
+    <my-cell cell-size="3"
+             text="XC90">
+    </my-cell>
+    <my-cell type="number"
+             field="first"
+             on-blur="autoSaving">
+    </my-cell>
+    <my-cell type="ruble"
+             field="second"
+             on-blur="autoSaving">
+    </my-cell>
+    <my-cell type="ruble"
+             field="third"
+             on-blur="autoSaving">
+    </my-cell>
+    <my-cell type="ruble"
+             field="fourth"
+             disabled="true"
+             value="{{model.fourth = model.second - model.third}}">
+    </my-cell>
+</my-row>
 
-<!--<my-row>-->
-    <!--<my-cell cell-size="1"-->
-             <!--text="A41">-->
-    <!--</my-cell>-->
-    <!--<my-cell cell-size="3"-->
-             <!--text="V60">-->
-    <!--</my-cell>-->
-    <!--<my-cell type="number"-->
-             <!--model="model.tabNewCars.newVolvoFlitV60.first"-->
-             <!--on-blur="autoSaving">-->
-    <!--</my-cell>-->
-    <!--<my-cell type="ruble"-->
-             <!--model="model.tabNewCars.newVolvoFlitV60.second"-->
-             <!--on-blur="autoSaving">-->
-    <!--</my-cell>-->
-    <!--<my-cell type="ruble"-->
-             <!--model="model.tabNewCars.newVolvoFlitV60.third"-->
-             <!--on-blur="autoSaving">-->
-    <!--</my-cell>-->
-    <!--<my-cell type="ruble"-->
-             <!--model="model.tabNewCars.newVolvoFlitV60.fourth"-->
-             <!--disabled="true"-->
-             <!--value="{{model.tabNewCars.newVolvoFlitV60.fourth =-->
-                        <!--model.tabNewCars.newVolvoFlitV60.second --->
-                        <!--model.tabNewCars.newVolvoFlitV60.third}}">-->
-    <!--</my-cell>-->
-<!--</my-row>-->
+<my-row field="newVolvoFlitV60">
+    <my-cell cell-size="1"
+             text="A41">
+    </my-cell>
+    <my-cell cell-size="3"
+             text="V60">
+    </my-cell>
+    <my-cell type="number"
+             field="first"
+             on-blur="autoSaving">
+    </my-cell>
+    <my-cell type="ruble"
+             field="second"
+             on-blur="autoSaving">
+    </my-cell>
+    <my-cell type="ruble"
+             field="third"
+             on-blur="autoSaving">
+    </my-cell>
+    <my-cell type="ruble"
+             field="fourth"
+             disabled="true"
+             value="{{model.fourth = model.second - model.third}}">
+    </my-cell>
+</my-row>
 
-<!--</my-body>-->
-<!--<my-foot>-->
+</my-body>
+<my-foot>
 
-    <!--<my-row>-->
+    <!--TODO-->
+    <!--<my-row field="">-->
         <!--<my-cell cell-size="1"-->
                  <!--text="A50">-->
         <!--</my-cell>-->
@@ -700,7 +635,7 @@
                  <!--text="Итого Новые а/м Volvo Флит">-->
         <!--</my-cell>-->
         <!--<my-cell type="number"-->
-                 <!--model="model.tabNewCars.newVolvoFlitTotal.first"-->
+                 <!--field="newVolvoFlitTotal.first"-->
                  <!--disabled="true"-->
                  <!--value="{{model.tabNewCars.newVolvoFlitTotal.first=-->
                             <!--model.tabNewCars.newVolvoFlitC30.first+-->
@@ -716,7 +651,7 @@
                           <!--}}">-->
         <!--</my-cell>-->
         <!--<my-cell type="ruble"-->
-                 <!--model="model.tabNewCars.newVolvoFlitTotal.second"-->
+                 <!--field="newVolvoFlitTotal.second"-->
                  <!--disabled="true"-->
                  <!--value="{{model.tabNewCars.newVolvoFlitTotal.second=-->
                             <!--model.tabNewCars.newVolvoFlitC30.second+-->
@@ -731,7 +666,7 @@
                             <!--model.tabNewCars.newVolvoFlitV60.second}}">-->
         <!--</my-cell>-->
         <!--<my-cell type="ruble"-->
-                 <!--model="model.tabNewCars.newVolvoFlitTotal.third"-->
+                 <!--field="newVolvoFlitTotal.third"-->
                  <!--disabled="true"-->
                  <!--value="{{model.tabNewCars.newVolvoFlitTotal.third=-->
                             <!--model.tabNewCars.newVolvoFlitC30.third+-->
@@ -746,7 +681,7 @@
                             <!--model.tabNewCars.newVolvoFlitV60.third}}">-->
         <!--</my-cell>-->
         <!--<my-cell type="ruble"-->
-                 <!--model="model.tabNewCars.newVolvoFlitTotal.fourth"-->
+                 <!--field="newVolvoFlitTotal.fourth"-->
                  <!--disabled="true"-->
                  <!--value="{{model.tabNewCars.newVolvoFlitTotal.fourth=-->
                             <!--model.tabNewCars.newVolvoFlitC30.fourth+-->
@@ -762,12 +697,15 @@
         <!--</my-cell>-->
     <!--</my-row>-->
 
-<!--</my-foot>-->
-<!--</my-table>-->
+</my-foot>
+</my-table>
 
-<!--<my-table>-->
-    <!--<my-foot>-->
-        <!--<my-row>-->
+<my-table model="model" field="tabNewCars">
+    <my-foot>
+
+        <!--TODO-->
+
+        <!--<my-row field="">-->
 
             <!--<my-cell cell-size="1"-->
                      <!--text="A100">-->
@@ -776,28 +714,28 @@
                      <!--text="Итого продажи а/м Volvo">-->
             <!--</my-cell>-->
             <!--<my-cell type="number"-->
-                     <!--model="model.tabNewCars.newVolvoTotal.first"-->
+                     <!--field="newVolvoTotal.first"-->
                      <!--disabled="true"-->
                      <!--value="{{model.tabNewCars.newVolvoTotal.first =-->
                           <!--model.tabNewCars.newVolvoRetailTotal.first +-->
                           <!--model.tabNewCars.newVolvoFlitTotal.first}}">-->
             <!--</my-cell>-->
             <!--<my-cell type="ruble"-->
-                     <!--model="model.tabNewCars.newVolvoTotal.second"-->
+                     <!--field="newVolvoTotal.second"-->
                      <!--disabled="true"-->
                      <!--value="{{model.tabNewCars.newVolvoTotal.second =-->
                           <!--model.tabNewCars.newVolvoRetailTotal.second +-->
                           <!--model.tabNewCars.newVolvoFlitTotal.second}}">-->
             <!--</my-cell>-->
             <!--<my-cell type="ruble"-->
-                     <!--model="model.tabNewCars.newVolvoTotal.third"-->
+                     <!--field="newVolvoTotal.third"-->
                      <!--disabled="true"-->
                      <!--value="{{model.tabNewCars.newVolvoTotal.third =-->
                           <!--model.tabNewCars.newVolvoRetailTotal.third +-->
                           <!--model.tabNewCars.newVolvoFlitTotal.third}}">-->
             <!--</my-cell>-->
             <!--<my-cell type="ruble"-->
-                     <!--model="model.tabNewCars.newVolvoTotal.fourth"-->
+                     <!--field="newVolvoTotal.fourth"-->
                      <!--disabled="true"-->
                      <!--value="{{model.tabNewCars.newVolvoTotal.fourth =-->
                           <!--model.tabNewCars.newVolvoRetailTotal.fourth +-->
@@ -805,225 +743,218 @@
             <!--</my-cell>-->
 
         <!--</my-row>-->
-    <!--</my-foot>-->
-<!--</my-table>-->
+    </my-foot>
+</my-table>
 
-<!--<my-table>-->
-<!--<my-head>-->
-    <!--<my-row>-->
-        <!--<my-cell cell-size="4"-->
-                 <!--colspan="2"-->
-                 <!--text="Прочие доходы"></my-cell>-->
-        <!--<my-cell></my-cell>-->
-        <!--<my-cell></my-cell>-->
-        <!--<my-cell></my-cell>-->
-        <!--<my-cell text="ВП"></my-cell>-->
-    <!--</my-row>-->
-<!--</my-head>-->
-<!--<my-body>-->
-    <!--<my-row>-->
-        <!--<my-cell cell-size="1"-->
-                 <!--text="A161">-->
-        <!--</my-cell>-->
-        <!--<my-cell cell-size="3"-->
-                 <!--text="Доход от кредитования (Программа Вольво) - новые а/м">-->
-        <!--</my-cell>-->
-        <!--<my-cell></my-cell>-->
-        <!--<my-cell></my-cell>-->
-        <!--<my-cell></my-cell>-->
-        <!--<my-cell type="ruble"-->
-                 <!--model="model.tabNewCars.otherIncomingVolvoCreditingIncoming.fourth"-->
-                 <!--on-blur="autoSaving">-->
-        <!--</my-cell>-->
-    <!--</my-row>-->
+<my-table model="model" field="tabNewCars">
+<my-head>
+    <my-row>
+        <my-cell cell-size="4"
+                 colspan="2"
+                 text="Прочие доходы"></my-cell>
+        <my-cell></my-cell>
+        <my-cell></my-cell>
+        <my-cell></my-cell>
+        <my-cell text="ВП"></my-cell>
+    </my-row>
+</my-head>
+<my-body>
+    <my-row field="otherIncomingVolvoCreditingIncoming">
+        <my-cell cell-size="1"
+                 text="A161">
+        </my-cell>
+        <my-cell cell-size="3"
+                 text="Доход от кредитования (Программа Вольво) - новые а/м">
+        </my-cell>
+        <my-cell></my-cell>
+        <my-cell></my-cell>
+        <my-cell></my-cell>
+        <my-cell type="ruble"
+                 field="fourth"
+                 on-blur="autoSaving">
+        </my-cell>
+    </my-row>
 
-    <!--<my-row>-->
-        <!--<my-cell cell-size="1"-->
-                 <!--text="A162">-->
-        <!--</my-cell>-->
-        <!--<my-cell cell-size="3"-->
-                 <!--text="Доход от страхования (Программа Вольво) - новые а/м">-->
-        <!--</my-cell>-->
-        <!--<my-cell></my-cell>-->
-        <!--<my-cell></my-cell>-->
-        <!--<my-cell></my-cell>-->
-        <!--<my-cell type="ruble"-->
-                 <!--model="model.tabNewCars.otherIncomingVolvoInsuranceIncoming.fourth"-->
-                 <!--on-blur="autoSaving">-->
-        <!--</my-cell>-->
-    <!--</my-row>-->
+    <my-row field="otherIncomingVolvoInsuranceIncoming">
+        <my-cell cell-size="1"
+                 text="A162">
+        </my-cell>
+        <my-cell cell-size="3"
+                 text="Доход от страхования (Программа Вольво) - новые а/м">
+        </my-cell>
+        <my-cell></my-cell>
+        <my-cell></my-cell>
+        <my-cell></my-cell>
+        <my-cell type="ruble"
+                 field="fourth"
+                 on-blur="autoSaving">
+        </my-cell>
+    </my-row>
 
-    <!--<my-row>-->
-        <!--<my-cell cell-size="1"-->
-                 <!--text="A163">-->
-        <!--</my-cell>-->
-        <!--<my-cell cell-size="3"-->
-                 <!--text="Доход от кредитования - новые а/м">-->
-        <!--</my-cell>-->
-        <!--<my-cell></my-cell>-->
-        <!--<my-cell></my-cell>-->
-        <!--<my-cell></my-cell>-->
-        <!--<my-cell type="ruble"-->
-                 <!--model="model.tabNewCars.otherIncomingCreditingIncoming.fourth"-->
-                 <!--on-blur="autoSaving">-->
-        <!--</my-cell>-->
-    <!--</my-row>-->
+    <my-row field="otherIncomingCreditingIncoming">
+        <my-cell cell-size="1"
+                 text="A163">
+        </my-cell>
+        <my-cell cell-size="3"
+                 text="Доход от кредитования - новые а/м">
+        </my-cell>
+        <my-cell></my-cell>
+        <my-cell></my-cell>
+        <my-cell></my-cell>
+        <my-cell type="ruble"
+                 field="fourth"
+                 on-blur="autoSaving">
+        </my-cell>
+    </my-row>
 
-    <!--<my-row>-->
-        <!--<my-cell cell-size="1"-->
-                 <!--text="A164">-->
-        <!--</my-cell>-->
-        <!--<my-cell cell-size="3"-->
-                 <!--text="Доход от страхования - новые а/м">-->
-        <!--</my-cell>-->
-        <!--<my-cell></my-cell>-->
-        <!--<my-cell></my-cell>-->
-        <!--<my-cell></my-cell>-->
-        <!--<my-cell type="ruble"-->
-                 <!--model="model.tabNewCars.otherIncomingInsuranceIncoming.fourth"-->
-                 <!--on-blur="autoSaving">-->
-        <!--</my-cell>-->
-    <!--</my-row>-->
+    <my-row field="otherIncomingInsuranceIncoming">
+        <my-cell cell-size="1"
+                 text="A164">
+        </my-cell>
+        <my-cell cell-size="3"
+                 text="Доход от страхования - новые а/м">
+        </my-cell>
+        <my-cell></my-cell>
+        <my-cell></my-cell>
+        <my-cell></my-cell>
+        <my-cell type="ruble"
+                 field="fourth"
+                 on-blur="autoSaving">
+        </my-cell>
+    </my-row>
 
-    <!--<my-row>-->
-        <!--<my-cell cell-size="1"-->
-                 <!--text="A165">-->
-        <!--</my-cell>-->
-        <!--<my-cell cell-size="3"-->
-                 <!--text="Авизо (начисленные)">-->
-        <!--</my-cell>-->
-        <!--<my-cell></my-cell>-->
-        <!--<my-cell></my-cell>-->
-        <!--<my-cell></my-cell>-->
-        <!--<my-cell type="ruble"-->
-                 <!--model="model.tabNewCars.otherIncomingAccrualAviso.fourth"-->
-                 <!--on-blur="autoSaving">-->
-        <!--</my-cell>-->
-    <!--</my-row>-->
+    <my-row field="otherIncomingAccrualAviso">
+        <my-cell cell-size="1"
+                 text="A165">
+        </my-cell>
+        <my-cell cell-size="3"
+                 text="Авизо (начисленные)">
+        </my-cell>
+        <my-cell></my-cell>
+        <my-cell></my-cell>
+        <my-cell></my-cell>
+        <my-cell type="ruble"
+                 field="fourth"
+                 on-blur="autoSaving">
+        </my-cell>
+    </my-row>
 
-    <!--<my-row>-->
-        <!--<my-cell cell-size="1"-->
-                 <!--text="A166">-->
-        <!--</my-cell>-->
-        <!--<my-cell cell-size="3"-->
-                 <!--text="Авизо (полученные)">-->
-        <!--</my-cell>-->
-        <!--<my-cell></my-cell>-->
-        <!--<my-cell></my-cell>-->
-        <!--<my-cell></my-cell>-->
-        <!--<my-cell type="ruble"-->
-                 <!--model="model.tabNewCars.otherIncomingDerivedAviso.fourth"-->
-                 <!--on-blur="autoSaving">-->
-        <!--</my-cell>-->
-    <!--</my-row>-->
+    <my-row field="otherIncomingDerivedAviso">
+        <my-cell cell-size="1"
+                 text="A166">
+        </my-cell>
+        <my-cell cell-size="3"
+                 text="Авизо (полученные)">
+        </my-cell>
+        <my-cell></my-cell>
+        <my-cell></my-cell>
+        <my-cell></my-cell>
+        <my-cell type="ruble"
+                 field="fourth"
+                 on-blur="autoSaving">
+        </my-cell>
+    </my-row>
 
-    <!--<my-row>-->
-        <!--<my-cell cell-size="1"-->
-                 <!--text="A169">-->
-        <!--</my-cell>-->
-        <!--<my-cell cell-size="3"-->
-                 <!--text="Предпродажн. подготовка">-->
-        <!--</my-cell>-->
-        <!--<my-cell></my-cell>-->
-        <!--<my-cell type="ruble"-->
-                 <!--model="model.tabNewCars.otherIncomingPreSalePreparation.second"-->
-                 <!--on-blur="autoSaving">-->
+    <my-row field="otherIncomingPreSalePreparation">
+        <my-cell cell-size="1"
+                 text="A169">
+        </my-cell>
+        <my-cell cell-size="3"
+                 text="Предпродажн. подготовка">
+        </my-cell>
+        <my-cell></my-cell>
+        <my-cell type="ruble"
+                 field="second"
+                 on-blur="autoSaving">
 
-        <!--</my-cell>-->
-        <!--<my-cell type="ruble"-->
-                 <!--model="model.tabNewCars.otherIncomingPreSalePreparation.third"-->
-                 <!--on-blur="autoSaving">-->
-        <!--</my-cell>-->
-        <!--<my-cell type="ruble"-->
-                 <!--model="model.tabNewCars.otherIncomingPreSalePreparation.fourth"-->
-                 <!--disabled="true"-->
-                 <!--value="{{model.tabNewCars.otherIncomingPreSalePreparation.fourth =-->
-                          <!--model.tabNewCars.otherIncomingPreSalePreparation.second --->
-                          <!--model.tabNewCars.otherIncomingPreSalePreparation.third}}">-->
-        <!--</my-cell>-->
-    <!--</my-row>-->
+        </my-cell>
+        <my-cell type="ruble"
+                 field="third"
+                 on-blur="autoSaving">
+        </my-cell>
+        <my-cell type="ruble"
+                 field="fourth"
+                 disabled="true"
+                 value="{{model.fourth = model.second - model.third}}">
+        </my-cell>
+    </my-row>
 
-    <!--<my-row>-->
-        <!--<my-cell cell-size="1"-->
-                 <!--text="A170">-->
-        <!--</my-cell>-->
-        <!--<my-cell cell-size="3"-->
-                 <!--text="Продажа расширенной гарантии">-->
-        <!--</my-cell>-->
-        <!--<my-cell></my-cell>-->
-        <!--<my-cell type="ruble"-->
-                 <!--model="model.tabNewCars.otherIncomingExtendedGuaranteeSale.second"-->
-                 <!--on-blur="autoSaving">-->
+    <my-row field="otherIncomingExtendedGuaranteeSale">
+        <my-cell cell-size="1"
+                 text="A170">
+        </my-cell>
+        <my-cell cell-size="3"
+                 text="Продажа расширенной гарантии">
+        </my-cell>
+        <my-cell></my-cell>
+        <my-cell type="ruble"
+                 field="second"
+                 on-blur="autoSaving">
 
-        <!--</my-cell>-->
-        <!--<my-cell type="ruble"-->
-                 <!--model="model.tabNewCars.otherIncomingExtendedGuaranteeSale.third"-->
-                 <!--on-blur="autoSaving">-->
-        <!--</my-cell>-->
-        <!--<my-cell type="ruble"-->
-                 <!--model="model.tabNewCars.otherIncomingExtendedGuaranteeSale.fourth"-->
-                 <!--disabled="true"-->
-                 <!--value="{{model.tabNewCars.otherIncomingExtendedGuaranteeSale.fourth =-->
-                          <!--model.tabNewCars.otherIncomingExtendedGuaranteeSale.second --->
-                          <!--model.tabNewCars.otherIncomingExtendedGuaranteeSale.third}}">-->
-        <!--</my-cell>-->
-    <!--</my-row>-->
+        </my-cell>
+        <my-cell type="ruble"
+                 field="third"
+                 on-blur="autoSaving">
+        </my-cell>
+        <my-cell type="ruble"
+                 field="fourth"
+                 disabled="true"
+                 value="{{model.fourth = model.second - model.third}}">
+        </my-cell>
+    </my-row>
 
-    <!--<my-row>-->
-        <!--<my-cell cell-size="1"-->
-                 <!--text="A171">-->
-        <!--</my-cell>-->
-        <!--<my-cell cell-size="3"-->
-                 <!--text="Другие доходы/расходы">-->
-        <!--</my-cell>-->
-        <!--<my-cell></my-cell>-->
-        <!--<my-cell type="ruble"-->
-                 <!--model="model.tabNewCars.otherIncomingOtherIncomingCharges.second"-->
-                 <!--on-blur="autoSaving">-->
+    <my-row field="otherIncomingOtherIncomingCharges">
+        <my-cell cell-size="1"
+                 text="A171">
+        </my-cell>
+        <my-cell cell-size="3"
+                 text="Другие доходы/расходы">
+        </my-cell>
+        <my-cell></my-cell>
+        <my-cell type="ruble"
+                 field="second"
+                 on-blur="autoSaving">
 
-        <!--</my-cell>-->
-        <!--<my-cell type="ruble"-->
-                 <!--model="model.tabNewCars.otherIncomingOtherIncomingCharges.third"-->
-                 <!--on-blur="autoSaving">-->
-        <!--</my-cell>-->
-        <!--<my-cell type="ruble"-->
-                 <!--model="model.tabNewCars.otherIncomingOtherIncomingCharges.fourth"-->
-                 <!--disabled="true"-->
-                 <!--value="{{model.tabNewCars.otherIncomingOtherIncomingCharges.fourth =-->
-                          <!--model.tabNewCars.otherIncomingOtherIncomingCharges.second --->
-                          <!--model.tabNewCars.otherIncomingOtherIncomingCharges.third}}">-->
-        <!--</my-cell>-->
-    <!--</my-row>-->
+        </my-cell>
+        <my-cell type="ruble"
+                 field="third"
+                 on-blur="autoSaving">
+        </my-cell>
+        <my-cell type="ruble"
+                 field="fourth"
+                 disabled="true"
+                 value="{{model.fourth = model.second - model.third}}">
+        </my-cell>
+    </my-row>
 
-    <!--<my-row>-->
-        <!--<my-cell cell-size="1"-->
-                 <!--text="A172">-->
-        <!--</my-cell>-->
-        <!--<my-cell cell-size="3"-->
-                 <!--text="Аксессуары">-->
-        <!--</my-cell>-->
-        <!--<my-cell></my-cell>-->
-        <!--<my-cell type="ruble"-->
-                 <!--model="model.tabNewCars.otherIncomingAccessories.second"-->
-                 <!--on-blur="autoSaving">-->
+    <my-row field="otherIncomingAccessories">
+        <my-cell cell-size="1"
+                 text="A172">
+        </my-cell>
+        <my-cell cell-size="3"
+                 text="Аксессуары">
+        </my-cell>
+        <my-cell></my-cell>
+        <my-cell type="ruble"
+                 field="second"
+                 on-blur="autoSaving">
 
-        <!--</my-cell>-->
-        <!--<my-cell type="ruble"-->
-                 <!--model="model.tabNewCars.otherIncomingAccessories.third"-->
-                 <!--on-blur="autoSaving">-->
-        <!--</my-cell>-->
-        <!--<my-cell type="ruble"-->
-                 <!--model="model.tabNewCars.otherIncomingAccessories.fourth"-->
-                 <!--disabled="true"-->
-                 <!--value="{{model.tabNewCars.otherIncomingAccessories.fourth =-->
-                          <!--model.tabNewCars.otherIncomingAccessories.second --->
-                          <!--model.tabNewCars.otherIncomingAccessories.third}}">-->
-        <!--</my-cell>-->
-    <!--</my-row>-->
-<!--</my-body>-->
-<!--<my-foot>-->
+        </my-cell>
+        <my-cell type="ruble"
+                 field="third"
+                 on-blur="autoSaving">
+        </my-cell>
+        <my-cell type="ruble"
+                 field="fourth"
+                 disabled="true"
+                 value="{{model.fourth = model.second - model.third}}">
+        </my-cell>
+    </my-row>
+</my-body>
+<my-foot>
 
-    <!--<my-row>-->
+    <!--TODO-->
+    <!--<my-row field="">-->
         <!--<my-cell cell-size="1"-->
                  <!--text="A180">-->
         <!--</my-cell>-->
@@ -1032,7 +963,7 @@
         <!--</my-cell>-->
         <!--<my-cell></my-cell>-->
         <!--<my-cell type="ruble"-->
-                 <!--model="model.tabNewCars.otherIncomingTotal.second"-->
+                 <!--field="otherIncomingTotal.second"-->
                  <!--disabled="true"-->
                  <!--value="{{model.tabNewCars.otherIncomingTotal.second=-->
                             <!--model.tabNewCars.otherIncomingPreSalePreparation.second+-->
@@ -1041,7 +972,7 @@
                             <!--model.tabNewCars.otherIncomingAccessories.second}}">-->
         <!--</my-cell>-->
         <!--<my-cell type="ruble"-->
-                 <!--model="model.tabNewCars.otherIncomingTotal.third"-->
+                 <!--field="otherIncomingTotal.third"-->
                  <!--disabled="true"-->
                  <!--value="{{model.tabNewCars.otherIncomingTotal.third=-->
                             <!--model.tabNewCars.otherIncomingPreSalePreparation.third+-->
@@ -1050,7 +981,7 @@
                             <!--model.tabNewCars.otherIncomingAccessories.third}}">-->
         <!--</my-cell>-->
         <!--<my-cell type="ruble"-->
-                 <!--model="model.tabNewCars.otherIncomingTotal.fourth"-->
+                 <!--field="otherIncomingTotal.fourth"-->
                  <!--disabled="true"-->
                  <!--value="{{model.tabNewCars.otherIncomingTotal.fourth=-->
                             <!--0}}">-->
@@ -1058,12 +989,15 @@
     <!--</my-row>-->
 
 
-<!--</my-foot>-->
-<!--</my-table>-->
+</my-foot>
+</my-table>
 
-<!--<my-table>-->
-    <!--<my-foot>-->
-        <!--<my-row>-->
+<my-table model="model" field="tabNewCars">
+
+    <!--TODO-->
+
+    <my-foot>
+        <!--<my-row field="">-->
             <!--<my-cell cell-size="1"-->
                      <!--text="A200">-->
             <!--</my-cell>-->
@@ -1071,98 +1005,100 @@
                      <!--text="Валовая Прибыль отдела продаж новых а/м">-->
             <!--</my-cell>-->
             <!--<my-cell type="number"-->
-                     <!--model="model.tabNewCars.grossProfitNewCarsDepartment.first"-->
+                     <!--field="grossProfitNewCarsDepartment.first"-->
                      <!--disabled="true"-->
                      <!--value="{{model.tabNewCars.grossProfitNewCarsDepartment.first=-->
                      <!--model.tabNewCars.newVolvoTotal.first}}">-->
             <!--</my-cell>-->
             <!--<my-cell type="ruble"-->
-                     <!--model="model.tabNewCars.grossProfitNewCarsDepartment.second"-->
+                     <!--field="grossProfitNewCarsDepartment.second"-->
                      <!--disabled="true"-->
                      <!--value="{{model.tabNewCars.grossProfitNewCarsDepartment.second =-->
                           <!--model.tabNewCars.newVolvoTotal.second +-->
                           <!--model.tabNewCars.otherIncomingTotal.second}}">-->
             <!--</my-cell>-->
             <!--<my-cell type="ruble"-->
-                     <!--model="model.tabNewCars.grossProfitNewCarsDepartment.third"-->
+                     <!--field="grossProfitNewCarsDepartment.third"-->
                      <!--disabled="true"-->
                      <!--value="{{model.tabNewCars.grossProfitNewCarsDepartment.third =-->
                           <!--model.tabNewCars.newVolvoTotal.third +-->
                           <!--model.tabNewCars.otherIncomingTotal.third}}">-->
             <!--</my-cell>-->
             <!--<my-cell type="ruble"-->
-                     <!--model="model.tabNewCars.grossProfitNewCarsDepartment.fourth"-->
+                     <!--field="grossProfitNewCarsDepartment.fourth"-->
                      <!--disabled="true"-->
                      <!--value="{{model.tabNewCars.grossProfitNewCarsDepartment.fourth =-->
                           <!--model.tabNewCars.newVolvoTotal.fourth +-->
                           <!--model.tabNewCars.otherIncomingTotal.fourth}}">-->
             <!--</my-cell>-->
         <!--</my-row>-->
-    <!--</my-foot>-->
-<!--</my-table>-->
+    </my-foot>
+</my-table>
 
-<!--<my-table>-->
-    <!--<my-head>-->
-        <!--<my-row>-->
-            <!--<my-cell cell-size="4"-->
-                     <!--colspan="2"-->
-                     <!--text="Переменные расходы"></my-cell>-->
-            <!--<my-cell></my-cell>-->
-            <!--<my-cell></my-cell>-->
-            <!--<my-cell></my-cell>-->
-            <!--<my-cell text="Сумма"></my-cell>-->
-        <!--</my-row>-->
-    <!--</my-head>-->
-    <!--<my-body>-->
-        <!--<my-row>-->
-            <!--<my-cell cell-size="1"-->
-                     <!--text="A201">-->
-            <!--</my-cell>-->
-            <!--<my-cell cell-size="3"-->
-                     <!--text="Оклад продавцов">-->
-            <!--</my-cell>-->
-            <!--<my-cell></my-cell>-->
-            <!--<my-cell></my-cell>-->
-            <!--<my-cell></my-cell>-->
-            <!--<my-cell type="ruble"-->
-                     <!--model="model.tabNewCars.fluctuatingChargesSellerSalary.fourth"-->
-                     <!--on-blur="autoSaving">-->
-            <!--</my-cell>-->
-        <!--</my-row>-->
+<my-table model="model" field="tabNewCars">
+    <my-head>
+        <my-row>
+            <my-cell cell-size="4"
+                     colspan="2"
+                     text="Переменные расходы"></my-cell>
+            <my-cell></my-cell>
+            <my-cell></my-cell>
+            <my-cell></my-cell>
+            <my-cell text="Сумма"></my-cell>
+        </my-row>
+    </my-head>
+    <my-body>
+        <my-row field="fluctuatingChargesSellerSalary">
+            <my-cell cell-size="1"
+                     text="A201">
+            </my-cell>
+            <my-cell cell-size="3"
+                     text="Оклад продавцов">
+            </my-cell>
+            <my-cell></my-cell>
+            <my-cell></my-cell>
+            <my-cell></my-cell>
+            <my-cell type="ruble"
+                     field="fourth"
+                     on-blur="autoSaving">
+            </my-cell>
+        </my-row>
 
-        <!--<my-row>-->
-            <!--<my-cell cell-size="1"-->
-                     <!--text="A202">-->
-            <!--</my-cell>-->
-            <!--<my-cell cell-size="3"-->
-                     <!--text="Комиссионные продавцов">-->
-            <!--</my-cell>-->
-            <!--<my-cell></my-cell>-->
-            <!--<my-cell></my-cell>-->
-            <!--<my-cell></my-cell>-->
-            <!--<my-cell type="ruble"-->
-                     <!--model="model.tabNewCars.fluctuatingChargesSellerCommissions.fourth"-->
-                     <!--on-blur="autoSaving">-->
-            <!--</my-cell>-->
-        <!--</my-row>-->
+        <my-row field="fluctuatingChargesSellerCommissions">
+            <my-cell cell-size="1"
+                     text="A202">
+            </my-cell>
+            <my-cell cell-size="3"
+                     text="Комиссионные продавцов">
+            </my-cell>
+            <my-cell></my-cell>
+            <my-cell></my-cell>
+            <my-cell></my-cell>
+            <my-cell type="ruble"
+                     field="fourth"
+                     on-blur="autoSaving">
+            </my-cell>
+        </my-row>
 
-        <!--<my-row>-->
-            <!--<my-cell cell-size="1"-->
-                     <!--text="A203">-->
-            <!--</my-cell>-->
-            <!--<my-cell cell-size="3"-->
-                     <!--text="Налоги на з/п">-->
-            <!--</my-cell>-->
-            <!--<my-cell></my-cell>-->
-            <!--<my-cell></my-cell>-->
-            <!--<my-cell></my-cell>-->
-            <!--<my-cell type="ruble"-->
-                     <!--model="model.tabNewCars.fluctuatingChargesSalaryTax.fourth"-->
-                     <!--on-blur="autoSaving">-->
-            <!--</my-cell>-->
-        <!--</my-row>-->
+        <my-row field="fluctuatingChargesSalaryTax">
+            <my-cell cell-size="1"
+                     text="A203">
+            </my-cell>
+            <my-cell cell-size="3"
+                     text="Налоги на з/п">
+            </my-cell>
+            <my-cell></my-cell>
+            <my-cell></my-cell>
+            <my-cell></my-cell>
+            <my-cell type="ruble"
+                     field="fourth"
+                     on-blur="autoSaving">
+            </my-cell>
+        </my-row>
 
-        <!--<my-row>-->
+        <!--TODO-->
+
+        <!--<my-row field="">-->
             <!--<my-cell cell-size="1"-->
                      <!--text="A210">-->
             <!--</my-cell>-->
@@ -1173,7 +1109,7 @@
             <!--<my-cell></my-cell>-->
             <!--<my-cell></my-cell>-->
             <!--<my-cell type="ruble"-->
-                     <!--model="model.tabNewCars.fluctuatingChargesTotalProductiveStaffCharges.fourth"-->
+                     <!--field="fluctuatingChargesTotalProductiveStaffCharges.fourth"-->
                      <!--disabled="true"-->
                      <!--value="{{model.tabNewCars.fluctuatingChargesTotalProductiveStaffCharges.fourth =-->
                            <!--model.tabNewCars.fluctuatingChargesSellerSalary.fourth +-->
@@ -1182,40 +1118,43 @@
             <!--</my-cell>-->
         <!--</my-row>-->
 
-        <!--<my-row>-->
-            <!--<my-cell cell-size="1"-->
-                     <!--text="A212">-->
-            <!--</my-cell>-->
-            <!--<my-cell cell-size="3"-->
-                     <!--text="Расходы по склад-ию а/м">-->
-            <!--</my-cell>-->
-            <!--<my-cell></my-cell>-->
-            <!--<my-cell></my-cell>-->
-            <!--<my-cell></my-cell>-->
-            <!--<my-cell type="ruble"-->
-                     <!--model="model.tabNewCars.fluctuatingChargesStoringCharges.fourth"-->
-                     <!--on-blur="autoSaving">-->
-            <!--</my-cell>-->
-        <!--</my-row>-->
+        <my-row field="fluctuatingChargesStoringCharges">
+            <my-cell cell-size="1"
+                     text="A212">
+            </my-cell>
+            <my-cell cell-size="3"
+                     text="Расходы по склад-ию а/м">
+            </my-cell>
+            <my-cell></my-cell>
+            <my-cell></my-cell>
+            <my-cell></my-cell>
+            <my-cell type="ruble"
+                     field="fourth"
+                     on-blur="autoSaving">
+            </my-cell>
+        </my-row>
 
-        <!--<my-row>-->
-            <!--<my-cell cell-size="1"-->
-                     <!--text="A213">-->
-            <!--</my-cell>-->
-            <!--<my-cell cell-size="3"-->
-                     <!--text="Другие переменные расходы">-->
-            <!--</my-cell>-->
-            <!--<my-cell></my-cell>-->
-            <!--<my-cell></my-cell>-->
-            <!--<my-cell></my-cell>-->
-            <!--<my-cell type="ruble"-->
-                     <!--model="model.tabNewCars.fluctuatingChargesOtherVaryingCharges.fourth"-->
-                     <!--on-blur="autoSaving">-->
-            <!--</my-cell>-->
-        <!--</my-row>-->
-    <!--</my-body>-->
-    <!--<my-foot>-->
-        <!--<my-row>-->
+        <my-row field="fluctuatingChargesOtherVaryingCharges">
+            <my-cell cell-size="1"
+                     text="A213">
+            </my-cell>
+            <my-cell cell-size="3"
+                     text="Другие переменные расходы">
+            </my-cell>
+            <my-cell></my-cell>
+            <my-cell></my-cell>
+            <my-cell></my-cell>
+            <my-cell type="ruble"
+                     field="fourth"
+                     on-blur="autoSaving">
+            </my-cell>
+        </my-row>
+    </my-body>
+    <my-foot>
+
+        <!--TODO-->
+
+        <!--<my-row field="">-->
             <!--<my-cell cell-size="1"-->
                      <!--text="A220">-->
             <!--</my-cell>-->
@@ -1226,7 +1165,7 @@
             <!--<my-cell></my-cell>-->
             <!--<my-cell></my-cell>-->
             <!--<my-cell type="ruble"-->
-                     <!--model="model.tabNewCars.fluctuatingChargesTotalFluctuatingCharge.fourth"-->
+                     <!--field="fluctuatingChargesTotalFluctuatingCharge.fourth"-->
                      <!--disabled="true"-->
                      <!--value="{{model.tabNewCars.fluctuatingChargesTotalFluctuatingCharge.fourth =-->
                             <!--model.tabNewCars.fluctuatingChargesTotalProductiveStaffCharges.fourth +-->
@@ -1234,12 +1173,15 @@
                             <!--model.tabNewCars.fluctuatingChargesOtherVaryingCharges.fourth}}">-->
             <!--</my-cell>-->
         <!--</my-row>-->
-    <!--</my-foot>-->
-<!--</my-table>-->
+    </my-foot>
+</my-table>
 
-<!--<my-table>-->
-    <!--<my-foot>-->
-        <!--<my-row>-->
+<my-table model="model" field="tabNewCars">
+    <my-foot>
+
+        <!--TODO-->
+
+        <!--<my-row field="">-->
             <!--<my-cell cell-size="1"-->
                      <!--text="A230">-->
             <!--</my-cell>-->
@@ -1250,93 +1192,96 @@
             <!--<my-cell></my-cell>-->
             <!--<my-cell></my-cell>-->
             <!--<my-cell type="ruble"-->
-                     <!--model="model.tabNewCars.fluctuatingChargesGrossProfit.fourth"-->
+                     <!--field="fluctuatingChargesGrossProfit.fourth"-->
                      <!--disabled="true"-->
                      <!--value="{{model.tabNewCars.fluctuatingChargesGrossProfit.fourth =-->
                           <!--0}}">-->
             <!--</my-cell>-->
         <!--</my-row>-->
-    <!--</my-foot>-->
-<!--</my-table>-->
+    </my-foot>
+</my-table>
 
-<!--<my-table>-->
-<!--<my-head>-->
-    <!--<my-row>-->
-        <!--<my-cell cell-size="4"-->
-                 <!--colspan="2"-->
-                 <!--text="Расходы по отделу"></my-cell>-->
-        <!--<my-cell></my-cell>-->
-        <!--<my-cell></my-cell>-->
-        <!--<my-cell></my-cell>-->
-        <!--<my-cell text="Сумма"></my-cell>-->
-    <!--</my-row>-->
-<!--</my-head>-->
-<!--<my-body>-->
-    <!--<my-row>-->
-        <!--<my-cell cell-size="1"-->
-                 <!--text="A231">-->
-        <!--</my-cell>-->
-        <!--<my-cell cell-size="3"-->
-                 <!--text="Зарплата непродуктивного персонала">-->
-        <!--</my-cell>-->
-        <!--<my-cell></my-cell>-->
-        <!--<my-cell></my-cell>-->
-        <!--<my-cell></my-cell>-->
-        <!--<my-cell type="ruble"-->
-                 <!--model="model.tabNewCars.departmentChargesNonproductiveStaffSalary.fourth"-->
-                 <!--on-blur="autoSaving">-->
-        <!--</my-cell>-->
-    <!--</my-row>-->
+<my-table model="model" field="tabNewCars">
+<my-head>
+    <my-row>
+        <my-cell cell-size="4"
+                 colspan="2"
+                 text="Расходы по отделу"></my-cell>
+        <my-cell></my-cell>
+        <my-cell></my-cell>
+        <my-cell></my-cell>
+        <my-cell text="Сумма"></my-cell>
+    </my-row>
+</my-head>
+<my-body>
+    <my-row field="departmentChargesNonproductiveStaffSalary">
+        <my-cell cell-size="1"
+                 text="A231">
+        </my-cell>
+        <my-cell cell-size="3"
+                 text="Зарплата непродуктивного персонала">
+        </my-cell>
+        <my-cell></my-cell>
+        <my-cell></my-cell>
+        <my-cell></my-cell>
+        <my-cell type="ruble"
+                 field="fourth"
+                 on-blur="autoSaving">
+        </my-cell>
+    </my-row>
 
-    <!--<my-row>-->
-        <!--<my-cell cell-size="1"-->
-                 <!--text="A232">-->
-        <!--</my-cell>-->
-        <!--<my-cell cell-size="3"-->
-                 <!--text="Налоги на з/п">-->
-        <!--</my-cell>-->
-        <!--<my-cell></my-cell>-->
-        <!--<my-cell></my-cell>-->
-        <!--<my-cell></my-cell>-->
-        <!--<my-cell type="ruble"-->
-                 <!--model="model.tabNewCars.departmentChargesSalaryTax.fourth"-->
-                 <!--on-blur="autoSaving">-->
-        <!--</my-cell>-->
-    <!--</my-row>-->
+    <my-row field="departmentChargesSalaryTax">
+        <my-cell cell-size="1"
+                 text="A232">
+        </my-cell>
+        <my-cell cell-size="3"
+                 text="Налоги на з/п">
+        </my-cell>
+        <my-cell></my-cell>
+        <my-cell></my-cell>
+        <my-cell></my-cell>
+        <my-cell type="ruble"
+                 field="fourth"
+                 on-blur="autoSaving">
+        </my-cell>
+    </my-row>
 
-    <!--<my-row>-->
-        <!--<my-cell cell-size="1"-->
-                 <!--text="A233">-->
-        <!--</my-cell>-->
-        <!--<my-cell cell-size="3"-->
-                 <!--text="Другие расходы на персонал">-->
-        <!--</my-cell>-->
-        <!--<my-cell></my-cell>-->
-        <!--<my-cell></my-cell>-->
-        <!--<my-cell></my-cell>-->
-        <!--<my-cell type="ruble"-->
-                 <!--model="model.tabNewCars.departmentChargesOtherChargesOnStaff.fourth"-->
-                 <!--on-blur="autoSaving">-->
-        <!--</my-cell>-->
-    <!--</my-row>-->
+    <my-row field="departmentChargesOtherChargesOnStaff">
+        <my-cell cell-size="1"
+                 text="A233">
+        </my-cell>
+        <my-cell cell-size="3"
+                 text="Другие расходы на персонал">
+        </my-cell>
+        <my-cell></my-cell>
+        <my-cell></my-cell>
+        <my-cell></my-cell>
+        <my-cell type="ruble"
+                 field="fourth"
+                 on-blur="autoSaving">
+        </my-cell>
+    </my-row>
 
-    <!--<my-row>-->
-        <!--<my-cell cell-size="1"-->
-                 <!--text="A234">-->
-        <!--</my-cell>-->
-        <!--<my-cell cell-size="3"-->
-                 <!--text="Обучение">-->
-        <!--</my-cell>-->
-        <!--<my-cell></my-cell>-->
-        <!--<my-cell></my-cell>-->
-        <!--<my-cell></my-cell>-->
-        <!--<my-cell type="ruble"-->
-                 <!--model="model.tabNewCars.departmentChargesEducation.fourth"-->
-                 <!--on-blur="autoSaving">-->
-        <!--</my-cell>-->
-    <!--</my-row>-->
+    <my-row field="departmentChargesEducation">
+        <my-cell cell-size="1"
+                 text="A234">
+        </my-cell>
+        <my-cell cell-size="3"
+                 text="Обучение">
+        </my-cell>
+        <my-cell></my-cell>
+        <my-cell></my-cell>
+        <my-cell></my-cell>
+        <my-cell type="ruble"
+                 field="fourth"
+                 on-blur="autoSaving">
+        </my-cell>
+    </my-row>
 
-    <!--<my-row>-->
+    <my-row field="">
+
+        <!--TODO-->
+
         <!--<my-cell cell-size="1"-->
                  <!--text="A240">-->
         <!--</my-cell>-->
@@ -1347,7 +1292,7 @@
         <!--<my-cell></my-cell>-->
         <!--<my-cell></my-cell>-->
         <!--<my-cell type="ruble"-->
-                 <!--model="model.tabNewCars.departmentChargesTotalAdministrationCharges.fourth"-->
+                 <!--field="departmentChargesTotalAdministrationCharges.fourth"-->
                  <!--disabled="true"-->
                  <!--value="{{model.tabNewCars.departmentChargesTotalAdministrationCharges.fourth =-->
                           <!--model.tabNewCars.departmentChargesNonproductiveStaffSalary.fourth +-->
@@ -1355,122 +1300,125 @@
                           <!--model.tabNewCars.departmentChargesOtherChargesOnStaff.fourth +-->
                           <!--model.tabNewCars.departmentChargesEducation.fourth}}">-->
         <!--</my-cell>-->
-    <!--</my-row>-->
+    </my-row>
 
-    <!--<my-row>-->
-        <!--<my-cell cell-size="1"-->
-                 <!--text="A241">-->
-        <!--</my-cell>-->
-        <!--<my-cell cell-size="3"-->
-                 <!--text="Реклама на новые а/м">-->
-        <!--</my-cell>-->
-        <!--<my-cell></my-cell>-->
-        <!--<my-cell></my-cell>-->
-        <!--<my-cell></my-cell>-->
-        <!--<my-cell type="ruble"-->
-                 <!--model="model.tabNewCars.departmentChargesAdvertisingNewCars.fourth"-->
-                 <!--on-blur="autoSaving">-->
-        <!--</my-cell>-->
-    <!--</my-row>-->
+    <my-row field="departmentChargesAdvertisingNewCars">
+        <my-cell cell-size="1"
+                 text="A241">
+        </my-cell>
+        <my-cell cell-size="3"
+                 text="Реклама на новые а/м">
+        </my-cell>
+        <my-cell></my-cell>
+        <my-cell></my-cell>
+        <my-cell></my-cell>
+        <my-cell type="ruble"
+                 field="fourth"
+                 on-blur="autoSaving">
+        </my-cell>
+    </my-row>
 
-    <!--<my-row>-->
-        <!--<my-cell cell-size="1"-->
-                 <!--text="A242">-->
-        <!--</my-cell>-->
-        <!--<my-cell cell-size="3"-->
-                 <!--text="Амортизация">-->
-        <!--</my-cell>-->
-        <!--<my-cell></my-cell>-->
-        <!--<my-cell></my-cell>-->
-        <!--<my-cell></my-cell>-->
-        <!--<my-cell type="ruble"-->
-                 <!--model="model.tabNewCars.departmentChargesAmortization.fourth"-->
-                 <!--on-blur="autoSaving">-->
-        <!--</my-cell>-->
-    <!--</my-row>-->
+    <my-row field="departmentChargesAmortization">
+        <my-cell cell-size="1"
+                 text="A242">
+        </my-cell>
+        <my-cell cell-size="3"
+                 text="Амортизация">
+        </my-cell>
+        <my-cell></my-cell>
+        <my-cell></my-cell>
+        <my-cell></my-cell>
+        <my-cell type="ruble"
+                 field="fourth"
+                 on-blur="autoSaving">
+        </my-cell>
+    </my-row>
 
-    <!--<my-row>-->
-        <!--<my-cell cell-size="1"-->
-                 <!--text="A243">-->
-        <!--</my-cell>-->
-        <!--<my-cell cell-size="3"-->
-                 <!--text="Расходы на а/м компании">-->
-        <!--</my-cell>-->
-        <!--<my-cell></my-cell>-->
-        <!--<my-cell></my-cell>-->
-        <!--<my-cell></my-cell>-->
-        <!--<my-cell type="ruble"-->
-                 <!--model="model.tabNewCars.departmentChargesCompanyCarsCharges.fourth"-->
-                 <!--on-blur="autoSaving">-->
-        <!--</my-cell>-->
-    <!--</my-row>-->
+    <my-row field="departmentChargesCompanyCarsCharges">
+        <my-cell cell-size="1"
+                 text="A243">
+        </my-cell>
+        <my-cell cell-size="3"
+                 text="Расходы на а/м компании">
+        </my-cell>
+        <my-cell></my-cell>
+        <my-cell></my-cell>
+        <my-cell></my-cell>
+        <my-cell type="ruble"
+                 field="fourth"
+                 on-blur="autoSaving">
+        </my-cell>
+    </my-row>
 
-    <!--<my-row>-->
-        <!--<my-cell cell-size="1"-->
-                 <!--text="A244">-->
-        <!--</my-cell>-->
-        <!--<my-cell cell-size="3"-->
-                 <!--text="Консигнация">-->
-        <!--</my-cell>-->
-        <!--<my-cell></my-cell>-->
-        <!--<my-cell></my-cell>-->
-        <!--<my-cell></my-cell>-->
-        <!--<my-cell type="ruble"-->
-                 <!--model="model.tabNewCars.departmentChargesConsignment.fourth"-->
-                 <!--on-blur="autoSaving">-->
-        <!--</my-cell>-->
-    <!--</my-row>-->
+    <my-row field="departmentChargesConsignment">
+        <my-cell cell-size="1"
+                 text="A244">
+        </my-cell>
+        <my-cell cell-size="3"
+                 text="Консигнация">
+        </my-cell>
+        <my-cell></my-cell>
+        <my-cell></my-cell>
+        <my-cell></my-cell>
+        <my-cell type="ruble"
+                 field="fourth"
+                 on-blur="autoSaving">
+        </my-cell>
+    </my-row>
 
-    <!--<my-row>-->
-        <!--<my-cell cell-size="1"-->
-                 <!--text="A245">-->
-        <!--</my-cell>-->
-        <!--<my-cell cell-size="3"-->
-                 <!--text="Выплата % по складу (Пени)">-->
-        <!--</my-cell>-->
-        <!--<my-cell></my-cell>-->
-        <!--<my-cell></my-cell>-->
-        <!--<my-cell></my-cell>-->
-        <!--<my-cell type="ruble"-->
-                 <!--model="model.tabNewCars.departmentChargesPayingInterestByStockPenaltyFee.fourth"-->
-                 <!--on-blur="autoSaving">-->
-        <!--</my-cell>-->
-    <!--</my-row>-->
+    <my-row field="departmentChargesPayingInterestByStockPenaltyFee">
+        <my-cell cell-size="1"
+                 text="A245">
+        </my-cell>
+        <my-cell cell-size="3"
+                 text="Выплата % по складу (Пени)">
+        </my-cell>
+        <my-cell></my-cell>
+        <my-cell></my-cell>
+        <my-cell></my-cell>
+        <my-cell type="ruble"
+                 field="fourth"
+                 on-blur="autoSaving">
+        </my-cell>
+    </my-row>
 
-    <!--<my-row>-->
-        <!--<my-cell cell-size="1"-->
-                 <!--text="A246">-->
-        <!--</my-cell>-->
-        <!--<my-cell cell-size="3"-->
-                 <!--text="Выплата % по складу (Банк)">-->
-        <!--</my-cell>-->
-        <!--<my-cell></my-cell>-->
-        <!--<my-cell></my-cell>-->
-        <!--<my-cell></my-cell>-->
-        <!--<my-cell type="ruble"-->
-                 <!--model="model.tabNewCars.departmentChargesPayingInterestByStockBank.fourth"-->
-                 <!--on-blur="autoSaving">-->
-        <!--</my-cell>-->
-    <!--</my-row>-->
+    <my-row field="departmentChargesPayingInterestByStockBank">
+        <my-cell cell-size="1"
+                 text="A246">
+        </my-cell>
+        <my-cell cell-size="3"
+                 text="Выплата % по складу (Банк)">
+        </my-cell>
+        <my-cell></my-cell>
+        <my-cell></my-cell>
+        <my-cell></my-cell>
+        <my-cell type="ruble"
+                 field="fourth"
+                 on-blur="autoSaving">
+        </my-cell>
+    </my-row>
 
-    <!--<my-row>-->
-        <!--<my-cell cell-size="1"-->
-                 <!--text="A247">-->
-        <!--</my-cell>-->
-        <!--<my-cell cell-size="3"-->
-                 <!--text="Другие расходы">-->
-        <!--</my-cell>-->
-        <!--<my-cell></my-cell>-->
-        <!--<my-cell></my-cell>-->
-        <!--<my-cell></my-cell>-->
-        <!--<my-cell type="ruble"-->
-                 <!--model="model.tabNewCars.departmentChargesOtherCharges.fourth"-->
-                 <!--on-blur="autoSaving">-->
-        <!--</my-cell>-->
-    <!--</my-row>-->
-<!--</my-body>-->
-<!--<my-foot>-->
-    <!--<my-row>-->
+    <my-row field="departmentChargesOtherCharges">
+        <my-cell cell-size="1"
+                 text="A247">
+        </my-cell>
+        <my-cell cell-size="3"
+                 text="Другие расходы">
+        </my-cell>
+        <my-cell></my-cell>
+        <my-cell></my-cell>
+        <my-cell></my-cell>
+        <my-cell type="ruble"
+                 field="fourth"
+                 on-blur="autoSaving">
+        </my-cell>
+    </my-row>
+</my-body>
+<my-foot>
+
+    <!--TODO-->
+
+    <!--<my-row field="">-->
         <!--<my-cell cell-size="1"-->
                  <!--text="A250">-->
         <!--</my-cell>-->
@@ -1481,7 +1429,7 @@
         <!--<my-cell></my-cell>-->
         <!--<my-cell></my-cell>-->
         <!--<my-cell type="ruble"-->
-                 <!--model="model.tabNewCars.departmentChargesTotalDepartmentCharges.fourth"-->
+                 <!--field="departmentChargesTotalDepartmentCharges.fourth"-->
                  <!--disabled="true"-->
                  <!--value="{{model.tabNewCars.departmentChargesTotalDepartmentCharges.fourth =-->
                           <!--model.tabNewCars.departmentChargesTotalAdministrationCharges.fourth +-->
@@ -1494,12 +1442,15 @@
                           <!--model.tabNewCars.departmentChargesOtherCharges.fourth}}">-->
         <!--</my-cell>-->
     <!--</my-row>-->
-<!--</my-foot>-->
-<!--</my-table>-->
+</my-foot>
+</my-table>
 
-<!--<my-table>-->
-    <!--<my-foot>-->
-        <!--<my-row>-->
+<my-table model="model" field="tabNewCars">
+    <my-foot>
+
+        <!--TODO-->
+
+        <!--<my-row field="">-->
             <!--<my-cell cell-size="1"-->
                      <!--text="A270">-->
             <!--</my-cell>-->
@@ -1510,231 +1461,231 @@
             <!--<my-cell></my-cell>-->
             <!--<my-cell></my-cell>-->
             <!--<my-cell type="ruble"-->
-                     <!--model="model.tabNewCars.departmentChargesTotalDepartmentIncoming.fourth"-->
+                     <!--field="departmentChargesTotalDepartmentIncoming.fourth"-->
                      <!--disabled="true"-->
                      <!--value="{{model.tabNewCars.departmentChargesTotalDepartmentIncoming.fourth =-->
                           <!--0}}">-->
             <!--</my-cell>-->
         <!--</my-row>-->
-    <!--</my-foot>-->
-<!--</my-table>-->
+    </my-foot>
+</my-table>
 
-<!--<my-table>-->
+<my-table model="model" field="tabNewCars">
 
-    <!--<my-head>-->
-        <!--<my-row>-->
-            <!--<my-cell cell-size="4"-->
-                     <!--colspan="2"-->
-                     <!--text="Статистика"></my-cell>-->
-            <!--<my-cell text="0-30"></my-cell>-->
-            <!--<my-cell text="31-60"></my-cell>-->
-            <!--<my-cell text="61-90"></my-cell>-->
-            <!--<my-cell text=">90"></my-cell>-->
-        <!--</my-row>-->
-    <!--</my-head>-->
+    <my-head>
+        <my-row>
+            <my-cell cell-size="4"
+                     colspan="2"
+                     text="Статистика"></my-cell>
+            <my-cell text="0-30"></my-cell>
+            <my-cell text="31-60"></my-cell>
+            <my-cell text="61-90"></my-cell>
+            <my-cell text=">90"></my-cell>
+        </my-row>
+    </my-head>
 
-    <!--<my-body>-->
-        <!--<my-row>-->
-            <!--<my-cell cell-size="1"-->
-                     <!--text="A271">-->
-            <!--</my-cell>-->
-            <!--<my-cell cell-size="3"-->
-                     <!--text="Кол-во НА на складе">-->
-            <!--</my-cell>-->
-            <!--<my-cell type="number"-->
-                     <!--model="model.tabNewCars.statisticsNewCarsQuantityInStock.first"-->
-                     <!--on-blur="autoSaving">-->
-            <!--</my-cell>-->
-            <!--<my-cell type="number"-->
-                     <!--model="model.tabNewCars.statisticsNewCarsQuantityInStock.second"-->
-                     <!--on-blur="autoSaving">-->
-            <!--</my-cell>-->
-            <!--<my-cell type="number"-->
-                     <!--model="model.tabNewCars.statisticsNewCarsQuantityInStock.third"-->
-                     <!--on-blur="autoSaving">-->
-            <!--</my-cell>-->
-            <!--<my-cell type="number"-->
-                     <!--model="model.tabNewCars.statisticsNewCarsQuantityInStock.fourth"-->
-                     <!--on-blur="autoSaving">-->
-            <!--</my-cell>-->
-        <!--</my-row>-->
+    <my-body>
+        <my-row field="statisticsNewCarsQuantityInStock">
+            <my-cell cell-size="1"
+                     text="A271">
+            </my-cell>
+            <my-cell cell-size="3"
+                     text="Кол-во НА на складе">
+            </my-cell>
+            <my-cell type="number"
+                     field="first"
+                     on-blur="autoSaving">
+            </my-cell>
+            <my-cell type="number"
+                     field="second"
+                     on-blur="autoSaving">
+            </my-cell>
+            <my-cell type="number"
+                     field="third"
+                     on-blur="autoSaving">
+            </my-cell>
+            <my-cell type="number"
+                     field="fourth"
+                     on-blur="autoSaving">
+            </my-cell>
+        </my-row>
 
-        <!--<my-row>-->
-            <!--<my-cell cell-size="1"-->
-                     <!--text="A271">-->
-            <!--</my-cell>-->
-            <!--<my-cell cell-size="3"-->
-                     <!--text="Стоим-ть НА на складе">-->
-            <!--</my-cell>-->
-            <!--<my-cell type="ruble"-->
-                     <!--model="model.tabNewCars.statisticsNewCarsCostInStock.first"-->
-                     <!--on-blur="autoSaving">-->
-            <!--</my-cell>-->
-            <!--<my-cell type="ruble"-->
-                     <!--model="model.tabNewCars.statisticsNewCarsCostInStock.second"-->
-                     <!--on-blur="autoSaving">-->
-            <!--</my-cell>-->
-            <!--<my-cell type="ruble"-->
-                     <!--model="model.tabNewCars.statisticsNewCarsCostInStock.third"-->
-                     <!--on-blur="autoSaving">-->
-            <!--</my-cell>-->
-            <!--<my-cell type="ruble"-->
-                     <!--model="model.tabNewCars.statisticsNewCarsCostInStock.fourth"-->
-                     <!--on-blur="autoSaving">-->
-            <!--</my-cell>-->
-        <!--</my-row>-->
-    <!--</my-body>-->
-<!--</my-table>-->
+        <my-row field="statisticsNewCarsCostInStock">
+            <my-cell cell-size="1"
+                     text="A271">
+            </my-cell>
+            <my-cell cell-size="3"
+                     text="Стоим-ть НА на складе">
+            </my-cell>
+            <my-cell type="ruble"
+                     field="first"
+                     on-blur="autoSaving">
+            </my-cell>
+            <my-cell type="ruble"
+                     field="second"
+                     on-blur="autoSaving">
+            </my-cell>
+            <my-cell type="ruble"
+                     field="third"
+                     on-blur="autoSaving">
+            </my-cell>
+            <my-cell type="ruble"
+                     field="fourth"
+                     on-blur="autoSaving">
+            </my-cell>
+        </my-row>
+    </my-body>
+</my-table>
 
-<!--<my-table>-->
+<my-table model="model" field="tabNewCars">
 
-    <!--<my-head>-->
-        <!--<my-row>-->
-            <!--<my-cell cell-size="4"-->
-                     <!--colspan="2"-->
-                     <!--text=""></my-cell>-->
-            <!--<my-cell text=""></my-cell>-->
-            <!--<my-cell text=""></my-cell>-->
-            <!--<my-cell text=""></my-cell>-->
-            <!--<my-cell text="Кол-во"></my-cell>-->
-        <!--</my-row>-->
-    <!--</my-head>-->
+    <my-head>
+        <my-row>
+            <my-cell cell-size="4"
+                     colspan="2"
+                     text=""></my-cell>
+            <my-cell text=""></my-cell>
+            <my-cell text=""></my-cell>
+            <my-cell text=""></my-cell>
+            <my-cell text="Кол-во"></my-cell>
+        </my-row>
+    </my-head>
 
-    <!--<my-body>-->
-        <!--<my-row>-->
-            <!--<my-cell cell-size="1"-->
-                     <!--text="A273">-->
-            <!--</my-cell>-->
-            <!--<my-cell cell-size="3"-->
-                     <!--text="Кол-во НА в кредит">-->
-            <!--</my-cell>-->
-            <!--<my-cell></my-cell>-->
-            <!--<my-cell></my-cell>-->
-            <!--<my-cell></my-cell>-->
-            <!--<my-cell type="number"-->
-                     <!--model="model.tabNewCars.statisticsNewCarsQuantityOnCredit.fourth"-->
-                     <!--on-blur="autoSaving">-->
-            <!--</my-cell>-->
-        <!--</my-row>-->
+    <my-body>
+        <my-row field="statisticsNewCarsQuantityOnCredit">
+            <my-cell cell-size="1"
+                     text="A273">
+            </my-cell>
+            <my-cell cell-size="3"
+                     text="Кол-во НА в кредит">
+            </my-cell>
+            <my-cell></my-cell>
+            <my-cell></my-cell>
+            <my-cell></my-cell>
+            <my-cell type="number"
+                     field="fourth"
+                     on-blur="autoSaving">
+            </my-cell>
+        </my-row>
 
-        <!--<my-row>-->
-            <!--<my-cell cell-size="1"-->
-                     <!--text="A275">-->
-            <!--</my-cell>-->
-            <!--<my-cell cell-size="3"-->
-                     <!--text="Кол-во полностью оплаченных а/м на складе">-->
-            <!--</my-cell>-->
-            <!--<my-cell></my-cell>-->
-            <!--<my-cell></my-cell>-->
-            <!--<my-cell></my-cell>-->
-            <!--<my-cell type="number"-->
-                     <!--model="model.tabNewCars.statisticsFullyPaidCarsQuantityInStock.fourth"-->
-                     <!--on-blur="autoSaving">-->
-            <!--</my-cell>-->
-        <!--</my-row>-->
+        <my-row field="statisticsFullyPaidCarsQuantityInStock">
+            <my-cell cell-size="1"
+                     text="A275">
+            </my-cell>
+            <my-cell cell-size="3"
+                     text="Кол-во полностью оплаченных а/м на складе">
+            </my-cell>
+            <my-cell></my-cell>
+            <my-cell></my-cell>
+            <my-cell></my-cell>
+            <my-cell type="number"
+                     field="fourth"
+                     on-blur="autoSaving">
+            </my-cell>
+        </my-row>
 
-        <!--<my-row>-->
-            <!--<my-cell cell-size="1"-->
-                     <!--text="A276">-->
-            <!--</my-cell>-->
-            <!--<my-cell cell-size="3"-->
-                     <!--text="Кол-во неоплач. а/м на складе">-->
-            <!--</my-cell>-->
-            <!--<my-cell></my-cell>-->
-            <!--<my-cell></my-cell>-->
-            <!--<my-cell></my-cell>-->
-            <!--<my-cell type="number"-->
-                     <!--model="model.tabNewCars.statisticsUnpaidCarsQuantityInStock.fourth"-->
-                     <!--on-blur="autoSaving">-->
-            <!--</my-cell>-->
-        <!--</my-row>-->
+        <my-row field="statisticsUnpaidCarsQuantityInStock">
+            <my-cell cell-size="1"
+                     text="A276">
+            </my-cell>
+            <my-cell cell-size="3"
+                     text="Кол-во неоплач. а/м на складе">
+            </my-cell>
+            <my-cell></my-cell>
+            <my-cell></my-cell>
+            <my-cell></my-cell>
+            <my-cell type="number"
+                     field="fourth"
+                     on-blur="autoSaving">
+            </my-cell>
+        </my-row>
 
-    <!--</my-body>-->
+    </my-body>
 
-<!--</my-table>-->
+</my-table>
 
-<!--<my-table>-->
+<my-table model="model" field="tabNewCars">
 
-    <!--<my-head>-->
-        <!--<my-row>-->
-            <!--<my-cell cell-size="4"-->
-                     <!--colspan="2"-->
-                     <!--text=""></my-cell>-->
-            <!--<my-cell text=""></my-cell>-->
-            <!--<my-cell text=""></my-cell>-->
-            <!--<my-cell text=""></my-cell>-->
-            <!--<my-cell text="Всего"></my-cell>-->
-        <!--</my-row>-->
-    <!--</my-head>-->
+    <my-head>
+        <my-row>
+            <my-cell cell-size="4"
+                     colspan="2"
+                     text=""></my-cell>
+            <my-cell text=""></my-cell>
+            <my-cell text=""></my-cell>
+            <my-cell text=""></my-cell>
+            <my-cell text="Всего"></my-cell>
+        </my-row>
+    </my-head>
 
-    <!--<my-body>-->
-        <!--<my-row>-->
-            <!--<my-cell cell-size="1"-->
-                     <!--text="A277">-->
-            <!--</my-cell>-->
-            <!--<my-cell cell-size="3"-->
-                     <!--text="Кол-во а/м выставленных в шоу-руме">-->
-            <!--</my-cell>-->
-            <!--<my-cell></my-cell>-->
-            <!--<my-cell></my-cell>-->
-            <!--<my-cell></my-cell>-->
-            <!--<my-cell type="number"-->
-                     <!--model="model.tabNewCars.statisticsCarsQuantityInShowroom.fourth"-->
-                     <!--on-blur="autoSaving">-->
-            <!--</my-cell>-->
-        <!--</my-row>-->
+    <my-body>
+        <my-row field="statisticsCarsQuantityInShowroom">
+            <my-cell cell-size="1"
+                     text="A277">
+            </my-cell>
+            <my-cell cell-size="3"
+                     text="Кол-во а/м выставленных в шоу-руме">
+            </my-cell>
+            <my-cell></my-cell>
+            <my-cell></my-cell>
+            <my-cell></my-cell>
+            <my-cell type="number"
+                     field="fourth"
+                     on-blur="autoSaving">
+            </my-cell>
+        </my-row>
 
-        <!--<my-row>-->
-            <!--<my-cell cell-size="1"-->
-                     <!--text="A278">-->
-            <!--</my-cell>-->
-            <!--<my-cell cell-size="3"-->
-                     <!--text="Кол-во а/м для тест-драйва">-->
-            <!--</my-cell>-->
-            <!--<my-cell></my-cell>-->
-            <!--<my-cell></my-cell>-->
-            <!--<my-cell></my-cell>-->
-            <!--<my-cell type="number"-->
-                     <!--model="model.tabNewCars.statisticsCarsQuantityForTestDrive.fourth"-->
-                     <!--on-blur="autoSaving">-->
-            <!--</my-cell>-->
-        <!--</my-row>-->
+        <my-row field="statisticsCarsQuantityForTestDrive">
+            <my-cell cell-size="1"
+                     text="A278">
+            </my-cell>
+            <my-cell cell-size="3"
+                     text="Кол-во а/м для тест-драйва">
+            </my-cell>
+            <my-cell></my-cell>
+            <my-cell></my-cell>
+            <my-cell></my-cell>
+            <my-cell type="number"
+                     field="fourth"
+                     on-blur="autoSaving">
+            </my-cell>
+        </my-row>
 
-        <!--<my-row>-->
-            <!--<my-cell cell-size="1"-->
-                     <!--text="A279">-->
-            <!--</my-cell>-->
-            <!--<my-cell cell-size="3"-->
-                     <!--text="Продано расширенных гарантийных обязательств">-->
-            <!--</my-cell>-->
-            <!--<my-cell></my-cell>-->
-            <!--<my-cell></my-cell>-->
-            <!--<my-cell></my-cell>-->
-            <!--<my-cell type="number"-->
-                     <!--model="model.tabNewCars.statisticsSoldExtendedGuaranteeQuantity.fourth"-->
-                     <!--on-blur="autoSaving">-->
-            <!--</my-cell>-->
-        <!--</my-row>-->
+        <my-row field="statisticsSoldExtendedGuaranteeQuantity">
+            <my-cell cell-size="1"
+                     text="A279">
+            </my-cell>
+            <my-cell cell-size="3"
+                     text="Продано расширенных гарантийных обязательств">
+            </my-cell>
+            <my-cell></my-cell>
+            <my-cell></my-cell>
+            <my-cell></my-cell>
+            <my-cell type="number"
+                     field="fourth"
+                     on-blur="autoSaving">
+            </my-cell>
+        </my-row>
 
-        <!--<my-row>-->
-            <!--<my-cell cell-size="1"-->
-                     <!--text="A280">-->
-            <!--</my-cell>-->
-            <!--<my-cell cell-size="3"-->
-                     <!--text="Площадь шоурума (м2)">-->
-            <!--</my-cell>-->
-            <!--<my-cell></my-cell>-->
-            <!--<my-cell></my-cell>-->
-            <!--<my-cell></my-cell>-->
-            <!--<my-cell type="number"-->
-                     <!--model="model.tabNewCars.statisticsShowroomArea.fourth"-->
-                     <!--on-blur="autoSaving">-->
-            <!--</my-cell>-->
-        <!--</my-row>-->
+        <my-row field="statisticsShowroomArea">
+            <my-cell cell-size="1"
+                     text="A280">
+            </my-cell>
+            <my-cell cell-size="3"
+                     text="Площадь шоурума (м2)">
+            </my-cell>
+            <my-cell></my-cell>
+            <my-cell></my-cell>
+            <my-cell></my-cell>
+            <my-cell type="number"
+                     field="fourth"
+                     on-blur="autoSaving">
+            </my-cell>
+        </my-row>
 
-    <!--</my-body>-->
+    </my-body>
 
-<!--</my-table>-->
+</my-table>
 
 
 
