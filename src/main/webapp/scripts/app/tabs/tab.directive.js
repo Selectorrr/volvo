@@ -107,6 +107,7 @@ angular.module('volvoApp')
                             tableCtrl.getTableModel()[rowCtrl.getRowName()] = {};
                         }
                         scope.model = tableCtrl.getTableModel()[rowCtrl.getRowName()];
+                        scope.baseModel = tableCtrl.getTableModel();
                     }
                 }
             },

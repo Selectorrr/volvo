@@ -276,76 +276,75 @@
 </my-body>
 <my-foot>
 
-    <!--TODO-->
-    <!--<my-row field="newVolvoRetailTotal">-->
-        <!--<my-cell cell-size="1"-->
-                 <!--text="A20">-->
-        <!--</my-cell>-->
-        <!--<my-cell cell-size="3"-->
-                 <!--text="Итого Новые а/м Volvo Розница">-->
-        <!--</my-cell>-->
-        <!--<my-cell type="number"-->
-                 <!--field="newVolvoRetailTotal.first"-->
-                 <!--disabled="true"-->
-                 <!--value="{{model.tabNewCars.newVolvoRetailTotal.first=-->
-                            <!--model.tabNewCars.newVolvoRetailC30.first+-->
-                            <!--model.tabNewCars.newVolvoRetailS40.first+-->
-                            <!--model.tabNewCars.newVolvoRetailV40.first+-->
-                            <!--model.tabNewCars.newVolvoRetailS60.first+-->
-                            <!--model.tabNewCars.newVolvoRetailXc60.first+-->
-                            <!--model.tabNewCars.newVolvoRetailC70.first+-->
-                            <!--model.tabNewCars.newVolvoRetailXc70.first+-->
-                            <!--model.tabNewCars.newVolvoRetailS80.first+-->
-                            <!--model.tabNewCars.newVolvoRetailXc90.first+-->
-                            <!--model.tabNewCars.newVolvoRetailV60.first-->
-                          <!--}}">-->
-        <!--</my-cell>-->
-        <!--<my-cell type="ruble"-->
-                 <!--field="newVolvoRetailTotal.second"-->
-                 <!--disabled="true"-->
-                 <!--value="{{model.tabNewCars.newVolvoRetailTotal.second=-->
-                            <!--model.tabNewCars.newVolvoRetailC30.second+-->
-                            <!--model.tabNewCars.newVolvoRetailS40.second+-->
-                            <!--model.tabNewCars.newVolvoRetailV40.second+-->
-                            <!--model.tabNewCars.newVolvoRetailS60.second+-->
-                            <!--model.tabNewCars.newVolvoRetailXc60.second+-->
-                            <!--model.tabNewCars.newVolvoRetailC70.second+-->
-                            <!--model.tabNewCars.newVolvoRetailXc70.second+-->
-                            <!--model.tabNewCars.newVolvoRetailS80.second+-->
-                            <!--model.tabNewCars.newVolvoRetailXc90.second+-->
-                            <!--model.tabNewCars.newVolvoRetailV60.second}}">-->
-        <!--</my-cell>-->
-        <!--<my-cell type="ruble"-->
-                 <!--field="newVolvoRetailTotal.third"-->
-                 <!--disabled="true"-->
-                 <!--value="{{model.tabNewCars.newVolvoRetailTotal.third=-->
-                            <!--model.tabNewCars.newVolvoRetailC30.third+-->
-                            <!--model.tabNewCars.newVolvoRetailS40.third+-->
-                            <!--model.tabNewCars.newVolvoRetailV40.third+-->
-                            <!--model.tabNewCars.newVolvoRetailS60.third+-->
-                            <!--model.tabNewCars.newVolvoRetailXc60.third+-->
-                            <!--model.tabNewCars.newVolvoRetailC70.third+-->
-                            <!--model.tabNewCars.newVolvoRetailXc70.third+-->
-                            <!--model.tabNewCars.newVolvoRetailS80.third+-->
-                            <!--model.tabNewCars.newVolvoRetailXc90.third+-->
-                            <!--model.tabNewCars.newVolvoRetailV60.third}}">-->
-        <!--</my-cell>-->
-        <!--<my-cell type="ruble"-->
-                 <!--field="newVolvoRetailTotal.fourth"-->
-                 <!--disabled="true"-->
-                 <!--value="{{model.tabNewCars.newVolvoRetailTotal.fourth=-->
-                            <!--model.tabNewCars.newVolvoRetailC30.fourth+-->
-                            <!--model.tabNewCars.newVolvoRetailS40.fourth+-->
-                            <!--model.tabNewCars.newVolvoRetailV40.fourth+-->
-                            <!--model.tabNewCars.newVolvoRetailS60.fourth+-->
-                            <!--model.tabNewCars.newVolvoRetailXc60.fourth+-->
-                            <!--model.tabNewCars.newVolvoRetailC70.fourth+-->
-                            <!--model.tabNewCars.newVolvoRetailXc70.fourth+-->
-                            <!--model.tabNewCars.newVolvoRetailS80.fourth+-->
-                            <!--model.tabNewCars.newVolvoRetailXc90.fourth+-->
-                            <!--model.tabNewCars.newVolvoRetailV60.fourth}}">-->
-        <!--</my-cell>-->
-    <!--</my-row>-->
+    <my-row field="newVolvoRetailTotal">
+        <my-cell cell-size="1"
+                 text="A20">
+        </my-cell>
+        <my-cell cell-size="3"
+                 text="Итого Новые а/м Volvo Розница">
+        </my-cell>
+        <my-cell type="number"
+                 field="first"
+                 disabled="true"
+                 value="{{model.first=
+                            baseModel.newVolvoRetailC30.first+
+                            baseModel.newVolvoRetailS40.first+
+                            baseModel.newVolvoRetailV40.first+
+                            baseModel.newVolvoRetailS60.first+
+                            baseModel.newVolvoRetailXc60.first+
+                            baseModel.newVolvoRetailC70.first+
+                            baseModel.newVolvoRetailXc70.first+
+                            baseModel.newVolvoRetailS80.first+
+                            baseModel.newVolvoRetailXc90.first+
+                            baseModel.newVolvoRetailV60.first
+                          }}">
+        </my-cell>
+        <my-cell type="ruble"
+                 field="second"
+                 disabled="true"
+                 value="{{model.second=
+                            baseModel.newVolvoRetailC30.second+
+                            baseModel.newVolvoRetailS40.second+
+                            baseModel.newVolvoRetailV40.second+
+                            baseModel.newVolvoRetailS60.second+
+                            baseModel.newVolvoRetailXc60.second+
+                            baseModel.newVolvoRetailC70.second+
+                            baseModel.newVolvoRetailXc70.second+
+                            baseModel.newVolvoRetailS80.second+
+                            baseModel.newVolvoRetailXc90.second+
+                            baseModel.newVolvoRetailV60.second}}">
+        </my-cell>
+        <my-cell type="ruble"
+                 field="third"
+                 disabled="true"
+                 value="{{model.third=
+                            baseModel.newVolvoRetailC30.third+
+                            baseModel.newVolvoRetailS40.third+
+                            baseModel.newVolvoRetailV40.third+
+                            baseModel.newVolvoRetailS60.third+
+                            baseModel.newVolvoRetailXc60.third+
+                            baseModel.newVolvoRetailC70.third+
+                            baseModel.newVolvoRetailXc70.third+
+                            baseModel.newVolvoRetailS80.third+
+                            baseModel.newVolvoRetailXc90.third+
+                            baseModel.newVolvoRetailV60.third}}">
+        </my-cell>
+        <my-cell type="ruble"
+                 field="fourth"
+                 disabled="true"
+                 value="{{model.fourth=
+                            baseModel.newVolvoRetailC30.fourth+
+                            baseModel.newVolvoRetailS40.fourth+
+                            baseModel.newVolvoRetailV40.fourth+
+                            baseModel.newVolvoRetailS60.fourth+
+                            baseModel.newVolvoRetailXc60.fourth+
+                            baseModel.newVolvoRetailC70.fourth+
+                            baseModel.newVolvoRetailXc70.fourth+
+                            baseModel.newVolvoRetailS80.fourth+
+                            baseModel.newVolvoRetailXc90.fourth+
+                            baseModel.newVolvoRetailV60.fourth}}">
+        </my-cell>
+    </my-row>
 
 </my-foot>
 </my-table>
@@ -626,76 +625,75 @@
 </my-body>
 <my-foot>
 
-    <!--TODO-->
-    <!--<my-row field="">-->
-        <!--<my-cell cell-size="1"-->
-                 <!--text="A50">-->
-        <!--</my-cell>-->
-        <!--<my-cell cell-size="3"-->
-                 <!--text="Итого Новые а/м Volvo Флит">-->
-        <!--</my-cell>-->
-        <!--<my-cell type="number"-->
-                 <!--field="newVolvoFlitTotal.first"-->
-                 <!--disabled="true"-->
-                 <!--value="{{model.tabNewCars.newVolvoFlitTotal.first=-->
-                            <!--model.tabNewCars.newVolvoFlitC30.first+-->
-                            <!--model.tabNewCars.newVolvoFlitS40.first+-->
-                            <!--model.tabNewCars.newVolvoFlitV40.first+-->
-                            <!--model.tabNewCars.newVolvoFlitS60.first+-->
-                            <!--model.tabNewCars.newVolvoFlitXc60.first+-->
-                            <!--model.tabNewCars.newVolvoFlitC70.first+-->
-                            <!--model.tabNewCars.newVolvoFlitXc70.first+-->
-                            <!--model.tabNewCars.newVolvoFlitS80.first+-->
-                            <!--model.tabNewCars.newVolvoFlitXc90.first+-->
-                            <!--model.tabNewCars.newVolvoFlitV60.first-->
-                          <!--}}">-->
-        <!--</my-cell>-->
-        <!--<my-cell type="ruble"-->
-                 <!--field="newVolvoFlitTotal.second"-->
-                 <!--disabled="true"-->
-                 <!--value="{{model.tabNewCars.newVolvoFlitTotal.second=-->
-                            <!--model.tabNewCars.newVolvoFlitC30.second+-->
-                            <!--model.tabNewCars.newVolvoFlitS40.second+-->
-                            <!--model.tabNewCars.newVolvoFlitV40.second+-->
-                            <!--model.tabNewCars.newVolvoFlitS60.second+-->
-                            <!--model.tabNewCars.newVolvoFlitXc60.second+-->
-                            <!--model.tabNewCars.newVolvoFlitC70.second+-->
-                            <!--model.tabNewCars.newVolvoFlitXc70.second+-->
-                            <!--model.tabNewCars.newVolvoFlitS80.second+-->
-                            <!--model.tabNewCars.newVolvoFlitXc90.second+-->
-                            <!--model.tabNewCars.newVolvoFlitV60.second}}">-->
-        <!--</my-cell>-->
-        <!--<my-cell type="ruble"-->
-                 <!--field="newVolvoFlitTotal.third"-->
-                 <!--disabled="true"-->
-                 <!--value="{{model.tabNewCars.newVolvoFlitTotal.third=-->
-                            <!--model.tabNewCars.newVolvoFlitC30.third+-->
-                            <!--model.tabNewCars.newVolvoFlitS40.third+-->
-                            <!--model.tabNewCars.newVolvoFlitV40.third+-->
-                            <!--model.tabNewCars.newVolvoFlitS60.third+-->
-                            <!--model.tabNewCars.newVolvoFlitXc60.third+-->
-                            <!--model.tabNewCars.newVolvoFlitC70.third+-->
-                            <!--model.tabNewCars.newVolvoFlitXc70.third+-->
-                            <!--model.tabNewCars.newVolvoFlitS80.third+-->
-                            <!--model.tabNewCars.newVolvoFlitXc90.third+-->
-                            <!--model.tabNewCars.newVolvoFlitV60.third}}">-->
-        <!--</my-cell>-->
-        <!--<my-cell type="ruble"-->
-                 <!--field="newVolvoFlitTotal.fourth"-->
-                 <!--disabled="true"-->
-                 <!--value="{{model.tabNewCars.newVolvoFlitTotal.fourth=-->
-                            <!--model.tabNewCars.newVolvoFlitC30.fourth+-->
-                            <!--model.tabNewCars.newVolvoFlitS40.fourth+-->
-                            <!--model.tabNewCars.newVolvoFlitV40.fourth+-->
-                            <!--model.tabNewCars.newVolvoFlitS60.fourth+-->
-                            <!--model.tabNewCars.newVolvoFlitXc60.fourth+-->
-                            <!--model.tabNewCars.newVolvoFlitC70.fourth+-->
-                            <!--model.tabNewCars.newVolvoFlitXc70.fourth+-->
-                            <!--model.tabNewCars.newVolvoFlitS80.fourth+-->
-                            <!--model.tabNewCars.newVolvoFlitXc90.fourth+-->
-                            <!--model.tabNewCars.newVolvoFlitV60.fourth}}">-->
-        <!--</my-cell>-->
-    <!--</my-row>-->
+    <my-row field="newVolvoFlitTotal">
+        <my-cell cell-size="1"
+                 text="A50">
+        </my-cell>
+        <my-cell cell-size="3"
+                 text="Итого Новые а/м Volvo Флит">
+        </my-cell>
+        <my-cell type="number"
+                 field="first"
+                 disabled="true"
+                 value="{{model.first=
+                            baseModel.newVolvoFlitC30.first+
+                            baseModel.newVolvoFlitS40.first+
+                            baseModel.newVolvoFlitV40.first+
+                            baseModel.newVolvoFlitS60.first+
+                            baseModel.newVolvoFlitXc60.first+
+                            baseModel.newVolvoFlitC70.first+
+                            baseModel.newVolvoFlitXc70.first+
+                            baseModel.newVolvoFlitS80.first+
+                            baseModel.newVolvoFlitXc90.first+
+                            baseModel.newVolvoFlitV60.first
+                          }}">
+        </my-cell>
+        <my-cell type="ruble"
+                 field="second"
+                 disabled="true"
+                 value="{{model.second=
+                            baseModel.newVolvoFlitC30.second+
+                            baseModel.newVolvoFlitS40.second+
+                            baseModel.newVolvoFlitV40.second+
+                            baseModel.newVolvoFlitS60.second+
+                            baseModel.newVolvoFlitXc60.second+
+                            baseModel.newVolvoFlitC70.second+
+                            baseModel.newVolvoFlitXc70.second+
+                            baseModel.newVolvoFlitS80.second+
+                            baseModel.newVolvoFlitXc90.second+
+                            baseModel.newVolvoFlitV60.second}}">
+        </my-cell>
+        <my-cell type="ruble"
+                 field="third"
+                 disabled="true"
+                 value="{{model.third=
+                            baseModel.newVolvoFlitC30.third+
+                            baseModel.newVolvoFlitS40.third+
+                            baseModel.newVolvoFlitV40.third+
+                            baseModel.newVolvoFlitS60.third+
+                            baseModel.newVolvoFlitXc60.third+
+                            baseModel.newVolvoFlitC70.third+
+                            baseModel.newVolvoFlitXc70.third+
+                            baseModel.newVolvoFlitS80.third+
+                            baseModel.newVolvoFlitXc90.third+
+                            baseModel.newVolvoFlitV60.third}}">
+        </my-cell>
+        <my-cell type="ruble"
+                 field="fourth"
+                 disabled="true"
+                 value="{{model.fourth=
+                            baseModel.newVolvoFlitC30.fourth+
+                            baseModel.newVolvoFlitS40.fourth+
+                            baseModel.newVolvoFlitV40.fourth+
+                            baseModel.newVolvoFlitS60.fourth+
+                            baseModel.newVolvoFlitXc60.fourth+
+                            baseModel.newVolvoFlitC70.fourth+
+                            baseModel.newVolvoFlitXc70.fourth+
+                            baseModel.newVolvoFlitS80.fourth+
+                            baseModel.newVolvoFlitXc90.fourth+
+                            baseModel.newVolvoFlitV60.fourth}}">
+        </my-cell>
+    </my-row>
 
 </my-foot>
 </my-table>
@@ -703,46 +701,44 @@
 <my-table model="model" field="tabNewCars">
     <my-foot>
 
-        <!--TODO-->
+        <my-row field="newVolvoTotal">
 
-        <!--<my-row field="">-->
+            <my-cell cell-size="1"
+                     text="A100">
+            </my-cell>
+            <my-cell cell-size="3"
+                     text="Итого продажи а/м Volvo">
+            </my-cell>
+            <my-cell type="number"
+                     field="first"
+                     disabled="true"
+                     value="{{model.first =
+                          baseModel.newVolvoRetailTotal.first +
+                          baseModel.newVolvoFlitTotal.first}}">
+            </my-cell>
+            <my-cell type="ruble"
+                     field="second"
+                     disabled="true"
+                     value="{{model.second =
+                          baseModel.newVolvoRetailTotal.second +
+                          baseModel.newVolvoFlitTotal.second}}">
+            </my-cell>
+            <my-cell type="ruble"
+                     field="third"
+                     disabled="true"
+                     value="{{model.third =
+                          baseModel.newVolvoRetailTotal.third +
+                          baseModel.newVolvoFlitTotal.third}}">
+            </my-cell>
+            <my-cell type="ruble"
+                     field="fourth"
+                     disabled="true"
+                     value="{{model.fourth =
+                          baseModel.newVolvoRetailTotal.fourth +
+                          baseModel.newVolvoFlitTotal.fourth}}">
+            </my-cell>
 
-            <!--<my-cell cell-size="1"-->
-                     <!--text="A100">-->
-            <!--</my-cell>-->
-            <!--<my-cell cell-size="3"-->
-                     <!--text="Итого продажи а/м Volvo">-->
-            <!--</my-cell>-->
-            <!--<my-cell type="number"-->
-                     <!--field="newVolvoTotal.first"-->
-                     <!--disabled="true"-->
-                     <!--value="{{model.tabNewCars.newVolvoTotal.first =-->
-                          <!--model.tabNewCars.newVolvoRetailTotal.first +-->
-                          <!--model.tabNewCars.newVolvoFlitTotal.first}}">-->
-            <!--</my-cell>-->
-            <!--<my-cell type="ruble"-->
-                     <!--field="newVolvoTotal.second"-->
-                     <!--disabled="true"-->
-                     <!--value="{{model.tabNewCars.newVolvoTotal.second =-->
-                          <!--model.tabNewCars.newVolvoRetailTotal.second +-->
-                          <!--model.tabNewCars.newVolvoFlitTotal.second}}">-->
-            <!--</my-cell>-->
-            <!--<my-cell type="ruble"-->
-                     <!--field="newVolvoTotal.third"-->
-                     <!--disabled="true"-->
-                     <!--value="{{model.tabNewCars.newVolvoTotal.third =-->
-                          <!--model.tabNewCars.newVolvoRetailTotal.third +-->
-                          <!--model.tabNewCars.newVolvoFlitTotal.third}}">-->
-            <!--</my-cell>-->
-            <!--<my-cell type="ruble"-->
-                     <!--field="newVolvoTotal.fourth"-->
-                     <!--disabled="true"-->
-                     <!--value="{{model.tabNewCars.newVolvoTotal.fourth =-->
-                          <!--model.tabNewCars.newVolvoRetailTotal.fourth +-->
-                          <!--model.tabNewCars.newVolvoFlitTotal.fourth}}">-->
-            <!--</my-cell>-->
-
-        <!--</my-row>-->
+        </my-row>
     </my-foot>
 </my-table>
 
@@ -953,40 +949,40 @@
 </my-body>
 <my-foot>
 
-    <!--TODO-->
-    <!--<my-row field="">-->
-        <!--<my-cell cell-size="1"-->
-                 <!--text="A180">-->
-        <!--</my-cell>-->
-        <!--<my-cell cell-size="3"-->
-                 <!--text="Итого прочие доходы">-->
-        <!--</my-cell>-->
-        <!--<my-cell></my-cell>-->
-        <!--<my-cell type="ruble"-->
-                 <!--field="otherIncomingTotal.second"-->
-                 <!--disabled="true"-->
-                 <!--value="{{model.tabNewCars.otherIncomingTotal.second=-->
-                            <!--model.tabNewCars.otherIncomingPreSalePreparation.second+-->
-                            <!--model.tabNewCars.otherIncomingExtendedGuaranteeSale.second+-->
-                            <!--model.tabNewCars.otherIncomingOtherIncomingCharges.second+-->
-                            <!--model.tabNewCars.otherIncomingAccessories.second}}">-->
-        <!--</my-cell>-->
-        <!--<my-cell type="ruble"-->
-                 <!--field="otherIncomingTotal.third"-->
-                 <!--disabled="true"-->
-                 <!--value="{{model.tabNewCars.otherIncomingTotal.third=-->
-                            <!--model.tabNewCars.otherIncomingPreSalePreparation.third+-->
-                            <!--model.tabNewCars.otherIncomingExtendedGuaranteeSale.third+-->
-                            <!--model.tabNewCars.otherIncomingOtherIncomingCharges.third+-->
-                            <!--model.tabNewCars.otherIncomingAccessories.third}}">-->
-        <!--</my-cell>-->
-        <!--<my-cell type="ruble"-->
-                 <!--field="otherIncomingTotal.fourth"-->
-                 <!--disabled="true"-->
-                 <!--value="{{model.tabNewCars.otherIncomingTotal.fourth=-->
-                            <!--0}}">-->
-        <!--</my-cell>-->
-    <!--</my-row>-->
+    <my-row field="otherIncomingTotal">
+        <my-cell cell-size="1"
+                 text="A180">
+        </my-cell>
+        <my-cell cell-size="3"
+                 text="Итого прочие доходы">
+        </my-cell>
+        <my-cell></my-cell>
+        <my-cell type="ruble"
+                 field="second"
+                 disabled="true"
+                 value="{{model.second=
+                            baseModel.otherIncomingPreSalePreparation.second+
+                            baseModel.otherIncomingExtendedGuaranteeSale.second+
+                            baseModel.otherIncomingOtherIncomingCharges.second+
+                            baseModel.otherIncomingAccessories.second}}">
+        </my-cell>
+        <my-cell type="ruble"
+                 field="third"
+                 disabled="true"
+                 value="{{model.third=
+                            baseModel.otherIncomingPreSalePreparation.third+
+                            baseModel.otherIncomingExtendedGuaranteeSale.third+
+                            baseModel.otherIncomingOtherIncomingCharges.third+
+                            baseModel.otherIncomingAccessories.third}}">
+        </my-cell>
+        <!--TODO-->
+        <my-cell type="ruble"
+                 field="fourth"
+                 disabled="true"
+                 value="{{model.fourth=
+                            0}}">
+        </my-cell>
+    </my-row>
 
 
 </my-foot>
@@ -994,44 +990,42 @@
 
 <my-table model="model" field="tabNewCars">
 
-    <!--TODO-->
-
     <my-foot>
-        <!--<my-row field="">-->
-            <!--<my-cell cell-size="1"-->
-                     <!--text="A200">-->
-            <!--</my-cell>-->
-            <!--<my-cell cell-size="3"-->
-                     <!--text="Валовая Прибыль отдела продаж новых а/м">-->
-            <!--</my-cell>-->
-            <!--<my-cell type="number"-->
-                     <!--field="grossProfitNewCarsDepartment.first"-->
-                     <!--disabled="true"-->
-                     <!--value="{{model.tabNewCars.grossProfitNewCarsDepartment.first=-->
-                     <!--model.tabNewCars.newVolvoTotal.first}}">-->
-            <!--</my-cell>-->
-            <!--<my-cell type="ruble"-->
-                     <!--field="grossProfitNewCarsDepartment.second"-->
-                     <!--disabled="true"-->
-                     <!--value="{{model.tabNewCars.grossProfitNewCarsDepartment.second =-->
-                          <!--model.tabNewCars.newVolvoTotal.second +-->
-                          <!--model.tabNewCars.otherIncomingTotal.second}}">-->
-            <!--</my-cell>-->
-            <!--<my-cell type="ruble"-->
-                     <!--field="grossProfitNewCarsDepartment.third"-->
-                     <!--disabled="true"-->
-                     <!--value="{{model.tabNewCars.grossProfitNewCarsDepartment.third =-->
-                          <!--model.tabNewCars.newVolvoTotal.third +-->
-                          <!--model.tabNewCars.otherIncomingTotal.third}}">-->
-            <!--</my-cell>-->
-            <!--<my-cell type="ruble"-->
-                     <!--field="grossProfitNewCarsDepartment.fourth"-->
-                     <!--disabled="true"-->
-                     <!--value="{{model.tabNewCars.grossProfitNewCarsDepartment.fourth =-->
-                          <!--model.tabNewCars.newVolvoTotal.fourth +-->
-                          <!--model.tabNewCars.otherIncomingTotal.fourth}}">-->
-            <!--</my-cell>-->
-        <!--</my-row>-->
+        <my-row field="grossProfitNewCarsDepartment">
+            <my-cell cell-size="1"
+                     text="A200">
+            </my-cell>
+            <my-cell cell-size="3"
+                     text="Валовая Прибыль отдела продаж новых а/м">
+            </my-cell>
+            <my-cell type="number"
+                     field="first"
+                     disabled="true"
+                     value="{{model.first=
+                     baseModel.newVolvoTotal.first}}">
+            </my-cell>
+            <my-cell type="ruble"
+                     field="second"
+                     disabled="true"
+                     value="{{model.second =
+                          baseModel.newVolvoTotal.second +
+                          baseModel.otherIncomingTotal.second}}">
+            </my-cell>
+            <my-cell type="ruble"
+                     field="third"
+                     disabled="true"
+                     value="{{model.third =
+                          baseModel.newVolvoTotal.third +
+                          baseModel.otherIncomingTotal.third}}">
+            </my-cell>
+            <my-cell type="ruble"
+                     field="fourth"
+                     disabled="true"
+                     value="{{model.fourth =
+                          baseModel.newVolvoTotal.fourth +
+                          baseModel.otherIncomingTotal.fourth}}">
+            </my-cell>
+        </my-row>
     </my-foot>
 </my-table>
 
@@ -1096,27 +1090,25 @@
             </my-cell>
         </my-row>
 
-        <!--TODO-->
-
-        <!--<my-row field="">-->
-            <!--<my-cell cell-size="1"-->
-                     <!--text="A210">-->
-            <!--</my-cell>-->
-            <!--<my-cell cell-size="3"-->
-                     <!--text="Всего затрат на продуктивный персонал">-->
-            <!--</my-cell>-->
-            <!--<my-cell></my-cell>-->
-            <!--<my-cell></my-cell>-->
-            <!--<my-cell></my-cell>-->
-            <!--<my-cell type="ruble"-->
-                     <!--field="fluctuatingChargesTotalProductiveStaffCharges.fourth"-->
-                     <!--disabled="true"-->
-                     <!--value="{{model.tabNewCars.fluctuatingChargesTotalProductiveStaffCharges.fourth =-->
-                           <!--model.tabNewCars.fluctuatingChargesSellerSalary.fourth +-->
-                           <!--model.tabNewCars.fluctuatingChargesSellerCommissions.fourth +-->
-                           <!--model.tabNewCars.fluctuatingChargesSalaryTax.fourth}}">-->
-            <!--</my-cell>-->
-        <!--</my-row>-->
+        <my-row field="fluctuatingChargesTotalProductiveStaffCharges">
+            <my-cell cell-size="1"
+                     text="A210">
+            </my-cell>
+            <my-cell cell-size="3"
+                     text="Всего затрат на продуктивный персонал">
+            </my-cell>
+            <my-cell></my-cell>
+            <my-cell></my-cell>
+            <my-cell></my-cell>
+            <my-cell type="ruble"
+                     field="fourth"
+                     disabled="true"
+                     value="{{model.fourth =
+                           baseModel.fluctuatingChargesSellerSalary.fourth +
+                           baseModel.fluctuatingChargesSellerCommissions.fourth +
+                           baseModel.fluctuatingChargesSalaryTax.fourth}}">
+            </my-cell>
+        </my-row>
 
         <my-row field="fluctuatingChargesStoringCharges">
             <my-cell cell-size="1"
@@ -1152,52 +1144,49 @@
     </my-body>
     <my-foot>
 
-        <!--TODO-->
-
-        <!--<my-row field="">-->
-            <!--<my-cell cell-size="1"-->
-                     <!--text="A220">-->
-            <!--</my-cell>-->
-            <!--<my-cell cell-size="3"-->
-                     <!--text="Итого переменные расходы">-->
-            <!--</my-cell>-->
-            <!--<my-cell></my-cell>-->
-            <!--<my-cell></my-cell>-->
-            <!--<my-cell></my-cell>-->
-            <!--<my-cell type="ruble"-->
-                     <!--field="fluctuatingChargesTotalFluctuatingCharge.fourth"-->
-                     <!--disabled="true"-->
-                     <!--value="{{model.tabNewCars.fluctuatingChargesTotalFluctuatingCharge.fourth =-->
-                            <!--model.tabNewCars.fluctuatingChargesTotalProductiveStaffCharges.fourth +-->
-                            <!--model.tabNewCars.fluctuatingChargesStoringCharges.fourth +-->
-                            <!--model.tabNewCars.fluctuatingChargesOtherVaryingCharges.fourth}}">-->
-            <!--</my-cell>-->
-        <!--</my-row>-->
+        <my-row field="fluctuatingChargesTotalFluctuatingCharge">
+            <my-cell cell-size="1"
+                     text="A220">
+            </my-cell>
+            <my-cell cell-size="3"
+                     text="Итого переменные расходы">
+            </my-cell>
+            <my-cell></my-cell>
+            <my-cell></my-cell>
+            <my-cell></my-cell>
+            <my-cell type="ruble"
+                     field="fourth"
+                     disabled="true"
+                     value="{{model.fourth =
+                            baseModel.fluctuatingChargesTotalProductiveStaffCharges.fourth +
+                            baseModel.fluctuatingChargesStoringCharges.fourth +
+                            baseModel.fluctuatingChargesOtherVaryingCharges.fourth}}">
+            </my-cell>
+        </my-row>
     </my-foot>
 </my-table>
 
 <my-table model="model" field="tabNewCars">
     <my-foot>
 
-        <!--TODO-->
-
-        <!--<my-row field="">-->
-            <!--<my-cell cell-size="1"-->
-                     <!--text="A230">-->
-            <!--</my-cell>-->
-            <!--<my-cell cell-size="3"-->
-                     <!--text="Переменная ВП">-->
-            <!--</my-cell>-->
-            <!--<my-cell></my-cell>-->
-            <!--<my-cell></my-cell>-->
-            <!--<my-cell></my-cell>-->
-            <!--<my-cell type="ruble"-->
-                     <!--field="fluctuatingChargesGrossProfit.fourth"-->
-                     <!--disabled="true"-->
-                     <!--value="{{model.tabNewCars.fluctuatingChargesGrossProfit.fourth =-->
-                          <!--0}}">-->
-            <!--</my-cell>-->
-        <!--</my-row>-->
+        <my-row field="fluctuatingChargesGrossProfit">
+            <my-cell cell-size="1"
+                     text="A230">
+            </my-cell>
+            <my-cell cell-size="3"
+                     text="Переменная ВП">
+            </my-cell>
+            <my-cell></my-cell>
+            <my-cell></my-cell>
+            <my-cell></my-cell>
+            <!--TODO-->
+            <my-cell type="ruble"
+                     field="fourth"
+                     disabled="true"
+                     value="{{model.fourth =
+                          0}}">
+            </my-cell>
+        </my-row>
     </my-foot>
 </my-table>
 
@@ -1278,28 +1267,26 @@
         </my-cell>
     </my-row>
 
-    <my-row field="">
+    <my-row field="departmentChargesTotalAdministrationCharges">
 
-        <!--TODO-->
-
-        <!--<my-cell cell-size="1"-->
-                 <!--text="A240">-->
-        <!--</my-cell>-->
-        <!--<my-cell cell-size="3"-->
-                 <!--text="Итого расходы на адм. персонал отд. Продаж">-->
-        <!--</my-cell>-->
-        <!--<my-cell></my-cell>-->
-        <!--<my-cell></my-cell>-->
-        <!--<my-cell></my-cell>-->
-        <!--<my-cell type="ruble"-->
-                 <!--field="departmentChargesTotalAdministrationCharges.fourth"-->
-                 <!--disabled="true"-->
-                 <!--value="{{model.tabNewCars.departmentChargesTotalAdministrationCharges.fourth =-->
-                          <!--model.tabNewCars.departmentChargesNonproductiveStaffSalary.fourth +-->
-                          <!--model.tabNewCars.departmentChargesSalaryTax.fourth +-->
-                          <!--model.tabNewCars.departmentChargesOtherChargesOnStaff.fourth +-->
-                          <!--model.tabNewCars.departmentChargesEducation.fourth}}">-->
-        <!--</my-cell>-->
+        <my-cell cell-size="1"
+                 text="A240">
+        </my-cell>
+        <my-cell cell-size="3"
+                 text="Итого расходы на адм. персонал отд. Продаж">
+        </my-cell>
+        <my-cell></my-cell>
+        <my-cell></my-cell>
+        <my-cell></my-cell>
+        <my-cell type="ruble"
+                 field="fourth"
+                 disabled="true"
+                 value="{{model.fourth =
+                          baseModel.departmentChargesNonproductiveStaffSalary.fourth +
+                          baseModel.departmentChargesSalaryTax.fourth +
+                          baseModel.departmentChargesOtherChargesOnStaff.fourth +
+                          baseModel.departmentChargesEducation.fourth}}">
+        </my-cell>
     </my-row>
 
     <my-row field="departmentChargesAdvertisingNewCars">
@@ -1416,57 +1403,55 @@
 </my-body>
 <my-foot>
 
-    <!--TODO-->
-
-    <!--<my-row field="">-->
-        <!--<my-cell cell-size="1"-->
-                 <!--text="A250">-->
-        <!--</my-cell>-->
-        <!--<my-cell cell-size="3"-->
-                 <!--text="Всего расходов по отделу">-->
-        <!--</my-cell>-->
-        <!--<my-cell></my-cell>-->
-        <!--<my-cell></my-cell>-->
-        <!--<my-cell></my-cell>-->
-        <!--<my-cell type="ruble"-->
-                 <!--field="departmentChargesTotalDepartmentCharges.fourth"-->
-                 <!--disabled="true"-->
-                 <!--value="{{model.tabNewCars.departmentChargesTotalDepartmentCharges.fourth =-->
-                          <!--model.tabNewCars.departmentChargesTotalAdministrationCharges.fourth +-->
-                          <!--model.tabNewCars.departmentChargesAdvertisingNewCars.fourth +-->
-                          <!--model.tabNewCars.departmentChargesAmortization.fourth +-->
-                          <!--model.tabNewCars.departmentChargesCompanyCarsCharges.fourth +-->
-                          <!--model.tabNewCars.departmentChargesConsignment.fourth +-->
-                          <!--model.tabNewCars.departmentChargesPayingInterestByStockPenaltyFee.fourth +-->
-                          <!--model.tabNewCars.departmentChargesPayingInterestByStockBank.fourth +-->
-                          <!--model.tabNewCars.departmentChargesOtherCharges.fourth}}">-->
-        <!--</my-cell>-->
-    <!--</my-row>-->
+    <my-row field="departmentChargesTotalDepartmentCharges">
+        <my-cell cell-size="1"
+                 text="A250">
+        </my-cell>
+        <my-cell cell-size="3"
+                 text="Всего расходов по отделу">
+        </my-cell>
+        <my-cell></my-cell>
+        <my-cell></my-cell>
+        <my-cell></my-cell>
+        <my-cell type="ruble"
+                 field="fourth"
+                 disabled="true"
+                 value="{{model.fourth =
+                          baseModel.departmentChargesTotalAdministrationCharges.fourth +
+                          baseModel.departmentChargesAdvertisingNewCars.fourth +
+                          baseModel.departmentChargesAmortization.fourth +
+                          baseModel.departmentChargesCompanyCarsCharges.fourth +
+                          baseModel.departmentChargesConsignment.fourth +
+                          baseModel.departmentChargesPayingInterestByStockPenaltyFee.fourth +
+                          baseModel.departmentChargesPayingInterestByStockBank.fourth +
+                          baseModel.departmentChargesOtherCharges.fourth}}">
+        </my-cell>
+    </my-row>
 </my-foot>
 </my-table>
 
 <my-table model="model" field="tabNewCars">
     <my-foot>
 
-        <!--TODO-->
 
-        <!--<my-row field="">-->
-            <!--<my-cell cell-size="1"-->
-                     <!--text="A270">-->
-            <!--</my-cell>-->
-            <!--<my-cell cell-size="3"-->
-                     <!--text="Прибыль по отделу">-->
-            <!--</my-cell>-->
-            <!--<my-cell></my-cell>-->
-            <!--<my-cell></my-cell>-->
-            <!--<my-cell></my-cell>-->
-            <!--<my-cell type="ruble"-->
-                     <!--field="departmentChargesTotalDepartmentIncoming.fourth"-->
-                     <!--disabled="true"-->
-                     <!--value="{{model.tabNewCars.departmentChargesTotalDepartmentIncoming.fourth =-->
-                          <!--0}}">-->
-            <!--</my-cell>-->
-        <!--</my-row>-->
+        <my-row field="departmentChargesTotalDepartmentIncoming">
+            <my-cell cell-size="1"
+                     text="A270">
+            </my-cell>
+            <my-cell cell-size="3"
+                     text="Прибыль по отделу">
+            </my-cell>
+            <my-cell></my-cell>
+            <my-cell></my-cell>
+            <my-cell></my-cell>
+            <!--TODO-->
+            <my-cell type="ruble"
+                     field="fourth"
+                     disabled="true"
+                     value="{{model.fourth =
+                          0}}">
+            </my-cell>
+        </my-row>
     </my-foot>
 </my-table>
 
