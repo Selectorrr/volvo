@@ -4,12 +4,19 @@
 'use strict';
 
 angular.module('volvoApp')
-    .controller('TabNewCarsController', function ($scope, ReportService, currentReport) {
+    .controller('TabNewCarsController', function ($scope, ReportService, currentReport, $timeout) {
 
         $scope.model = currentReport.data;
 
+        var timeout = null;
+
         $scope.autoSaving = function () {
-            ReportService.saveReport($scope.model);
+            if (timeout) {
+                $timeout.cancel(timeout);
+            }
+            timeout = $timeout(function () {
+                ReportService.saveReport($scope.model)
+            }, 500);
         }
 
     });

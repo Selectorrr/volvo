@@ -25,7 +25,7 @@ angular.module('volvoApp')
             }
         };
     })
-    .directive('myCheckbox', function () {
+    .directive('myCheckbox',function () {
         return {
             restrict: 'E',
             scope: {
@@ -36,12 +36,12 @@ angular.module('volvoApp')
             link: function (scope, element, attrs) {
             },
             template: '<div class="checkbox">' +
-            '<label><input type="checkbox"' +
-            'ng-model="model">' +
-            '{{label}}</label>' +
-            '</div>'
+                '<label><input type="checkbox"' +
+                'ng-model="model">' +
+                '{{label}}</label>' +
+                '</div>'
         };
-    }).directive('myInput', function () {
+    }).directive('myInput',function () {
         return {
             restrict: 'E',
             replace: true,
@@ -76,13 +76,24 @@ angular.module('volvoApp')
                 if (tAttrs.addon) {
                     $input.parent().find('span').attr('class', 'input-group-addon ' + tAttrs.addon);
                 }
+
+                return {
+                    pre: function preLink(scope, tElement, tAttrs, controllers) {
+
+                    },
+                    post: function postLink($scope, tElement, tAttrs, controllers) {
+                        if (angular.isFunction($scope.onBlur)) {
+                            $scope.$watch('model', $scope.onBlur);
+                        }
+                    }
+                }
             },
             template: '<div class="input-group input-group-sm">' +
-                      '<input value="value" class="form-control text-right" aria-describedby="sizing-addon3" ng-model="model" ng-blur="onBlur()" ng-required=required ng-disabled="disabled">' +
-                      '<span></span>' +
-                      '</div>'
+                '<input value="value" class="form-control text-right" aria-describedby="sizing-addon3" ng-model="model" ng-required=required ng-disabled="disabled">' +
+                '<span></span>' +
+                '</div>'
         };
-    }).directive('mySelect', function () {
+    }).directive('mySelect',function () {
         return {
             restrict: 'E',
             transclude: true,
@@ -112,13 +123,13 @@ angular.module('volvoApp')
                 });
             },
             template: '<div class="form-group" ng-class="{\'has-error\':validation(name)}">'
-            + '<label>{{label}}</label>'
-            + '<select class="form-control" ng-model="model" ng-required=requiredBoolean ng-transclude>'
-            + '</select>'
-            + '<span class="help-inline text-danger" ng-show="validation(name)">{{validation(name)}}</span>'
-            + '</div>'
+                + '<label>{{label}}</label>'
+                + '<select class="form-control" ng-model="model" ng-required=requiredBoolean ng-transclude>'
+                + '</select>'
+                + '<span class="help-inline text-danger" ng-show="validation(name)">{{validation(name)}}</span>'
+                + '</div>'
         };
-    }).directive('myYesNo', function () {
+    }).directive('myYesNo',function () {
         return {
             restrict: 'E',
             scope: {
@@ -134,17 +145,17 @@ angular.module('volvoApp')
                 $input.attr('id', tAttrs.name);
             },
             template: '<div class="form-group" ng-class="{\'has-error\':validation(name)}"><label >{{label}}</label><br/>' +
-            '<input type="hidden"  ng-model="model" ng-required=required>' +
-            '<div class="btn-group yesNo" data-toggle="buttons">' +
-            '<label class="btn btn-default" ng-class="{\'active\': model === true}" ng-click="model = true">' +
-            '<input type="radio" name="options" id="yes" autocomplete="off" ng-checked="model === true"> Да' +
-            '</label>' +
-            '<label class="btn btn-default" ng-class="{\'active\': model === false}" ng-click="model = false">' +
-            '<input type="radio" name="options" id="no" autocomplete="off" ng-checked="model === false"> Нет' +
-            '</label>' +
-            '</div>' +
-            '<div class="help-inline text-danger" ng-show="validation(name)">{{validation(name)}}</div>' +
-            '</div>'
+                '<input type="hidden"  ng-model="model" ng-required=required>' +
+                '<div class="btn-group yesNo" data-toggle="buttons">' +
+                '<label class="btn btn-default" ng-class="{\'active\': model === true}" ng-click="model = true">' +
+                '<input type="radio" name="options" id="yes" autocomplete="off" ng-checked="model === true"> Да' +
+                '</label>' +
+                '<label class="btn btn-default" ng-class="{\'active\': model === false}" ng-click="model = false">' +
+                '<input type="radio" name="options" id="no" autocomplete="off" ng-checked="model === false"> Нет' +
+                '</label>' +
+                '</div>' +
+                '<div class="help-inline text-danger" ng-show="validation(name)">{{validation(name)}}</div>' +
+                '</div>'
         };
     }).directive('numberOnly', function () {
         return {
