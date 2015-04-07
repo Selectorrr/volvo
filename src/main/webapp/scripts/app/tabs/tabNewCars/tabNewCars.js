@@ -12,7 +12,7 @@ angular.module('volvoApp')
                 views: {
                     'tab-content@home': {
                         templateUrl: 'scripts/app/tabs/tabNewCars/tabNewCars.html',
-                        controller: 'TabNewCarsController'
+                        controller: 'TabController'
                     }
                 },
                 resolve: {

@@ -4,7 +4,7 @@
 'use strict';
 
 angular.module('volvoApp')
-    .controller('TabNewCarsController', function ($scope, ReportService, currentReport, $timeout) {
+    .controller('TabController', function ($scope, ReportService, currentReport, $timeout) {
 
         $scope.model = currentReport.data;
 

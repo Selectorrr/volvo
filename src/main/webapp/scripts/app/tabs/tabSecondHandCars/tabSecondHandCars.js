@@ -12,7 +12,7 @@ angular.module('volvoApp')
                 views: {
                     'tab-content@home': {
                         templateUrl: 'scripts/app/tabs/tabSecondHandCars/tabSecondHandCars.html',
-                        controller: 'TabSecondHandCarsController'
+                        controller: 'TabController'
                     }
                 },
                 resolve: {
@@ -24,6 +24,9 @@ angular.module('volvoApp')
                     mainTranslatePartialLoader: ['$translate', '$translatePartialLoader', function ($translate, $translatePartialLoader) {
                         $translatePartialLoader.addPart('main');
                         return $translate.refresh();
+                    }],
+                    currentReport: ['ReportService', function(ReportService) {
+                        return ReportService.currentReport();
                     }]
                 }
             });
