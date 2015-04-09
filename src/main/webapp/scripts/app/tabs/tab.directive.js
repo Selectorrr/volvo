@@ -92,7 +92,8 @@ angular.module('volvoApp')
                     var myInput =
                         '<my-input type="number" my-disabled="myDisabled" addon="' +
                         (tAttrs.type === 'ruble' ? 'glyphicon-ruble' : '') + '" model="model.' + tAttrs.field +
-                        '" value="' + tAttrs.value + '" on-blur="onBlur">' +
+                        '" value="' + tAttrs.value + '" on-blur="onBlur"' +
+                            (tAttrs.decimals ? 'decimals=' + tAttrs.decimals : '') + '>' +
                         '</my-input>';
                     $td.append(myInput);
                 }

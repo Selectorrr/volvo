@@ -48,6 +48,7 @@ angular.module('volvoApp')
             scope: {
                 type: '@',
                 label: '@',
+                decimals: '@',
                 model: '=',
                 required: '=',
                 validation: '=',
@@ -71,7 +72,11 @@ angular.module('volvoApp')
                     $input.attr('ng-pattern', tAttrs.pattern);
                 }
                 if (tAttrs.type === "number") {
-                    $input.attr('number-only', true);
+                    $input.attr('number-format', true);
+                    if (tAttrs.decimals) {
+                        $input.attr('decimals', tAttrs.decimals);
+                    }
+
                 }
                 if (tAttrs.addon) {
                     $input.parent().find('span').attr('class', 'input-group-addon ' + tAttrs.addon);
@@ -157,7 +162,45 @@ angular.module('volvoApp')
                 '<div class="help-inline text-danger" ng-show="validation(name)">{{validation(name)}}</div>' +
                 '</div>'
         };
-    }).directive('numberOnly', function () {
+    }).directive('numberFormat', ['$filter', function ($filter) {
+        return {
+            require: 'ngModel',
+            compile: function compile(tElement, tAttrs, transclude) {
+
+                return {
+                    pre: function preLink(scope, tElement, tAttrs, controllers) {
+
+                    },
+                    post: function postLink($scope, element, attrs, ngModelController) {
+                        var decimals = attrs.decimals;
+
+                        ngModelController.$parsers.push(function (data) {
+                            var newData = data.replace(/,/g, '.');
+                            var value = parseFloat(newData);
+                            return isNaN(value) ? 0 : value;
+                        });
+
+                        function filterNumber(data) {
+                            return $filter('number')(data, decimals);
+                        }
+
+                        ngModelController.$formatters.push(filterNumber);
+
+                        element.bind('focus', function () {
+                            ngModelController.$viewValue = ngModelController.$modelValue;
+                            ngModelController.$render();
+                        });
+
+                        element.bind('blur', function () {
+                            ngModelController.$viewValue = filterNumber(ngModelController.$modelValue);
+                            ngModelController.$render();
+                        });
+                    }
+                }
+
+            }
+        }
+    }]).directive('numberOnly', function () {
         return {
             require: 'ngModel',
             link: function (scope, element, attrs, modelCtrl) {
