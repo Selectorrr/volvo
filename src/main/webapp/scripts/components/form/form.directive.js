@@ -55,7 +55,7 @@ angular.module('volvoApp')
                 mask: '@',
                 placeholder: '@',
                 pattern: '@',
-                disabled: '=',
+                myDisabled: '=',
                 addon: '=',
                 onBlur: '=',
                 value: '@'
@@ -89,7 +89,7 @@ angular.module('volvoApp')
                 }
             },
             template: '<div class="input-group input-group-sm">' +
-                '<input value="value" class="form-control text-right" aria-describedby="sizing-addon3" ng-model="model" ng-required=required ng-disabled="disabled">' +
+            '<input value="value" class="form-control text-right" aria-describedby="sizing-addon3" ng-model="model" ng-required=required ng-disabled="myDisabled">' +
                 '<span></span>' +
                 '</div>'
         };

@@ -77,7 +77,7 @@ angular.module('volvoApp')
                 onBlur: '=',
                 field: '@',
                 text: '@',
-                disabled: '=',
+                myDisabled: '=',
                 addon: '@',
                 value: '@'
             },
@@ -90,7 +90,7 @@ angular.module('volvoApp')
                 $td.addClass('col-xs-' + size);
                 if (tAttrs.type === 'number' || tAttrs.type === 'ruble') {
                     var myInput =
-                        '<my-input type="number" disabled="disabled" addon="' +
+                        '<my-input type="number" my-disabled="myDisabled" addon="' +
                         (tAttrs.type === 'ruble' ? 'glyphicon-ruble' : '') + '" model="model.' + tAttrs.field +
                         '" value="' + tAttrs.value + '" on-blur="onBlur">' +
                         '</my-input>';
