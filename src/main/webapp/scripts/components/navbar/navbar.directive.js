@@ -37,4 +37,15 @@ angular.module('volvoApp')
                 });
             }
         };
+    })
+    .directive('myStickyNavbar', function () {
+        return {
+            restrict: 'A',
+            link: function (scope, element, attrs) {
+                element.affix({
+                    offset: {top: element.offset().top}
+                });
+                //element.parent().height($(element).height())
+            }
+        };
     });

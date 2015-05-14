@@ -1,41 +1,10 @@
 @import url(//fonts.googleapis.com/css?family=Roboto);
-
-@media -sass-debug-info {
-    filename {
-        font-family: file\:\/\/C\:\/Users\/Selector\/Desktop\/volvo\/src\/main\/scss\/main\.scss
-    }
-
-    line {
-        font-family: \000035
-    }
-}
-body {
-  background: #ffffff;
-  color: #333;
-}
-
-@media -sass-debug-info {
-    filename {
-        font-family: file\:\/\/C\:\/Users\/Selector\/Desktop\/volvo\/src\/main\/scss\/main\.scss
-    }
-
-    line {
-        font-family: \0000311
-    }
-}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Selector\/Desktop\/volvo\/src\/main\/scss\/main\.scss}line{font-family:\0000311}}
 [ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
   display: none !important;
 }
 
-@media -sass-debug-info {
-    filename {
-        font-family: file\:\/\/C\:\/Users\/Selector\/Desktop\/volvo\/src\/main\/scss\/main\.scss
-    }
-
-    line {
-        font-family: \0000315
-    }
-}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Selector\/Desktop\/volvo\/src\/main\/scss\/main\.scss}line{font-family:\0000315}}
 .development {
   position: absolute;
   width: 149px;
@@ -49,29 +18,13 @@ body {
   background-repeat: no-repeat;
 }
 
-@media -sass-debug-info {
-    filename {
-        font-family: file\:\/\/C\:\/Users\/Selector\/Desktop\/volvo\/src\/main\/scss\/main\.scss
-    }
-
-    line {
-        font-family: \0000328
-    }
-}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Selector\/Desktop\/volvo\/src\/main\/scss\/main\.scss}line{font-family:\0000328}}
 .navbar-version {
   font-size: 10px;
   color: #ccc;
 }
 
-@media -sass-debug-info {
-    filename {
-        font-family: file\:\/\/C\:\/Users\/Selector\/Desktop\/volvo\/src\/main\/scss\/main\.scss
-    }
-
-    line {
-        font-family: \0000333
-    }
-}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Selector\/Desktop\/volvo\/src\/main\/scss\/main\.scss}line{font-family:\0000333}}
 .browserupgrade {
   margin: 0.2em 0;
   background: #ccc;
@@ -79,15 +32,7 @@ body {
   padding: 0.2em 0;
 }
 
-@media -sass-debug-info {
-    filename {
-        font-family: file\:\/\/C\:\/Users\/Selector\/Desktop\/volvo\/src\/main\/scss\/main\.scss
-    }
-
-    line {
-        font-family: \0000340
-    }
-}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Selector\/Desktop\/volvo\/src\/main\/scss\/main\.scss}line{font-family:\0000340}}
 .hero-unit {
   margin: 50px auto 0 auto;
   width: 300px;
@@ -99,44 +44,20 @@ body {
   padding: 60px;
 }
 
-@media -sass-debug-info {
-    filename {
-        font-family: file\:\/\/C\:\/Users\/Selector\/Desktop\/volvo\/src\/main\/scss\/main\.scss
-    }
-
-    line {
-        font-family: \0000351
-    }
-}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Selector\/Desktop\/volvo\/src\/main\/scss\/main\.scss}line{font-family:\0000351}}
 .hero-unit h1 {
   font-size: 60px;
   line-height: 1;
   letter-spacing: -1px;
 }
 
-@media -sass-debug-info {
-    filename {
-        font-family: file\:\/\/C\:\/Users\/Selector\/Desktop\/volvo\/src\/main\/scss\/main\.scss
-    }
-
-    line {
-        font-family: \0000357
-    }
-}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Selector\/Desktop\/volvo\/src\/main\/scss\/main\.scss}line{font-family:\0000357}}
 .error {
   color: white;
   background-color: red;
 }
 
-@media -sass-debug-info {
-    filename {
-        font-family: file\:\/\/C\:\/Users\/Selector\/Desktop\/volvo\/src\/main\/scss\/main\.scss
-    }
-
-    line {
-        font-family: \0000362
-    }
-}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Selector\/Desktop\/volvo\/src\/main\/scss\/main\.scss}line{font-family:\0000362}}
 .hipster {
   display: inline-block;
   width: 347px;
@@ -147,44 +68,20 @@ body {
 
 /* wait autoprefixer update to allow simple generation of high pixel density media query */
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
-    @media -sass-debug-info {
-        filename {
-            font-family: file\:\/\/C\:\/Users\/Selector\/Desktop\/volvo\/src\/main\/scss\/main\.scss
-        }
-
-        line {
-            font-family: \0000377
-        }
-    }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Selector\/Desktop\/volvo\/src\/main\/scss\/main\.scss}line{font-family:\0000377}}
   .hipster {
     background: url("../images/hipster2x.png") no-repeat center top;
     background-size: contain;
   }
 }
 /* make sure browsers use the pointer cursor for anchors, even with no href */
-@media -sass-debug-info {
-    filename {
-        font-family: file\:\/\/C\:\/Users\/Selector\/Desktop\/volvo\/src\/main\/scss\/main\.scss
-    }
-
-    line {
-        font-family: \0000384
-    }
-}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Selector\/Desktop\/volvo\/src\/main\/scss\/main\.scss}line{font-family:\0000384}}
 a:hover {
   cursor: pointer;
 }
 
 /* start Password strength bar style */
-@media -sass-debug-info {
-    filename {
-        font-family: file\:\/\/C\:\/Users\/Selector\/Desktop\/volvo\/src\/main\/scss\/main\.scss
-    }
-
-    line {
-        font-family: \0000389
-    }
-}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Selector\/Desktop\/volvo\/src\/main\/scss\/main\.scss}line{font-family:\0000389}}
 ul#strength {
   display: inline;
   list-style: none;
@@ -194,28 +91,12 @@ ul#strength {
   vertical-align: 2px;
 }
 
-@media -sass-debug-info {
-    filename {
-        font-family: file\:\/\/C\:\/Users\/Selector\/Desktop\/volvo\/src\/main\/scss\/main\.scss
-    }
-
-    line {
-        font-family: \0000398
-    }
-}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Selector\/Desktop\/volvo\/src\/main\/scss\/main\.scss}line{font-family:\0000398}}
 .point:last {
   margin: 0 !important;
 }
 
-@media -sass-debug-info {
-    filename {
-        font-family: file\:\/\/C\:\/Users\/Selector\/Desktop\/volvo\/src\/main\/scss\/main\.scss
-    }
-
-    line {
-        font-family: \00003102
-    }
-}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Selector\/Desktop\/volvo\/src\/main\/scss\/main\.scss}line{font-family:\00003102}}
 .point {
   background: #DDD;
   border-radius: 2px;
@@ -226,56 +107,24 @@ ul#strength {
 }
 
 /* end Password strength bar style */
-@media -sass-debug-info {
-    filename {
-        font-family: file\:\/\/C\:\/Users\/Selector\/Desktop\/volvo\/src\/main\/scss\/main\.scss
-    }
-
-    line {
-        font-family: \00003112
-    }
-}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Selector\/Desktop\/volvo\/src\/main\/scss\/main\.scss}line{font-family:\00003112}}
 .table div.form-group {
   margin-bottom: 0;
 }
 
-@media -sass-debug-info {
-    filename {
-        font-family: file\:\/\/C\:\/Users\/Selector\/Desktop\/volvo\/src\/main\/scss\/main\.scss
-    }
-
-    line {
-        font-family: \00003116
-    }
-}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Selector\/Desktop\/volvo\/src\/main\/scss\/main\.scss}line{font-family:\00003116}}
 .nav.nav-tabs {
   border-bottom: none;
 }
 
-@media -sass-debug-info {
-    filename {
-        font-family: file\:\/\/C\:\/Users\/Selector\/Desktop\/volvo\/src\/main\/scss\/main\.scss
-    }
-
-    line {
-        font-family: \00003120
-    }
-}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Selector\/Desktop\/volvo\/src\/main\/scss\/main\.scss}line{font-family:\00003120}}
 .nav.nav-tabs li {
   display: table-cell;
   width: 1%;
   float: none;
 }
 
-@media -sass-debug-info {
-    filename {
-        font-family: file\:\/\/C\:\/Users\/Selector\/Desktop\/volvo\/src\/main\/scss\/main\.scss
-    }
-
-    line {
-        font-family: \00003126
-    }
-}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Selector\/Desktop\/volvo\/src\/main\/scss\/main\.scss}line{font-family:\00003126}}
 .nav.nav-tabs li a {
   border-bottom: 1px solid #ddd;
   border-radius: 4px 4px 0 0;
@@ -283,18 +132,91 @@ ul#strength {
   margin-bottom: 0;
   text-align: center;
   padding: 10px 10px;
-    min-height: 60px;
+  min-height: 60px;
 }
 
-@media -sass-debug-info {
-    filename {
-        font-family: file\:\/\/C\:\/Users\/Selector\/Desktop\/volvo\/src\/main\/scss\/main\.scss
-    }
-
-    line {
-        font-family: \00003137
-    }
-}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Selector\/Desktop\/volvo\/src\/main\/scss\/main\.scss}line{font-family:\00003137}}
 .nav-tabs > li.active > a {
-  border-bottom-color: #fff !important;
+  border-bottom-color: #ececec !important;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Selector\/Desktop\/volvo\/src\/main\/scss\/main\.scss}line{font-family:\00003141}}
+.simplebox {
+  -webkit-box-shadow: none !important;
+  -moz-box-shadow: none !important;
+  box-shadow: none !important;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Selector\/Desktop\/volvo\/src\/main\/scss\/main\.scss}line{font-family:\00003149}}
+.masthead {
+  background-color: transparent;
+  height: 300px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Selector\/Desktop\/volvo\/src\/main\/scss\/main\.scss}line{font-family:\00003155}}
+#nav-wrapper {
+  margin-bottom: 20px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Selector\/Desktop\/volvo\/src\/main\/scss\/main\.scss}line{font-family:\00003159}}
+#nav {
+  z-index: 3;
+  background-color: transparent;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Selector\/Desktop\/volvo\/src\/main\/scss\/main\.scss}line{font-family:\00003164}}
+#nav.affix {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Selector\/Desktop\/volvo\/src\/main\/scss\/main\.scss}line{font-family:\00003170}}
+#nav > .navbar-inner {
+  border-left: 0;
+  border-right: 0;
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -o-border-radius: 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Selector\/Desktop\/volvo\/src\/main\/scss\/main\.scss}line{font-family:\00003179}}
+.nav-common {
+  background-image: url("/assets/images/hero-1.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Selector\/Desktop\/volvo\/src\/main\/scss\/main\.scss}line{font-family:\00003188}}
+.navbar-inverse {
+  border-color: transparent;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Selector\/Desktop\/volvo\/src\/main\/scss\/main\.scss}line{font-family:\00003191}}
+.content {
+  background-color: #f6f6f6;
+  padding: 30px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Selector\/Desktop\/volvo\/src\/main\/scss\/main\.scss}line{font-family:\00003195}}
+.navbar-nav > li > a {
+  line-height: 40px;
+  font-size: 16px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Selector\/Desktop\/volvo\/src\/main\/scss\/main\.scss}line{font-family:\00003199}}
+.nav-logo {
+  position: absolute;
+  bottom: 9px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Selector\/Desktop\/volvo\/src\/main\/scss\/main\.scss}line{font-family:\00003203}}
+.html, body {
+  position: relative;
+  height: auto;
 }

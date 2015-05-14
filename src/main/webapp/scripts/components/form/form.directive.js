@@ -94,7 +94,7 @@ angular.module('volvoApp')
                 }
             },
             template: '<div class="input-group input-group-sm">' +
-            '<input value="value" class="form-control text-right" aria-describedby="sizing-addon3" ng-model="model" ng-required=required ng-disabled="myDisabled">' +
+            '<input value="value" class="form-control text-right simplebox" aria-describedby="sizing-addon3" ng-model="model" ng-required=required ng-disabled="myDisabled">' +
                 '<span></span>' +
                 '</div>'
         };
