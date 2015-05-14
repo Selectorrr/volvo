@@ -520,5 +520,490 @@
     </my-foot>
 </my-table>
 
+<my-table model="model" field="tabBodyShop">
+    <my-head>
+        <my-row>
+            <my-cell size="4"
+                     colspan="2"
+                     text="Доходы по субконтрактам"></my-cell>
+            <my-cell></my-cell>
+            <my-cell></my-cell>
+            <my-cell></my-cell>
+            <my-cell></my-cell>
+        </my-row>
+    </my-head>
+    <my-body>
+        <my-row field="subcontractIncomingBodyShop">
+            <my-cell size="1"
+                     text="E32">
+            </my-cell>
+            <my-cell size="3"
+                     text="Субконтракты Куз.цеха">
+            </my-cell>
+            <my-cell></my-cell>
+            <my-cell type="ruble"
+                     field="second"
+                     on-blur="autoSaving">
+            </my-cell>
+            <my-cell type="ruble"
+                     field="third"
+                     on-blur="autoSaving">
+            </my-cell>
+            <my-cell type="ruble"
+                     field="fourth"
+                     my-disabled="true"
+                     value="{{model.fourth = model.second - model.third}}">
+            </my-cell>
+        </my-row>
+    </my-body>
+    <my-foot>
+
+        <my-row field="subcontractIncomingBodyShopTotal">
+            <my-cell size="1"
+                     text="E35">
+            </my-cell>
+            <my-cell size="3"
+                     text="Итого доходы по субконтрактам">
+            </my-cell>
+            <my-cell></my-cell>
+            <my-cell type="ruble"
+                     field="second"
+                     my-disabled="true"
+                     value="{{model.second=
+                            baseModel.subcontractIncomingBodyShop.second}}">
+            </my-cell>
+            <my-cell type="ruble"
+                     field="third"
+                     my-disabled="true"
+                     value="{{model.third=
+                            baseModel.subcontractIncomingBodyShop.third}}">
+            </my-cell>
+            <my-cell type="ruble"
+                     field="fourth"
+                     my-disabled="true"
+                     value="{{model.fourth=
+                            baseModel.subcontractIncomingBodyShop.fourth}}">
+            </my-cell>
+        </my-row>
+
+    </my-foot>
+</my-table>
+
+<my-table model="model" field="tabBodyShop">
+    <my-head>
+        <my-row>
+            <my-cell size="4"
+                     colspan="2"
+                     text="Прочие доходы"></my-cell>
+            <my-cell></my-cell>
+            <my-cell></my-cell>
+            <my-cell></my-cell>
+            <my-cell></my-cell>
+        </my-row>
+    </my-head>
+    <my-body>
+        <my-row field="otherIncomingColorsTyingProductsSale">
+            <my-cell size="1"
+                     text="E37">
+            </my-cell>
+            <my-cell size="3"
+                     text="Продажа краски и сопутствующих материалов">
+            </my-cell>
+            <my-cell></my-cell>
+            <my-cell type="ruble"
+                     field="second"
+                     on-blur="autoSaving">
+            </my-cell>
+            <my-cell type="ruble"
+                     field="third"
+                     on-blur="autoSaving">
+            </my-cell>
+            <my-cell type="ruble"
+                     field="fourth"
+                     my-disabled="true"
+                     value="{{model.fourth = model.second - model.third}}">
+            </my-cell>
+        </my-row>
+
+        <my-row field="otherIncomingOtherIncoming">
+            <my-cell size="1"
+                     text="E38">
+            </my-cell>
+            <my-cell size="3"
+                     text="Прочие доходы">
+            </my-cell>
+            <my-cell></my-cell>
+            <my-cell type="ruble"
+                     field="second"
+                     on-blur="autoSaving">
+            </my-cell>
+            <my-cell type="ruble"
+                     field="third"
+                     on-blur="autoSaving">
+            </my-cell>
+            <my-cell type="ruble"
+                     field="fourth"
+                     my-disabled="true"
+                     value="{{model.fourth = model.second - model.third}}">
+            </my-cell>
+        </my-row>
+    </my-body>
+    <my-foot>
+
+        <my-row field="otherIncomingTotal">
+            <my-cell size="1"
+                     text="E40">
+            </my-cell>
+            <my-cell size="3"
+                     text="Всего прочие  доходы">
+            </my-cell>
+            <my-cell></my-cell>
+            <my-cell type="ruble"
+                     field="second"
+                     my-disabled="true"
+                     value="{{model.second=baseModel.otherIncomingColorsTyingProductsSale.second+
+                            baseModel.otherIncomingOtherIncoming.second}}">
+            </my-cell>
+            <my-cell type="ruble"
+                     field="third"
+                     my-disabled="true"
+                     value="{{model.third=baseModel.otherIncomingColorsTyingProductsSale.third+
+                            baseModel.otherIncomingOtherIncoming.third}}">
+            </my-cell>
+            <my-cell type="ruble"
+                     field="fourth"
+                     my-disabled="true"
+                     value="{{model.fourth=baseModel.otherIncomingColorsTyingProductsSale.fourth+
+                            baseModel.otherIncomingOtherIncoming.fourth}}">
+            </my-cell>
+        </my-row>
+
+    </my-foot>
+</my-table>
+
+<my-table model="model" field="tabBodyShop">
+    <my-foot>
+
+        <my-row field="otherIncomingGrossProfit">
+            <my-cell size="1"
+                     text="E50">
+            </my-cell>
+            <my-cell size="3"
+                     text="Валовая прибыль Кузовного цеха">
+            </my-cell>
+            <my-cell type="ruble"
+                     field="first"
+                     my-disabled="true"
+                     value="{{model.first=
+                            baseModel.incomingAndGrossProfitBodyShopTotal.first}}">
+            </my-cell>
+            <my-cell type="ruble"
+                     field="second"
+                     my-disabled="true"
+                     value="{{model.second=
+                            baseModel.incomingAndGrossProfitBodyShopTotal.second+
+                            baseModel.subcontractIncomingBodyShopTotal.second+
+                            baseModel.otherIncomingTotal.second}}">
+            </my-cell>
+            <my-cell type="ruble"
+                     field="third"
+                     my-disabled="true"
+                     value="{{model.third=
+                            baseModel.incomingAndGrossProfitBodyShopTotal.third+
+                            baseModel.subcontractIncomingBodyShopTotal.third+
+                            baseModel.otherIncomingTotal.third}}">
+            </my-cell>
+            <my-cell type="ruble"
+                     field="fourth"
+                     my-disabled="true"
+                     value="{{model.fourth=
+                            baseModel.incomingAndGrossProfitBodyShopTotal.fourth+
+                            baseModel.subcontractIncomingBodyShopTotal.fourth+
+                            baseModel.otherIncomingTotal.fourth}}">
+            </my-cell>
+        </my-row>
+
+    </my-foot>
+</my-table>
+
+<my-table model="model" field="tabBodyShop">
+<my-head>
+    <my-row>
+        <my-cell size="4"
+                 colspan="2"
+                 text="Расходы по отделу"></my-cell>
+        <my-cell></my-cell>
+        <my-cell></my-cell>
+        <my-cell></my-cell>
+        <my-cell text="Сумма"></my-cell>
+    </my-row>
+</my-head>
+<my-body>
+<my-row field="departmentChargesNonproductiveStaffSalary">
+    <my-cell size="1"
+             text="E51">
+    </my-cell>
+    <my-cell size="3"
+             text="Зарплата непродуктивного персонала">
+    </my-cell>
+    <my-cell></my-cell>
+    <my-cell></my-cell>
+    <my-cell></my-cell>
+    <my-cell type="ruble"
+             field="fourth"
+             on-blur="autoSaving">
+    </my-cell>
+</my-row>
+
+<my-row field="departmentChargesSalaryTax">
+    <my-cell size="1"
+             text="E52">
+    </my-cell>
+    <my-cell size="3"
+             text="Налоги на з/п">
+    </my-cell>
+    <my-cell></my-cell>
+    <my-cell></my-cell>
+    <my-cell></my-cell>
+    <my-cell type="ruble"
+             field="fourth"
+             on-blur="autoSaving">
+    </my-cell>
+</my-row>
+
+<my-row field="departmentChargesOtherChargeOnStaff">
+    <my-cell size="1"
+             text="E53">
+    </my-cell>
+    <my-cell size="3"
+             text="Другие расходы на персонал">
+    </my-cell>
+    <my-cell></my-cell>
+    <my-cell></my-cell>
+    <my-cell></my-cell>
+    <my-cell type="ruble"
+             field="fourth"
+             on-blur="autoSaving">
+    </my-cell>
+</my-row>
+
+<my-row field="departmentChargesEducation">
+    <my-cell size="1"
+             text="E54">
+    </my-cell>
+    <my-cell size="3"
+             text="Обучение">
+    </my-cell>
+    <my-cell></my-cell>
+    <my-cell></my-cell>
+    <my-cell></my-cell>
+    <my-cell type="ruble"
+             field="fourth"
+             on-blur="autoSaving">
+    </my-cell>
+</my-row>
+
+<my-row field="departmentChargesTotalAdministrationCharges">
+    <my-cell size="1"
+             text="E60">
+    </my-cell>
+    <my-cell size="3"
+             text="Итого расходы на адм. персонал Кузовного цеха">
+    </my-cell>
+    <my-cell></my-cell>
+    <my-cell></my-cell>
+    <my-cell></my-cell>
+    <my-cell type="ruble"
+             field="fourth"
+             my-disabled="true"
+             value="{{model.fourth=
+                            baseModel.departmentChargesNonproductiveStaffSalary.fourth+
+                            baseModel.departmentChargesSalaryTax.fourth+
+                            baseModel.departmentChargesOtherChargeOnStaff.fourth+
+                            baseModel.departmentChargesEducation.fourth}}">
+    </my-cell>
+</my-row>
+
+<my-row field="departmentChargesSupposititiousCarsCharge">
+    <my-cell size="1"
+             text="E61">
+    </my-cell>
+    <my-cell size="3"
+             text="Расходы на подменные а/м">
+    </my-cell>
+    <my-cell></my-cell>
+    <my-cell></my-cell>
+    <my-cell></my-cell>
+    <my-cell type="ruble"
+             field="fourth"
+             on-blur="autoSaving">
+    </my-cell>
+</my-row>
+
+<my-row field="departmentChargesRepairService">
+    <my-cell size="1"
+             text="E62">
+    </my-cell>
+    <my-cell size="3"
+             text="Ремонт и обслуж. оборудования">
+    </my-cell>
+    <my-cell></my-cell>
+    <my-cell></my-cell>
+    <my-cell></my-cell>
+    <my-cell type="ruble"
+             field="fourth"
+             on-blur="autoSaving">
+    </my-cell>
+</my-row>
+
+<my-row field="departmentChargesCompanyCarsCharge">
+    <my-cell size="1"
+             text="E63">
+    </my-cell>
+    <my-cell size="3"
+             text="Расходы на а/м компании">
+    </my-cell>
+    <my-cell></my-cell>
+    <my-cell></my-cell>
+    <my-cell></my-cell>
+    <my-cell type="ruble"
+             field="fourth"
+             on-blur="autoSaving">
+    </my-cell>
+</my-row>
+
+<my-row field="departmentChargesClientCompensation">
+    <my-cell size="1"
+             text="E64">
+    </my-cell>
+    <my-cell size="3"
+             text="Расходы дилера по выплате компенсации клиенту">
+    </my-cell>
+    <my-cell></my-cell>
+    <my-cell></my-cell>
+    <my-cell></my-cell>
+    <my-cell type="ruble"
+             field="fourth"
+             on-blur="autoSaving">
+    </my-cell>
+</my-row>
+
+<my-row field="departmentChargesAdvertising">
+    <my-cell size="1"
+             text="E65">
+    </my-cell>
+    <my-cell size="3"
+             text="Реклама">
+    </my-cell>
+    <my-cell></my-cell>
+    <my-cell></my-cell>
+    <my-cell></my-cell>
+    <my-cell type="ruble"
+             field="fourth"
+             on-blur="autoSaving">
+    </my-cell>
+</my-row>
+
+<my-row field="departmentChargesConsumableCost">
+    <my-cell size="1"
+             text="E66">
+    </my-cell>
+    <my-cell size="3"
+             text="Стоимость расходных материалов и инструмента">
+    </my-cell>
+    <my-cell></my-cell>
+    <my-cell></my-cell>
+    <my-cell></my-cell>
+    <my-cell type="ruble"
+             field="fourth"
+             on-blur="autoSaving">
+    </my-cell>
+</my-row>
+
+<my-row field="departmentChargesAmortization">
+    <my-cell size="1"
+             text="E68">
+    </my-cell>
+    <my-cell size="3"
+             text="Амортизация">
+    </my-cell>
+    <my-cell></my-cell>
+    <my-cell></my-cell>
+    <my-cell></my-cell>
+    <my-cell type="ruble"
+             field="fourth"
+             on-blur="autoSaving">
+    </my-cell>
+</my-row>
+
+<my-row field="departmentChargesOtherCharge">
+    <my-cell size="1"
+             text="E69">
+    </my-cell>
+    <my-cell size="3"
+             text="Другие расходы">
+    </my-cell>
+    <my-cell></my-cell>
+    <my-cell></my-cell>
+    <my-cell></my-cell>
+    <my-cell type="ruble"
+             field="fourth"
+             on-blur="autoSaving">
+    </my-cell>
+</my-row>
+
+<my-row field="departmentChargesTotal">
+    <my-cell size="1"
+             text="E70">
+    </my-cell>
+    <my-cell size="3"
+             text="Итого расходов">
+    </my-cell>
+    <my-cell></my-cell>
+    <my-cell></my-cell>
+    <my-cell></my-cell>
+    <my-cell type="ruble"
+             field="fourth"
+             my-disabled="true"
+             value="{{model.fourth=
+                            baseModel.departmentChargesTotalAdministrationCharges.fourth+
+                            baseModel.departmentChargesSupposititiousCarsCharge.fourth+
+                            baseModel.departmentChargesRepairService.fourth+
+                            baseModel.departmentChargesCompanyCarsCharge.fourth+
+                            baseModel.departmentChargesClientCompensation.fourth+
+                            baseModel.departmentChargesAdvertising.fourth+
+                            baseModel.departmentChargesConsumableCost.fourth+
+                            baseModel.departmentChargesAmortization.fourth+
+                            baseModel.departmentChargesOtherCharge.fourth}}">
+    </my-cell>
+</my-row>
+</my-body>
+</my-table>
+
+<my-table model="model" field="tabBodyShop">
+    <my-foot>
+
+        <my-row field="departmentChargesTotalIncoming">
+            <my-cell size="1"
+                     text="E90">
+            </my-cell>
+            <my-cell size="3"
+                     text="Прибыль по отделу">
+            </my-cell>
+            <my-cell></my-cell>
+            <my-cell></my-cell>
+            <my-cell></my-cell>
+            <my-cell type="ruble"
+                     field="fourth"
+                     my-disabled="true"
+                     value="{{model.fourth=
+                            baseModel.otherIncomingGrossProfit.fourth-
+                            baseModel.departmentChargesTotal.fourth}}">
+            </my-cell>
+        </my-row>
+
+    </my-foot>
+</my-table>
+
 
 
