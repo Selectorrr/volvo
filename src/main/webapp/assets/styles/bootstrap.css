@@ -3887,7 +3887,7 @@ input[type="search"] {
   .input-group-lg > input[type="month"].input-group-addon,
   .input-group-lg > .input-group-btn > input[type="month"].btn, .input-group-lg
   input[type="month"] {
-    line-height: 76px;
+      line-height: 45px;
   }
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Selector\/Desktop\/volvo\/src\/main\/webapp\/bower_components\/bootstrap-sass\/assets\/stylesheets\/bootstrap\/_forms\.scss}line{font-family:\00003202}}
@@ -4045,9 +4045,9 @@ select[multiple].input-sm,
 .input-lg, .input-group-lg > .form-control,
 .input-group-lg > .input-group-addon,
 .input-group-lg > .input-group-btn > .btn {
-  height: 76px;
+    height: 45px;
   padding: 10px 16px;
-  font-size: 40px;
+    font-size: 17px;
   line-height: 1.33333;
   border-radius: 0px;
 }
@@ -4056,8 +4056,8 @@ select[multiple].input-sm,
 select.input-lg, .input-group-lg > select.form-control,
 .input-group-lg > select.input-group-addon,
 .input-group-lg > .input-group-btn > select.btn {
-  height: 76px;
-  line-height: 76px;
+    height: 45px;
+    line-height: 45px;
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Selector\/Desktop\/volvo\/src\/main\/webapp\/bower_components\/bootstrap-sass\/assets\/stylesheets\/bootstrap\/mixins\/_forms\.scss}line{font-family:\0000384}}
@@ -4073,16 +4073,16 @@ select[multiple].input-lg,
 
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Selector\/Desktop\/volvo\/src\/main\/webapp\/bower_components\/bootstrap-sass\/assets\/stylesheets\/bootstrap\/mixins\/_forms\.scss}line{font-family:\0000371}}
 .form-group-lg .form-control {
-  height: 76px;
+    height: 45px;
   padding: 10px 16px;
-  font-size: 40px;
+    font-size: 17px;
   line-height: 1.33333;
   border-radius: 0px;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Selector\/Desktop\/volvo\/src\/main\/webapp\/bower_components\/bootstrap-sass\/assets\/stylesheets\/bootstrap\/mixins\/_forms\.scss}line{font-family:\0000379}}
 .form-group-lg select.form-control {
-  height: 76px;
-  line-height: 76px;
+    height: 45px;
+    line-height: 45px;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Selector\/Desktop\/volvo\/src\/main\/webapp\/bower_components\/bootstrap-sass\/assets\/stylesheets\/bootstrap\/mixins\/_forms\.scss}line{font-family:\0000384}}
 .form-group-lg textarea.form-control,
@@ -4091,9 +4091,9 @@ select[multiple].input-lg,
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Selector\/Desktop\/volvo\/src\/main\/webapp\/bower_components\/bootstrap-sass\/assets\/stylesheets\/bootstrap\/_forms\.scss}line{font-family:\00003334}}
 .form-group-lg .form-control-static {
-  height: 76px;
+    height: 45px;
   padding: 10px 16px;
-  font-size: 40px;
+    font-size: 17px;
   line-height: 1.33333;
 }
 
@@ -4124,9 +4124,9 @@ select[multiple].input-lg,
 .input-lg + .form-control-feedback, .input-group-lg > .form-control + .form-control-feedback,
 .input-group-lg > .input-group-addon + .form-control-feedback,
 .input-group-lg > .input-group-btn > .btn + .form-control-feedback {
-  width: 76px;
-  height: 76px;
-  line-height: 76px;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Selector\/Desktop\/volvo\/src\/main\/webapp\/bower_components\/bootstrap-sass\/assets\/stylesheets\/bootstrap\/_forms\.scss}line{font-family:\00003374}}
@@ -4608,7 +4608,7 @@ select[multiple].input-lg,
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Selector\/Desktop\/volvo\/src\/main\/webapp\/bower_components\/bootstrap-sass\/assets\/stylesheets\/bootstrap\/_buttons\.scss}line{font-family:\00003127}}
 .btn-lg, .btn-group-lg > .btn {
   padding: 10px 16px;
-  font-size: 40px;
+    font-size: 17px;
   line-height: 1.33333;
   border-radius: 0px;
 }
@@ -5174,7 +5174,7 @@ tbody.collapse.in {
 .input-group-lg > .input-group-addon,
 .input-group-lg > .input-group-btn > .input-group-addon.btn {
   padding: 10px 16px;
-  font-size: 40px;
+    font-size: 17px;
   border-radius: 0px;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Selector\/Desktop\/volvo\/src\/main\/webapp\/bower_components\/bootstrap-sass\/assets\/stylesheets\/bootstrap\/_input-groups\.scss}line{font-family:\0000397}}
@@ -5607,7 +5607,7 @@ tbody.collapse.in {
 .navbar-brand {
   float: left;
   padding: 26px 15px;
-  font-size: 40px;
+    font-size: 17px;
   line-height: 18px;
   height: 70px;
 }
@@ -6178,7 +6178,7 @@ tbody.collapse.in {
 .pagination-lg > li > a,
 .pagination-lg > li > span {
   padding: 10px 16px;
-  font-size: 40px;
+    font-size: 17px;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Selector\/Desktop\/volvo\/src\/main\/webapp\/bower_components\/bootstrap-sass\/assets\/stylesheets\/bootstrap\/mixins\/_pagination\.scss}line{font-family:\0000311}}
 .pagination-lg > li:first-child > a,

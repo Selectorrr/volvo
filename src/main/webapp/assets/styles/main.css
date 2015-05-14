@@ -192,30 +192,70 @@ ul#strength {
   background-size: cover;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Selector\/Desktop\/volvo\/src\/main\/scss\/main\.scss}line{font-family:\00003188}}
+@media -sass-debug-info {
+    filename {
+        font-family: file\:\/\/C\:\/Users\/Selector\/Desktop\/volvo\/src\/main\/scss\/main\.scss
+    }
+
+    line {
+        font-family: \00003189
+    }
+}
 .navbar-inverse {
   border-color: transparent;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Selector\/Desktop\/volvo\/src\/main\/scss\/main\.scss}line{font-family:\00003191}}
+@media -sass-debug-info {
+    filename {
+        font-family: file\:\/\/C\:\/Users\/Selector\/Desktop\/volvo\/src\/main\/scss\/main\.scss
+    }
+
+    line {
+        font-family: \00003193
+    }
+}
 .content {
   background-color: #f6f6f6;
   padding: 30px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Selector\/Desktop\/volvo\/src\/main\/scss\/main\.scss}line{font-family:\00003195}}
+@media -sass-debug-info {
+    filename {
+        font-family: file\:\/\/C\:\/Users\/Selector\/Desktop\/volvo\/src\/main\/scss\/main\.scss
+    }
+
+    line {
+        font-family: \00003198
+    }
+}
 .navbar-nav > li > a {
   line-height: 40px;
   font-size: 16px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Selector\/Desktop\/volvo\/src\/main\/scss\/main\.scss}line{font-family:\00003199}}
+@media -sass-debug-info {
+    filename {
+        font-family: file\:\/\/C\:\/Users\/Selector\/Desktop\/volvo\/src\/main\/scss\/main\.scss
+    }
+
+    line {
+        font-family: \00003203
+    }
+}
 .nav-logo {
   position: absolute;
   bottom: 9px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Selector\/Desktop\/volvo\/src\/main\/scss\/main\.scss}line{font-family:\00003203}}
+@media -sass-debug-info {
+    filename {
+        font-family: file\:\/\/C\:\/Users\/Selector\/Desktop\/volvo\/src\/main\/scss\/main\.scss
+    }
+
+    line {
+        font-family: \00003208
+    }
+}
 .html, body {
   position: relative;
   height: auto;
