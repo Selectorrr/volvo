@@ -257,7 +257,7 @@ module.exports = function (grunt) {
         ngtemplates:    {
             dist: {
                 cwd: 'src/main/webapp',
-                src: ['scripts/app/**/*.html', 'scripts/components/**/*.html',],
+                src: ['scripts/app/**/*.html', 'scripts/components/**/*.html'],
                 dest: '.tmp/templates/templates.js',
                 options: {
                     module: 'volvoApp',
@@ -402,7 +402,7 @@ module.exports = function (grunt) {
             },
             dev: {
                 options: {
-                    dest: 'src/main/webapp/scripts/app/app.constants.js',
+                    dest: 'src/main/webapp/scripts/app/app.constants.js'
                 },
                 constants: {
                     ENV: 'dev',
@@ -411,7 +411,7 @@ module.exports = function (grunt) {
             },
             prod: {
                 options: {
-                    dest: '.tmp/scripts/app/app.constants.js',
+                    dest: '.tmp/scripts/app/app.constants.js'
                 },
                 constants: {
                     ENV: 'prod',
@@ -464,7 +464,7 @@ module.exports = function (grunt) {
     grunt.registerTask('buildHeroku', [
         'test',
         'build',
-        'copy:generateHerokuDirectory',
+        'copy:generateHerokuDirectory'
     ]);
 
     grunt.registerTask('deployHeroku', [
@@ -477,7 +477,7 @@ module.exports = function (grunt) {
     grunt.registerTask('buildOpenshift', [
         'test',
         'build',
-        'copy:generateOpenshiftDirectory',
+        'copy:generateOpenshiftDirectory'
     ]);
 
     grunt.registerTask('deployOpenshift', [
