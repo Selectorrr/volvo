@@ -1,17 +1,14 @@
-/**
- * Created by Selector on 22.03.2015.
- */
 'use strict';
 
 angular.module('volvoApp')
     .config(function ($stateProvider) {
         $stateProvider
-            .state('tabNewCars', {
+            .state('tabBodyShop', {
                 parent: 'home',
-                url: '/',
+                url: '/tabBodyShop',
                 views: {
                     'tab-content@home': {
-                        templateUrl: 'scripts/app/tabs/tabNewCars/tabNewCars.html',
+                        templateUrl: 'scripts/app/tabs/tabBodyShop/tabBodyShop.html',
                         controller: 'TabController'
                     }
                 },

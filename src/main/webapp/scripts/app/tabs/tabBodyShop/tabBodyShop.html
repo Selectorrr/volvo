@@ -1,0 +1,524 @@
+<h2>Кузовной цех</h2>
+
+<my-table model="model" field="tabBodyShop">
+    <my-head>
+        <my-row>
+            <my-cell size="4"
+                     colspan="2"
+                     text="Выручка и ВП"></my-cell>
+            <my-cell text="Часы"></my-cell>
+            <my-cell text="Выручка"></my-cell>
+            <my-cell text="Себ-ть"></my-cell>
+            <my-cell text="ВП"></my-cell>
+        </my-row>
+    </my-head>
+    <my-body>
+        <my-row field="incomingAndGrossProfitVolvoRetail">
+            <my-cell size="1"
+                     text="E11a">
+            </my-cell>
+            <my-cell size="3"
+                     text="Куз. цех Розница - Volvo">
+            </my-cell>
+            <my-cell type="number"
+                     field="first"
+                     on-blur="autoSaving">
+            </my-cell>
+            <my-cell type="ruble"
+                     field="second"
+                     on-blur="autoSaving">
+            </my-cell>
+            <my-cell type="ruble"
+                     field="third"
+                     on-blur="autoSaving">
+            </my-cell>
+            <my-cell type="ruble"
+                     field="fourth"
+                     my-disabled="true"
+                     value="{{model.fourth = model.second - model.third}}">
+            </my-cell>
+        </my-row>
+
+        <my-row field="incomingAndGrossProfitVolvoInsurance">
+            <my-cell size="1"
+                     text="E12a">
+            </my-cell>
+            <my-cell size="3"
+                     text="Куз. цех Страховые - Volvo">
+            </my-cell>
+            <my-cell type="number"
+                     field="first"
+                     on-blur="autoSaving">
+            </my-cell>
+            <my-cell type="ruble"
+                     field="second"
+                     on-blur="autoSaving">
+            </my-cell>
+            <my-cell type="ruble"
+                     field="third"
+                     on-blur="autoSaving">
+            </my-cell>
+            <my-cell type="ruble"
+                     field="fourth"
+                     my-disabled="true"
+                     value="{{model.fourth = model.second - model.third}}">
+            </my-cell>
+        </my-row>
+
+        <my-row field="incomingAndGrossProfitVolvoInner">
+            <my-cell size="1"
+                     text="E13a">
+            </my-cell>
+            <my-cell size="3"
+                     text="Куз. цех Внутренние - Volvo">
+            </my-cell>
+            <my-cell type="number"
+                     field="first"
+                     on-blur="autoSaving">
+            </my-cell>
+            <my-cell type="ruble"
+                     field="second"
+                     on-blur="autoSaving">
+            </my-cell>
+            <my-cell type="ruble"
+                     field="third"
+                     on-blur="autoSaving">
+            </my-cell>
+            <my-cell type="ruble"
+                     field="fourth"
+                     my-disabled="true"
+                     value="{{model.fourth = model.second - model.third}}">
+            </my-cell>
+        </my-row>
+
+        <my-row field="incomingAndGrossProfitVolvoGuaranty">
+            <my-cell size="1"
+                     text="E14a">
+            </my-cell>
+            <my-cell size="3"
+                     text="Куз. цех Гарантийные - Volvo">
+            </my-cell>
+            <my-cell type="number"
+                     field="first"
+                     on-blur="autoSaving">
+            </my-cell>
+            <my-cell type="ruble"
+                     field="second"
+                     on-blur="autoSaving">
+            </my-cell>
+            <my-cell type="ruble"
+                     field="third"
+                     on-blur="autoSaving">
+            </my-cell>
+            <my-cell type="ruble"
+                     field="fourth"
+                     my-disabled="true"
+                     value="{{model.fourth = model.second - model.third}}">
+            </my-cell>
+        </my-row>
+
+    </my-body>
+</my-table>
+
+<my-table model="model" field="tabBodyShop">
+    <my-body>
+        <my-row field="incomingAndGrossProfitOthersRetail">
+            <my-cell size="1"
+                     text="E11b">
+            </my-cell>
+            <my-cell size="3"
+                     text="Куз. цех Розница - Другие">
+            </my-cell>
+            <my-cell type="number"
+                     field="first"
+                     on-blur="autoSaving">
+            </my-cell>
+            <my-cell type="ruble"
+                     field="second"
+                     on-blur="autoSaving">
+            </my-cell>
+            <my-cell type="ruble"
+                     field="third"
+                     on-blur="autoSaving">
+            </my-cell>
+            <my-cell type="ruble"
+                     field="fourth"
+                     my-disabled="true"
+                     value="{{model.fourth = model.second - model.third}}">
+            </my-cell>
+        </my-row>
+
+        <my-row field="incomingAndGrossProfitOthersInsurance">
+            <my-cell size="1"
+                     text="E12b">
+            </my-cell>
+            <my-cell size="3"
+                     text="Куз. цех Страховые - Другие">
+            </my-cell>
+            <my-cell type="number"
+                     field="first"
+                     on-blur="autoSaving">
+            </my-cell>
+            <my-cell type="ruble"
+                     field="second"
+                     on-blur="autoSaving">
+            </my-cell>
+            <my-cell type="ruble"
+                     field="third"
+                     on-blur="autoSaving">
+            </my-cell>
+            <my-cell type="ruble"
+                     field="fourth"
+                     my-disabled="true"
+                     value="{{model.fourth = model.second - model.third}}">
+            </my-cell>
+        </my-row>
+
+        <my-row field="incomingAndGrossProfitOthersInner">
+            <my-cell size="1"
+                     text="E13b">
+            </my-cell>
+            <my-cell size="3"
+                     text="Куз. цех Внутренние - Другие">
+            </my-cell>
+            <my-cell type="number"
+                     field="first"
+                     on-blur="autoSaving">
+            </my-cell>
+            <my-cell type="ruble"
+                     field="second"
+                     on-blur="autoSaving">
+            </my-cell>
+            <my-cell type="ruble"
+                     field="third"
+                     on-blur="autoSaving">
+            </my-cell>
+            <my-cell type="ruble"
+                     field="fourth"
+                     my-disabled="true"
+                     value="{{model.fourth = model.second - model.third}}">
+            </my-cell>
+        </my-row>
+
+        <my-row field="incomingAndGrossProfitOthersGuaranty">
+            <my-cell size="1"
+                     text="E14b">
+            </my-cell>
+            <my-cell size="3"
+                     text="Куз. цех Гарантийные - Другие">
+            </my-cell>
+            <my-cell type="number"
+                     field="first"
+                     on-blur="autoSaving">
+            </my-cell>
+            <my-cell type="ruble"
+                     field="second"
+                     on-blur="autoSaving">
+            </my-cell>
+            <my-cell type="ruble"
+                     field="third"
+                     on-blur="autoSaving">
+            </my-cell>
+            <my-cell type="ruble"
+                     field="fourth"
+                     my-disabled="true"
+                     value="{{model.fourth = model.second - model.third}}">
+            </my-cell>
+        </my-row>
+
+    </my-body>
+</my-table>
+
+<my-table model="model" field="tabBodyShop">
+    <my-foot>
+
+        <my-row field="incomingAndGrossProfitRetailTotal">
+            <my-cell size="1"
+                     text="E11">
+            </my-cell>
+            <my-cell size="3"
+                     text="Итого куз. цех Розница">
+            </my-cell>
+            <my-cell type="number"
+                     decimals="2"
+                     field="first"
+                     my-disabled="true"
+                     value="{{model.first=
+                            baseModel.incomingAndGrossProfitVolvoRetail.first+
+                            baseModel.incomingAndGrossProfitOthersRetail.first}}">
+            </my-cell>
+            <my-cell type="ruble"
+                     field="second"
+                     my-disabled="true"
+                     value="{{model.second=
+                            baseModel.incomingAndGrossProfitVolvoRetail.second+
+                            baseModel.incomingAndGrossProfitOthersRetail.second}}">
+            </my-cell>
+            <my-cell type="ruble"
+                     field="third"
+                     my-disabled="true"
+                     value="{{model.third=
+                            baseModel.incomingAndGrossProfitVolvoRetail.third+
+                            baseModel.incomingAndGrossProfitOthersRetail.third}}">
+            </my-cell>
+            <my-cell type="ruble"
+                     field="fourth"
+                     my-disabled="true"
+                     value="{{model.fourth=
+                            baseModel.incomingAndGrossProfitVolvoRetail.fourth+
+                            baseModel.incomingAndGrossProfitOthersRetail.fourth}}">
+            </my-cell>
+        </my-row>
+
+    </my-foot>
+</my-table>
+
+<my-table model="model" field="tabBodyShop">
+    <my-foot>
+
+        <my-row field="incomingAndGrossProfitInsuranceTotal">
+            <my-cell size="1"
+                     text="E12">
+            </my-cell>
+            <my-cell size="3"
+                     text="Итого куз. цех Страховые">
+            </my-cell>
+            <my-cell type="number"
+                     decimals="2"
+                     field="first"
+                     my-disabled="true"
+                     value="{{model.first=
+                            baseModel.incomingAndGrossProfitVolvoInsurance.first+
+                            baseModel.incomingAndGrossProfitOthersInsurance.first}}">
+            </my-cell>
+            <my-cell type="ruble"
+                     field="second"
+                     my-disabled="true"
+                     value="{{model.second=
+                            baseModel.incomingAndGrossProfitVolvoInsurance.second+
+                            baseModel.incomingAndGrossProfitOthersInsurance.second}}">
+            </my-cell>
+            <my-cell type="ruble"
+                     field="third"
+                     my-disabled="true"
+                     value="{{model.third=
+                            baseModel.incomingAndGrossProfitVolvoInsurance.third+
+                            baseModel.incomingAndGrossProfitOthersInsurance.third}}">
+            </my-cell>
+            <my-cell type="ruble"
+                     field="fourth"
+                     my-disabled="true"
+                     value="{{model.fourth=
+                            baseModel.incomingAndGrossProfitVolvoInsurance.fourth+
+                            baseModel.incomingAndGrossProfitOthersInsurance.fourth}}">
+            </my-cell>
+        </my-row>
+
+    </my-foot>
+</my-table>
+
+<my-table model="model" field="tabBodyShop">
+    <my-foot>
+
+        <my-row field="incomingAndGrossProfitInnerTotal">
+            <my-cell size="1"
+                     text="E13">
+            </my-cell>
+            <my-cell size="3"
+                     text="Итого куз. цех Внутренние">
+            </my-cell>
+            <my-cell type="number"
+                     decimals="2"
+                     field="first"
+                     my-disabled="true"
+                     value="{{model.first=
+                            baseModel.incomingAndGrossProfitVolvoInner.first+
+                            baseModel.incomingAndGrossProfitOthersInner.first}}">
+            </my-cell>
+            <my-cell type="ruble"
+                     field="second"
+                     my-disabled="true"
+                     value="{{model.second=
+                            baseModel.incomingAndGrossProfitVolvoInner.second+
+                            baseModel.incomingAndGrossProfitOthersInner.second}}">
+            </my-cell>
+            <my-cell type="ruble"
+                     field="third"
+                     my-disabled="true"
+                     value="{{model.third=
+                            baseModel.incomingAndGrossProfitVolvoInner.third+
+                            baseModel.incomingAndGrossProfitOthersInner.third}}">
+            </my-cell>
+            <my-cell type="ruble"
+                     field="fourth"
+                     my-disabled="true"
+                     value="{{model.fourth=
+                            baseModel.incomingAndGrossProfitVolvoInner.fourth+
+                            baseModel.incomingAndGrossProfitOthersInner.fourth}}">
+            </my-cell>
+        </my-row>
+
+    </my-foot>
+</my-table>
+
+<my-table model="model" field="tabBodyShop">
+    <my-foot>
+
+        <my-row field="incomingAndGrossProfitGuarantyTotal">
+            <my-cell size="1"
+                     text="E14">
+            </my-cell>
+            <my-cell size="3"
+                     text="Итого куз. цех Гарантия">
+            </my-cell>
+            <my-cell type="number"
+                     decimals="2"
+                     field="first"
+                     my-disabled="true"
+                     value="{{model.first=
+                            baseModel.incomingAndGrossProfitVolvoGuaranty.first+
+                            baseModel.incomingAndGrossProfitOthersGuaranty.first}}">
+            </my-cell>
+            <my-cell type="ruble"
+                     field="second"
+                     my-disabled="true"
+                     value="{{model.second=
+                            baseModel.incomingAndGrossProfitVolvoGuaranty.second+
+                            baseModel.incomingAndGrossProfitOthersGuaranty.second}}">
+            </my-cell>
+            <my-cell type="ruble"
+                     field="third"
+                     my-disabled="true"
+                     value="{{model.third=
+                            baseModel.incomingAndGrossProfitVolvoGuaranty.third+
+                            baseModel.incomingAndGrossProfitOthersGuaranty.third}}">
+            </my-cell>
+            <my-cell type="ruble"
+                     field="fourth"
+                     my-disabled="true"
+                     value="{{model.fourth=
+                            baseModel.incomingAndGrossProfitVolvoGuaranty.fourth+
+                            baseModel.incomingAndGrossProfitOthersGuaranty.fourth}}">
+            </my-cell>
+        </my-row>
+
+    </my-foot>
+</my-table>
+
+<my-table model="model" field="tabBodyShop">
+    <my-foot>
+
+        <my-row field="incomingAndGrossProfitTotal">
+            <my-cell size="1"
+                     text="E20">
+            </my-cell>
+            <my-cell size="3"
+                     text="Итого по куз. цеху">
+            </my-cell>
+            <my-cell type="number"
+                     decimals="2"
+                     field="first"
+                     my-disabled="true"
+                     value="{{model.first=
+                            baseModel.incomingAndGrossProfitRetailTotal.first+
+                            baseModel.incomingAndGrossProfitInsuranceTotal.first+
+                            baseModel.incomingAndGrossProfitInnerTotal.first+
+                            baseModel.incomingAndGrossProfitGuarantyTotal.first}}">
+            </my-cell>
+            <my-cell type="ruble"
+                     field="second"
+                     my-disabled="true"
+                     value="{{model.second=
+                            baseModel.incomingAndGrossProfitRetailTotal.second+
+                            baseModel.incomingAndGrossProfitInsuranceTotal.second+
+                            baseModel.incomingAndGrossProfitInnerTotal.second+
+                            baseModel.incomingAndGrossProfitGuarantyTotal.second}}">
+            </my-cell>
+            <my-cell type="ruble"
+                     field="third"
+                     my-disabled="true"
+                     value="{{model.third=
+                            baseModel.incomingAndGrossProfitRetailTotal.third+
+                            baseModel.incomingAndGrossProfitInsuranceTotal.third+
+                            baseModel.incomingAndGrossProfitInnerTotal.third+
+                            baseModel.incomingAndGrossProfitGuarantyTotal.third}}">
+            </my-cell>
+            <my-cell type="ruble"
+                     field="fourth"
+                     my-disabled="true"
+                     value="{{model.fourth=
+                            baseModel.incomingAndGrossProfitRetailTotal.fourth+
+                            baseModel.incomingAndGrossProfitInsuranceTotal.fourth+
+                            baseModel.incomingAndGrossProfitInnerTotal.fourth+
+                            baseModel.incomingAndGrossProfitGuarantyTotal.fourth}}">
+            </my-cell>
+        </my-row>
+
+    </my-foot>
+</my-table>
+
+<my-table model="model" field="tabBodyShop">
+    <my-foot>
+
+        <my-row field="incomingAndGrossProfitBodyShopLoss">
+            <my-cell size="1"
+                     text="E22">
+            </my-cell>
+            <my-cell size="3"
+                     text="Убыток от простоя куз.цеха">
+            </my-cell>
+            <my-cell></my-cell>
+            <my-cell></my-cell>
+            <my-cell></my-cell>
+            <my-cell type="ruble"
+                     field="fourth"
+                     on-blur="autoSaving">
+            </my-cell>
+        </my-row>
+
+    </my-foot>
+</my-table>
+
+<my-table model="model" field="tabBodyShop">
+    <my-foot>
+
+        <my-row field="incomingAndGrossProfitBodyShopTotal">
+            <my-cell size="1"
+                     text="E30">
+            </my-cell>
+            <my-cell size="3"
+                     text="Итого по куз. цеху">
+            </my-cell>
+            <my-cell type="number"
+                     decimals="2"
+                     field="first"
+                     my-disabled="true"
+                     value="{{model.first=
+                            baseModel.incomingAndGrossProfitTotal.first}}">
+            </my-cell>
+            <my-cell type="ruble"
+                     field="second"
+                     my-disabled="true"
+                     value="{{model.second=
+                            baseModel.incomingAndGrossProfitTotal.second}}">
+            </my-cell>
+            <my-cell type="ruble"
+                     field="third"
+                     my-disabled="true"
+                     value="{{model.third=
+                            baseModel.incomingAndGrossProfitTotal.third}}">
+            </my-cell>
+            <my-cell type="ruble"
+                     field="fourth"
+                     my-disabled="true"
+                     value="{{model.fourth=
+                            baseModel.incomingAndGrossProfitTotal.fourth-
+                            baseModel.incomingAndGrossProfitBodyShopLoss.fourth}}">
+            </my-cell>
+        </my-row>
+
+    </my-foot>
+</my-table>
+
+
+
