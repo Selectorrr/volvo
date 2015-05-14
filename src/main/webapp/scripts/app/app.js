@@ -104,13 +104,16 @@ angular.module('volvoApp', ['LocalStorageModule', 'tmh.dynamicLocale',
         //tmhDynamicLocaleProvider.useCookieStorage('NG_TRANSLATE_LANG_KEY');
         $(window).scroll(function () {
             var alpha = $(window).scrollTop() / 300;
+            var $volvoLogo = $('.volvo-logo');
             if (alpha >= 1) {
                 $('.masthead').css("margin-bottom", '80px');
                 $('.masthead, #nav').css("backgroundColor", 'rgba(22,22,24,.9)');
-                $('.nav-logo img').css("opacity", '0.9');
+                $volvoLogo.css("opacity", '0.9');
+                $volvoLogo.css("filter", "alpha(opacity=90)");
             } else {
                 $('.masthead, #nav').css("backgroundColor", 'rgba(22,22,24,' + (alpha - 0.1) + ')');
-                $('.nav-logo img').css("opacity", (alpha - 0.1));
+                $volvoLogo.css("opacity", (alpha - 0.1));
+                $volvoLogo.css("filter", "alpha(opacity=" + (alpha - 0.1) * 100 + ")");
                 $('.masthead').css("margin-bottom", '');
             }
         })

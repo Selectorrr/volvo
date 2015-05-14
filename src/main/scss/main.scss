@@ -205,6 +205,11 @@ ul#strength {
     bottom: 9px;
 }
 
+.nav-logo img {
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+
 .html, body {
     position: relative;
     height: auto;

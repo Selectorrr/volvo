@@ -9,9 +9,7 @@
     </div>
     <div id="nav-wrapper">
         <nav id="nav" class="navbar navbar-inverse" role="navigation" my-sticky-navbar>
-            <div class="container-fluid text-center">
-                <a class="nav-logo"><img src="/assets/images/volvo-logo-scaled.png" alt="" style="height: 51px"></a>
-
+            <div class="container-fluid">
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
                         <span class="sr-only">Toggle navigation</span>
@@ -19,8 +17,8 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="#"><span translate="global.title">jhipster</span> <span
-                        class="navbar-version">v{{VERSION}}</span></a>
+                    <a class="nav-logo" href="#"><img src="/assets/images/volvo-logo-scaled.png" alt=""
+                                                      style="height: 51px" class="volvo-logo"></a>
                 </div>
                 <div ng-switch="isAuthenticated()">
                     <ul class="nav navbar-nav nav-pills navbar-right">

@@ -253,7 +253,22 @@ ul#strength {
     }
 
     line {
-        font-family: \00003208
+        font-family: \00003207
+    }
+}
+
+.nav-logo img {
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+
+@media -sass-debug-info {
+    filename {
+        font-family: file\:\/\/C\:\/Users\/Selector\/Desktop\/volvo\/src\/main\/scss\/main\.scss
+    }
+
+    line {
+        font-family: \00003212
     }
 }
 .html, body {
