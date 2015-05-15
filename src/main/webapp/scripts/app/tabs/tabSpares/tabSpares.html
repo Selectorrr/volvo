@@ -1030,6 +1030,435 @@
     </my-foot>
 
 </my-table>
+
+<my-table model="model" field="tabSpares">
+    <my-head>
+        <my-row>
+            <my-cell size="4"
+                     colspan="2"
+                     text="Прочие доходы"></my-cell>
+            <my-cell></my-cell>
+            <my-cell></my-cell>
+            <my-cell></my-cell>
+            <my-cell></my-cell>
+        </my-row>
+    </my-head>
+    <my-body>
+        <my-row field="otherIncomingOtherIncoming">
+            <my-cell size="1"
+                     text="G41">
+            </my-cell>
+            <my-cell size="3"
+                     text="Прочие доходы">
+            </my-cell>
+            <my-cell></my-cell>
+            <my-cell></my-cell>
+            <my-cell></my-cell>
+            <my-cell type="ruble"
+                     field="fourth"
+                     on-blur="autoSaving">
+            </my-cell>
+        </my-row>
+
+        <my-row field="otherIncomingExtraCharge">
+            <my-cell size="1"
+                     text="G44">
+            </my-cell>
+            <my-cell size="3"
+                     text="Дополнительные расходы">
+            </my-cell>
+            <my-cell></my-cell>
+            <my-cell></my-cell>
+            <my-cell></my-cell>
+            <my-cell type="ruble"
+                     field="fourth"
+                     on-blur="autoSaving">
+            </my-cell>
+        </my-row>
+
+        <my-row field="otherIncomingStockpileCorrection">
+            <my-cell size="1"
+                     text="G45">
+            </my-cell>
+            <my-cell size="3"
+                     text="Корректировка величины запасов">
+            </my-cell>
+            <my-cell></my-cell>
+            <my-cell></my-cell>
+            <my-cell></my-cell>
+            <my-cell type="ruble"
+                     field="fourth"
+                     on-blur="autoSaving">
+            </my-cell>
+        </my-row>
+    </my-body>
+</my-table>
+
+<my-table model="model" field="tabSpares">
+
+    <my-foot>
+        <my-row field="otherIncomingTotalSparesSale">
+            <my-cell size="1"
+                     text="G50">
+            </my-cell>
+            <my-cell size="3"
+                     text="Итого продажи и ВП по запчастям">
+            </my-cell>
+            <my-cell></my-cell>
+            <my-cell type="ruble"
+                     field="second"
+                     my-disabled="true"
+                     value="{{model.second=
+                                baseModel.incomingAndGrossProfitTotalDepartment.second}}">
+            </my-cell>
+            <my-cell type="ruble"
+                     field="third"
+                     my-disabled="true"
+                     value="{{model.third=
+                                baseModel.incomingAndGrossProfitTotalDepartment.third}}">
+            </my-cell>
+            <!-- TODO: value ??? -->
+            <my-cell type="ruble"
+                     field="fourth"
+                     my-disabled="true"
+                     value="{{model.fourth=
+                                baseModel.incomingAndGrossProfitTotalDepartment.fourth}}">
+            </my-cell>
+        </my-row>
+    </my-foot>
+</my-table>
+
+<my-table model="model" field="tabSpares">
+<my-head>
+    <my-row>
+        <my-cell size="4"
+                 colspan="2"
+                 text="Расходы по отделу"></my-cell>
+        <my-cell></my-cell>
+        <my-cell></my-cell>
+        <my-cell></my-cell>
+        <my-cell></my-cell>
+    </my-row>
+</my-head>
+<my-body>
+<my-row field="departmentChargeNonproductiveStaffSalary">
+    <my-cell size="1"
+             text="G51">
+    </my-cell>
+    <my-cell size="3"
+             text="Зарплата непродуктивного персонала">
+    </my-cell>
+    <my-cell></my-cell>
+    <my-cell></my-cell>
+    <my-cell></my-cell>
+    <my-cell type="ruble"
+             field="fourth"
+             on-blur="autoSaving">
+    </my-cell>
+</my-row>
+
+<my-row field="departmentChargeCommissionCharges">
+    <my-cell size="1"
+             text="G52">
+    </my-cell>
+    <my-cell size="3"
+             text="Комиссионные">
+    </my-cell>
+    <my-cell></my-cell>
+    <my-cell></my-cell>
+    <my-cell></my-cell>
+    <my-cell type="ruble"
+             field="fourth"
+             on-blur="autoSaving">
+    </my-cell>
+</my-row>
+
+<my-row field="departmentChargeSalaryTax">
+    <my-cell size="1"
+             text="G53">
+    </my-cell>
+    <my-cell size="3"
+             text="Налоги на з/п">
+    </my-cell>
+    <my-cell></my-cell>
+    <my-cell></my-cell>
+    <my-cell></my-cell>
+    <my-cell type="ruble"
+             field="fourth"
+             on-blur="autoSaving">
+    </my-cell>
+</my-row>
+
+<my-row field="departmentChargeOtherChargeOnStaff">
+    <my-cell size="1"
+             text="G54">
+    </my-cell>
+    <my-cell size="3"
+             text="Другие расходы на персонал">
+    </my-cell>
+    <my-cell></my-cell>
+    <my-cell></my-cell>
+    <my-cell></my-cell>
+    <my-cell type="ruble"
+             field="fourth"
+             on-blur="autoSaving">
+    </my-cell>
+</my-row>
+
+<my-row field="departmentChargeEducation">
+    <my-cell size="1"
+             text="G55">
+    </my-cell>
+    <my-cell size="3"
+             text="Обучение">
+    </my-cell>
+    <my-cell></my-cell>
+    <my-cell></my-cell>
+    <my-cell></my-cell>
+    <my-cell type="ruble"
+             field="fourth"
+             on-blur="autoSaving">
+    </my-cell>
+</my-row>
+
+<my-row field="departmentChargeTotalStaffCharges">
+    <my-cell size="1"
+             text="G60">
+    </my-cell>
+    <my-cell size="3"
+             text="Итого расходы на персонал">
+    </my-cell>
+    <my-cell></my-cell>
+    <my-cell></my-cell>
+    <my-cell></my-cell>
+    <my-cell type="ruble"
+             field="fourth"
+             my-disabled="true"
+             value="{{model.fourth=
+                                baseModel.departmentChargeNonproductiveStaffSalary.fourth+
+                                baseModel.departmentChargeCommissionCharges.fourth+
+                                baseModel.departmentChargeSalaryTax.fourth+
+                                baseModel.departmentChargeOtherChargeOnStaff.fourth+
+                                baseModel.departmentChargeEducation.fourth}}">
+    </my-cell>
+</my-row>
+
+<my-row field="departmentChargeEnvironmentCharges">
+    <my-cell size="1"
+             text="G61">
+    </my-cell>
+    <my-cell size="3"
+             text="Расходы на оборудование">
+    </my-cell>
+    <my-cell></my-cell>
+    <my-cell></my-cell>
+    <my-cell></my-cell>
+    <my-cell type="ruble"
+             field="fourth"
+             on-blur="autoSaving">
+    </my-cell>
+</my-row>
+
+<my-row field="departmentChargeDepartmentCarsCharges">
+    <my-cell size="1"
+             text="G62">
+    </my-cell>
+    <my-cell size="3"
+             text="Расходы на а/м отдела, трансп. расходы">
+    </my-cell>
+    <my-cell></my-cell>
+    <my-cell></my-cell>
+    <my-cell></my-cell>
+    <my-cell type="ruble"
+             field="fourth"
+             on-blur="autoSaving">
+    </my-cell>
+</my-row>
+
+<my-row field="departmentChargeAdvertising">
+    <my-cell size="1"
+             text="G63">
+    </my-cell>
+    <my-cell size="3"
+             text="Реклама">
+    </my-cell>
+    <my-cell></my-cell>
+    <my-cell></my-cell>
+    <my-cell></my-cell>
+    <my-cell type="ruble"
+             field="fourth"
+             on-blur="autoSaving">
+    </my-cell>
+</my-row>
+
+<my-row field="departmentChargeDealerPaymentCharges">
+    <my-cell size="1"
+             text="G64">
+    </my-cell>
+    <my-cell size="3"
+             text="Расходы дилера по выплате компенсации клиенту">
+    </my-cell>
+    <my-cell></my-cell>
+    <my-cell></my-cell>
+    <my-cell></my-cell>
+    <my-cell type="ruble"
+             field="fourth"
+             on-blur="autoSaving">
+    </my-cell>
+</my-row>
+
+<my-row field="departmentChargeOtherCharge">
+    <my-cell size="1"
+             text="G65">
+    </my-cell>
+    <my-cell size="3"
+             text="Другие расходы">
+    </my-cell>
+    <my-cell></my-cell>
+    <my-cell></my-cell>
+    <my-cell></my-cell>
+    <my-cell type="ruble"
+             field="fourth"
+             on-blur="autoSaving">
+    </my-cell>
+</my-row>
+
+<my-row field="departmentChargeAmortization">
+    <my-cell size="1"
+             text="G66">
+    </my-cell>
+    <my-cell size="3"
+             text="Амортизация">
+    </my-cell>
+    <my-cell></my-cell>
+    <my-cell></my-cell>
+    <my-cell></my-cell>
+    <my-cell type="ruble"
+             field="fourth"
+             on-blur="autoSaving">
+    </my-cell>
+</my-row>
+
+<my-row field="departmentChargeTotalCharges">
+    <my-cell size="1"
+             text="G70">
+    </my-cell>
+    <my-cell size="3"
+             text="Итого расходов">
+    </my-cell>
+    <my-cell></my-cell>
+    <my-cell></my-cell>
+    <my-cell></my-cell>
+    <my-cell type="ruble"
+             field="fourth"
+             my-disabled="true"
+             value="{{model.fourth=
+                                baseModel.departmentChargeTotalStaffCharges.fourth+
+                                baseModel.departmentChargeEnvironmentCharges.fourth+
+                                baseModel.departmentChargeDepartmentCarsCharges.fourth+
+                                baseModel.departmentChargeAdvertising.fourth+
+                                baseModel.departmentChargeDealerPaymentCharges.fourth+
+                                baseModel.departmentChargeOtherCharge.fourth+
+                                baseModel.departmentChargeAmortization.fourth}}">
+    </my-cell>
+</my-row>
+
+</my-body>
+</my-table>
+
+<my-table model="model" field="tabSpares">
+
+    <my-foot>
+        <my-row field="departmentChargeDepartmentIncoming">
+            <my-cell size="1"
+                     text="G90">
+            </my-cell>
+            <my-cell size="3"
+                     text="Прибыль по отделу">
+            </my-cell>
+            <my-cell></my-cell>
+            <my-cell></my-cell>
+            <my-cell></my-cell>
+            <!-- TODO: value ??? -->
+            <my-cell type="ruble"
+                     field="fourth"
+                     my-disabled="true"
+                     value="{{model.fourth=
+                                baseModel.otherIncomingTotalSparesSale.fourth-
+                                baseModel.departmentChargeTotalCharges.fourth}}">
+            </my-cell>
+        </my-row>
+    </my-foot>
+</my-table>
+
+<my-table model="model" field="tabSpares">
+    <my-head>
+        <my-row>
+            <my-cell size="4"
+                     colspan="2"
+                     text="Статистика"></my-cell>
+            <my-cell text="0-90"></my-cell>
+            <my-cell text="91-180"></my-cell>
+            <my-cell text="181-270"></my-cell>
+            <my-cell text=">270"></my-cell>
+            <my-cell text="Всего"></my-cell>
+        </my-row>
+    </my-head>
+    <my-body>
+        <my-row field="statisticsSparesCostInStock">
+            <my-cell size="1"
+                     text="G91">
+            </my-cell>
+            <my-cell size="3"
+                     text="Ст-сть запчастей на складе">
+            </my-cell>
+            <my-cell type="ruble"
+                     field="first"
+                     on-blur="autoSaving">
+            </my-cell>
+            <my-cell type="ruble"
+                     field="second"
+                     on-blur="autoSaving">
+            </my-cell>
+            <my-cell type="ruble"
+                     field="third"
+                     on-blur="autoSaving">
+            </my-cell>
+            <my-cell type="ruble"
+                     field="fourth"
+                     on-blur="autoSaving">
+            </my-cell>
+            <my-cell type="ruble"
+                     field="fifth"
+                     my-disabled="true"
+                     value="{{model.fifth =
+                                    model.first+
+                                    model.second+
+                                    model.third+
+                                    model.fourth}}">
+            </my-cell>
+        </my-row>
+
+        <my-row field="statisticsSparesStockArea">
+            <my-cell size="1"
+                     text="G92">
+            </my-cell>
+            <my-cell size="3"
+                     text="Площадь склада з/ч">
+            </my-cell>
+            <my-cell></my-cell>
+            <my-cell></my-cell>
+            <my-cell></my-cell>
+            <my-cell></my-cell>
+            <my-cell type="ruble"
+                     field="fifth"
+                     on-blur="autoSaving">
+            </my-cell>
+        </my-row>
+    </my-body>
+</my-table>
+
+
 </div>
 
 
