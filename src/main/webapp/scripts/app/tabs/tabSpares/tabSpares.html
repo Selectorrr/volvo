@@ -1,814 +1,814 @@
 <div class="content">
-    <h2>Запчасти</h2>
+<h2>Запчасти</h2>
 
-    <my-table model="model" field="tabSpares">
-        <my-head>
-            <my-row>
-                <my-cell size="4"
-                         colspan="2"
-                         text="Выручка и ВП"></my-cell>
-                <my-cell></my-cell>
-                <my-cell text="Выручка"></my-cell>
-                <my-cell text="Себ-ть"></my-cell>
-                <my-cell text="ВП"></my-cell>
-            </my-row>
-        </my-head>
-        <my-body>
-            <my-row field="incomingAndGrossProfitShopSaleVolvo">
-                <my-cell size="1"
-                         text="G1a">
-                </my-cell>
-                <my-cell size="3"
-                         text="Продажи через магазин - Volvo">
-                </my-cell>
-                <my-cell></my-cell>
-                <my-cell type="ruble"
-                         field="second"
-                         on-blur="autoSaving">
-                </my-cell>
-                <my-cell type="ruble"
-                         field="third"
-                         on-blur="autoSaving">
-                </my-cell>
-                <my-cell type="ruble"
-                         field="fourth"
-                         my-disabled="true"
-                         value="{{model.fourth = model.second - model.third}}">
-                </my-cell>
-            </my-row>
+<my-table model="model" field="tabSpares">
+<my-head>
+    <my-row>
+        <my-cell size="4"
+                 colspan="2"
+                 text="Выручка и ВП"></my-cell>
+        <my-cell></my-cell>
+        <my-cell text="Выручка"></my-cell>
+        <my-cell text="Себ-ть"></my-cell>
+        <my-cell text="ВП"></my-cell>
+    </my-row>
+</my-head>
+<my-body>
+<my-row field="incomingAndGrossProfitShopSaleVolvo">
+    <my-cell size="1"
+             text="G1a">
+    </my-cell>
+    <my-cell size="3"
+             text="Продажи через магазин - Volvo">
+    </my-cell>
+    <my-cell></my-cell>
+    <my-cell type="ruble"
+             field="second"
+             on-blur="autoSaving">
+    </my-cell>
+    <my-cell type="ruble"
+             field="third"
+             on-blur="autoSaving">
+    </my-cell>
+    <my-cell type="ruble"
+             field="fourth"
+             my-disabled="true"
+             value="{{model.fourth = model.second - model.third}}">
+    </my-cell>
+</my-row>
 
-            <my-row field="incomingAndGrossProfitSaleAccessoriesVolvo">
-                <my-cell size="1"
-                         text="G2a">
-                </my-cell>
-                <my-cell size="3"
-                         text="Продажи аксессуаров - Volvo">
-                </my-cell>
-                <my-cell></my-cell>
-                <my-cell type="ruble"
-                         field="second"
-                         on-blur="autoSaving">
-                </my-cell>
-                <my-cell type="ruble"
-                         field="third"
-                         on-blur="autoSaving">
-                </my-cell>
-                <my-cell type="ruble"
-                         field="fourth"
-                         my-disabled="true"
-                         value="{{model.fourth = model.second - model.third}}">
-                </my-cell>
-            </my-row>
+<my-row field="incomingAndGrossProfitSaleAccessoriesVolvo">
+    <my-cell size="1"
+             text="G2a">
+    </my-cell>
+    <my-cell size="3"
+             text="Продажи аксессуаров - Volvo">
+    </my-cell>
+    <my-cell></my-cell>
+    <my-cell type="ruble"
+             field="second"
+             on-blur="autoSaving">
+    </my-cell>
+    <my-cell type="ruble"
+             field="third"
+             on-blur="autoSaving">
+    </my-cell>
+    <my-cell type="ruble"
+             field="fourth"
+             my-disabled="true"
+             value="{{model.fourth = model.second - model.third}}">
+    </my-cell>
+</my-row>
 
-            <my-row field="incomingAndGrossProfitSaleSparesOtherOrganizationsVolvo">
-                <my-cell size="1"
-                         text="G3a">
-                </my-cell>
-                <my-cell size="3"
-                         text="Продажи з/ч др. орг-м - Volvo">
-                </my-cell>
-                <my-cell></my-cell>
-                <my-cell type="ruble"
-                         field="second"
-                         on-blur="autoSaving">
-                </my-cell>
-                <my-cell type="ruble"
-                         field="third"
-                         on-blur="autoSaving">
-                </my-cell>
-                <my-cell type="ruble"
-                         field="fourth"
-                         my-disabled="true"
-                         value="{{model.fourth = model.second - model.third}}">
-                </my-cell>
-            </my-row>
+<my-row field="incomingAndGrossProfitSaleSparesOtherOrganizationsVolvo">
+    <my-cell size="1"
+             text="G3a">
+    </my-cell>
+    <my-cell size="3"
+             text="Продажи з/ч др. орг-м - Volvo">
+    </my-cell>
+    <my-cell></my-cell>
+    <my-cell type="ruble"
+             field="second"
+             on-blur="autoSaving">
+    </my-cell>
+    <my-cell type="ruble"
+             field="third"
+             on-blur="autoSaving">
+    </my-cell>
+    <my-cell type="ruble"
+             field="fourth"
+             my-disabled="true"
+             value="{{model.fourth = model.second - model.third}}">
+    </my-cell>
+</my-row>
 
-            <my-row field="incomingAndGrossProfitFittingShopSaleSparesAtRetailVolvo">
-                <my-cell size="1"
-                         text="G4a">
-                </my-cell>
-                <my-cell size="3"
-                         text="Продажи з/ч слес. цех - розница Volvo">
-                </my-cell>
-                <my-cell></my-cell>
-                <my-cell type="ruble"
-                         field="second"
-                         on-blur="autoSaving">
-                </my-cell>
-                <my-cell type="ruble"
-                         field="third"
-                         on-blur="autoSaving">
-                </my-cell>
-                <my-cell type="ruble"
-                         field="fourth"
-                         my-disabled="true"
-                         value="{{model.fourth = model.second - model.third}}">
-                </my-cell>
-            </my-row>
+<my-row field="incomingAndGrossProfitFittingShopSaleSparesAtRetailVolvo">
+    <my-cell size="1"
+             text="G4a">
+    </my-cell>
+    <my-cell size="3"
+             text="Продажи з/ч слес. цех - розница Volvo">
+    </my-cell>
+    <my-cell></my-cell>
+    <my-cell type="ruble"
+             field="second"
+             on-blur="autoSaving">
+    </my-cell>
+    <my-cell type="ruble"
+             field="third"
+             on-blur="autoSaving">
+    </my-cell>
+    <my-cell type="ruble"
+             field="fourth"
+             my-disabled="true"
+             value="{{model.fourth = model.second - model.third}}">
+    </my-cell>
+</my-row>
 
-            <my-row field="incomingAndGrossProfitFittingShopSaleSparesInnerVolvo">
-                <my-cell size="1"
-                         text="G5a">
-                </my-cell>
-                <my-cell size="3"
-                         text="Продажи з/ч слес. цех - внутренние Volvo">
-                </my-cell>
-                <my-cell></my-cell>
-                <my-cell type="ruble"
-                         field="second"
-                         on-blur="autoSaving">
-                </my-cell>
-                <my-cell type="ruble"
-                         field="third"
-                         on-blur="autoSaving">
-                </my-cell>
-                <my-cell type="ruble"
-                         field="fourth"
-                         my-disabled="true"
-                         value="{{model.fourth = model.second - model.third}}">
-                </my-cell>
-            </my-row>
+<my-row field="incomingAndGrossProfitFittingShopSaleSparesInnerVolvo">
+    <my-cell size="1"
+             text="G5a">
+    </my-cell>
+    <my-cell size="3"
+             text="Продажи з/ч слес. цех - внутренние Volvo">
+    </my-cell>
+    <my-cell></my-cell>
+    <my-cell type="ruble"
+             field="second"
+             on-blur="autoSaving">
+    </my-cell>
+    <my-cell type="ruble"
+             field="third"
+             on-blur="autoSaving">
+    </my-cell>
+    <my-cell type="ruble"
+             field="fourth"
+             my-disabled="true"
+             value="{{model.fourth = model.second - model.third}}">
+    </my-cell>
+</my-row>
 
-            <my-row field="incomingAndGrossProfitFittingShopSaleSparesGuaranteeVolvo">
-                <my-cell size="1"
-                         text="G6a">
-                </my-cell>
-                <my-cell size="3"
-                         text="Продажи з/ч слес. цех - гарантия Volvo">
-                </my-cell>
-                <my-cell></my-cell>
-                <my-cell type="ruble"
-                         field="second"
-                         on-blur="autoSaving">
-                </my-cell>
-                <my-cell type="ruble"
-                         field="third"
-                         on-blur="autoSaving">
-                </my-cell>
-                <my-cell type="ruble"
-                         field="fourth"
-                         my-disabled="true"
-                         value="{{model.fourth = model.second - model.third}}">
-                </my-cell>
-            </my-row>
+<my-row field="incomingAndGrossProfitFittingShopSaleSparesGuaranteeVolvo">
+    <my-cell size="1"
+             text="G6a">
+    </my-cell>
+    <my-cell size="3"
+             text="Продажи з/ч слес. цех - гарантия Volvo">
+    </my-cell>
+    <my-cell></my-cell>
+    <my-cell type="ruble"
+             field="second"
+             on-blur="autoSaving">
+    </my-cell>
+    <my-cell type="ruble"
+             field="third"
+             on-blur="autoSaving">
+    </my-cell>
+    <my-cell type="ruble"
+             field="fourth"
+             my-disabled="true"
+             value="{{model.fourth = model.second - model.third}}">
+    </my-cell>
+</my-row>
 
-            <my-row field="incomingAndGrossProfitBodyShopSaleSparesAtRetailVolvo">
-                <my-cell size="1"
-                         text="G7a">
-                </my-cell>
-                <my-cell size="3"
-                         text="Продажи з/ч куз. цех - розница Volvo">
-                </my-cell>
-                <my-cell></my-cell>
-                <my-cell type="ruble"
-                         field="second"
-                         on-blur="autoSaving">
-                </my-cell>
-                <my-cell type="ruble"
-                         field="third"
-                         on-blur="autoSaving">
-                </my-cell>
-                <my-cell type="ruble"
-                         field="fourth"
-                         my-disabled="true"
-                         value="{{model.fourth = model.second - model.third}}">
-                </my-cell>
-            </my-row>
+<my-row field="incomingAndGrossProfitBodyShopSaleSparesAtRetailVolvo">
+    <my-cell size="1"
+             text="G7a">
+    </my-cell>
+    <my-cell size="3"
+             text="Продажи з/ч куз. цех - розница Volvo">
+    </my-cell>
+    <my-cell></my-cell>
+    <my-cell type="ruble"
+             field="second"
+             on-blur="autoSaving">
+    </my-cell>
+    <my-cell type="ruble"
+             field="third"
+             on-blur="autoSaving">
+    </my-cell>
+    <my-cell type="ruble"
+             field="fourth"
+             my-disabled="true"
+             value="{{model.fourth = model.second - model.third}}">
+    </my-cell>
+</my-row>
 
-            <my-row field="incomingAndGrossProfitBodyShopSaleSparesInsuranceVolvo">
-                <my-cell size="1"
-                         text="G8a">
-                </my-cell>
-                <my-cell size="3"
-                         text="Продажи з/ч куз. цех - страховые Volvo">
-                </my-cell>
-                <my-cell></my-cell>
-                <my-cell type="ruble"
-                         field="second"
-                         on-blur="autoSaving">
-                </my-cell>
-                <my-cell type="ruble"
-                         field="third"
-                         on-blur="autoSaving">
-                </my-cell>
-                <my-cell type="ruble"
-                         field="fourth"
-                         my-disabled="true"
-                         value="{{model.fourth = model.second - model.third}}">
-                </my-cell>
-            </my-row>
+<my-row field="incomingAndGrossProfitBodyShopSaleSparesInsuranceVolvo">
+    <my-cell size="1"
+             text="G8a">
+    </my-cell>
+    <my-cell size="3"
+             text="Продажи з/ч куз. цех - страховые Volvo">
+    </my-cell>
+    <my-cell></my-cell>
+    <my-cell type="ruble"
+             field="second"
+             on-blur="autoSaving">
+    </my-cell>
+    <my-cell type="ruble"
+             field="third"
+             on-blur="autoSaving">
+    </my-cell>
+    <my-cell type="ruble"
+             field="fourth"
+             my-disabled="true"
+             value="{{model.fourth = model.second - model.third}}">
+    </my-cell>
+</my-row>
 
-            <my-row field="incomingAndGrossProfitBodyShopSaleSparesInnerVolvo">
-                <my-cell size="1"
-                         text="G9a">
-                </my-cell>
-                <my-cell size="3"
-                         text="Продажи з/ч куз. цех - внутренние Volvo">
-                </my-cell>
-                <my-cell></my-cell>
-                <my-cell type="ruble"
-                         field="second"
-                         on-blur="autoSaving">
-                </my-cell>
-                <my-cell type="ruble"
-                         field="third"
-                         on-blur="autoSaving">
-                </my-cell>
-                <my-cell type="ruble"
-                         field="fourth"
-                         my-disabled="true"
-                         value="{{model.fourth = model.second - model.third}}">
-                </my-cell>
-            </my-row>
+<my-row field="incomingAndGrossProfitBodyShopSaleSparesInnerVolvo">
+    <my-cell size="1"
+             text="G9a">
+    </my-cell>
+    <my-cell size="3"
+             text="Продажи з/ч куз. цех - внутренние Volvo">
+    </my-cell>
+    <my-cell></my-cell>
+    <my-cell type="ruble"
+             field="second"
+             on-blur="autoSaving">
+    </my-cell>
+    <my-cell type="ruble"
+             field="third"
+             on-blur="autoSaving">
+    </my-cell>
+    <my-cell type="ruble"
+             field="fourth"
+             my-disabled="true"
+             value="{{model.fourth = model.second - model.third}}">
+    </my-cell>
+</my-row>
 
-            <my-row field="incomingAndGrossProfitBodyShopSaleSparesGuaranteeVolvo">
-                <my-cell size="1"
-                         text="G10a">
-                </my-cell>
-                <my-cell size="3"
-                         text="Продажи з/ч куз. цех - гарантия Volvo">
-                </my-cell>
-                <my-cell></my-cell>
-                <my-cell type="ruble"
-                         field="second"
-                         on-blur="autoSaving">
-                </my-cell>
-                <my-cell type="ruble"
-                         field="third"
-                         on-blur="autoSaving">
-                </my-cell>
-                <my-cell type="ruble"
-                         field="fourth"
-                         my-disabled="true"
-                         value="{{model.fourth = model.second - model.third}}">
-                </my-cell>
-            </my-row>
-        </my-body>
-    </my-table>
+<my-row field="incomingAndGrossProfitBodyShopSaleSparesGuaranteeVolvo">
+    <my-cell size="1"
+             text="G10a">
+    </my-cell>
+    <my-cell size="3"
+             text="Продажи з/ч куз. цех - гарантия Volvo">
+    </my-cell>
+    <my-cell></my-cell>
+    <my-cell type="ruble"
+             field="second"
+             on-blur="autoSaving">
+    </my-cell>
+    <my-cell type="ruble"
+             field="third"
+             on-blur="autoSaving">
+    </my-cell>
+    <my-cell type="ruble"
+             field="fourth"
+             my-disabled="true"
+             value="{{model.fourth = model.second - model.third}}">
+    </my-cell>
+</my-row>
+</my-body>
+</my-table>
 
-    <my-table model="model" field="tabSpares">
-        <my-body>
+<my-table model="model" field="tabSpares">
+<my-body>
 
-            <my-row field="incomingAndGrossProfitRetailShopSaleOthers">
-                <my-cell size="1"
-                         text="G1b">
-                </my-cell>
-                <my-cell size="3"
-                         text="Розничная продажа других производителей">
-                </my-cell>
-                <my-cell></my-cell>
-                <my-cell type="ruble"
-                         field="second"
-                         on-blur="autoSaving">
-                </my-cell>
-                <my-cell type="ruble"
-                         field="third"
-                         on-blur="autoSaving">
-                </my-cell>
-                <my-cell type="ruble"
-                         field="fourth"
-                         my-disabled="true"
-                         value="{{model.fourth = model.second - model.third}}">
-                </my-cell>
-            </my-row>
+<my-row field="incomingAndGrossProfitRetailShopSaleOthers">
+    <my-cell size="1"
+             text="G1b">
+    </my-cell>
+    <my-cell size="3"
+             text="Розничная продажа других производителей">
+    </my-cell>
+    <my-cell></my-cell>
+    <my-cell type="ruble"
+             field="second"
+             on-blur="autoSaving">
+    </my-cell>
+    <my-cell type="ruble"
+             field="third"
+             on-blur="autoSaving">
+    </my-cell>
+    <my-cell type="ruble"
+             field="fourth"
+             my-disabled="true"
+             value="{{model.fourth = model.second - model.third}}">
+    </my-cell>
+</my-row>
 
-            <my-row field="incomingAndGrossProfitSaleAccessoriesOthers">
-                <my-cell size="1"
-                         text="G2b">
-                </my-cell>
-                <my-cell size="3"
-                         text="Продажи аксессуаров - Другие">
-                </my-cell>
-                <my-cell></my-cell>
-                <my-cell type="ruble"
-                         field="second"
-                         on-blur="autoSaving">
-                </my-cell>
-                <my-cell type="ruble"
-                         field="third"
-                         on-blur="autoSaving">
-                </my-cell>
-                <my-cell type="ruble"
-                         field="fourth"
-                         my-disabled="true"
-                         value="{{model.fourth = model.second - model.third}}">
-                </my-cell>
-            </my-row>
+<my-row field="incomingAndGrossProfitSaleAccessoriesOthers">
+    <my-cell size="1"
+             text="G2b">
+    </my-cell>
+    <my-cell size="3"
+             text="Продажи аксессуаров - Другие">
+    </my-cell>
+    <my-cell></my-cell>
+    <my-cell type="ruble"
+             field="second"
+             on-blur="autoSaving">
+    </my-cell>
+    <my-cell type="ruble"
+             field="third"
+             on-blur="autoSaving">
+    </my-cell>
+    <my-cell type="ruble"
+             field="fourth"
+             my-disabled="true"
+             value="{{model.fourth = model.second - model.third}}">
+    </my-cell>
+</my-row>
 
-            <my-row field="incomingAndGrossProfitSaleSparesOtherOrganizationsOthers">
-                <my-cell size="1"
-                         text="G3b">
-                </my-cell>
-                <my-cell size="3"
-                         text="Продажи др. орг-м - Другие">
-                </my-cell>
-                <my-cell></my-cell>
-                <my-cell type="ruble"
-                         field="second"
-                         on-blur="autoSaving">
-                </my-cell>
-                <my-cell type="ruble"
-                         field="third"
-                         on-blur="autoSaving">
-                </my-cell>
-                <my-cell type="ruble"
-                         field="fourth"
-                         my-disabled="true"
-                         value="{{model.fourth = model.second - model.third}}">
-                </my-cell>
-            </my-row>
+<my-row field="incomingAndGrossProfitSaleSparesOtherOrganizationsOthers">
+    <my-cell size="1"
+             text="G3b">
+    </my-cell>
+    <my-cell size="3"
+             text="Продажи др. орг-м - Другие">
+    </my-cell>
+    <my-cell></my-cell>
+    <my-cell type="ruble"
+             field="second"
+             on-blur="autoSaving">
+    </my-cell>
+    <my-cell type="ruble"
+             field="third"
+             on-blur="autoSaving">
+    </my-cell>
+    <my-cell type="ruble"
+             field="fourth"
+             my-disabled="true"
+             value="{{model.fourth = model.second - model.third}}">
+    </my-cell>
+</my-row>
 
-            <my-row field="incomingAndGrossProfitFittingShopSaleSparesAtRetailOthers">
-                <my-cell size="1"
-                         text="G4b">
-                </my-cell>
-                <my-cell size="3"
-                         text="Продажи з/ч слес. цех - розница Другие">
-                </my-cell>
-                <my-cell></my-cell>
-                <my-cell type="ruble"
-                         field="second"
-                         on-blur="autoSaving">
-                </my-cell>
-                <my-cell type="ruble"
-                         field="third"
-                         on-blur="autoSaving">
-                </my-cell>
-                <my-cell type="ruble"
-                         field="fourth"
-                         my-disabled="true"
-                         value="{{model.fourth = model.second - model.third}}">
-                </my-cell>
-            </my-row>
+<my-row field="incomingAndGrossProfitFittingShopSaleSparesAtRetailOthers">
+    <my-cell size="1"
+             text="G4b">
+    </my-cell>
+    <my-cell size="3"
+             text="Продажи з/ч слес. цех - розница Другие">
+    </my-cell>
+    <my-cell></my-cell>
+    <my-cell type="ruble"
+             field="second"
+             on-blur="autoSaving">
+    </my-cell>
+    <my-cell type="ruble"
+             field="third"
+             on-blur="autoSaving">
+    </my-cell>
+    <my-cell type="ruble"
+             field="fourth"
+             my-disabled="true"
+             value="{{model.fourth = model.second - model.third}}">
+    </my-cell>
+</my-row>
 
-            <my-row field="incomingAndGrossProfitFittingShopSaleSparesInnerOthers">
-                <my-cell size="1"
-                         text="G5b">
-                </my-cell>
-                <my-cell size="3"
-                         text="Продажи з/ч слес. цех - внутренние Другие">
-                </my-cell>
-                <my-cell></my-cell>
-                <my-cell type="ruble"
-                         field="second"
-                         on-blur="autoSaving">
-                </my-cell>
-                <my-cell type="ruble"
-                         field="third"
-                         on-blur="autoSaving">
-                </my-cell>
-                <my-cell type="ruble"
-                         field="fourth"
-                         my-disabled="true"
-                         value="{{model.fourth = model.second - model.third}}">
-                </my-cell>
-            </my-row>
+<my-row field="incomingAndGrossProfitFittingShopSaleSparesInnerOthers">
+    <my-cell size="1"
+             text="G5b">
+    </my-cell>
+    <my-cell size="3"
+             text="Продажи з/ч слес. цех - внутренние Другие">
+    </my-cell>
+    <my-cell></my-cell>
+    <my-cell type="ruble"
+             field="second"
+             on-blur="autoSaving">
+    </my-cell>
+    <my-cell type="ruble"
+             field="third"
+             on-blur="autoSaving">
+    </my-cell>
+    <my-cell type="ruble"
+             field="fourth"
+             my-disabled="true"
+             value="{{model.fourth = model.second - model.third}}">
+    </my-cell>
+</my-row>
 
-            <my-row field="incomingAndGrossProfitFittingShopSaleSparesGuaranteeOthers">
-                <my-cell size="1"
-                         text="G6b">
-                </my-cell>
-                <my-cell size="3"
-                         text="Продажи з/ч слес. цех - гарантия Другие">
-                </my-cell>
-                <my-cell></my-cell>
-                <my-cell type="ruble"
-                         field="second"
-                         on-blur="autoSaving">
-                </my-cell>
-                <my-cell type="ruble"
-                         field="third"
-                         on-blur="autoSaving">
-                </my-cell>
-                <my-cell type="ruble"
-                         field="fourth"
-                         my-disabled="true"
-                         value="{{model.fourth = model.second - model.third}}">
-                </my-cell>
-            </my-row>
+<my-row field="incomingAndGrossProfitFittingShopSaleSparesGuaranteeOthers">
+    <my-cell size="1"
+             text="G6b">
+    </my-cell>
+    <my-cell size="3"
+             text="Продажи з/ч слес. цех - гарантия Другие">
+    </my-cell>
+    <my-cell></my-cell>
+    <my-cell type="ruble"
+             field="second"
+             on-blur="autoSaving">
+    </my-cell>
+    <my-cell type="ruble"
+             field="third"
+             on-blur="autoSaving">
+    </my-cell>
+    <my-cell type="ruble"
+             field="fourth"
+             my-disabled="true"
+             value="{{model.fourth = model.second - model.third}}">
+    </my-cell>
+</my-row>
 
-            <my-row field="incomingAndGrossProfitBodyShopSaleSparesAtRetailOthers">
-                <my-cell size="1"
-                         text="G7b">
-                </my-cell>
-                <my-cell size="3"
-                         text="Продажи з/ч куз. цех - розница Другие">
-                </my-cell>
-                <my-cell></my-cell>
-                <my-cell type="ruble"
-                         field="second"
-                         on-blur="autoSaving">
-                </my-cell>
-                <my-cell type="ruble"
-                         field="third"
-                         on-blur="autoSaving">
-                </my-cell>
-                <my-cell type="ruble"
-                         field="fourth"
-                         my-disabled="true"
-                         value="{{model.fourth = model.second - model.third}}">
-                </my-cell>
-            </my-row>
+<my-row field="incomingAndGrossProfitBodyShopSaleSparesAtRetailOthers">
+    <my-cell size="1"
+             text="G7b">
+    </my-cell>
+    <my-cell size="3"
+             text="Продажи з/ч куз. цех - розница Другие">
+    </my-cell>
+    <my-cell></my-cell>
+    <my-cell type="ruble"
+             field="second"
+             on-blur="autoSaving">
+    </my-cell>
+    <my-cell type="ruble"
+             field="third"
+             on-blur="autoSaving">
+    </my-cell>
+    <my-cell type="ruble"
+             field="fourth"
+             my-disabled="true"
+             value="{{model.fourth = model.second - model.third}}">
+    </my-cell>
+</my-row>
 
-            <my-row field="incomingAndGrossProfitBodyShopSaleSparesInsuranceOthers">
-                <my-cell size="1"
-                         text="G8b">
-                </my-cell>
-                <my-cell size="3"
-                         text="Продажи з/ч куз. цех - страховые Другие">
-                </my-cell>
-                <my-cell></my-cell>
-                <my-cell type="ruble"
-                         field="second"
-                         on-blur="autoSaving">
-                </my-cell>
-                <my-cell type="ruble"
-                         field="third"
-                         on-blur="autoSaving">
-                </my-cell>
-                <my-cell type="ruble"
-                         field="fourth"
-                         my-disabled="true"
-                         value="{{model.fourth = model.second - model.third}}">
-                </my-cell>
-            </my-row>
+<my-row field="incomingAndGrossProfitBodyShopSaleSparesInsuranceOthers">
+    <my-cell size="1"
+             text="G8b">
+    </my-cell>
+    <my-cell size="3"
+             text="Продажи з/ч куз. цех - страховые Другие">
+    </my-cell>
+    <my-cell></my-cell>
+    <my-cell type="ruble"
+             field="second"
+             on-blur="autoSaving">
+    </my-cell>
+    <my-cell type="ruble"
+             field="third"
+             on-blur="autoSaving">
+    </my-cell>
+    <my-cell type="ruble"
+             field="fourth"
+             my-disabled="true"
+             value="{{model.fourth = model.second - model.third}}">
+    </my-cell>
+</my-row>
 
-            <my-row field="incomingAndGrossProfitBodyShopSaleSparesInnerOthers">
-                <my-cell size="1"
-                         text="G9b">
-                </my-cell>
-                <my-cell size="3"
-                         text="Продажи з/ч куз. цех - внутренние Другие">
-                </my-cell>
-                <my-cell></my-cell>
-                <my-cell type="ruble"
-                         field="second"
-                         on-blur="autoSaving">
-                </my-cell>
-                <my-cell type="ruble"
-                         field="third"
-                         on-blur="autoSaving">
-                </my-cell>
-                <my-cell type="ruble"
-                         field="fourth"
-                         my-disabled="true"
-                         value="{{model.fourth = model.second - model.third}}">
-                </my-cell>
-            </my-row>
+<my-row field="incomingAndGrossProfitBodyShopSaleSparesInnerOthers">
+    <my-cell size="1"
+             text="G9b">
+    </my-cell>
+    <my-cell size="3"
+             text="Продажи з/ч куз. цех - внутренние Другие">
+    </my-cell>
+    <my-cell></my-cell>
+    <my-cell type="ruble"
+             field="second"
+             on-blur="autoSaving">
+    </my-cell>
+    <my-cell type="ruble"
+             field="third"
+             on-blur="autoSaving">
+    </my-cell>
+    <my-cell type="ruble"
+             field="fourth"
+             my-disabled="true"
+             value="{{model.fourth = model.second - model.third}}">
+    </my-cell>
+</my-row>
 
-            <my-row field="incomingAndGrossProfitBodyShopSaleSparesGuaranteeOthers">
-                <my-cell size="1"
-                         text="G10b">
-                </my-cell>
-                <my-cell size="3"
-                         text="Продажи з/ч куз. цех - гарантия Другие">
-                </my-cell>
-                <my-cell></my-cell>
-                <my-cell type="ruble"
-                         field="second"
-                         on-blur="autoSaving">
-                </my-cell>
-                <my-cell type="ruble"
-                         field="third"
-                         on-blur="autoSaving">
-                </my-cell>
-                <my-cell type="ruble"
-                         field="fourth"
-                         my-disabled="true"
-                         value="{{model.fourth = model.second - model.third}}">
-                </my-cell>
-            </my-row>
+<my-row field="incomingAndGrossProfitBodyShopSaleSparesGuaranteeOthers">
+    <my-cell size="1"
+             text="G10b">
+    </my-cell>
+    <my-cell size="3"
+             text="Продажи з/ч куз. цех - гарантия Другие">
+    </my-cell>
+    <my-cell></my-cell>
+    <my-cell type="ruble"
+             field="second"
+             on-blur="autoSaving">
+    </my-cell>
+    <my-cell type="ruble"
+             field="third"
+             on-blur="autoSaving">
+    </my-cell>
+    <my-cell type="ruble"
+             field="fourth"
+             my-disabled="true"
+             value="{{model.fourth = model.second - model.third}}">
+    </my-cell>
+</my-row>
 
-        </my-body>
+</my-body>
 
-    </my-table>
+</my-table>
 
-    <my-table model="model" field="tabSpares">
+<my-table model="model" field="tabSpares">
 
-        <my-foot>
+<my-foot>
 
-            <my-row field="incomingAndGrossProfitTotalShop">
-                <my-cell size="1"
-                         text="G1">
-                </my-cell>
-                <my-cell size="3"
-                         text="Итог Продажи через магазин">
-                </my-cell>
-                <my-cell></my-cell>
-                <my-cell type="ruble"
-                         field="second"
-                         my-disabled="true"
-                         value="{{model.second=
+<my-row field="incomingAndGrossProfitTotalShop">
+    <my-cell size="1"
+             text="G1">
+    </my-cell>
+    <my-cell size="3"
+             text="Итог Продажи через магазин">
+    </my-cell>
+    <my-cell></my-cell>
+    <my-cell type="ruble"
+             field="second"
+             my-disabled="true"
+             value="{{model.second=
                                 baseModel.incomingAndGrossProfitShopSaleVolvo.second+
                                 baseModel.incomingAndGrossProfitRetailShopSaleOthers.second}}">
-                </my-cell>
-                <my-cell type="ruble"
-                         field="third"
-                         my-disabled="true"
-                         value="{{model.third=
+    </my-cell>
+    <my-cell type="ruble"
+             field="third"
+             my-disabled="true"
+             value="{{model.third=
                                 baseModel.incomingAndGrossProfitShopSaleVolvo.third+
                                 baseModel.incomingAndGrossProfitRetailShopSaleOthers.third}}">
-                </my-cell>
-                <my-cell type="ruble"
-                         field="fourth"
-                         my-disabled="true"
-                         value="{{model.fourth=
+    </my-cell>
+    <my-cell type="ruble"
+             field="fourth"
+             my-disabled="true"
+             value="{{model.fourth=
                                 baseModel.incomingAndGrossProfitShopSaleVolvo.fourth+
                                 baseModel.incomingAndGrossProfitRetailShopSaleOthers.fourth}}">
-                </my-cell>
-            </my-row>
+    </my-cell>
+</my-row>
 
-            <my-row field="incomingAndGrossProfitTotalAccessories">
-                <my-cell size="1"
-                         text="G2">
-                </my-cell>
-                <my-cell size="3"
-                         text="Итог Продажи аксессуаров">
-                </my-cell>
-                <my-cell></my-cell>
-                <my-cell type="ruble"
-                         field="second"
-                         my-disabled="true"
-                         value="{{model.second=
+<my-row field="incomingAndGrossProfitTotalAccessories">
+    <my-cell size="1"
+             text="G2">
+    </my-cell>
+    <my-cell size="3"
+             text="Итог Продажи аксессуаров">
+    </my-cell>
+    <my-cell></my-cell>
+    <my-cell type="ruble"
+             field="second"
+             my-disabled="true"
+             value="{{model.second=
                                 baseModel.incomingAndGrossProfitSaleAccessoriesVolvo.second+
                                 baseModel.incomingAndGrossProfitSaleAccessoriesOthers.second}}">
-                </my-cell>
-                <my-cell type="ruble"
-                         field="third"
-                         my-disabled="true"
-                         value="{{model.third=
+    </my-cell>
+    <my-cell type="ruble"
+             field="third"
+             my-disabled="true"
+             value="{{model.third=
                                 baseModel.incomingAndGrossProfitSaleAccessoriesVolvo.third+
                                 baseModel.incomingAndGrossProfitSaleAccessoriesOthers.third}}">
-                </my-cell>
-                <my-cell type="ruble"
-                         field="fourth"
-                         my-disabled="true"
-                         value="{{model.fourth=
+    </my-cell>
+    <my-cell type="ruble"
+             field="fourth"
+             my-disabled="true"
+             value="{{model.fourth=
                                 baseModel.incomingAndGrossProfitSaleAccessoriesVolvo.fourth+
                                 baseModel.incomingAndGrossProfitSaleAccessoriesOthers.fourth}}">
-                </my-cell>
-            </my-row>
+    </my-cell>
+</my-row>
 
-            <my-row field="incomingAndGrossProfitTotalSaleOtherOrganizations">
-                <my-cell size="1"
-                         text="G3">
-                </my-cell>
-                <my-cell size="3"
-                         text="Итог Продажи др. орг-м">
-                </my-cell>
-                <my-cell></my-cell>
-                <my-cell type="ruble"
-                         field="second"
-                         my-disabled="true"
-                         value="{{model.second=
+<my-row field="incomingAndGrossProfitTotalSaleOtherOrganizations">
+    <my-cell size="1"
+             text="G3">
+    </my-cell>
+    <my-cell size="3"
+             text="Итог Продажи др. орг-м">
+    </my-cell>
+    <my-cell></my-cell>
+    <my-cell type="ruble"
+             field="second"
+             my-disabled="true"
+             value="{{model.second=
                                 baseModel.incomingAndGrossProfitSaleSparesOtherOrganizationsVolvo.second+
                                 baseModel.incomingAndGrossProfitSaleSparesOtherOrganizationsOthers.second}}">
-                </my-cell>
-                <my-cell type="ruble"
-                         field="third"
-                         my-disabled="true"
-                         value="{{model.third=
+    </my-cell>
+    <my-cell type="ruble"
+             field="third"
+             my-disabled="true"
+             value="{{model.third=
                                 baseModel.incomingAndGrossProfitSaleSparesOtherOrganizationsVolvo.third+
                                 baseModel.incomingAndGrossProfitSaleSparesOtherOrganizationsOthers.third}}">
-                </my-cell>
-                <my-cell type="ruble"
-                         field="fourth"
-                         my-disabled="true"
-                         value="{{model.fourth=
+    </my-cell>
+    <my-cell type="ruble"
+             field="fourth"
+             my-disabled="true"
+             value="{{model.fourth=
                                 baseModel.incomingAndGrossProfitSaleSparesOtherOrganizationsVolvo.fourth+
                                 baseModel.incomingAndGrossProfitSaleSparesOtherOrganizationsOthers.fourth}}">
-                </my-cell>
-            </my-row>
+    </my-cell>
+</my-row>
 
-            <my-row field="incomingAndGrossProfitTotalFlittingShopAtRetail">
-                <my-cell size="1"
-                         text="G4">
-                </my-cell>
-                <my-cell size="3"
-                         text="Итог Продажи з/ч слес. цех - розница">
-                </my-cell>
-                <my-cell></my-cell>
-                <my-cell type="ruble"
-                         field="second"
-                         my-disabled="true"
-                         value="{{model.second=
+<my-row field="incomingAndGrossProfitTotalFlittingShopAtRetail">
+    <my-cell size="1"
+             text="G4">
+    </my-cell>
+    <my-cell size="3"
+             text="Итог Продажи з/ч слес. цех - розница">
+    </my-cell>
+    <my-cell></my-cell>
+    <my-cell type="ruble"
+             field="second"
+             my-disabled="true"
+             value="{{model.second=
                                 baseModel.incomingAndGrossProfitFittingShopSaleSparesAtRetailVolvo.second+
                                 baseModel.incomingAndGrossProfitFittingShopSaleSparesAtRetailOthers.second}}">
-                </my-cell>
-                <my-cell type="ruble"
-                         field="third"
-                         my-disabled="true"
-                         value="{{model.third=
+    </my-cell>
+    <my-cell type="ruble"
+             field="third"
+             my-disabled="true"
+             value="{{model.third=
                                 baseModel.incomingAndGrossProfitFittingShopSaleSparesAtRetailVolvo.third+
                                 baseModel.incomingAndGrossProfitFittingShopSaleSparesAtRetailOthers.third}}">
-                </my-cell>
-                <my-cell type="ruble"
-                         field="fourth"
-                         my-disabled="true"
-                         value="{{model.fourth=
+    </my-cell>
+    <my-cell type="ruble"
+             field="fourth"
+             my-disabled="true"
+             value="{{model.fourth=
                                 baseModel.incomingAndGrossProfitFittingShopSaleSparesAtRetailVolvo.fourth+
                                 baseModel.incomingAndGrossProfitFittingShopSaleSparesAtRetailOthers.fourth}}">
-                </my-cell>
-            </my-row>
+    </my-cell>
+</my-row>
 
-            <my-row field="incomingAndGrossProfitTotalFlittingShopInner">
-                <my-cell size="1"
-                         text="G5">
-                </my-cell>
-                <my-cell size="3"
-                         text="Итог Продажи з/ч слес. цех - внутренние">
-                </my-cell>
-                <my-cell></my-cell>
-                <my-cell type="ruble"
-                         field="second"
-                         my-disabled="true"
-                         value="{{model.second=
+<my-row field="incomingAndGrossProfitTotalFlittingShopInner">
+    <my-cell size="1"
+             text="G5">
+    </my-cell>
+    <my-cell size="3"
+             text="Итог Продажи з/ч слес. цех - внутренние">
+    </my-cell>
+    <my-cell></my-cell>
+    <my-cell type="ruble"
+             field="second"
+             my-disabled="true"
+             value="{{model.second=
                                 baseModel.incomingAndGrossProfitFittingShopSaleSparesInnerVolvo.second+
                                 baseModel.incomingAndGrossProfitFittingShopSaleSparesInnerOthers.second}}">
-                </my-cell>
-                <my-cell type="ruble"
-                         field="third"
-                         my-disabled="true"
-                         value="{{model.third=
+    </my-cell>
+    <my-cell type="ruble"
+             field="third"
+             my-disabled="true"
+             value="{{model.third=
                                 baseModel.incomingAndGrossProfitFittingShopSaleSparesInnerVolvo.third+
                                 baseModel.incomingAndGrossProfitFittingShopSaleSparesInnerOthers.third}}">
-                </my-cell>
-                <my-cell type="ruble"
-                         field="fourth"
-                         my-disabled="true"
-                         value="{{model.fourth=
+    </my-cell>
+    <my-cell type="ruble"
+             field="fourth"
+             my-disabled="true"
+             value="{{model.fourth=
                                 baseModel.incomingAndGrossProfitFittingShopSaleSparesInnerVolvo.fourth+
                                 baseModel.incomingAndGrossProfitFittingShopSaleSparesInnerOthers.fourth}}">
-                </my-cell>
-            </my-row>
+    </my-cell>
+</my-row>
 
-            <my-row field="incomingAndGrossProfitTotalFlittingShopGuarantee">
-                <my-cell size="1"
-                         text="G6">
-                </my-cell>
-                <my-cell size="3"
-                         text="Итог Продажи з/ч слес. цех - гарантия">
-                </my-cell>
-                <my-cell></my-cell>
-                <my-cell type="ruble"
-                         field="second"
-                         my-disabled="true"
-                         value="{{model.second=
+<my-row field="incomingAndGrossProfitTotalFlittingShopGuarantee">
+    <my-cell size="1"
+             text="G6">
+    </my-cell>
+    <my-cell size="3"
+             text="Итог Продажи з/ч слес. цех - гарантия">
+    </my-cell>
+    <my-cell></my-cell>
+    <my-cell type="ruble"
+             field="second"
+             my-disabled="true"
+             value="{{model.second=
                                 baseModel.incomingAndGrossProfitFittingShopSaleSparesGuaranteeVolvo.second+
                                 baseModel.incomingAndGrossProfitFittingShopSaleSparesGuaranteeOthers.second}}">
-                </my-cell>
-                <my-cell type="ruble"
-                         field="third"
-                         my-disabled="true"
-                         value="{{model.third=
+    </my-cell>
+    <my-cell type="ruble"
+             field="third"
+             my-disabled="true"
+             value="{{model.third=
                                 baseModel.incomingAndGrossProfitFittingShopSaleSparesGuaranteeVolvo.third+
                                 baseModel.incomingAndGrossProfitFittingShopSaleSparesGuaranteeOthers.third}}">
-                </my-cell>
-                <my-cell type="ruble"
-                         field="fourth"
-                         my-disabled="true"
-                         value="{{model.fourth=
+    </my-cell>
+    <my-cell type="ruble"
+             field="fourth"
+             my-disabled="true"
+             value="{{model.fourth=
                                 baseModel.incomingAndGrossProfitFittingShopSaleSparesGuaranteeVolvo.fourth+
                                 baseModel.incomingAndGrossProfitFittingShopSaleSparesGuaranteeOthers.fourth}}">
-                </my-cell>
-            </my-row>
+    </my-cell>
+</my-row>
 
-            <my-row field="incomingAndGrossProfitTotalBodyShopAtRetail">
-                <my-cell size="1"
-                         text="G7">
-                </my-cell>
-                <my-cell size="3"
-                         text="Итог Продажи з/ч куз. цех - розница">
-                </my-cell>
-                <my-cell></my-cell>
-                <my-cell type="ruble"
-                         field="second"
-                         my-disabled="true"
-                         value="{{model.second=
+<my-row field="incomingAndGrossProfitTotalBodyShopAtRetail">
+    <my-cell size="1"
+             text="G7">
+    </my-cell>
+    <my-cell size="3"
+             text="Итог Продажи з/ч куз. цех - розница">
+    </my-cell>
+    <my-cell></my-cell>
+    <my-cell type="ruble"
+             field="second"
+             my-disabled="true"
+             value="{{model.second=
                                 baseModel.incomingAndGrossProfitBodyShopSaleSparesAtRetailVolvo.second+
                                 baseModel.incomingAndGrossProfitBodyShopSaleSparesAtRetailOthers.second}}">
-                </my-cell>
-                <my-cell type="ruble"
-                         field="third"
-                         my-disabled="true"
-                         value="{{model.third=
+    </my-cell>
+    <my-cell type="ruble"
+             field="third"
+             my-disabled="true"
+             value="{{model.third=
                                 baseModel.incomingAndGrossProfitBodyShopSaleSparesAtRetailVolvo.third+
                                 baseModel.incomingAndGrossProfitBodyShopSaleSparesAtRetailOthers.third}}">
-                </my-cell>
-                <my-cell type="ruble"
-                         field="fourth"
-                         my-disabled="true"
-                         value="{{model.fourth=
+    </my-cell>
+    <my-cell type="ruble"
+             field="fourth"
+             my-disabled="true"
+             value="{{model.fourth=
                                 baseModel.incomingAndGrossProfitBodyShopSaleSparesAtRetailVolvo.fourth+
                                 baseModel.incomingAndGrossProfitBodyShopSaleSparesAtRetailOthers.fourth}}">
-                </my-cell>
-            </my-row>
+    </my-cell>
+</my-row>
 
-            <my-row field="incomingAndGrossProfitTotalBodyShopInsurance">
-                <my-cell size="1"
-                         text="G8">
-                </my-cell>
-                <my-cell size="3"
-                         text="Итог Продажи з/ч куз. цех - страховые">
-                </my-cell>
-                <my-cell></my-cell>
-                <my-cell type="ruble"
-                         field="second"
-                         my-disabled="true"
-                         value="{{model.second=
+<my-row field="incomingAndGrossProfitTotalBodyShopInsurance">
+    <my-cell size="1"
+             text="G8">
+    </my-cell>
+    <my-cell size="3"
+             text="Итог Продажи з/ч куз. цех - страховые">
+    </my-cell>
+    <my-cell></my-cell>
+    <my-cell type="ruble"
+             field="second"
+             my-disabled="true"
+             value="{{model.second=
                                 baseModel.incomingAndGrossProfitBodyShopSaleSparesInsuranceVolvo.second+
                                 baseModel.incomingAndGrossProfitBodyShopSaleSparesInsuranceOthers.second}}">
-                </my-cell>
-                <my-cell type="ruble"
-                         field="third"
-                         my-disabled="true"
-                         value="{{model.third=
+    </my-cell>
+    <my-cell type="ruble"
+             field="third"
+             my-disabled="true"
+             value="{{model.third=
                                 baseModel.incomingAndGrossProfitBodyShopSaleSparesInsuranceVolvo.third+
                                 baseModel.incomingAndGrossProfitBodyShopSaleSparesInsuranceOthers.third}}">
-                </my-cell>
-                <my-cell type="ruble"
-                         field="fourth"
-                         my-disabled="true"
-                         value="{{model.fourth=
+    </my-cell>
+    <my-cell type="ruble"
+             field="fourth"
+             my-disabled="true"
+             value="{{model.fourth=
                                 baseModel.incomingAndGrossProfitBodyShopSaleSparesInsuranceVolvo.fourth+
                                 baseModel.incomingAndGrossProfitBodyShopSaleSparesInsuranceOthers.fourth}}">
-                </my-cell>
-            </my-row>
+    </my-cell>
+</my-row>
 
-            <my-row field="incomingAndGrossProfitTotalBodyShopInner">
-                <my-cell size="1"
-                         text="G9">
-                </my-cell>
-                <my-cell size="3"
-                         text="Итог Продажи з/ч куз. цех - внутренние">
-                </my-cell>
-                <my-cell></my-cell>
-                <my-cell type="ruble"
-                         field="second"
-                         my-disabled="true"
-                         value="{{model.second=
+<my-row field="incomingAndGrossProfitTotalBodyShopInner">
+    <my-cell size="1"
+             text="G9">
+    </my-cell>
+    <my-cell size="3"
+             text="Итог Продажи з/ч куз. цех - внутренние">
+    </my-cell>
+    <my-cell></my-cell>
+    <my-cell type="ruble"
+             field="second"
+             my-disabled="true"
+             value="{{model.second=
                                 baseModel.incomingAndGrossProfitBodyShopSaleSparesInnerVolvo.second+
                                 baseModel.incomingAndGrossProfitBodyShopSaleSparesInnerOthers.second}}">
-                </my-cell>
-                <my-cell type="ruble"
-                         field="third"
-                         my-disabled="true"
-                         value="{{model.third=
+    </my-cell>
+    <my-cell type="ruble"
+             field="third"
+             my-disabled="true"
+             value="{{model.third=
                                 baseModel.incomingAndGrossProfitBodyShopSaleSparesInnerVolvo.third+
                                 baseModel.incomingAndGrossProfitBodyShopSaleSparesInnerOthers.third}}">
-                </my-cell>
-                <my-cell type="ruble"
-                         field="fourth"
-                         my-disabled="true"
-                         value="{{model.fourth=
+    </my-cell>
+    <my-cell type="ruble"
+             field="fourth"
+             my-disabled="true"
+             value="{{model.fourth=
                                 baseModel.incomingAndGrossProfitBodyShopSaleSparesInnerVolvo.fourth+
                                 baseModel.incomingAndGrossProfitBodyShopSaleSparesInnerOthers.fourth}}">
-                </my-cell>
-            </my-row>
+    </my-cell>
+</my-row>
 
-            <my-row field="incomingAndGrossProfitTotalBodyShopGuarantee">
-                <my-cell size="1"
-                         text="G10">
-                </my-cell>
-                <my-cell size="3"
-                         text="Итог Продажи з/ч куз. цех - гарантия">
-                </my-cell>
-                <my-cell></my-cell>
-                <my-cell type="ruble"
-                         field="second"
-                         my-disabled="true"
-                         value="{{model.second=
+<my-row field="incomingAndGrossProfitTotalBodyShopGuarantee">
+    <my-cell size="1"
+             text="G10">
+    </my-cell>
+    <my-cell size="3"
+             text="Итог Продажи з/ч куз. цех - гарантия">
+    </my-cell>
+    <my-cell></my-cell>
+    <my-cell type="ruble"
+             field="second"
+             my-disabled="true"
+             value="{{model.second=
                                 baseModel.incomingAndGrossProfitBodyShopSaleSparesGuaranteeVolvo.second+
                                 baseModel.incomingAndGrossProfitBodyShopSaleSparesGuaranteeOthers.second}}">
-                </my-cell>
-                <my-cell type="ruble"
-                         field="third"
-                         my-disabled="true"
-                         value="{{model.third=
+    </my-cell>
+    <my-cell type="ruble"
+             field="third"
+             my-disabled="true"
+             value="{{model.third=
                                 baseModel.incomingAndGrossProfitBodyShopSaleSparesGuaranteeVolvo.third+
                                 baseModel.incomingAndGrossProfitBodyShopSaleSparesGuaranteeOthers.third}}">
-                </my-cell>
-                <my-cell type="ruble"
-                         field="fourth"
-                         my-disabled="true"
-                         value="{{model.fourth=
+    </my-cell>
+    <my-cell type="ruble"
+             field="fourth"
+             my-disabled="true"
+             value="{{model.fourth=
                                 baseModel.incomingAndGrossProfitBodyShopSaleSparesGuaranteeVolvo.fourth+
                                 baseModel.incomingAndGrossProfitBodyShopSaleSparesGuaranteeOthers.fourth}}">
-                </my-cell>
-            </my-row>
+    </my-cell>
+</my-row>
 
-            <my-row field="incomingAndGrossProfitTotalSparesSales">
-                <my-cell size="1"
-                         text="G15">
-                </my-cell>
-                <my-cell size="3"
-                         text="Итого продажи запчастей">
-                </my-cell>
-                <my-cell></my-cell>
-                <my-cell type="ruble"
-                         field="second"
-                         my-disabled="true"
-                         value="{{model.second=
+<my-row field="incomingAndGrossProfitTotalSparesSales">
+    <my-cell size="1"
+             text="G15">
+    </my-cell>
+    <my-cell size="3"
+             text="Итого продажи запчастей">
+    </my-cell>
+    <my-cell></my-cell>
+    <my-cell type="ruble"
+             field="second"
+             my-disabled="true"
+             value="{{model.second=
                                 baseModel.incomingAndGrossProfitTotalShop.second+
                                 baseModel.incomingAndGrossProfitTotalAccessories.second+
                                 baseModel.incomingAndGrossProfitTotalSaleOtherOrganizations.second+
@@ -819,11 +819,11 @@
                                 baseModel.incomingAndGrossProfitTotalBodyShopInsurance.second+
                                 baseModel.incomingAndGrossProfitTotalBodyShopInner.second+
                                 baseModel.incomingAndGrossProfitTotalBodyShopGuarantee.second}}">
-                </my-cell>
-                <my-cell type="ruble"
-                         field="third"
-                         my-disabled="true"
-                         value="{{model.third=
+    </my-cell>
+    <my-cell type="ruble"
+             field="third"
+             my-disabled="true"
+             value="{{model.third=
                                 baseModel.incomingAndGrossProfitTotalShop.third+
                                 baseModel.incomingAndGrossProfitTotalAccessories.third+
                                 baseModel.incomingAndGrossProfitTotalSaleOtherOrganizations.third+
@@ -834,11 +834,11 @@
                                 baseModel.incomingAndGrossProfitTotalBodyShopInsurance.third+
                                 baseModel.incomingAndGrossProfitTotalBodyShopInner.third+
                                 baseModel.incomingAndGrossProfitTotalBodyShopGuarantee.third}}">
-                </my-cell>
-                <my-cell type="ruble"
-                         field="fourth"
-                         my-disabled="true"
-                         value="{{model.fourth=
+    </my-cell>
+    <my-cell type="ruble"
+             field="fourth"
+             my-disabled="true"
+             value="{{model.fourth=
                                 baseModel.incomingAndGrossProfitTotalShop.fourth+
                                 baseModel.incomingAndGrossProfitTotalAccessories.fourth+
                                 baseModel.incomingAndGrossProfitTotalSaleOtherOrganizations.fourth+
@@ -849,13 +849,187 @@
                                 baseModel.incomingAndGrossProfitTotalBodyShopInsurance.fourth+
                                 baseModel.incomingAndGrossProfitTotalBodyShopInner.fourth+
                                 baseModel.incomingAndGrossProfitTotalBodyShopGuarantee.fourth}}">
-                </my-cell>
-            </my-row>
+    </my-cell>
+</my-row>
 
 
-        </my-foot>
+</my-foot>
 
-    </my-table>
+</my-table>
+
+<my-table model="model" field="tabSpares">
+    <my-body>
+
+        <my-row field="incomingAndGrossProfitLubricant">
+            <my-cell size="1"
+                     text="G16">
+            </my-cell>
+            <my-cell size="3"
+                     text="ГСМ">
+            </my-cell>
+            <my-cell></my-cell>
+            <my-cell type="ruble"
+                     field="second"
+                     on-blur="autoSaving">
+            </my-cell>
+            <my-cell type="ruble"
+                     field="third"
+                     on-blur="autoSaving">
+            </my-cell>
+            <my-cell type="ruble"
+                     field="fourth"
+                     my-disabled="true"
+                     value="{{model.fourth = model.second - model.third}}">
+            </my-cell>
+        </my-row>
+
+        <my-row field="incomingAndGrossProfitColorsTyingProductsSale">
+            <my-cell size="1"
+                     text="G17">
+            </my-cell>
+            <my-cell size="3"
+                     text="Продажа краски и сопутствующих материалов">
+            </my-cell>
+            <my-cell></my-cell>
+            <my-cell type="ruble"
+                     field="second"
+                     on-blur="autoSaving">
+            </my-cell>
+            <my-cell type="ruble"
+                     field="third"
+                     on-blur="autoSaving">
+            </my-cell>
+            <my-cell type="ruble"
+                     field="fourth"
+                     my-disabled="true"
+                     value="{{model.fourth = model.second - model.third}}">
+            </my-cell>
+        </my-row>
+
+        <my-row field="incomingAndGrossProfitTyreSale">
+            <my-cell size="1"
+                     text="G18">
+            </my-cell>
+            <my-cell size="3"
+                     text="Продажа шин">
+            </my-cell>
+            <my-cell></my-cell>
+            <my-cell type="ruble"
+                     field="second"
+                     on-blur="autoSaving">
+            </my-cell>
+            <my-cell type="ruble"
+                     field="third"
+                     on-blur="autoSaving">
+            </my-cell>
+            <my-cell type="ruble"
+                     field="fourth"
+                     my-disabled="true"
+                     value="{{model.fourth = model.second - model.third}}">
+            </my-cell>
+        </my-row>
+
+        <my-row field="incomingAndGrossProfitOtherSales">
+            <my-cell size="1"
+                     text="G19">
+            </my-cell>
+            <my-cell size="3"
+                     text="Прочие продажи">
+            </my-cell>
+            <my-cell></my-cell>
+            <my-cell type="ruble"
+                     field="second"
+                     on-blur="autoSaving">
+            </my-cell>
+            <my-cell type="ruble"
+                     field="third"
+                     on-blur="autoSaving">
+            </my-cell>
+            <my-cell type="ruble"
+                     field="fourth"
+                     my-disabled="true"
+                     value="{{model.fourth = model.second - model.third}}">
+            </my-cell>
+        </my-row>
+
+    </my-body>
+
+    <my-foot>
+        <my-row field="incomingAndGrossProfitOtherSalesTotal">
+            <my-cell size="1"
+                     text="G30">
+            </my-cell>
+            <my-cell size="3"
+                     text="Всего прочие доходы">
+            </my-cell>
+            <my-cell></my-cell>
+            <my-cell type="ruble"
+                     field="second"
+                     my-disabled="true"
+                     value="{{model.second=
+                                baseModel.incomingAndGrossProfitLubricant.second+
+                                baseModel.incomingAndGrossProfitColorsTyingProductsSale.second+
+                                baseModel.incomingAndGrossProfitTyreSale.second+
+                                baseModel.incomingAndGrossProfitOtherSales.second}}">
+            </my-cell>
+            <my-cell type="ruble"
+                     field="third"
+                     my-disabled="true"
+                     value="{{model.third=
+                                baseModel.incomingAndGrossProfitLubricant.third+
+                                baseModel.incomingAndGrossProfitColorsTyingProductsSale.third+
+                                baseModel.incomingAndGrossProfitTyreSale.third+
+                                baseModel.incomingAndGrossProfitOtherSales.third}}">
+            </my-cell>
+            <my-cell type="ruble"
+                     field="fourth"
+                     my-disabled="true"
+                     value="{{model.fourth=
+                                baseModel.incomingAndGrossProfitLubricant.fourth+
+                                baseModel.incomingAndGrossProfitColorsTyingProductsSale.fourth+
+                                baseModel.incomingAndGrossProfitTyreSale.fourth+
+                                baseModel.incomingAndGrossProfitOtherSales.fourth}}">
+            </my-cell>
+        </my-row>
+    </my-foot>
+</my-table>
+
+<my-table model="model" field="tabSpares">
+
+    <my-foot>
+        <my-row field="incomingAndGrossProfitTotalDepartment">
+            <my-cell size="1"
+                     text="G40">
+            </my-cell>
+            <my-cell size="3"
+                     text="Всего по отделу запчастей">
+            </my-cell>
+            <my-cell></my-cell>
+            <my-cell type="ruble"
+                     field="second"
+                     my-disabled="true"
+                     value="{{model.second=
+                                baseModel.incomingAndGrossProfitTotalSparesSales.second+
+                                baseModel.incomingAndGrossProfitOtherSalesTotal.second}}">
+            </my-cell>
+            <my-cell type="ruble"
+                     field="third"
+                     my-disabled="true"
+                     value="{{model.third=
+                                baseModel.incomingAndGrossProfitTotalSparesSales.third+
+                                baseModel.incomingAndGrossProfitOtherSalesTotal.third}}">
+            </my-cell>
+            <my-cell type="ruble"
+                     field="fourth"
+                     my-disabled="true"
+                     value="{{model.fourth=
+                                baseModel.incomingAndGrossProfitTotalSparesSales.fourth+
+                                baseModel.incomingAndGrossProfitOtherSalesTotal.fourth}}">
+            </my-cell>
+        </my-row>
+    </my-foot>
+
+</my-table>
 </div>
 
 
