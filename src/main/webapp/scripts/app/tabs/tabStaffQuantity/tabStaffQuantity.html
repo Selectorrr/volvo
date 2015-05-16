@@ -1,0 +1,730 @@
+<div class="content">
+<h2>Анализ численности персонала</h2>
+
+<my-table model="model" field="tabStaffQuantity">
+    <my-head>
+        <my-row>
+            <my-cell size="4"
+                     colspan="2"
+                     text="Отдел продаж новых а/м"></my-cell>
+            <my-cell></my-cell>
+            <my-cell text="Всего"></my-cell>
+        </my-row>
+    </my-head>
+    <my-body>
+        <my-row field="newCarsSalesDepartmentHeadOfSalesDepartment">
+            <my-cell size="1"
+                     text="N1">
+            </my-cell>
+            <my-cell size="3"
+                     text="Руководитель отдела продаж">
+            </my-cell>
+            <my-cell></my-cell>
+            <my-cell type="number"
+                     field="second"
+                     on-blur="autoSaving">
+            </my-cell>
+        </my-row>
+
+        <my-row field="newCarsSalesDepartmentHeadOfDepartmentInsurance">
+            <my-cell size="1"
+                     text="N2">
+            </my-cell>
+            <my-cell size="3"
+                     text="Начальник отдела страх. и кредит-ия">
+            </my-cell>
+            <my-cell></my-cell>
+            <my-cell type="number"
+                     field="second"
+                     on-blur="autoSaving">
+            </my-cell>
+        </my-row>
+
+        <my-row field="newCarsSalesDepartmentNewCarsSeller">
+            <my-cell size="1"
+                     text="N3">
+            </my-cell>
+            <my-cell size="3"
+                     text="Продавцы НА">
+            </my-cell>
+            <my-cell></my-cell>
+            <my-cell type="number"
+                     field="second"
+                     on-blur="autoSaving">
+            </my-cell>
+        </my-row>
+
+        <my-row field="newCarsSalesDepartmentOtherNewCarsStaff">
+            <my-cell size="1"
+                     text="N4">
+            </my-cell>
+            <my-cell size="3"
+                     text="Другие сотрудники НА">
+            </my-cell>
+            <my-cell></my-cell>
+            <my-cell type="number"
+                     field="second"
+                     on-blur="autoSaving">
+            </my-cell>
+        </my-row>
+    </my-body>
+
+    <my-foot>
+
+        <my-row field="newCarsSalesDepartmentTotalStaff">
+            <my-cell size="1"
+                     text="N10">
+            </my-cell>
+            <my-cell size="3"
+                     text="Итого сотрудники отдела продаж">
+            </my-cell>
+            <my-cell></my-cell>
+            <my-cell type="number"
+                     field="second"
+                     my-disabled="true"
+                     value="{{model.second=
+                                baseModel.newCarsSalesDepartmentHeadOfSalesDepartment.second+
+                                baseModel.newCarsSalesDepartmentHeadOfDepartmentInsurance.second+
+                                baseModel.newCarsSalesDepartmentNewCarsSeller.second+
+                                baseModel.newCarsSalesDepartmentOtherNewCarsStaff.second}}">
+            </my-cell>
+        </my-row>
+    </my-foot>
+</my-table>
+
+<my-table model="model" field="tabStaffQuantity">
+    <my-head>
+        <my-row>
+            <my-cell size="4"
+                     colspan="2"
+                     text="Отдел продаж подерж. а/м"></my-cell>
+            <my-cell></my-cell>
+            <my-cell></my-cell>
+        </my-row>
+    </my-head>
+    <my-body>
+        <my-row field="secondHandCarsSalesDepartmentHeadOfSalesDepartment">
+            <my-cell size="1"
+                     text="N11">
+            </my-cell>
+            <my-cell size="3"
+                     text="Руководитель отдела продаж">
+            </my-cell>
+            <my-cell></my-cell>
+            <my-cell type="number"
+                     field="second"
+                     on-blur="autoSaving">
+            </my-cell>
+        </my-row>
+
+        <my-row field="secondHandCarsSalesDepartmentHeadOfDepartmentInsurance">
+            <my-cell size="1"
+                     text="N12">
+            </my-cell>
+            <my-cell size="3"
+                     text="Начальник отдела страх. и кредит-ия">
+            </my-cell>
+            <my-cell></my-cell>
+            <my-cell type="number"
+                     field="second"
+                     on-blur="autoSaving">
+            </my-cell>
+        </my-row>
+
+        <my-row field="secondHandCarsSalesDepartmentSecondHandCarsSeller">
+            <my-cell size="1"
+                     text="N13">
+            </my-cell>
+            <my-cell size="3"
+                     text="Продавцы ПА">
+            </my-cell>
+            <my-cell></my-cell>
+            <my-cell type="number"
+                     field="second"
+                     on-blur="autoSaving">
+            </my-cell>
+        </my-row>
+
+        <my-row field="secondHandCarsSalesDepartmentOtherSecondHandCarsStaff">
+            <my-cell size="1"
+                     text="N14">
+            </my-cell>
+            <my-cell size="3"
+                     text="Другие сотрудники ПА">
+            </my-cell>
+            <my-cell></my-cell>
+            <my-cell type="number"
+                     field="second"
+                     on-blur="autoSaving">
+            </my-cell>
+        </my-row>
+    </my-body>
+
+    <my-foot>
+
+        <my-row field="secondHandCarsSalesDepartmentTotalStaff">
+            <my-cell size="1"
+                     text="N20">
+            </my-cell>
+            <my-cell size="3"
+                     text="Итого сотрудники отдела продаж ПА">
+            </my-cell>
+            <my-cell></my-cell>
+            <my-cell type="number"
+                     field="second"
+                     my-disabled="true"
+                     value="{{model.second=
+                                baseModel.secondHandCarsSalesDepartmentHeadOfSalesDepartment.second+
+                                baseModel.secondHandCarsSalesDepartmentHeadOfDepartmentInsurance.second+
+                                baseModel.secondHandCarsSalesDepartmentSecondHandCarsSeller.second+
+                                baseModel.secondHandCarsSalesDepartmentOtherSecondHandCarsStaff.second}}">
+            </my-cell>
+        </my-row>
+    </my-foot>
+</my-table>
+
+<my-table model="model" field="tabStaffQuantity">
+    <my-head>
+        <my-row>
+            <my-cell size="4"
+                     colspan="2"
+                     text="Слес. Цех"></my-cell>
+            <my-cell></my-cell>
+            <my-cell></my-cell>
+        </my-row>
+    </my-head>
+    <my-body>
+        <my-row field="flittingShopHeadOfFittingShop">
+            <my-cell size="1"
+                     text="N31">
+            </my-cell>
+            <my-cell size="3"
+                     text="Руководитель Слес. цеха">
+            </my-cell>
+            <my-cell></my-cell>
+            <my-cell type="number"
+                     field="second"
+                     on-blur="autoSaving">
+            </my-cell>
+        </my-row>
+
+        <my-row field="flittingShopAdministration">
+            <my-cell size="1"
+                     text="N32">
+            </my-cell>
+            <my-cell size="3"
+                     text="Административный персонал">
+            </my-cell>
+            <my-cell></my-cell>
+            <my-cell type="number"
+                     field="second"
+                     on-blur="autoSaving">
+            </my-cell>
+        </my-row>
+
+        <my-row field="flittingShopOtherStaff">
+            <my-cell size="1"
+                     text="N33">
+            </my-cell>
+            <my-cell size="3"
+                     text="Другие сотрудники">
+            </my-cell>
+            <my-cell></my-cell>
+            <my-cell type="number"
+                     field="second"
+                     on-blur="autoSaving">
+            </my-cell>
+        </my-row>
+
+        <my-row field="flittingShopMastersAcceptors">
+            <my-cell size="1"
+                     text="N34">
+            </my-cell>
+            <my-cell size="3"
+                     text="Мастера-приемщики">
+            </my-cell>
+            <my-cell></my-cell>
+            <my-cell type="number"
+                     field="second"
+                     on-blur="autoSaving">
+            </my-cell>
+        </my-row>
+
+        <my-row field="flittingShopTotalAdministrations">
+            <my-cell size="1"
+                     text="N35">
+            </my-cell>
+            <my-cell size="3"
+                     text="Итого админ. персонал">
+            </my-cell>
+            <my-cell></my-cell>
+            <my-cell type="number"
+                     field="second"
+                     my-disabled="true"
+                     value="{{model.second=
+                                baseModel.flittingShopHeadOfFittingShop.second+
+                                baseModel.flittingShopAdministration.second+
+                                baseModel.flittingShopOtherStaff.second+
+                                baseModel.flittingShopMastersAcceptors.second}}">
+            </my-cell>
+        </my-row>
+
+        <my-row field="flittingShopTechniciansOfFittingShop">
+            <my-cell size="1"
+                     text="N36">
+            </my-cell>
+            <my-cell size="3"
+                     text="Технич персонал Слес. цеха (продукт. персонал)">
+            </my-cell>
+            <my-cell></my-cell>
+            <my-cell type="number"
+                     field="second"
+                     on-blur="autoSaving">
+            </my-cell>
+        </my-row>
+
+        <my-row field="flittingShopProbationerOfFittingShop">
+            <my-cell size="1"
+                     text="N37">
+            </my-cell>
+            <my-cell size="3"
+                     text="Стажеры Слес. цеха">
+            </my-cell>
+            <my-cell></my-cell>
+            <my-cell type="number"
+                     field="second"
+                     on-blur="autoSaving">
+            </my-cell>
+        </my-row>
+    </my-body>
+
+    <my-foot>
+
+        <my-row field="flittingShopTotalFlittingShopStaff">
+            <my-cell size="1"
+                     text="N40">
+            </my-cell>
+            <my-cell size="3"
+                     text="Итого сотрудники Слес. цеха">
+            </my-cell>
+            <my-cell></my-cell>
+            <my-cell type="number"
+                     field="second"
+                     my-disabled="true"
+                     value="{{model.second=
+                                baseModel.flittingShopTotalAdministrations.second+
+                                baseModel.flittingShopTechniciansOfFittingShop.second+
+                                baseModel.flittingShopProbationerOfFittingShop.second}}">
+            </my-cell>
+        </my-row>
+    </my-foot>
+</my-table>
+
+<my-table model="model" field="tabStaffQuantity">
+    <my-head>
+        <my-row>
+            <my-cell size="4"
+                     colspan="2"
+                     text="Кузовной Цех"></my-cell>
+            <my-cell></my-cell>
+            <my-cell></my-cell>
+        </my-row>
+    </my-head>
+    <my-body>
+        <my-row field="bodyShopHeadOfBodyShop">
+            <my-cell size="1"
+                     text="N41">
+            </my-cell>
+            <my-cell size="3"
+                     text="Руководитель Куз. цеха">
+            </my-cell>
+            <my-cell></my-cell>
+            <my-cell type="number"
+                     field="second"
+                     on-blur="autoSaving">
+            </my-cell>
+        </my-row>
+
+        <my-row field="bodyShopAdministration">
+            <my-cell size="1"
+                     text="N42">
+            </my-cell>
+            <my-cell size="3"
+                     text="Административный персонал">
+            </my-cell>
+            <my-cell></my-cell>
+            <my-cell type="number"
+                     field="second"
+                     on-blur="autoSaving">
+            </my-cell>
+        </my-row>
+
+        <my-row field="bodyShopOtherStaff">
+            <my-cell size="1"
+                     text="N43">
+            </my-cell>
+            <my-cell size="3"
+                     text="Другие сотрудники">
+            </my-cell>
+            <my-cell></my-cell>
+            <my-cell type="number"
+                     field="second"
+                     on-blur="autoSaving">
+            </my-cell>
+        </my-row>
+
+        <my-row field="bodyShopMastersAcceptors">
+            <my-cell size="1"
+                     text="N44">
+            </my-cell>
+            <my-cell size="3"
+                     text="Мастера-приемщики">
+            </my-cell>
+            <my-cell></my-cell>
+            <my-cell type="number"
+                     field="second"
+                     on-blur="autoSaving">
+            </my-cell>
+        </my-row>
+
+        <my-row field="bodyShopTotalAdministrations">
+            <my-cell size="1"
+                     text="N45">
+            </my-cell>
+            <my-cell size="3"
+                     text="Итого админ. персонал">
+            </my-cell>
+            <my-cell></my-cell>
+            <my-cell type="number"
+                     field="second"
+                     my-disabled="true"
+                     value="{{model.second=
+                                baseModel.bodyShopHeadOfBodyShop.second+
+                                baseModel.bodyShopAdministration.second+
+                                baseModel.bodyShopOtherStaff.second+
+                                baseModel.bodyShopMastersAcceptors.second}}">
+            </my-cell>
+        </my-row>
+
+        <my-row field="bodyShopTechniciansOfFittingShop">
+            <my-cell size="1"
+                     text="N46">
+            </my-cell>
+            <my-cell size="3"
+                     text="Технич персонал Куз. цеха (продукт. персонал)">
+            </my-cell>
+            <my-cell></my-cell>
+            <my-cell type="number"
+                     field="second"
+                     on-blur="autoSaving">
+            </my-cell>
+        </my-row>
+
+        <my-row field="bodyShopProbationerOfFittingShop">
+            <my-cell size="1"
+                     text="N47">
+            </my-cell>
+            <my-cell size="3"
+                     text="Стажеры Куз. цеха">
+            </my-cell>
+            <my-cell></my-cell>
+            <my-cell type="number"
+                     field="second"
+                     on-blur="autoSaving">
+            </my-cell>
+        </my-row>
+    </my-body>
+
+    <my-foot>
+        <my-row field="bodyShopTotalBodyShopStaff">
+            <my-cell size="1"
+                     text="N50">
+            </my-cell>
+            <my-cell size="3"
+                     text="Итого сотрудники Куз. цеха">
+            </my-cell>
+            <my-cell></my-cell>
+            <my-cell type="number"
+                     field="second"
+                     my-disabled="true"
+                     value="{{model.second=
+                                baseModel.bodyShopTotalAdministrations.second+
+                                baseModel.bodyShopTechniciansOfFittingShop.second+
+                                baseModel.bodyShopProbationerOfFittingShop.second}}">
+            </my-cell>
+        </my-row>
+    </my-foot>
+</my-table>
+
+<my-table model="model" field="tabStaffQuantity">
+    <my-head>
+        <my-row>
+            <my-cell size="4"
+                     colspan="2"
+                     text="Отдел запчастей"></my-cell>
+            <my-cell></my-cell>
+            <my-cell></my-cell>
+        </my-row>
+    </my-head>
+    <my-body>
+        <my-row field="sparesDepartmentHeadOfSparesDepartments">
+            <my-cell size="1"
+                     text="N61">
+            </my-cell>
+            <my-cell size="3"
+                     text="Руководитель Запчастей">
+            </my-cell>
+            <my-cell></my-cell>
+            <my-cell type="number"
+                     field="second"
+                     on-blur="autoSaving">
+            </my-cell>
+        </my-row>
+
+        <my-row field="sparesDepartmentAdministration">
+            <my-cell size="1"
+                     text="N62">
+            </my-cell>
+            <my-cell size="3"
+                     text="Административный персонал">
+            </my-cell>
+            <my-cell></my-cell>
+            <my-cell type="number"
+                     field="second"
+                     on-blur="autoSaving">
+            </my-cell>
+        </my-row>
+
+        <my-row field="sparesDepartmentSellers">
+            <my-cell size="1"
+                     text="N63">
+            </my-cell>
+            <my-cell size="3"
+                     text="Продавцы з/ч">
+            </my-cell>
+            <my-cell></my-cell>
+            <my-cell type="number"
+                     field="second"
+                     on-blur="autoSaving">
+            </my-cell>
+        </my-row>
+    </my-body>
+
+    <my-foot>
+
+        <my-row field="sparesDepartmentTotal">
+            <my-cell size="1"
+                     text="N70">
+            </my-cell>
+            <my-cell size="3"
+                     text="Всего по отделу Запчасти">
+            </my-cell>
+            <my-cell></my-cell>
+            <my-cell type="number"
+                     field="second"
+                     my-disabled="true"
+                     value="{{model.second=
+                                baseModel.sparesDepartmentHeadOfSparesDepartments.second+
+                                baseModel.sparesDepartmentAdministration.second+
+                                baseModel.sparesDepartmentSellers.second}}">
+            </my-cell>
+        </my-row>
+    </my-foot>
+</my-table>
+
+<my-table model="model" field="tabStaffQuantity">
+    <my-head>
+        <my-row>
+            <my-cell size="4"
+                     colspan="2"
+                     text="Другие отделы"></my-cell>
+            <my-cell></my-cell>
+            <my-cell></my-cell>
+        </my-row>
+    </my-head>
+    <my-body>
+        <my-row field="otherDepartmentsRentCarsStaff">
+            <my-cell size="1"
+                     text="N71">
+            </my-cell>
+            <my-cell size="3"
+                     text="Сотрудники отдела проката а/м">
+            </my-cell>
+            <my-cell></my-cell>
+            <my-cell type="number"
+                     field="second"
+                     on-blur="autoSaving">
+            </my-cell>
+        </my-row>
+
+        <my-row field="otherDepartmentsLeasingCarsStaff">
+            <my-cell size="1"
+                     text="N72">
+            </my-cell>
+            <my-cell size="3"
+                     text="Сотрудники отдела лизинга">
+            </my-cell>
+            <my-cell></my-cell>
+            <my-cell type="number"
+                     field="second"
+                     on-blur="autoSaving">
+            </my-cell>
+        </my-row>
+
+        <my-row field="otherDepartmentsOtherDepartmentsStaff">
+            <my-cell size="1"
+                     text="N74">
+            </my-cell>
+            <my-cell size="3"
+                     text="Сотрудники других отделов">
+            </my-cell>
+            <my-cell></my-cell>
+            <my-cell type="number"
+                     field="second"
+                     on-blur="autoSaving">
+            </my-cell>
+        </my-row>
+    </my-body>
+
+    <my-foot>
+
+        <my-row field="otherDepartmentsTotal">
+            <my-cell size="1"
+                     text="N80">
+            </my-cell>
+            <my-cell size="3"
+                     text="Всего по другим отделам">
+            </my-cell>
+            <my-cell></my-cell>
+            <my-cell type="number"
+                     field="second"
+                     my-disabled="true"
+                     value="{{model.second=
+                                baseModel.otherDepartmentsRentCarsStaff.second+
+                                baseModel.otherDepartmentsLeasingCarsStaff.second+
+                                baseModel.otherDepartmentsOtherDepartmentsStaff.second}}">
+            </my-cell>
+        </my-row>
+    </my-foot>
+</my-table>
+
+<my-table model="model" field="tabStaffQuantity">
+    <my-head>
+        <my-row>
+            <my-cell size="4"
+                     colspan="2"
+                     text="Административный персонал"></my-cell>
+            <my-cell></my-cell>
+            <my-cell></my-cell>
+        </my-row>
+    </my-head>
+    <my-body>
+        <my-row field="administrationsManagementOfTheDealership">
+            <my-cell size="1"
+                     text="N81">
+            </my-cell>
+            <my-cell size="3"
+                     text="Руководство дилерского центра">
+            </my-cell>
+            <my-cell></my-cell>
+            <my-cell type="number"
+                     field="second"
+                     on-blur="autoSaving">
+            </my-cell>
+        </my-row>
+
+        <my-row field="administrationsFinancialManager">
+            <my-cell size="1"
+                     text="N82">
+            </my-cell>
+            <my-cell size="3"
+                     text="Финансовый менеджер">
+            </my-cell>
+            <my-cell></my-cell>
+            <my-cell type="number"
+                     field="second"
+                     on-blur="autoSaving">
+            </my-cell>
+        </my-row>
+
+        <my-row field="administrationsAdministration">
+            <my-cell size="1"
+                     text="N83">
+            </my-cell>
+            <my-cell size="3"
+                     text="Административный персонал">
+            </my-cell>
+            <my-cell></my-cell>
+            <my-cell type="number"
+                     field="second"
+                     on-blur="autoSaving">
+            </my-cell>
+        </my-row>
+
+        <my-row field="administrationsOtherStaff">
+            <my-cell size="1"
+                     text="N84">
+            </my-cell>
+            <my-cell size="3"
+                     text="Другие сотрудники">
+            </my-cell>
+            <my-cell></my-cell>
+            <my-cell type="number"
+                     field="second"
+                     on-blur="autoSaving">
+            </my-cell>
+        </my-row>
+    </my-body>
+
+    <my-foot>
+
+        <my-row field="administrationsTotalAdministrationDepartment">
+            <my-cell size="1"
+                     text="N90">
+            </my-cell>
+            <my-cell size="3"
+                     text="Всего по административному отделу">
+            </my-cell>
+            <my-cell></my-cell>
+            <my-cell type="number"
+                     field="second"
+                     my-disabled="true"
+                     value="{{model.second=
+                                baseModel.administrationsManagementOfTheDealership.second+
+                                baseModel.administrationsFinancialManager.second+
+                                baseModel.administrationsAdministration.second+
+                                baseModel.administrationsOtherStaff.second}}">
+            </my-cell>
+        </my-row>
+    </my-foot>
+</my-table>
+
+<my-table model="model" field="tabStaffQuantity">
+
+    <my-foot>
+
+        <my-row field="totalStaffQuantity">
+            <my-cell size="1"
+                     text="N100">
+            </my-cell>
+            <my-cell size="3"
+                     text="Общее число сотрудников">
+            </my-cell>
+            <my-cell></my-cell>
+            <my-cell type="number"
+                     field="second"
+                     my-disabled="true"
+                     value="{{model.second=
+                                baseModel.newCarsSalesDepartmentTotalStaff.second+
+                                baseModel.secondHandCarsSalesDepartmentTotalStaff.second+
+                                baseModel.flittingShopTotalFlittingShopStaff.second+
+                                baseModel.bodyShopTotalBodyShopStaff.second+
+                                baseModel.sparesDepartmentTotal.second+
+                                baseModel.otherDepartmentsTotal.second+
+                                baseModel.administrationsTotalAdministrationDepartment.second}}">
+            </my-cell>
+        </my-row>
+    </my-foot>
+
+</my-table>
+</div>

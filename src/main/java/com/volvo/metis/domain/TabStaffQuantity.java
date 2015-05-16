@@ -3,7 +3,7 @@ package com.volvo.metis.domain;
 import java.io.Serializable;
 
 /**
- * Вкладка "Численность персонала"
+ * Вкладка "Анализ численности персонала"
  */
 public class TabStaffQuantity implements Serializable {
 
