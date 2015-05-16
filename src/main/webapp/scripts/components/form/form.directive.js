@@ -80,6 +80,7 @@ angular.module('volvoApp')
                 }
                 if (tAttrs.addon) {
                     $input.parent().find('span').attr('class', 'input-group-addon ' + tAttrs.addon);
+                    $input.parent().addClass("input-group input-group-sm");
                 }
 
                 return {
@@ -93,7 +94,7 @@ angular.module('volvoApp')
                     }
                 }
             },
-            template: '<div class="input-group input-group-sm">' +
+            template: '<div>' +
             '<input value="value" class="form-control text-right simplebox" aria-describedby="sizing-addon3" ng-model="model" ng-required=required ng-disabled="myDisabled">' +
                 '<span></span>' +
                 '</div>'
