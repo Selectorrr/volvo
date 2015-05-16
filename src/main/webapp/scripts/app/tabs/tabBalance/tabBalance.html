@@ -789,9 +789,196 @@
                      value="{{model.second=0}}">
             </my-cell>
         </my-row>
+    </my-body>
+</my-table>
 
+<my-table model="model" field="tabBalance">
+    <my-head>
+        <my-row>
+            <my-cell size="4"
+                     colspan="2"
+                     text="Долгосрочные обязательства"></my-cell>
+            <my-cell></my-cell>
+            <my-cell text="Сумма"></my-cell>
+        </my-row>
+    </my-head>
+    <my-body>
+        <my-row field="longTermLiabilitiesShareholderLoans">
+            <my-cell size="1"
+                     text="L131">
+            </my-cell>
+            <my-cell size="3"
+                     text="Займы акционеров">
+            </my-cell>
+            <my-cell></my-cell>
+            <my-cell type="ruble"
+                     field="second"
+                     on-blur="autoSaving">
+            </my-cell>
+        </my-row>
+
+        <my-row field="longTermLiabilitiesCorporateLoans">
+            <my-cell size="1"
+                     text="L132">
+            </my-cell>
+            <my-cell size="3"
+                     text="Внутрикорпоративные займы">
+            </my-cell>
+            <my-cell></my-cell>
+            <my-cell type="ruble"
+                     field="second"
+                     on-blur="autoSaving">
+            </my-cell>
+        </my-row>
+
+        <my-row field="longTermLiabilitiesTotalCorporateLoans">
+            <my-cell size="1"
+                     text="L135">
+            </my-cell>
+            <my-cell size="3"
+                     text="Итого внутрикорпоративные займы">
+            </my-cell>
+            <my-cell></my-cell>
+            <my-cell type="ruble"
+                     field="second"
+                     my-disabled="true"
+                     value="{{model.second=
+                                baseModel.longTermLiabilitiesShareholderLoans.second+
+                                baseModel.longTermLiabilitiesCorporateLoans.second}}">
+            </my-cell>
+        </my-row>
+
+        <my-row field="longTermLiabilitiesLongLoanSecure">
+            <my-cell size="1"
+                     text="L136">
+            </my-cell>
+            <my-cell size="3"
+                     text="Долгосрочные займы (обеспеч.)">
+            </my-cell>
+            <my-cell></my-cell>
+            <my-cell type="ruble"
+                     field="second"
+                     on-blur="autoSaving">
+            </my-cell>
+        </my-row>
+
+        <my-row field="longTermLiabilitiesLongLoanUnsecured">
+            <my-cell size="1"
+                     text="L137">
+            </my-cell>
+            <my-cell size="3"
+                     text="Долгосрочные займы (необеспеч.)">
+            </my-cell>
+            <my-cell></my-cell>
+            <my-cell type="ruble"
+                     field="second"
+                     on-blur="autoSaving">
+            </my-cell>
+        </my-row>
+
+        <my-row field="longTermLiabilitiesTotalLongLoan">
+            <my-cell size="1"
+                     text="L140">
+            </my-cell>
+            <my-cell size="3"
+                     text="Итого долгосрочные займы">
+            </my-cell>
+            <my-cell></my-cell>
+            <my-cell type="ruble"
+                     field="second"
+                     my-disabled="true"
+                     value="{{model.second=
+                                baseModel.longTermLiabilitiesLongLoanSecure.second+
+                                baseModel.longTermLiabilitiesLongLoanUnsecured.second}}">
+            </my-cell>
+        </my-row>
+
+
+
+
+        <my-row field="longTermLiabilitiesEncumbrance">
+            <my-cell size="1"
+                     text="L141">
+            </my-cell>
+            <my-cell size="3"
+                     text="Закладные">
+            </my-cell>
+            <my-cell></my-cell>
+            <my-cell type="ruble"
+                     field="second"
+                     on-blur="autoSaving">
+            </my-cell>
+        </my-row>
+
+        <my-row field="longTermLiabilitiesBuyOnLease">
+            <my-cell size="1"
+                     text="L142">
+            </my-cell>
+            <my-cell size="3"
+                     text="Покупка в лизинг">
+            </my-cell>
+            <my-cell></my-cell>
+            <my-cell type="ruble"
+                     field="second"
+                     on-blur="autoSaving">
+            </my-cell>
+        </my-row>
+
+        <my-row field="longTermLiabilitiesOtherLongTermLiabilities">
+            <my-cell size="1"
+                     text="L143">
+            </my-cell>
+            <my-cell size="3"
+                     text="Другие долгосрочные обязательства 1">
+            </my-cell>
+            <my-cell></my-cell>
+            <my-cell type="ruble"
+                     field="second"
+                     on-blur="autoSaving">
+            </my-cell>
+        </my-row>
 
     </my-body>
+
+    <my-foot>
+
+        <my-row field="longTermLiabilitiesTotalOtherLongTermLiabilities">
+            <my-cell size="1"
+                     text="L150">
+            </my-cell>
+            <my-cell size="3"
+                     text="Итого другие долгосрочные обяз-ва">
+            </my-cell>
+            <my-cell></my-cell>
+            <my-cell type="ruble"
+                     field="second"
+                     my-disabled="true"
+                     value="{{model.second=
+                                baseModel.longTermLiabilitiesEncumbrance.second+
+                                baseModel.longTermLiabilitiesBuyOnLease.second+
+                                baseModel.longTermLiabilitiesOtherLongTermLiabilities.second}}">
+            </my-cell>
+        </my-row>
+
+        <my-row field="longTermLiabilitiesTotalLongTermLiabilities">
+            <my-cell size="1"
+                     text="L160">
+            </my-cell>
+            <my-cell size="3"
+                     text="Итого по долгосрочным обяз-вам">
+            </my-cell>
+            <my-cell></my-cell>
+            <my-cell type="ruble"
+                     field="second"
+                     my-disabled="true"
+                     value="{{model.second=
+                                baseModel.longTermLiabilitiesTotalCorporateLoans.second+
+                                baseModel.longTermLiabilitiesTotalLongLoan.second+
+                                baseModel.longTermLiabilitiesTotalOtherLongTermLiabilities.second}}">
+            </my-cell>
+        </my-row>
+
+    </my-foot>
 </my-table>
 
 </div>
