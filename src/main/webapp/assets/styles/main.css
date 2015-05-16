@@ -211,21 +211,7 @@ ul#strength {
     }
 
     line {
-        font-family: \00003193
-    }
-}
-.content {
-  background-color: #f6f6f6;
-  padding: 30px;
-}
-
-@media -sass-debug-info {
-    filename {
-        font-family: file\:\/\/C\:\/Users\/Selector\/Desktop\/volvo\/src\/main\/scss\/main\.scss
-    }
-
-    line {
-        font-family: \00003198
+        font-family: \00003197
     }
 }
 .navbar-nav > li > a {
@@ -239,7 +225,7 @@ ul#strength {
     }
 
     line {
-        font-family: \00003203
+        font-family: \00003202
     }
 }
 .nav-logo {
@@ -256,7 +242,6 @@ ul#strength {
         font-family: \00003207
     }
 }
-
 .nav-logo img {
     opacity: 0;
     filter: alpha(opacity=0);
@@ -274,4 +259,34 @@ ul#strength {
 .html, body {
   position: relative;
   height: auto;
+}
+
+@media -sass-debug-info {
+    filename {
+        font-family: file\:\/\/C\:\/Users\/Selector\/Desktop\/volvo\/src\/main\/scss\/main\.scss
+    }
+
+    line {
+        font-family: \00003217
+    }
+}
+
+.table-responsive {
+    background-color: #F6F6F6;
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
+@media -sass-debug-info {
+    filename {
+        font-family: file\:\/\/C\:\/Users\/Selector\/Desktop\/volvo\/src\/main\/scss\/main\.scss
+    }
+
+    line {
+        font-family: \00003222
+    }
+}
+
+.table {
+    margin-bottom: 0;
 }

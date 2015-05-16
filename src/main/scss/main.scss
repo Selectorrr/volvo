@@ -190,11 +190,6 @@ ul#strength {
     border-color: transparent;
 }
 
-.content {
-    background-color: #f6f6f6;
-    padding: 30px;
-}
-
 .navbar-nav > li > a {
     line-height: 40px;
     font-size: 16px;
@@ -213,4 +208,14 @@ ul#strength {
 .html, body {
     position: relative;
     height: auto;
+}
+
+.table-responsive {
+    background-color: #F6F6F6;
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
+.table {
+    margin-bottom: 0;
 }
