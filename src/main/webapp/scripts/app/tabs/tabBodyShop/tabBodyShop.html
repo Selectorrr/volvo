@@ -1,3 +1,4 @@
+<div class="content">
 <h2>Кузовной цех</h2>
 
 <my-table model="model" field="tabBodyShop">
@@ -1006,512 +1007,512 @@
 </my-table>
 
 <my-table model="model" field="tabBodyShop">
-    <my-head>
-        <my-row>
-            <my-cell size="4"
-                     colspan="2"
-                     text="Статистика"></my-cell>
-            <my-cell></my-cell>
-            <my-cell></my-cell>
-            <my-cell></my-cell>
-            <my-cell text="Сумма"></my-cell>
-        </my-row>
-    </my-head>
-    <my-body>
-        <my-row field="statisticsVolvoPresenceHours">
-            <my-cell size="1"
-                     text="E101">
-            </my-cell>
-            <my-cell size="3"
-                     text="Часы присутствия Volvo">
-            </my-cell>
-            <my-cell></my-cell>
-            <my-cell></my-cell>
-            <my-cell></my-cell>
-            <my-cell type="number"
-                     field="fourth"
-                     on-blur="autoSaving">
-            </my-cell>
-        </my-row>
+<my-head>
+    <my-row>
+        <my-cell size="4"
+                 colspan="2"
+                 text="Статистика"></my-cell>
+        <my-cell></my-cell>
+        <my-cell></my-cell>
+        <my-cell></my-cell>
+        <my-cell text="Сумма"></my-cell>
+    </my-row>
+</my-head>
+<my-body>
+<my-row field="statisticsVolvoPresenceHours">
+    <my-cell size="1"
+             text="E101">
+    </my-cell>
+    <my-cell size="3"
+             text="Часы присутствия Volvo">
+    </my-cell>
+    <my-cell></my-cell>
+    <my-cell></my-cell>
+    <my-cell></my-cell>
+    <my-cell type="number"
+             field="fourth"
+             on-blur="autoSaving">
+    </my-cell>
+</my-row>
 
-        <my-row field="statisticsVolvoPresenceHoursTotal">
-            <my-cell size="1"
-                     text="E105">
-            </my-cell>
-            <my-cell size="3"
-                     text="Итого часов присутствия">
-            </my-cell>
-            <my-cell></my-cell>
-            <my-cell></my-cell>
-            <my-cell></my-cell>
-            <my-cell type="number"
-                     field="fourth"
-                     my-disabled="true"
-                     value="{{model.fourth=
+<my-row field="statisticsVolvoPresenceHoursTotal">
+    <my-cell size="1"
+             text="E105">
+    </my-cell>
+    <my-cell size="3"
+             text="Итого часов присутствия">
+    </my-cell>
+    <my-cell></my-cell>
+    <my-cell></my-cell>
+    <my-cell></my-cell>
+    <my-cell type="number"
+             field="fourth"
+             my-disabled="true"
+             value="{{model.fourth=
                             baseModel.statisticsVolvoPresenceHours.fourth}}">
-            </my-cell>
-        </my-row>
+    </my-cell>
+</my-row>
 
-        <my-row field="statisticsProductiveHoursAtRetailVolvo">
-            <my-cell size="1"
-                     text="E106">
-            </my-cell>
-            <my-cell size="3"
-                     text="Продуктивные часы в розницу Volvo">
-            </my-cell>
-            <my-cell></my-cell>
-            <my-cell></my-cell>
-            <my-cell></my-cell>
-            <my-cell type="number"
-                     field="fourth"
-                     on-blur="autoSaving">
-            </my-cell>
-        </my-row>
+<my-row field="statisticsProductiveHoursAtRetailVolvo">
+    <my-cell size="1"
+             text="E106">
+    </my-cell>
+    <my-cell size="3"
+             text="Продуктивные часы в розницу Volvo">
+    </my-cell>
+    <my-cell></my-cell>
+    <my-cell></my-cell>
+    <my-cell></my-cell>
+    <my-cell type="number"
+             field="fourth"
+             on-blur="autoSaving">
+    </my-cell>
+</my-row>
 
-        <my-row field="statisticsProductiveHoursAtRetailOthers">
-            <my-cell size="1"
-                     text="E107">
-            </my-cell>
-            <my-cell size="3"
-                     text="Продуктивные часы в розницу Другие">
-            </my-cell>
-            <my-cell></my-cell>
-            <my-cell></my-cell>
-            <my-cell></my-cell>
-            <my-cell type="number"
-                     field="fourth"
-                     on-blur="autoSaving">
-            </my-cell>
-        </my-row>
+<my-row field="statisticsProductiveHoursAtRetailOthers">
+    <my-cell size="1"
+             text="E107">
+    </my-cell>
+    <my-cell size="3"
+             text="Продуктивные часы в розницу Другие">
+    </my-cell>
+    <my-cell></my-cell>
+    <my-cell></my-cell>
+    <my-cell></my-cell>
+    <my-cell type="number"
+             field="fourth"
+             on-blur="autoSaving">
+    </my-cell>
+</my-row>
 
-        <my-row field="statisticsProductiveHoursAtRetailTotal">
-            <my-cell size="1"
-                     text="E110">
-            </my-cell>
-            <my-cell size="3"
-                     text="Итого продуктивные в розницу часы">
-            </my-cell>
-            <my-cell></my-cell>
-            <my-cell></my-cell>
-            <my-cell></my-cell>
-            <my-cell type="number"
-                     field="fourth"
-                     my-disabled="true"
-                     value="{{model.fourth=
+<my-row field="statisticsProductiveHoursAtRetailTotal">
+    <my-cell size="1"
+             text="E110">
+    </my-cell>
+    <my-cell size="3"
+             text="Итого продуктивные в розницу часы">
+    </my-cell>
+    <my-cell></my-cell>
+    <my-cell></my-cell>
+    <my-cell></my-cell>
+    <my-cell type="number"
+             field="fourth"
+             my-disabled="true"
+             value="{{model.fourth=
                             baseModel.statisticsProductiveHoursAtRetailVolvo.fourth+
                             baseModel.statisticsProductiveHoursAtRetailOthers.fourth}}">
-            </my-cell>
-        </my-row>
+    </my-cell>
+</my-row>
 
-        <my-row field="statisticsProductiveHoursInsuranceVolvo">
-            <my-cell size="1"
-                     text="E111">
-            </my-cell>
-            <my-cell size="3"
-                     text="Продуктивные часы по страховым Volvo">
-            </my-cell>
-            <my-cell></my-cell>
-            <my-cell></my-cell>
-            <my-cell></my-cell>
-            <my-cell type="number"
-                     field="fourth"
-                     on-blur="autoSaving">
-            </my-cell>
-        </my-row>
+<my-row field="statisticsProductiveHoursInsuranceVolvo">
+    <my-cell size="1"
+             text="E111">
+    </my-cell>
+    <my-cell size="3"
+             text="Продуктивные часы по страховым Volvo">
+    </my-cell>
+    <my-cell></my-cell>
+    <my-cell></my-cell>
+    <my-cell></my-cell>
+    <my-cell type="number"
+             field="fourth"
+             on-blur="autoSaving">
+    </my-cell>
+</my-row>
 
-        <my-row field="statisticsProductiveHoursInsuranceOthers">
-            <my-cell size="1"
-                     text="E112">
-            </my-cell>
-            <my-cell size="3"
-                     text="Продуктивные часы в розницу Другие">
-            </my-cell>
-            <my-cell></my-cell>
-            <my-cell></my-cell>
-            <my-cell></my-cell>
-            <my-cell type="number"
-                     field="fourth"
-                     on-blur="autoSaving">
-            </my-cell>
-        </my-row>
+<my-row field="statisticsProductiveHoursInsuranceOthers">
+    <my-cell size="1"
+             text="E112">
+    </my-cell>
+    <my-cell size="3"
+             text="Продуктивные часы в розницу Другие">
+    </my-cell>
+    <my-cell></my-cell>
+    <my-cell></my-cell>
+    <my-cell></my-cell>
+    <my-cell type="number"
+             field="fourth"
+             on-blur="autoSaving">
+    </my-cell>
+</my-row>
 
-        <my-row field="statisticsProductiveHoursInsuranceTotal">
-            <my-cell size="1"
-                     text="E115">
-            </my-cell>
-            <my-cell size="3"
-                     text="Итого продуктивные часы по страховым">
-            </my-cell>
-            <my-cell></my-cell>
-            <my-cell></my-cell>
-            <my-cell></my-cell>
-            <my-cell type="number"
-                     field="fourth"
-                     my-disabled="true"
-                     value="{{model.fourth=
+<my-row field="statisticsProductiveHoursInsuranceTotal">
+    <my-cell size="1"
+             text="E115">
+    </my-cell>
+    <my-cell size="3"
+             text="Итого продуктивные часы по страховым">
+    </my-cell>
+    <my-cell></my-cell>
+    <my-cell></my-cell>
+    <my-cell></my-cell>
+    <my-cell type="number"
+             field="fourth"
+             my-disabled="true"
+             value="{{model.fourth=
                             baseModel.statisticsProductiveHoursInsuranceVolvo.fourth+
                             baseModel.statisticsProductiveHoursInsuranceOthers.fourth}}">
-            </my-cell>
-        </my-row>
+    </my-cell>
+</my-row>
 
-        <my-row field="statisticsProductiveHoursInnerTotal">
-            <my-cell size="1"
-                     text="E120">
-            </my-cell>
-            <my-cell size="3"
-                     text="Итого продуктивные внутренние часы">
-            </my-cell>
-            <my-cell></my-cell>
-            <my-cell></my-cell>
-            <my-cell></my-cell>
-            <my-cell type="number"
-                     field="fourth"
-                     on-blur="autoSaving">
-            </my-cell>
-        </my-row>
+<my-row field="statisticsProductiveHoursInnerTotal">
+    <my-cell size="1"
+             text="E120">
+    </my-cell>
+    <my-cell size="3"
+             text="Итого продуктивные внутренние часы">
+    </my-cell>
+    <my-cell></my-cell>
+    <my-cell></my-cell>
+    <my-cell></my-cell>
+    <my-cell type="number"
+             field="fourth"
+             on-blur="autoSaving">
+    </my-cell>
+</my-row>
 
-        <my-row field="statisticsProductiveHoursGuaranteeTotal">
-            <my-cell size="1"
-                     text="E125">
-            </my-cell>
-            <my-cell size="3"
-                     text="Итого продуктивные часы по гарантии">
-            </my-cell>
-            <my-cell></my-cell>
-            <my-cell></my-cell>
-            <my-cell></my-cell>
-            <my-cell type="number"
-                     field="fourth"
-                     on-blur="autoSaving">
-            </my-cell>
-        </my-row>
+<my-row field="statisticsProductiveHoursGuaranteeTotal">
+    <my-cell size="1"
+             text="E125">
+    </my-cell>
+    <my-cell size="3"
+             text="Итого продуктивные часы по гарантии">
+    </my-cell>
+    <my-cell></my-cell>
+    <my-cell></my-cell>
+    <my-cell></my-cell>
+    <my-cell type="number"
+             field="fourth"
+             on-blur="autoSaving">
+    </my-cell>
+</my-row>
 
-        <my-row field="statisticsProductiveHoursTotal">
-            <my-cell size="1"
-                     text="E130">
-            </my-cell>
-            <my-cell size="3"
-                     text="Итого продуктивные часы">
-            </my-cell>
-            <my-cell></my-cell>
-            <my-cell></my-cell>
-            <my-cell></my-cell>
-            <my-cell type="number"
-                     field="fourth"
-                     my-disabled="true"
-                     value="{{model.fourth=
+<my-row field="statisticsProductiveHoursTotal">
+    <my-cell size="1"
+             text="E130">
+    </my-cell>
+    <my-cell size="3"
+             text="Итого продуктивные часы">
+    </my-cell>
+    <my-cell></my-cell>
+    <my-cell></my-cell>
+    <my-cell></my-cell>
+    <my-cell type="number"
+             field="fourth"
+             my-disabled="true"
+             value="{{model.fourth=
                             baseModel.statisticsProductiveHoursAtRetailTotal.fourth+
                             baseModel.statisticsProductiveHoursInsuranceTotal.fourth+
                             baseModel.statisticsProductiveHoursInnerTotal.fourth+
                             baseModel.statisticsProductiveHoursGuaranteeTotal.fourth}}">
-            </my-cell>
-        </my-row>
+    </my-cell>
+</my-row>
 
-        <my-row field="statisticsCostPerHourAtRetail">
-            <my-cell size="1"
-                     text="E131">
-            </my-cell>
-            <my-cell size="3"
-                     text="Стоим-ть нормо-часа по прайс-листу - розница">
-            </my-cell>
-            <my-cell></my-cell>
-            <my-cell></my-cell>
-            <my-cell></my-cell>
-            <my-cell type="ruble"
-                     field="fourth"
-                     on-blur="autoSaving">
-            </my-cell>
-        </my-row>
+<my-row field="statisticsCostPerHourAtRetail">
+    <my-cell size="1"
+             text="E131">
+    </my-cell>
+    <my-cell size="3"
+             text="Стоим-ть нормо-часа по прайс-листу - розница">
+    </my-cell>
+    <my-cell></my-cell>
+    <my-cell></my-cell>
+    <my-cell></my-cell>
+    <my-cell type="ruble"
+             field="fourth"
+             on-blur="autoSaving">
+    </my-cell>
+</my-row>
 
-        <my-row field="statisticsCostPerHourInsurance">
-            <my-cell size="1"
-                     text="E132">
-            </my-cell>
-            <my-cell size="3"
-                     text="Стоим-ть нормо-часа по прайс-листу - страховые">
-            </my-cell>
-            <my-cell></my-cell>
-            <my-cell></my-cell>
-            <my-cell></my-cell>
-            <my-cell type="ruble"
-                     field="fourth"
-                     on-blur="autoSaving">
-            </my-cell>
-        </my-row>
+<my-row field="statisticsCostPerHourInsurance">
+    <my-cell size="1"
+             text="E132">
+    </my-cell>
+    <my-cell size="3"
+             text="Стоим-ть нормо-часа по прайс-листу - страховые">
+    </my-cell>
+    <my-cell></my-cell>
+    <my-cell></my-cell>
+    <my-cell></my-cell>
+    <my-cell type="ruble"
+             field="fourth"
+             on-blur="autoSaving">
+    </my-cell>
+</my-row>
 
-        <my-row field="statisticsCostPerHourInner">
-            <my-cell size="1"
-                     text="E133">
-            </my-cell>
-            <my-cell size="3"
-                     text="Стоим-ть нормо-часа по прайс-листу - внутренние">
-            </my-cell>
-            <my-cell></my-cell>
-            <my-cell></my-cell>
-            <my-cell></my-cell>
-            <my-cell type="ruble"
-                     field="fourth"
-                     on-blur="autoSaving">
-            </my-cell>
-        </my-row>
+<my-row field="statisticsCostPerHourInner">
+    <my-cell size="1"
+             text="E133">
+    </my-cell>
+    <my-cell size="3"
+             text="Стоим-ть нормо-часа по прайс-листу - внутренние">
+    </my-cell>
+    <my-cell></my-cell>
+    <my-cell></my-cell>
+    <my-cell></my-cell>
+    <my-cell type="ruble"
+             field="fourth"
+             on-blur="autoSaving">
+    </my-cell>
+</my-row>
 
-        <my-row field="statisticsCostPerHourGuarantee">
-            <my-cell size="1"
-                     text="E134">
-            </my-cell>
-            <my-cell size="3"
-                     text="Стоим-ть нормо-часа по прайс-листу - гарантийные">
-            </my-cell>
-            <my-cell></my-cell>
-            <my-cell></my-cell>
-            <my-cell></my-cell>
-            <my-cell type="ruble"
-                     field="fourth"
-                     on-blur="autoSaving">
-            </my-cell>
-        </my-row>
+<my-row field="statisticsCostPerHourGuarantee">
+    <my-cell size="1"
+             text="E134">
+    </my-cell>
+    <my-cell size="3"
+             text="Стоим-ть нормо-часа по прайс-листу - гарантийные">
+    </my-cell>
+    <my-cell></my-cell>
+    <my-cell></my-cell>
+    <my-cell></my-cell>
+    <my-cell type="ruble"
+             field="fourth"
+             on-blur="autoSaving">
+    </my-cell>
+</my-row>
 
-        <my-row field="statisticsQuantitySparesAtRetailVolvo">
-            <my-cell size="1"
-                     text="E135">
-            </my-cell>
-            <my-cell size="3"
-                     text="Кол-во проданных з/н - розница Volvo">
-            </my-cell>
-            <my-cell></my-cell>
-            <my-cell></my-cell>
-            <my-cell></my-cell>
-            <my-cell type="number"
-                     field="fourth"
-                     on-blur="autoSaving">
-            </my-cell>
-        </my-row>
+<my-row field="statisticsQuantitySparesAtRetailVolvo">
+    <my-cell size="1"
+             text="E135">
+    </my-cell>
+    <my-cell size="3"
+             text="Кол-во проданных з/н - розница Volvo">
+    </my-cell>
+    <my-cell></my-cell>
+    <my-cell></my-cell>
+    <my-cell></my-cell>
+    <my-cell type="number"
+             field="fourth"
+             on-blur="autoSaving">
+    </my-cell>
+</my-row>
 
-        <my-row field="statisticsQuantitySparesInsuranceVolvo">
-            <my-cell size="1"
-                     text="E136">
-            </my-cell>
-            <my-cell size="3"
-                     text="Кол-во проданных з/н - страховые Volvo">
-            </my-cell>
-            <my-cell></my-cell>
-            <my-cell></my-cell>
-            <my-cell></my-cell>
-            <my-cell type="number"
-                     field="fourth"
-                     on-blur="autoSaving">
-            </my-cell>
-        </my-row>
+<my-row field="statisticsQuantitySparesInsuranceVolvo">
+    <my-cell size="1"
+             text="E136">
+    </my-cell>
+    <my-cell size="3"
+             text="Кол-во проданных з/н - страховые Volvo">
+    </my-cell>
+    <my-cell></my-cell>
+    <my-cell></my-cell>
+    <my-cell></my-cell>
+    <my-cell type="number"
+             field="fourth"
+             on-blur="autoSaving">
+    </my-cell>
+</my-row>
 
-        <my-row field="statisticsQuantitySparesInnerVolvo">
-            <my-cell size="1"
-                     text="E137">
-            </my-cell>
-            <my-cell size="3"
-                     text="Кол-во проданных з/н - внутренние Volvo">
-            </my-cell>
-            <my-cell></my-cell>
-            <my-cell></my-cell>
-            <my-cell></my-cell>
-            <my-cell type="number"
-                     field="fourth"
-                     on-blur="autoSaving">
-            </my-cell>
-        </my-row>
+<my-row field="statisticsQuantitySparesInnerVolvo">
+    <my-cell size="1"
+             text="E137">
+    </my-cell>
+    <my-cell size="3"
+             text="Кол-во проданных з/н - внутренние Volvo">
+    </my-cell>
+    <my-cell></my-cell>
+    <my-cell></my-cell>
+    <my-cell></my-cell>
+    <my-cell type="number"
+             field="fourth"
+             on-blur="autoSaving">
+    </my-cell>
+</my-row>
 
-        <my-row field="statisticsQuantitySparesGuaranteeVolvo">
-            <my-cell size="1"
-                     text="E138">
-            </my-cell>
-            <my-cell size="3"
-                     text="Кол-во проданных з/н - гарантийные Volvo">
-            </my-cell>
-            <my-cell></my-cell>
-            <my-cell></my-cell>
-            <my-cell></my-cell>
-            <my-cell type="number"
-                     field="fourth"
-                     on-blur="autoSaving">
-            </my-cell>
-        </my-row>
+<my-row field="statisticsQuantitySparesGuaranteeVolvo">
+    <my-cell size="1"
+             text="E138">
+    </my-cell>
+    <my-cell size="3"
+             text="Кол-во проданных з/н - гарантийные Volvo">
+    </my-cell>
+    <my-cell></my-cell>
+    <my-cell></my-cell>
+    <my-cell></my-cell>
+    <my-cell type="number"
+             field="fourth"
+             on-blur="autoSaving">
+    </my-cell>
+</my-row>
 
-        <my-row field="statisticsQuantitySparesVolvo">
-            <my-cell size="1"
-                     text="E140">
-            </my-cell>
-            <my-cell size="3"
-                     text="Кол-во проданных з/н - Volvo">
-            </my-cell>
-            <my-cell></my-cell>
-            <my-cell></my-cell>
-            <my-cell></my-cell>
-            <my-cell type="number"
-                     field="fourth"
-                     my-disabled="true"
-                     value="{{model.fourth=
+<my-row field="statisticsQuantitySparesVolvo">
+    <my-cell size="1"
+             text="E140">
+    </my-cell>
+    <my-cell size="3"
+             text="Кол-во проданных з/н - Volvo">
+    </my-cell>
+    <my-cell></my-cell>
+    <my-cell></my-cell>
+    <my-cell></my-cell>
+    <my-cell type="number"
+             field="fourth"
+             my-disabled="true"
+             value="{{model.fourth=
                             baseModel.statisticsQuantitySparesAtRetailVolvo.fourth+
                             baseModel.statisticsQuantitySparesInsuranceVolvo.fourth+
                             baseModel.statisticsQuantitySparesInnerVolvo.fourth+
                             baseModel.statisticsQuantitySparesGuaranteeVolvo.fourth}}">
-            </my-cell>
-        </my-row>
+    </my-cell>
+</my-row>
 
 
+<my-row field="statisticsQuantitySparesAtRetailOthers">
+    <my-cell size="1"
+             text="E141">
+    </my-cell>
+    <my-cell size="3"
+             text="Кол-во проданных з/н - розница Другие">
+    </my-cell>
+    <my-cell></my-cell>
+    <my-cell></my-cell>
+    <my-cell></my-cell>
+    <my-cell type="number"
+             field="fourth"
+             on-blur="autoSaving">
+    </my-cell>
+</my-row>
 
-        <my-row field="statisticsQuantitySparesAtRetailOthers">
-            <my-cell size="1"
-                     text="E141">
-            </my-cell>
-            <my-cell size="3"
-                     text="Кол-во проданных з/н - розница Другие">
-            </my-cell>
-            <my-cell></my-cell>
-            <my-cell></my-cell>
-            <my-cell></my-cell>
-            <my-cell type="number"
-                     field="fourth"
-                     on-blur="autoSaving">
-            </my-cell>
-        </my-row>
+<my-row field="statisticsQuantitySparesInsuranceOthers">
+    <my-cell size="1"
+             text="E142">
+    </my-cell>
+    <my-cell size="3"
+             text="Кол-во проданных з/н - страховые Другие">
+    </my-cell>
+    <my-cell></my-cell>
+    <my-cell></my-cell>
+    <my-cell></my-cell>
+    <my-cell type="number"
+             field="fourth"
+             on-blur="autoSaving">
+    </my-cell>
+</my-row>
 
-        <my-row field="statisticsQuantitySparesInsuranceOthers">
-            <my-cell size="1"
-                     text="E142">
-            </my-cell>
-            <my-cell size="3"
-                     text="Кол-во проданных з/н - страховые Другие">
-            </my-cell>
-            <my-cell></my-cell>
-            <my-cell></my-cell>
-            <my-cell></my-cell>
-            <my-cell type="number"
-                     field="fourth"
-                     on-blur="autoSaving">
-            </my-cell>
-        </my-row>
+<my-row field="statisticsQuantitySparesInnerOthers">
+    <my-cell size="1"
+             text="E143">
+    </my-cell>
+    <my-cell size="3"
+             text="Кол-во проданных з/н - внутренние Другие">
+    </my-cell>
+    <my-cell></my-cell>
+    <my-cell></my-cell>
+    <my-cell></my-cell>
+    <my-cell type="number"
+             field="fourth"
+             on-blur="autoSaving">
+    </my-cell>
+</my-row>
 
-        <my-row field="statisticsQuantitySparesInnerOthers">
-            <my-cell size="1"
-                     text="E143">
-            </my-cell>
-            <my-cell size="3"
-                     text="Кол-во проданных з/н - внутренние Другие">
-            </my-cell>
-            <my-cell></my-cell>
-            <my-cell></my-cell>
-            <my-cell></my-cell>
-            <my-cell type="number"
-                     field="fourth"
-                     on-blur="autoSaving">
-            </my-cell>
-        </my-row>
+<my-row field="statisticsQuantitySparesGuaranteeOthers">
+    <my-cell size="1"
+             text="E144">
+    </my-cell>
+    <my-cell size="3"
+             text="Кол-во проданных з/н - гарантийные Другие">
+    </my-cell>
+    <my-cell></my-cell>
+    <my-cell></my-cell>
+    <my-cell></my-cell>
+    <my-cell type="number"
+             field="fourth"
+             on-blur="autoSaving">
+    </my-cell>
+</my-row>
 
-        <my-row field="statisticsQuantitySparesGuaranteeOthers">
-            <my-cell size="1"
-                     text="E144">
-            </my-cell>
-            <my-cell size="3"
-                     text="Кол-во проданных з/н - гарантийные Другие">
-            </my-cell>
-            <my-cell></my-cell>
-            <my-cell></my-cell>
-            <my-cell></my-cell>
-            <my-cell type="number"
-                     field="fourth"
-                     on-blur="autoSaving">
-            </my-cell>
-        </my-row>
-
-        <my-row field="statisticsQuantitySparesOthers">
-            <my-cell size="1"
-                     text="E145">
-            </my-cell>
-            <my-cell size="3"
-                     text="Кол-во проданных з/н - Другие">
-            </my-cell>
-            <my-cell></my-cell>
-            <my-cell></my-cell>
-            <my-cell></my-cell>
-            <my-cell type="number"
-                     field="fourth"
-                     my-disabled="true"
-                     value="{{model.fourth=
+<my-row field="statisticsQuantitySparesOthers">
+    <my-cell size="1"
+             text="E145">
+    </my-cell>
+    <my-cell size="3"
+             text="Кол-во проданных з/н - Другие">
+    </my-cell>
+    <my-cell></my-cell>
+    <my-cell></my-cell>
+    <my-cell></my-cell>
+    <my-cell type="number"
+             field="fourth"
+             my-disabled="true"
+             value="{{model.fourth=
                             baseModel.statisticsQuantitySparesAtRetailOthers.fourth+
                             baseModel.statisticsQuantitySparesInsuranceOthers.fourth+
                             baseModel.statisticsQuantitySparesInnerOthers.fourth+
                             baseModel.statisticsQuantitySparesGuaranteeOthers.fourth}}">
-            </my-cell>
-        </my-row>
+    </my-cell>
+</my-row>
 
-        <my-row field="statisticsQuantitySparesOthersTotal">
-            <my-cell size="1"
-                     text="E150">
-            </my-cell>
-            <my-cell size="3"
-                     text="Итого кол-во проданных з/н">
-            </my-cell>
-            <my-cell></my-cell>
-            <my-cell></my-cell>
-            <my-cell></my-cell>
-            <my-cell type="number"
-                     field="fourth"
-                     my-disabled="true"
-                     value="{{model.fourth=
+<my-row field="statisticsQuantitySparesOthersTotal">
+    <my-cell size="1"
+             text="E150">
+    </my-cell>
+    <my-cell size="3"
+             text="Итого кол-во проданных з/н">
+    </my-cell>
+    <my-cell></my-cell>
+    <my-cell></my-cell>
+    <my-cell></my-cell>
+    <my-cell type="number"
+             field="fourth"
+             my-disabled="true"
+             value="{{model.fourth=
                             baseModel.statisticsQuantitySparesVolvo.fourth+
                             baseModel.statisticsQuantitySparesOthers.fourth}}">
-            </my-cell>
-        </my-row>
+    </my-cell>
+</my-row>
 
-        <my-row field="statisticsWorkingPostQuantity">
-            <my-cell size="1"
-                     text="E151">
-            </my-cell>
-            <my-cell size="3"
-                     text="Кол-во  рабочих постов">
-            </my-cell>
-            <my-cell></my-cell>
-            <my-cell></my-cell>
-            <my-cell></my-cell>
-            <my-cell type="number"
-                     field="fourth"
-                     on-blur="autoSaving">
-            </my-cell>
-        </my-row>
+<my-row field="statisticsWorkingPostQuantity">
+    <my-cell size="1"
+             text="E151">
+    </my-cell>
+    <my-cell size="3"
+             text="Кол-во  рабочих постов">
+    </my-cell>
+    <my-cell></my-cell>
+    <my-cell></my-cell>
+    <my-cell></my-cell>
+    <my-cell type="number"
+             field="fourth"
+             on-blur="autoSaving">
+    </my-cell>
+</my-row>
 
-        <my-row field="statisticsColoredCameraQuantity">
-            <my-cell size="1"
-                     text="E152">
-            </my-cell>
-            <my-cell size="3"
-                     text="Кол-во покрасочных камер">
-            </my-cell>
-            <my-cell></my-cell>
-            <my-cell></my-cell>
-            <my-cell></my-cell>
-            <my-cell type="number"
-                     field="fourth"
-                     on-blur="autoSaving">
-            </my-cell>
-        </my-row>
+<my-row field="statisticsColoredCameraQuantity">
+    <my-cell size="1"
+             text="E152">
+    </my-cell>
+    <my-cell size="3"
+             text="Кол-во покрасочных камер">
+    </my-cell>
+    <my-cell></my-cell>
+    <my-cell></my-cell>
+    <my-cell></my-cell>
+    <my-cell type="number"
+             field="fourth"
+             on-blur="autoSaving">
+    </my-cell>
+</my-row>
 
-        <my-row field="statisticsHoursOfShopService">
-            <my-cell size="1"
-                     text="E153">
-            </my-cell>
-            <my-cell size="3"
-                     text="Время работы цеха">
-            </my-cell>
-            <my-cell></my-cell>
-            <my-cell></my-cell>
-            <my-cell></my-cell>
-            <my-cell type="number"
-                     field="fourth"
-                     on-blur="autoSaving">
-            </my-cell>
-        </my-row>
+<my-row field="statisticsHoursOfShopService">
+    <my-cell size="1"
+             text="E153">
+    </my-cell>
+    <my-cell size="3"
+             text="Время работы цеха">
+    </my-cell>
+    <my-cell></my-cell>
+    <my-cell></my-cell>
+    <my-cell></my-cell>
+    <my-cell type="number"
+             field="fourth"
+             on-blur="autoSaving">
+    </my-cell>
+</my-row>
 
-    </my-body>
+</my-body>
 </my-table>
+</div>
 
 
 
