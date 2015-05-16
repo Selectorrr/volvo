@@ -1,0 +1,402 @@
+<div class="content">
+<h2>Баланс</h2>
+
+<my-table model="model" field="tabBalance">
+    <my-head>
+        <my-row>
+            <my-cell size="4"
+                     colspan="2"
+                     text="Внеоборотные активы"></my-cell>
+            <my-cell text="Кол-во"></my-cell>
+            <my-cell text="Сумма"></my-cell>
+        </my-row>
+    </my-head>
+    <my-body>
+        <my-row field="nonCurrentAssetsAreaBuildingsBelonging">
+            <my-cell size="1"
+                     text="L1">
+            </my-cell>
+            <my-cell size="3"
+                     text="Земля и здания в собст-ти">
+            </my-cell>
+            <my-cell></my-cell>
+            <my-cell type="ruble"
+                     field="second"
+                     on-blur="autoSaving">
+            </my-cell>
+        </my-row>
+
+        <my-row field="nonCurrentAssetsAreaBuildingsLeasingRent">
+            <my-cell size="1"
+                     text="L2">
+            </my-cell>
+            <my-cell size="3"
+                     text="Земля и здания в лизинг/аренду">
+            </my-cell>
+            <my-cell></my-cell>
+            <my-cell type="ruble"
+                     field="second"
+                     on-blur="autoSaving">
+            </my-cell>
+        </my-row>
+
+        <my-row field="nonCurrentAssetsAreaBuildingsImprovement">
+            <my-cell size="1"
+                     text="L10">
+            </my-cell>
+            <my-cell size="3"
+                     text="Земля и здания - улучшения">
+            </my-cell>
+            <my-cell></my-cell>
+            <my-cell type="ruble"
+                     field="second"
+                     on-blur="autoSaving">
+            </my-cell>
+        </my-row>
+
+        <my-row field="nonCurrentAssetsEquipmentTooling">
+            <my-cell size="1"
+                     text="L3">
+            </my-cell>
+            <my-cell size="3"
+                     text="Оборудование и инструменты">
+            </my-cell>
+            <my-cell></my-cell>
+            <my-cell type="ruble"
+                     field="second"
+                     on-blur="autoSaving">
+            </my-cell>
+        </my-row>
+
+        <my-row field="nonCurrentAssetsFurnitureAndOthers">
+            <my-cell size="1"
+                     text="L4">
+            </my-cell>
+            <my-cell size="3"
+                     text="Мебель и др. принадлежности">
+            </my-cell>
+            <my-cell></my-cell>
+            <my-cell type="ruble"
+                     field="second"
+                     on-blur="autoSaving">
+            </my-cell>
+        </my-row>
+
+        <my-row field="nonCurrentAssetsComputers">
+            <my-cell size="1"
+                     text="L5">
+            </my-cell>
+            <my-cell size="3"
+                     text="Компьютерное оборудование">
+            </my-cell>
+            <my-cell></my-cell>
+            <my-cell type="ruble"
+                     field="second"
+                     on-blur="autoSaving">
+            </my-cell>
+        </my-row>
+
+        <my-row field="nonCurrentAssetsCompanyCars">
+            <my-cell size="1"
+                     text="L6">
+            </my-cell>
+            <my-cell size="3"
+                     text="А/м компании">
+            </my-cell>
+            <my-cell type="number"
+                     field="first"
+                     on-blur="autoSaving">
+            </my-cell>
+            <my-cell type="ruble"
+                     field="second"
+                     on-blur="autoSaving">
+            </my-cell>
+        </my-row>
+
+        <my-row field="nonCurrentAssetsGoodwillAndOtherAssets">
+            <my-cell size="1"
+                     text="L7">
+            </my-cell>
+            <my-cell size="3"
+                     text="Гудвил и др. нематер. Активы">
+            </my-cell>
+            <my-cell></my-cell>
+            <my-cell type="ruble"
+                     field="second"
+                     on-blur="autoSaving">
+            </my-cell>
+        </my-row>
+
+        <my-row field="nonCurrentAssetsOtherMainTools">
+            <my-cell size="1"
+                     text="L8">
+            </my-cell>
+            <my-cell size="3"
+                     text="Другие основные средства 1">
+            </my-cell>
+            <my-cell></my-cell>
+            <my-cell type="ruble"
+                     field="second"
+                     on-blur="autoSaving">
+            </my-cell>
+        </my-row>
+    </my-body>
+
+    <my-foot>
+        <my-row field="nonCurrentAssetsTotalMainTools">
+            <my-cell size="1"
+                     text="L20">
+            </my-cell>
+            <my-cell size="3"
+                     text="Итого основные средства">
+            </my-cell>
+            <my-cell></my-cell>
+            <my-cell type="ruble"
+                     field="second"
+                     my-disabled="true"
+                     value="{{model.second=
+                                baseModel.nonCurrentAssetsAreaBuildingsBelonging.second+
+                                baseModel.nonCurrentAssetsAreaBuildingsLeasingRent.second+
+                                baseModel.nonCurrentAssetsAreaBuildingsImprovement.second+
+                                baseModel.nonCurrentAssetsEquipmentTooling.second+
+                                baseModel.nonCurrentAssetsFurnitureAndOthers.second+
+                                baseModel.nonCurrentAssetsComputers.second+
+                                baseModel.nonCurrentAssetsCompanyCars.second+
+                                baseModel.nonCurrentAssetsGoodwillAndOtherAssets.second+
+                                baseModel.nonCurrentAssetsOtherMainTools.second}}">
+            </my-cell>
+        </my-row>
+    </my-foot>
+</my-table>
+
+<my-table model="model" field="tabBalance">
+    <my-head>
+        <my-row>
+            <my-cell size="4"
+                     colspan="2"
+                     text="Оборотные активы"></my-cell>
+            <my-cell></my-cell>
+            <my-cell></my-cell>
+        </my-row>
+    </my-head>
+    <my-body>
+        <my-row field="negotiableAssetStorageNewCarsVolvoBoughtBack">
+            <my-cell size="1"
+                     text="L21">
+            </my-cell>
+            <my-cell size="3"
+                     text="Склад новых а/м - Volvo (выкупленные)">
+            </my-cell>
+            <my-cell type="number"
+                     field="first"
+                     on-blur="autoSaving">
+            </my-cell>
+            <my-cell type="ruble"
+                     field="second"
+                     on-blur="autoSaving">
+            </my-cell>
+        </my-row>
+
+        <my-row field="negotiableAssetStorageNewCarsConsignment">
+            <my-cell size="1"
+                     text="L22">
+            </my-cell>
+            <my-cell size="3"
+                     text="Склад новых а/м - Volvo (консигнация)">
+            </my-cell>
+            <my-cell type="number"
+                     field="first"
+                     on-blur="autoSaving">
+            </my-cell>
+            <my-cell type="ruble"
+                     field="second"
+                     on-blur="autoSaving">
+            </my-cell>
+        </my-row>
+
+        <my-row field="negotiableAssetTotalStorageNewCars">
+            <my-cell size="1"
+                     text="L25">
+            </my-cell>
+            <my-cell size="3"
+                     text="Итого склад новых а/м">
+            </my-cell>
+            <my-cell type="number"
+                     field="first"
+                     my-disabled="true"
+                     value="{{model.first=
+                                baseModel.negotiableAssetStorageNewCarsVolvoBoughtBack.first+
+                                baseModel.negotiableAssetStorageNewCarsConsignment.first}}">
+            </my-cell>
+            <my-cell type="ruble"
+                     field="second"
+                     my-disabled="true"
+                     value="{{model.second=
+                                baseModel.negotiableAssetStorageNewCarsVolvoBoughtBack.second+
+                                baseModel.negotiableAssetStorageNewCarsConsignment.second}}">
+            </my-cell>
+        </my-row>
+
+        <my-row field="negotiableAssetStorageSecondHandCarsVolvo">
+            <my-cell size="1"
+                     text="L27">
+            </my-cell>
+            <my-cell size="3"
+                     text="Склад подержанных а/м - Volvo">
+            </my-cell>
+            <my-cell type="number"
+                     field="first"
+                     on-blur="autoSaving">
+            </my-cell>
+            <my-cell type="ruble"
+                     field="second"
+                     on-blur="autoSaving">
+            </my-cell>
+        </my-row>
+
+        <my-row field="negotiableAssetStorageSecondHandCarsOthers">
+            <my-cell size="1"
+                     text="L28">
+            </my-cell>
+            <my-cell size="3"
+                     text="Склад подержанных а/м - Другие">
+            </my-cell>
+            <my-cell type="number"
+                     field="first"
+                     on-blur="autoSaving">
+            </my-cell>
+            <my-cell type="ruble"
+                     field="second"
+                     on-blur="autoSaving">
+            </my-cell>
+        </my-row>
+
+        <my-row field="negotiableAssetTotalStorageSecondHandCars">
+            <my-cell size="1"
+                     text="L29">
+            </my-cell>
+            <my-cell size="3"
+                     text="Итого склад подержанных а/м">
+            </my-cell>
+            <my-cell type="number"
+                     field="first"
+                     my-disabled="true"
+                     value="{{model.first=
+                                baseModel.negotiableAssetStorageSecondHandCarsVolvo.first+
+                                baseModel.negotiableAssetStorageSecondHandCarsOthers.first}}">
+            </my-cell>
+            <my-cell type="ruble"
+                     field="second"
+                     my-disabled="true"
+                     value="{{model.second=
+                                baseModel.negotiableAssetStorageSecondHandCarsVolvo.second+
+                                baseModel.negotiableAssetStorageSecondHandCarsOthers.second}}">
+            </my-cell>
+        </my-row>
+
+        <my-row field="negotiableAssetStorageDemoCarsVolvo">
+            <my-cell size="1"
+                     text="L30">
+            </my-cell>
+            <my-cell size="3"
+                     text="Склад демо а/м - Volvo">
+            </my-cell>
+            <my-cell type="number"
+                     field="first"
+                     on-blur="autoSaving">
+            </my-cell>
+            <my-cell type="ruble"
+                     field="second"
+                     on-blur="autoSaving">
+            </my-cell>
+        </my-row>
+
+        <my-row field="negotiableAssetStorageAlternateCars">
+            <my-cell size="1"
+                     text="L33">
+            </my-cell>
+            <my-cell size="3"
+                     text="Склад подменных а/м">
+            </my-cell>
+            <my-cell type="number"
+                     field="first"
+                     on-blur="autoSaving">
+            </my-cell>
+            <my-cell type="ruble"
+                     field="second"
+                     on-blur="autoSaving">
+            </my-cell>
+        </my-row>
+
+        <my-row field="negotiableAssetStorageRentCars">
+            <my-cell size="1"
+                     text="L34">
+            </my-cell>
+            <my-cell size="3"
+                     text="Склад а/м для проката">
+            </my-cell>
+            <my-cell type="number"
+                     field="first"
+                     on-blur="autoSaving">
+            </my-cell>
+            <my-cell type="ruble"
+                     field="second"
+                     on-blur="autoSaving">
+            </my-cell>
+        </my-row>
+
+        <my-row field="negotiableAssetStorageSparesVolvo">
+            <my-cell size="1"
+                     text="L35">
+            </my-cell>
+            <my-cell size="3"
+                     text="Склад запчастей - Volvo">
+            </my-cell>
+            <my-cell></my-cell>
+            <my-cell type="ruble"
+                     field="second"
+                     on-blur="autoSaving">
+            </my-cell>
+        </my-row>
+
+        <my-row field="negotiableAssetStorageOtherGoods">
+            <my-cell size="1"
+                     text="L41">
+            </my-cell>
+            <my-cell size="3"
+                     text="Склад др. товары 1">
+            </my-cell>
+            <my-cell></my-cell>
+            <my-cell type="ruble"
+                     field="second"
+                     on-blur="autoSaving">
+            </my-cell>
+        </my-row>
+
+        <my-row field="negotiableAssetTotalInStorage">
+            <my-cell size="1"
+                     text="L50">
+            </my-cell>
+            <my-cell size="3"
+                     text="Итого по складам">
+            </my-cell>
+            <my-cell></my-cell>
+            <my-cell type="ruble"
+                     field="second"
+                     my-disabled="true"
+                     value="{{model.second=
+                                baseModel.negotiableAssetTotalStorageNewCars.second+
+                                baseModel.negotiableAssetTotalStorageSecondHandCars.second+
+                                baseModel.negotiableAssetStorageDemoCarsVolvo.second+
+                                baseModel.negotiableAssetStorageAlternateCars.second+
+                                baseModel.negotiableAssetStorageRentCars.second+
+                                baseModel.negotiableAssetStorageSparesVolvo.second+
+                                baseModel.negotiableAssetStorageOtherGoods.second}}">
+            </my-cell>
+        </my-row>
+
+
+
+    </my-body>
+</my-table>
+</div>
