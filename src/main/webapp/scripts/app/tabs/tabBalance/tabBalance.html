@@ -894,8 +894,6 @@
         </my-row>
 
 
-
-
         <my-row field="longTermLiabilitiesEncumbrance">
             <my-cell size="1"
                      text="L141">
@@ -975,6 +973,347 @@
                                 baseModel.longTermLiabilitiesTotalCorporateLoans.second+
                                 baseModel.longTermLiabilitiesTotalLongLoan.second+
                                 baseModel.longTermLiabilitiesTotalOtherLongTermLiabilities.second}}">
+            </my-cell>
+        </my-row>
+
+    </my-foot>
+</my-table>
+
+<my-table model="model" field="tabBalance">
+<my-head>
+    <my-row>
+        <my-cell size="4"
+                 colspan="2"
+                 text="Краткосрочные обязательства"></my-cell>
+        <my-cell text="Лимит"></my-cell>
+        <my-cell text="Сумма"></my-cell>
+    </my-row>
+</my-head>
+<my-body>
+<my-row field="shortTermLiabilitiesMerchandiseCreditors">
+    <my-cell size="1"
+             text="L161">
+    </my-cell>
+    <my-cell size="3"
+             text="Задолженность поставщикам">
+    </my-cell>
+    <my-cell></my-cell>
+    <my-cell type="ruble"
+             field="second"
+             on-blur="autoSaving">
+    </my-cell>
+</my-row>
+
+<my-row field="shortTermLiabilitiesCarsPrepayment">
+    <my-cell size="1"
+             text="L162">
+    </my-cell>
+    <my-cell size="3"
+             text="Предоплата по а/м">
+    </my-cell>
+    <my-cell></my-cell>
+    <my-cell type="ruble"
+             field="second"
+             on-blur="autoSaving">
+    </my-cell>
+</my-row>
+
+<my-row field="shortTermLiabilitiesVatDebts">
+    <my-cell size="1"
+             text="L163">
+    </my-cell>
+    <my-cell size="3"
+             text="Задолженность по НДС">
+    </my-cell>
+    <my-cell></my-cell>
+    <my-cell type="ruble"
+             field="second"
+             on-blur="autoSaving">
+    </my-cell>
+</my-row>
+
+<my-row field="shortTermLiabilitiesTaxDebts">
+    <my-cell size="1"
+             text="L164">
+    </my-cell>
+    <my-cell size="3"
+             text="Задолженность по другим налогам">
+    </my-cell>
+    <my-cell></my-cell>
+    <my-cell type="ruble"
+             field="second"
+             on-blur="autoSaving">
+    </my-cell>
+</my-row>
+
+<my-row field="shortTermLiabilitiesOtherDebts">
+    <my-cell size="1"
+             text="L165">
+    </my-cell>
+    <my-cell size="3"
+             text="Другая задолженность">
+    </my-cell>
+    <my-cell></my-cell>
+    <my-cell type="ruble"
+             field="second"
+             on-blur="autoSaving">
+    </my-cell>
+</my-row>
+
+<my-row field="shortTermLiabilitiesTotalDebts">
+    <my-cell size="1"
+             text="L170">
+    </my-cell>
+    <my-cell size="3"
+             text="Итого задолженность">
+    </my-cell>
+    <my-cell></my-cell>
+    <my-cell type="ruble"
+             field="second"
+             my-disabled="true"
+             value="{{model.second=
+                                baseModel.shortTermLiabilitiesVatDebts.second+
+                                baseModel.shortTermLiabilitiesTaxDebts.second+
+                                baseModel.shortTermLiabilitiesOtherDebts.second}}">
+    </my-cell>
+</my-row>
+
+<my-row field="shortTermLiabilitiesStaffDebts">
+    <my-cell size="1"
+             text="L171">
+    </my-cell>
+    <my-cell size="3"
+             text="Задолженность перед персоналом">
+    </my-cell>
+    <my-cell></my-cell>
+    <my-cell type="ruble"
+             field="second"
+             on-blur="autoSaving">
+    </my-cell>
+</my-row>
+
+<my-row field="shortTermLiabilitiesGoodDebts">
+    <my-cell size="1"
+             text="L172">
+    </my-cell>
+    <my-cell size="3"
+             text="Внутригрупповая задолженность по товарам">
+    </my-cell>
+    <my-cell></my-cell>
+    <my-cell type="ruble"
+             field="second"
+             on-blur="autoSaving">
+    </my-cell>
+</my-row>
+
+<my-row field="shortTermLiabilitiesShortLoan">
+    <my-cell size="1"
+             text="L173">
+    </my-cell>
+    <my-cell size="3"
+             text="Краткосрочные займы">
+    </my-cell>
+    <my-cell></my-cell>
+    <my-cell type="ruble"
+             field="second"
+             on-blur="autoSaving">
+    </my-cell>
+</my-row>
+
+<my-row field="shortTermLiabilitiesAccountsPayableNewCarsStock">
+    <my-cell size="1"
+             text="L174">
+    </my-cell>
+    <my-cell size="3"
+             text="Кредиторская задолженность - склад НА">
+    </my-cell>
+    <my-cell></my-cell>
+    <my-cell type="ruble"
+             field="second"
+             on-blur="autoSaving">
+    </my-cell>
+</my-row>
+
+<my-row field="shortTermLiabilitiesAccountsPayableSecondHandCarsStock">
+    <my-cell size="1"
+             text="L175">
+    </my-cell>
+    <my-cell size="3"
+             text="Кредиторская задолженность - склад ПА">
+    </my-cell>
+    <my-cell></my-cell>
+    <my-cell type="ruble"
+             field="second"
+             on-blur="autoSaving">
+    </my-cell>
+</my-row>
+
+<my-row field="shortTermLiabilitiesAccountsPayableDemoCars">
+    <my-cell size="1"
+             text="L176">
+    </my-cell>
+    <my-cell size="3"
+             text="Кредиторская задолженность - склад Демо и Подменные а/м">
+    </my-cell>
+    <my-cell></my-cell>
+    <my-cell type="ruble"
+             field="second"
+             on-blur="autoSaving">
+    </my-cell>
+</my-row>
+
+<my-row field="shortTermLiabilitiesAccountsPayableRentCars">
+    <my-cell size="1"
+             text="L177">
+    </my-cell>
+    <my-cell size="3"
+             text="Кредиторская задолженность - склад а/м для проката">
+    </my-cell>
+    <my-cell></my-cell>
+    <my-cell type="ruble"
+             field="second"
+             on-blur="autoSaving">
+    </my-cell>
+</my-row>
+
+<my-row field="shortTermLiabilitiesBankOverdraftAndBalance">
+    <my-cell size="1"
+             text="L178">
+    </my-cell>
+    <my-cell size="3"
+             text="Банковский овердрафт и Баланс">
+    </my-cell>
+    <my-cell type="ruble"
+             field="first"
+             on-blur="autoSaving">
+    </my-cell>
+    <my-cell type="ruble"
+             field="second"
+             on-blur="autoSaving">
+    </my-cell>
+</my-row>
+
+<my-row field="shortTermLiabilitiesPrepaymentFromTheManufacturer">
+    <my-cell size="1"
+             text="L179">
+    </my-cell>
+    <my-cell size="3"
+             text="Предоплата от производителя">
+    </my-cell>
+    <my-cell></my-cell>
+    <my-cell type="ruble"
+             field="second"
+             on-blur="autoSaving">
+    </my-cell>
+</my-row>
+
+<my-row field="shortTermLiabilitiesShareholderAccount">
+    <my-cell size="1"
+             text="L180">
+    </my-cell>
+    <my-cell size="3"
+             text="Счет акционера">
+    </my-cell>
+    <my-cell></my-cell>
+    <my-cell type="ruble"
+             field="second"
+             on-blur="autoSaving">
+    </my-cell>
+</my-row>
+
+<my-row field="shortTermLiabilitiesOtherCurrentLiability">
+    <my-cell size="1"
+             text="L181">
+    </my-cell>
+    <my-cell size="3"
+             text="Другие текущие обязательства">
+    </my-cell>
+    <my-cell></my-cell>
+    <my-cell type="ruble"
+             field="second"
+             on-blur="autoSaving">
+    </my-cell>
+</my-row>
+
+<my-row field="shortTermLiabilitiesArrearsInThePaymentOfDividends">
+    <my-cell size="1"
+             text="L182">
+    </my-cell>
+    <my-cell size="3"
+             text="Задолженность по выплате дивидендов">
+    </my-cell>
+    <my-cell></my-cell>
+    <my-cell type="ruble"
+             field="second"
+             on-blur="autoSaving">
+    </my-cell>
+</my-row>
+
+</my-body>
+
+<my-foot>
+    <my-row field="shortTermLiabilitiesTotalOtherCurrentLiability">
+        <my-cell size="1"
+                 text="L185">
+        </my-cell>
+        <my-cell size="3"
+                 text="Итого другие текущие обязательства">
+        </my-cell>
+        <my-cell></my-cell>
+        <my-cell type="ruble"
+                 field="second"
+                 my-disabled="true"
+                 value="{{model.second=
+                                baseModel.shortTermLiabilitiesStaffDebts.second+
+                                baseModel.shortTermLiabilitiesGoodDebts.second+
+                                baseModel.shortTermLiabilitiesShortLoan.second+
+                                baseModel.shortTermLiabilitiesAccountsPayableNewCarsStock.second+
+                                baseModel.shortTermLiabilitiesAccountsPayableSecondHandCarsStock.second+
+                                baseModel.shortTermLiabilitiesAccountsPayableDemoCars.second+
+                                baseModel.shortTermLiabilitiesAccountsPayableRentCars.second+
+                                baseModel.shortTermLiabilitiesBankOverdraftAndBalance.second+
+                                baseModel.shortTermLiabilitiesPrepaymentFromTheManufacturer.second+
+                                baseModel.shortTermLiabilitiesShareholderAccount.second+
+                                baseModel.shortTermLiabilitiesOtherCurrentLiability.second+
+                                baseModel.shortTermLiabilitiesArrearsInThePaymentOfDividends.second}}">
+        </my-cell>
+    </my-row>
+
+
+    <!--TODO: value = ?-->
+    <my-row field="shortTermLiabilitiesTotalCurrentLiability">
+        <my-cell size="1"
+                 text="L190">
+        </my-cell>
+        <my-cell size="3"
+                 text="Итого текущие обязательства">
+        </my-cell>
+        <my-cell></my-cell>
+        <my-cell type="ruble"
+                 field="second"
+                 my-disabled="true"
+                 value="{{model.second=0}}">
+        </my-cell>
+    </my-row>
+</my-foot>
+</my-table>
+
+<my-table model="model" field="tabBalance">
+    <my-foot>
+
+        <!--TODO: value = ?-->
+        <my-row field="shortTermLiabilitiesPassiveBalance">
+            <my-cell size="1"
+                     text="L200">
+            </my-cell>
+            <my-cell size="3"
+                     text="Итого пассив баланса">
+            </my-cell>
+            <my-cell></my-cell>
+            <my-cell type="ruble"
+                     field="second"
+                     my-disabled="true"
+                     value="{{model.second=0}}">
             </my-cell>
         </my-row>
 
