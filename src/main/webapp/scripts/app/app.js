@@ -44,6 +44,11 @@ angular.module('volvoApp', ['LocalStorageModule', 'tmh.dynamicLocale',
                 $state.go($rootScope.previousStateName, $rootScope.previousStateParams);
             }
         };
+
+        $rootScope.$on('event:auth-loginRequired', function () {
+            Auth.logout();
+            $state.go('login');
+        });
     })
 
     .factory('authInterceptor', function ($rootScope, $q, $location, localStorageService) {
@@ -60,6 +65,18 @@ angular.module('volvoApp', ['LocalStorageModule', 'tmh.dynamicLocale',
                 return config;
             }
         };
+    })
+
+    .factory('authHttpResponseInterceptor', function ($q, $rootScope) {
+        return {
+            responseError: function (rejection) {
+                if (rejection.status === 401 && rejection.config && rejection.config.url &&
+                    rejection.config.url.lastIndexOf('api/account', 0) !== 0) {
+                    $rootScope.$broadcast('event:auth-loginRequired', rejection);
+                }
+                return $q.reject(rejection);
+            }
+        }
     })
 
     .config(function ($stateProvider, $urlRouterProvider, $httpProvider, $locationProvider, $translateProvider, tmhDynamicLocaleProvider, httpRequestInterceptorCacheBusterProvider) {
@@ -91,6 +108,7 @@ angular.module('volvoApp', ['LocalStorageModule', 'tmh.dynamicLocale',
         });
 
         $httpProvider.interceptors.push('authInterceptor');
+        $httpProvider.interceptors.push('authHttpResponseInterceptor');
 
         // Initialize angular-translate
         $translateProvider.useLoader('$translatePartialLoader', {
