@@ -11,18 +11,24 @@ angular.module('volvoApp')
                 model: '=',
                 field: '@'
             },
-            controller: ['$scope', function ($scope) {
+            controller: function ($scope) {
                 $scope.model[$scope.field] = $scope.model[$scope.field] || {};
+                var cells = [];
                 this.getTableModel = function () {
                     return $scope.model[$scope.field];
-                }
-                this.getParentModel = function () {
-                    return $scope.model;
-                }
+                };
+                this.addCell = function (refreshFunc) {
+                    cells.push(refreshFunc);
+                };
                 this.getField = function () {
                     return $scope.field;
-                }
-            }],
+                };
+                $scope.$watch('model', function (value) {
+                    for (var i = 0; i < cells.length; i++) {
+                        cells[i](value);
+                    }
+                })
+            },
             template: '<div class="table-responsive">' +
             '<table class="table table-hover table-bordered table-condensed" ng-transclude>' +
             '</table>' +
@@ -61,8 +67,7 @@ angular.module('volvoApp')
             require: '^myTable',
             scope: {
                 field: '@'
-            }
-            ,
+            },
             controller: ['$scope', function ($scope) {
                 this.getRowName = function () {
                     return $scope.field;
@@ -97,9 +102,8 @@ angular.module('volvoApp')
                     var myInput =
                         '<my-input type="number" my-disabled="myDisabled" addon="' +
                         (tAttrs.type === 'ruble' ? 'glyphicon-ruble' : '') + '" model="model.' + tAttrs.field +
-                        '" value="' + tAttrs.value + '" on-blur="onBlur"' + ' model-name = modelName' +
-                            ' parent-model=parentModel' +
-                            (tAttrs.decimals ? 'decimals=' + tAttrs.decimals : '') + '>' +
+                        '" value="' + tAttrs.value + '" on-blur="onBlur"' +
+                        (tAttrs.decimals ? 'decimals=' + tAttrs.decimals : '') + '>' +
                         '</my-input>';
                     tElement.append(myInput);
                 }
@@ -110,13 +114,15 @@ angular.module('volvoApp')
                     post: function postLink(scope, tElement, tAttrs, controllers) {
                         var tableCtrl = controllers[0];
                         var rowCtrl = controllers[1];
+                        tableCtrl.addCell(function (newModel) {
+                            scope.model[tAttrs.field] = tableCtrl.getField() && rowCtrl.getRowName() && tAttrs.field && newModel[tableCtrl.getField()] ? newModel[tableCtrl.getField()][rowCtrl.getRowName()][tAttrs.field] : undefined;
+                            console.log(newModel);
+                        });
                         if (!tableCtrl.getTableModel()[rowCtrl.getRowName()]) {
                             tableCtrl.getTableModel()[rowCtrl.getRowName()] = {};
                         }
                         scope.model = tableCtrl.getTableModel()[rowCtrl.getRowName()];
                         scope.baseModel = tableCtrl.getTableModel();
-                        scope.parentModel = tableCtrl.getParentModel();
-                        scope.modelName = tableCtrl.getField() + '.' + rowCtrl.getRowName() + '.' + tAttrs.field;
                     }
                 }
             },

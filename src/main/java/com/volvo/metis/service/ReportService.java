@@ -39,12 +39,12 @@ public class ReportService {
     }
 
     public void saveReport(Report report) {
-        DateTime reportMonth = getMinDateTime(report.getCreatedDate().toLocalDateTime());
-        // TODO: сравнить с 10 числом текущего месяца
-        DateTime currentMonth = getMinDateTime(LocalDateTime.now());
-        if (reportMonth.isBefore(currentMonth)) {
-            return;
-        }
+//        DateTime reportMonth = getMinDateTime(report.getCreatedDate().toLocalDateTime());
+//        // TODO: сравнить с 10 числом текущего месяца
+//        DateTime currentMonth = getMinDateTime(LocalDateTime.now());
+//        if (reportMonth.isBefore(currentMonth)) {
+//            return;
+//        }
         reportRepository.save(report);
     }
 
