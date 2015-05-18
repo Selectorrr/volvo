@@ -82,12 +82,11 @@ angular.module('volvoApp')
                 value: '@'
             },
             compile: function compile(tElement, tAttrs, transclude) {
-                var $td = $(tElement);
                 if (tAttrs.colspan) {
-                    $td.attr('colspan', tAttrs.colspan);
+                    tElement.attr('colspan', tAttrs.colspan);
                 }
                 var size = tAttrs.size ? tAttrs.size : 2;
-                $td.addClass('col-xs-' + size);
+                tElement.addClass('col-xs-' + size);
                 if (tAttrs.type === 'number' || tAttrs.type === 'ruble') {
                     var myInput =
                         '<my-input type="number" my-disabled="myDisabled" addon="' +
@@ -95,7 +94,7 @@ angular.module('volvoApp')
                         '" value="' + tAttrs.value + '" on-blur="onBlur"' +
                             (tAttrs.decimals ? 'decimals=' + tAttrs.decimals : '') + '>' +
                         '</my-input>';
-                    $td.append(myInput);
+                    tElement.append(myInput);
                 }
                 return {
                     pre: function preLink(scope, tElement, tAttrs, controllers) {
