@@ -16,6 +16,12 @@ angular.module('volvoApp')
                 this.getTableModel = function () {
                     return $scope.model[$scope.field];
                 }
+                this.getParentModel = function () {
+                    return $scope.model;
+                }
+                this.getField = function () {
+                    return $scope.field;
+                }
             }],
             template: '<div class="table-responsive">' +
             '<table class="table table-hover table-bordered table-condensed" ng-transclude>' +
@@ -91,7 +97,8 @@ angular.module('volvoApp')
                     var myInput =
                         '<my-input type="number" my-disabled="myDisabled" addon="' +
                         (tAttrs.type === 'ruble' ? 'glyphicon-ruble' : '') + '" model="model.' + tAttrs.field +
-                        '" value="' + tAttrs.value + '" on-blur="onBlur"' +
+                        '" value="' + tAttrs.value + '" on-blur="onBlur"' + ' model-name = modelName' +
+                            ' parent-model=parentModel' +
                             (tAttrs.decimals ? 'decimals=' + tAttrs.decimals : '') + '>' +
                         '</my-input>';
                     tElement.append(myInput);
@@ -108,6 +115,8 @@ angular.module('volvoApp')
                         }
                         scope.model = tableCtrl.getTableModel()[rowCtrl.getRowName()];
                         scope.baseModel = tableCtrl.getTableModel();
+                        scope.parentModel = tableCtrl.getParentModel();
+                        scope.modelName = tableCtrl.getField() + '.' + rowCtrl.getRowName() + '.' + tAttrs.field;
                     }
                 }
             },

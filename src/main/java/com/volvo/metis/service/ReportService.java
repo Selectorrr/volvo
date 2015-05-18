@@ -39,13 +39,33 @@ public class ReportService {
     }
 
     public void saveReport(Report report) {
+        DateTime reportMonth = getMinDateTime(report.getCreatedDate().toLocalDateTime());
+        // TODO: сравнить с 10 числом текущего месяца
+        DateTime currentMonth = getMinDateTime(LocalDateTime.now());
+        if (reportMonth.isBefore(currentMonth)) {
+            return;
+        }
         reportRepository.save(report);
     }
 
     private Report getCurrentReport(User user) {
         LocalDateTime localDateTime = LocalDateTime.now();
-        DateTime dateTimeStart = localDateTime.dayOfMonth().withMinimumValue().millisOfDay().withMinimumValue().toDateTime();
+        return getReport(user, localDateTime);
+    }
+
+    private Report getReport(User user, LocalDateTime localDateTime) {
+        DateTime dateTimeStart = getMinDateTime(localDateTime);
         DateTime dateTimeEnd = localDateTime.dayOfMonth().withMaximumValue().millisOfDay().withMaximumValue().toDateTime();
         return reportRepository.findOneByCreatedByAndCreatedDateBetween(user.getId(), dateTimeStart, dateTimeEnd);
+    }
+
+    private DateTime getMinDateTime(LocalDateTime localDateTime) {
+        return localDateTime.dayOfMonth().withMinimumValue().millisOfDay().withMinimumValue().toDateTime();
+    }
+
+    public Report getMonthReport(int monthNum) {
+        User user = userService.getUserWithAuthorities();
+        LocalDateTime localDateTime = LocalDateTime.now();
+        return getReport(user, localDateTime.withMonthOfYear(monthNum + 1));
     }
 }

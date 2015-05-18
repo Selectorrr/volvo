@@ -35,6 +35,18 @@ public class ReportResource {
     }
 
     /**
+     * Отчет за конкретный период.
+     */
+    @RequestMapping(value = "/month-report",
+        method = RequestMethod.GET,
+        produces = MediaType.APPLICATION_JSON_VALUE)
+    @Timed
+    public Report getMonthReport(@RequestParam(value = "monthNum") Integer monthNum) {
+        log.debug("REST request to get month report: {}", monthNum);
+        return reportService.getMonthReport(monthNum);
+    }
+
+    /**
      * Сохранение отчета за текущий период.
      */
     @RequestMapping(value = "/save-report",

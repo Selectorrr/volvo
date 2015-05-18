@@ -1,4 +1,10 @@
 <div class="content">
+
+    <div class="col-xs-12">
+        <input type="month" ng-model="selectedMonth" ng-change="changeMonth(value)" placeholder="yyyy-MM" min="2015-01" required/>
+        <input type="checkbox" ng-model="isPlan" ng-change="changePlan()">План</input>
+    </div>
+
     <my-table model="model" field="tabNewCars">
         <my-head>
             <my-row>
