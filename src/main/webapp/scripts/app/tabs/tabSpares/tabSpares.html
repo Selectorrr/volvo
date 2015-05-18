@@ -1397,11 +1397,16 @@
             <my-cell size="4"
                      colspan="2"
                      text="Статистика"></my-cell>
-            <my-cell text="0-90"></my-cell>
-            <my-cell text="91-180"></my-cell>
-            <my-cell text="181-270"></my-cell>
-            <my-cell text=">270"></my-cell>
-            <my-cell text="Всего"></my-cell>
+            <my-cell size="1"
+                     text="0-90"></my-cell>
+            <my-cell size="1"
+                     text="91-180"></my-cell>
+            <my-cell size="1"
+                     text="181-270"></my-cell>
+            <my-cell size="1"
+                     text=">270"></my-cell>
+            <my-cell size="1"
+                     text="Всего"></my-cell>
         </my-row>
     </my-head>
     <my-body>
@@ -1409,26 +1414,31 @@
             <my-cell size="1"
                      text="G91">
             </my-cell>
-            <my-cell size="3"
+            <my-cell size="1"
                      text="Ст-сть запчастей на складе">
             </my-cell>
-            <my-cell type="ruble"
+            <my-cell size="1"
+                     type="ruble"
                      field="first"
                      on-blur="autoSaving">
             </my-cell>
-            <my-cell type="ruble"
+            <my-cell size="1"
+                     type="ruble"
                      field="second"
                      on-blur="autoSaving">
             </my-cell>
-            <my-cell type="ruble"
+            <my-cell size="1"
+                     type="ruble"
                      field="third"
                      on-blur="autoSaving">
             </my-cell>
-            <my-cell type="ruble"
+            <my-cell size="1"
+                     type="ruble"
                      field="fourth"
                      on-blur="autoSaving">
             </my-cell>
-            <my-cell type="ruble"
+            <my-cell size="1"
+                     type="ruble"
                      field="fifth"
                      my-disabled="true"
                      value="{{model.fifth =
@@ -1443,14 +1453,15 @@
             <my-cell size="1"
                      text="G92">
             </my-cell>
-            <my-cell size="3"
+            <my-cell size="1"
                      text="Площадь склада з/ч">
             </my-cell>
-            <my-cell></my-cell>
-            <my-cell></my-cell>
-            <my-cell></my-cell>
-            <my-cell></my-cell>
-            <my-cell type="ruble"
+            <my-cell size="1"></my-cell>
+            <my-cell size="1"></my-cell>
+            <my-cell size="1"></my-cell>
+            <my-cell size="1"></my-cell>
+            <my-cell size="1"
+                     type="ruble"
                      field="fifth"
                      on-blur="autoSaving">
             </my-cell>
