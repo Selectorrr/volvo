@@ -50,6 +50,8 @@ angular.module('volvoApp')
                 label: '@',
                 decimals: '@',
                 model: '=',
+                modelName: '=',
+                parentModel: '=',
                 required: '=',
                 validation: '=',
                 name: '@',
@@ -91,6 +93,16 @@ angular.module('volvoApp')
                         if (angular.isFunction($scope.onBlur)) {
                             $scope.$watch('model', $scope.onBlur);
                         }
+
+                        function getDescendantProp(obj, desc) {
+                            var arr = desc.split(".");
+                            while (arr.length && (obj = obj[arr.shift()]));
+                            return obj;
+                        }
+
+                        $scope.$watch('parentModel', function (value) {
+                            $scope.model = getDescendantProp(value, $scope.modelName);
+                        });
                     }
                 }
             },

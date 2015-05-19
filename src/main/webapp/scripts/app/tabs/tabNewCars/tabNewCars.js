@@ -25,9 +25,9 @@ angular.module('volvoApp')
                         $translatePartialLoader.addPart('main');
                         return $translate.refresh();
                     }],
-                    currentReport: ['ReportService', function(ReportService) {
-                        return ReportService.currentReport();
-                    }]
+                    currentReport: function (ReportService, $stateParams) {
+                        return ReportService.monthReport($stateParams.month || new Date().getMonth());
+                    }
                 }
             });
     });

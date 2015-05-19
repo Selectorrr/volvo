@@ -13,7 +13,6 @@ angular.module('volvoApp')
                 if (new Date(reportToSave.createdDate).getMonth() != new Date().getMonth()) {
                     return;
                 }
-                console.log(reportToSave);
                 return $http.post('/api/save-report', reportToSave);
             }
         };

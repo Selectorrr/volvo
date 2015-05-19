@@ -2,37 +2,64 @@
     <div class="row">
 
         <div class="col-xs-12">
+            <ul class="nav nav-pills nav-justified">
+                <li role="presentation" ui-sref-active="active">
+                    <a ui-sref="tabNewCars({month:0})">Январь</a>
+                </li>
+                <li role="presentation" ui-sref-active="active">
+                    <a ui-sref="tabNewCars({month:1})">Февраль</a></li>
+                <li role="presentation" ui-sref-active="active">
+                    <a ui-sref="tabNewCars({month:2})">Март</a></li>
+                <li role="presentation" ui-sref-active="active">
+                    <a ui-sref="tabNewCars({month:3})">Апрель</a></li>
+                <li role="presentation" ui-sref-active="active">
+                    <a ui-sref="tabNewCars({month:4})">Май</a></li>
+                <li role="presentation" ui-sref-active="active">
+                    <a ui-sref="tabNewCars({month:5})">Июнь</a></li>
+                <li role="presentation" ui-sref-active="active">
+                    <a ui-sref="tabNewCars({month:6})">Июль</a></li>
+                <li role="presentation" ui-sref-active="active">
+                    <a ui-sref="tabNewCars({month:7})">Август</a></li>
+                <li role="presentation" ui-sref-active="active">
+                    <a ui-sref="tabNewCars({month:8})">Сентябрь</a></li>
+                <li role="presentation" ui-sref-active="active">
+                    <a ui-sref="tabNewCars({month:9})">Октябрь</a></li>
+                <li role="presentation" ui-sref-active="active">
+                    <a ui-sref="tabNewCars({month:10})">Ноябрь</a></li>
+                <li role="presentation" ui-sref-active="active">
+                    <a ui-sref="tabNewCars({month:11})">Декабрь</a></li>
+            </ul>
             <div role="tabpanel">
                 <ul class="nav nav-tabs" role="tablist">
                     <li role="presentation" ui-sref-active="active">
-                        <a ui-sref="tabNewCars">Новые автомобили</a>
+                        <a ui-sref="tabNewCars({month:month})">Новые автомобили</a>
                     </li>
                     <li role="presentation" ui-sref-active="active">
-                        <a ui-sref="tabSecondHandCars">Подержанные автомобили</a>
+                        <a ui-sref="tabSecondHandCars({month:month})">Подержанные автомобили</a>
                     </li>
                     <li role="presentation" ui-sref-active="active">
-                        <a ui-sref="tabFlittingShop">Слес. цех</a>
+                        <a ui-sref="tabFlittingShop({month:month})">Слес. цех</a>
                     </li>
                     <li role="presentation" ui-sref-active="active">
-                        <a ui-sref="tabBodyShop">Кузовной цех</a>
+                        <a ui-sref="tabBodyShop({month:month})">Кузовной цех</a>
                     </li>
                     <li role="presentation" ui-sref-active="active">
-                        <a ui-sref="tabSpares">Запчасти</a>
+                        <a ui-sref="tabSpares({month:month})">Запчасти</a>
                     </li>
                     <li role="presentation" ui-sref-active="active">
-                        <a ui-sref="tabOtherDepartments">Другие отделы</a>
+                        <a ui-sref="tabOtherDepartments({month:month})">Другие отделы</a>
                     </li>
                     <li role="presentation" ui-sref-active="active">
-                        <a ui-sref="tabIndirectCharges">Непрямые расходы</a>
+                        <a ui-sref="tabIndirectCharges({month:month})">Непрямые расходы</a>
                     </li>
                     <li role="presentation" ui-sref-active="active">
-                        <a ui-sref="tabBalance">Баланс</a>
+                        <a ui-sref="tabBalance({month:month})">Баланс</a>
                     </li>
                     <li role="presentation" ui-sref-active="active">
-                        <a ui-sref="tabTotalData">Итоговые данные</a>
+                        <a ui-sref="tabTotalData({month:month})">Итоговые данные</a>
                     </li>
                     <li role="presentation" ui-sref-active="active">
-                        <a ui-sref="tabStaffQuantity">Численность персонала</a>
+                        <a ui-sref="tabStaffQuantity({month:month})">Численность персонала</a>
                     </li>
                 </ul>
                 <div class="tab-content">

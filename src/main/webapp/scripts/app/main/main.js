@@ -5,7 +5,7 @@ angular.module('volvoApp')
         $stateProvider
             .state('home', {
                 parent: 'site',
-                url: '',
+                url: '/:month',
                 abstract: true,
                 data: {
                     roles: ['ROLE_USER']
