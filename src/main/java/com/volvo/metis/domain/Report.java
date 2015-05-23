@@ -14,6 +14,8 @@ public class Report extends AbstractAuditingEntity implements Serializable {
     @Id
     private String id;
 
+    private Integer month;
+
     /**
      * Тип отчета (годовой/месячный)
      */
@@ -169,5 +171,13 @@ public class Report extends AbstractAuditingEntity implements Serializable {
         Report report = new Report();
         report.setType(type);
         return report;
+    }
+
+    public Integer getMonth() {
+        return month;
+    }
+
+    public void setMonth(Integer month) {
+        this.month = month;
     }
 }

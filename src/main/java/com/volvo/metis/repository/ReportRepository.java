@@ -9,6 +9,6 @@ import org.springframework.data.mongodb.repository.MongoRepository;
  */
 public interface ReportRepository extends MongoRepository<Report, String> {
 
-    Report findOneByCreatedByAndCreatedDateBetween(String userId, DateTime fromDate, DateTime toDate);
+    Report findOneByCreatedByAndMonth(String userId, Integer month);
 
 }
