@@ -1,5 +1,5 @@
 <div class="content">
-<my-table model="model" field="tabSpares">
+<my-table>
 <my-head>
     <my-row>
         <my-cell size="4"
@@ -12,7 +12,7 @@
     </my-row>
 </my-head>
 <my-body>
-<my-row field="incomingAndGrossProfitShopSaleVolvo">
+<my-row>
     <my-cell size="1"
              text="G1a">
     </my-cell>
@@ -21,21 +21,21 @@
     </my-cell>
     <my-cell></my-cell>
     <my-cell type="ruble"
-             field="second"
+             field="model.tabSpares.incomingAndGrossProfitShopSaleVolvo.second"
              on-blur="autoSaving">
     </my-cell>
     <my-cell type="ruble"
-             field="third"
+             field="model.tabSpares.incomingAndGrossProfitShopSaleVolvo.third"
              on-blur="autoSaving">
     </my-cell>
     <my-cell type="ruble"
-             field="fourth"
+             field="model.tabSpares.incomingAndGrossProfitShopSaleVolvo.fourth"
              my-disabled="true"
-             value="{{model.fourth = model.second - model.third}}">
+             value="{{model.tabSpares.incomingAndGrossProfitShopSaleVolvo.fourth = model.tabSpares.incomingAndGrossProfitShopSaleVolvo.second - model.tabSpares.incomingAndGrossProfitShopSaleVolvo.third}}">
     </my-cell>
 </my-row>
 
-<my-row field="incomingAndGrossProfitSaleAccessoriesVolvo">
+<my-row>
     <my-cell size="1"
              text="G2a">
     </my-cell>
@@ -44,21 +44,21 @@
     </my-cell>
     <my-cell></my-cell>
     <my-cell type="ruble"
-             field="second"
+             field="model.tabSpares.incomingAndGrossProfitSaleAccessoriesVolvo.second"
              on-blur="autoSaving">
     </my-cell>
     <my-cell type="ruble"
-             field="third"
+             field="model.tabSpares.incomingAndGrossProfitSaleAccessoriesVolvo.third"
              on-blur="autoSaving">
     </my-cell>
     <my-cell type="ruble"
-             field="fourth"
+             field="model.tabSpares.incomingAndGrossProfitSaleAccessoriesVolvo.fourth"
              my-disabled="true"
-             value="{{model.fourth = model.second - model.third}}">
+             value="{{model.tabSpares.incomingAndGrossProfitSaleAccessoriesVolvo.fourth = model.tabSpares.incomingAndGrossProfitSaleAccessoriesVolvo.second - model.tabSpares.incomingAndGrossProfitSaleAccessoriesVolvo.third}}">
     </my-cell>
 </my-row>
 
-<my-row field="incomingAndGrossProfitSaleSparesOtherOrganizationsVolvo">
+<my-row>
     <my-cell size="1"
              text="G3a">
     </my-cell>
@@ -67,21 +67,21 @@
     </my-cell>
     <my-cell></my-cell>
     <my-cell type="ruble"
-             field="second"
+             field="model.tabSpares.incomingAndGrossProfitSaleSparesOtherOrganizationsVolvo.second"
              on-blur="autoSaving">
     </my-cell>
     <my-cell type="ruble"
-             field="third"
+             field="model.tabSpares.incomingAndGrossProfitSaleSparesOtherOrganizationsVolvo.third"
              on-blur="autoSaving">
     </my-cell>
     <my-cell type="ruble"
-             field="fourth"
+             field="model.tabSpares.incomingAndGrossProfitSaleSparesOtherOrganizationsVolvo.fourth"
              my-disabled="true"
-             value="{{model.fourth = model.second - model.third}}">
+             value="{{model.tabSpares.incomingAndGrossProfitSaleSparesOtherOrganizationsVolvo.fourth = model.tabSpares.incomingAndGrossProfitSaleSparesOtherOrganizationsVolvo.second - model.tabSpares.incomingAndGrossProfitSaleSparesOtherOrganizationsVolvo.third}}">
     </my-cell>
 </my-row>
 
-<my-row field="incomingAndGrossProfitFittingShopSaleSparesAtRetailVolvo">
+<my-row>
     <my-cell size="1"
              text="G4a">
     </my-cell>
@@ -90,21 +90,21 @@
     </my-cell>
     <my-cell></my-cell>
     <my-cell type="ruble"
-             field="second"
+             field="model.tabSpares.incomingAndGrossProfitFittingShopSaleSparesAtRetailVolvo.second"
              on-blur="autoSaving">
     </my-cell>
     <my-cell type="ruble"
-             field="third"
+             field="model.tabSpares.incomingAndGrossProfitFittingShopSaleSparesAtRetailVolvo.third"
              on-blur="autoSaving">
     </my-cell>
     <my-cell type="ruble"
-             field="fourth"
+             field="model.tabSpares.incomingAndGrossProfitFittingShopSaleSparesAtRetailVolvo.fourth"
              my-disabled="true"
-             value="{{model.fourth = model.second - model.third}}">
+             value="{{model.tabSpares.incomingAndGrossProfitFittingShopSaleSparesAtRetailVolvo.fourth = model.tabSpares.incomingAndGrossProfitFittingShopSaleSparesAtRetailVolvo.second - model.tabSpares.incomingAndGrossProfitFittingShopSaleSparesAtRetailVolvo.third}}">
     </my-cell>
 </my-row>
 
-<my-row field="incomingAndGrossProfitFittingShopSaleSparesInnerVolvo">
+<my-row>
     <my-cell size="1"
              text="G5a">
     </my-cell>
@@ -113,21 +113,21 @@
     </my-cell>
     <my-cell></my-cell>
     <my-cell type="ruble"
-             field="second"
+             field="model.tabSpares.incomingAndGrossProfitFittingShopSaleSparesInnerVolvo.second"
              on-blur="autoSaving">
     </my-cell>
     <my-cell type="ruble"
-             field="third"
+             field="model.tabSpares.incomingAndGrossProfitFittingShopSaleSparesInnerVolvo.third"
              on-blur="autoSaving">
     </my-cell>
     <my-cell type="ruble"
-             field="fourth"
+             field="model.tabSpares.incomingAndGrossProfitFittingShopSaleSparesInnerVolvo.fourth"
              my-disabled="true"
-             value="{{model.fourth = model.second - model.third}}">
+             value="{{model.tabSpares.incomingAndGrossProfitFittingShopSaleSparesInnerVolvo.fourth = model.tabSpares.incomingAndGrossProfitFittingShopSaleSparesInnerVolvo.second - model.tabSpares.incomingAndGrossProfitFittingShopSaleSparesInnerVolvo.third}}">
     </my-cell>
 </my-row>
 
-<my-row field="incomingAndGrossProfitFittingShopSaleSparesGuaranteeVolvo">
+<my-row>
     <my-cell size="1"
              text="G6a">
     </my-cell>
@@ -136,21 +136,21 @@
     </my-cell>
     <my-cell></my-cell>
     <my-cell type="ruble"
-             field="second"
+             field="model.tabSpares.incomingAndGrossProfitFittingShopSaleSparesGuaranteeVolvo.second"
              on-blur="autoSaving">
     </my-cell>
     <my-cell type="ruble"
-             field="third"
+             field="model.tabSpares.incomingAndGrossProfitFittingShopSaleSparesGuaranteeVolvo.third"
              on-blur="autoSaving">
     </my-cell>
     <my-cell type="ruble"
-             field="fourth"
+             field="model.tabSpares.incomingAndGrossProfitFittingShopSaleSparesGuaranteeVolvo.fourth"
              my-disabled="true"
-             value="{{model.fourth = model.second - model.third}}">
+             value="{{model.tabSpares.incomingAndGrossProfitFittingShopSaleSparesGuaranteeVolvo.fourth = model.tabSpares.incomingAndGrossProfitFittingShopSaleSparesGuaranteeVolvo.second - model.tabSpares.incomingAndGrossProfitFittingShopSaleSparesGuaranteeVolvo.third}}">
     </my-cell>
 </my-row>
 
-<my-row field="incomingAndGrossProfitBodyShopSaleSparesAtRetailVolvo">
+<my-row>
     <my-cell size="1"
              text="G7a">
     </my-cell>
@@ -159,21 +159,21 @@
     </my-cell>
     <my-cell></my-cell>
     <my-cell type="ruble"
-             field="second"
+             field="model.tabSpares.incomingAndGrossProfitBodyShopSaleSparesAtRetailVolvo.second"
              on-blur="autoSaving">
     </my-cell>
     <my-cell type="ruble"
-             field="third"
+             field="model.tabSpares.incomingAndGrossProfitBodyShopSaleSparesAtRetailVolvo.third"
              on-blur="autoSaving">
     </my-cell>
     <my-cell type="ruble"
-             field="fourth"
+             field="model.tabSpares.incomingAndGrossProfitBodyShopSaleSparesAtRetailVolvo.fourth"
              my-disabled="true"
-             value="{{model.fourth = model.second - model.third}}">
+             value="{{model.tabSpares.incomingAndGrossProfitBodyShopSaleSparesAtRetailVolvo.fourth = model.tabSpares.incomingAndGrossProfitBodyShopSaleSparesAtRetailVolvo.second - model.tabSpares.incomingAndGrossProfitBodyShopSaleSparesAtRetailVolvo.third}}">
     </my-cell>
 </my-row>
 
-<my-row field="incomingAndGrossProfitBodyShopSaleSparesInsuranceVolvo">
+<my-row>
     <my-cell size="1"
              text="G8a">
     </my-cell>
@@ -182,21 +182,21 @@
     </my-cell>
     <my-cell></my-cell>
     <my-cell type="ruble"
-             field="second"
+             field="model.tabSpares.incomingAndGrossProfitBodyShopSaleSparesInsuranceVolvo.second"
              on-blur="autoSaving">
     </my-cell>
     <my-cell type="ruble"
-             field="third"
+             field="model.tabSpares.incomingAndGrossProfitBodyShopSaleSparesInsuranceVolvo.third"
              on-blur="autoSaving">
     </my-cell>
     <my-cell type="ruble"
-             field="fourth"
+             field="model.tabSpares.incomingAndGrossProfitBodyShopSaleSparesInsuranceVolvo.fourth"
              my-disabled="true"
-             value="{{model.fourth = model.second - model.third}}">
+             value="{{model.tabSpares.incomingAndGrossProfitBodyShopSaleSparesInsuranceVolvo.fourth = model.tabSpares.incomingAndGrossProfitBodyShopSaleSparesInsuranceVolvo.second - model.tabSpares.incomingAndGrossProfitBodyShopSaleSparesInsuranceVolvo.third}}">
     </my-cell>
 </my-row>
 
-<my-row field="incomingAndGrossProfitBodyShopSaleSparesInnerVolvo">
+<my-row>
     <my-cell size="1"
              text="G9a">
     </my-cell>
@@ -205,21 +205,21 @@
     </my-cell>
     <my-cell></my-cell>
     <my-cell type="ruble"
-             field="second"
+             field="model.tabSpares.incomingAndGrossProfitBodyShopSaleSparesInnerVolvo.second"
              on-blur="autoSaving">
     </my-cell>
     <my-cell type="ruble"
-             field="third"
+             field="model.tabSpares.incomingAndGrossProfitBodyShopSaleSparesInnerVolvo.third"
              on-blur="autoSaving">
     </my-cell>
     <my-cell type="ruble"
-             field="fourth"
+             field="model.tabSpares.incomingAndGrossProfitBodyShopSaleSparesInnerVolvo.fourth"
              my-disabled="true"
-             value="{{model.fourth = model.second - model.third}}">
+             value="{{model.tabSpares.incomingAndGrossProfitBodyShopSaleSparesInnerVolvo.fourth = model.tabSpares.incomingAndGrossProfitBodyShopSaleSparesInnerVolvo.second - model.tabSpares.incomingAndGrossProfitBodyShopSaleSparesInnerVolvo.third}}">
     </my-cell>
 </my-row>
 
-<my-row field="incomingAndGrossProfitBodyShopSaleSparesGuaranteeVolvo">
+<my-row>
     <my-cell size="1"
              text="G10a">
     </my-cell>
@@ -228,26 +228,26 @@
     </my-cell>
     <my-cell></my-cell>
     <my-cell type="ruble"
-             field="second"
+             field="model.tabSpares.incomingAndGrossProfitBodyShopSaleSparesGuaranteeVolvo.second"
              on-blur="autoSaving">
     </my-cell>
     <my-cell type="ruble"
-             field="third"
+             field="model.tabSpares.incomingAndGrossProfitBodyShopSaleSparesGuaranteeVolvo.third"
              on-blur="autoSaving">
     </my-cell>
     <my-cell type="ruble"
-             field="fourth"
+             field="model.tabSpares.incomingAndGrossProfitBodyShopSaleSparesGuaranteeVolvo.fourth"
              my-disabled="true"
-             value="{{model.fourth = model.second - model.third}}">
+             value="{{model.tabSpares.incomingAndGrossProfitBodyShopSaleSparesGuaranteeVolvo.fourth = model.tabSpares.incomingAndGrossProfitBodyShopSaleSparesGuaranteeVolvo.second - model.tabSpares.incomingAndGrossProfitBodyShopSaleSparesGuaranteeVolvo.third}}">
     </my-cell>
 </my-row>
 </my-body>
 </my-table>
 
-<my-table model="model" field="tabSpares">
+<my-table>
 <my-body>
 
-<my-row field="incomingAndGrossProfitRetailShopSaleOthers">
+<my-row>
     <my-cell size="1"
              text="G1b">
     </my-cell>
@@ -256,21 +256,21 @@
     </my-cell>
     <my-cell></my-cell>
     <my-cell type="ruble"
-             field="second"
+             field="model.tabSpares.incomingAndGrossProfitRetailShopSaleOthers.second"
              on-blur="autoSaving">
     </my-cell>
     <my-cell type="ruble"
-             field="third"
+             field="model.tabSpares.incomingAndGrossProfitRetailShopSaleOthers.third"
              on-blur="autoSaving">
     </my-cell>
     <my-cell type="ruble"
-             field="fourth"
+             field="model.tabSpares.incomingAndGrossProfitRetailShopSaleOthers.fourth"
              my-disabled="true"
-             value="{{model.fourth = model.second - model.third}}">
+             value="{{model.tabSpares.incomingAndGrossProfitRetailShopSaleOthers.fourth = model.tabSpares.incomingAndGrossProfitRetailShopSaleOthers.second - model.tabSpares.incomingAndGrossProfitRetailShopSaleOthers.third}}">
     </my-cell>
 </my-row>
 
-<my-row field="incomingAndGrossProfitSaleAccessoriesOthers">
+<my-row>
     <my-cell size="1"
              text="G2b">
     </my-cell>
@@ -279,21 +279,21 @@
     </my-cell>
     <my-cell></my-cell>
     <my-cell type="ruble"
-             field="second"
+             field="model.tabSpares.incomingAndGrossProfitSaleAccessoriesOthers.second"
              on-blur="autoSaving">
     </my-cell>
     <my-cell type="ruble"
-             field="third"
+             field="model.tabSpares.incomingAndGrossProfitSaleAccessoriesOthers.third"
              on-blur="autoSaving">
     </my-cell>
     <my-cell type="ruble"
-             field="fourth"
+             field="model.tabSpares.incomingAndGrossProfitSaleAccessoriesOthers.fourth"
              my-disabled="true"
-             value="{{model.fourth = model.second - model.third}}">
+             value="{{model.tabSpares.incomingAndGrossProfitSaleAccessoriesOthers.fourth = model.tabSpares.incomingAndGrossProfitSaleAccessoriesOthers.second - model.tabSpares.incomingAndGrossProfitSaleAccessoriesOthers.third}}">
     </my-cell>
 </my-row>
 
-<my-row field="incomingAndGrossProfitSaleSparesOtherOrganizationsOthers">
+<my-row>
     <my-cell size="1"
              text="G3b">
     </my-cell>
@@ -302,21 +302,21 @@
     </my-cell>
     <my-cell></my-cell>
     <my-cell type="ruble"
-             field="second"
+             field="model.tabSpares.incomingAndGrossProfitSaleSparesOtherOrganizationsOthers.second"
              on-blur="autoSaving">
     </my-cell>
     <my-cell type="ruble"
-             field="third"
+             field="model.tabSpares.incomingAndGrossProfitSaleSparesOtherOrganizationsOthers.third"
              on-blur="autoSaving">
     </my-cell>
     <my-cell type="ruble"
-             field="fourth"
+             field="model.tabSpares.incomingAndGrossProfitSaleSparesOtherOrganizationsOthers.fourth"
              my-disabled="true"
-             value="{{model.fourth = model.second - model.third}}">
+             value="{{model.tabSpares.incomingAndGrossProfitSaleSparesOtherOrganizationsOthers.fourth = model.tabSpares.incomingAndGrossProfitSaleSparesOtherOrganizationsOthers.second - model.tabSpares.incomingAndGrossProfitSaleSparesOtherOrganizationsOthers.third}}">
     </my-cell>
 </my-row>
 
-<my-row field="incomingAndGrossProfitFittingShopSaleSparesAtRetailOthers">
+<my-row>
     <my-cell size="1"
              text="G4b">
     </my-cell>
@@ -325,21 +325,21 @@
     </my-cell>
     <my-cell></my-cell>
     <my-cell type="ruble"
-             field="second"
+             field="model.tabSpares.incomingAndGrossProfitFittingShopSaleSparesAtRetailOthers.second"
              on-blur="autoSaving">
     </my-cell>
     <my-cell type="ruble"
-             field="third"
+             field="model.tabSpares.incomingAndGrossProfitFittingShopSaleSparesAtRetailOthers.third"
              on-blur="autoSaving">
     </my-cell>
     <my-cell type="ruble"
-             field="fourth"
+             field="model.tabSpares.incomingAndGrossProfitFittingShopSaleSparesAtRetailOthers.fourth"
              my-disabled="true"
-             value="{{model.fourth = model.second - model.third}}">
+             value="{{model.tabSpares.incomingAndGrossProfitFittingShopSaleSparesAtRetailOthers.fourth = model.tabSpares.incomingAndGrossProfitFittingShopSaleSparesAtRetailOthers.second - model.tabSpares.incomingAndGrossProfitFittingShopSaleSparesAtRetailOthers.third}}">
     </my-cell>
 </my-row>
 
-<my-row field="incomingAndGrossProfitFittingShopSaleSparesInnerOthers">
+<my-row>
     <my-cell size="1"
              text="G5b">
     </my-cell>
@@ -348,21 +348,21 @@
     </my-cell>
     <my-cell></my-cell>
     <my-cell type="ruble"
-             field="second"
+             field="model.tabSpares.incomingAndGrossProfitFittingShopSaleSparesInnerOthers.second"
              on-blur="autoSaving">
     </my-cell>
     <my-cell type="ruble"
-             field="third"
+             field="model.tabSpares.incomingAndGrossProfitFittingShopSaleSparesInnerOthers.third"
              on-blur="autoSaving">
     </my-cell>
     <my-cell type="ruble"
-             field="fourth"
+             field="model.tabSpares.incomingAndGrossProfitFittingShopSaleSparesInnerOthers.fourth"
              my-disabled="true"
-             value="{{model.fourth = model.second - model.third}}">
+             value="{{model.tabSpares.incomingAndGrossProfitFittingShopSaleSparesInnerOthers.fourth = model.tabSpares.incomingAndGrossProfitFittingShopSaleSparesInnerOthers.second - model.tabSpares.incomingAndGrossProfitFittingShopSaleSparesInnerOthers.third}}">
     </my-cell>
 </my-row>
 
-<my-row field="incomingAndGrossProfitFittingShopSaleSparesGuaranteeOthers">
+<my-row>
     <my-cell size="1"
              text="G6b">
     </my-cell>
@@ -371,21 +371,21 @@
     </my-cell>
     <my-cell></my-cell>
     <my-cell type="ruble"
-             field="second"
+             field="model.tabSpares.incomingAndGrossProfitFittingShopSaleSparesGuaranteeOthers.second"
              on-blur="autoSaving">
     </my-cell>
     <my-cell type="ruble"
-             field="third"
+             field="model.tabSpares.incomingAndGrossProfitFittingShopSaleSparesGuaranteeOthers.third"
              on-blur="autoSaving">
     </my-cell>
     <my-cell type="ruble"
-             field="fourth"
+             field="model.tabSpares.incomingAndGrossProfitFittingShopSaleSparesGuaranteeOthers.fourth"
              my-disabled="true"
-             value="{{model.fourth = model.second - model.third}}">
+             value="{{model.tabSpares.incomingAndGrossProfitFittingShopSaleSparesGuaranteeOthers.fourth = model.tabSpares.incomingAndGrossProfitFittingShopSaleSparesGuaranteeOthers.second - model.tabSpares.incomingAndGrossProfitFittingShopSaleSparesGuaranteeOthers.third}}">
     </my-cell>
 </my-row>
 
-<my-row field="incomingAndGrossProfitBodyShopSaleSparesAtRetailOthers">
+<my-row>
     <my-cell size="1"
              text="G7b">
     </my-cell>
@@ -394,21 +394,21 @@
     </my-cell>
     <my-cell></my-cell>
     <my-cell type="ruble"
-             field="second"
+             field="model.tabSpares.incomingAndGrossProfitBodyShopSaleSparesAtRetailOthers.second"
              on-blur="autoSaving">
     </my-cell>
     <my-cell type="ruble"
-             field="third"
+             field="model.tabSpares.incomingAndGrossProfitBodyShopSaleSparesAtRetailOthers.third"
              on-blur="autoSaving">
     </my-cell>
     <my-cell type="ruble"
-             field="fourth"
+             field="model.tabSpares.incomingAndGrossProfitBodyShopSaleSparesAtRetailOthers.fourth"
              my-disabled="true"
-             value="{{model.fourth = model.second - model.third}}">
+             value="{{model.tabSpares.incomingAndGrossProfitBodyShopSaleSparesAtRetailOthers.fourth = model.tabSpares.incomingAndGrossProfitBodyShopSaleSparesAtRetailOthers.second - model.tabSpares.incomingAndGrossProfitBodyShopSaleSparesAtRetailOthers.third}}">
     </my-cell>
 </my-row>
 
-<my-row field="incomingAndGrossProfitBodyShopSaleSparesInsuranceOthers">
+<my-row>
     <my-cell size="1"
              text="G8b">
     </my-cell>
@@ -417,21 +417,21 @@
     </my-cell>
     <my-cell></my-cell>
     <my-cell type="ruble"
-             field="second"
+             field="model.tabSpares.incomingAndGrossProfitBodyShopSaleSparesInsuranceOthers.second"
              on-blur="autoSaving">
     </my-cell>
     <my-cell type="ruble"
-             field="third"
+             field="model.tabSpares.incomingAndGrossProfitBodyShopSaleSparesInsuranceOthers.third"
              on-blur="autoSaving">
     </my-cell>
     <my-cell type="ruble"
-             field="fourth"
+             field="model.tabSpares.incomingAndGrossProfitBodyShopSaleSparesInsuranceOthers.fourth"
              my-disabled="true"
-             value="{{model.fourth = model.second - model.third}}">
+             value="{{model.tabSpares.incomingAndGrossProfitBodyShopSaleSparesInsuranceOthers.fourth = model.tabSpares.incomingAndGrossProfitBodyShopSaleSparesInsuranceOthers.second - model.tabSpares.incomingAndGrossProfitBodyShopSaleSparesInsuranceOthers.third}}">
     </my-cell>
 </my-row>
 
-<my-row field="incomingAndGrossProfitBodyShopSaleSparesInnerOthers">
+<my-row>
     <my-cell size="1"
              text="G9b">
     </my-cell>
@@ -440,21 +440,21 @@
     </my-cell>
     <my-cell></my-cell>
     <my-cell type="ruble"
-             field="second"
+             field="model.tabSpares.incomingAndGrossProfitBodyShopSaleSparesInnerOthers.second"
              on-blur="autoSaving">
     </my-cell>
     <my-cell type="ruble"
-             field="third"
+             field="model.tabSpares.incomingAndGrossProfitBodyShopSaleSparesInnerOthers.third"
              on-blur="autoSaving">
     </my-cell>
     <my-cell type="ruble"
-             field="fourth"
+             field="model.tabSpares.incomingAndGrossProfitBodyShopSaleSparesInnerOthers.fourth"
              my-disabled="true"
-             value="{{model.fourth = model.second - model.third}}">
+             value="{{model.tabSpares.incomingAndGrossProfitBodyShopSaleSparesInnerOthers.fourth = model.tabSpares.incomingAndGrossProfitBodyShopSaleSparesInnerOthers.second - model.tabSpares.incomingAndGrossProfitBodyShopSaleSparesInnerOthers.third}}">
     </my-cell>
 </my-row>
 
-<my-row field="incomingAndGrossProfitBodyShopSaleSparesGuaranteeOthers">
+<my-row>
     <my-cell size="1"
              text="G10b">
     </my-cell>
@@ -463,17 +463,17 @@
     </my-cell>
     <my-cell></my-cell>
     <my-cell type="ruble"
-             field="second"
+             field="model.tabSpares.incomingAndGrossProfitBodyShopSaleSparesGuaranteeOthers.second"
              on-blur="autoSaving">
     </my-cell>
     <my-cell type="ruble"
-             field="third"
+             field="model.tabSpares.incomingAndGrossProfitBodyShopSaleSparesGuaranteeOthers.third"
              on-blur="autoSaving">
     </my-cell>
     <my-cell type="ruble"
-             field="fourth"
+             field="model.tabSpares.incomingAndGrossProfitBodyShopSaleSparesGuaranteeOthers.fourth"
              my-disabled="true"
-             value="{{model.fourth = model.second - model.third}}">
+             value="{{model.tabSpares.incomingAndGrossProfitBodyShopSaleSparesGuaranteeOthers.fourth = model.tabSpares.incomingAndGrossProfitBodyShopSaleSparesGuaranteeOthers.second - model.tabSpares.incomingAndGrossProfitBodyShopSaleSparesGuaranteeOthers.third}}">
     </my-cell>
 </my-row>
 
@@ -481,11 +481,11 @@
 
 </my-table>
 
-<my-table model="model" field="tabSpares">
+<my-table>
 
 <my-foot>
 
-<my-row field="incomingAndGrossProfitTotalShop">
+<my-row>
     <my-cell size="1"
              text="G1">
     </my-cell>
@@ -494,29 +494,29 @@
     </my-cell>
     <my-cell></my-cell>
     <my-cell type="ruble"
-             field="second"
+             field="model.tabSpares.incomingAndGrossProfitTotalShop.second"
              my-disabled="true"
-             value="{{model.second=
-                                baseModel.incomingAndGrossProfitShopSaleVolvo.second+
-                                baseModel.incomingAndGrossProfitRetailShopSaleOthers.second}}">
+             value="{{model.tabSpares.incomingAndGrossProfitTotalShop.second=
+                                model.tabSpares.incomingAndGrossProfitShopSaleVolvo.second+
+                                model.tabSpares.incomingAndGrossProfitRetailShopSaleOthers.second}}">
     </my-cell>
     <my-cell type="ruble"
-             field="third"
+             field="model.tabSpares.incomingAndGrossProfitTotalShop.third"
              my-disabled="true"
-             value="{{model.third=
-                                baseModel.incomingAndGrossProfitShopSaleVolvo.third+
-                                baseModel.incomingAndGrossProfitRetailShopSaleOthers.third}}">
+             value="{{model.tabSpares.incomingAndGrossProfitTotalShop.third=
+                                model.tabSpares.incomingAndGrossProfitShopSaleVolvo.third+
+                                model.tabSpares.incomingAndGrossProfitRetailShopSaleOthers.third}}">
     </my-cell>
     <my-cell type="ruble"
-             field="fourth"
+             field="model.tabSpares.incomingAndGrossProfitTotalShop.fourth"
              my-disabled="true"
-             value="{{model.fourth=
-                                baseModel.incomingAndGrossProfitShopSaleVolvo.fourth+
-                                baseModel.incomingAndGrossProfitRetailShopSaleOthers.fourth}}">
+             value="{{model.tabSpares.incomingAndGrossProfitTotalShop.fourth=
+                                model.tabSpares.incomingAndGrossProfitShopSaleVolvo.fourth+
+                                model.tabSpares.incomingAndGrossProfitRetailShopSaleOthers.fourth}}">
     </my-cell>
 </my-row>
 
-<my-row field="incomingAndGrossProfitTotalAccessories">
+<my-row>
     <my-cell size="1"
              text="G2">
     </my-cell>
@@ -525,29 +525,29 @@
     </my-cell>
     <my-cell></my-cell>
     <my-cell type="ruble"
-             field="second"
+             field="model.tabSpares.incomingAndGrossProfitTotalAccessories.second"
              my-disabled="true"
-             value="{{model.second=
-                                baseModel.incomingAndGrossProfitSaleAccessoriesVolvo.second+
-                                baseModel.incomingAndGrossProfitSaleAccessoriesOthers.second}}">
+             value="{{model.tabSpares.incomingAndGrossProfitTotalAccessories.second=
+                                model.tabSpares.incomingAndGrossProfitSaleAccessoriesVolvo.second+
+                                model.tabSpares.incomingAndGrossProfitSaleAccessoriesOthers.second}}">
     </my-cell>
     <my-cell type="ruble"
-             field="third"
+             field="model.tabSpares.incomingAndGrossProfitTotalAccessories.third"
              my-disabled="true"
-             value="{{model.third=
-                                baseModel.incomingAndGrossProfitSaleAccessoriesVolvo.third+
-                                baseModel.incomingAndGrossProfitSaleAccessoriesOthers.third}}">
+             value="{{model.tabSpares.incomingAndGrossProfitTotalAccessories.third=
+                                model.tabSpares.incomingAndGrossProfitSaleAccessoriesVolvo.third+
+                                model.tabSpares.incomingAndGrossProfitSaleAccessoriesOthers.third}}">
     </my-cell>
     <my-cell type="ruble"
-             field="fourth"
+             field="model.tabSpares.incomingAndGrossProfitTotalAccessories.fourth"
              my-disabled="true"
-             value="{{model.fourth=
-                                baseModel.incomingAndGrossProfitSaleAccessoriesVolvo.fourth+
-                                baseModel.incomingAndGrossProfitSaleAccessoriesOthers.fourth}}">
+             value="{{model.tabSpares.incomingAndGrossProfitTotalAccessories.fourth=
+                                model.tabSpares.incomingAndGrossProfitSaleAccessoriesVolvo.fourth+
+                                model.tabSpares.incomingAndGrossProfitSaleAccessoriesOthers.fourth}}">
     </my-cell>
 </my-row>
 
-<my-row field="incomingAndGrossProfitTotalSaleOtherOrganizations">
+<my-row>
     <my-cell size="1"
              text="G3">
     </my-cell>
@@ -556,29 +556,29 @@
     </my-cell>
     <my-cell></my-cell>
     <my-cell type="ruble"
-             field="second"
+             field="model.tabSpares.incomingAndGrossProfitTotalSaleOtherOrganizations.second"
              my-disabled="true"
-             value="{{model.second=
-                                baseModel.incomingAndGrossProfitSaleSparesOtherOrganizationsVolvo.second+
-                                baseModel.incomingAndGrossProfitSaleSparesOtherOrganizationsOthers.second}}">
+             value="{{model.tabSpares.incomingAndGrossProfitTotalSaleOtherOrganizations.second=
+                                model.tabSpares.incomingAndGrossProfitSaleSparesOtherOrganizationsVolvo.second+
+                                model.tabSpares.incomingAndGrossProfitSaleSparesOtherOrganizationsOthers.second}}">
     </my-cell>
     <my-cell type="ruble"
-             field="third"
+             field="model.tabSpares.incomingAndGrossProfitTotalSaleOtherOrganizations.third"
              my-disabled="true"
-             value="{{model.third=
-                                baseModel.incomingAndGrossProfitSaleSparesOtherOrganizationsVolvo.third+
-                                baseModel.incomingAndGrossProfitSaleSparesOtherOrganizationsOthers.third}}">
+             value="{{model.tabSpares.incomingAndGrossProfitTotalSaleOtherOrganizations.third=
+                                model.tabSpares.incomingAndGrossProfitSaleSparesOtherOrganizationsVolvo.third+
+                                model.tabSpares.incomingAndGrossProfitSaleSparesOtherOrganizationsOthers.third}}">
     </my-cell>
     <my-cell type="ruble"
-             field="fourth"
+             field="model.tabSpares.incomingAndGrossProfitTotalSaleOtherOrganizations.fourth"
              my-disabled="true"
-             value="{{model.fourth=
-                                baseModel.incomingAndGrossProfitSaleSparesOtherOrganizationsVolvo.fourth+
-                                baseModel.incomingAndGrossProfitSaleSparesOtherOrganizationsOthers.fourth}}">
+             value="{{model.tabSpares.incomingAndGrossProfitTotalSaleOtherOrganizations.fourth=
+                                model.tabSpares.incomingAndGrossProfitSaleSparesOtherOrganizationsVolvo.fourth+
+                                model.tabSpares.incomingAndGrossProfitSaleSparesOtherOrganizationsOthers.fourth}}">
     </my-cell>
 </my-row>
 
-<my-row field="incomingAndGrossProfitTotalFlittingShopAtRetail">
+<my-row>
     <my-cell size="1"
              text="G4">
     </my-cell>
@@ -587,29 +587,29 @@
     </my-cell>
     <my-cell></my-cell>
     <my-cell type="ruble"
-             field="second"
+             field="model.tabSpares.incomingAndGrossProfitTotalFlittingShopAtRetail.second"
              my-disabled="true"
-             value="{{model.second=
-                                baseModel.incomingAndGrossProfitFittingShopSaleSparesAtRetailVolvo.second+
-                                baseModel.incomingAndGrossProfitFittingShopSaleSparesAtRetailOthers.second}}">
+             value="{{model.tabSpares.incomingAndGrossProfitTotalFlittingShopAtRetail.second=
+                                model.tabSpares.incomingAndGrossProfitFittingShopSaleSparesAtRetailVolvo.second+
+                                model.tabSpares.incomingAndGrossProfitFittingShopSaleSparesAtRetailOthers.second}}">
     </my-cell>
     <my-cell type="ruble"
-             field="third"
+             field="model.tabSpares.incomingAndGrossProfitTotalFlittingShopAtRetail.third"
              my-disabled="true"
-             value="{{model.third=
-                                baseModel.incomingAndGrossProfitFittingShopSaleSparesAtRetailVolvo.third+
-                                baseModel.incomingAndGrossProfitFittingShopSaleSparesAtRetailOthers.third}}">
+             value="{{model.tabSpares.incomingAndGrossProfitTotalFlittingShopAtRetail.third=
+                                model.tabSpares.incomingAndGrossProfitFittingShopSaleSparesAtRetailVolvo.third+
+                                model.tabSpares.incomingAndGrossProfitFittingShopSaleSparesAtRetailOthers.third}}">
     </my-cell>
     <my-cell type="ruble"
-             field="fourth"
+             field="model.tabSpares.incomingAndGrossProfitTotalFlittingShopAtRetail.fourth"
              my-disabled="true"
-             value="{{model.fourth=
-                                baseModel.incomingAndGrossProfitFittingShopSaleSparesAtRetailVolvo.fourth+
-                                baseModel.incomingAndGrossProfitFittingShopSaleSparesAtRetailOthers.fourth}}">
+             value="{{model.tabSpares.incomingAndGrossProfitTotalFlittingShopAtRetail.fourth=
+                                model.tabSpares.incomingAndGrossProfitFittingShopSaleSparesAtRetailVolvo.fourth+
+                                model.tabSpares.incomingAndGrossProfitFittingShopSaleSparesAtRetailOthers.fourth}}">
     </my-cell>
 </my-row>
 
-<my-row field="incomingAndGrossProfitTotalFlittingShopInner">
+<my-row>
     <my-cell size="1"
              text="G5">
     </my-cell>
@@ -618,29 +618,29 @@
     </my-cell>
     <my-cell></my-cell>
     <my-cell type="ruble"
-             field="second"
+             field="model.tabSpares.incomingAndGrossProfitTotalFlittingShopInner.second"
              my-disabled="true"
-             value="{{model.second=
-                                baseModel.incomingAndGrossProfitFittingShopSaleSparesInnerVolvo.second+
-                                baseModel.incomingAndGrossProfitFittingShopSaleSparesInnerOthers.second}}">
+             value="{{model.tabSpares.incomingAndGrossProfitTotalFlittingShopInner.second=
+                                model.tabSpares.incomingAndGrossProfitFittingShopSaleSparesInnerVolvo.second+
+                                model.tabSpares.incomingAndGrossProfitFittingShopSaleSparesInnerOthers.second}}">
     </my-cell>
     <my-cell type="ruble"
-             field="third"
+             field="model.tabSpares.incomingAndGrossProfitTotalFlittingShopInner.third"
              my-disabled="true"
-             value="{{model.third=
-                                baseModel.incomingAndGrossProfitFittingShopSaleSparesInnerVolvo.third+
-                                baseModel.incomingAndGrossProfitFittingShopSaleSparesInnerOthers.third}}">
+             value="{{model.tabSpares.incomingAndGrossProfitTotalFlittingShopInner.third=
+                                model.tabSpares.incomingAndGrossProfitFittingShopSaleSparesInnerVolvo.third+
+                                model.tabSpares.incomingAndGrossProfitFittingShopSaleSparesInnerOthers.third}}">
     </my-cell>
     <my-cell type="ruble"
-             field="fourth"
+             field="model.tabSpares.incomingAndGrossProfitTotalFlittingShopInner.fourth"
              my-disabled="true"
-             value="{{model.fourth=
-                                baseModel.incomingAndGrossProfitFittingShopSaleSparesInnerVolvo.fourth+
-                                baseModel.incomingAndGrossProfitFittingShopSaleSparesInnerOthers.fourth}}">
+             value="{{model.tabSpares.incomingAndGrossProfitTotalFlittingShopInner.fourth=
+                                model.tabSpares.incomingAndGrossProfitFittingShopSaleSparesInnerVolvo.fourth+
+                                model.tabSpares.incomingAndGrossProfitFittingShopSaleSparesInnerOthers.fourth}}">
     </my-cell>
 </my-row>
 
-<my-row field="incomingAndGrossProfitTotalFlittingShopGuarantee">
+<my-row>
     <my-cell size="1"
              text="G6">
     </my-cell>
@@ -649,29 +649,29 @@
     </my-cell>
     <my-cell></my-cell>
     <my-cell type="ruble"
-             field="second"
+             field="model.tabSpares.incomingAndGrossProfitTotalFlittingShopGuarantee.second"
              my-disabled="true"
-             value="{{model.second=
-                                baseModel.incomingAndGrossProfitFittingShopSaleSparesGuaranteeVolvo.second+
-                                baseModel.incomingAndGrossProfitFittingShopSaleSparesGuaranteeOthers.second}}">
+             value="{{model.tabSpares.incomingAndGrossProfitTotalFlittingShopGuarantee.second=
+                                model.tabSpares.incomingAndGrossProfitFittingShopSaleSparesGuaranteeVolvo.second+
+                                model.tabSpares.incomingAndGrossProfitFittingShopSaleSparesGuaranteeOthers.second}}">
     </my-cell>
     <my-cell type="ruble"
-             field="third"
+             field="model.tabSpares.incomingAndGrossProfitTotalFlittingShopGuarantee.third"
              my-disabled="true"
-             value="{{model.third=
-                                baseModel.incomingAndGrossProfitFittingShopSaleSparesGuaranteeVolvo.third+
-                                baseModel.incomingAndGrossProfitFittingShopSaleSparesGuaranteeOthers.third}}">
+             value="{{model.tabSpares.incomingAndGrossProfitTotalFlittingShopGuarantee.third=
+                                model.tabSpares.incomingAndGrossProfitFittingShopSaleSparesGuaranteeVolvo.third+
+                                model.tabSpares.incomingAndGrossProfitFittingShopSaleSparesGuaranteeOthers.third}}">
     </my-cell>
     <my-cell type="ruble"
-             field="fourth"
+             field="model.tabSpares.incomingAndGrossProfitTotalFlittingShopGuarantee.fourth"
              my-disabled="true"
-             value="{{model.fourth=
-                                baseModel.incomingAndGrossProfitFittingShopSaleSparesGuaranteeVolvo.fourth+
-                                baseModel.incomingAndGrossProfitFittingShopSaleSparesGuaranteeOthers.fourth}}">
+             value="{{model.tabSpares.incomingAndGrossProfitTotalFlittingShopGuarantee.fourth=
+                                model.tabSpares.incomingAndGrossProfitFittingShopSaleSparesGuaranteeVolvo.fourth+
+                                model.tabSpares.incomingAndGrossProfitFittingShopSaleSparesGuaranteeOthers.fourth}}">
     </my-cell>
 </my-row>
 
-<my-row field="incomingAndGrossProfitTotalBodyShopAtRetail">
+<my-row>
     <my-cell size="1"
              text="G7">
     </my-cell>
@@ -680,29 +680,29 @@
     </my-cell>
     <my-cell></my-cell>
     <my-cell type="ruble"
-             field="second"
+             field="model.tabSpares.incomingAndGrossProfitTotalBodyShopAtRetail.second"
              my-disabled="true"
-             value="{{model.second=
-                                baseModel.incomingAndGrossProfitBodyShopSaleSparesAtRetailVolvo.second+
-                                baseModel.incomingAndGrossProfitBodyShopSaleSparesAtRetailOthers.second}}">
+             value="{{model.tabSpares.incomingAndGrossProfitTotalBodyShopAtRetail.second=
+                                model.tabSpares.incomingAndGrossProfitBodyShopSaleSparesAtRetailVolvo.second+
+                                model.tabSpares.incomingAndGrossProfitBodyShopSaleSparesAtRetailOthers.second}}">
     </my-cell>
     <my-cell type="ruble"
-             field="third"
+             field="model.tabSpares.incomingAndGrossProfitTotalBodyShopAtRetail.third"
              my-disabled="true"
-             value="{{model.third=
-                                baseModel.incomingAndGrossProfitBodyShopSaleSparesAtRetailVolvo.third+
-                                baseModel.incomingAndGrossProfitBodyShopSaleSparesAtRetailOthers.third}}">
+             value="{{model.tabSpares.incomingAndGrossProfitTotalBodyShopAtRetail.third=
+                                model.tabSpares.incomingAndGrossProfitBodyShopSaleSparesAtRetailVolvo.third+
+                                model.tabSpares.incomingAndGrossProfitBodyShopSaleSparesAtRetailOthers.third}}">
     </my-cell>
     <my-cell type="ruble"
-             field="fourth"
+             field="model.tabSpares.incomingAndGrossProfitTotalBodyShopAtRetail.fourth"
              my-disabled="true"
-             value="{{model.fourth=
-                                baseModel.incomingAndGrossProfitBodyShopSaleSparesAtRetailVolvo.fourth+
-                                baseModel.incomingAndGrossProfitBodyShopSaleSparesAtRetailOthers.fourth}}">
+             value="{{model.tabSpares.incomingAndGrossProfitTotalBodyShopAtRetail.fourth=
+                                model.tabSpares.incomingAndGrossProfitBodyShopSaleSparesAtRetailVolvo.fourth+
+                                model.tabSpares.incomingAndGrossProfitBodyShopSaleSparesAtRetailOthers.fourth}}">
     </my-cell>
 </my-row>
 
-<my-row field="incomingAndGrossProfitTotalBodyShopInsurance">
+<my-row>
     <my-cell size="1"
              text="G8">
     </my-cell>
@@ -711,29 +711,29 @@
     </my-cell>
     <my-cell></my-cell>
     <my-cell type="ruble"
-             field="second"
+             field="model.tabSpares.incomingAndGrossProfitTotalBodyShopInsurance.second"
              my-disabled="true"
-             value="{{model.second=
-                                baseModel.incomingAndGrossProfitBodyShopSaleSparesInsuranceVolvo.second+
-                                baseModel.incomingAndGrossProfitBodyShopSaleSparesInsuranceOthers.second}}">
+             value="{{model.tabSpares.incomingAndGrossProfitTotalBodyShopInsurance.second=
+                                model.tabSpares.incomingAndGrossProfitBodyShopSaleSparesInsuranceVolvo.second+
+                                model.tabSpares.incomingAndGrossProfitBodyShopSaleSparesInsuranceOthers.second}}">
     </my-cell>
     <my-cell type="ruble"
-             field="third"
+             field="model.tabSpares.incomingAndGrossProfitTotalBodyShopInsurance.third"
              my-disabled="true"
-             value="{{model.third=
-                                baseModel.incomingAndGrossProfitBodyShopSaleSparesInsuranceVolvo.third+
-                                baseModel.incomingAndGrossProfitBodyShopSaleSparesInsuranceOthers.third}}">
+             value="{{model.tabSpares.incomingAndGrossProfitTotalBodyShopInsurance.third=
+                                model.tabSpares.incomingAndGrossProfitBodyShopSaleSparesInsuranceVolvo.third+
+                                model.tabSpares.incomingAndGrossProfitBodyShopSaleSparesInsuranceOthers.third}}">
     </my-cell>
     <my-cell type="ruble"
-             field="fourth"
+             field="model.tabSpares.incomingAndGrossProfitTotalBodyShopInsurance.fourth"
              my-disabled="true"
-             value="{{model.fourth=
-                                baseModel.incomingAndGrossProfitBodyShopSaleSparesInsuranceVolvo.fourth+
-                                baseModel.incomingAndGrossProfitBodyShopSaleSparesInsuranceOthers.fourth}}">
+             value="{{model.tabSpares.incomingAndGrossProfitTotalBodyShopInsurance.fourth=
+                                model.tabSpares.incomingAndGrossProfitBodyShopSaleSparesInsuranceVolvo.fourth+
+                                model.tabSpares.incomingAndGrossProfitBodyShopSaleSparesInsuranceOthers.fourth}}">
     </my-cell>
 </my-row>
 
-<my-row field="incomingAndGrossProfitTotalBodyShopInner">
+<my-row>
     <my-cell size="1"
              text="G9">
     </my-cell>
@@ -742,29 +742,29 @@
     </my-cell>
     <my-cell></my-cell>
     <my-cell type="ruble"
-             field="second"
+             field="model.tabSpares.incomingAndGrossProfitTotalBodyShopInner.second"
              my-disabled="true"
-             value="{{model.second=
-                                baseModel.incomingAndGrossProfitBodyShopSaleSparesInnerVolvo.second+
-                                baseModel.incomingAndGrossProfitBodyShopSaleSparesInnerOthers.second}}">
+             value="{{model.tabSpares.incomingAndGrossProfitTotalBodyShopInner.second=
+                                model.tabSpares.incomingAndGrossProfitBodyShopSaleSparesInnerVolvo.second+
+                                model.tabSpares.incomingAndGrossProfitBodyShopSaleSparesInnerOthers.second}}">
     </my-cell>
     <my-cell type="ruble"
-             field="third"
+             field="model.tabSpares.incomingAndGrossProfitTotalBodyShopInner.third"
              my-disabled="true"
-             value="{{model.third=
-                                baseModel.incomingAndGrossProfitBodyShopSaleSparesInnerVolvo.third+
-                                baseModel.incomingAndGrossProfitBodyShopSaleSparesInnerOthers.third}}">
+             value="{{model.tabSpares.incomingAndGrossProfitTotalBodyShopInner.third=
+                                model.tabSpares.incomingAndGrossProfitBodyShopSaleSparesInnerVolvo.third+
+                                model.tabSpares.incomingAndGrossProfitBodyShopSaleSparesInnerOthers.third}}">
     </my-cell>
     <my-cell type="ruble"
-             field="fourth"
+             field="model.tabSpares.incomingAndGrossProfitTotalBodyShopInner.fourth"
              my-disabled="true"
-             value="{{model.fourth=
-                                baseModel.incomingAndGrossProfitBodyShopSaleSparesInnerVolvo.fourth+
-                                baseModel.incomingAndGrossProfitBodyShopSaleSparesInnerOthers.fourth}}">
+             value="{{model.tabSpares.incomingAndGrossProfitTotalBodyShopInner.fourth=
+                                model.tabSpares.incomingAndGrossProfitBodyShopSaleSparesInnerVolvo.fourth+
+                                model.tabSpares.incomingAndGrossProfitBodyShopSaleSparesInnerOthers.fourth}}">
     </my-cell>
 </my-row>
 
-<my-row field="incomingAndGrossProfitTotalBodyShopGuarantee">
+<my-row>
     <my-cell size="1"
              text="G10">
     </my-cell>
@@ -773,29 +773,29 @@
     </my-cell>
     <my-cell></my-cell>
     <my-cell type="ruble"
-             field="second"
+             field="model.tabSpares.incomingAndGrossProfitTotalBodyShopGuarantee.second"
              my-disabled="true"
-             value="{{model.second=
-                                baseModel.incomingAndGrossProfitBodyShopSaleSparesGuaranteeVolvo.second+
-                                baseModel.incomingAndGrossProfitBodyShopSaleSparesGuaranteeOthers.second}}">
+             value="{{model.tabSpares.incomingAndGrossProfitTotalBodyShopGuarantee.second=
+                                model.tabSpares.incomingAndGrossProfitBodyShopSaleSparesGuaranteeVolvo.second+
+                                model.tabSpares.incomingAndGrossProfitBodyShopSaleSparesGuaranteeOthers.second}}">
     </my-cell>
     <my-cell type="ruble"
-             field="third"
+             field="model.tabSpares.incomingAndGrossProfitTotalBodyShopGuarantee.third"
              my-disabled="true"
-             value="{{model.third=
-                                baseModel.incomingAndGrossProfitBodyShopSaleSparesGuaranteeVolvo.third+
-                                baseModel.incomingAndGrossProfitBodyShopSaleSparesGuaranteeOthers.third}}">
+             value="{{model.tabSpares.incomingAndGrossProfitTotalBodyShopGuarantee.third=
+                                model.tabSpares.incomingAndGrossProfitBodyShopSaleSparesGuaranteeVolvo.third+
+                                model.tabSpares.incomingAndGrossProfitBodyShopSaleSparesGuaranteeOthers.third}}">
     </my-cell>
     <my-cell type="ruble"
-             field="fourth"
+             field="model.tabSpares.incomingAndGrossProfitTotalBodyShopGuarantee.fourth"
              my-disabled="true"
-             value="{{model.fourth=
-                                baseModel.incomingAndGrossProfitBodyShopSaleSparesGuaranteeVolvo.fourth+
-                                baseModel.incomingAndGrossProfitBodyShopSaleSparesGuaranteeOthers.fourth}}">
+             value="{{model.tabSpares.incomingAndGrossProfitTotalBodyShopGuarantee.fourth=
+                                model.tabSpares.incomingAndGrossProfitBodyShopSaleSparesGuaranteeVolvo.fourth+
+                                model.tabSpares.incomingAndGrossProfitBodyShopSaleSparesGuaranteeOthers.fourth}}">
     </my-cell>
 </my-row>
 
-<my-row field="incomingAndGrossProfitTotalSparesSales">
+<my-row>
     <my-cell size="1"
              text="G15">
     </my-cell>
@@ -804,49 +804,49 @@
     </my-cell>
     <my-cell></my-cell>
     <my-cell type="ruble"
-             field="second"
+             field="model.tabSpares.incomingAndGrossProfitTotalSparesSales.second"
              my-disabled="true"
-             value="{{model.second=
-                                baseModel.incomingAndGrossProfitTotalShop.second+
-                                baseModel.incomingAndGrossProfitTotalAccessories.second+
-                                baseModel.incomingAndGrossProfitTotalSaleOtherOrganizations.second+
-                                baseModel.incomingAndGrossProfitTotalFlittingShopAtRetail.second+
-                                baseModel.incomingAndGrossProfitTotalFlittingShopInner.second+
-                                baseModel.incomingAndGrossProfitTotalFlittingShopGuarantee.second+
-                                baseModel.incomingAndGrossProfitTotalBodyShopAtRetail.second+
-                                baseModel.incomingAndGrossProfitTotalBodyShopInsurance.second+
-                                baseModel.incomingAndGrossProfitTotalBodyShopInner.second+
-                                baseModel.incomingAndGrossProfitTotalBodyShopGuarantee.second}}">
+             value="{{model.tabSpares.incomingAndGrossProfitTotalSparesSales.second=
+                                model.tabSpares.incomingAndGrossProfitTotalShop.second+
+                                model.tabSpares.incomingAndGrossProfitTotalAccessories.second+
+                                model.tabSpares.incomingAndGrossProfitTotalSaleOtherOrganizations.second+
+                                model.tabSpares.incomingAndGrossProfitTotalFlittingShopAtRetail.second+
+                                model.tabSpares.incomingAndGrossProfitTotalFlittingShopInner.second+
+                                model.tabSpares.incomingAndGrossProfitTotalFlittingShopGuarantee.second+
+                                model.tabSpares.incomingAndGrossProfitTotalBodyShopAtRetail.second+
+                                model.tabSpares.incomingAndGrossProfitTotalBodyShopInsurance.second+
+                                model.tabSpares.incomingAndGrossProfitTotalBodyShopInner.second+
+                                model.tabSpares.incomingAndGrossProfitTotalBodyShopGuarantee.second}}">
     </my-cell>
     <my-cell type="ruble"
-             field="third"
+             field="model.tabSpares.incomingAndGrossProfitTotalSparesSales.third"
              my-disabled="true"
-             value="{{model.third=
-                                baseModel.incomingAndGrossProfitTotalShop.third+
-                                baseModel.incomingAndGrossProfitTotalAccessories.third+
-                                baseModel.incomingAndGrossProfitTotalSaleOtherOrganizations.third+
-                                baseModel.incomingAndGrossProfitTotalFlittingShopAtRetail.third+
-                                baseModel.incomingAndGrossProfitTotalFlittingShopInner.third+
-                                baseModel.incomingAndGrossProfitTotalFlittingShopGuarantee.third+
-                                baseModel.incomingAndGrossProfitTotalBodyShopAtRetail.third+
-                                baseModel.incomingAndGrossProfitTotalBodyShopInsurance.third+
-                                baseModel.incomingAndGrossProfitTotalBodyShopInner.third+
-                                baseModel.incomingAndGrossProfitTotalBodyShopGuarantee.third}}">
+             value="{{model.tabSpares.incomingAndGrossProfitTotalSparesSales.third=
+                                model.tabSpares.incomingAndGrossProfitTotalShop.third+
+                                model.tabSpares.incomingAndGrossProfitTotalAccessories.third+
+                                model.tabSpares.incomingAndGrossProfitTotalSaleOtherOrganizations.third+
+                                model.tabSpares.incomingAndGrossProfitTotalFlittingShopAtRetail.third+
+                                model.tabSpares.incomingAndGrossProfitTotalFlittingShopInner.third+
+                                model.tabSpares.incomingAndGrossProfitTotalFlittingShopGuarantee.third+
+                                model.tabSpares.incomingAndGrossProfitTotalBodyShopAtRetail.third+
+                                model.tabSpares.incomingAndGrossProfitTotalBodyShopInsurance.third+
+                                model.tabSpares.incomingAndGrossProfitTotalBodyShopInner.third+
+                                model.tabSpares.incomingAndGrossProfitTotalBodyShopGuarantee.third}}">
     </my-cell>
     <my-cell type="ruble"
-             field="fourth"
+             field="model.tabSpares.incomingAndGrossProfitTotalSparesSales.fourth"
              my-disabled="true"
-             value="{{model.fourth=
-                                baseModel.incomingAndGrossProfitTotalShop.fourth+
-                                baseModel.incomingAndGrossProfitTotalAccessories.fourth+
-                                baseModel.incomingAndGrossProfitTotalSaleOtherOrganizations.fourth+
-                                baseModel.incomingAndGrossProfitTotalFlittingShopAtRetail.fourth+
-                                baseModel.incomingAndGrossProfitTotalFlittingShopInner.fourth+
-                                baseModel.incomingAndGrossProfitTotalFlittingShopGuarantee.fourth+
-                                baseModel.incomingAndGrossProfitTotalBodyShopAtRetail.fourth+
-                                baseModel.incomingAndGrossProfitTotalBodyShopInsurance.fourth+
-                                baseModel.incomingAndGrossProfitTotalBodyShopInner.fourth+
-                                baseModel.incomingAndGrossProfitTotalBodyShopGuarantee.fourth}}">
+             value="{{model.tabSpares.incomingAndGrossProfitTotalSparesSales.fourth=
+                                model.tabSpares.incomingAndGrossProfitTotalShop.fourth+
+                                model.tabSpares.incomingAndGrossProfitTotalAccessories.fourth+
+                                model.tabSpares.incomingAndGrossProfitTotalSaleOtherOrganizations.fourth+
+                                model.tabSpares.incomingAndGrossProfitTotalFlittingShopAtRetail.fourth+
+                                model.tabSpares.incomingAndGrossProfitTotalFlittingShopInner.fourth+
+                                model.tabSpares.incomingAndGrossProfitTotalFlittingShopGuarantee.fourth+
+                                model.tabSpares.incomingAndGrossProfitTotalBodyShopAtRetail.fourth+
+                                model.tabSpares.incomingAndGrossProfitTotalBodyShopInsurance.fourth+
+                                model.tabSpares.incomingAndGrossProfitTotalBodyShopInner.fourth+
+                                model.tabSpares.incomingAndGrossProfitTotalBodyShopGuarantee.fourth}}">
     </my-cell>
 </my-row>
 
@@ -855,10 +855,10 @@
 
 </my-table>
 
-<my-table model="model" field="tabSpares">
+<my-table>
     <my-body>
 
-        <my-row field="incomingAndGrossProfitLubricant">
+        <my-row>
             <my-cell size="1"
                      text="G16">
             </my-cell>
@@ -867,21 +867,21 @@
             </my-cell>
             <my-cell></my-cell>
             <my-cell type="ruble"
-                     field="second"
+                     field="model.tabSpares.incomingAndGrossProfitLubricant.second"
                      on-blur="autoSaving">
             </my-cell>
             <my-cell type="ruble"
-                     field="third"
+                     field="model.tabSpares.incomingAndGrossProfitLubricant.third"
                      on-blur="autoSaving">
             </my-cell>
             <my-cell type="ruble"
-                     field="fourth"
+                     field="model.tabSpares.incomingAndGrossProfitLubricant.fourth"
                      my-disabled="true"
-                     value="{{model.fourth = model.second - model.third}}">
+                     value="{{model.tabSpares.incomingAndGrossProfitLubricant.fourth = model.tabSpares.incomingAndGrossProfitLubricant.second - model.tabSpares.incomingAndGrossProfitLubricant.third}}">
             </my-cell>
         </my-row>
 
-        <my-row field="incomingAndGrossProfitColorsTyingProductsSale">
+        <my-row>
             <my-cell size="1"
                      text="G17">
             </my-cell>
@@ -890,21 +890,21 @@
             </my-cell>
             <my-cell></my-cell>
             <my-cell type="ruble"
-                     field="second"
+                     field="model.tabSpares.incomingAndGrossProfitColorsTyingProductsSale.second"
                      on-blur="autoSaving">
             </my-cell>
             <my-cell type="ruble"
-                     field="third"
+                     field="model.tabSpares.incomingAndGrossProfitColorsTyingProductsSale.third"
                      on-blur="autoSaving">
             </my-cell>
             <my-cell type="ruble"
-                     field="fourth"
+                     field="model.tabSpares.incomingAndGrossProfitColorsTyingProductsSale.fourth"
                      my-disabled="true"
-                     value="{{model.fourth = model.second - model.third}}">
+                     value="{{model.tabSpares.incomingAndGrossProfitColorsTyingProductsSale.fourth = model.tabSpares.incomingAndGrossProfitColorsTyingProductsSale.second - model.tabSpares.incomingAndGrossProfitColorsTyingProductsSale.third}}">
             </my-cell>
         </my-row>
 
-        <my-row field="incomingAndGrossProfitTyreSale">
+        <my-row>
             <my-cell size="1"
                      text="G18">
             </my-cell>
@@ -913,21 +913,21 @@
             </my-cell>
             <my-cell></my-cell>
             <my-cell type="ruble"
-                     field="second"
+                     field="model.tabSpares.incomingAndGrossProfitTyreSale.second"
                      on-blur="autoSaving">
             </my-cell>
             <my-cell type="ruble"
-                     field="third"
+                     field="model.tabSpares.incomingAndGrossProfitTyreSale.third"
                      on-blur="autoSaving">
             </my-cell>
             <my-cell type="ruble"
-                     field="fourth"
+                     field="model.tabSpares.incomingAndGrossProfitTyreSale.fourth"
                      my-disabled="true"
-                     value="{{model.fourth = model.second - model.third}}">
+                     value="{{model.tabSpares.incomingAndGrossProfitTyreSale.fourth = model.tabSpares.incomingAndGrossProfitTyreSale.second - model.tabSpares.incomingAndGrossProfitTyreSale.third}}">
             </my-cell>
         </my-row>
 
-        <my-row field="incomingAndGrossProfitOtherSales">
+        <my-row>
             <my-cell size="1"
                      text="G19">
             </my-cell>
@@ -936,24 +936,24 @@
             </my-cell>
             <my-cell></my-cell>
             <my-cell type="ruble"
-                     field="second"
+                     field="model.tabSpares.incomingAndGrossProfitOtherSales.second"
                      on-blur="autoSaving">
             </my-cell>
             <my-cell type="ruble"
-                     field="third"
+                     field="model.tabSpares.incomingAndGrossProfitOtherSales.third"
                      on-blur="autoSaving">
             </my-cell>
             <my-cell type="ruble"
-                     field="fourth"
+                     field="model.tabSpares.incomingAndGrossProfitOtherSales.fourth"
                      my-disabled="true"
-                     value="{{model.fourth = model.second - model.third}}">
+                     value="{{model.tabSpares.incomingAndGrossProfitOtherSales.fourth = model.tabSpares.incomingAndGrossProfitOtherSales.second - model.tabSpares.incomingAndGrossProfitOtherSales.third}}">
             </my-cell>
         </my-row>
 
     </my-body>
 
     <my-foot>
-        <my-row field="incomingAndGrossProfitOtherSalesTotal">
+        <my-row>
             <my-cell size="1"
                      text="G30">
             </my-cell>
@@ -962,31 +962,31 @@
             </my-cell>
             <my-cell></my-cell>
             <my-cell type="ruble"
-                     field="second"
+                     field="model.tabSpares.incomingAndGrossProfitOtherSalesTotal.second"
                      my-disabled="true"
-                     value="{{model.second=
-                                baseModel.incomingAndGrossProfitLubricant.second+
-                                baseModel.incomingAndGrossProfitColorsTyingProductsSale.second+
-                                baseModel.incomingAndGrossProfitTyreSale.second+
-                                baseModel.incomingAndGrossProfitOtherSales.second}}">
+                     value="{{model.tabSpares.incomingAndGrossProfitOtherSalesTotal.second=
+                                model.tabSpares.incomingAndGrossProfitLubricant.second+
+                                model.tabSpares.incomingAndGrossProfitColorsTyingProductsSale.second+
+                                model.tabSpares.incomingAndGrossProfitTyreSale.second+
+                                model.tabSpares.incomingAndGrossProfitOtherSales.second}}">
             </my-cell>
             <my-cell type="ruble"
-                     field="third"
+                     field="model.tabSpares.incomingAndGrossProfitOtherSalesTotal.third"
                      my-disabled="true"
-                     value="{{model.third=
-                                baseModel.incomingAndGrossProfitLubricant.third+
-                                baseModel.incomingAndGrossProfitColorsTyingProductsSale.third+
-                                baseModel.incomingAndGrossProfitTyreSale.third+
-                                baseModel.incomingAndGrossProfitOtherSales.third}}">
+                     value="{{model.tabSpares.incomingAndGrossProfitOtherSalesTotal.third=
+                                model.tabSpares.incomingAndGrossProfitLubricant.third+
+                                model.tabSpares.incomingAndGrossProfitColorsTyingProductsSale.third+
+                                model.tabSpares.incomingAndGrossProfitTyreSale.third+
+                                model.tabSpares.incomingAndGrossProfitOtherSales.third}}">
             </my-cell>
             <my-cell type="ruble"
-                     field="fourth"
+                     field="model.tabSpares.incomingAndGrossProfitOtherSalesTotal.fourth"
                      my-disabled="true"
-                     value="{{model.fourth=
-                                baseModel.incomingAndGrossProfitLubricant.fourth+
-                                baseModel.incomingAndGrossProfitColorsTyingProductsSale.fourth+
-                                baseModel.incomingAndGrossProfitTyreSale.fourth+
-                                baseModel.incomingAndGrossProfitOtherSales.fourth}}">
+                     value="{{model.tabSpares.incomingAndGrossProfitOtherSalesTotal.fourth=
+                                model.tabSpares.incomingAndGrossProfitLubricant.fourth+
+                                model.tabSpares.incomingAndGrossProfitColorsTyingProductsSale.fourth+
+                                model.tabSpares.incomingAndGrossProfitTyreSale.fourth+
+                                model.tabSpares.incomingAndGrossProfitOtherSales.fourth}}">
             </my-cell>
         </my-row>
     </my-foot>
@@ -995,7 +995,7 @@
 <my-table model="model" field="tabSpares">
 
     <my-foot>
-        <my-row field="incomingAndGrossProfitTotalDepartment">
+        <my-row>
             <my-cell size="1"
                      text="G40">
             </my-cell>
@@ -1004,32 +1004,32 @@
             </my-cell>
             <my-cell></my-cell>
             <my-cell type="ruble"
-                     field="second"
+                     field="model.tabSpares.incomingAndGrossProfitTotalDepartment.second"
                      my-disabled="true"
-                     value="{{model.second=
-                                baseModel.incomingAndGrossProfitTotalSparesSales.second+
-                                baseModel.incomingAndGrossProfitOtherSalesTotal.second}}">
+                     value="{{model.tabSpares.incomingAndGrossProfitTotalDepartment.second=
+                                model.tabSpares.incomingAndGrossProfitTotalSparesSales.second+
+                                model.tabSpares.incomingAndGrossProfitOtherSalesTotal.second}}">
             </my-cell>
             <my-cell type="ruble"
-                     field="third"
+                     field="model.tabSpares.incomingAndGrossProfitTotalDepartment.third"
                      my-disabled="true"
-                     value="{{model.third=
-                                baseModel.incomingAndGrossProfitTotalSparesSales.third+
-                                baseModel.incomingAndGrossProfitOtherSalesTotal.third}}">
+                     value="{{model.tabSpares.incomingAndGrossProfitTotalDepartment.third=
+                                model.tabSpares.incomingAndGrossProfitTotalSparesSales.third+
+                                model.tabSpares.incomingAndGrossProfitOtherSalesTotal.third}}">
             </my-cell>
             <my-cell type="ruble"
-                     field="fourth"
+                     field="model.tabSpares.incomingAndGrossProfitTotalDepartment.fourth"
                      my-disabled="true"
-                     value="{{model.fourth=
-                                baseModel.incomingAndGrossProfitTotalSparesSales.fourth+
-                                baseModel.incomingAndGrossProfitOtherSalesTotal.fourth}}">
+                     value="{{model.tabSpares.incomingAndGrossProfitTotalDepartment.fourth=
+                                model.tabSpares.incomingAndGrossProfitTotalSparesSales.fourth+
+                                model.tabSpares.incomingAndGrossProfitOtherSalesTotal.fourth}}">
             </my-cell>
         </my-row>
     </my-foot>
 
 </my-table>
 
-<my-table model="model" field="tabSpares">
+<my-table>
     <my-head>
         <my-row>
             <my-cell size="4"
@@ -1042,7 +1042,7 @@
         </my-row>
     </my-head>
     <my-body>
-        <my-row field="otherIncomingOtherIncoming">
+        <my-row>
             <my-cell size="1"
                      text="G41">
             </my-cell>
@@ -1053,12 +1053,12 @@
             <my-cell></my-cell>
             <my-cell></my-cell>
             <my-cell type="ruble"
-                     field="fourth"
+                     field="model.tabSpares.otherIncomingOtherIncoming.fourth"
                      on-blur="autoSaving">
             </my-cell>
         </my-row>
 
-        <my-row field="otherIncomingExtraCharge">
+        <my-row>
             <my-cell size="1"
                      text="G44">
             </my-cell>
@@ -1069,12 +1069,12 @@
             <my-cell></my-cell>
             <my-cell></my-cell>
             <my-cell type="ruble"
-                     field="fourth"
+                     field="model.tabSpares.otherIncomingExtraCharge.fourth"
                      on-blur="autoSaving">
             </my-cell>
         </my-row>
 
-        <my-row field="otherIncomingStockpileCorrection">
+        <my-row>
             <my-cell size="1"
                      text="G45">
             </my-cell>
@@ -1085,17 +1085,17 @@
             <my-cell></my-cell>
             <my-cell></my-cell>
             <my-cell type="ruble"
-                     field="fourth"
+                     field="model.tabSpares.otherIncomingStockpileCorrection.fourth"
                      on-blur="autoSaving">
             </my-cell>
         </my-row>
     </my-body>
 </my-table>
 
-<my-table model="model" field="tabSpares">
+<my-table>
 
     <my-foot>
-        <my-row field="otherIncomingTotalSparesSale">
+        <my-row>
             <my-cell size="1"
                      text="G50">
             </my-cell>
@@ -1104,29 +1104,29 @@
             </my-cell>
             <my-cell></my-cell>
             <my-cell type="ruble"
-                     field="second"
+                     field="model.tabSpares.otherIncomingTotalSparesSale.second"
                      my-disabled="true"
-                     value="{{model.second=
-                                baseModel.incomingAndGrossProfitTotalDepartment.second}}">
+                     value="{{model.tabSpares.otherIncomingTotalSparesSale.second=
+                                model.tabSpares.incomingAndGrossProfitTotalDepartment.second}}">
             </my-cell>
             <my-cell type="ruble"
-                     field="third"
+                     field="model.tabSpares.otherIncomingTotalSparesSale.third"
                      my-disabled="true"
-                     value="{{model.third=
-                                baseModel.incomingAndGrossProfitTotalDepartment.third}}">
+                     value="{{model.tabSpares.otherIncomingTotalSparesSale.third=
+                                model.tabSpares.incomingAndGrossProfitTotalDepartment.third}}">
             </my-cell>
             <!-- TODO: value ??? -->
             <my-cell type="ruble"
-                     field="fourth"
+                     field="model.tabSpares.otherIncomingTotalSparesSale.fourth"
                      my-disabled="true"
-                     value="{{model.fourth=
-                                baseModel.incomingAndGrossProfitTotalDepartment.fourth}}">
+                     value="{{model.tabSpares.otherIncomingTotalSparesSale.fourth=
+                                model.tabSpares.incomingAndGrossProfitTotalDepartment.fourth}}">
             </my-cell>
         </my-row>
     </my-foot>
 </my-table>
 
-<my-table model="model" field="tabSpares">
+<my-table>
 <my-head>
     <my-row>
         <my-cell size="4"
@@ -1139,7 +1139,7 @@
     </my-row>
 </my-head>
 <my-body>
-<my-row field="departmentChargeNonproductiveStaffSalary">
+<my-row>
     <my-cell size="1"
              text="G51">
     </my-cell>
@@ -1150,12 +1150,12 @@
     <my-cell></my-cell>
     <my-cell></my-cell>
     <my-cell type="ruble"
-             field="fourth"
+             field="model.tabSpares.departmentChargeNonproductiveStaffSalary.fourth"
              on-blur="autoSaving">
     </my-cell>
 </my-row>
 
-<my-row field="departmentChargeCommissionCharges">
+<my-row>
     <my-cell size="1"
              text="G52">
     </my-cell>
@@ -1166,12 +1166,12 @@
     <my-cell></my-cell>
     <my-cell></my-cell>
     <my-cell type="ruble"
-             field="fourth"
+             field="model.tabSpares.departmentChargeCommissionCharges.fourth"
              on-blur="autoSaving">
     </my-cell>
 </my-row>
 
-<my-row field="departmentChargeSalaryTax">
+<my-row>
     <my-cell size="1"
              text="G53">
     </my-cell>
@@ -1182,12 +1182,12 @@
     <my-cell></my-cell>
     <my-cell></my-cell>
     <my-cell type="ruble"
-             field="fourth"
+             field="model.tabSpares.departmentChargeSalaryTax.fourth"
              on-blur="autoSaving">
     </my-cell>
 </my-row>
 
-<my-row field="departmentChargeOtherChargeOnStaff">
+<my-row>
     <my-cell size="1"
              text="G54">
     </my-cell>
@@ -1198,12 +1198,12 @@
     <my-cell></my-cell>
     <my-cell></my-cell>
     <my-cell type="ruble"
-             field="fourth"
+             field="model.tabSpares.departmentChargeOtherChargeOnStaff.fourth"
              on-blur="autoSaving">
     </my-cell>
 </my-row>
 
-<my-row field="departmentChargeEducation">
+<my-row>
     <my-cell size="1"
              text="G55">
     </my-cell>
@@ -1214,12 +1214,12 @@
     <my-cell></my-cell>
     <my-cell></my-cell>
     <my-cell type="ruble"
-             field="fourth"
+             field="model.tabSpares.departmentChargeEducation.fourth"
              on-blur="autoSaving">
     </my-cell>
 </my-row>
 
-<my-row field="departmentChargeTotalStaffCharges">
+<my-row>
     <my-cell size="1"
              text="G60">
     </my-cell>
@@ -1230,18 +1230,18 @@
     <my-cell></my-cell>
     <my-cell></my-cell>
     <my-cell type="ruble"
-             field="fourth"
+             field="model.tabSpares.departmentChargeTotalStaffCharges.fourth"
              my-disabled="true"
-             value="{{model.fourth=
-                                baseModel.departmentChargeNonproductiveStaffSalary.fourth+
-                                baseModel.departmentChargeCommissionCharges.fourth+
-                                baseModel.departmentChargeSalaryTax.fourth+
-                                baseModel.departmentChargeOtherChargeOnStaff.fourth+
-                                baseModel.departmentChargeEducation.fourth}}">
+             value="{{model.tabSpares.departmentChargeTotalStaffCharges.fourth=
+                                model.tabSpares.departmentChargeNonproductiveStaffSalary.fourth+
+                                model.tabSpares.departmentChargeCommissionCharges.fourth+
+                                model.tabSpares.departmentChargeSalaryTax.fourth+
+                                model.tabSpares.departmentChargeOtherChargeOnStaff.fourth+
+                                model.tabSpares.departmentChargeEducation.fourth}}">
     </my-cell>
 </my-row>
 
-<my-row field="departmentChargeEnvironmentCharges">
+<my-row>
     <my-cell size="1"
              text="G61">
     </my-cell>
@@ -1252,12 +1252,12 @@
     <my-cell></my-cell>
     <my-cell></my-cell>
     <my-cell type="ruble"
-             field="fourth"
+             field="model.tabSpares.departmentChargeEnvironmentCharges.fourth"
              on-blur="autoSaving">
     </my-cell>
 </my-row>
 
-<my-row field="departmentChargeDepartmentCarsCharges">
+<my-row>
     <my-cell size="1"
              text="G62">
     </my-cell>
@@ -1268,12 +1268,12 @@
     <my-cell></my-cell>
     <my-cell></my-cell>
     <my-cell type="ruble"
-             field="fourth"
+             field="model.tabSpares.departmentChargeDepartmentCarsCharges.fourth"
              on-blur="autoSaving">
     </my-cell>
 </my-row>
 
-<my-row field="departmentChargeAdvertising">
+<my-row>
     <my-cell size="1"
              text="G63">
     </my-cell>
@@ -1284,12 +1284,12 @@
     <my-cell></my-cell>
     <my-cell></my-cell>
     <my-cell type="ruble"
-             field="fourth"
+             field="model.tabSpares.departmentChargeAdvertising.fourth"
              on-blur="autoSaving">
     </my-cell>
 </my-row>
 
-<my-row field="departmentChargeDealerPaymentCharges">
+<my-row>
     <my-cell size="1"
              text="G64">
     </my-cell>
@@ -1300,12 +1300,12 @@
     <my-cell></my-cell>
     <my-cell></my-cell>
     <my-cell type="ruble"
-             field="fourth"
+             field="model.tabSpares.departmentChargeDealerPaymentCharges.fourth"
              on-blur="autoSaving">
     </my-cell>
 </my-row>
 
-<my-row field="departmentChargeOtherCharge">
+<my-row>
     <my-cell size="1"
              text="G65">
     </my-cell>
@@ -1316,12 +1316,12 @@
     <my-cell></my-cell>
     <my-cell></my-cell>
     <my-cell type="ruble"
-             field="fourth"
+             field="model.tabSpares.departmentChargeOtherCharge.fourth"
              on-blur="autoSaving">
     </my-cell>
 </my-row>
 
-<my-row field="departmentChargeAmortization">
+<my-row>
     <my-cell size="1"
              text="G66">
     </my-cell>
@@ -1332,12 +1332,12 @@
     <my-cell></my-cell>
     <my-cell></my-cell>
     <my-cell type="ruble"
-             field="fourth"
+             field="model.tabSpares.departmentChargeAmortization.fourth"
              on-blur="autoSaving">
     </my-cell>
 </my-row>
 
-<my-row field="departmentChargeTotalCharges">
+<my-row>
     <my-cell size="1"
              text="G70">
     </my-cell>
@@ -1348,26 +1348,26 @@
     <my-cell></my-cell>
     <my-cell></my-cell>
     <my-cell type="ruble"
-             field="fourth"
+             field="model.tabSpares.departmentChargeTotalCharges.fourth"
              my-disabled="true"
-             value="{{model.fourth=
-                                baseModel.departmentChargeTotalStaffCharges.fourth+
-                                baseModel.departmentChargeEnvironmentCharges.fourth+
-                                baseModel.departmentChargeDepartmentCarsCharges.fourth+
-                                baseModel.departmentChargeAdvertising.fourth+
-                                baseModel.departmentChargeDealerPaymentCharges.fourth+
-                                baseModel.departmentChargeOtherCharge.fourth+
-                                baseModel.departmentChargeAmortization.fourth}}">
+             value="{{model.tabSpares.departmentChargeTotalCharges.fourth=
+                                model.tabSpares.departmentChargeTotalStaffCharges.fourth+
+                                model.tabSpares.departmentChargeEnvironmentCharges.fourth+
+                                model.tabSpares.departmentChargeDepartmentCarsCharges.fourth+
+                                model.tabSpares.departmentChargeAdvertising.fourth+
+                                model.tabSpares.departmentChargeDealerPaymentCharges.fourth+
+                                model.tabSpares.departmentChargeOtherCharge.fourth+
+                                model.tabSpares.departmentChargeAmortization.fourth}}">
     </my-cell>
 </my-row>
 
 </my-body>
 </my-table>
 
-<my-table model="model" field="tabSpares">
+<my-table>
 
     <my-foot>
-        <my-row field="departmentChargeDepartmentIncoming">
+        <my-row>
             <my-cell size="1"
                      text="G90">
             </my-cell>
@@ -1379,17 +1379,17 @@
             <my-cell></my-cell>
             <!-- TODO: value ??? -->
             <my-cell type="ruble"
-                     field="fourth"
+                     field="model.tabSpares.departmentChargeDepartmentIncoming.fourth"
                      my-disabled="true"
-                     value="{{model.fourth=
-                                baseModel.otherIncomingTotalSparesSale.fourth-
-                                baseModel.departmentChargeTotalCharges.fourth}}">
+                     value="{{model.tabSpares.departmentChargeDepartmentIncoming.fourth=
+                                model.tabSpares.otherIncomingTotalSparesSale.fourth-
+                                model.tabSpares.departmentChargeTotalCharges.fourth}}">
             </my-cell>
         </my-row>
     </my-foot>
 </my-table>
 
-<my-table model="model" field="tabSpares">
+<my-table>
     <my-head>
         <my-row>
             <my-cell size="4"
@@ -1408,7 +1408,7 @@
         </my-row>
     </my-head>
     <my-body>
-        <my-row field="statisticsSparesCostInStock">
+        <my-row>
             <my-cell size="1"
                      text="G91">
             </my-cell>
@@ -1417,37 +1417,37 @@
             </my-cell>
             <my-cell size="1"
                      type="ruble"
-                     field="first"
+                     field="model.tabSpares.statisticsSparesCostInStock.first"
                      on-blur="autoSaving">
             </my-cell>
             <my-cell size="1"
                      type="ruble"
-                     field="second"
+                     field="model.tabSpares.statisticsSparesCostInStock.second"
                      on-blur="autoSaving">
             </my-cell>
             <my-cell size="1"
                      type="ruble"
-                     field="third"
+                     field="model.tabSpares.statisticsSparesCostInStock.third"
                      on-blur="autoSaving">
             </my-cell>
             <my-cell size="1"
                      type="ruble"
-                     field="fourth"
+                     field="model.tabSpares.statisticsSparesCostInStock.fourth"
                      on-blur="autoSaving">
             </my-cell>
             <my-cell size="1"
                      type="ruble"
-                     field="fifth"
+                     field="model.tabSpares.statisticsSparesCostInStock.fifth"
                      my-disabled="true"
-                     value="{{model.fifth =
-                                    model.first+
-                                    model.second+
-                                    model.third+
-                                    model.fourth}}">
+                     value="{{model.tabSpares.statisticsSparesCostInStock.fifth =
+                                    model.tabSpares.statisticsSparesCostInStock.first+
+                                    model.tabSpares.statisticsSparesCostInStock.second+
+                                    model.tabSpares.statisticsSparesCostInStock.third+
+                                    model.tabSpares.statisticsSparesCostInStock.fourth}}">
             </my-cell>
         </my-row>
 
-        <my-row field="statisticsSparesStockArea">
+        <my-row>
             <my-cell size="1"
                      text="G92">
             </my-cell>
@@ -1460,7 +1460,7 @@
             <my-cell size="1"></my-cell>
             <my-cell size="1"
                      type="ruble"
-                     field="fifth"
+                     field="model.tabSpares.statisticsSparesStockArea.fifth"
                      on-blur="autoSaving">
             </my-cell>
         </my-row>
