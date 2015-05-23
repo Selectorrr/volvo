@@ -13,6 +13,34 @@
             "contact": "пользователь @java_hipster в Twitter"
         },
         "like": "Если вам нравится JHipster, не забудьте дать нам звёздочку на",
-        "github": "Github"
+        "github": "Github",
+
+        "month": {
+            "report": "Отчеты по месяцам",
+            "january": "Январь",
+            "february": "Февраль",
+            "march": "Март",
+            "april": "Апрель",
+            "may": "Май",
+            "june": "Июнь",
+            "july": "Июль",
+            "august": "Август",
+            "september": "Сентябрь",
+            "october": "Октябрь",
+            "november": "Ноябрь",
+            "december": "Декабрь"
+        },
+        "tab": {
+            "new.cars" : "Новые автомобили",
+            "second.hand.cars" : "Подержанные автомобили",
+            "flitting.shop" : "Слес. цех",
+            "body.shop" : "Кузовной цех",
+            "spares" : "Запчасти",
+            "other.departments" : "Другие отделы",
+            "indirect.charges" : "Непрямые расходы",
+            "balance" : "Баланс",
+            "total.data" : "Итоговые данные",
+            "staff.quantity" : "Численность персонала"
+        }
     }
 }
