@@ -53,7 +53,8 @@
             "cost.price" : "Себ-ть",
             "gross.profit" : "ВП",
             "total" : "Сумма",
-            "all.in.all" : "Всего"
+            "all.in.all" : "Всего",
+            "hours" : "Часы"
         },
 
         "common" : {
@@ -91,8 +92,16 @@
             "sold.extended.guarantee.quantity" : "Продано расширенных гарантийных обязательств",
             "showroom.area" : "Площадь шоурума (м2)",
             "total.other.charges" : "Итого др. расходы",
-            "total.administration.charges" : "Итого расходы на адм. персонал отд. Продаж"
+            "total.administration.charges" : "Итого расходы на адм. персонал отд. Продаж",
+            "total.other.incoming" : "Всего прочие  доходы",
+            "advertising" : "Реклама",
+            "charges.total" : "Итого расходов",
 
+            "cost.per.hour.at.retail" : "Стоим-ть нормо-часа по прайс-листу - розница",
+            "cost.per.hour.at.inner" : "Стоим-ть нормо-часа по прайс-листу - внутренние",
+            "cost.per.hour.at.guarantee" : "Стоим-ть нормо-часа по прайс-листу - гарантийные",
+
+            "shop.working.hours" : "Время работы цеха"
         },
 
         "new.cars" : {
@@ -138,6 +147,56 @@
             "cost.in.stock" : "Стоим-ть ПА на складе",
             "quantity.on.credit" : "Кол-во ПА в кредит",
             "demonstration.area.quantity" : "Количество мест для демонстрации ПА"
+        },
+
+        "flitting.shop" : {
+            "incoming.and.gross" : "Выручка и ВП",
+            "gross.profit.volvo.retail" : "Слес. цех Розница - Volvo",
+            "gross.profit.volvo.inner" : "Слес. цех Внутренние - Volvo",
+            "gross.profit.volvo.guaranty" : "Слес. цех Гарантия - Volvo",
+            "gross.profit.others.retail" : "Слес. цех Розница - Другие",
+            "gross.profit.others.inner" : "Слес. цех Внутренние - Другие",
+            "gross.profit.others.guaranty" : "Слес. цех Гарантия - Другие",
+            "gross.profit.total.retail" : "Итого Слес. цех Розница",
+            "gross.profit.total.inner" : "Итого Слес. цех Внутренние",
+            "gross.profit.total.guaranty" : "Итого Слес. цех Гарантия",
+            "gross.profit.total" : "Итого по Слесарному цеху",
+            "subcontract.incoming" : "Доходы по субконтрактам",
+            "subcontract.gross.profit" : "Субконтракты Слес. Цех",
+            "subcontract.gross.profit.total" : "Итого доходы по субконтрактам",
+            "lubricant" : "ГСМ",
+            "gross.profit.incoming" : "Валовая прибыль Слесарного Цеха",
+            "total.administration.charges" : "Итого расходы на адм. персонал Слесарного цеха",
+            "supposititious.cars.charge" : "Расходы на подменные а/м",
+            "charges.repair.service" : "Ремонт и обслуж. оборудования",
+            "charges.client.compensation" : "Расходы дилера по выплате компенсации клиенту",
+            "consumable.cost" : "Стоимость расходных материалов и инструмента",
+            "volvo.presence.hours" : "Часы присутствия Volvo",
+            "volvo.presence.hours.total" : "Итого часов присутствия",
+            "productive.hours.at.retail.volvo" : "Продуктивные часы в розницу Volvo",
+            "productive.hours.at.retail.others" : "Продуктивные часы в розницу Другие",
+            "productive.hours.at.retail.total" : "Итого продуктивные в розницу часы",
+            "productive.hours.inner.volvo" : "Продуктивные внутренние часы Volvo",
+            "productive.hours.inner.others" : "Продуктивные внутренние часы Другие",
+            "productive.hours.inner.total" : "Итого продуктивные внутренние часы",
+            "productive.hours.guarantee.volvo" : "Продуктивные часы по гарантии Volvo",
+            "productive.hours.guarantee.others" : "Продуктивные часы по гарантии Другие",
+            "productive.hours.guarantee.total" : "Итого продуктивные часы по гарантии",
+            "productive.hours.total" : "Итого продуктивные часы",
+
+            "quantity.spares.at.retail.volvo" : "Кол-во проданных з/н - розница Volvo",
+            "quantity.spares.inner.volvo" : "Кол-во проданных з/н - внутренние Volvo",
+            "quantity.spares.guarantee.volvo" : "Кол-во проданных з/н - гарантийные Volvo",
+            "quantity.spares.volvo" : "Кол-во проданных з/н - Volvo",
+
+            "quantity.spares.at.retail.others" : "Кол-во проданных з/н - розница Другие",
+            "quantity.spares.inner.others" : "Кол-во проданных з/н - внутренние Другие",
+            "quantity.spares.guarantee.others" : "Кол-во проданных з/н - гарантийные Другие",
+            "quantity.spares.others" : "Кол-во проданных з/н - Другие",
+
+            "quantity.spares.total" : "Итого кол-во проданных з/н",
+            "working.post.quantity" : "Кол-во рабочих постов",
+            "elevator.quantity" : "Кол-во подъемников"
         }
     }
 }

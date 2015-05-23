@@ -1,400 +1,400 @@
 <div class="content">
-<my-table model="model" field="tabFlittingShop">
+<my-table>
     <my-head>
         <my-row>
             <my-cell size="4"
                      colspan="2"
-                     text="Выручка и ВП"></my-cell>
-            <my-cell text="Часы"></my-cell>
-            <my-cell text="Выручка"></my-cell>
-            <my-cell text="Себ-ть"></my-cell>
-            <my-cell text="ВП"></my-cell>
+                     text="tab.flitting.shop.incoming.and.gross"></my-cell>
+            <my-cell text="tab.head.hours"></my-cell>
+            <my-cell text="tab.head.earnings"></my-cell>
+            <my-cell text="tab.head.cost.price"></my-cell>
+            <my-cell text="tab.head.gross.profit"></my-cell>
         </my-row>
     </my-head>
     <my-body>
-        <my-row field="incomingAndGrossProfitVolvoRetail">
+        <my-row>
             <my-cell size="1"
                      text="D1a">
             </my-cell>
             <my-cell size="3"
-                     text="Слес. цех Розница - Volvo">
+                     text="tab.flitting.shop.gross.profit.volvo.retail">
             </my-cell>
             <my-cell type="number"
                      decimals="2"
-                     field="first"
+                     field="model.tabFlittingShop.incomingAndGrossProfitVolvoRetail.first"
                      on-blur="autoSaving">
             </my-cell>
             <my-cell type="ruble"
-                     field="second"
+                     field="model.tabFlittingShop.incomingAndGrossProfitVolvoRetail.second"
                      on-blur="autoSaving">
             </my-cell>
             <my-cell type="ruble"
-                     field="third"
+                     field="model.tabFlittingShop.incomingAndGrossProfitVolvoRetail.third"
                      on-blur="autoSaving">
             </my-cell>
             <my-cell type="ruble"
-                     field="fourth"
+                     field="model.tabFlittingShop.incomingAndGrossProfitVolvoRetail.fourth"
                      my-disabled="true"
-                     value="{{model.fourth = model.second - model.third}}">
+                     value="{{model.tabFlittingShop.incomingAndGrossProfitVolvoRetail.fourth = model.tabFlittingShop.incomingAndGrossProfitVolvoRetail.second - model.tabFlittingShop.incomingAndGrossProfitVolvoRetail.third}}">
             </my-cell>
         </my-row>
 
-        <my-row field="incomingAndGrossProfitVolvoInner">
+        <my-row>
             <my-cell size="1"
                      text="D2a">
             </my-cell>
             <my-cell size="3"
-                     text="Слес. цех Внутренние - Volvo">
+                     text="tab.flitting.shop.gross.profit.volvo.inner">
             </my-cell>
             <my-cell type="number"
                      decimals="2"
-                     field="first"
+                     field="model.tabFlittingShop.incomingAndGrossProfitVolvoInner.first"
                      on-blur="autoSaving">
             </my-cell>
             <my-cell type="ruble"
-                     field="second"
+                     field="model.tabFlittingShop.incomingAndGrossProfitVolvoInner.second"
                      on-blur="autoSaving">
             </my-cell>
             <my-cell type="ruble"
-                     field="third"
+                     field="model.tabFlittingShop.incomingAndGrossProfitVolvoInner.third"
                      on-blur="autoSaving">
             </my-cell>
             <my-cell type="ruble"
-                     field="fourth"
+                     field="model.tabFlittingShop.incomingAndGrossProfitVolvoInner.fourth"
                      my-disabled="true"
-                     value="{{model.fourth = model.second - model.third}}">
+                     value="{{model.tabFlittingShop.incomingAndGrossProfitVolvoInner.fourth = model.tabFlittingShop.incomingAndGrossProfitVolvoInner.second - model.tabFlittingShop.incomingAndGrossProfitVolvoInner.third}}">
             </my-cell>
         </my-row>
 
-        <my-row field="incomingAndGrossProfitVolvoGuaranty">
+        <my-row>
             <my-cell size="1"
                      text="D3a">
             </my-cell>
             <my-cell size="3"
-                     text="Слес. цех Гарантия - Volvo">
+                     text="tab.flitting.shop.gross.profit.volvo.guaranty">
             </my-cell>
             <my-cell type="number"
                      decimals="2"
-                     field="first"
+                     field="model.tabFlittingShop.incomingAndGrossProfitVolvoGuaranty.first"
                      on-blur="autoSaving">
             </my-cell>
             <my-cell type="ruble"
-                     field="second"
+                     field="model.tabFlittingShop.incomingAndGrossProfitVolvoGuaranty.second"
                      on-blur="autoSaving">
             </my-cell>
             <my-cell type="ruble"
-                     field="third"
+                     field="model.tabFlittingShop.incomingAndGrossProfitVolvoGuaranty.third"
                      on-blur="autoSaving">
             </my-cell>
             <my-cell type="ruble"
-                     field="fourth"
+                     field="model.tabFlittingShop.incomingAndGrossProfitVolvoGuaranty.fourth"
                      my-disabled="true"
-                     value="{{model.fourth = model.second - model.third}}">
+                     value="{{model.tabFlittingShop.incomingAndGrossProfitVolvoGuaranty.fourth = model.tabFlittingShop.incomingAndGrossProfitVolvoGuaranty.second - model.tabFlittingShop.incomingAndGrossProfitVolvoGuaranty.third}}">
             </my-cell>
         </my-row>
     </my-body>
 </my-table>
 
-<my-table model="model" field="tabFlittingShop">
+<my-table>
     <my-body>
-        <my-row field="incomingAndGrossProfitOthersRetail">
+        <my-row>
             <my-cell size="1"
                      text="D1b">
             </my-cell>
             <my-cell size="3"
-                     text="Слес. цех Розница - Другие">
+                     text="tab.flitting.shop.gross.profit.others.retail">
             </my-cell>
             <my-cell type="number"
                      decimals="2"
-                     field="first"
+                     field="model.tabFlittingShop.incomingAndGrossProfitOthersRetail.first"
                      on-blur="autoSaving">
             </my-cell>
             <my-cell type="ruble"
-                     field="second"
+                     field="model.tabFlittingShop.incomingAndGrossProfitOthersRetail.second"
                      on-blur="autoSaving">
             </my-cell>
             <my-cell type="ruble"
-                     field="third"
+                     field="model.tabFlittingShop.incomingAndGrossProfitOthersRetail.third"
                      on-blur="autoSaving">
             </my-cell>
             <my-cell type="ruble"
-                     field="fourth"
+                     field="model.tabFlittingShop.incomingAndGrossProfitOthersRetail.fourth"
                      my-disabled="true"
-                     value="{{model.fourth = model.second - model.third}}">
+                     value="{{model.tabFlittingShop.incomingAndGrossProfitOthersRetail.fourth = model.tabFlittingShop.incomingAndGrossProfitOthersRetail.second - model.tabFlittingShop.incomingAndGrossProfitOthersRetail.third}}">
             </my-cell>
         </my-row>
 
-        <my-row field="incomingAndGrossProfitOthersInner">
+        <my-row>
             <my-cell size="1"
                      text="D2b">
             </my-cell>
             <my-cell size="3"
-                     text="Слес. цех Внутренние - Другие">
+                     text="tab.flitting.shop.gross.profit.others.inner">
             </my-cell>
             <my-cell type="number"
                      decimals="2"
-                     field="first"
+                     field="model.tabFlittingShop.incomingAndGrossProfitOthersInner.first"
                      on-blur="autoSaving">
             </my-cell>
             <my-cell type="ruble"
-                     field="second"
+                     field="model.tabFlittingShop.incomingAndGrossProfitOthersInner.second"
                      on-blur="autoSaving">
             </my-cell>
             <my-cell type="ruble"
-                     field="third"
+                     field="model.tabFlittingShop.incomingAndGrossProfitOthersInner.third"
                      on-blur="autoSaving">
             </my-cell>
             <my-cell type="ruble"
-                     field="fourth"
+                     field="model.tabFlittingShop.incomingAndGrossProfitOthersInner.fourth"
                      my-disabled="true"
-                     value="{{model.fourth = model.second - model.third}}">
+                     value="{{model.tabFlittingShop.incomingAndGrossProfitOthersInner.fourth = model.tabFlittingShop.incomingAndGrossProfitOthersInner.second - model.tabFlittingShop.incomingAndGrossProfitOthersInner.third}}">
             </my-cell>
         </my-row>
 
-        <my-row field="incomingAndGrossProfitOthersGuaranty">
+        <my-row>
             <my-cell size="1"
                      text="D3b">
             </my-cell>
             <my-cell size="3"
-                     text="Слес. цех Гарантия - Другие">
+                     text="tab.flitting.shop.gross.profit.others.guaranty">
             </my-cell>
             <my-cell type="number"
                      decimals="2"
-                     field="first"
+                     field="model.tabFlittingShop.incomingAndGrossProfitOthersGuaranty.first"
                      on-blur="autoSaving">
             </my-cell>
             <my-cell type="ruble"
-                     field="second"
+                     field="model.tabFlittingShop.incomingAndGrossProfitOthersGuaranty.second"
                      on-blur="autoSaving">
             </my-cell>
             <my-cell type="ruble"
-                     field="third"
+                     field="model.tabFlittingShop.incomingAndGrossProfitOthersGuaranty.third"
                      on-blur="autoSaving">
             </my-cell>
             <my-cell type="ruble"
-                     field="fourth"
+                     field="model.tabFlittingShop.incomingAndGrossProfitOthersGuaranty.fourth"
                      my-disabled="true"
-                     value="{{model.fourth = model.second - model.third}}">
+                     value="{{model.tabFlittingShop.incomingAndGrossProfitOthersGuaranty.fourth = model.tabFlittingShop.incomingAndGrossProfitOthersGuaranty.second - model.tabFlittingShop.incomingAndGrossProfitOthersGuaranty.third}}">
             </my-cell>
         </my-row>
     </my-body>
 
 </my-table>
 
-<my-table model="model" field="tabFlittingShop">
+<my-table>
     <my-foot>
 
-        <my-row field="incomingAndGrossProfitRetailTotal">
+        <my-row>
             <my-cell size="1"
                      text="D1">
             </my-cell>
             <my-cell size="3"
-                     text="Итого Слес. цех Розница">
+                     text="tab.flitting.shop.gross.profit.total.retail">
             </my-cell>
             <my-cell type="number"
                      decimals="2"
-                     field="first"
+                     field="model.tabFlittingShop.incomingAndGrossProfitRetailTotal.first"
                      my-disabled="true"
-                     value="{{model.first=
-                            baseModel.incomingAndGrossProfitVolvoRetail.first+
-                            baseModel.incomingAndGrossProfitOthersRetail.first}}">
+                     value="{{model.tabFlittingShop.incomingAndGrossProfitRetailTotal.first=
+                            model.tabFlittingShop.incomingAndGrossProfitVolvoRetail.first+
+                            model.tabFlittingShop.incomingAndGrossProfitOthersRetail.first}}">
             </my-cell>
             <my-cell type="ruble"
-                     field="second"
+                     field="model.tabFlittingShop.incomingAndGrossProfitRetailTotal.second"
                      my-disabled="true"
-                     value="{{model.second=
-                            baseModel.incomingAndGrossProfitVolvoRetail.second+
-                            baseModel.incomingAndGrossProfitOthersRetail.second}}">
+                     value="{{model.tabFlittingShop.incomingAndGrossProfitRetailTotal.second=
+                            model.tabFlittingShop.incomingAndGrossProfitVolvoRetail.second+
+                            model.tabFlittingShop.incomingAndGrossProfitOthersRetail.second}}">
             </my-cell>
             <my-cell type="ruble"
-                     field="third"
+                     field="model.tabFlittingShop.incomingAndGrossProfitRetailTotal.third"
                      my-disabled="true"
-                     value="{{model.third=
-                            baseModel.incomingAndGrossProfitVolvoRetail.third+
-                            baseModel.incomingAndGrossProfitOthersRetail.third}}">
+                     value="{{model.tabFlittingShop.incomingAndGrossProfitRetailTotal.third=
+                            model.tabFlittingShop.incomingAndGrossProfitVolvoRetail.third+
+                            model.tabFlittingShop.incomingAndGrossProfitOthersRetail.third}}">
             </my-cell>
             <my-cell type="ruble"
-                     field="fourth"
+                     field="model.tabFlittingShop.incomingAndGrossProfitRetailTotal.fourth"
                      my-disabled="true"
-                     value="{{model.fourth=
-                            baseModel.incomingAndGrossProfitVolvoRetail.fourth+
-                            baseModel.incomingAndGrossProfitOthersRetail.fourth}}">
+                     value="{{model.tabFlittingShop.incomingAndGrossProfitRetailTotal.fourth=
+                            model.tabFlittingShop.incomingAndGrossProfitVolvoRetail.fourth+
+                            model.tabFlittingShop.incomingAndGrossProfitOthersRetail.fourth}}">
             </my-cell>
         </my-row>
 
-        <my-row field="incomingAndGrossProfitInnerTotal">
+        <my-row>
             <my-cell size="1"
                      text="D2">
             </my-cell>
             <my-cell size="3"
-                     text="Итого Слес. цех Внутренние">
+                     text="tab.flitting.shop.gross.profit.total.inner">
             </my-cell>
             <my-cell type="number"
                      decimals="2"
-                     field="first"
+                     field="model.tabFlittingShop.incomingAndGrossProfitInnerTotal.first"
                      my-disabled="true"
-                     value="{{model.first=
-                            baseModel.incomingAndGrossProfitVolvoInner.first+
-                            baseModel.incomingAndGrossProfitOthersInner.first}}">
+                     value="{{model.tabFlittingShop.incomingAndGrossProfitInnerTotal.first=
+                            model.tabFlittingShop.incomingAndGrossProfitVolvoInner.first+
+                            model.tabFlittingShop.incomingAndGrossProfitOthersInner.first}}">
             </my-cell>
             <my-cell type="ruble"
-                     field="second"
+                     field="model.tabFlittingShop.incomingAndGrossProfitInnerTotal.second"
                      my-disabled="true"
-                     value="{{model.second=
-                            baseModel.incomingAndGrossProfitVolvoInner.second+
-                            baseModel.incomingAndGrossProfitOthersInner.second}}">
+                     value="{{model.tabFlittingShop.incomingAndGrossProfitInnerTotal.second=
+                            model.tabFlittingShop.incomingAndGrossProfitVolvoInner.second+
+                            model.tabFlittingShop.incomingAndGrossProfitOthersInner.second}}">
             </my-cell>
             <my-cell type="ruble"
-                     field="third"
+                     field="model.tabFlittingShop.incomingAndGrossProfitInnerTotal.third"
                      my-disabled="true"
-                     value="{{model.third=
-                            baseModel.incomingAndGrossProfitVolvoInner.third+
-                            baseModel.incomingAndGrossProfitOthersInner.third}}">
+                     value="{{model.tabFlittingShop.incomingAndGrossProfitInnerTotal.third=
+                            model.tabFlittingShop.incomingAndGrossProfitVolvoInner.third+
+                            model.tabFlittingShop.incomingAndGrossProfitOthersInner.third}}">
             </my-cell>
             <my-cell type="ruble"
-                     field="fourth"
+                     field="model.tabFlittingShop.incomingAndGrossProfitInnerTotal.fourth"
                      my-disabled="true"
-                     value="{{model.fourth=
-                            baseModel.incomingAndGrossProfitVolvoInner.fourth+
-                            baseModel.incomingAndGrossProfitOthersInner.fourth}}">
+                     value="{{model.tabFlittingShop.incomingAndGrossProfitInnerTotal.fourth=
+                            model.tabFlittingShop.incomingAndGrossProfitVolvoInner.fourth+
+                            model.tabFlittingShop.incomingAndGrossProfitOthersInner.fourth}}">
             </my-cell>
         </my-row>
 
-        <my-row field="incomingAndGrossProfitGuarantyTotal">
+        <my-row>
             <my-cell size="1"
                      text="D3">
             </my-cell>
             <my-cell size="3"
-                     text="Итого Слес. цех Гарантия">
+                     text="tab.flitting.shop.gross.profit.total.guaranty">
             </my-cell>
             <my-cell type="number"
                      decimals="2"
-                     field="first"
+                     field="model.tabFlittingShop.incomingAndGrossProfitGuarantyTotal.first"
                      my-disabled="true"
-                     value="{{model.first=
-                            baseModel.incomingAndGrossProfitVolvoGuaranty.first+
-                            baseModel.incomingAndGrossProfitOthersGuaranty.first}}">
+                     value="{{model.tabFlittingShop.incomingAndGrossProfitGuarantyTotal.first=
+                            model.tabFlittingShop.incomingAndGrossProfitVolvoGuaranty.first+
+                            model.tabFlittingShop.incomingAndGrossProfitOthersGuaranty.first}}">
             </my-cell>
             <my-cell type="ruble"
-                     field="second"
+                     field="model.tabFlittingShop.incomingAndGrossProfitGuarantyTotal.second"
                      my-disabled="true"
-                     value="{{model.second=
-                            baseModel.incomingAndGrossProfitVolvoGuaranty.second+
-                            baseModel.incomingAndGrossProfitOthersGuaranty.second}}">
+                     value="{{model.tabFlittingShop.incomingAndGrossProfitGuarantyTotal.second=
+                            model.tabFlittingShop.incomingAndGrossProfitVolvoGuaranty.second+
+                            model.tabFlittingShop.incomingAndGrossProfitOthersGuaranty.second}}">
             </my-cell>
             <my-cell type="ruble"
-                     field="third"
+                     field="model.tabFlittingShop.incomingAndGrossProfitGuarantyTotal.third"
                      my-disabled="true"
-                     value="{{model.third=
-                            baseModel.incomingAndGrossProfitVolvoGuaranty.third+
-                            baseModel.incomingAndGrossProfitOthersGuaranty.third}}">
+                     value="{{model.tabFlittingShop.incomingAndGrossProfitGuarantyTotal.third=
+                            model.tabFlittingShop.incomingAndGrossProfitVolvoGuaranty.third+
+                            model.tabFlittingShop.incomingAndGrossProfitOthersGuaranty.third}}">
             </my-cell>
             <my-cell type="ruble"
-                     field="fourth"
+                     field="model.tabFlittingShop.incomingAndGrossProfitGuarantyTotal.fourth"
                      my-disabled="true"
-                     value="{{model.fourth=
-                            baseModel.incomingAndGrossProfitVolvoGuaranty.fourth+
-                            baseModel.incomingAndGrossProfitOthersGuaranty.fourth}}">
+                     value="{{model.tabFlittingShop.incomingAndGrossProfitGuarantyTotal.fourth=
+                            model.tabFlittingShop.incomingAndGrossProfitVolvoGuaranty.fourth+
+                            model.tabFlittingShop.incomingAndGrossProfitOthersGuaranty.fourth}}">
             </my-cell>
         </my-row>
 
-        <my-row field="incomingAndGrossProfitTotal">
+        <my-row>
             <my-cell size="1"
                      text="D10">
             </my-cell>
             <my-cell size="3"
-                     text="Итого по Слесарному цеху">
+                     text="tab.flitting.shop.gross.profit.total">
             </my-cell>
             <my-cell type="number"
                      decimals="2"
-                     field="first"
+                     field="model.tabFlittingShop.incomingAndGrossProfitTotal.first"
                      my-disabled="true"
-                     value="{{model.first=
-                            baseModel.incomingAndGrossProfitRetailTotal.first+
-                            baseModel.incomingAndGrossProfitInnerTotal.first+
-                            baseModel.incomingAndGrossProfitGuarantyTotal.first}}">
+                     value="{{model.tabFlittingShop.incomingAndGrossProfitTotal.first=
+                            model.tabFlittingShop.incomingAndGrossProfitRetailTotal.first+
+                            model.tabFlittingShop.incomingAndGrossProfitInnerTotal.first+
+                            model.tabFlittingShop.incomingAndGrossProfitGuarantyTotal.first}}">
             </my-cell>
             <my-cell type="ruble"
-                     field="second"
+                     field="model.tabFlittingShop.incomingAndGrossProfitTotal.second"
                      my-disabled="true"
-                     value="{{model.second=
-                            baseModel.incomingAndGrossProfitRetailTotal.second+
-                            baseModel.incomingAndGrossProfitInnerTotal.second+
-                            baseModel.incomingAndGrossProfitGuarantyTotal.second}}">
+                     value="{{model.tabFlittingShop.incomingAndGrossProfitTotal.second=
+                            model.tabFlittingShop.incomingAndGrossProfitRetailTotal.second+
+                            model.tabFlittingShop.incomingAndGrossProfitInnerTotal.second+
+                            model.tabFlittingShop.incomingAndGrossProfitGuarantyTotal.second}}">
             </my-cell>
             <my-cell type="ruble"
-                     field="third"
+                     field="model.tabFlittingShop.incomingAndGrossProfitTotal.third"
                      my-disabled="true"
-                     value="{{model.third=
-                            baseModel.incomingAndGrossProfitRetailTotal.third+
-                            baseModel.incomingAndGrossProfitInnerTotal.third+
-                            baseModel.incomingAndGrossProfitGuarantyTotal.third}}">
+                     value="{{model.tabFlittingShop.incomingAndGrossProfitTotal.third=
+                            model.tabFlittingShop.incomingAndGrossProfitRetailTotal.third+
+                            model.tabFlittingShop.incomingAndGrossProfitInnerTotal.third+
+                            model.tabFlittingShop.incomingAndGrossProfitGuarantyTotal.third}}">
             </my-cell>
             <my-cell type="ruble"
-                     field="fourth"
+                     field="model.tabFlittingShop.incomingAndGrossProfitTotal.fourth"
                      my-disabled="true"
-                     value="{{model.fourth=
-                            baseModel.incomingAndGrossProfitRetailTotal.fourth+
-                            baseModel.incomingAndGrossProfitInnerTotal.fourth+
-                            baseModel.incomingAndGrossProfitGuarantyTotal.fourth}}">
+                     value="{{model.tabFlittingShop.incomingAndGrossProfitTotal.fourth=
+                            model.tabFlittingShop.incomingAndGrossProfitRetailTotal.fourth+
+                            model.tabFlittingShop.incomingAndGrossProfitInnerTotal.fourth+
+                            model.tabFlittingShop.incomingAndGrossProfitGuarantyTotal.fourth}}">
             </my-cell>
         </my-row>
 
     </my-foot>
 </my-table>
 
-<my-table model="model" field="tabFlittingShop">
+<my-table>
     <my-foot>
-        <my-row field="incomingAndGrossProfitTotal">
+        <my-row>
             <my-cell size="1"
                      text="D30">
             </my-cell>
             <my-cell size="3"
-                     text="Итого по Слесарному цеху">
+                     text="tab.flitting.shop.gross.profit.total">
             </my-cell>
             <my-cell type="number"
                      decimals="2"
-                     field="first"
+                     field="model.tabFlittingShop.incomingAndGrossProfitTotal.first"
                      my-disabled="true"
-                     value="{{model.first=
-                            baseModel.incomingAndGrossProfitRetailTotal.first+
-                            baseModel.incomingAndGrossProfitInnerTotal.first+
-                            baseModel.incomingAndGrossProfitGuarantyTotal.first}}">
+                     value="{{model.tabFlittingShop.incomingAndGrossProfitTotal.first=
+                            model.tabFlittingShop.incomingAndGrossProfitRetailTotal.first+
+                            model.tabFlittingShop.incomingAndGrossProfitInnerTotal.first+
+                            model.tabFlittingShop.incomingAndGrossProfitGuarantyTotal.first}}">
             </my-cell>
             <my-cell type="ruble"
-                     field="second"
+                     field="model.tabFlittingShop.incomingAndGrossProfitTotal.second"
                      my-disabled="true"
-                     value="{{model.second=
-                            baseModel.incomingAndGrossProfitRetailTotal.second+
-                            baseModel.incomingAndGrossProfitInnerTotal.second+
-                            baseModel.incomingAndGrossProfitGuarantyTotal.second}}">
+                     value="{{model.tabFlittingShop.incomingAndGrossProfitTotal.second=
+                            model.tabFlittingShop.incomingAndGrossProfitRetailTotal.second+
+                            model.tabFlittingShop.incomingAndGrossProfitInnerTotal.second+
+                            model.tabFlittingShop.incomingAndGrossProfitGuarantyTotal.second}}">
             </my-cell>
             <my-cell type="ruble"
-                     field="third"
+                     field="model.tabFlittingShop.incomingAndGrossProfitTotal.third"
                      my-disabled="true"
-                     value="{{model.third=
-                            baseModel.incomingAndGrossProfitRetailTotal.third+
-                            baseModel.incomingAndGrossProfitInnerTotal.third+
-                            baseModel.incomingAndGrossProfitGuarantyTotal.third}}">
+                     value="{{model.tabFlittingShop.incomingAndGrossProfitTotal.third=
+                            model.tabFlittingShop.incomingAndGrossProfitRetailTotal.third+
+                            model.tabFlittingShop.incomingAndGrossProfitInnerTotal.third+
+                            model.tabFlittingShop.incomingAndGrossProfitGuarantyTotal.third}}">
             </my-cell>
             <my-cell type="ruble"
-                     field="fourth"
+                     field="model.tabFlittingShop.incomingAndGrossProfitTotal.fourth"
                      my-disabled="true"
-                     value="{{model.fourth=
-                            baseModel.incomingAndGrossProfitRetailTotal.fourth+
-                            baseModel.incomingAndGrossProfitInnerTotal.fourth+
-                            baseModel.incomingAndGrossProfitGuarantyTotal.fourth}}">
+                     value="{{model.tabFlittingShop.incomingAndGrossProfitTotal.fourth=
+                            model.tabFlittingShop.incomingAndGrossProfitRetailTotal.fourth+
+                            model.tabFlittingShop.incomingAndGrossProfitInnerTotal.fourth+
+                            model.tabFlittingShop.incomingAndGrossProfitGuarantyTotal.fourth}}">
             </my-cell>
         </my-row>
     </my-foot>
 </my-table>
 
-<my-table model="model" field="tabFlittingShop">
+<my-table>
     <my-head>
         <my-row>
             <my-cell size="4"
                      colspan="2"
-                     text="Доходы по субконтрактам"></my-cell>
+                     text="tab.flitting.shop.subcontract.incoming"></my-cell>
             <my-cell></my-cell>
             <my-cell></my-cell>
             <my-cell></my-cell>
@@ -403,56 +403,56 @@
     </my-head>
 
     <my-body>
-        <my-row field="subcontractIncoming">
+        <my-row>
             <my-cell size="1"
                      text="D31">
             </my-cell>
             <my-cell size="3"
-                     text="Субконтракты Слес. Цех">
+                     text="tab.flitting.shop.subcontract.gross.profit">
             </my-cell>
             <my-cell></my-cell>
             <my-cell type="ruble"
-                     field="second"
+                     field="model.tabFlittingShop.subcontractIncoming.second"
                      on-blur="autoSaving">
             </my-cell>
             <my-cell type="ruble"
-                     field="third"
+                     field="model.tabFlittingShop.subcontractIncoming.third"
                      on-blur="autoSaving">
             </my-cell>
             <my-cell type="ruble"
-                     field="fourth"
+                     field="model.tabFlittingShop.subcontractIncoming.fourth"
                      my-disabled="true"
-                     value="{{model.fourth = model.second - model.third}}">
+                     value="{{model.tabFlittingShop.subcontractIncoming.fourth = model.tabFlittingShop.subcontractIncoming.second - model.tabFlittingShop.subcontractIncoming.third}}">
             </my-cell>
         </my-row>
     </my-body>
 
     <my-foot>
-        <my-row field="subcontractIncomingTotal">
+        <my-row>
             <my-cell size="1"
                      text="D35">
             </my-cell>
             <my-cell size="3"
-                     text="Итого доходы по субконтрактам">
+                     text="tab.flitting.shop.subcontract.gross.profit.total">
             </my-cell>
             <my-cell></my-cell>
             <my-cell type="ruble"
-                     field="second"
+                     field="model.tabFlittingShop.subcontractIncomingTotal.second"
                      my-disabled="true"
-                     value="{{model.second=
-                            baseModel.subcontractIncoming.second}}">
+                     value="{{model.tabFlittingShop.subcontractIncomingTotal.second=
+                            model.tabFlittingShop.subcontractIncoming.second}}">
             </my-cell>
             <my-cell type="ruble"
-                     field="third"
+                     field="model.tabFlittingShop.subcontractIncomingTotal.third"
                      my-disabled="true"
-                     value="{{model.third=
-                            baseModel.subcontractIncoming.third}}">
+                     value="{{model.tabFlittingShop.subcontractIncomingTotal.third=
+                            model.tabFlittingShop.subcontractIncoming.third}}">
             </my-cell>
             <my-cell type="ruble"
-                     field="fourth"
+                     field="model.tabFlittingShop.subcontractIncomingTotal.fourth"
                      my-disabled="true"
-                     value="{{model.fourth=
-                            baseModel.subcontractIncoming.fourth}}">
+                     value="{{model.tabFlittingShop.subcontractIncomingTotal.fourth=
+                            model.tabFlittingShop.subcontractIncoming.fourth}}">
             </my-cell>
         </my-row>
 
@@ -460,12 +460,12 @@
 
 </my-table>
 
-<my-table model="model" field="tabFlittingShop">
+<my-table>
     <my-head>
         <my-row>
             <my-cell size="4"
                      colspan="2"
-                     text="Прочие доходы"></my-cell>
+                     text="tab.common.other.incoming"></my-cell>
             <my-cell></my-cell>
             <my-cell></my-cell>
             <my-cell></my-cell>
@@ -474,82 +474,82 @@
     </my-head>
 
     <my-body>
-        <my-row field="otherIncomingLubricant">
+        <my-row>
             <my-cell size="1"
                      text="D36">
             </my-cell>
             <my-cell size="3"
-                     text="ГСМ">
+                     text="tab.flitting.shop.lubricant">
             </my-cell>
             <my-cell></my-cell>
             <my-cell type="ruble"
-                     field="second"
+                     field="model.tabFlittingShop.otherIncomingLubricant.second"
                      on-blur="autoSaving">
             </my-cell>
             <my-cell type="ruble"
-                     field="third"
+                     field="model.tabFlittingShop.otherIncomingLubricant.third"
                      on-blur="autoSaving">
             </my-cell>
             <my-cell type="ruble"
-                     field="fourth"
+                     field="model.tabFlittingShop.otherIncomingLubricant.fourth"
                      my-disabled="true"
-                     value="{{model.fourth = model.second - model.third}}">
+                     value="{{model.tabFlittingShop.otherIncomingLubricant.fourth = model.tabFlittingShop.otherIncomingLubricant.second - model.tabFlittingShop.otherIncomingLubricant.third}}">
             </my-cell>
         </my-row>
 
-        <my-row field="otherIncomingOtherIncoming">
+        <my-row>
             <my-cell size="1"
                      text="D38">
             </my-cell>
             <my-cell size="3"
-                     text="Прочие доходы">
+                     text="tab.common.other.incoming">
             </my-cell>
             <my-cell></my-cell>
             <my-cell type="ruble"
-                     field="second"
+                     field="model.tabFlittingShop.otherIncomingOtherIncoming.second"
                      on-blur="autoSaving">
             </my-cell>
             <my-cell type="ruble"
-                     field="third"
+                     field="model.tabFlittingShop.otherIncomingOtherIncoming.third"
                      on-blur="autoSaving">
             </my-cell>
             <my-cell type="ruble"
-                     field="fourth"
+                     field="model.tabFlittingShop.otherIncomingOtherIncoming.fourth"
                      my-disabled="true"
-                     value="{{model.fourth = model.second - model.third}}">
+                     value="{{model.tabFlittingShop.otherIncomingOtherIncoming.fourth = model.tabFlittingShop.otherIncomingOtherIncoming.second - model.tabFlittingShop.otherIncomingOtherIncoming.third}}">
             </my-cell>
         </my-row>
     </my-body>
 
     <my-foot>
-        <my-row field="otherIncomingTotal">
+        <my-row>
             <my-cell size="1"
                      text="D40">
             </my-cell>
             <my-cell size="3"
-                     text="Всего прочие  доходы">
+                     text="tab.common.total.other.incoming">
             </my-cell>
             <my-cell></my-cell>
             <my-cell type="ruble"
-                     field="second"
+                     field="model.tabFlittingShop.otherIncomingTotal.second"
                      my-disabled="true"
-                     value="{{model.second=
-                            baseModel.otherIncomingLubricant.second +
-                            baseModel.otherIncomingOtherIncoming.second}}">
+                     value="{{model.tabFlittingShop.otherIncomingTotal.second=
+                            model.tabFlittingShop.otherIncomingLubricant.second +
+                            model.tabFlittingShop.otherIncomingOtherIncoming.second}}">
             </my-cell>
             <my-cell type="ruble"
-                     field="third"
+                     field="model.tabFlittingShop.otherIncomingTotal.third"
                      my-disabled="true"
-                     value="{{model.third=
-                            baseModel.otherIncomingLubricant.third +
-                            baseModel.otherIncomingOtherIncoming.third}}">
+                     value="{{model.tabFlittingShop.otherIncomingTotal.third=
+                            model.tabFlittingShop.otherIncomingLubricant.third +
+                            model.tabFlittingShop.otherIncomingOtherIncoming.third}}">
             </my-cell>
             <my-cell type="ruble"
-                     field="fourth"
+                     field="model.tabFlittingShop.otherIncomingTotal.fourth"
                      my-disabled="true"
-                     value="{{model.fourth=
-                            baseModel.otherIncomingLubricant.fourth +
-                            baseModel.otherIncomingOtherIncoming.fourth}}">
+                     value="{{model.tabFlittingShop.otherIncomingTotal.fourth=
+                            model.tabFlittingShop.otherIncomingLubricant.fourth +
+                            model.tabFlittingShop.otherIncomingOtherIncoming.fourth}}">
             </my-cell>
         </my-row>
 
@@ -557,46 +557,46 @@
 
 </my-table>
 
-<my-table model="model" field="tabFlittingShop">
+<my-table>
 
     <my-foot>
-        <my-row field="otherIncomingGrossProfit">
+        <my-row>
             <my-cell size="1"
                      text="D50">
             </my-cell>
             <my-cell size="3"
-                     text="Валовая прибыль Слесарного Цеха">
+                     text="tab.flitting.shop.gross.profit.incoming">
             </my-cell>
             <my-cell type="number"
                      decimals="2"
-                     field="first"
+                     field="model.tabFlittingShop.otherIncomingGrossProfit.first"
                      my-disabled="true"
-                     value="{{model.first=
-                            baseModel.incomingAndGrossProfitTotal.first}}">
+                     value="{{model.tabFlittingShop.otherIncomingGrossProfit.first=
+                            model.tabFlittingShop.incomingAndGrossProfitTotal.first}}">
             </my-cell>
             <my-cell type="ruble"
-                     field="second"
+                     field="model.tabFlittingShop.otherIncomingGrossProfit.second"
                      my-disabled="true"
-                     value="{{model.second=
-                            baseModel.incomingAndGrossProfitTotal.second +
-                            baseModel.subcontractIncomingTotal.second +
-                            baseModel.otherIncomingTotal.second}}">
+                     value="{{model.tabFlittingShop.otherIncomingGrossProfit.second=
+                            model.tabFlittingShop.incomingAndGrossProfitTotal.second +
+                            model.tabFlittingShop.subcontractIncomingTotal.second +
+                            model.tabFlittingShop.otherIncomingTotal.second}}">
             </my-cell>
             <my-cell type="ruble"
-                     field="third"
+                     field="model.tabFlittingShop.otherIncomingGrossProfit.third"
                      my-disabled="true"
-                     value="{{model.third=
-                            baseModel.incomingAndGrossProfitTotal.third +
-                            baseModel.subcontractIncomingTotal.third +
-                            baseModel.otherIncomingTotal.third}}">
+                     value="{{model.tabFlittingShop.otherIncomingGrossProfit.third=
+                            model.tabFlittingShop.incomingAndGrossProfitTotal.third +
+                            model.tabFlittingShop.subcontractIncomingTotal.third +
+                            model.tabFlittingShop.otherIncomingTotal.third}}">
             </my-cell>
             <my-cell type="ruble"
-                     field="fourth"
+                     field="model.tabFlittingShop.otherIncomingGrossProfit.fourth"
                      my-disabled="true"
-                     value="{{model.fourth=
-                            baseModel.incomingAndGrossProfitTotal.fourth +
-                            baseModel.subcontractIncomingTotal.fourth +
-                            baseModel.otherIncomingTotal.fourth}}">
+                     value="{{model.tabFlittingShop.otherIncomingGrossProfit.fourth=
+                            model.tabFlittingShop.incomingAndGrossProfitTotal.fourth +
+                            model.tabFlittingShop.subcontractIncomingTotal.fourth +
+                            model.tabFlittingShop.otherIncomingTotal.fourth}}">
             </my-cell>
         </my-row>
 
@@ -604,229 +604,229 @@
 
 </my-table>
 
-<my-table model="model" field="tabFlittingShop">
+<my-table>
 <my-head>
     <my-row>
         <my-cell size="4"
                  colspan="2"
-                 text="Расходы по отделу"></my-cell>
+                 text="tab.common.department.charges"></my-cell>
         <my-cell></my-cell>
         <my-cell></my-cell>
         <my-cell></my-cell>
-        <my-cell text="Сумма"></my-cell>
+        <my-cell text="tab.head.total"></my-cell>
     </my-row>
 </my-head>
 
 <my-body>
-<my-row field="departmentChargesNonproductiveStaffSalary">
+<my-row>
     <my-cell size="1"
              text="D51">
     </my-cell>
     <my-cell size="3"
-             text="Зарплата непродуктивного персонала">
+             text="tab.common.nonproductive.staff.salary">
     </my-cell>
     <my-cell></my-cell>
     <my-cell></my-cell>
     <my-cell></my-cell>
     <my-cell type="ruble"
-             field="fourth"
+             field="model.tabFlittingShop.departmentChargesNonproductiveStaffSalary.fourth"
              on-blur="autoSaving">
     </my-cell>
 </my-row>
 
-<my-row field="departmentChargesSalaryTax">
+<my-row>
     <my-cell size="1"
              text="D52">
     </my-cell>
     <my-cell size="3"
-             text="Налоги на з/п">
+             text="tab.common.salary.tax">
     </my-cell>
     <my-cell></my-cell>
     <my-cell></my-cell>
     <my-cell></my-cell>
     <my-cell type="ruble"
-             field="fourth"
+             field="model.tabFlittingShop.departmentChargesSalaryTax.fourth"
              on-blur="autoSaving">
     </my-cell>
 </my-row>
 
-<my-row field="departmentChargesOtherChargeOnStaff">
+<my-row>
     <my-cell size="1"
              text="D53">
     </my-cell>
     <my-cell size="3"
-             text="Другие расходы на персонал">
+             text="tab.common.other.charges.on.staff">
     </my-cell>
     <my-cell></my-cell>
     <my-cell></my-cell>
     <my-cell></my-cell>
     <my-cell type="ruble"
-             field="fourth"
+             field="model.tabFlittingShop.departmentChargesOtherChargeOnStaff.fourth"
              on-blur="autoSaving">
     </my-cell>
 </my-row>
 
-<my-row field="departmentChargesEducation">
+<my-row>
     <my-cell size="1"
              text="D54">
     </my-cell>
     <my-cell size="3"
-             text="Обучение">
+             text="tab.common.education">
     </my-cell>
     <my-cell></my-cell>
     <my-cell></my-cell>
     <my-cell></my-cell>
     <my-cell type="ruble"
-             field="fourth"
+             field="model.tabFlittingShop.departmentChargesEducation.fourth"
              on-blur="autoSaving">
     </my-cell>
 </my-row>
 
-<my-row field="departmentChargesTotalAdministrationCharges">
+<my-row>
     <my-cell size="1"
              text="D60">
     </my-cell>
     <my-cell size="3"
-             text="Итого расходы на адм. персонал Слесарного цеха">
+             text="tab.flitting.shop.total.administration.charges">
     </my-cell>
     <my-cell></my-cell>
     <my-cell></my-cell>
     <my-cell></my-cell>
     <my-cell type="ruble"
-             field="fourth"
+             field="model.tabFlittingShop.departmentChargesTotalAdministrationCharges.fourth"
              my-disabled="true"
-             value="{{model.fourth=
-                            baseModel.departmentChargesNonproductiveStaffSalary.fourth +
-                            baseModel.departmentChargesSalaryTax.fourth +
-                            baseModel.departmentChargesOtherChargeOnStaff.fourth +
-                            baseModel.departmentChargesEducation.fourth}}">
+             value="{{model.tabFlittingShop.departmentChargesTotalAdministrationCharges.fourth=
+                            model.tabFlittingShop.departmentChargesNonproductiveStaffSalary.fourth +
+                            model.tabFlittingShop.departmentChargesSalaryTax.fourth +
+                            model.tabFlittingShop.departmentChargesOtherChargeOnStaff.fourth +
+                            model.tabFlittingShop.departmentChargesEducation.fourth}}">
     </my-cell>
 </my-row>
 
-<my-row field="departmentChargesSupposititiousCarsCharge">
+<my-row>
     <my-cell size="1"
              text="D61">
     </my-cell>
     <my-cell size="3"
-             text="Расходы на подменные а/м">
+             text="tab.flitting.shop.supposititious.cars.charge">
     </my-cell>
     <my-cell></my-cell>
     <my-cell></my-cell>
     <my-cell></my-cell>
     <my-cell type="ruble"
-             field="fourth"
+             field="model.tabFlittingShop.departmentChargesSupposititiousCarsCharge.fourth"
              on-blur="autoSaving">
     </my-cell>
 </my-row>
 
-<my-row field="departmentChargesRepairService">
+<my-row>
     <my-cell size="1"
              text="D62">
     </my-cell>
     <my-cell size="3"
-             text="Ремонт и обслуж. оборудования">
+             text="tab.flitting.shop.charges.repair.service">
     </my-cell>
     <my-cell></my-cell>
     <my-cell></my-cell>
     <my-cell></my-cell>
     <my-cell type="ruble"
-             field="fourth"
+             field="model.tabFlittingShop.departmentChargesRepairService.fourth"
              on-blur="autoSaving">
     </my-cell>
 </my-row>
 
-<my-row field="departmentChargesCompanyCarsCharge">
+<my-row>
     <my-cell size="1"
              text="D63">
     </my-cell>
     <my-cell size="3"
-             text="Расходы на а/м компании">
+             text="tab.common.company.cars.charges">
     </my-cell>
     <my-cell></my-cell>
     <my-cell></my-cell>
     <my-cell></my-cell>
     <my-cell type="ruble"
-             field="fourth"
+             field="model.tabFlittingShop.departmentChargesCompanyCarsCharge.fourth"
              on-blur="autoSaving">
     </my-cell>
 </my-row>
 
-<my-row field="departmentChargesClientCompensation">
+<my-row>
     <my-cell size="1"
              text="D64">
     </my-cell>
     <my-cell size="3"
-             text="Расходы дилера по выплате компенсации клиенту">
+             text="tab.flitting.shop.charges.client.compensation">
     </my-cell>
     <my-cell></my-cell>
     <my-cell></my-cell>
     <my-cell></my-cell>
     <my-cell type="ruble"
-             field="fourth"
+             field="model.tabFlittingShop.departmentChargesClientCompensation.fourth"
              on-blur="autoSaving">
     </my-cell>
 </my-row>
 
-<my-row field="departmentChargesAdvertising">
+<my-row>
     <my-cell size="1"
              text="D65">
     </my-cell>
     <my-cell size="3"
-             text="Реклама">
+             text="tab.common.advertising">
     </my-cell>
     <my-cell></my-cell>
     <my-cell></my-cell>
     <my-cell></my-cell>
     <my-cell type="ruble"
-             field="fourth"
+             field="model.tabFlittingShop.departmentChargesAdvertising.fourth"
              on-blur="autoSaving">
     </my-cell>
 </my-row>
 
-<my-row field="departmentChargesConsumableCost">
+<my-row>
     <my-cell size="1"
              text="D66">
     </my-cell>
     <my-cell size="3"
-             text="Стоимость расходных материалов и инструмента">
+             text="tab.flitting.shop.consumable.cost">
     </my-cell>
     <my-cell></my-cell>
     <my-cell></my-cell>
     <my-cell></my-cell>
     <my-cell type="ruble"
-             field="fourth"
+             field="model.tabFlittingShop.departmentChargesConsumableCost.fourth"
              on-blur="autoSaving">
     </my-cell>
 </my-row>
 
-<my-row field="departmentChargesAmortization">
+<my-row>
     <my-cell size="1"
              text="D68">
     </my-cell>
     <my-cell size="3"
-             text="Амортизация">
+             text="tab.common.amortization">
     </my-cell>
     <my-cell></my-cell>
     <my-cell></my-cell>
     <my-cell></my-cell>
     <my-cell type="ruble"
-             field="fourth"
+             field="model.tabFlittingShop.departmentChargesAmortization.fourth"
              on-blur="autoSaving">
     </my-cell>
 </my-row>
 
-<my-row field="departmentChargesOtherCharge">
+<my-row>
     <my-cell size="1"
              text="D69">
     </my-cell>
     <my-cell size="3"
-             text="Другие расходы">
+             text="tab.common.other.charges">
     </my-cell>
     <my-cell></my-cell>
     <my-cell></my-cell>
     <my-cell></my-cell>
     <my-cell type="ruble"
-             field="fourth"
+             field="model.tabFlittingShop.departmentChargesOtherCharge.fourth"
              on-blur="autoSaving">
     </my-cell>
 </my-row>
@@ -835,29 +835,29 @@
 
 <my-foot>
 
-    <my-row field="departmentChargesTotal">
+    <my-row>
         <my-cell size="1"
                  text="D70">
         </my-cell>
         <my-cell size="3"
-                 text="Итого расходов">
+                 text="tab.common.charges.total">
         </my-cell>
         <my-cell></my-cell>
         <my-cell></my-cell>
         <my-cell></my-cell>
         <my-cell type="ruble"
-                 field="fourth"
+                 field="model.tabFlittingShop.departmentChargesTotal.fourth"
                  my-disabled="true"
-                 value="{{model.fourth=
-                            baseModel.departmentChargesTotalAdministrationCharges.fourth +
-                            baseModel.departmentChargesSupposititiousCarsCharge.fourth +
-                            baseModel.departmentChargesRepairService.fourth +
-                            baseModel.departmentChargesCompanyCarsCharge.fourth +
-                            baseModel.departmentChargesClientCompensation.fourth +
-                            baseModel.departmentChargesAdvertising.fourth +
-                            baseModel.departmentChargesConsumableCost.fourth +
-                            baseModel.departmentChargesAmortization.fourth +
-                            baseModel.departmentChargesOtherCharge.fourth}}">
+                 value="{{model.tabFlittingShop.departmentChargesTotal.fourth=
+                            model.tabFlittingShop.departmentChargesTotalAdministrationCharges.fourth +
+                            model.tabFlittingShop.departmentChargesSupposititiousCarsCharge.fourth +
+                            model.tabFlittingShop.departmentChargesRepairService.fourth +
+                            model.tabFlittingShop.departmentChargesCompanyCarsCharge.fourth +
+                            model.tabFlittingShop.departmentChargesClientCompensation.fourth +
+                            model.tabFlittingShop.departmentChargesAdvertising.fourth +
+                            model.tabFlittingShop.departmentChargesConsumableCost.fourth +
+                            model.tabFlittingShop.departmentChargesAmortization.fourth +
+                            model.tabFlittingShop.departmentChargesOtherCharge.fourth}}">
         </my-cell>
     </my-row>
 
@@ -865,24 +865,24 @@
 
 </my-table>
 
-<my-table model="model" field="tabFlittingShop">
+<my-table>
     <my-foot>
 
-        <my-row field="departmentChargesTotalIncoming">
+        <my-row>
             <my-cell size="1"
                      text="D90">
             </my-cell>
             <my-cell size="3"
-                     text="Прибыль по отделу">
+                     text="tab.common.department.incoming">
             </my-cell>
             <my-cell></my-cell>
             <my-cell></my-cell>
             <my-cell></my-cell>
             <!--TODO-->
             <my-cell type="ruble"
-                     field="fourth"
+                     field="model.tabFlittingShop.departmentChargesTotalIncoming.fourth"
                      my-disabled="true"
-                     value="{{model.fourth=
+                     value="{{model.tabFlittingShop.departmentChargesTotalIncoming.fourth=
                             0}}">
             </my-cell>
         </my-row>
@@ -891,490 +891,490 @@
 
 </my-table>
 
-<my-table model="model" field="tabFlittingShop">
+<my-table>
 <my-head>
     <my-row>
         <my-cell size="4"
                  colspan="2"
-                 text="Статистика"></my-cell>
+                 text="tab.common.statistics"></my-cell>
         <my-cell></my-cell>
         <my-cell></my-cell>
-        <my-cell text="Сумма"></my-cell>
+        <my-cell text="tab.head.total"></my-cell>
         <my-cell></my-cell>
     </my-row>
 </my-head>
 
 <my-body>
-<my-row field="statisticsVolvoPresenceHours">
+<my-row>
     <my-cell size="1"
              text="D101">
     </my-cell>
     <my-cell size="3"
-             text="Часы присутствия Volvo">
+             text="tab.flitting.shop.volvo.presence.hours">
     </my-cell>
     <my-cell></my-cell>
     <my-cell></my-cell>
     <my-cell type="number"
              decimals="2"
-             field="third"
+             field="model.tabFlittingShop.statisticsVolvoPresenceHours.third"
              on-blur="autoSaving">
     </my-cell>
     <my-cell></my-cell>
 </my-row>
 
-<my-row field="statisticsVolvoPresenceHoursTotal">
+<my-row>
     <my-cell size="1"
              text="D105">
     </my-cell>
     <my-cell size="3"
-             text="Итого часов присутствия">
+             text="tab.flitting.shop.volvo.presence.hours.total">
     </my-cell>
     <my-cell></my-cell>
     <my-cell></my-cell>
     <my-cell type="number"
              decimals="2"
-             field="third"
+             field="model.tabFlittingShop.statisticsVolvoPresenceHoursTotal.third"
              my-disabled="true"
-             value="{{model.third=
-                            baseModel.statisticsVolvoPresenceHours.third}}">
+             value="{{model.tabFlittingShop.statisticsVolvoPresenceHoursTotal.third=
+                            model.tabFlittingShop.statisticsVolvoPresenceHours.third}}">
     </my-cell>
     <my-cell></my-cell>
 </my-row>
 
-<my-row field="statisticsProductiveHoursAtRetailVolvo">
+<my-row>
     <my-cell size="1"
              text="D106">
     </my-cell>
     <my-cell size="3"
-             text="Продуктивные часы в розницу Volvo">
+             text="tab.flitting.shop.productive.hours.at.retail.volvo">
     </my-cell>
     <my-cell></my-cell>
     <my-cell></my-cell>
     <my-cell type="number"
              decimals="2"
-             field="third"
+             field="model.tabFlittingShop.statisticsProductiveHoursAtRetailVolvo.third"
              on-blur="autoSaving">
     </my-cell>
     <my-cell></my-cell>
 </my-row>
 
-<my-row field="statisticsProductiveHoursAtRetailOthers">
+<my-row>
     <my-cell size="1"
              text="D107">
     </my-cell>
     <my-cell size="3"
-             text="Продуктивные часы в розницу Другие">
+             text="tab.flitting.shop.productive.hours.at.retail.others">
     </my-cell>
     <my-cell></my-cell>
     <my-cell></my-cell>
     <my-cell type="number"
              decimals="2"
-             field="third"
+             field="model.tabFlittingShop.statisticsProductiveHoursAtRetailOthers.third"
              on-blur="autoSaving">
     </my-cell>
     <my-cell></my-cell>
 </my-row>
 
-<my-row field="statisticsProductiveHoursAtRetailTotal">
+<my-row>
     <my-cell size="1"
              text="D110">
     </my-cell>
     <my-cell size="3"
-             text="Итого продуктивные в розницу часы">
+             text="tab.flitting.shop.productive.hours.at.retail.total">
     </my-cell>
     <my-cell></my-cell>
     <my-cell></my-cell>
     <my-cell type="number"
              decimals="2"
-             field="third"
+             field="model.tabFlittingShop.statisticsProductiveHoursAtRetailTotal.third"
              my-disabled="true"
-             value="{{model.third=
-                            baseModel.statisticsProductiveHoursAtRetailVolvo.third +
-                            baseModel.statisticsProductiveHoursAtRetailOthers.third}}">
+             value="{{model.tabFlittingShop.statisticsProductiveHoursAtRetailTotal.third=
+                            model.tabFlittingShop.statisticsProductiveHoursAtRetailVolvo.third +
+                            model.tabFlittingShop.statisticsProductiveHoursAtRetailOthers.third}}">
     </my-cell>
     <my-cell></my-cell>
 </my-row>
 
-<my-row field="statisticsProductiveHoursInnerVolvo">
+<my-row>
     <my-cell size="1"
              text="D116">
     </my-cell>
     <my-cell size="3"
-             text="Продуктивные внутренние часы Volvo">
+             text="tab.flitting.shop.productive.hours.inner.volvo">
     </my-cell>
     <my-cell></my-cell>
     <my-cell></my-cell>
     <my-cell type="number"
              decimals="2"
-             field="third"
+             field="model.tabFlittingShop.statisticsProductiveHoursInnerVolvo.third"
              on-blur="autoSaving">
     </my-cell>
     <my-cell></my-cell>
 </my-row>
 
-<my-row field="statisticsProductiveHoursInnerOthers">
+<my-row>
     <my-cell size="1"
              text="D117">
     </my-cell>
     <my-cell size="3"
-             text="Продуктивные внутренние часы Другие">
+             text="tab.flitting.shop.productive.hours.inner.others">
     </my-cell>
     <my-cell></my-cell>
     <my-cell></my-cell>
     <my-cell type="number"
              decimals="2"
-             field="third"
+             field="model.tabFlittingShop.statisticsProductiveHoursInnerOthers.third"
              on-blur="autoSaving">
     </my-cell>
     <my-cell></my-cell>
 </my-row>
 
-<my-row field="statisticsProductiveHoursInnerTotal">
+<my-row>
     <my-cell size="1"
              text="D120">
     </my-cell>
     <my-cell size="3"
-             text="Итого продуктивные внутренние часы">
+             text="tab.flitting.shop.productive.hours.inner.total">
     </my-cell>
     <my-cell></my-cell>
     <my-cell></my-cell>
     <my-cell type="number"
              decimals="2"
-             field="third"
+             field="model.tabFlittingShop.statisticsProductiveHoursInnerTotal.third"
              my-disabled="true"
-             value="{{model.third=
-                            baseModel.statisticsProductiveHoursInnerVolvo.third +
-                            baseModel.statisticsProductiveHoursInnerOthers.third}}">
+             value="{{model.tabFlittingShop.statisticsProductiveHoursInnerTotal.third=
+                            model.tabFlittingShop.statisticsProductiveHoursInnerVolvo.third +
+                            model.tabFlittingShop.statisticsProductiveHoursInnerOthers.third}}">
     </my-cell>
     <my-cell></my-cell>
 </my-row>
 
-<my-row field="statisticsProductiveHoursGuaranteeVolvo">
+<my-row>
     <my-cell size="1"
              text="D121">
     </my-cell>
     <my-cell size="3"
-             text="Продуктивные часы по гарантии Volvo">
+             text="tab.flitting.shop.productive.hours.guarantee.volvo">
     </my-cell>
     <my-cell></my-cell>
     <my-cell></my-cell>
     <my-cell type="number"
              decimals="2"
-             field="third"
+             field="model.tabFlittingShop.statisticsProductiveHoursGuaranteeVolvo.third"
              on-blur="autoSaving">
     </my-cell>
     <my-cell></my-cell>
 </my-row>
 
-<my-row field="statisticsProductiveHoursGuaranteeOthers">
+<my-row>
     <my-cell size="1"
              text="D122">
     </my-cell>
     <my-cell size="3"
-             text="Продуктивные часы по гарантии Другие">
+             text="tab.flitting.shop.productive.hours.guarantee.others">
     </my-cell>
     <my-cell></my-cell>
     <my-cell></my-cell>
     <my-cell type="number"
              decimals="2"
-             field="third"
+             field="model.tabFlittingShop.statisticsProductiveHoursGuaranteeOthers.third"
              on-blur="autoSaving">
     </my-cell>
     <my-cell></my-cell>
 </my-row>
 
-<my-row field="statisticsProductiveHoursGuaranteeTotal">
+<my-row>
     <my-cell size="1"
              text="D125">
     </my-cell>
     <my-cell size="3"
-             text="Итого продуктивные часы по гарантии">
+             text="tab.flitting.shop.productive.hours.guarantee.total">
     </my-cell>
     <my-cell></my-cell>
     <my-cell></my-cell>
     <my-cell type="number"
              decimals="2"
-             field="third"
+             field="model.tabFlittingShop.statisticsProductiveHoursGuaranteeTotal.third"
              my-disabled="true"
-             value="{{model.third=
-                            baseModel.statisticsProductiveHoursGuaranteeVolvo.third +
-                            baseModel.statisticsProductiveHoursGuaranteeOthers.third}}">
+             value="{{model.tabFlittingShop.statisticsProductiveHoursGuaranteeTotal.third=
+                            model.tabFlittingShop.statisticsProductiveHoursGuaranteeVolvo.third +
+                            model.tabFlittingShop.statisticsProductiveHoursGuaranteeOthers.third}}">
     </my-cell>
     <my-cell></my-cell>
 </my-row>
 
-<my-row field="statisticsProductiveHoursTotal">
+<my-row>
     <my-cell size="1"
              text="D130">
     </my-cell>
     <my-cell size="3"
-             text="Итого продуктивные часы">
+             text="tab.flitting.shop.productive.hours.total">
     </my-cell>
     <my-cell></my-cell>
     <my-cell></my-cell>
     <my-cell type="number"
              decimals="2"
-             field="third"
+             field="model.tabFlittingShop.statisticsProductiveHoursTotal.third"
              my-disabled="true"
-             value="{{model.third=
-                            baseModel.statisticsProductiveHoursAtRetailTotal.third +
-                            baseModel.statisticsProductiveHoursInnerTotal.third +
-                            baseModel.statisticsProductiveHoursGuaranteeTotal.third}}">
+             value="{{model.tabFlittingShop.statisticsProductiveHoursTotal.third=
+                            model.tabFlittingShop.statisticsProductiveHoursAtRetailTotal.third +
+                            model.tabFlittingShop.statisticsProductiveHoursInnerTotal.third +
+                            model.tabFlittingShop.statisticsProductiveHoursGuaranteeTotal.third}}">
     </my-cell>
     <my-cell></my-cell>
 </my-row>
 
-<my-row field="statisticsCostPerHourAtRetail">
+<my-row>
     <my-cell size="1"
              text="D131">
     </my-cell>
     <my-cell size="3"
-             text="Стоим-ть нормо-часа по прайс-листу - розница">
+             text="tab.common.cost.per.hour.at.retail">
     </my-cell>
     <my-cell></my-cell>
     <my-cell></my-cell>
     <my-cell type="ruble"
              decimals="2"
-             field="third"
+             field="model.tabFlittingShop.statisticsCostPerHourAtRetail.third"
              on-blur="autoSaving">
     </my-cell>
     <my-cell></my-cell>
 </my-row>
 
-<my-row field="statisticsCostPerHourInner">
+<my-row>
     <my-cell size="1"
              text="D133">
     </my-cell>
     <my-cell size="3"
-             text="Стоим-ть нормо-часа по прайс-листу - внутренние">
+             text="tab.common.cost.per.hour.at.inner">
     </my-cell>
     <my-cell></my-cell>
     <my-cell></my-cell>
     <my-cell type="ruble"
              decimals="2"
-             field="third"
+             field="model.tabFlittingShop.statisticsCostPerHourInner.third"
              on-blur="autoSaving">
     </my-cell>
     <my-cell></my-cell>
 </my-row>
 
-<my-row field="statisticsCostPerHourGuarantee">
+<my-row>
     <my-cell size="1"
              text="D134">
     </my-cell>
     <my-cell size="3"
-             text="Стоим-ть нормо-часа по прайс-листу - гарантийные">
+             text="tab.common.cost.per.hour.at.guarantee">
     </my-cell>
     <my-cell></my-cell>
     <my-cell></my-cell>
     <my-cell type="ruble"
              decimals="2"
-             field="third"
+             field="model.tabFlittingShop.statisticsCostPerHourGuarantee.third"
              on-blur="autoSaving">
     </my-cell>
     <my-cell></my-cell>
 </my-row>
 
-<my-row field="statisticsQuantitySparesAtRetailVolvo">
+<my-row>
     <my-cell size="1"
              text="D135">
     </my-cell>
     <my-cell size="3"
-             text="Кол-во проданных з/н - розница Volvo">
+             text="tab.flitting.shop.quantity.spares.at.retail.volvo">
     </my-cell>
     <my-cell></my-cell>
     <my-cell></my-cell>
     <my-cell type="number"
-             field="third"
+             field="model.tabFlittingShop.statisticsQuantitySparesAtRetailVolvo.third"
              on-blur="autoSaving">
     </my-cell>
     <my-cell></my-cell>
 </my-row>
 
-<my-row field="statisticsQuantitySparesInnerVolvo">
+<my-row>
     <my-cell size="1"
              text="D137">
     </my-cell>
     <my-cell size="3"
-             text="Кол-во проданных з/н - внутренние Volvo">
+             text="tab.flitting.shop.quantity.spares.inner.volvo">
     </my-cell>
     <my-cell></my-cell>
     <my-cell></my-cell>
     <my-cell type="number"
-             field="third"
+             field="model.tabFlittingShop.statisticsQuantitySparesInnerVolvo.third"
              on-blur="autoSaving">
     </my-cell>
     <my-cell></my-cell>
 </my-row>
 
-<my-row field="statisticsQuantitySparesGuaranteeVolvo">
+<my-row>
     <my-cell size="1"
              text="D138">
     </my-cell>
     <my-cell size="3"
-             text="Кол-во проданных з/н - гарантийные Volvo">
+             text="tab.flitting.shop.quantity.spares.guarantee.volvo">
     </my-cell>
     <my-cell></my-cell>
     <my-cell></my-cell>
     <my-cell type="number"
-             field="third"
+             field="model.tabFlittingShop.statisticsQuantitySparesGuaranteeVolvo.third"
              on-blur="autoSaving">
     </my-cell>
     <my-cell></my-cell>
 </my-row>
 
-<my-row field="statisticsQuantitySparesVolvo">
+<my-row>
     <my-cell size="1"
              text="D140">
     </my-cell>
     <my-cell size="3"
-             text="Кол-во проданных з/н - Volvo">
+             text="tab.flitting.shop.quantity.spares.volvo">
     </my-cell>
     <my-cell></my-cell>
     <my-cell></my-cell>
     <my-cell type="number"
-             field="third"
+             field="model.tabFlittingShop.statisticsQuantitySparesVolvo.third"
              my-disabled="true"
-             value="{{model.third=
-                            baseModel.statisticsQuantitySparesAtRetailVolvo.third +
-                            baseModel.statisticsQuantitySparesInnerVolvo.third +
-                            baseModel.statisticsQuantitySparesGuaranteeVolvo.third}}">
+             value="{{model.tabFlittingShop.statisticsQuantitySparesVolvo.third=
+                            model.tabFlittingShop.statisticsQuantitySparesAtRetailVolvo.third +
+                            model.tabFlittingShop.statisticsQuantitySparesInnerVolvo.third +
+                            model.tabFlittingShop.statisticsQuantitySparesGuaranteeVolvo.third}}">
     </my-cell>
     <my-cell></my-cell>
 </my-row>
 
-<my-row field="statisticsQuantitySparesAtRetailOthers">
+<my-row>
     <my-cell size="1"
              text="D141">
     </my-cell>
     <my-cell size="3"
-             text="Кол-во проданных з/н - розница Другие">
+             text="tab.flitting.shop.quantity.spares.at.retail.others">
     </my-cell>
     <my-cell></my-cell>
     <my-cell></my-cell>
     <my-cell type="number"
-             field="third"
+             field="model.tabFlittingShop.statisticsQuantitySparesAtRetailOthers.third"
              on-blur="autoSaving">
     </my-cell>
     <my-cell></my-cell>
 </my-row>
 
-<my-row field="statisticsQuantitySparesInnerOthers">
+<my-row>
     <my-cell size="1"
              text="D143">
     </my-cell>
     <my-cell size="3"
-             text="Кол-во проданных з/н - внутренние Другие">
+             text="tab.flitting.shop.quantity.spares.inner.others">
     </my-cell>
     <my-cell></my-cell>
     <my-cell></my-cell>
     <my-cell type="number"
-             field="third"
+             field="model.tabFlittingShop.statisticsQuantitySparesInnerOthers.third"
              on-blur="autoSaving">
     </my-cell>
     <my-cell></my-cell>
 </my-row>
 
-<my-row field="statisticsQuantitySparesGuaranteeOthers">
+<my-row>
     <my-cell size="1"
              text="D144">
     </my-cell>
     <my-cell size="3"
-             text="Кол-во проданных з/н - гарантийные Другие">
+             text="tab.flitting.shop.quantity.spares.guarantee.others">
     </my-cell>
     <my-cell></my-cell>
     <my-cell></my-cell>
     <my-cell type="number"
-             field="third"
+             field="model.tabFlittingShop.statisticsQuantitySparesGuaranteeOthers.third"
              on-blur="autoSaving">
     </my-cell>
     <my-cell></my-cell>
 </my-row>
 
-<my-row field="statisticsQuantitySparesOthers">
+<my-row>
     <my-cell size="1"
              text="D145">
     </my-cell>
     <my-cell size="3"
-             text="Кол-во проданных з/н - Другие">
+             text="tab.flitting.shop.quantity.spares.others">
     </my-cell>
     <my-cell></my-cell>
     <my-cell></my-cell>
     <my-cell type="number"
-             field="third"
+             field="model.tabFlittingShop.statisticsQuantitySparesOthers.third"
              my-disabled="true"
-             value="{{model.third=
-                            baseModel.statisticsQuantitySparesAtRetailOthers.third +
-                            baseModel.statisticsQuantitySparesInnerOthers.third +
-                            baseModel.statisticsQuantitySparesGuaranteeOthers.third}}">
+             value="{{model.tabFlittingShop.statisticsQuantitySparesOthers.third=
+                            model.tabFlittingShop.statisticsQuantitySparesAtRetailOthers.third +
+                            model.tabFlittingShop.statisticsQuantitySparesInnerOthers.third +
+                            model.tabFlittingShop.statisticsQuantitySparesGuaranteeOthers.third}}">
     </my-cell>
     <my-cell></my-cell>
 </my-row>
 
-<my-row field="statisticsQuantitySparesOthersTotal">
+<my-row>
     <my-cell size="1"
              text="D150">
     </my-cell>
     <my-cell size="3"
-             text="Итого кол-во проданных з/н">
+             text="tab.flitting.shop.quantity.spares.total">
     </my-cell>
     <my-cell></my-cell>
     <my-cell></my-cell>
     <my-cell type="number"
-             field="third"
+             field="model.tabFlittingShop.statisticsQuantitySparesOthersTotal.third"
              my-disabled="true"
-             value="{{model.third=
-                            baseModel.statisticsQuantitySparesVolvo.third +
-                            baseModel.statisticsQuantitySparesOthers.third}}">
+             value="{{model.tabFlittingShop.statisticsQuantitySparesOthersTotal.third=
+                            model.tabFlittingShop.statisticsQuantitySparesVolvo.third +
+                            model.tabFlittingShop.statisticsQuantitySparesOthers.third}}">
     </my-cell>
     <my-cell></my-cell>
 </my-row>
 
 
-<my-row field="statisticsWorkingPostQuantity">
+<my-row>
     <my-cell size="1"
              text="D151">
     </my-cell>
     <my-cell size="3"
-             text="Кол-во рабочих постов">
+             text="tab.flitting.shop.working.post.quantity">
     </my-cell>
     <my-cell></my-cell>
     <my-cell></my-cell>
     <my-cell type="number"
-             field="third"
+             field="model.tabFlittingShop.statisticsWorkingPostQuantity.third"
              on-blur="autoSaving">
     </my-cell>
     <my-cell></my-cell>
 </my-row>
 
-<my-row field="statisticsElevatorQuantity">
+<my-row>
     <my-cell size="1"
              text="D152">
     </my-cell>
     <my-cell size="3"
-             text="Кол-во подъемников">
+             text="tab.flitting.shop.elevator.quantity">
     </my-cell>
     <my-cell></my-cell>
     <my-cell></my-cell>
     <my-cell type="number"
-             field="third"
+             field="model.tabFlittingShop.statisticsElevatorQuantity.third"
              on-blur="autoSaving">
     </my-cell>
     <my-cell></my-cell>
 </my-row>
 
-<my-row field="statisticsShopWorkingHours">
+<my-row>
     <my-cell size="1"
              text="D153">
     </my-cell>
     <my-cell size="3"
-             text="Время работы цеха">
+             text="tab.common.shop.working.hours">
     </my-cell>
     <my-cell></my-cell>
     <my-cell></my-cell>
     <my-cell type="number"
              decimals="2"
-             field="third"
+             field="model.tabFlittingShop.statisticsShopWorkingHours.third"
              on-blur="autoSaving">
     </my-cell>
     <my-cell></my-cell>
