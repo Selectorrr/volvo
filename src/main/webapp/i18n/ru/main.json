@@ -132,7 +132,10 @@
             "quantity.spares.others" : "Кол-во проданных з/н - Другие",
 
             "quantity.spares.total" : "Итого кол-во проданных з/н",
-            "working.post.quantity" : "Кол-во рабочих постов"
+            "working.post.quantity" : "Кол-во рабочих постов",
+
+            "lubricant" : "ГСМ",
+            "stockpile.correction" : "Корректировка величины запасов"
         },
 
         "new.cars" : {
@@ -166,7 +169,7 @@
             "total" : "Итого продажи ПА",
             "other.charges" : "Другие расходы по подержанным а/м",
             "pre.sale.preparation" : "Предпродажная подготовка ПА",
-            "stockpile.correction" : "Корректировка величины запасов",
+
             "volvo.crediting.incoming" : "Доход от кредитования (Программа Вольво) - ПА",
             "volvo.insurance.incoming" : "Доход от страхования (Программа Вольво) - ПА",
             "crediting.incoming" : "Доход от кредитования - ПА",
@@ -194,7 +197,6 @@
 
             "subcontract.gross.profit" : "Субконтракты Слес. Цех",
 
-            "lubricant" : "ГСМ",
             "gross.profit.incoming" : "Валовая прибыль Слесарного Цеха",
             "total.administration.charges" : "Итого расходы на адм. персонал Слесарного цеха",
 
@@ -237,6 +239,62 @@
 
             "colored.camera.quantity" : "Кол-во покрасочных камер"
 
+        },
+
+        "spares" : {
+            "shop.sale.volvo" : "Продажи через магазин - Volvo",
+            "sale.accessories.volvo" : "Продажи аксессуаров - Volvo",
+
+            "sale.spares.other.organizations.volvo" : "Продажи з/ч др. орг-м - Volvo",
+            "sale.spares.at.retail.volvo" : "Продажи з/ч слес. цех - розница Volvo",
+            "sale.spares.inner.volvo" : "Продажи з/ч слес. цех - внутренние Volvo",
+            "sale.spares.guarantee.volvo" : "Продажи з/ч слес. цех - гарантия Volvo",
+
+            "sale.body.shop.spares.at.retail.volvo" : "Продажи з/ч куз. цех - розница Volvo",
+            "sale.body.shop.spares.insurance.volvo" : "Продажи з/ч куз. цех - страховые Volvo",
+            "sale.body.shop.spares.inner.volvo" : "Продажи з/ч куз. цех - внутренние Volvo",
+            "sale.body.shop.spares.guarantee.volvo" : "Продажи з/ч куз. цех - гарантия Volvo",
+
+            "shop.sale.others" : "Розничная продажа других производителей",
+            "sale.accessories.others" : "Продажи аксессуаров - Другие",
+
+            "sale.spares.other.organizations.others" : "Продажи др. орг-м - Другие",
+            "sale.spares.at.retail.others" : "Продажи з/ч слес. цех - розница Другие",
+            "sale.spares.inner.others" : "Продажи з/ч слес. цех - внутренние Другие",
+            "sale.spares.guarantee.others" : "Продажи з/ч слес. цех - гарантия Другие",
+
+            "sale.body.shop.spares.at.retail.others" : "Продажи з/ч куз. цех - розница Другие",
+            "sale.body.shop.spares.insurance.others" : "Продажи з/ч куз. цех - страховые Другие",
+            "sale.body.shop.spares.inner.others" : "Продажи з/ч куз. цех - внутренние Другие",
+            "sale.body.shop.spares.guarantee.others" : "Продажи з/ч куз. цех - гарантия Другие",
+
+            "total.shop" : "Итог Продажи через магазин",
+            "total.accessories" : "Итог Продажи аксессуаров",
+
+            "total.other.organizations" : "Итог Продажи др. орг-м",
+            "total.sale.spares.at.retail" : "Итог Продажи з/ч слес. цех - розница",
+            "total.sale.spares.inner" : "Итог Продажи з/ч слес. цех - внутренние",
+            "total.sale.spares.guarantee" : "Итог Продажи з/ч слес. цех - гарантия",
+
+            "total.sale.body.shop.spares.at.retail" : "Итог Продажи з/ч куз. цех - розница",
+            "total.sale.body.shop.spares.insurance" : "Итог Продажи з/ч куз. цех - страховые",
+            "total.sale.body.shop.spares.inner" : "Итог Продажи з/ч куз. цех - внутренние",
+            "total.sale.body.shop.spares.guarantee" : "Итог Продажи з/ч куз. цех - гарантия",
+
+            "total.spares.sales" : "Итого продажи запчастей",
+            "tying.products.sale" : "Продажа краски и сопутствующих материалов",
+            "tyre.sale" : "Продажа шин",
+            "other.sale" : "Прочие продажи",
+            "other.sales.total" : "Всего прочие доходы",
+            "total.department" : "Всего по отделу запчастей",
+            "extra.charge" : "Дополнительные расходы",
+            "total.spares.sale.and.gross.profit" : "Итого продажи и ВП по запчастям",
+            "commission.charges" : "Комиссионные",
+            "total.staff.charges" : "Итого расходы на персонал",
+            "environment.charges" : "Расходы на оборудование",
+            "department.cars.charges" : "Расходы на а/м отдела, трансп. расходы",
+            "cost.in.stock" : "Ст-сть запчастей на складе",
+            "spares.stock.area" : "Площадь склада з/ч"
         }
     }
 }
