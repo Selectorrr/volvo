@@ -116,10 +116,10 @@ angular.module('volvoApp', ['LocalStorageModule', 'tmh.dynamicLocale',
         });
 
         $translateProvider.preferredLanguage('ru');
-        //$translateProvider.useCookieStorage();
+        $translateProvider.useCookieStorage();
 
         tmhDynamicLocaleProvider.localeLocationPattern('bower_components/angular-i18n/angular-locale_{{locale}}.js');
-        //tmhDynamicLocaleProvider.useCookieStorage('NG_TRANSLATE_LANG_KEY');
+        tmhDynamicLocaleProvider.useCookieStorage('NG_TRANSLATE_LANG_KEY');
         $(window).scroll(function () {
             var alpha = $(window).scrollTop() / 300;
             var $volvoLogo = $('.volvo-logo');

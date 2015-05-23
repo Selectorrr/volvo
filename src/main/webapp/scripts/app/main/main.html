@@ -2,102 +2,122 @@
     <div class="row">
         <div class="col-xs-12">
             <div class="panel panel-default">
-                <div class="panel-heading">Параметры</div>
+                <div class="panel-heading">
+                    <span translate="main.parameters">Parameters</span>
+                </div>
                 <div class="panel-body">
                     <div class="form-group">
-                        <label for="mode">Режим</label>
+                        <label for="mode" translate="main.mode">Mode</label>
                         <br/>
 
                         <div id="mode" class="btn-group btn-group-justified" role="group">
                             <div class="btn-group" role="group">
-                                <button type="button" class="btn btn-default active">Факт</button>
+                                <button type="button" class="btn btn-default active">
+                                    <span translate="main.fact">Fact</span>
+                                </button>
                             </div>
                             <div class="btn-group" role="group">
-                                <button type="button" class="btn btn-default" disabled>План</button>
+                                <button type="button" class="btn btn-default" disabled>
+                                    <span translate="main.plan">Plan</span>
+                                </button>
                             </div>
                         </div>
                     </div>
                     <div class="form-group">
-                        <label for="monthSelector">Месяц</label>
+                        <label for="monthSelector" translate="main.month">Month</label>
                         <br/>
 
                         <div id="monthSelector" class="btn-group btn-group-justified" role="group">
                             <div class="btn-group" role="group">
                                 <button type="button" class="btn btn-default"
                                         ng-click="options.month=1"
-                                        ng-class="{'active':options.month===1}">Январь
+                                        ng-class="{'active':options.month===1}">
+                                    <span translate="main.month.january">January</span>
                                 </button>
                             </div>
                             <div class="btn-group" role="group">
                                 <button type="button" class="btn btn-default"
                                         ng-click="options.month=2"
-                                        ng-class="{'active':options.month===2}">Февраль
+                                        ng-class="{'active':options.month===2}">
+                                    <span translate="main.month.february">February</span>
                                 </button>
                             </div>
                             <div class="btn-group" role="group">
                                 <button type="button" class="btn btn-default"
                                         ng-click="options.month=3"
-                                        ng-class="{'active':options.month===3}">Март
+                                        ng-class="{'active':options.month===3}">
+                                    <span translate="main.month.march">March</span>
                                 </button>
                             </div>
                             <div class="btn-group" role="group">
                                 <button type="button" class="btn btn-default"
                                         ng-click="options.month=4"
-                                        ng-class="{'active':options.month===4}">Апрель
+                                        ng-class="{'active':options.month===4}">
+                                    <span translate="main.month.april">April</span>
                                 </button>
                             </div>
                             <div class="btn-group" role="group">
                                 <button type="button" class="btn btn-default"
                                         ng-click="options.month=5"
-                                        ng-class="{'active':options.month===5}">Май
+                                        ng-class="{'active':options.month===5}">
+                                    <span translate="main.month.may">May</span>
                                 </button>
                             </div>
                             <div class="btn-group" role="group">
                                 <button type="button" class="btn btn-default"
                                         ng-click="options.month=6"
-                                        ng-class="{'active':options.month===6}">Июнь
+                                        ng-class="{'active':options.month===6}">
+                                    <span translate="main.month.june">June</span>
                                 </button>
                             </div>
                             <div class="btn-group" role="group">
                                 <button type="button" class="btn btn-default"
                                         ng-click="options.month=7"
-                                        ng-class="{'active':options.month===7}">Июль
+                                        ng-class="{'active':options.month===7}">
+                                    <span translate="main.month.july">July</span>
                                 </button>
                             </div>
                             <div class="btn-group" role="group">
                                 <button type="button" class="btn btn-default"
                                         ng-click="options.month=8"
-                                        ng-class="{'active':options.month===8}">Август
+                                        ng-class="{'active':options.month===8}">
+                                    <span translate="main.month.august">August</span>
                                 </button>
                             </div>
                             <div class="btn-group" role="group">
                                 <button type="button" class="btn btn-default"
                                         ng-click="options.month=9"
-                                        ng-class="{'active':options.month===9}">Сентябрь
+                                        ng-class="{'active':options.month===9}">
+                                    <span translate="main.month.september">September</span>
                                 </button>
                             </div>
                             <div class="btn-group" role="group">
                                 <button type="button" class="btn btn-default"
                                         ng-click="options.month=10"
-                                        ng-class="{'active':options.month===10}">Октябрь
+                                        ng-class="{'active':options.month===10}">
+                                    <span translate="main.month.october">October</span>
                                 </button>
                             </div>
                             <div class="btn-group" role="group">
                                 <button type="button" class="btn btn-default"
                                         ng-click="options.month=11"
-                                        ng-class="{'active':options.month===11}">Ноябрь
+                                        ng-class="{'active':options.month===11}">
+                                    <span translate="main.month.november">November</span>
                                 </button>
                             </div>
                             <div class="btn-group" role="group">
                                 <button type="button" class="btn btn-default"
                                         ng-click="options.month=12"
-                                        ng-class="{'active':options.month===12}">Декабрь
+                                        ng-class="{'active':options.month===12}">
+                                    <span translate="main.month.december">December</span>
                                 </button>
                             </div>
                         </div>
                     </div>
                     <div class="text-right">
-                        <button type="submit" class="btn btn-info" disabled>Согласовать</button>
+                        <button type="submit" class="btn btn-info" disabled>
+                            <span translate="main.apply">Apply</span>
+                        </button>
                     </div>
                 </div>
             </div>
@@ -109,34 +129,54 @@
             <div role="tabpanel">
                 <ul class="nav nav-tabs" role="tablist">
                     <li role="presentation" ui-sref-active="active">
-                        <a ui-sref="tabNewCars">Новые автомобили</a>
+                        <a ui-sref="tabNewCars">
+                            <span translate="main.tab.new.cars"></span>
+                        </a>
                     </li>
                     <li role="presentation" ui-sref-active="active">
-                        <a ui-sref="tabSecondHandCars">Подержанные автомобили</a>
+                        <a ui-sref="tabSecondHandCars">
+                            <span translate="main.tab.second.hand.cars"></span>
+                        </a>
                     </li>
                     <li role="presentation" ui-sref-active="active">
-                        <a ui-sref="tabFlittingShop">Слес. цех</a>
+                        <a ui-sref="tabFlittingShop">
+                            <span translate="main.tab.flitting.shop"></span>
+                        </a>
                     </li>
                     <li role="presentation" ui-sref-active="active">
-                        <a ui-sref="tabBodyShop">Кузовной цех</a>
+                        <a ui-sref="tabBodyShop">
+                            <span translate="main.tab.body.shop"></span>
+                        </a>
                     </li>
                     <li role="presentation" ui-sref-active="active">
-                        <a ui-sref="tabSpares">Запчасти</a>
+                        <a ui-sref="tabSpares">
+                            <span translate="main.tab.spares"></span>
+                        </a>
                     </li>
                     <li role="presentation" ui-sref-active="active">
-                        <a ui-sref="tabOtherDepartments">Другие отделы</a>
+                        <a ui-sref="tabOtherDepartments">
+                            <span translate="main.tab.other.departments"></span>
+                        </a>
                     </li>
                     <li role="presentation" ui-sref-active="active">
-                        <a ui-sref="tabIndirectCharges">Непрямые расходы</a>
+                        <a ui-sref="tabIndirectCharges">
+                            <span translate="main.tab.indirect.charges"></span>
+                        </a>
                     </li>
                     <li role="presentation" ui-sref-active="active">
-                        <a ui-sref="tabBalance">Баланс</a>
+                        <a ui-sref="tabBalance">
+                            <span translate="main.tab.balance"></span>
+                        </a>
                     </li>
                     <li role="presentation" ui-sref-active="active">
-                        <a ui-sref="tabTotalData">Итоговые данные</a>
+                        <a ui-sref="tabTotalData">
+                            <span translate="main.tab.total.data"></span>
+                        </a>
                     </li>
                     <li role="presentation" ui-sref-active="active">
-                        <a ui-sref="tabStaffQuantity">Численность персонала</a>
+                        <a ui-sref="tabStaffQuantity">
+                            <span translate="main.tab.staff.quantity"></span>
+                        </a>
                     </li>
                 </ul>
                 <div class="tab-content">
