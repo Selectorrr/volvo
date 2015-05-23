@@ -1,5 +1,109 @@
 <div ng-cloak>
     <div class="row">
+        <div class="col-xs-12">
+            <div class="panel panel-default">
+                <div class="panel-heading">Параметры</div>
+                <div class="panel-body">
+                    <div class="form-group">
+                        <label for="mode">Режим</label>
+                        <br/>
+
+                        <div id="mode" class="btn-group btn-group-justified" role="group">
+                            <div class="btn-group" role="group">
+                                <button type="button" class="btn btn-default active">Факт</button>
+                            </div>
+                            <div class="btn-group" role="group">
+                                <button type="button" class="btn btn-default" disabled>План</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="monthSelector">Месяц</label>
+                        <br/>
+
+                        <div id="monthSelector" class="btn-group btn-group-justified" role="group">
+                            <div class="btn-group" role="group">
+                                <button type="button" class="btn btn-default"
+                                        ng-click="options.month=1"
+                                        ng-class="{'active':options.month===1}">Январь
+                                </button>
+                            </div>
+                            <div class="btn-group" role="group">
+                                <button type="button" class="btn btn-default"
+                                        ng-click="options.month=2"
+                                        ng-class="{'active':options.month===2}">Февраль
+                                </button>
+                            </div>
+                            <div class="btn-group" role="group">
+                                <button type="button" class="btn btn-default"
+                                        ng-click="options.month=3"
+                                        ng-class="{'active':options.month===3}">Март
+                                </button>
+                            </div>
+                            <div class="btn-group" role="group">
+                                <button type="button" class="btn btn-default"
+                                        ng-click="options.month=4"
+                                        ng-class="{'active':options.month===4}">Апрель
+                                </button>
+                            </div>
+                            <div class="btn-group" role="group">
+                                <button type="button" class="btn btn-default"
+                                        ng-click="options.month=5"
+                                        ng-class="{'active':options.month===5}">Май
+                                </button>
+                            </div>
+                            <div class="btn-group" role="group">
+                                <button type="button" class="btn btn-default"
+                                        ng-click="options.month=6"
+                                        ng-class="{'active':options.month===6}">Июнь
+                                </button>
+                            </div>
+                            <div class="btn-group" role="group">
+                                <button type="button" class="btn btn-default"
+                                        ng-click="options.month=7"
+                                        ng-class="{'active':options.month===7}">Июль
+                                </button>
+                            </div>
+                            <div class="btn-group" role="group">
+                                <button type="button" class="btn btn-default"
+                                        ng-click="options.month=8"
+                                        ng-class="{'active':options.month===8}">Август
+                                </button>
+                            </div>
+                            <div class="btn-group" role="group">
+                                <button type="button" class="btn btn-default"
+                                        ng-click="options.month=9"
+                                        ng-class="{'active':options.month===9}">Сентябрь
+                                </button>
+                            </div>
+                            <div class="btn-group" role="group">
+                                <button type="button" class="btn btn-default"
+                                        ng-click="options.month=10"
+                                        ng-class="{'active':options.month===10}">Октябрь
+                                </button>
+                            </div>
+                            <div class="btn-group" role="group">
+                                <button type="button" class="btn btn-default"
+                                        ng-click="options.month=11"
+                                        ng-class="{'active':options.month===11}">Ноябрь
+                                </button>
+                            </div>
+                            <div class="btn-group" role="group">
+                                <button type="button" class="btn btn-default"
+                                        ng-click="options.month=12"
+                                        ng-class="{'active':options.month===12}">Декабрь
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-right">
+                        <button type="submit" class="btn btn-info" disabled>Согласовать</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
 
         <div class="col-xs-12">
             <div role="tabpanel">

@@ -66,6 +66,11 @@ public class ReportService {
     public Report getMonthReport(int monthNum) {
         User user = userService.getUserWithAuthorities();
         LocalDateTime localDateTime = LocalDateTime.now();
-        return getReport(user, localDateTime.withMonthOfYear(monthNum + 1));
+        Report report = getReport(user, localDateTime.withMonthOfYear(monthNum));
+        if (report == null) {
+            report = Report.createNewReport("month");
+            report = reportRepository.save(report);
+        }
+        return report;
     }
 }

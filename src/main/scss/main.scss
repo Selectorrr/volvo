@@ -221,3 +221,7 @@ ul#strength {
 .table {
     margin-bottom: 0;
 }
+
+button:focus {
+    outline: 0 !important;
+}

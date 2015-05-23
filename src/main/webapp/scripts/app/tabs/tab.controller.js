@@ -4,31 +4,27 @@
 'use strict';
 
 angular.module('volvoApp')
-    .controller('TabController', function ($scope, ReportService, currentReport, $timeout) {
-        $scope.model = currentReport.data;
+    .controller('TabController', function ($scope, ReportService, report, $timeout) {
+        $scope.model = report;
         var timeout = null;
-
+        $scope.options = ReportService.options;
+        $scope.$watch('options.month', function (month) {
+            changeMonth(month);
+        });
         $scope.autoSaving = function () {
             if (timeout) {
                 $timeout.cancel(timeout);
             }
             timeout = $timeout(function () {
-                ReportService.saveReport($scope.model)
+                ReportService.save($scope.model)
             }, 500);
         };
 
         $scope.selectedMonth = new Date();
 
-        $scope.changeMonth = function () {
-            var month = $scope.selectedMonth.getMonth();
-            console.log('selected month: ' + month);
-            ReportService.monthReport(month).then(function (report) {
-                if (report.data) {
-                    $scope.model = report.data;
-                } else {
-                    $scope.model = {};
-                    console.log('no data :(');
-                }
+        function changeMonth(month) {
+            ReportService.get({month: month}).$promise.then(function (report) {
+                $scope.model = report;
             });
         }
 

@@ -14,7 +14,7 @@ import javax.inject.Inject;
  * REST controller for managing reports.
  */
 @RestController
-@RequestMapping("/api")
+@RequestMapping("/api/rest")
 public class ReportResource {
 
     private final Logger log = LoggerFactory.getLogger(ReportResource.class);
@@ -22,34 +22,34 @@ public class ReportResource {
     @Inject
     private ReportService reportService;
 
-    /**
-     * Отчет за текущий период.
-     */
-    @RequestMapping(value = "/current-report",
-        method = RequestMethod.GET,
-        produces = MediaType.APPLICATION_JSON_VALUE)
-    @Timed
-    public Report getCurrentReport() {
-        log.debug("REST request to get current report");
-        return reportService.getCurrentReport();
-    }
+//    /**
+//     * Отчет за текущий период.
+//     */
+//    @RequestMapping(value = "/reports/{month}",
+//        method = RequestMethod.GET,
+//        produces = MediaType.APPLICATION_JSON_VALUE)
+//    @Timed
+//    public Report getCurrentReport() {
+//        log.debug("REST request to get current report");
+//        return reportService.getCurrentReport();
+//    }
 
     /**
      * Отчет за конкретный период.
      */
-    @RequestMapping(value = "/month-report",
+    @RequestMapping(value = "/reports/{month}",
         method = RequestMethod.GET,
         produces = MediaType.APPLICATION_JSON_VALUE)
     @Timed
-    public Report getMonthReport(@RequestParam(value = "monthNum") Integer monthNum) {
-        log.debug("REST request to get month report: {}", monthNum);
-        return reportService.getMonthReport(monthNum);
+    public Report get(@PathVariable(value = "month") Integer month) {
+        log.debug("REST request to get month report: {}", month);
+        return reportService.getMonthReport(month);
     }
 
     /**
      * Сохранение отчета за текущий период.
      */
-    @RequestMapping(value = "/save-report",
+    @RequestMapping(value = "/reports",
             method = RequestMethod.POST,
             produces = MediaType.APPLICATION_JSON_VALUE)
     @Timed
