@@ -18,11 +18,6 @@ angular.module('volvoApp')
         };
 
         $scope.selectedMonth = new Date();
-        $scope.isPlan = false;
-
-        $scope.changePlan = function () {
-            console.log('is plan: ' + $scope.isPlan);
-        };
 
         $scope.changeMonth = function () {
             var month = $scope.selectedMonth.getMonth();

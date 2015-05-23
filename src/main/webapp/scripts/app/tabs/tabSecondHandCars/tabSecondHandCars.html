@@ -1,5 +1,5 @@
 <div class="content">
-    <my-table model="model" field="tabSecondHandCars">
+    <my-table>
         <my-head>
             <my-row>
                 <my-cell size="4"
@@ -12,7 +12,7 @@
             </my-row>
         </my-head>
         <my-body>
-            <my-row field="saleSecondHandCarVolvo">
+            <my-row>
                 <my-cell size="1"
                          text="B101">
                 </my-cell>
@@ -20,25 +20,25 @@
                          text="Volvo">
                 </my-cell>
                 <my-cell type="number"
-                         field="first"
+                         field="model.tabSecondHandCars.saleSecondHandCarVolvo.first"
                          on-blur="autoSaving">
                 </my-cell>
                 <my-cell type="ruble"
-                         field="second"
+                         field="model.tabSecondHandCars.saleSecondHandCarVolvo.second"
                          on-blur="autoSaving">
                 </my-cell>
                 <my-cell type="ruble"
-                         field="third"
+                         field="model.tabSecondHandCars.saleSecondHandCarVolvo.third"
                          on-blur="autoSaving">
                 </my-cell>
                 <my-cell type="ruble"
-                         field="fourth"
+                         field="model.tabSecondHandCars.saleSecondHandCarVolvo.fourth"
                          my-disabled="true"
-                         value="{{model.fourth = model.second - model.third}}">
+                         value="{{model.tabSecondHandCars.saleSecondHandCarVolvo.fourth = model.tabSecondHandCars.saleSecondHandCarVolvo.second - model.tabSecondHandCars.saleSecondHandCarVolvo.third}}">
                 </my-cell>
             </my-row>
 
-            <my-row field="saleSecondHandCarVolvoTestDriveCompanyCars">
+            <my-row>
                 <my-cell size="1"
                          text="B102">
                 </my-cell>
@@ -46,25 +46,25 @@
                          text="Volvo тест-драйв, подменные, служебные  а/м">
                 </my-cell>
                 <my-cell type="number"
-                         field="first"
+                         field="model.tabSecondHandCars.saleSecondHandCarVolvoTestDriveCompanyCars.first"
                          on-blur="autoSaving">
                 </my-cell>
                 <my-cell type="ruble"
-                         field="second"
+                         field="model.tabSecondHandCars.saleSecondHandCarVolvoTestDriveCompanyCars.second"
                          on-blur="autoSaving">
                 </my-cell>
                 <my-cell type="ruble"
-                         field="third"
+                         field="model.tabSecondHandCars.saleSecondHandCarVolvoTestDriveCompanyCars.third"
                          on-blur="autoSaving">
                 </my-cell>
                 <my-cell type="ruble"
-                         field="fourth"
+                         field="model.tabSecondHandCars.saleSecondHandCarVolvoTestDriveCompanyCars.fourth"
                          my-disabled="true"
-                         value="{{model.fourth = model.second - model.third}}">
+                         value="{{model.tabSecondHandCars.saleSecondHandCarVolvoTestDriveCompanyCars.fourth = model.tabSecondHandCars.saleSecondHandCarVolvoTestDriveCompanyCars.second - model.tabSecondHandCars.saleSecondHandCarVolvoTestDriveCompanyCars.third}}">
                 </my-cell>
             </my-row>
 
-            <my-row field="saleSecondHandCarOtherModels">
+            <my-row>
                 <my-cell size="1"
                          text="B103">
                 </my-cell>
@@ -72,28 +72,28 @@
                          text="Другие марки">
                 </my-cell>
                 <my-cell type="number"
-                         field="first"
+                         field="model.tabSecondHandCars.saleSecondHandCarOtherModels.first"
                          on-blur="autoSaving">
                 </my-cell>
                 <my-cell type="ruble"
-                         field="second"
+                         field="model.tabSecondHandCars.saleSecondHandCarOtherModels.second"
                          on-blur="autoSaving">
                 </my-cell>
                 <my-cell type="ruble"
-                         field="third"
+                         field="model.tabSecondHandCars.saleSecondHandCarOtherModels.third"
                          on-blur="autoSaving">
                 </my-cell>
                 <my-cell type="ruble"
-                         field="fourth"
+                         field="model.tabSecondHandCars.saleSecondHandCarOtherModels.fourth"
                          my-disabled="true"
-                         value="{{model.fourth = model.second - model.third}}">
+                         value="{{model.tabSecondHandCars.saleSecondHandCarOtherModels.fourth = model.tabSecondHandCars.saleSecondHandCarOtherModels.second - model.tabSecondHandCars.saleSecondHandCarOtherModels.third}}">
                 </my-cell>
             </my-row>
 
         </my-body>
         <my-foot>
 
-            <my-row field="saleSecondHandCarTotal">
+            <my-row>
                 <my-cell size="1"
                          text="B110">
                 </my-cell>
@@ -101,39 +101,39 @@
                          text="Итого продажи ПА">
                 </my-cell>
                 <my-cell type="number"
-                         field="first"
+                         field="model.tabSecondHandCars.saleSecondHandCarTotal.first"
                          my-disabled="true"
-                         value="{{model.first=
-                            baseModel.saleSecondHandCarVolvo.first+
-                            baseModel.saleSecondHandCarVolvoTestDriveCompanyCars.first+
-                            baseModel.saleSecondHandCarOtherModels.first
+                         value="{{model.tabSecondHandCars.saleSecondHandCarTotal.first=
+                            model.tabSecondHandCars.saleSecondHandCarVolvo.first+
+                            model.tabSecondHandCars.saleSecondHandCarVolvoTestDriveCompanyCars.first+
+                            model.tabSecondHandCars.saleSecondHandCarOtherModels.first
                           }}">
                 </my-cell>
                 <my-cell type="ruble"
-                         field="second"
+                         field="model.tabSecondHandCars.saleSecondHandCarTotal.second"
                          my-disabled="true"
-                         value="{{model.second=
-                            baseModel.saleSecondHandCarVolvo.second+
-                            baseModel.saleSecondHandCarVolvoTestDriveCompanyCars.second+
-                            baseModel.saleSecondHandCarOtherModels.second
+                         value="{{model.tabSecondHandCars.saleSecondHandCarTotal.second=
+                            model.tabSecondHandCars.saleSecondHandCarVolvo.second+
+                            model.tabSecondHandCars.saleSecondHandCarVolvoTestDriveCompanyCars.second+
+                            model.tabSecondHandCars.saleSecondHandCarOtherModels.second
                           }}">
                 </my-cell>
                 <my-cell type="ruble"
-                         field="third"
+                         field="model.tabSecondHandCars.saleSecondHandCarTotal.third"
                          my-disabled="true"
-                         value="{{model.third=
-                            baseModel.saleSecondHandCarVolvo.third+
-                            baseModel.saleSecondHandCarVolvoTestDriveCompanyCars.third+
-                            baseModel.saleSecondHandCarOtherModels.third
+                         value="{{model.tabSecondHandCars.saleSecondHandCarTotal.third=
+                            model.tabSecondHandCars.saleSecondHandCarVolvo.third+
+                            model.tabSecondHandCars.saleSecondHandCarVolvoTestDriveCompanyCars.third+
+                            model.tabSecondHandCars.saleSecondHandCarOtherModels.third
                           }}">
                 </my-cell>
                 <my-cell type="ruble"
-                         field="fourth"
+                         field="model.tabSecondHandCars.saleSecondHandCarTotal.fourth"
                          my-disabled="true"
-                         value="{{model.fourth=
-                            baseModel.saleSecondHandCarVolvo.fourth+
-                            baseModel.saleSecondHandCarVolvoTestDriveCompanyCars.fourth+
-                            baseModel.saleSecondHandCarOtherModels.fourth
+                         value="{{model.tabSecondHandCars.saleSecondHandCarTotal.fourth=
+                            model.tabSecondHandCars.saleSecondHandCarVolvo.fourth+
+                            model.tabSecondHandCars.saleSecondHandCarVolvoTestDriveCompanyCars.fourth+
+                            model.tabSecondHandCars.saleSecondHandCarOtherModels.fourth
                           }}">
                 </my-cell>
             </my-row>
@@ -141,7 +141,7 @@
         </my-foot>
     </my-table>
 
-    <my-table model="model" field="tabSecondHandCars">
+    <my-table>
         <my-head>
             <my-row>
                 <my-cell size="4"
@@ -154,7 +154,7 @@
             </my-row>
         </my-head>
         <my-body>
-            <my-row field="otherChargesOnSecondHandCarsPreSalePreparationForSecondHandCars">
+            <my-row>
                 <my-cell size="1"
                          text="B151">
                 </my-cell>
@@ -165,12 +165,12 @@
                 <my-cell></my-cell>
                 <my-cell></my-cell>
                 <my-cell type="number"
-                         field="fourth"
+                         field="model.tabSecondHandCars.otherChargesOnSecondHandCarsPreSalePreparationForSecondHandCars.fourth"
                          on-blur="autoSaving">
                 </my-cell>
             </my-row>
 
-            <my-row field="otherChargesOnSecondHandCarsStockpileCorrection">
+            <my-row>
                 <my-cell size="1"
                          text="B152">
                 </my-cell>
@@ -181,7 +181,7 @@
                 <my-cell></my-cell>
                 <my-cell></my-cell>
                 <my-cell type="number"
-                         field="fourth"
+                         field="model.tabSecondHandCars.otherChargesOnSecondHandCarsStockpileCorrection.fourth"
                          on-blur="autoSaving">
                 </my-cell>
             </my-row>
@@ -189,7 +189,7 @@
         </my-body>
         <my-foot>
 
-            <my-row field="otherChargesOnSecondHandCarsTotal">
+            <my-row>
                 <my-cell size="1"
                          text="B160">
                 </my-cell>
@@ -200,11 +200,11 @@
                 <my-cell></my-cell>
                 <my-cell></my-cell>
                 <my-cell type="number"
-                         field="fourth"
+                         field="model.tabSecondHandCars.otherChargesOnSecondHandCarsTotal.fourth"
                          my-disabled="true"
-                         value="{{model.fourth=
-                            baseModel.otherChargesOnSecondHandCarsPreSalePreparationForSecondHandCars.fourth+
-                            baseModel.otherChargesOnSecondHandCarsStockpileCorrection.fourth
+                         value="{{model.tabSecondHandCars.otherChargesOnSecondHandCarsTotal.fourth=
+                            model.tabSecondHandCars.otherChargesOnSecondHandCarsPreSalePreparationForSecondHandCars.fourth+
+                            model.tabSecondHandCars.otherChargesOnSecondHandCarsStockpileCorrection.fourth
                           }}">
                 </my-cell>
             </my-row>
@@ -212,7 +212,7 @@
         </my-foot>
     </my-table>
 
-    <my-table model="model" field="tabSecondHandCars">
+    <my-table>
         <my-head>
             <my-row>
                 <my-cell size="4"
@@ -225,7 +225,7 @@
             </my-row>
         </my-head>
         <my-body>
-            <my-row field="otherIncomingVolvoCreditingIncoming">
+            <my-row>
                 <my-cell size="1"
                          text="B163">
                 </my-cell>
@@ -236,12 +236,12 @@
                 <my-cell></my-cell>
                 <my-cell></my-cell>
                 <my-cell type="ruble"
-                         field="fourth"
+                         field="model.tabSecondHandCars.otherIncomingVolvoCreditingIncoming.fourth"
                          on-blur="autoSaving">
                 </my-cell>
             </my-row>
 
-            <my-row field="otherIncomingVolvoInsuranceIncoming">
+            <my-row>
                 <my-cell size="1"
                          text="B164">
                 </my-cell>
@@ -252,12 +252,12 @@
                 <my-cell></my-cell>
                 <my-cell></my-cell>
                 <my-cell type="ruble"
-                         field="fourth"
+                         field="model.tabSecondHandCars.otherIncomingVolvoInsuranceIncoming.fourth"
                          on-blur="autoSaving">
                 </my-cell>
             </my-row>
 
-            <my-row field="otherIncomingCreditingIncoming">
+            <my-row>
                 <my-cell size="1"
                          text="B165">
                 </my-cell>
@@ -268,12 +268,12 @@
                 <my-cell></my-cell>
                 <my-cell></my-cell>
                 <my-cell type="ruble"
-                         field="fourth"
+                         field="model.tabSecondHandCars.otherIncomingCreditingIncoming.fourth"
                          on-blur="autoSaving">
                 </my-cell>
             </my-row>
 
-            <my-row field="otherIncomingInsuranceIncoming">
+            <my-row>
                 <my-cell size="1"
                          text="B166">
                 </my-cell>
@@ -284,12 +284,12 @@
                 <my-cell></my-cell>
                 <my-cell></my-cell>
                 <my-cell type="ruble"
-                         field="fourth"
+                         field="model.tabSecondHandCars.otherIncomingInsuranceIncoming.fourth"
                          on-blur="autoSaving">
                 </my-cell>
             </my-row>
 
-            <my-row field="otherIncomingExtendedGuaranteeSale">
+            <my-row>
                 <my-cell size="1"
                          text="B170">
                 </my-cell>
@@ -298,22 +298,22 @@
                 </my-cell>
                 <my-cell></my-cell>
                 <my-cell type="ruble"
-                         field="second"
+                         field="model.tabSecondHandCars.otherIncomingExtendedGuaranteeSale.second"
                          on-blur="autoSaving">
 
                 </my-cell>
                 <my-cell type="ruble"
-                         field="third"
+                         field="model.tabSecondHandCars.otherIncomingExtendedGuaranteeSale.third"
                          on-blur="autoSaving">
                 </my-cell>
                 <my-cell type="ruble"
-                         field="fourth"
+                         field="model.tabSecondHandCars.otherIncomingExtendedGuaranteeSale.fourth"
                          my-disabled="true"
-                         value="{{model.fourth = model.second - model.third}}">
+                         value="{{model.tabSecondHandCars.otherIncomingExtendedGuaranteeSale.fourth = model.tabSecondHandCars.otherIncomingExtendedGuaranteeSale.second - model.tabSecondHandCars.otherIncomingExtendedGuaranteeSale.third}}">
                 </my-cell>
             </my-row>
 
-            <my-row field="otherIncomingOtherIncomingCharges">
+            <my-row>
                 <my-cell size="1"
                          text="B171">
                 </my-cell>
@@ -322,18 +322,18 @@
                 </my-cell>
                 <my-cell></my-cell>
                 <my-cell type="ruble"
-                         field="second"
+                         field="model.tabSecondHandCars.otherIncomingOtherIncomingCharges.second"
                          on-blur="autoSaving">
 
                 </my-cell>
                 <my-cell type="ruble"
-                         field="third"
+                         field="model.tabSecondHandCars.otherIncomingOtherIncomingCharges.third"
                          on-blur="autoSaving">
                 </my-cell>
                 <my-cell type="ruble"
-                         field="fourth"
+                         field="model.tabSecondHandCars.otherIncomingOtherIncomingCharges.fourth"
                          my-disabled="true"
-                         value="{{model.fourth = model.second - model.third}}">
+                         value="{{model.tabSecondHandCars.otherIncomingOtherIncomingCharges.fourth = model.tabSecondHandCars.otherIncomingOtherIncomingCharges.second - model.tabSecondHandCars.otherIncomingOtherIncomingCharges.third}}">
                 </my-cell>
             </my-row>
 
@@ -341,7 +341,7 @@
         </my-body>
         <my-foot>
 
-            <my-row field="otherIncomingTotal">
+            <my-row>
                 <my-cell size="1"
                          text="B180">
                 </my-cell>
@@ -350,24 +350,24 @@
                 </my-cell>
                 <my-cell></my-cell>
                 <my-cell type="ruble"
-                         field="second"
+                         field="model.tabSecondHandCars.otherIncomingTotal.second"
                          my-disabled="true"
-                         value="{{model.second=
-                            baseModel.otherIncomingExtendedGuaranteeSale.second+
-                            baseModel.otherIncomingOtherIncomingCharges.second}}">
+                         value="{{model.tabSecondHandCars.otherIncomingTotal.second=
+                            model.tabSecondHandCars.otherIncomingExtendedGuaranteeSale.second+
+                            model.tabSecondHandCars.otherIncomingOtherIncomingCharges.second}}">
                 </my-cell>
                 <my-cell type="ruble"
-                         field="third"
+                         field="model.tabSecondHandCars.otherIncomingTotal.third"
                          my-disabled="true"
-                         value="{{model.third=
-                            baseModel.otherIncomingExtendedGuaranteeSale.third+
-                            baseModel.otherIncomingOtherIncomingCharges.third}}">
+                         value="{{model.tabSecondHandCars.otherIncomingTotal.third=
+                            model.tabSecondHandCars.otherIncomingExtendedGuaranteeSale.third+
+                            model.tabSecondHandCars.otherIncomingOtherIncomingCharges.third}}">
                 </my-cell>
                 <!--TODO-->
                 <my-cell type="ruble"
-                         field="fourth"
+                         field="model.tabSecondHandCars.otherIncomingTotal.fourth"
                          my-disabled="true"
-                         value="{{model.fourth=
+                         value="{{model.tabSecondHandCars.otherIncomingTotal.fourth=
                             0}}">
                 </my-cell>
             </my-row>
@@ -376,10 +376,10 @@
         </my-foot>
     </my-table>
 
-    <my-table model="model" field="tabSecondHandCars">
+    <my-table>
 
         <my-foot>
-            <my-row field="otherIncomingGrossProfit">
+            <my-row>
                 <my-cell size="1"
                          text="B200">
                 </my-cell>
@@ -387,38 +387,38 @@
                          text="Валовая Прибыль отдела продаж ПА">
                 </my-cell>
                 <my-cell type="number"
-                         field="first"
+                         field="model.tabSecondHandCars.otherIncomingGrossProfit.first"
                          my-disabled="true"
-                         value="{{model.first=
-                            baseModel.saleSecondHandCarTotal.first}}">
+                         value="{{model.tabSecondHandCars.otherIncomingGrossProfit.first=
+                            model.tabSecondHandCars.saleSecondHandCarTotal.first}}">
                 </my-cell>
                 <my-cell type="ruble"
-                         field="second"
+                         field="model.tabSecondHandCars.otherIncomingGrossProfit.second"
                          my-disabled="true"
-                         value="{{model.second =
-                            baseModel.saleSecondHandCarTotal.second +
-                            baseModel.otherIncomingTotal.second}}">
+                         value="{{model.tabSecondHandCars.otherIncomingGrossProfit.second =
+                            model.tabSecondHandCars.saleSecondHandCarTotal.second +
+                            model.tabSecondHandCars.otherIncomingTotal.second}}">
                 </my-cell>
                 <my-cell type="ruble"
-                         field="third"
+                         field="model.tabSecondHandCars.otherIncomingGrossProfit.third"
                          my-disabled="true"
-                         value="{{model.third =
-                            baseModel.saleSecondHandCarTotal.third +
-                            baseModel.otherIncomingTotal.third}}">
+                         value="{{model.tabSecondHandCars.otherIncomingGrossProfit.third =
+                            model.tabSecondHandCars.saleSecondHandCarTotal.third +
+                            model.tabSecondHandCars.otherIncomingTotal.third}}">
                 </my-cell>
                 <my-cell type="ruble"
-                         field="fourth"
+                         field="model.tabSecondHandCars.otherIncomingGrossProfit.fourth"
                          my-disabled="true"
-                         value="{{model.fourth =
-                            baseModel.saleSecondHandCarTotal.fourth +
-                            baseModel.otherIncomingTotal.fourth -
-                            baseModel.otherChargesOnSecondHandCarsTotal.fourth}}">
+                         value="{{model.tabSecondHandCars.otherIncomingGrossProfit.fourth =
+                            model.tabSecondHandCars.saleSecondHandCarTotal.fourth +
+                            model.tabSecondHandCars.otherIncomingTotal.fourth -
+                            model.tabSecondHandCars.otherChargesOnSecondHandCarsTotal.fourth}}">
                 </my-cell>
             </my-row>
         </my-foot>
     </my-table>
 
-    <my-table model="model" field="tabSecondHandCars">
+    <my-table>
         <my-head>
             <my-row>
                 <my-cell size="4"
@@ -431,7 +431,7 @@
             </my-row>
         </my-head>
         <my-body>
-            <my-row field="fluctuatingChargesSellerSalary">
+            <my-row>
                 <my-cell size="1"
                          text="B201">
                 </my-cell>
@@ -442,12 +442,12 @@
                 <my-cell></my-cell>
                 <my-cell></my-cell>
                 <my-cell type="ruble"
-                         field="fourth"
+                         field="model.tabSecondHandCars.fluctuatingChargesSellerSalary.fourth"
                          on-blur="autoSaving">
                 </my-cell>
             </my-row>
 
-            <my-row field="fluctuatingChargesSellerCommissions">
+            <my-row>
                 <my-cell size="1"
                          text="B202">
                 </my-cell>
@@ -458,12 +458,12 @@
                 <my-cell></my-cell>
                 <my-cell></my-cell>
                 <my-cell type="ruble"
-                         field="fourth"
+                         field="model.tabSecondHandCars.fluctuatingChargesSellerCommissions.fourth"
                          on-blur="autoSaving">
                 </my-cell>
             </my-row>
 
-            <my-row field="fluctuatingChargesSalaryTax">
+            <my-row>
                 <my-cell size="1"
                          text="B203">
                 </my-cell>
@@ -474,12 +474,12 @@
                 <my-cell></my-cell>
                 <my-cell></my-cell>
                 <my-cell type="ruble"
-                         field="fourth"
+                         field="model.tabSecondHandCars.fluctuatingChargesSalaryTax.fourth"
                          on-blur="autoSaving">
                 </my-cell>
             </my-row>
 
-            <my-row field="fluctuatingChargesTotalProductiveStaffCharges">
+            <my-row>
                 <my-cell size="1"
                          text="B210">
                 </my-cell>
@@ -490,16 +490,16 @@
                 <my-cell></my-cell>
                 <my-cell></my-cell>
                 <my-cell type="ruble"
-                         field="fourth"
+                         field="model.tabSecondHandCars.fluctuatingChargesTotalProductiveStaffCharges.fourth"
                          my-disabled="true"
-                         value="{{model.fourth =
-                            baseModel.fluctuatingChargesSellerSalary.fourth +
-                            baseModel.fluctuatingChargesSellerCommissions.fourth +
-                            baseModel.fluctuatingChargesSalaryTax.fourth}}">
+                         value="{{model.tabSecondHandCars.fluctuatingChargesTotalProductiveStaffCharges.fourth =
+                            model.tabSecondHandCars.fluctuatingChargesSellerSalary.fourth +
+                            model.tabSecondHandCars.fluctuatingChargesSellerCommissions.fourth +
+                            model.tabSecondHandCars.fluctuatingChargesSalaryTax.fourth}}">
                 </my-cell>
             </my-row>
 
-            <my-row field="fluctuatingChargesGuaranteeCharges">
+            <my-row>
                 <my-cell size="1"
                          text="B212">
                 </my-cell>
@@ -510,12 +510,12 @@
                 <my-cell></my-cell>
                 <my-cell></my-cell>
                 <my-cell type="ruble"
-                         field="fourth"
+                         field="model.tabSecondHandCars.fluctuatingChargesGuaranteeCharges.fourth"
                          on-blur="autoSaving">
                 </my-cell>
             </my-row>
 
-            <my-row field="fluctuatingChargesOtherFluctuatingCharges">
+            <my-row>
                 <my-cell size="1"
                          text="B213">
                 </my-cell>
@@ -526,14 +526,14 @@
                 <my-cell></my-cell>
                 <my-cell></my-cell>
                 <my-cell type="ruble"
-                         field="fourth"
+                         field="model.tabSecondHandCars.fluctuatingChargesOtherFluctuatingCharges.fourth"
                          on-blur="autoSaving">
                 </my-cell>
             </my-row>
         </my-body>
         <my-foot>
 
-            <my-row field="fluctuatingChargesTotal">
+            <my-row>
                 <my-cell size="1"
                          text="B220">
                 </my-cell>
@@ -544,21 +544,21 @@
                 <my-cell></my-cell>
                 <my-cell></my-cell>
                 <my-cell type="ruble"
-                         field="fourth"
+                         field="model.tabSecondHandCars.fluctuatingChargesTotal.fourth"
                          my-disabled="true"
-                         value="{{model.fourth =
-                            baseModel.fluctuatingChargesTotalProductiveStaffCharges.fourth +
-                            baseModel.fluctuatingChargesGuaranteeCharges.fourth +
-                            baseModel.fluctuatingChargesOtherFluctuatingCharges.fourth}}">
+                         value="{{model.tabSecondHandCars.fluctuatingChargesTotal.fourth =
+                            model.tabSecondHandCars.fluctuatingChargesTotalProductiveStaffCharges.fourth +
+                            model.tabSecondHandCars.fluctuatingChargesGuaranteeCharges.fourth +
+                            model.tabSecondHandCars.fluctuatingChargesOtherFluctuatingCharges.fourth}}">
                 </my-cell>
             </my-row>
         </my-foot>
     </my-table>
 
-    <my-table model="model" field="tabSecondHandCars">
+    <my-table>
         <my-foot>
 
-            <my-row field="fluctuatingChargesGrossProfit">
+            <my-row>
                 <my-cell size="1"
                          text="B230">
                 </my-cell>
@@ -570,16 +570,16 @@
                 <my-cell></my-cell>
                 <!--TODO:-->
                 <my-cell type="ruble"
-                         field="fourth"
+                         field="model.tabSecondHandCars.fluctuatingChargesGrossProfit.fourth"
                          my-disabled="true"
-                         value="{{model.fourth =
-0}}">
+                         value="{{model.tabSecondHandCars.fluctuatingChargesGrossProfit.fourth =
+                                0}}">
                 </my-cell>
             </my-row>
         </my-foot>
     </my-table>
 
-    <my-table model="model" field="tabSecondHandCars">
+    <my-table>
         <my-head>
             <my-row>
                 <my-cell size="4"
@@ -592,7 +592,7 @@
             </my-row>
         </my-head>
         <my-body>
-            <my-row field="departmentChargesNonproductiveStaffSalary">
+            <my-row>
                 <my-cell size="1"
                          text="B231">
                 </my-cell>
@@ -603,12 +603,12 @@
                 <my-cell></my-cell>
                 <my-cell></my-cell>
                 <my-cell type="ruble"
-                         field="fourth"
+                         field="model.tabSecondHandCars.departmentChargesNonproductiveStaffSalary.fourth"
                          on-blur="autoSaving">
                 </my-cell>
             </my-row>
 
-            <my-row field="departmentChargesSalaryTax">
+            <my-row>
                 <my-cell size="1"
                          text="B232">
                 </my-cell>
@@ -619,12 +619,12 @@
                 <my-cell></my-cell>
                 <my-cell></my-cell>
                 <my-cell type="ruble"
-                         field="fourth"
+                         field="model.tabSecondHandCars.departmentChargesSalaryTax.fourth"
                          on-blur="autoSaving">
                 </my-cell>
             </my-row>
 
-            <my-row field="departmentChargesOtherChargesOnStaff">
+            <my-row>
                 <my-cell size="1"
                          text="B233">
                 </my-cell>
@@ -635,12 +635,12 @@
                 <my-cell></my-cell>
                 <my-cell></my-cell>
                 <my-cell type="ruble"
-                         field="fourth"
+                         field="model.tabSecondHandCars.departmentChargesOtherChargesOnStaff.fourth"
                          on-blur="autoSaving">
                 </my-cell>
             </my-row>
 
-            <my-row field="departmentChargesEducation">
+            <my-row>
                 <my-cell size="1"
                          text="B234">
                 </my-cell>
@@ -651,12 +651,12 @@
                 <my-cell></my-cell>
                 <my-cell></my-cell>
                 <my-cell type="ruble"
-                         field="fourth"
+                         field="model.tabSecondHandCars.departmentChargesEducation.fourth"
                          on-blur="autoSaving">
                 </my-cell>
             </my-row>
 
-            <my-row field="departmentChargesTotalAdministrationCharges">
+            <my-row>
 
                 <my-cell size="1"
                          text="B240">
@@ -668,17 +668,17 @@
                 <my-cell></my-cell>
                 <my-cell></my-cell>
                 <my-cell type="ruble"
-                         field="fourth"
+                         field="model.tabSecondHandCars.departmentChargesTotalAdministrationCharges.fourth"
                          my-disabled="true"
-                         value="{{model.fourth =
-                            baseModel.departmentChargesNonproductiveStaffSalary.fourth +
-                            baseModel.departmentChargesSalaryTax.fourth +
-                            baseModel.departmentChargesOtherChargesOnStaff.fourth +
-                            baseModel.departmentChargesEducation.fourth}}">
+                         value="{{model.tabSecondHandCars.departmentChargesTotalAdministrationCharges.fourth =
+                            model.tabSecondHandCars.departmentChargesNonproductiveStaffSalary.fourth +
+                            model.tabSecondHandCars.departmentChargesSalaryTax.fourth +
+                            model.tabSecondHandCars.departmentChargesOtherChargesOnStaff.fourth +
+                            model.tabSecondHandCars.departmentChargesEducation.fourth}}">
                 </my-cell>
             </my-row>
 
-            <my-row field="departmentChargesAdvertisingSecondHandCars">
+            <my-row>
                 <my-cell size="1"
                          text="B242">
                 </my-cell>
@@ -689,12 +689,12 @@
                 <my-cell></my-cell>
                 <my-cell></my-cell>
                 <my-cell type="ruble"
-                         field="fourth"
+                         field="model.tabSecondHandCars.departmentChargesAdvertisingSecondHandCars.fourth"
                          on-blur="autoSaving">
                 </my-cell>
             </my-row>
 
-            <my-row field="departmentChargesCompanyCarsCharges">
+            <my-row>
                 <my-cell size="1"
                          text="B243">
                 </my-cell>
@@ -705,12 +705,12 @@
                 <my-cell></my-cell>
                 <my-cell></my-cell>
                 <my-cell type="ruble"
-                         field="fourth"
+                         field="model.tabSecondHandCars.departmentChargesCompanyCarsCharges.fourth"
                          on-blur="autoSaving">
                 </my-cell>
             </my-row>
 
-            <my-row field="departmentChargesPayingInterestByStock">
+            <my-row>
                 <my-cell size="1"
                          text="B244">
                 </my-cell>
@@ -721,12 +721,12 @@
                 <my-cell></my-cell>
                 <my-cell></my-cell>
                 <my-cell type="ruble"
-                         field="fourth"
+                         field="model.tabSecondHandCars.departmentChargesPayingInterestByStock.fourth"
                          on-blur="autoSaving">
                 </my-cell>
             </my-row>
 
-            <my-row field="departmentChargesAmortization">
+            <my-row>
                 <my-cell size="1"
                          text="B246">
                 </my-cell>
@@ -737,7 +737,7 @@
                 <my-cell></my-cell>
                 <my-cell></my-cell>
                 <my-cell type="ruble"
-                         field="fourth"
+                         field="model.tabSecondHandCars.departmentChargesAmortization.fourth"
                          on-blur="autoSaving">
                 </my-cell>
             </my-row>
@@ -745,7 +745,7 @@
         </my-body>
         <my-foot>
 
-            <my-row field="departmentChargesTotalDepartmentCharges">
+            <my-row>
                 <my-cell size="1"
                          text="B250">
                 </my-cell>
@@ -756,25 +756,25 @@
                 <my-cell></my-cell>
                 <my-cell></my-cell>
                 <my-cell type="ruble"
-                         field="fourth"
+                         field="model.tabSecondHandCars.departmentChargesTotalDepartmentCharges.fourth"
                          my-disabled="true"
-                         value="{{model.fourth =
-                            baseModel.departmentChargesTotalAdministrationCharges.fourth +
-                            baseModel.departmentChargesAdvertisingSecondHandCars.fourth +
-                            baseModel.departmentChargesCompanyCarsCharges.fourth +
-                            baseModel.departmentChargesPayingInterestByStock.fourth +
-                            baseModel.departmentChargesAmortization.fourth
+                         value="{{model.tabSecondHandCars.departmentChargesTotalDepartmentCharges.fourth =
+                            model.tabSecondHandCars.departmentChargesTotalAdministrationCharges.fourth +
+                            model.tabSecondHandCars.departmentChargesAdvertisingSecondHandCars.fourth +
+                            model.tabSecondHandCars.departmentChargesCompanyCarsCharges.fourth +
+                            model.tabSecondHandCars.departmentChargesPayingInterestByStock.fourth +
+                            model.tabSecondHandCars.departmentChargesAmortization.fourth
                             }}">
                 </my-cell>
             </my-row>
         </my-foot>
     </my-table>
 
-    <my-table model="model" field="tabSecondHandCars">
+    <my-table>
         <my-foot>
 
 
-            <my-row field="departmentChargesTotalIncoming">
+            <my-row>
                 <my-cell size="1"
                          text="B270">
                 </my-cell>
@@ -785,17 +785,17 @@
                 <my-cell></my-cell>
                 <my-cell></my-cell>
                 <my-cell type="ruble"
-                         field="fourth"
+                         field="model.tabSecondHandCars.departmentChargesTotalIncoming.fourth"
                          my-disabled="true"
-                         value="{{model.fourth =
-                     baseModel.fluctuatingChargesGrossProfit.fourth -
-                     baseModel.departmentChargesTotalDepartmentCharges.fourth}}">
+                         value="{{model.tabSecondHandCars.departmentChargesTotalIncoming.fourth =
+                     model.tabSecondHandCars.fluctuatingChargesGrossProfit.fourth -
+                     model.tabSecondHandCars.departmentChargesTotalDepartmentCharges.fourth}}">
                 </my-cell>
             </my-row>
         </my-foot>
     </my-table>
 
-    <my-table model="model" field="tabSecondHandCars">
+    <my-table>
 
         <my-head>
             <my-row>
@@ -810,7 +810,7 @@
         </my-head>
 
         <my-body>
-            <my-row field="statisticsSecondHandCarsQuantityInStock">
+            <my-row>
                 <my-cell size="1"
                          text="B271">
                 </my-cell>
@@ -818,24 +818,24 @@
                          text="Кол-во ПА на складе">
                 </my-cell>
                 <my-cell type="number"
-                         field="first"
+                         field="model.tabSecondHandCars.statisticsSecondHandCarsQuantityInStock.first"
                          on-blur="autoSaving">
                 </my-cell>
                 <my-cell type="number"
-                         field="second"
+                         field="model.tabSecondHandCars.statisticsSecondHandCarsQuantityInStock.second"
                          on-blur="autoSaving">
                 </my-cell>
                 <my-cell type="number"
-                         field="third"
+                         field="model.tabSecondHandCars.statisticsSecondHandCarsQuantityInStock.third"
                          on-blur="autoSaving">
                 </my-cell>
                 <my-cell type="number"
-                         field="fourth"
+                         field="model.tabSecondHandCars.statisticsSecondHandCarsQuantityInStock.fourth"
                          on-blur="autoSaving">
                 </my-cell>
             </my-row>
 
-            <my-row field="statisticsSecondHandCarsCostInStock">
+            <my-row>
                 <my-cell size="1"
                          text="B272">
                 </my-cell>
@@ -843,26 +843,26 @@
                          text="Стоим-ть ПА на складе">
                 </my-cell>
                 <my-cell type="ruble"
-                         field="first"
+                         field="model.tabSecondHandCars.statisticsSecondHandCarsCostInStock.first"
                          on-blur="autoSaving">
                 </my-cell>
                 <my-cell type="ruble"
-                         field="second"
+                         field="model.tabSecondHandCars.statisticsSecondHandCarsCostInStock.second"
                          on-blur="autoSaving">
                 </my-cell>
                 <my-cell type="ruble"
-                         field="third"
+                         field="model.tabSecondHandCars.statisticsSecondHandCarsCostInStock.third"
                          on-blur="autoSaving">
                 </my-cell>
                 <my-cell type="ruble"
-                         field="fourth"
+                         field="model.tabSecondHandCars.statisticsSecondHandCarsCostInStock.fourth"
                          on-blur="autoSaving">
                 </my-cell>
             </my-row>
         </my-body>
     </my-table>
 
-    <my-table model="model" field="tabSecondHandCars">
+    <my-table>
 
         <my-head>
             <my-row>
@@ -877,7 +877,7 @@
         </my-head>
 
         <my-body>
-            <my-row field="statisticsSecondHandCarsQuantityOnCredit">
+            <my-row>
                 <my-cell size="1"
                          text="B274">
                 </my-cell>
@@ -888,7 +888,7 @@
                 <my-cell></my-cell>
                 <my-cell></my-cell>
                 <my-cell type="number"
-                         field="fourth"
+                         field="model.tabSecondHandCars.statisticsSecondHandCarsQuantityOnCredit.fourth"
                          on-blur="autoSaving">
                 </my-cell>
             </my-row>
@@ -897,7 +897,7 @@
 
     </my-table>
 
-    <my-table model="model" field="tabSecondHandCars">
+    <my-table>
 
         <my-head>
             <my-row>
@@ -912,7 +912,7 @@
         </my-head>
 
         <my-body>
-            <my-row field="statisticsDemonstrationAreaQuantity">
+            <my-row>
                 <my-cell size="1"
                          text="B276">
                 </my-cell>
@@ -923,12 +923,12 @@
                 <my-cell></my-cell>
                 <my-cell></my-cell>
                 <my-cell type="number"
-                         field="fourth"
+                         field="model.tabSecondHandCars.statisticsDemonstrationAreaQuantity.fourth"
                          on-blur="autoSaving">
                 </my-cell>
             </my-row>
 
-            <my-row field="statisticsSoldExtendedGuaranteeQuantity">
+            <my-row>
                 <my-cell size="1"
                          text="B278">
                 </my-cell>
@@ -939,12 +939,12 @@
                 <my-cell></my-cell>
                 <my-cell></my-cell>
                 <my-cell type="number"
-                         field="fourth"
+                         field="model.tabSecondHandCars.statisticsSoldExtendedGuaranteeQuantity.fourth"
                          on-blur="autoSaving">
                 </my-cell>
             </my-row>
 
-            <my-row field="statisticsShowroomArea">
+            <my-row>
                 <my-cell size="1"
                          text="B279">
                 </my-cell>
@@ -955,7 +955,7 @@
                 <my-cell></my-cell>
                 <my-cell></my-cell>
                 <my-cell type="number"
-                         field="fourth"
+                         field="model.tabSecondHandCars.statisticsShowroomArea.fourth"
                          on-blur="autoSaving">
                 </my-cell>
             </my-row>

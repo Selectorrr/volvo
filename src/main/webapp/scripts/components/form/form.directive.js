@@ -50,15 +50,13 @@ angular.module('volvoApp')
                 label: '@',
                 decimals: '@',
                 model: '=',
-                required: '=',
-                validation: '=',
+                onBlur: '=',
                 name: '@',
                 mask: '@',
                 placeholder: '@',
                 pattern: '@',
-                myDisabled: '=',
-                addon: '=',
-                onBlur: '=',
+                myDisabled: '@',
+                addon: '@',
                 value: '@'
             },
             compile: function compile(tElement, tAttrs, transclude) {
@@ -76,7 +74,9 @@ angular.module('volvoApp')
                     if (tAttrs.decimals) {
                         $input.attr('decimals', tAttrs.decimals);
                     }
-
+                }
+                if (tAttrs.myDisabled) {
+                    $input.attr('ng-disabled', tAttrs.myDisabled);
                 }
                 if (tAttrs.addon) {
                     $input.parent().find('span').attr('class', 'input-group-addon ' + tAttrs.addon);
@@ -88,14 +88,14 @@ angular.module('volvoApp')
 
                     },
                     post: function postLink($scope, tElement, tAttrs, controllers) {
-                        if (angular.isFunction($scope.onBlur)) {
+                        if ($scope.onBlur) {
                             $scope.$watch('model', $scope.onBlur);
                         }
                     }
                 }
             },
             template: '<div>' +
-            '<input value="value" class="form-control text-right simplebox" aria-describedby="sizing-addon3" ng-model="model" ng-required=required ng-disabled="myDisabled">' +
+            '<input value="value" class="form-control text-right simplebox" aria-describedby="sizing-addon3" ng-model="model">' +
                 '<span></span>' +
                 '</div>'
         };
