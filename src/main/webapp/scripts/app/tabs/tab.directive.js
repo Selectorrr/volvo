@@ -65,7 +65,8 @@ angular.module('volvoApp')
                     tElement.append(myInput);
                 }
                 if (tAttrs.text) {
-                    tElement.append(tAttrs.text);
+                    var mySpan = '<span translate="' + tAttrs.text + '">' + tAttrs.text + '</span>';
+                    tElement.append(mySpan);
                 }
                 return {
                     pre: function preLink(scope, tElement, tAttrs, controllers) {

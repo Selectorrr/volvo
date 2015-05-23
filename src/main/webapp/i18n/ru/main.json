@@ -42,5 +42,102 @@
             "total.data" : "Итоговые данные",
             "staff.quantity" : "Численность персонала"
         }
+
+
+    },
+
+    "tab" : {
+        "head" : {
+            "quantity" : "Кол-во",
+            "earnings" : "Выручка",
+            "cost.price" : "Себ-ть",
+            "gross.profit" : "ВП",
+            "total" : "Сумма",
+            "all.in.all" : "Всего"
+        },
+
+        "common" : {
+
+            "other.incoming" : "Прочие доходы",
+            "accrual.aviso" : "Авизо (начисленные)",
+            "derived.aviso" : "Авизо (полученные)",
+            "pre.sale.preparation" : "Предпродажн. подготовка",
+            "extended.guarantee.sale" : "Продажа расширенной гарантии",
+            "other.incoming.charges" : "Другие доходы/расходы",
+            "accessories" : "Аксессуары",
+            "incoming.total" : "Итого прочие доходы",
+            "fluctuating.charges" : "Переменные расходы",
+            "seller.salary" : "Оклад продавцов",
+            "seller.commissions" : "Комиссионные продавцов",
+            "salary.tax" : "Налоги на з/п",
+            "total.productive.staff.charges" : "Всего затрат на продуктивный персонал",
+            "other.varying.charges" : "Другие переменные расходы",
+            "total.other.varying.charges" : "Итого переменные расходы",
+            "charges.gross.profit" : "Переменная ВП",
+            "department.charges" : "Расходы по отделу",
+            "nonproductive.staff.salary" : "Зарплата непродуктивного персонала",
+            "other.charges.on.staff" : "Другие расходы на персонал",
+            "education" : "Обучение",
+            "amortization" : "Амортизация",
+            "company.cars.charges" : "Расходы на а/м компании",
+            "consignment" : "Консигнация",
+            "paying.interest.by.stock.penalty.fee" : "Выплата % по складу (Пени)",
+            "paying.interest.by.stock.bank" : "Выплата % по складу (Банк)",
+            "paying.interest" : "Выплата % по складу",
+            "other.charges" : "Другие расходы",
+            "total.department.charges" : "Всего расходов по отделу",
+            "department.incoming" : "Прибыль по отделу",
+            "statistics" : "Статистика",
+            "sold.extended.guarantee.quantity" : "Продано расширенных гарантийных обязательств",
+            "showroom.area" : "Площадь шоурума (м2)",
+            "total.other.charges" : "Итого др. расходы",
+            "total.administration.charges" : "Итого расходы на адм. персонал отд. Продаж"
+
+        },
+
+        "new.cars" : {
+            "volvo.sales" : "Новые а/м Volvo Розница",
+            "volvo.total.sales" : "Итого Новые а/м Volvo Розница",
+            "volvo.flit" : "Новые а/м Volvo Флит",
+            "volvo.total.flit" : "Итого Новые а/м Volvo Флит",
+            "volvo.total" : "Итого продажи а/м Volvo",
+            "volvo.credit.incoming" : "Доход от кредитования (Программа Вольво) - новые а/м",
+            "volvo.insurance.incoming" : "Доход от страхования (Программа Вольво) - новые а/м",
+            "credit.incoming" : "Доход от кредитования - новые а/м",
+            "insurance.incoming" : "Доход от страхования - новые а/м",
+            "gross.profit.new.cars.department" : "Валовая Прибыль отдела продаж новых а/м",
+            "storing.charges" : "Расходы по склад-ию а/м",
+
+            "advertising.new.cars" : "Реклама на новые а/м",
+            "quantity.in.stock" : "Кол-во НА на складе",
+            "cost.in.stock" : "Стоим-ть НА на складе",
+            "quantity.on.credit" : "Кол-во НА в кредит",
+            "fully.paid.cars.quantity.in.stock" : "Кол-во полностью оплаченных а/м на складе",
+            "unpaid.cars.quantity.in.stock" : "Кол-во неоплач. а/м на складе",
+            "cars.quantity.in.showroom" : "Кол-во а/м выставленных в шоу-руме",
+            "cars.quantity.for.test.drive" : "Кол-во а/м для тест-драйва"
+
+        },
+
+        "second.hand.cars" : {
+            "sales" : "Продажи подержанных а/м",
+            "volvo.test.drive.company.cars" : "Volvo тест-драйв, подменные, служебные  а/м",
+            "other.models" : "Другие марки",
+            "total" : "Итого продажи ПА",
+            "other.charges" : "Другие расходы по подержанным а/м",
+            "pre.sale.preparation" : "Предпродажная подготовка ПА",
+            "stockpile.correction" : "Корректировка величины запасов",
+            "volvo.crediting.incoming" : "Доход от кредитования (Программа Вольво) - ПА",
+            "volvo.insurance.incoming" : "Доход от страхования (Программа Вольво) - ПА",
+            "crediting.incoming" : "Доход от кредитования - ПА",
+            "insurance.incoming" : "Доход от страхования - ПА",
+            "incoming.gross.profit" : "Валовая Прибыль отдела продаж ПА",
+            "guarantee.charges" : "Расходы по гарантии ПА",
+            "advertising" : "Реклама на ПА",
+            "quantity.in.stock" : "Кол-во ПА на складе",
+            "cost.in.stock" : "Стоим-ть ПА на складе",
+            "quantity.on.credit" : "Кол-во ПА в кредит",
+            "demonstration.area.quantity" : "Количество мест для демонстрации ПА"
+        }
     }
 }
