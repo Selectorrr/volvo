@@ -32,8 +32,8 @@
             "language": "Язык"
         },
         "form": {
-            "username": "Логин",
-            "username.placeholder": "Ваш логин",
+            "username": "Код",
+            "username.placeholder": "Ваш код",
             "newpassword": "Новый пароль",
             "newpassword.placeholder": "Новый пароль",
             "confirmpassword": "Подтверждение нового пароля",
@@ -43,7 +43,7 @@
         },
         "messages": {
             "info": {
-                "authenticated": "Если вы хотите <a href=\"#/login\">авторизироваться</a>, вы можете попробовать аккаунты по умолчанию:<br/>- Администратор (логин=\"admin\" и пароль=\"admin\") <br/>- Пользователь (логин=\"user\" и пароль=\"user\").",
+                "authenticated": "Если вы хотите <a href=\"#/login\">авторизироваться</a>, вы можете попробовать аккаунты по умолчанию:<br/>- Администратор (код=\"admin\" и пароль=\"admin\") <br/>- Пользователь (код=\"user\" и пароль=\"user\").",
                 "register": "У вас нет аккаунта? <a href=\"#/register\">Создать новый аккаунт</a>"
             },
             "error": {
