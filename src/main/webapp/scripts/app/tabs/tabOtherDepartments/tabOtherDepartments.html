@@ -1,588 +1,589 @@
 <div class="content">
-<!--<my-table model="model" field="tabOtherDepartments">-->
-    <!--<my-head>-->
-        <!--<my-row>-->
-            <!--<my-cell size="4"-->
-                     <!--colspan="2"-->
-                     <!--text="Прокат а/м"></my-cell>-->
-            <!--<my-cell text="Продано дней"></my-cell>-->
-            <!--<my-cell text="Выручка"></my-cell>-->
-            <!--<my-cell text="Себ-ть"></my-cell>-->
-            <!--<my-cell text="ВП"></my-cell>-->
-        <!--</my-row>-->
-    <!--</my-head>-->
-    <!--<my-body>-->
-        <!--<my-row field="carsRentEarnings">-->
-            <!--<my-cell size="1"-->
-                     <!--text="H1">-->
-            <!--</my-cell>-->
-            <!--<my-cell size="3"-->
-                     <!--text="Выручка от проката а/м">-->
-            <!--</my-cell>-->
-            <!--<my-cell type="number"-->
-                     <!--field="first"-->
-                     <!--on-blur="autoSaving">-->
-            <!--</my-cell>-->
-            <!--<my-cell type="ruble"-->
-                     <!--field="second"-->
-                     <!--on-blur="autoSaving">-->
-            <!--</my-cell>-->
-            <!--<my-cell type="ruble"-->
-                     <!--field="third"-->
-                     <!--on-blur="autoSaving">-->
-            <!--</my-cell>-->
-            <!--<my-cell type="ruble"-->
-                     <!--field="fourth"-->
-                     <!--my-disabled="true"-->
-                     <!--value="{{model.fourth = model.second - model.third}}">-->
-            <!--</my-cell>-->
-        <!--</my-row>-->
-    <!--</my-body>-->
-<!--</my-table>-->
 
-<!--<my-table model="model" field="tabOtherDepartments">-->
+<my-table>
+    <my-head>
+        <my-row>
+            <my-cell size="4"
+                     colspan="2"
+                     text="Прокат а/м"></my-cell>
+            <my-cell text="Продано дней"></my-cell>
+            <my-cell text="Выручка"></my-cell>
+            <my-cell text="Себ-ть"></my-cell>
+            <my-cell text="ВП"></my-cell>
+        </my-row>
+    </my-head>
+    <my-body>
+        <my-row>
+            <my-cell size="1"
+                     text="H1">
+            </my-cell>
+            <my-cell size="3"
+                     text="Выручка от проката а/м">
+            </my-cell>
+            <my-cell type="number"
+                     field="model.tabOtherDepartments.carsRentEarnings.first"
+                     on-blur="autoSaving">
+            </my-cell>
+            <my-cell type="ruble"
+                     field="model.tabOtherDepartments.carsRentEarnings.second"
+                     on-blur="autoSaving">
+            </my-cell>
+            <my-cell type="ruble"
+                     field="model.tabOtherDepartments.carsRentEarnings.third"
+                     on-blur="autoSaving">
+            </my-cell>
+            <my-cell type="ruble"
+                     field="model.tabOtherDepartments.carsRentEarnings.fourth"
+                     my-disabled="true"
+                     value="{{model.tabOtherDepartments.carsRentEarnings.fourth = model.tabOtherDepartments.carsRentEarnings.second - model.tabOtherDepartments.carsRentEarnings.third}}">
+            </my-cell>
+        </my-row>
+    </my-body>
+</my-table>
 
-    <!--<my-head>-->
-        <!--<my-row>-->
-            <!--<my-cell size="4"-->
-                     <!--colspan="2"-->
-                     <!--text="Прямые расходы"></my-cell>-->
-            <!--<my-cell></my-cell>-->
-            <!--<my-cell></my-cell>-->
-            <!--<my-cell></my-cell>-->
-            <!--<my-cell text="Сумма"></my-cell>-->
-        <!--</my-row>-->
-    <!--</my-head>-->
+<my-table>
 
-    <!--<my-body>-->
-        <!--<my-row field="directChargesAmortization">-->
-            <!--<my-cell size="1"-->
-                     <!--text="H11">-->
-            <!--</my-cell>-->
-            <!--<my-cell size="3"-->
-                     <!--text="Амортизация">-->
-            <!--</my-cell>-->
-            <!--<my-cell></my-cell>-->
-            <!--<my-cell></my-cell>-->
-            <!--<my-cell></my-cell>-->
-            <!--<my-cell type="ruble"-->
-                     <!--field="fourth"-->
-                     <!--on-blur="autoSaving">-->
-            <!--</my-cell>-->
-        <!--</my-row>-->
+    <my-head>
+        <my-row>
+            <my-cell size="4"
+                     colspan="2"
+                     text="Прямые расходы"></my-cell>
+            <my-cell></my-cell>
+            <my-cell></my-cell>
+            <my-cell></my-cell>
+            <my-cell text="Сумма"></my-cell>
+        </my-row>
+    </my-head>
 
-        <!--<my-row field="directChargesInterests">-->
-            <!--<my-cell size="1"-->
-                     <!--text="H12">-->
-            <!--</my-cell>-->
-            <!--<my-cell size="3"-->
-                     <!--text="Проценты">-->
-            <!--</my-cell>-->
-            <!--<my-cell></my-cell>-->
-            <!--<my-cell></my-cell>-->
-            <!--<my-cell></my-cell>-->
-            <!--<my-cell type="ruble"-->
-                     <!--field="fourth"-->
-                     <!--on-blur="autoSaving">-->
-            <!--</my-cell>-->
-        <!--</my-row>-->
+    <my-body>
+        <my-row>
+            <my-cell size="1"
+                     text="H11">
+            </my-cell>
+            <my-cell size="3"
+                     text="Амортизация">
+            </my-cell>
+            <my-cell></my-cell>
+            <my-cell></my-cell>
+            <my-cell></my-cell>
+            <my-cell type="ruble"
+                     field="model.tabOtherDepartments.directChargesAmortization.fourth"
+                     on-blur="autoSaving">
+            </my-cell>
+        </my-row>
 
-        <!--<my-row field="directChargesOtherDirectCharges">-->
-            <!--<my-cell size="1"-->
-                     <!--text="H13">-->
-            <!--</my-cell>-->
-            <!--<my-cell size="3"-->
-                     <!--text="Другие прямые расходы">-->
-            <!--</my-cell>-->
-            <!--<my-cell></my-cell>-->
-            <!--<my-cell></my-cell>-->
-            <!--<my-cell></my-cell>-->
-            <!--<my-cell type="ruble"-->
-                     <!--field="fourth"-->
-                     <!--on-blur="autoSaving">-->
-            <!--</my-cell>-->
-        <!--</my-row>-->
-    <!--</my-body>-->
+        <my-row>
+            <my-cell size="1"
+                     text="H12">
+            </my-cell>
+            <my-cell size="3"
+                     text="Проценты">
+            </my-cell>
+            <my-cell></my-cell>
+            <my-cell></my-cell>
+            <my-cell></my-cell>
+            <my-cell type="ruble"
+                     field="model.tabOtherDepartments.directChargesInterests.fourth"
+                     on-blur="autoSaving">
+            </my-cell>
+        </my-row>
 
-    <!--<my-foot>-->
+        <my-row>
+            <my-cell size="1"
+                     text="H13">
+            </my-cell>
+            <my-cell size="3"
+                     text="Другие прямые расходы">
+            </my-cell>
+            <my-cell></my-cell>
+            <my-cell></my-cell>
+            <my-cell></my-cell>
+            <my-cell type="ruble"
+                     field="model.tabOtherDepartments.directChargesOtherDirectCharges.fourth"
+                     on-blur="autoSaving">
+            </my-cell>
+        </my-row>
+    </my-body>
 
-        <!--<my-row field="directChargesTotalDirectCharges">-->
-            <!--<my-cell size="1"-->
-                     <!--text="H20">-->
-            <!--</my-cell>-->
-            <!--<my-cell size="3"-->
-                     <!--text="Итого прямые расходы">-->
-            <!--</my-cell>-->
-            <!--<my-cell></my-cell>-->
-            <!--<my-cell></my-cell>-->
-            <!--<my-cell></my-cell>-->
-            <!--<my-cell type="ruble"-->
-                     <!--field="fourth"-->
-                     <!--my-disabled="true"-->
-                     <!--value="{{model.fourth=-->
-                                <!--baseModel.directChargesAmortization.fourth+-->
-                                <!--baseModel.directChargesInterests.fourth+-->
-                                <!--baseModel.directChargesOtherDirectCharges.fourth}}">-->
-            <!--</my-cell>-->
-        <!--</my-row>-->
+    <my-foot>
+
+        <my-row>
+            <my-cell size="1"
+                     text="H20">
+            </my-cell>
+            <my-cell size="3"
+                     text="Итого прямые расходы">
+            </my-cell>
+            <my-cell></my-cell>
+            <my-cell></my-cell>
+            <my-cell></my-cell>
+            <my-cell type="ruble"
+                     field="model.tabOtherDepartments.directChargesTotalDirectCharges.fourth"
+                     my-disabled="true"
+                     value="{{model.tabOtherDepartments.directChargesTotalDirectCharges.fourth=
+                                model.tabOtherDepartments.directChargesAmortization.fourth+
+                                model.tabOtherDepartments.directChargesInterests.fourth+
+                                model.tabOtherDepartments.directChargesOtherDirectCharges.fourth}}">
+            </my-cell>
+        </my-row>
 
 
-        <!--&lt;!&ndash;TODO: value = ?&ndash;&gt;-->
-        <!--<my-row field="directChargesTotalGrossProfit">-->
-            <!--<my-cell size="1"-->
-                     <!--text="H25">-->
-            <!--</my-cell>-->
-            <!--<my-cell size="3"-->
-                     <!--text="Итого ВП отдела">-->
-            <!--</my-cell>-->
-            <!--<my-cell></my-cell>-->
-            <!--<my-cell></my-cell>-->
-            <!--<my-cell></my-cell>-->
-            <!--<my-cell type="ruble"-->
-                     <!--field="fourth"-->
-                     <!--my-disabled="true"-->
-                     <!--value="{{model.fourth=0}}">-->
-            <!--</my-cell>-->
-        <!--</my-row>-->
+        <!--TODO: value = ?-->
+        <my-row>
+            <my-cell size="1"
+                     text="H25">
+            </my-cell>
+            <my-cell size="3"
+                     text="Итого ВП отдела">
+            </my-cell>
+            <my-cell></my-cell>
+            <my-cell></my-cell>
+            <my-cell></my-cell>
+            <my-cell type="ruble"
+                     field="model.tabOtherDepartments.directChargesTotalGrossProfit.fourth"
+                     my-disabled="true"
+                     value="{{model.tabOtherDepartments.directChargesTotalGrossProfit.fourth=0}}">
+            </my-cell>
+        </my-row>
 
-    <!--</my-foot>-->
-<!--</my-table>-->
+    </my-foot>
+</my-table>
 
-<!--<my-table model="model" field="tabOtherDepartments">-->
+<my-table>
 
-    <!--<my-head>-->
-        <!--<my-row>-->
-            <!--<my-cell size="4"-->
-                     <!--colspan="2"-->
-                     <!--text="Расходы"></my-cell>-->
-            <!--<my-cell></my-cell>-->
-            <!--<my-cell></my-cell>-->
-            <!--<my-cell></my-cell>-->
-            <!--<my-cell text="Сумма"></my-cell>-->
-        <!--</my-row>-->
-    <!--</my-head>-->
+    <my-head>
+        <my-row>
+            <my-cell size="4"
+                     colspan="2"
+                     text="Расходы"></my-cell>
+            <my-cell></my-cell>
+            <my-cell></my-cell>
+            <my-cell></my-cell>
+            <my-cell text="Сумма"></my-cell>
+        </my-row>
+    </my-head>
 
-    <!--<my-body>-->
-        <!--<my-row field="chargesNonproductiveStaffSalary">-->
-            <!--<my-cell size="1"-->
-                     <!--text="H26">-->
-            <!--</my-cell>-->
-            <!--<my-cell size="3"-->
-                     <!--text="Зарплата непродуктивного персонала">-->
-            <!--</my-cell>-->
-            <!--<my-cell></my-cell>-->
-            <!--<my-cell></my-cell>-->
-            <!--<my-cell></my-cell>-->
-            <!--<my-cell type="ruble"-->
-                     <!--field="fourth"-->
-                     <!--on-blur="autoSaving">-->
-            <!--</my-cell>-->
-        <!--</my-row>-->
+    <my-body>
+        <my-row>
+            <my-cell size="1"
+                     text="H26">
+            </my-cell>
+            <my-cell size="3"
+                     text="Зарплата непродуктивного персонала">
+            </my-cell>
+            <my-cell></my-cell>
+            <my-cell></my-cell>
+            <my-cell></my-cell>
+            <my-cell type="ruble"
+                     field="model.tabOtherDepartments.chargesNonproductiveStaffSalary.fourth"
+                     on-blur="autoSaving">
+            </my-cell>
+        </my-row>
 
-        <!--<my-row field="chargesOtherCharges">-->
-            <!--<my-cell size="1"-->
-                     <!--text="H27">-->
-            <!--</my-cell>-->
-            <!--<my-cell size="3"-->
-                     <!--text="Другие расходы">-->
-            <!--</my-cell>-->
-            <!--<my-cell></my-cell>-->
-            <!--<my-cell></my-cell>-->
-            <!--<my-cell></my-cell>-->
-            <!--<my-cell type="ruble"-->
-                     <!--field="fourth"-->
-                     <!--on-blur="autoSaving">-->
-            <!--</my-cell>-->
-        <!--</my-row>-->
-    <!--</my-body>-->
+        <my-row>
+            <my-cell size="1"
+                     text="H27">
+            </my-cell>
+            <my-cell size="3"
+                     text="Другие расходы">
+            </my-cell>
+            <my-cell></my-cell>
+            <my-cell></my-cell>
+            <my-cell></my-cell>
+            <my-cell type="ruble"
+                     field="model.tabOtherDepartments.chargesOtherCharges.fourth"
+                     on-blur="autoSaving">
+            </my-cell>
+        </my-row>
+    </my-body>
 
-    <!--<my-foot>-->
+    <my-foot>
 
-        <!--<my-row field="chargesTotalCharges">-->
-            <!--<my-cell size="1"-->
-                     <!--text="H35">-->
-            <!--</my-cell>-->
-            <!--<my-cell size="3"-->
-                     <!--text="Итого расходов">-->
-            <!--</my-cell>-->
-            <!--<my-cell></my-cell>-->
-            <!--<my-cell></my-cell>-->
-            <!--<my-cell></my-cell>-->
-            <!--<my-cell type="ruble"-->
-                     <!--field="fourth"-->
-                     <!--my-disabled="true"-->
-                     <!--value="{{model.fourth=-->
-                                <!--baseModel.chargesNonproductiveStaffSalary.fourth+-->
-                                <!--baseModel.chargesOtherCharges.fourth}}">-->
-            <!--</my-cell>-->
-        <!--</my-row>-->
-    <!--</my-foot>-->
-<!--</my-table>-->
+        <my-row>
+            <my-cell size="1"
+                     text="H35">
+            </my-cell>
+            <my-cell size="3"
+                     text="Итого расходов">
+            </my-cell>
+            <my-cell></my-cell>
+            <my-cell></my-cell>
+            <my-cell></my-cell>
+            <my-cell type="ruble"
+                     field="model.tabOtherDepartments.chargesTotalCharges.fourth"
+                     my-disabled="true"
+                     value="{{model.tabOtherDepartments.chargesTotalCharges.fourth=
+                                model.tabOtherDepartments.chargesNonproductiveStaffSalary.fourth+
+                                model.tabOtherDepartments.chargesOtherCharges.fourth}}">
+            </my-cell>
+        </my-row>
+    </my-foot>
+</my-table>
 
-<!--<my-table model="model" field="tabOtherDepartments">-->
+<my-table>
 
-    <!--<my-foot>-->
+    <my-foot>
 
-        <!--&lt;!&ndash;TODO: value = ?&ndash;&gt;-->
+        <!--TODO: value = ?-->
 
-        <!--<my-row field="chargesTotalIncoming">-->
-            <!--<my-cell size="1"-->
-                     <!--text="H40">-->
-            <!--</my-cell>-->
-            <!--<my-cell size="3"-->
-                     <!--text="Прибыль по отделу">-->
-            <!--</my-cell>-->
-            <!--<my-cell></my-cell>-->
-            <!--<my-cell></my-cell>-->
-            <!--<my-cell></my-cell>-->
-            <!--<my-cell type="ruble"-->
-                     <!--field="fourth"-->
-                     <!--my-disabled="true"-->
-                     <!--value="{{model.fourth=0}}">-->
-            <!--</my-cell>-->
-        <!--</my-row>-->
-    <!--</my-foot>-->
+        <my-row>
+            <my-cell size="1"
+                     text="H40">
+            </my-cell>
+            <my-cell size="3"
+                     text="Прибыль по отделу">
+            </my-cell>
+            <my-cell></my-cell>
+            <my-cell></my-cell>
+            <my-cell></my-cell>
+            <my-cell type="ruble"
+                     field="model.tabOtherDepartments.chargesTotalIncoming.fourth"
+                     my-disabled="true"
+                     value="{{model.tabOtherDepartments.chargesTotalIncoming.fourth=0}}">
+            </my-cell>
+        </my-row>
+    </my-foot>
 
-<!--</my-table>-->
+</my-table>
 
-<!--<my-table model="model" field="tabOtherDepartments">-->
+<my-table>
 
-    <!--<my-head>-->
-        <!--<my-row>-->
-            <!--<my-cell size="4"-->
-                     <!--colspan="2"-->
-                     <!--text="Статистика"></my-cell>-->
-            <!--<my-cell></my-cell>-->
-            <!--<my-cell></my-cell>-->
-            <!--<my-cell></my-cell>-->
-            <!--<my-cell></my-cell>-->
-        <!--</my-row>-->
-    <!--</my-head>-->
+    <my-head>
+        <my-row>
+            <my-cell size="4"
+                     colspan="2"
+                     text="Статистика"></my-cell>
+            <my-cell></my-cell>
+            <my-cell></my-cell>
+            <my-cell></my-cell>
+            <my-cell></my-cell>
+        </my-row>
+    </my-head>
 
-    <!--<my-body>-->
-        <!--<my-row field="statisticsRentCarsFlitQuantity">-->
-            <!--<my-cell size="1"-->
-                     <!--text="H51">-->
-            <!--</my-cell>-->
-            <!--<my-cell size="3"-->
-                     <!--text="Прокат а/м - Флит (кол-во)">-->
-            <!--</my-cell>-->
-            <!--<my-cell></my-cell>-->
-            <!--<my-cell></my-cell>-->
-            <!--<my-cell></my-cell>-->
-            <!--<my-cell type="ruble"-->
-                     <!--field="fourth"-->
-                     <!--on-blur="autoSaving">-->
-            <!--</my-cell>-->
-        <!--</my-row>-->
-    <!--</my-body>-->
-<!--</my-table>-->
+    <my-body>
+        <my-row>
+            <my-cell size="1"
+                     text="H51">
+            </my-cell>
+            <my-cell size="3"
+                     text="Прокат а/м - Флит (кол-во)">
+            </my-cell>
+            <my-cell></my-cell>
+            <my-cell></my-cell>
+            <my-cell></my-cell>
+            <my-cell type="ruble"
+                     field="model.tabOtherDepartments.statisticsRentCarsFlitQuantity.fourth"
+                     on-blur="autoSaving">
+            </my-cell>
+        </my-row>
+    </my-body>
+</my-table>
 
-<!--<my-table model="model" field="tabOtherDepartments">-->
-    <!--<my-head>-->
-        <!--<my-row>-->
-            <!--<my-cell size="4"-->
-                     <!--colspan="2"-->
-                     <!--text="Лизинг а/м"></my-cell>-->
-            <!--<my-cell text="Кол-во"></my-cell>-->
-            <!--<my-cell text="Выручка"></my-cell>-->
-            <!--<my-cell text="Себ-ть"></my-cell>-->
-            <!--<my-cell text="ВП"></my-cell>-->
-        <!--</my-row>-->
-    <!--</my-head>-->
-    <!--<my-body>-->
-        <!--<my-row field="leasingSalesAndGrossProfit">-->
-            <!--<my-cell size="1"-->
-                     <!--text="H61">-->
-            <!--</my-cell>-->
-            <!--<my-cell size="3"-->
-                     <!--text="Продажи и ВП">-->
-            <!--</my-cell>-->
-            <!--<my-cell type="number"-->
-                     <!--field="first"-->
-                     <!--on-blur="autoSaving">-->
-            <!--</my-cell>-->
-            <!--<my-cell type="ruble"-->
-                     <!--field="second"-->
-                     <!--on-blur="autoSaving">-->
-            <!--</my-cell>-->
-            <!--<my-cell type="ruble"-->
-                     <!--field="third"-->
-                     <!--on-blur="autoSaving">-->
-            <!--</my-cell>-->
-            <!--<my-cell type="ruble"-->
-                     <!--field="fourth"-->
-                     <!--my-disabled="true"-->
-                     <!--value="{{model.fourth = model.second - model.third}}">-->
-            <!--</my-cell>-->
-        <!--</my-row>-->
-    <!--</my-body>-->
-<!--</my-table>-->
+<my-table>
+    <my-head>
+        <my-row>
+            <my-cell size="4"
+                     colspan="2"
+                     text="Лизинг а/м"></my-cell>
+            <my-cell text="Кол-во"></my-cell>
+            <my-cell text="Выручка"></my-cell>
+            <my-cell text="Себ-ть"></my-cell>
+            <my-cell text="ВП"></my-cell>
+        </my-row>
+    </my-head>
+    <my-body>
+        <my-row>
+            <my-cell size="1"
+                     text="H61">
+            </my-cell>
+            <my-cell size="3"
+                     text="Продажи и ВП">
+            </my-cell>
+            <my-cell type="number"
+                     field="model.tabOtherDepartments.leasingSalesAndGrossProfit.first"
+                     on-blur="autoSaving">
+            </my-cell>
+            <my-cell type="ruble"
+                     field="model.tabOtherDepartments.leasingSalesAndGrossProfit.second"
+                     on-blur="autoSaving">
+            </my-cell>
+            <my-cell type="ruble"
+                     field="model.tabOtherDepartments.leasingSalesAndGrossProfit.third"
+                     on-blur="autoSaving">
+            </my-cell>
+            <my-cell type="ruble"
+                     field="model.tabOtherDepartments.leasingSalesAndGrossProfit.fourth"
+                     my-disabled="true"
+                     value="{{model.tabOtherDepartments.leasingSalesAndGrossProfit.fourth = model.tabOtherDepartments.leasingSalesAndGrossProfit.second - model.tabOtherDepartments.leasingSalesAndGrossProfit.third}}">
+            </my-cell>
+        </my-row>
+    </my-body>
+</my-table>
 
-<!--<my-table model="model" field="tabOtherDepartments">-->
+<my-table>
 
-    <!--<my-head>-->
-        <!--<my-row>-->
-            <!--<my-cell size="4"-->
-                     <!--colspan="2"-->
-                     <!--text="Расходы"></my-cell>-->
-            <!--<my-cell></my-cell>-->
-            <!--<my-cell></my-cell>-->
-            <!--<my-cell></my-cell>-->
-            <!--<my-cell></my-cell>-->
-        <!--</my-row>-->
-    <!--</my-head>-->
+    <my-head>
+        <my-row>
+            <my-cell size="4"
+                     colspan="2"
+                     text="Расходы"></my-cell>
+            <my-cell></my-cell>
+            <my-cell></my-cell>
+            <my-cell></my-cell>
+            <my-cell></my-cell>
+        </my-row>
+    </my-head>
 
-    <!--<my-body>-->
-        <!--<my-row field="charges2Amortization">-->
-            <!--<my-cell size="1"-->
-                     <!--text="H62">-->
-            <!--</my-cell>-->
-            <!--<my-cell size="3"-->
-                     <!--text="Амортизация">-->
-            <!--</my-cell>-->
-            <!--<my-cell></my-cell>-->
-            <!--<my-cell></my-cell>-->
-            <!--<my-cell></my-cell>-->
-            <!--<my-cell type="ruble"-->
-                     <!--field="fourth"-->
-                     <!--on-blur="autoSaving">-->
-            <!--</my-cell>-->
-        <!--</my-row>-->
+    <my-body>
+        <my-row>
+            <my-cell size="1"
+                     text="H62">
+            </my-cell>
+            <my-cell size="3"
+                     text="Амортизация">
+            </my-cell>
+            <my-cell></my-cell>
+            <my-cell></my-cell>
+            <my-cell></my-cell>
+            <my-cell type="ruble"
+                     field="model.tabOtherDepartments.charges2Amortization.fourth"
+                     on-blur="autoSaving">
+            </my-cell>
+        </my-row>
 
-        <!--<my-row field="charges2Interests">-->
-            <!--<my-cell size="1"-->
-                     <!--text="H63">-->
-            <!--</my-cell>-->
-            <!--<my-cell size="3"-->
-                     <!--text="Проценты">-->
-            <!--</my-cell>-->
-            <!--<my-cell></my-cell>-->
-            <!--<my-cell></my-cell>-->
-            <!--<my-cell></my-cell>-->
-            <!--<my-cell type="ruble"-->
-                     <!--field="fourth"-->
-                     <!--on-blur="autoSaving">-->
-            <!--</my-cell>-->
-        <!--</my-row>-->
+        <my-row>
+            <my-cell size="1"
+                     text="H63">
+            </my-cell>
+            <my-cell size="3"
+                     text="Проценты">
+            </my-cell>
+            <my-cell></my-cell>
+            <my-cell></my-cell>
+            <my-cell></my-cell>
+            <my-cell type="ruble"
+                     field="model.tabOtherDepartments.charges2Interests.fourth"
+                     on-blur="autoSaving">
+            </my-cell>
+        </my-row>
 
-        <!--<my-row field="charges2NonproductiveStaffSalary">-->
-            <!--<my-cell size="1"-->
-                     <!--text="H64">-->
-            <!--</my-cell>-->
-            <!--<my-cell size="3"-->
-                     <!--text="Зарплата непродуктивного персонала">-->
-            <!--</my-cell>-->
-            <!--<my-cell></my-cell>-->
-            <!--<my-cell></my-cell>-->
-            <!--<my-cell></my-cell>-->
-            <!--<my-cell type="ruble"-->
-                     <!--field="fourth"-->
-                     <!--on-blur="autoSaving">-->
-            <!--</my-cell>-->
-        <!--</my-row>-->
+        <my-row>
+            <my-cell size="1"
+                     text="H64">
+            </my-cell>
+            <my-cell size="3"
+                     text="Зарплата непродуктивного персонала">
+            </my-cell>
+            <my-cell></my-cell>
+            <my-cell></my-cell>
+            <my-cell></my-cell>
+            <my-cell type="ruble"
+                     field="model.tabOtherDepartments.charges2NonproductiveStaffSalary.fourth"
+                     on-blur="autoSaving">
+            </my-cell>
+        </my-row>
 
-        <!--<my-row field="charges2OtherCharges">-->
-            <!--<my-cell size="1"-->
-                     <!--text="H65">-->
-            <!--</my-cell>-->
-            <!--<my-cell size="3"-->
-                     <!--text="Другие расходы">-->
-            <!--</my-cell>-->
-            <!--<my-cell></my-cell>-->
-            <!--<my-cell></my-cell>-->
-            <!--<my-cell></my-cell>-->
-            <!--<my-cell type="ruble"-->
-                     <!--field="fourth"-->
-                     <!--on-blur="autoSaving">-->
-            <!--</my-cell>-->
-        <!--</my-row>-->
-    <!--</my-body>-->
+        <my-row>
+            <my-cell size="1"
+                     text="H65">
+            </my-cell>
+            <my-cell size="3"
+                     text="Другие расходы">
+            </my-cell>
+            <my-cell></my-cell>
+            <my-cell></my-cell>
+            <my-cell></my-cell>
+            <my-cell type="ruble"
+                     field="model.tabOtherDepartments.charges2OtherCharges.fourth"
+                     on-blur="autoSaving">
+            </my-cell>
+        </my-row>
+    </my-body>
 
-    <!--<my-foot>-->
+    <my-foot>
 
-        <!--<my-row field="charges2TotalCharges">-->
-            <!--<my-cell size="1"-->
-                     <!--text="H70">-->
-            <!--</my-cell>-->
-            <!--<my-cell size="3"-->
-                     <!--text="Итого расходов">-->
-            <!--</my-cell>-->
-            <!--<my-cell></my-cell>-->
-            <!--<my-cell></my-cell>-->
-            <!--<my-cell></my-cell>-->
-            <!--<my-cell type="ruble"-->
-                     <!--field="fourth"-->
-                     <!--my-disabled="true"-->
-                     <!--value="{{model.fourth=-->
-                                <!--baseModel.charges2Amortization.fourth+-->
-                                <!--baseModel.charges2Interests.fourth+-->
-                                <!--baseModel.charges2NonproductiveStaffSalary.fourth+-->
-                                <!--baseModel.charges2OtherCharges.fourth}}">-->
-            <!--</my-cell>-->
-        <!--</my-row>-->
+        <my-row>
+            <my-cell size="1"
+                     text="H70">
+            </my-cell>
+            <my-cell size="3"
+                     text="Итого расходов">
+            </my-cell>
+            <my-cell></my-cell>
+            <my-cell></my-cell>
+            <my-cell></my-cell>
+            <my-cell type="ruble"
+                     field="model.tabOtherDepartments.charges2TotalCharges.fourth"
+                     my-disabled="true"
+                     value="{{model.tabOtherDepartments.charges2TotalCharges.fourth=
+                                model.tabOtherDepartments.charges2Amortization.fourth+
+                                model.tabOtherDepartments.charges2Interests.fourth+
+                                model.tabOtherDepartments.charges2NonproductiveStaffSalary.fourth+
+                                model.tabOtherDepartments.charges2OtherCharges.fourth}}">
+            </my-cell>
+        </my-row>
 
-    <!--</my-foot>-->
-<!--</my-table>-->
+    </my-foot>
+</my-table>
 
-<!--<my-table model="model" field="tabOtherDepartments">-->
-    <!--<my-foot>-->
+<my-table>
+    <my-foot>
 
-        <!--&lt;!&ndash;TODO: value = ?&ndash;&gt;-->
-        <!--<my-row field="charges2TotalIncoming">-->
-            <!--<my-cell size="1"-->
-                     <!--text="H75">-->
-            <!--</my-cell>-->
-            <!--<my-cell size="3"-->
-                     <!--text="Прибыль по отделу">-->
-            <!--</my-cell>-->
-            <!--<my-cell></my-cell>-->
-            <!--<my-cell></my-cell>-->
-            <!--<my-cell></my-cell>-->
-            <!--<my-cell type="ruble"-->
-                     <!--field="fourth"-->
-                     <!--my-disabled="true"-->
-                     <!--value="{{model.fourth=0}}">-->
-            <!--</my-cell>-->
-        <!--</my-row>-->
+        <!--TODO: value = ?-->
+        <my-row>
+            <my-cell size="1"
+                     text="H75">
+            </my-cell>
+            <my-cell size="3"
+                     text="Прибыль по отделу">
+            </my-cell>
+            <my-cell></my-cell>
+            <my-cell></my-cell>
+            <my-cell></my-cell>
+            <my-cell type="ruble"
+                     field="model.tabOtherDepartments.charges2TotalIncoming.fourth"
+                     my-disabled="true"
+                     value="{{model.tabOtherDepartments.charges2TotalIncoming.fourth=0}}">
+            </my-cell>
+        </my-row>
 
-    <!--</my-foot>-->
-<!--</my-table>-->
+    </my-foot>
+</my-table>
 
-<!--<my-table model="model" field="tabOtherDepartments">-->
-    <!--<my-head>-->
-        <!--<my-row>-->
-            <!--<my-cell size="4"-->
-                     <!--colspan="2"-->
-                     <!--text="Другие отделы"></my-cell>-->
-            <!--<my-cell></my-cell>-->
-            <!--<my-cell text="Выручка"></my-cell>-->
-            <!--<my-cell text="Себ-ть"></my-cell>-->
-            <!--<my-cell text="ВП"></my-cell>-->
-        <!--</my-row>-->
-    <!--</my-head>-->
-    <!--<my-body>-->
-        <!--<my-row field="otherDepartmentsSalesAndGrossProfit">-->
-            <!--<my-cell size="1"-->
-                     <!--text="H111">-->
-            <!--</my-cell>-->
-            <!--<my-cell size="3"-->
-                     <!--text="Продажи и ВП">-->
-            <!--</my-cell>-->
-            <!--<my-cell></my-cell>-->
-            <!--<my-cell type="ruble"-->
-                     <!--field="second"-->
-                     <!--on-blur="autoSaving">-->
-            <!--</my-cell>-->
-            <!--<my-cell type="ruble"-->
-                     <!--field="third"-->
-                     <!--on-blur="autoSaving">-->
-            <!--</my-cell>-->
-            <!--<my-cell type="ruble"-->
-                     <!--field="fourth"-->
-                     <!--my-disabled="true"-->
-                     <!--value="{{model.fourth = model.second - model.third}}">-->
-            <!--</my-cell>-->
-        <!--</my-row>-->
-    <!--</my-body>-->
-<!--</my-table>-->
+<my-table>
+    <my-head>
+        <my-row>
+            <my-cell size="4"
+                     colspan="2"
+                     text="Другие отделы"></my-cell>
+            <my-cell></my-cell>
+            <my-cell text="Выручка"></my-cell>
+            <my-cell text="Себ-ть"></my-cell>
+            <my-cell text="ВП"></my-cell>
+        </my-row>
+    </my-head>
+    <my-body>
+        <my-row>
+            <my-cell size="1"
+                     text="H111">
+            </my-cell>
+            <my-cell size="3"
+                     text="Продажи и ВП">
+            </my-cell>
+            <my-cell></my-cell>
+            <my-cell type="ruble"
+                     field="model.tabOtherDepartments.otherDepartmentsSalesAndGrossProfit.second"
+                     on-blur="autoSaving">
+            </my-cell>
+            <my-cell type="ruble"
+                     field="model.tabOtherDepartments.otherDepartmentsSalesAndGrossProfit.third"
+                     on-blur="autoSaving">
+            </my-cell>
+            <my-cell type="ruble"
+                     field="model.tabOtherDepartments.otherDepartmentsSalesAndGrossProfit.fourth"
+                     my-disabled="true"
+                     value="{{model.tabOtherDepartments.otherDepartmentsSalesAndGrossProfit.fourth = model.tabOtherDepartments.otherDepartmentsSalesAndGrossProfit.second - model.tabOtherDepartments.otherDepartmentsSalesAndGrossProfit.third}}">
+            </my-cell>
+        </my-row>
+    </my-body>
+</my-table>
 
-<!--<my-table model="model" field="tabOtherDepartments">-->
+<my-table>
 
-    <!--<my-head>-->
-        <!--<my-row>-->
-            <!--<my-cell size="4"-->
-                     <!--colspan="2"-->
-                     <!--text="Расходы"></my-cell>-->
-            <!--<my-cell></my-cell>-->
-            <!--<my-cell></my-cell>-->
-            <!--<my-cell></my-cell>-->
-            <!--<my-cell text="Сумма"></my-cell>-->
-        <!--</my-row>-->
-    <!--</my-head>-->
+    <my-head>
+        <my-row>
+            <my-cell size="4"
+                     colspan="2"
+                     text="Расходы"></my-cell>
+            <my-cell></my-cell>
+            <my-cell></my-cell>
+            <my-cell></my-cell>
+            <my-cell text="Сумма"></my-cell>
+        </my-row>
+    </my-head>
 
-    <!--<my-body>-->
-        <!--<my-row field="charges3NonproductiveStaffSalary">-->
-            <!--<my-cell size="1"-->
-                     <!--text="H116">-->
-            <!--</my-cell>-->
-            <!--<my-cell size="3"-->
-                     <!--text="Зарплата непродуктивного персонала">-->
-            <!--</my-cell>-->
-            <!--<my-cell></my-cell>-->
-            <!--<my-cell></my-cell>-->
-            <!--<my-cell></my-cell>-->
-            <!--<my-cell type="ruble"-->
-                     <!--field="fourth"-->
-                     <!--on-blur="autoSaving">-->
-            <!--</my-cell>-->
-        <!--</my-row>-->
+    <my-body>
+        <my-row>
+            <my-cell size="1"
+                     text="H116">
+            </my-cell>
+            <my-cell size="3"
+                     text="Зарплата непродуктивного персонала">
+            </my-cell>
+            <my-cell></my-cell>
+            <my-cell></my-cell>
+            <my-cell></my-cell>
+            <my-cell type="ruble"
+                     field="model.tabOtherDepartments.charges3NonproductiveStaffSalary.fourth"
+                     on-blur="autoSaving">
+            </my-cell>
+        </my-row>
 
-        <!--<my-row field="charges3OtherCharges">-->
-            <!--<my-cell size="1"-->
-                     <!--text="H117">-->
-            <!--</my-cell>-->
-            <!--<my-cell size="3"-->
-                     <!--text="Другие расходы">-->
-            <!--</my-cell>-->
-            <!--<my-cell></my-cell>-->
-            <!--<my-cell></my-cell>-->
-            <!--<my-cell></my-cell>-->
-            <!--<my-cell type="ruble"-->
-                     <!--field="fourth"-->
-                     <!--on-blur="autoSaving">-->
-            <!--</my-cell>-->
-        <!--</my-row>-->
-    <!--</my-body>-->
+        <my-row>
+            <my-cell size="1"
+                     text="H117">
+            </my-cell>
+            <my-cell size="3"
+                     text="Другие расходы">
+            </my-cell>
+            <my-cell></my-cell>
+            <my-cell></my-cell>
+            <my-cell></my-cell>
+            <my-cell type="ruble"
+                     field="model.tabOtherDepartments.charges3OtherCharges.fourth"
+                     on-blur="autoSaving">
+            </my-cell>
+        </my-row>
+    </my-body>
 
-    <!--<my-foot>-->
+    <my-foot>
 
-        <!--<my-row field="charges3TotalCharges">-->
-            <!--<my-cell size="1"-->
-                     <!--text="H120">-->
-            <!--</my-cell>-->
-            <!--<my-cell size="3"-->
-                     <!--text="Итого расходов">-->
-            <!--</my-cell>-->
-            <!--<my-cell></my-cell>-->
-            <!--<my-cell></my-cell>-->
-            <!--<my-cell></my-cell>-->
-            <!--<my-cell type="ruble"-->
-                     <!--field="fourth"-->
-                     <!--my-disabled="true"-->
-                     <!--value="{{model.fourth=-->
-                                <!--baseModel.charges3NonproductiveStaffSalary.fourth+-->
-                                <!--baseModel.charges3OtherCharges.fourth}}">-->
-            <!--</my-cell>-->
-        <!--</my-row>-->
-    <!--</my-foot>-->
-<!--</my-table>-->
+        <my-row>
+            <my-cell size="1"
+                     text="H120">
+            </my-cell>
+            <my-cell size="3"
+                     text="Итого расходов">
+            </my-cell>
+            <my-cell></my-cell>
+            <my-cell></my-cell>
+            <my-cell></my-cell>
+            <my-cell type="ruble"
+                     field="model.tabOtherDepartments.charges3TotalCharges.fourth"
+                     my-disabled="true"
+                     value="{{model.tabOtherDepartments.charges3TotalCharges.fourth=
+                                model.tabOtherDepartments.charges3NonproductiveStaffSalary.fourth+
+                                model.tabOtherDepartments.charges3OtherCharges.fourth}}">
+            </my-cell>
+        </my-row>
+    </my-foot>
+</my-table>
 
-<!--<my-table model="model" field="tabOtherDepartments">-->
+<my-table>
 
-    <!--<my-foot>-->
+    <my-foot>
 
-        <!--&lt;!&ndash;TODO: value = ?&ndash;&gt;-->
-        <!--<my-row field="charges3TotalIncoming">-->
-            <!--<my-cell size="1"-->
-                     <!--text="H130">-->
-            <!--</my-cell>-->
-            <!--<my-cell size="3"-->
-                     <!--text="Прибыль по отделу">-->
-            <!--</my-cell>-->
-            <!--<my-cell></my-cell>-->
-            <!--<my-cell></my-cell>-->
-            <!--<my-cell></my-cell>-->
-            <!--<my-cell type="ruble"-->
-                     <!--field="fourth"-->
-                     <!--my-disabled="true"-->
-                     <!--value="{{model.fourth=0}}">-->
-            <!--</my-cell>-->
-        <!--</my-row>-->
+        <!--TODO: value = ?-->
+        <my-row>
+            <my-cell size="1"
+                     text="H130">
+            </my-cell>
+            <my-cell size="3"
+                     text="Прибыль по отделу">
+            </my-cell>
+            <my-cell></my-cell>
+            <my-cell></my-cell>
+            <my-cell></my-cell>
+            <my-cell type="ruble"
+                     field="model.tabOtherDepartments.charges3TotalIncoming.fourth"
+                     my-disabled="true"
+                     value="{{model.tabOtherDepartments.charges3TotalIncoming.fourth=0}}">
+            </my-cell>
+        </my-row>
 
-    <!--</my-foot>-->
+    </my-foot>
 
-<!--</my-table>-->
+</my-table>
 
 
 </div>
