@@ -59,7 +59,8 @@
             "gross.profit" : "ВП",
             "total" : "Сумма",
             "all.in.all" : "Всего",
-            "hours" : "Часы"
+            "hours" : "Часы",
+            "sold.days" : "Продано дней"
         },
 
         "common" : {
@@ -300,6 +301,21 @@
             "department.cars.charges" : "Расходы на а/м отдела, трансп. расходы",
             "cost.in.stock" : "Ст-сть запчастей на складе",
             "spares.stock.area" : "Площадь склада з/ч"
+        },
+
+        "other.departments" : {
+            "cars.rent" : "Прокат а/м",
+            "cars.rent.earnings" : "Выручка от проката а/м",
+            "direct.charges" : "Прямые расходы",
+            "interests" : "Проценты",
+            "other.direct.charges" : "Другие прямые расходы",
+            "direct.charges.total" : "Другие прямые расходы",
+            "total.gross.profit" : "Итого ВП отдела",
+            "charges" : "Расходы",
+            "rent.cars.flit.quantity" : "Прокат а/м - Флит (кол-во)",
+            "leasing" : "Лизинг а/м",
+            "sales.and.gross.profit" : "Продажи и ВП",
+            "other.departments" : "Другие отделы"
         }
     }
 }
