@@ -1,8 +1,8 @@
 package com.volvo.metis.web.rest;
 
 import com.codahale.metrics.annotation.Timed;
-import com.volvo.metis.domain.Report;
-import com.volvo.metis.service.ReportService;
+import com.volvo.metis.domain.MonthReport;
+import com.volvo.metis.service.YearReportService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.http.MediaType;
@@ -20,7 +20,7 @@ public class ReportResource {
     private final Logger log = LoggerFactory.getLogger(ReportResource.class);
 
     @Inject
-    private ReportService reportService;
+    private YearReportService yearReportService;
 
 //    /**
 //     * Отчет за текущий период.
@@ -31,31 +31,31 @@ public class ReportResource {
 //    @Timed
 //    public Report getCurrentReport() {
 //        log.debug("REST request to get current report");
-//        return reportService.getCurrentReport();
+//        return yearReportService.getCurrentReport();
 //    }
 
     /**
      * Отчет за конкретный период.
      */
-    @RequestMapping(value = "/reports/{month}",
+    @RequestMapping(value = "/reports/{year}/{month}",
         method = RequestMethod.GET,
         produces = MediaType.APPLICATION_JSON_VALUE)
     @Timed
-    public Report get(@PathVariable(value = "month") Integer month) {
-        log.debug("REST request to get month report: {}", month);
-        return reportService.getMonthReport(month);
+    public MonthReport get(@PathVariable(value = "year") Integer year, @PathVariable(value = "month") Integer month) {
+        log.debug("REST request to get month report: {}/{}", year, month);
+        return yearReportService.getMonthReport(year, month);
     }
 
     /**
      * Сохранение отчета за текущий период.
      */
-    @RequestMapping(value = "/reports",
-            method = RequestMethod.POST,
-            produces = MediaType.APPLICATION_JSON_VALUE)
+    @RequestMapping(value = "/reports/{year}/{month}",
+        method = RequestMethod.POST,
+        produces = MediaType.APPLICATION_JSON_VALUE)
     @Timed
-    public void saveReport(@RequestBody Report report) {
+    public void saveReport(@PathVariable(value = "year") Integer year, @PathVariable(value = "month") Integer month, @RequestBody MonthReport report) {
         log.debug("REST request to save current report");
-        reportService.saveReport(report);
+        yearReportService.saveReport(year, month, report);
     }
 
 

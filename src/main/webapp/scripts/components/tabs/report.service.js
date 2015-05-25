@@ -2,7 +2,7 @@
 
 angular.module('volvoApp')
     .factory('ReportService', function ReportService($resource) {
-        var resource = $resource('/api/rest/reports/:month', {}, {
+        var resource = $resource('/api/rest/reports/:year/:month', {}, {
             'query': {method: 'GET', isArray: true},
             'getList': {
                 method: 'GET',

@@ -16,14 +16,14 @@ angular.module('volvoApp')
                 $timeout.cancel(timeout);
             }
             timeout = $timeout(function () {
-                ReportService.save($scope.model)
+                ReportService.save({year: new Date().getFullYear(), month: $scope.options.month}, $scope.model)
             }, 500);
         };
 
         $scope.selectedMonth = new Date();
 
         function changeMonth(month) {
-            ReportService.get({month: month}).$promise.then(function (report) {
+            ReportService.get({year: new Date().getFullYear(), month: month}).$promise.then(function (report) {
                 $scope.model = report;
             });
         }

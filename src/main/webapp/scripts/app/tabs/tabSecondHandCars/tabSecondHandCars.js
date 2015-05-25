@@ -26,7 +26,10 @@ angular.module('volvoApp')
                         return $translate.refresh();
                     }],
                     report: function (ReportService) {
-                        return ReportService.get({month: ReportService.options.month}).$promise;
+                        return ReportService.get({
+                            year: new Date().getFullYear(),
+                            month: ReportService.options.month
+                        }).$promise;
                     }
                 }
             });
