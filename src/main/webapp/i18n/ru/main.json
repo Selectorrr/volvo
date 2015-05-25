@@ -21,8 +21,7 @@
         "plan" : "План",
         "month" : "Месяц",
         "apply" : "Согласовать",
-
-        "month": {
+        "months": {
             "january": "Январь",
             "february": "Февраль",
             "march": "Март",
