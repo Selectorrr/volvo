@@ -22,13 +22,13 @@
                 </div>
                 <div ng-switch="isAuthenticated()">
                     <ul class="nav navbar-nav nav-pills navbar-right">
-                        <li ui-sref-active="active" ng-show="isInRole('ROLE_USER')">
+                        <li ui-sref-active="active" ng-show="isInRole('ROLE_DEALER')">
                             <a ui-sref="tabNewCars">
                                 <span class="glyphicon glyphicon-home"></span>
                                 <span translate="global.menu.home">Home</span>
                             </a>
                         </li>
-                        <li ui-sref-active="active" ng-show="isInRole('ROLE_ADMIN')">
+                        <li ui-sref-active="active" ng-show="isInRole('ROLE_ADMIN') || isInRole('ROLE_REPRESENTATIVE')">
                             <a ui-sref="user">
                                 <span class="glyphicon glyphicon-user"></span>
                                 <span translate="global.menu.users">Users</span>
@@ -80,7 +80,7 @@
 
                             </ul>
                         </li>
-                        <li ng-class="{active: $state.includes('admin')}" ng-switch-when="true" style="display: none"
+                        <li ng-class="{active: $state.includes('admin')}" ng-switch-when="true"
                             ng-show="isInRole('ROLE_ADMIN')"
                             class="dropdown pointer">
                             <a class="dropdown-toggle" data-toggle="dropdown" href="">
