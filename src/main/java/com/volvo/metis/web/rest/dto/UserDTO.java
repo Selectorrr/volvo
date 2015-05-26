@@ -20,11 +20,20 @@ public class UserDTO {
     @Size(min = 5, max = 100)
     private String password;
 
+    @Size(max = 100)
+    private String organizationName;
+
     @Size(max = 50)
     private String firstName;
 
     @Size(max = 50)
     private String lastName;
+
+    @Size(max = 50)
+    private String middleName;
+
+    @Size(min = 1, max = 50)
+    private String phone;
 
     @Email
     @Size(min = 5, max = 100)
@@ -40,12 +49,15 @@ public class UserDTO {
     public UserDTO() {
     }
 
-    public UserDTO(String login, String password, String firstName, String lastName, String email, String langKey,
-                   List<String> roles, Boolean activated, String id) {
+    public UserDTO(String login, String password, String organizationName, String firstName, String lastName, String middleName,
+                   String phone, String email, String langKey, List<String> roles, Boolean activated, String id) {
         this.login = login;
         this.password = password;
+        this.organizationName = organizationName;
         this.firstName = firstName;
         this.lastName = lastName;
+        this.middleName = middleName;
+        this.phone = phone;
         this.email = email;
         this.langKey = langKey;
         this.roles = roles;
@@ -95,6 +107,18 @@ public class UserDTO {
 
     public void setId(String id) {
         this.id = id;
+    }
+
+    public String getOrganizationName() {
+        return organizationName;
+    }
+
+    public String getMiddleName() {
+        return middleName;
+    }
+
+    public String getPhone() {
+        return phone;
     }
 
     @Override

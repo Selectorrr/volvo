@@ -19,6 +19,33 @@
             <form name="form" role="form" novalidate ng-submit="save()" show-validation>
 
                 <div class="form-group">
+                    <label translate="settings.form.organizationname">Organization Name</label>
+                    <input type="text" class="form-control" name="organizationName"
+                           placeholder="{{'settings.form.organizationname.placeholder' | translate}}"
+                           ng-model="settingsAccount.organizationName" ng-minlength=1 ng-maxlength=100 required maxlength="100">
+
+                    <div ng-show="form.organizationName.$dirty && form.organizationName.$invalid">
+                        <p class="help-block"
+                           ng-show="form.organizationName.$error.required"
+                           translate="settings.messages.validate.organizationname.required">
+                            Dealer center name is required.
+                        </p>
+
+                        <p class="help-block"
+                           ng-show="form.organizationName.$error.minlength"
+                           translate="settings.messages.validate.organizationname.minlength">
+                            Dealer center name is required to be at least 1 character
+                        </p>
+
+                        <p class="help-block"
+                           ng-show="form.organizationName.$error.maxlength"
+                           translate="settings.messages.validate.organizationname.maxlength">
+                            Dealer center name cannot be longer than 100 characters
+                        </p>
+                    </div>
+                </div>
+
+                <div class="form-group">
                     <label translate="settings.form.firstname">First Name</label>
                     <input type="text" class="form-control" name="firstName"
                            placeholder="{{'settings.form.firstname.placeholder' | translate}}"
@@ -70,6 +97,62 @@
                         </p>
                     </div>
                 </div>
+
+                <div class="form-group">
+                    <label translate="settings.form.middlename">Middle Name</label>
+                    <input type="text" class="form-control" name="middleName"
+                           placeholder="{{'settings.form.middlename.placeholder' | translate}}"
+                           ng-model="settingsAccount.middleName" ng-minlength=1 ng-maxlength=50 required maxlength="50">
+
+                    <div ng-show="form.middleName.$dirty && form.middleName.$invalid">
+                        <p class="help-block"
+                           ng-show="form.middleName.$error.required"
+                           translate="settings.messages.validate.middlename.required">
+                            Your last name is required.
+                        </p>
+
+                        <p class="help-block"
+                           ng-show="form.middleName.$error.minlength"
+                           translate="settings.messages.validate.middlename.minlength">
+                            Your last name is required to be at least 1 character
+                        </p>
+
+                        <p class="help-block"
+                           ng-show="form.middleName.$error.maxlength"
+                           translate="settings.messages.validate.middlename.maxlength">
+                            Your last name cannot be longer than 50 characters
+                        </p>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label translate="settings.form.phone">Phone</label>
+                    <input type="text" class="form-control" name="phone"
+                           placeholder="{{'settings.form.phone.placeholder' | translate}}"
+                           ng-mask=""
+                           ng-model="settingsAccount.phone" ng-minlength=1 ng-maxlength=50 required maxlength="50">
+
+                    <div ng-show="form.phone.$dirty && form.phone.$invalid">
+                        <p class="help-block"
+                           ng-show="form.phone.$error.required"
+                           translate="settings.messages.validate.phone.required">
+                            Phone is required.
+                        </p>
+
+                        <p class="help-block"
+                           ng-show="form.phone.$error.minlength"
+                           translate="settings.messages.validate.phone.minlength">
+                            Phone is required to be at least 1 character
+                        </p>
+
+                        <p class="help-block"
+                           ng-show="form.phone.$error.maxlength"
+                           translate="settings.messages.validate.phone.maxlength">
+                            Phone cannot be longer than 50 characters
+                        </p>
+                    </div>
+                </div>
+
                 <div class="form-group">
                     <label translate="global.form.email">E-mail</label>
                     <input type="email" class="form-control" name="email"

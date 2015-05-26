@@ -32,6 +32,10 @@ public class User extends AbstractAuditingEntity implements Serializable {
     @Size(min = 5, max = 100)
     private String password;
 
+    @Size(max = 100)
+    @Field("organization_name")
+    private String organizationName;
+
     @Size(max = 50)
     @Field("first_name")
     private String firstName;
@@ -39,6 +43,13 @@ public class User extends AbstractAuditingEntity implements Serializable {
     @Size(max = 50)
     @Field("last_name")
     private String lastName;
+
+    @Size(max = 50)
+    @Field("middle_name")
+    private String middleName;
+
+    @Size(min = 1, max = 50)
+    private String phone;
 
     @Email
     @Size(max = 100)
@@ -135,6 +146,30 @@ public class User extends AbstractAuditingEntity implements Serializable {
 
     public void setAuthorities(Set<Authority> authorities) {
         this.authorities = authorities;
+    }
+
+    public String getOrganizationName() {
+        return organizationName;
+    }
+
+    public void setOrganizationName(String organizationName) {
+        this.organizationName = organizationName;
+    }
+
+    public String getMiddleName() {
+        return middleName;
+    }
+
+    public void setMiddleName(String middleName) {
+        this.middleName = middleName;
+    }
+
+    public String getPhone() {
+        return phone;
+    }
+
+    public void setPhone(String phone) {
+        this.phone = phone;
     }
 
     @Override

@@ -32,8 +32,8 @@ public class UserService {
     @Inject
     private AuthorityRepository authorityRepository;
 
-    public User createUserInformation(String login, String password, String firstName, String lastName, String email,
-                                      String langKey) {
+    public User createUserInformation(String login, String password, String organizationName, String firstName, String lastName, String middleName,
+                                      String phone, String email, String langKey) {
         User newUser = new User();
         Authority authority = authorityRepository.findOne("ROLE_USER");
         Set<Authority> authorities = new HashSet<>();
@@ -41,8 +41,11 @@ public class UserService {
         newUser.setLogin(login);
         // new user gets initially a generated password
         newUser.setPassword(encryptedPassword);
+        newUser.setOrganizationName(organizationName);
         newUser.setFirstName(firstName);
         newUser.setLastName(lastName);
+        newUser.setMiddleName(middleName);
+        newUser.setPhone(phone);
         newUser.setEmail(email);
         newUser.setLangKey(langKey);
         // new user is not active
@@ -56,10 +59,13 @@ public class UserService {
         return newUser;
     }
 
-    public void updateUserInformation(String firstName, String lastName, String email) {
+    public void updateUserInformation(String organizationName, String firstName, String lastName, String middleName, String phone, String email) {
         userRepository.findOneByLogin(SecurityUtils.getCurrentLogin()).ifPresent(u -> {
+            u.setOrganizationName(organizationName);
             u.setFirstName(firstName);
             u.setLastName(lastName);
+            u.setMiddleName(middleName);
+            u.setPhone(phone);
             u.setEmail(email);
             userRepository.save(u);
             log.debug("Changed Information for User: {}", u);
