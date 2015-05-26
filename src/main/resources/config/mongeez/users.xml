@@ -12,7 +12,7 @@
             "last_name": "System",
             "email": "",
             "activated": "true",
-            "lang_key": "en",
+            "lang_key": "ru",
             "created_by": "system",
             "created_date": new Date(),
             "authorities": [{"_id": "ROLE_ADMIN"}, {"_id": "ROLE_USER"}]
@@ -26,7 +26,7 @@
             "last_name": "User",
             "email": "",
             "activated": "true",
-            "lang_key": "en",
+            "lang_key": "ru",
             "created_by": "system",
             "created_date": new Date(),
             "authorities": []
@@ -40,7 +40,7 @@
             "last_name": "Administrator",
             "email": "",
             "activated": "true",
-            "lang_key": "en",
+            "lang_key": "ru",
             "created_by": "system",
             "created_date": new Date(),
             "authorities": [{"_id": "ROLE_ADMIN"}]
@@ -48,16 +48,30 @@
             db.T_USER.insert(
             {
             "_id" : "user-3",
-            "login" : "user",
-            "password" : "$2a$10$VEjxo0jq2YG9Rbk2HmX9S.k1uZBGYUHdUcid3g/vfiEl7lwWgOH/K",
+            "login" : "representative",
+            "password" : "$2a$10$tjNuYnj7v6qM.NmzdDBaauhBosBLoi89kLhTF0qNPLKb3zBMHZxA.",
             "first_name": "",
-            "last_name": "User",
+            "last_name": "Representative",
             "email": "",
             "activated": "true",
-            "lang_key": "en",
+            "lang_key": "ru",
             "created_by": "system",
             "created_date": new Date(),
-            "authorities": [{"_id": "ROLE_USER"}]
+            "authorities": [{"_id": "ROLE_REPRESENTATIVE"}]
+            });
+            db.T_USER.insert(
+            {
+            "_id" : "user-4",
+            "login" : "dealer",
+            "password" : "$2a$10$YRKBx9JhIsPs5uMDL.J48.9l/e.JT/eHY47272S.AztrXQHUa7Zhq",
+            "first_name": "",
+            "last_name": "Dealer",
+            "email": "",
+            "activated": "true",
+            "lang_key": "ru",
+            "created_by": "system",
+            "created_date": new Date(),
+            "authorities": [{"_id": "ROLE_DEALER"}]
             });
         </script>
     </changeSet>
