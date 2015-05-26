@@ -1,713 +1,714 @@
 <div class="content">
-<!--<my-table model="model" field="tabIndirectCharges">-->
-<!--<my-head>-->
-    <!--<my-row>-->
-        <!--<my-cell size="4"-->
-                 <!--colspan="2"-->
-                 <!--text="Общие расходы"></my-cell>-->
-        <!--<my-cell text="Сумма"></my-cell>-->
-    <!--</my-row>-->
-<!--</my-head>-->
-<!--<my-body>-->
 
-<!--<my-row field="commonChargesNonproductiveStaffSalary">-->
-    <!--<my-cell size="1"-->
-             <!--text="J1">-->
-    <!--</my-cell>-->
-    <!--<my-cell size="3"-->
-             <!--text="Зарплата непродуктивного персонала">-->
-    <!--</my-cell>-->
-    <!--<my-cell type="ruble"-->
-             <!--field="first"-->
-             <!--on-blur="autoSaving">-->
-    <!--</my-cell>-->
-<!--</my-row>-->
+<my-table>
+<my-head>
+    <my-row>
+        <my-cell size="4"
+                 colspan="2"
+                 text="tab.indirect.charges.common.charges"></my-cell>
+        <my-cell text="tab.head.total"></my-cell>
+    </my-row>
+</my-head>
+<my-body>
 
-<!--<my-row field="commonChargesSalaryTax">-->
-    <!--<my-cell size="1"-->
-             <!--text="J2">-->
-    <!--</my-cell>-->
-    <!--<my-cell size="3"-->
-             <!--text="Налоги на з/п">-->
-    <!--</my-cell>-->
-    <!--<my-cell type="ruble"-->
-             <!--field="first"-->
-             <!--on-blur="autoSaving">-->
-    <!--</my-cell>-->
-<!--</my-row>-->
+<my-row>
+    <my-cell size="1"
+             text="J1">
+    </my-cell>
+    <my-cell size="3"
+             text="tab.common.nonproductive.staff.salary">
+    </my-cell>
+    <my-cell type="ruble"
+             field="model.tabIndirectCharges.commonChargesNonproductiveStaffSalary.first"
+             on-blur="autoSaving">
+    </my-cell>
+</my-row>
 
-<!--<my-row field="commonChargesOptionalInsuranceAdministration">-->
-    <!--<my-cell size="1"-->
-             <!--text="J3">-->
-    <!--</my-cell>-->
-    <!--<my-cell size="3"-->
-             <!--text="Пенсионн. и мед. страх-ие">-->
-    <!--</my-cell>-->
-    <!--<my-cell type="ruble"-->
-             <!--field="first"-->
-             <!--on-blur="autoSaving">-->
-    <!--</my-cell>-->
-<!--</my-row>-->
+<my-row>
+    <my-cell size="1"
+             text="J2">
+    </my-cell>
+    <my-cell size="3"
+             text="tab.common.salary.tax">
+    </my-cell>
+    <my-cell type="ruble"
+             field="model.tabIndirectCharges.commonChargesSalaryTax.first"
+             on-blur="autoSaving">
+    </my-cell>
+</my-row>
 
-<!--<my-row field="commonChargesEmployeeMealsCharges">-->
-    <!--<my-cell size="1"-->
-             <!--text="J4">-->
-    <!--</my-cell>-->
-    <!--<my-cell size="3"-->
-             <!--text="Расходы на питание сотрудников и пособия">-->
-    <!--</my-cell>-->
-    <!--<my-cell type="ruble"-->
-             <!--field="first"-->
-             <!--on-blur="autoSaving">-->
-    <!--</my-cell>-->
-<!--</my-row>-->
+<my-row>
+    <my-cell size="1"
+             text="J3">
+    </my-cell>
+    <my-cell size="3"
+             text="tab.indirect.charges.optional.insurance">
+    </my-cell>
+    <my-cell type="ruble"
+             field="model.tabIndirectCharges.commonChargesOptionalInsuranceAdministration.first"
+             on-blur="autoSaving">
+    </my-cell>
+</my-row>
 
-<!--<my-row field="commonChargesWorkingClothesDryCleaning">-->
-    <!--<my-cell size="1"-->
-             <!--text="J5">-->
-    <!--</my-cell>-->
-    <!--<my-cell size="3"-->
-             <!--text="Спецодежда и химчистка">-->
-    <!--</my-cell>-->
-    <!--<my-cell type="ruble"-->
-             <!--field="first"-->
-             <!--on-blur="autoSaving">-->
-    <!--</my-cell>-->
-<!--</my-row>-->
+<my-row>
+    <my-cell size="1"
+             text="J4">
+    </my-cell>
+    <my-cell size="3"
+             text="tab.indirect.charges.employee.meals.charges">
+    </my-cell>
+    <my-cell type="ruble"
+             field="model.tabIndirectCharges.commonChargesEmployeeMealsCharges.first"
+             on-blur="autoSaving">
+    </my-cell>
+</my-row>
 
-<!--<my-row field="commonChargesOtherChargeOnStaff">-->
-    <!--<my-cell size="1"-->
-             <!--text="J6">-->
-    <!--</my-cell>-->
-    <!--<my-cell size="3"-->
-             <!--text="Другие расходы на персонал">-->
-    <!--</my-cell>-->
-    <!--<my-cell type="ruble"-->
-             <!--field="first"-->
-             <!--on-blur="autoSaving">-->
-    <!--</my-cell>-->
-<!--</my-row>-->
+<my-row>
+    <my-cell size="1"
+             text="J5">
+    </my-cell>
+    <my-cell size="3"
+             text="tab.indirect.charges.working.clothes.dry.cleaning">
+    </my-cell>
+    <my-cell type="ruble"
+             field="model.tabIndirectCharges.commonChargesWorkingClothesDryCleaning.first"
+             on-blur="autoSaving">
+    </my-cell>
+</my-row>
 
-<!--<my-row field="commonChargesEducation">-->
-    <!--<my-cell size="1"-->
-             <!--text="J7">-->
-    <!--</my-cell>-->
-    <!--<my-cell size="3"-->
-             <!--text="Обучение">-->
-    <!--</my-cell>-->
-    <!--<my-cell type="ruble"-->
-             <!--field="first"-->
-             <!--on-blur="autoSaving">-->
-    <!--</my-cell>-->
-<!--</my-row>-->
+<my-row>
+    <my-cell size="1"
+             text="J6">
+    </my-cell>
+    <my-cell size="3"
+             text="tab.common.other.charges.on.staff">
+    </my-cell>
+    <my-cell type="ruble"
+             field="model.tabIndirectCharges.commonChargesOtherChargeOnStaff.first"
+             on-blur="autoSaving">
+    </my-cell>
+</my-row>
 
-<!--<my-row field="commonChargesTravelingAllowance">-->
-    <!--<my-cell size="1"-->
-             <!--text="J8">-->
-    <!--</my-cell>-->
-    <!--<my-cell size="3"-->
-             <!--text="Командировочные расходы">-->
-    <!--</my-cell>-->
-    <!--<my-cell type="ruble"-->
-             <!--field="first"-->
-             <!--on-blur="autoSaving">-->
-    <!--</my-cell>-->
-<!--</my-row>-->
+<my-row>
+    <my-cell size="1"
+             text="J7">
+    </my-cell>
+    <my-cell size="3"
+             text="tab.common.education">
+    </my-cell>
+    <my-cell type="ruble"
+             field="model.tabIndirectCharges.commonChargesEducation.first"
+             on-blur="autoSaving">
+    </my-cell>
+</my-row>
 
-<!--<my-row field="commonChargesTotalIndirectStaffCharges">-->
-    <!--<my-cell size="1"-->
-             <!--text="J20">-->
-    <!--</my-cell>-->
-    <!--<my-cell size="3"-->
-             <!--text="Итого непрямые расходы на персонал">-->
-    <!--</my-cell>-->
-    <!--<my-cell type="ruble"-->
-             <!--field="first"-->
-             <!--my-disabled="true"-->
-             <!--value="{{model.first=-->
-                                <!--baseModel.commonChargesNonproductiveStaffSalary.first+-->
-                                <!--baseModel.commonChargesSalaryTax.first+-->
-                                <!--baseModel.commonChargesOptionalInsuranceAdministration.first+-->
-                                <!--baseModel.commonChargesEmployeeMealsCharges.first+-->
-                                <!--baseModel.commonChargesWorkingClothesDryCleaning.first+-->
-                                <!--baseModel.commonChargesOtherChargeOnStaff.first+-->
-                                <!--baseModel.commonChargesEducation.first+-->
-                                <!--baseModel.commonChargesTravelingAllowance.first}}">-->
-    <!--</my-cell>-->
-<!--</my-row>-->
+<my-row>
+    <my-cell size="1"
+             text="J8">
+    </my-cell>
+    <my-cell size="3"
+             text="tab.indirect.charges.traveling.allowance">
+    </my-cell>
+    <my-cell type="ruble"
+             field="model.tabIndirectCharges.commonChargesTravelingAllowance.first"
+             on-blur="autoSaving">
+    </my-cell>
+</my-row>
 
-<!--<my-row field="commonChargesPost">-->
-    <!--<my-cell size="1"-->
-             <!--text="J21">-->
-    <!--</my-cell>-->
-    <!--<my-cell size="3"-->
-             <!--text="Почта">-->
-    <!--</my-cell>-->
-    <!--<my-cell type="ruble"-->
-             <!--field="first"-->
-             <!--on-blur="autoSaving">-->
-    <!--</my-cell>-->
-<!--</my-row>-->
+<my-row>
+    <my-cell size="1"
+             text="J20">
+    </my-cell>
+    <my-cell size="3"
+             text="tab.indirect.charges.total.indirect.staff.charges">
+    </my-cell>
+    <my-cell type="ruble"
+             field="model.tabIndirectCharges.commonChargesTotalIndirectStaffCharges.first"
+             my-disabled="true"
+             value="{{model.tabIndirectCharges.commonChargesTotalIndirectStaffCharges.first=
+                                model.tabIndirectCharges.commonChargesNonproductiveStaffSalary.first+
+                                model.tabIndirectCharges.commonChargesSalaryTax.first+
+                                model.tabIndirectCharges.commonChargesOptionalInsuranceAdministration.first+
+                                model.tabIndirectCharges.commonChargesEmployeeMealsCharges.first+
+                                model.tabIndirectCharges.commonChargesWorkingClothesDryCleaning.first+
+                                model.tabIndirectCharges.commonChargesOtherChargeOnStaff.first+
+                                model.tabIndirectCharges.commonChargesEducation.first+
+                                model.tabIndirectCharges.commonChargesTravelingAllowance.first}}">
+    </my-cell>
+</my-row>
 
-<!--<my-row field="commonChargesCommunication">-->
-    <!--<my-cell size="1"-->
-             <!--text="J22">-->
-    <!--</my-cell>-->
-    <!--<my-cell size="3"-->
-             <!--text="Связь">-->
-    <!--</my-cell>-->
-    <!--<my-cell type="ruble"-->
-             <!--field="first"-->
-             <!--on-blur="autoSaving">-->
-    <!--</my-cell>-->
-<!--</my-row>-->
+<my-row>
+    <my-cell size="1"
+             text="J21">
+    </my-cell>
+    <my-cell size="3"
+             text="tab.indirect.charges.post">
+    </my-cell>
+    <my-cell type="ruble"
+             field="model.tabIndirectCharges.commonChargesPost.first"
+             on-blur="autoSaving">
+    </my-cell>
+</my-row>
 
-<!--<my-row field="commonChargesAdvertising">-->
-    <!--<my-cell size="1"-->
-             <!--text="J23">-->
-    <!--</my-cell>-->
-    <!--<my-cell size="3"-->
-             <!--text="Реклама">-->
-    <!--</my-cell>-->
-    <!--<my-cell type="ruble"-->
-             <!--field="first"-->
-             <!--on-blur="autoSaving">-->
-    <!--</my-cell>-->
-<!--</my-row>-->
+<my-row>
+    <my-cell size="1"
+             text="J22">
+    </my-cell>
+    <my-cell size="3"
+             text="tab.indirect.charges.communication">
+    </my-cell>
+    <my-cell type="ruble"
+             field="model.tabIndirectCharges.commonChargesCommunication.first"
+             on-blur="autoSaving">
+    </my-cell>
+</my-row>
 
-<!--<my-row field="commonChargesExpenseAccount">-->
-    <!--<my-cell size="1"-->
-             <!--text="J24">-->
-    <!--</my-cell>-->
-    <!--<my-cell size="3"-->
-             <!--text="Представительские расходы">-->
-    <!--</my-cell>-->
-    <!--<my-cell type="ruble"-->
-             <!--field="first"-->
-             <!--on-blur="autoSaving">-->
-    <!--</my-cell>-->
-<!--</my-row>-->
+<my-row>
+    <my-cell size="1"
+             text="J23">
+    </my-cell>
+    <my-cell size="3"
+             text="tab.common.advertising">
+    </my-cell>
+    <my-cell type="ruble"
+             field="model.tabIndirectCharges.commonChargesAdvertising.first"
+             on-blur="autoSaving">
+    </my-cell>
+</my-row>
 
-<!--<my-row field="commonChargesEntranceFeeDonations">-->
-    <!--<my-cell size="1"-->
-             <!--text="J25">-->
-    <!--</my-cell>-->
-    <!--<my-cell size="3"-->
-             <!--text="Подписка, вступительный взнос и пожертвования">-->
-    <!--</my-cell>-->
-    <!--<my-cell type="ruble"-->
-             <!--field="first"-->
-             <!--on-blur="autoSaving">-->
-    <!--</my-cell>-->
-<!--</my-row>-->
+<my-row>
+    <my-cell size="1"
+             text="J24">
+    </my-cell>
+    <my-cell size="3"
+             text="tab.indirect.charges.expense.account">
+    </my-cell>
+    <my-cell type="ruble"
+             field="model.tabIndirectCharges.commonChargesExpenseAccount.first"
+             on-blur="autoSaving">
+    </my-cell>
+</my-row>
 
-<!--<my-row field="commonChargesComputerServices">-->
-    <!--<my-cell size="1"-->
-             <!--text="J26">-->
-    <!--</my-cell>-->
-    <!--<my-cell size="3"-->
-             <!--text="Обслуживание компьютерной техники">-->
-    <!--</my-cell>-->
-    <!--<my-cell type="ruble"-->
-             <!--field="first"-->
-             <!--on-blur="autoSaving">-->
-    <!--</my-cell>-->
-<!--</my-row>-->
+<my-row>
+    <my-cell size="1"
+             text="J25">
+    </my-cell>
+    <my-cell size="3"
+             text="tab.indirect.charges.entrance.fee.donations">
+    </my-cell>
+    <my-cell type="ruble"
+             field="model.tabIndirectCharges.commonChargesEntranceFeeDonations.first"
+             on-blur="autoSaving">
+    </my-cell>
+</my-row>
 
-<!--<my-row field="commonChargesOfficeCharges">-->
-    <!--<my-cell size="1"-->
-             <!--text="J27">-->
-    <!--</my-cell>-->
-    <!--<my-cell size="3"-->
-             <!--text="Расходы на офисы">-->
-    <!--</my-cell>-->
-    <!--<my-cell type="ruble"-->
-             <!--field="first"-->
-             <!--on-blur="autoSaving">-->
-    <!--</my-cell>-->
-<!--</my-row>-->
+<my-row>
+    <my-cell size="1"
+             text="J26">
+    </my-cell>
+    <my-cell size="3"
+             text="tab.indirect.charges.computer.services">
+    </my-cell>
+    <my-cell type="ruble"
+             field="model.tabIndirectCharges.commonChargesComputerServices.first"
+             on-blur="autoSaving">
+    </my-cell>
+</my-row>
 
-<!--<my-row field="commonChargesEquipmentService">-->
-    <!--<my-cell size="1"-->
-             <!--text="J28">-->
-    <!--</my-cell>-->
-    <!--<my-cell size="3"-->
-             <!--text="Обслуживание оборудования">-->
-    <!--</my-cell>-->
-    <!--<my-cell type="ruble"-->
-             <!--field="first"-->
-             <!--on-blur="autoSaving">-->
-    <!--</my-cell>-->
-<!--</my-row>-->
+<my-row>
+    <my-cell size="1"
+             text="J27">
+    </my-cell>
+    <my-cell size="3"
+             text="tab.indirect.charges.office.charges">
+    </my-cell>
+    <my-cell type="ruble"
+             field="model.tabIndirectCharges.commonChargesOfficeCharges.first"
+             on-blur="autoSaving">
+    </my-cell>
+</my-row>
 
-<!--<my-row field="commonChargesEquipmentLeasingCharges">-->
-    <!--<my-cell size="1"-->
-             <!--text="J29">-->
-    <!--</my-cell>-->
-    <!--<my-cell size="3"-->
-             <!--text="Лизинг оборудования / Расходы">-->
-    <!--</my-cell>-->
-    <!--<my-cell type="ruble"-->
-             <!--field="first"-->
-             <!--on-blur="autoSaving">-->
-    <!--</my-cell>-->
-<!--</my-row>-->
+<my-row>
+    <my-cell size="1"
+             text="J28">
+    </my-cell>
+    <my-cell size="3"
+             text="tab.indirect.charges.equipment.service">
+    </my-cell>
+    <my-cell type="ruble"
+             field="model.tabIndirectCharges.commonChargesEquipmentService.first"
+             on-blur="autoSaving">
+    </my-cell>
+</my-row>
 
-<!--<my-row field="commonChargesCompanyCarsCharges">-->
-    <!--<my-cell size="1"-->
-             <!--text="J30">-->
-    <!--</my-cell>-->
-    <!--<my-cell size="3"-->
-             <!--text="Расходы на а/м компании">-->
-    <!--</my-cell>-->
-    <!--<my-cell type="ruble"-->
-             <!--field="first"-->
-             <!--on-blur="autoSaving">-->
-    <!--</my-cell>-->
-<!--</my-row>-->
+<my-row>
+    <my-cell size="1"
+             text="J29">
+    </my-cell>
+    <my-cell size="3"
+             text="tab.indirect.charges.equipment.leasing.charges">
+    </my-cell>
+    <my-cell type="ruble"
+             field="model.tabIndirectCharges.commonChargesEquipmentLeasingCharges.first"
+             on-blur="autoSaving">
+    </my-cell>
+</my-row>
 
-<!--<my-row field="commonChargesAmortizationComputers">-->
-    <!--<my-cell size="1"-->
-             <!--text="J31">-->
-    <!--</my-cell>-->
-    <!--<my-cell size="3"-->
-             <!--text="Амортизация - компьютерная техника">-->
-    <!--</my-cell>-->
-    <!--<my-cell type="ruble"-->
-             <!--field="first"-->
-             <!--on-blur="autoSaving">-->
-    <!--</my-cell>-->
-<!--</my-row>-->
+<my-row>
+    <my-cell size="1"
+             text="J30">
+    </my-cell>
+    <my-cell size="3"
+             text="tab.common.company.cars.charges">
+    </my-cell>
+    <my-cell type="ruble"
+             field="model.tabIndirectCharges.commonChargesCompanyCarsCharges.first"
+             on-blur="autoSaving">
+    </my-cell>
+</my-row>
 
-<!--<my-row field="commonChargesAmortizationOtherTangibleAssets">-->
-    <!--<my-cell size="1"-->
-             <!--text="J32">-->
-    <!--</my-cell>-->
-    <!--<my-cell size="3"-->
-             <!--text="Амортизация - Другие материальные активы, кроме собственности">-->
-    <!--</my-cell>-->
-    <!--<my-cell type="ruble"-->
-             <!--field="first"-->
-             <!--on-blur="autoSaving">-->
-    <!--</my-cell>-->
-<!--</my-row>-->
+<my-row>
+    <my-cell size="1"
+             text="J31">
+    </my-cell>
+    <my-cell size="3"
+             text="tab.indirect.charges.amortization.computers">
+    </my-cell>
+    <my-cell type="ruble"
+             field="model.tabIndirectCharges.commonChargesAmortizationComputers.first"
+             on-blur="autoSaving">
+    </my-cell>
+</my-row>
 
-<!--<my-row field="commonChargesTotalAmortization">-->
-    <!--<my-cell size="1"-->
-             <!--text="J40">-->
-    <!--</my-cell>-->
-    <!--<my-cell size="3"-->
-             <!--text="Итого аморт-ия активов, кроме собственности">-->
-    <!--</my-cell>-->
-    <!--<my-cell type="ruble"-->
-             <!--field="first"-->
-             <!--my-disabled="true"-->
-             <!--value="{{model.first=-->
-                                <!--baseModel.commonChargesAmortizationComputers.first+-->
-                                <!--baseModel.commonChargesAmortizationOtherTangibleAssets.first}}">-->
-    <!--</my-cell>-->
-<!--</my-row>-->
+<my-row>
+    <my-cell size="1"
+             text="J32">
+    </my-cell>
+    <my-cell size="3"
+             text="tab.indirect.charges.amortization.other.tangible.assets">
+    </my-cell>
+    <my-cell type="ruble"
+             field="model.tabIndirectCharges.commonChargesAmortizationOtherTangibleAssets.first"
+             on-blur="autoSaving">
+    </my-cell>
+</my-row>
 
-<!--<my-row field="commonChargesHouseholdCosts">-->
-    <!--<my-cell size="1"-->
-             <!--text="J41">-->
-    <!--</my-cell>-->
-    <!--<my-cell size="3"-->
-             <!--text="Коммунальные платежи">-->
-    <!--</my-cell>-->
-    <!--<my-cell type="ruble"-->
-             <!--field="first"-->
-             <!--on-blur="autoSaving">-->
-    <!--</my-cell>-->
-<!--</my-row>-->
+<my-row>
+    <my-cell size="1"
+             text="J40">
+    </my-cell>
+    <my-cell size="3"
+             text="tab.indirect.charges.total.amortization">
+    </my-cell>
+    <my-cell type="ruble"
+             field="model.tabIndirectCharges.commonChargesTotalAmortization.first"
+             my-disabled="true"
+             value="{{model.tabIndirectCharges.commonChargesTotalAmortization.first=
+                                model.tabIndirectCharges.commonChargesAmortizationComputers.first+
+                                model.tabIndirectCharges.commonChargesAmortizationOtherTangibleAssets.first}}">
+    </my-cell>
+</my-row>
 
-<!--<my-row field="commonChargesInsuranceCharges">-->
-    <!--<my-cell size="1"-->
-             <!--text="J42">-->
-    <!--</my-cell>-->
-    <!--<my-cell size="3"-->
-             <!--text="Расходы на страхование, исключая объекты собственности">-->
-    <!--</my-cell>-->
-    <!--<my-cell type="ruble"-->
-             <!--field="first"-->
-             <!--on-blur="autoSaving">-->
-    <!--</my-cell>-->
-<!--</my-row>-->
+<my-row>
+    <my-cell size="1"
+             text="J41">
+    </my-cell>
+    <my-cell size="3"
+             text="tab.indirect.charges.household.costs">
+    </my-cell>
+    <my-cell type="ruble"
+             field="model.tabIndirectCharges.commonChargesHouseholdCosts.first"
+             on-blur="autoSaving">
+    </my-cell>
+</my-row>
 
-<!--<my-row field="commonChargesConsultingCharges">-->
-    <!--<my-cell size="1"-->
-             <!--text="J43">-->
-    <!--</my-cell>-->
-    <!--<my-cell size="3"-->
-             <!--text="Расходы на аудиторско-консультационные услуги">-->
-    <!--</my-cell>-->
-    <!--<my-cell type="ruble"-->
-             <!--field="first"-->
-             <!--on-blur="autoSaving">-->
-    <!--</my-cell>-->
-<!--</my-row>-->
+<my-row>
+    <my-cell size="1"
+             text="J42">
+    </my-cell>
+    <my-cell size="3"
+             text="tab.indirect.charges.insurance.charges">
+    </my-cell>
+    <my-cell type="ruble"
+             field="model.tabIndirectCharges.commonChargesInsuranceCharges.first"
+             on-blur="autoSaving">
+    </my-cell>
+</my-row>
 
-<!--<my-row field="commonChargesExpertConsultingCost">-->
-    <!--<my-cell size="1"-->
-             <!--text="J44">-->
-    <!--</my-cell>-->
-    <!--<my-cell size="3"-->
-             <!--text="Оплата услуг специалистов">-->
-    <!--</my-cell>-->
-    <!--<my-cell type="ruble"-->
-             <!--field="first"-->
-             <!--on-blur="autoSaving">-->
-    <!--</my-cell>-->
-<!--</my-row>-->
+<my-row>
+    <my-cell size="1"
+             text="J43">
+    </my-cell>
+    <my-cell size="3"
+             text="tab.indirect.charges.consulting.charges">
+    </my-cell>
+    <my-cell type="ruble"
+             field="model.tabIndirectCharges.commonChargesConsultingCharges.first"
+             on-blur="autoSaving">
+    </my-cell>
+</my-row>
 
-<!--<my-row field="commonChargesHeadOfficeCharges">-->
-    <!--<my-cell size="1"-->
-             <!--text="J45">-->
-    <!--</my-cell>-->
-    <!--<my-cell size="3"-->
-             <!--text="Расходы на головной офис">-->
-    <!--</my-cell>-->
-    <!--<my-cell type="ruble"-->
-             <!--field="first"-->
-             <!--on-blur="autoSaving">-->
-    <!--</my-cell>-->
-<!--</my-row>-->
+<my-row>
+    <my-cell size="1"
+             text="J44">
+    </my-cell>
+    <my-cell size="3"
+             text="tab.indirect.charges.expert.consulting.cost">
+    </my-cell>
+    <my-cell type="ruble"
+             field="model.tabIndirectCharges.commonChargesExpertConsultingCost.first"
+             on-blur="autoSaving">
+    </my-cell>
+</my-row>
 
-<!--<my-row field="commonChargesBadArrearsDamage">-->
-    <!--<my-cell size="1"-->
-             <!--text="J46">-->
-    <!--</my-cell>-->
-    <!--<my-cell size="3"-->
-             <!--text="Убытки по безнадежным долгам">-->
-    <!--</my-cell>-->
-    <!--<my-cell type="ruble"-->
-             <!--field="first"-->
-             <!--on-blur="autoSaving">-->
-    <!--</my-cell>-->
-<!--</my-row>-->
+<my-row>
+    <my-cell size="1"
+             text="J45">
+    </my-cell>
+    <my-cell size="3"
+             text="tab.indirect.charges.head.office.charges">
+    </my-cell>
+    <my-cell type="ruble"
+             field="model.tabIndirectCharges.commonChargesHeadOfficeCharges.first"
+             on-blur="autoSaving">
+    </my-cell>
+</my-row>
 
-<!--<my-row field="commonChargesBankCommission">-->
-    <!--<my-cell size="1"-->
-             <!--text="J47">-->
-    <!--</my-cell>-->
-    <!--<my-cell size="3"-->
-             <!--text="Комиссия банка">-->
-    <!--</my-cell>-->
-    <!--<my-cell type="ruble"-->
-             <!--field="first"-->
-             <!--on-blur="autoSaving">-->
-    <!--</my-cell>-->
-<!--</my-row>-->
+<my-row>
+    <my-cell size="1"
+             text="J46">
+    </my-cell>
+    <my-cell size="3"
+             text="tab.indirect.charges.bad.arrears.damage">
+    </my-cell>
+    <my-cell type="ruble"
+             field="model.tabIndirectCharges.commonChargesBadArrearsDamage.first"
+             on-blur="autoSaving">
+    </my-cell>
+</my-row>
 
-<!--<my-row field="commonChargesBankChargesShortTerm">-->
-    <!--<my-cell size="1"-->
-             <!--text="J50">-->
-    <!--</my-cell>-->
-    <!--<my-cell size="3"-->
-             <!--text="Банковские расходы (краткосрочн. вложения)">-->
-    <!--</my-cell>-->
-    <!--<my-cell type="ruble"-->
-             <!--field="first"-->
-             <!--on-blur="autoSaving">-->
-    <!--</my-cell>-->
-<!--</my-row>-->
+<my-row>
+    <my-cell size="1"
+             text="J47">
+    </my-cell>
+    <my-cell size="3"
+             text="tab.indirect.charges.bank.commission">
+    </my-cell>
+    <my-cell type="ruble"
+             field="model.tabIndirectCharges.commonChargesBankCommission.first"
+             on-blur="autoSaving">
+    </my-cell>
+</my-row>
 
-<!--<my-row field="commonChargesBankChargesLongTerm">-->
-    <!--<my-cell size="1"-->
-             <!--text="J51">-->
-    <!--</my-cell>-->
-    <!--<my-cell size="3"-->
-             <!--text="Банковские расходы (долгосрочн. вложения)">-->
-    <!--</my-cell>-->
-    <!--<my-cell type="ruble"-->
-             <!--field="first"-->
-             <!--on-blur="autoSaving">-->
-    <!--</my-cell>-->
-<!--</my-row>-->
+<my-row>
+    <my-cell size="1"
+             text="J50">
+    </my-cell>
+    <my-cell size="3"
+             text="tab.indirect.charges.bank.charges.short.term">
+    </my-cell>
+    <my-cell type="ruble"
+             field="model.tabIndirectCharges.commonChargesBankChargesShortTerm.first"
+             on-blur="autoSaving">
+    </my-cell>
+</my-row>
 
-<!--<my-row field="commonChargesOtherTaxes">-->
-    <!--<my-cell size="1"-->
-             <!--text="J48">-->
-    <!--</my-cell>-->
-    <!--<my-cell size="3"-->
-             <!--text="Другие налоги">-->
-    <!--</my-cell>-->
-    <!--<my-cell type="ruble"-->
-             <!--field="first"-->
-             <!--on-blur="autoSaving">-->
-    <!--</my-cell>-->
-<!--</my-row>-->
+<my-row>
+    <my-cell size="1"
+             text="J51">
+    </my-cell>
+    <my-cell size="3"
+             text="tab.indirect.charges.bank.charges.long.term">
+    </my-cell>
+    <my-cell type="ruble"
+             field="model.tabIndirectCharges.commonChargesBankChargesLongTerm.first"
+             on-blur="autoSaving">
+    </my-cell>
+</my-row>
 
-<!--<my-row field="commonChargesOther">-->
-    <!--<my-cell size="1"-->
-             <!--text="J49">-->
-    <!--</my-cell>-->
-    <!--<my-cell size="3"-->
-             <!--text="Другое">-->
-    <!--</my-cell>-->
-    <!--<my-cell type="ruble"-->
-             <!--field="first"-->
-             <!--on-blur="autoSaving">-->
-    <!--</my-cell>-->
-<!--</my-row>-->
+<my-row>
+    <my-cell size="1"
+             text="J48">
+    </my-cell>
+    <my-cell size="3"
+             text="tab.indirect.charges.other.taxes">
+    </my-cell>
+    <my-cell type="ruble"
+             field="model.tabIndirectCharges.commonChargesOtherTaxes.first"
+             on-blur="autoSaving">
+    </my-cell>
+</my-row>
 
-<!--</my-body>-->
+<my-row>
+    <my-cell size="1"
+             text="J49">
+    </my-cell>
+    <my-cell size="3"
+             text="tab.indirect.charges.other">
+    </my-cell>
+    <my-cell type="ruble"
+             field="model.tabIndirectCharges.commonChargesOther.first"
+             on-blur="autoSaving">
+    </my-cell>
+</my-row>
 
-<!--<my-foot>-->
+</my-body>
 
-    <!--<my-row field="commonChargesTotalIndirectCompanyCharges">-->
-        <!--<my-cell size="1"-->
-                 <!--text="J60">-->
-        <!--</my-cell>-->
-        <!--<my-cell size="3"-->
-                 <!--text="Итого общие непрямые расходы компании">-->
-        <!--</my-cell>-->
-        <!--<my-cell type="ruble"-->
-                 <!--field="first"-->
-                 <!--my-disabled="true"-->
-                 <!--value="{{model.first=-->
-                                <!--baseModel.commonChargesTotalIndirectStaffCharges.first+-->
-                                <!--baseModel.commonChargesPost.first+-->
-                                <!--baseModel.commonChargesCommunication.first+-->
-                                <!--baseModel.commonChargesAdvertising.first+-->
-                                <!--baseModel.commonChargesExpenseAccount.first+-->
-                                <!--baseModel.commonChargesEntranceFeeDonations.first+-->
-                                <!--baseModel.commonChargesComputerServices.first+-->
-                                <!--baseModel.commonChargesOfficeCharges.first+-->
-                                <!--baseModel.commonChargesEquipmentService.first+-->
-                                <!--baseModel.commonChargesEquipmentLeasingCharges.first+-->
-                                <!--baseModel.commonChargesCompanyCarsCharges.first+-->
-                                <!--baseModel.commonChargesTotalAmortization.first+-->
-                                <!--baseModel.commonChargesHouseholdCosts.first+-->
-                                <!--baseModel.commonChargesInsuranceCharges.first+-->
-                                <!--baseModel.commonChargesConsultingCharges.first+-->
-                                <!--baseModel.commonChargesExpertConsultingCost.first+-->
-                                <!--baseModel.commonChargesHeadOfficeCharges.first+-->
-                                <!--baseModel.commonChargesBadArrearsDamage.first+-->
-                                <!--baseModel.commonChargesBankCommission.first+-->
-                                <!--baseModel.commonChargesOtherTaxes.first+-->
-                                <!--baseModel.commonChargesOther.first+-->
-                                <!--baseModel.commonChargesBankChargesShortTerm.first+-->
-                                <!--baseModel.commonChargesBankChargesLongTerm.first}}">-->
-        <!--</my-cell>-->
-    <!--</my-row>-->
+<my-foot>
 
-<!--</my-foot>-->
-<!--</my-table>-->
+    <my-row>
+        <my-cell size="1"
+                 text="J60">
+        </my-cell>
+        <my-cell size="3"
+                 text="tab.indirect.charges.total.indirect.company.charges">
+        </my-cell>
+        <my-cell type="ruble"
+                 field="model.tabIndirectCharges.commonChargesTotalIndirectCompanyCharges.first"
+                 my-disabled="true"
+                 value="{{model.tabIndirectCharges.commonChargesTotalIndirectCompanyCharges.first=
+                                model.tabIndirectCharges.commonChargesTotalIndirectStaffCharges.first+
+                                model.tabIndirectCharges.commonChargesPost.first+
+                                model.tabIndirectCharges.commonChargesCommunication.first+
+                                model.tabIndirectCharges.commonChargesAdvertising.first+
+                                model.tabIndirectCharges.commonChargesExpenseAccount.first+
+                                model.tabIndirectCharges.commonChargesEntranceFeeDonations.first+
+                                model.tabIndirectCharges.commonChargesComputerServices.first+
+                                model.tabIndirectCharges.commonChargesOfficeCharges.first+
+                                model.tabIndirectCharges.commonChargesEquipmentService.first+
+                                model.tabIndirectCharges.commonChargesEquipmentLeasingCharges.first+
+                                model.tabIndirectCharges.commonChargesCompanyCarsCharges.first+
+                                model.tabIndirectCharges.commonChargesTotalAmortization.first+
+                                model.tabIndirectCharges.commonChargesHouseholdCosts.first+
+                                model.tabIndirectCharges.commonChargesInsuranceCharges.first+
+                                model.tabIndirectCharges.commonChargesConsultingCharges.first+
+                                model.tabIndirectCharges.commonChargesExpertConsultingCost.first+
+                                model.tabIndirectCharges.commonChargesHeadOfficeCharges.first+
+                                model.tabIndirectCharges.commonChargesBadArrearsDamage.first+
+                                model.tabIndirectCharges.commonChargesBankCommission.first+
+                                model.tabIndirectCharges.commonChargesOtherTaxes.first+
+                                model.tabIndirectCharges.commonChargesOther.first+
+                                model.tabIndirectCharges.commonChargesBankChargesShortTerm.first+
+                                model.tabIndirectCharges.commonChargesBankChargesLongTerm.first}}">
+        </my-cell>
+    </my-row>
 
-<!--<my-table model="model" field="tabIndirectCharges">-->
-    <!--<my-head>-->
-        <!--<my-row>-->
-            <!--<my-cell size="4"-->
-                     <!--colspan="2"-->
-                     <!--text="Недвижимость"></my-cell>-->
-            <!--<my-cell></my-cell>-->
-        <!--</my-row>-->
-    <!--</my-head>-->
-    <!--<my-body>-->
+</my-foot>
+</my-table>
 
-        <!--<my-row field="immovablePropertyRent">-->
-            <!--<my-cell size="1"-->
-                     <!--text="J61">-->
-            <!--</my-cell>-->
-            <!--<my-cell size="3"-->
-                     <!--text="Аренда">-->
-            <!--</my-cell>-->
-            <!--<my-cell type="ruble"-->
-                     <!--field="first"-->
-                     <!--on-blur="autoSaving">-->
-            <!--</my-cell>-->
-        <!--</my-row>-->
+<my-table>
+    <my-head>
+        <my-row>
+            <my-cell size="4"
+                     colspan="2"
+                     text="tab.indirect.charges.immovable"></my-cell>
+            <my-cell></my-cell>
+        </my-row>
+    </my-head>
+    <my-body>
 
-        <!--<my-row field="immovablePropertyRepairService">-->
-            <!--<my-cell size="1"-->
-                     <!--text="J62">-->
-            <!--</my-cell>-->
-            <!--<my-cell size="3"-->
-                     <!--text="Ремонт и обслуживание">-->
-            <!--</my-cell>-->
-            <!--<my-cell type="ruble"-->
-                     <!--field="first"-->
-                     <!--on-blur="autoSaving">-->
-            <!--</my-cell>-->
-        <!--</my-row>-->
+        <my-row>
+            <my-cell size="1"
+                     text="J61">
+            </my-cell>
+            <my-cell size="3"
+                     text="tab.indirect.charges.rent">
+            </my-cell>
+            <my-cell type="ruble"
+                     field="model.tabIndirectCharges.immovablePropertyRent.first"
+                     on-blur="autoSaving">
+            </my-cell>
+        </my-row>
 
-        <!--<my-row field="immovablePropertyInsuranceProperty">-->
-            <!--<my-cell size="1"-->
-                     <!--text="J63">-->
-            <!--</my-cell>-->
-            <!--<my-cell size="3"-->
-                     <!--text="Страхование объектов собственности">-->
-            <!--</my-cell>-->
-            <!--<my-cell type="ruble"-->
-                     <!--field="first"-->
-                     <!--on-blur="autoSaving">-->
-            <!--</my-cell>-->
-        <!--</my-row>-->
+        <my-row>
+            <my-cell size="1"
+                     text="J62">
+            </my-cell>
+            <my-cell size="3"
+                     text="tab.indirect.charges.repair.service">
+            </my-cell>
+            <my-cell type="ruble"
+                     field="model.tabIndirectCharges.immovablePropertyRepairService.first"
+                     on-blur="autoSaving">
+            </my-cell>
+        </my-row>
 
-        <!--<my-row field="immovablePropertyAmortizationProperty">-->
-            <!--<my-cell size="1"-->
-                     <!--text="J64">-->
-            <!--</my-cell>-->
-            <!--<my-cell size="3"-->
-                     <!--text="Амортизация собственности">-->
-            <!--</my-cell>-->
-            <!--<my-cell type="ruble"-->
-                     <!--field="first"-->
-                     <!--on-blur="autoSaving">-->
-            <!--</my-cell>-->
-        <!--</my-row>-->
+        <my-row>
+            <my-cell size="1"
+                     text="J63">
+            </my-cell>
+            <my-cell size="3"
+                     text="tab.indirect.charges.insurance.property">
+            </my-cell>
+            <my-cell type="ruble"
+                     field="model.tabIndirectCharges.immovablePropertyInsuranceProperty.first"
+                     on-blur="autoSaving">
+            </my-cell>
+        </my-row>
 
-        <!--<my-row field="immovablePropertyOtherPropertyCharges">-->
-            <!--<my-cell size="1"-->
-                     <!--text="J65">-->
-            <!--</my-cell>-->
-            <!--<my-cell size="3"-->
-                     <!--text="Другие расходы, связанные с объектами собственности">-->
-            <!--</my-cell>-->
-            <!--<my-cell type="ruble"-->
-                     <!--field="first"-->
-                     <!--on-blur="autoSaving">-->
-            <!--</my-cell>-->
-        <!--</my-row>-->
+        <my-row>
+            <my-cell size="1"
+                     text="J64">
+            </my-cell>
+            <my-cell size="3"
+                     text="tab.indirect.charges.amortization.property">
+            </my-cell>
+            <my-cell type="ruble"
+                     field="model.tabIndirectCharges.immovablePropertyAmortizationProperty.first"
+                     on-blur="autoSaving">
+            </my-cell>
+        </my-row>
 
-    <!--</my-body>-->
-    <!--<my-foot>-->
+        <my-row>
+            <my-cell size="1"
+                     text="J65">
+            </my-cell>
+            <my-cell size="3"
+                     text="tab.indirect.charges.other.property.charges">
+            </my-cell>
+            <my-cell type="ruble"
+                     field="model.tabIndirectCharges.immovablePropertyOtherPropertyCharges.first"
+                     on-blur="autoSaving">
+            </my-cell>
+        </my-row>
 
-        <!--<my-row field="immovablePropertyTotalCharges">-->
-            <!--<my-cell size="1"-->
-                     <!--text="J70">-->
-            <!--</my-cell>-->
-            <!--<my-cell size="3"-->
-                     <!--text="Всего расходов по собственности">-->
-            <!--</my-cell>-->
-            <!--<my-cell type="ruble"-->
-                     <!--field="first"-->
-                     <!--my-disabled="true"-->
-                     <!--value="{{model.first=-->
-                                <!--baseModel.immovablePropertyRent.first+-->
-                                <!--baseModel.immovablePropertyRepairService.first+-->
-                                <!--baseModel.immovablePropertyInsuranceProperty.first+-->
-                                <!--baseModel.immovablePropertyAmortizationProperty.first+-->
-                                <!--baseModel.immovablePropertyOtherPropertyCharges.first}}">-->
-            <!--</my-cell>-->
-        <!--</my-row>-->
+    </my-body>
+    <my-foot>
 
-    <!--</my-foot>-->
-<!--</my-table>-->
+        <my-row>
+            <my-cell size="1"
+                     text="J70">
+            </my-cell>
+            <my-cell size="3"
+                     text="tab.indirect.charges.total.charges">
+            </my-cell>
+            <my-cell type="ruble"
+                     field="model.tabIndirectCharges.immovablePropertyTotalCharges.first"
+                     my-disabled="true"
+                     value="{{model.tabIndirectCharges.immovablePropertyTotalCharges.first=
+                                model.tabIndirectCharges.immovablePropertyRent.first+
+                                model.tabIndirectCharges.immovablePropertyRepairService.first+
+                                model.tabIndirectCharges.immovablePropertyInsuranceProperty.first+
+                                model.tabIndirectCharges.immovablePropertyAmortizationProperty.first+
+                                model.tabIndirectCharges.immovablePropertyOtherPropertyCharges.first}}">
+            </my-cell>
+        </my-row>
 
-<!--<my-table model="model" field="tabIndirectCharges">-->
-    <!--<my-head>-->
-        <!--<my-row>-->
-            <!--<my-cell size="4"-->
-                     <!--colspan="2"-->
-                     <!--text="Начисление процентов"></my-cell>-->
-            <!--<my-cell></my-cell>-->
-        <!--</my-row>-->
-    <!--</my-head>-->
-    <!--<my-body>-->
+    </my-foot>
+</my-table>
 
-        <!--<my-row field="chargingInterestPaymentOfInterestOnOverdraft">-->
-            <!--<my-cell size="1"-->
-                     <!--text="J71">-->
-            <!--</my-cell>-->
-            <!--<my-cell size="3"-->
-                     <!--text="Выплаты процентов по овердрафту">-->
-            <!--</my-cell>-->
-            <!--<my-cell type="ruble"-->
-                     <!--field="first"-->
-                     <!--on-blur="autoSaving">-->
-            <!--</my-cell>-->
-        <!--</my-row>-->
+<my-table>
+    <my-head>
+        <my-row>
+            <my-cell size="4"
+                     colspan="2"
+                     text="tab.indirect.charges.charging.interest"></my-cell>
+            <my-cell></my-cell>
+        </my-row>
+    </my-head>
+    <my-body>
 
-        <!--<my-row field="chargingInterestInterestPaymentsOnShortNoticeAndCredit">-->
-            <!--<my-cell size="1"-->
-                     <!--text="J72">-->
-            <!--</my-cell>-->
-            <!--<my-cell size="3"-->
-                     <!--text="Выплаты процентов по краткосрочным займам и кредитам">-->
-            <!--</my-cell>-->
-            <!--<my-cell type="ruble"-->
-                     <!--field="first"-->
-                     <!--on-blur="autoSaving">-->
-            <!--</my-cell>-->
-        <!--</my-row>-->
+        <my-row>
+            <my-cell size="1"
+                     text="J71">
+            </my-cell>
+            <my-cell size="3"
+                     text="tab.indirect.charges.payment.of.interest.on.overdraft">
+            </my-cell>
+            <my-cell type="ruble"
+                     field="model.tabIndirectCharges.chargingInterestPaymentOfInterestOnOverdraft.first"
+                     on-blur="autoSaving">
+            </my-cell>
+        </my-row>
 
-        <!--<my-row field="chargingInterestInterestPaymentsOnOtherShortNotice">-->
-            <!--<my-cell size="1"-->
-                     <!--text="J73">-->
-            <!--</my-cell>-->
-            <!--<my-cell size="3"-->
-                     <!--text="Выплаты процентов по прочим краткосрочным займам">-->
-            <!--</my-cell>-->
-            <!--<my-cell type="ruble"-->
-                     <!--field="first"-->
-                     <!--on-blur="autoSaving">-->
-            <!--</my-cell>-->
-        <!--</my-row>-->
+        <my-row>
+            <my-cell size="1"
+                     text="J72">
+            </my-cell>
+            <my-cell size="3"
+                     text="tab.indirect.charges.payments.on.short.notice.and.credit">
+            </my-cell>
+            <my-cell type="ruble"
+                     field="model.tabIndirectCharges.chargingInterestInterestPaymentsOnShortNoticeAndCredit.first"
+                     on-blur="autoSaving">
+            </my-cell>
+        </my-row>
 
-        <!--<my-row field="chargingInterestInterestPaymentsOnLongNoticeAndCredit">-->
-            <!--<my-cell size="1"-->
-                     <!--text="J75">-->
-            <!--</my-cell>-->
-            <!--<my-cell size="3"-->
-                     <!--text="Выплаты процентов по долгосрочным займам и кредитам">-->
-            <!--</my-cell>-->
-            <!--<my-cell type="ruble"-->
-                     <!--field="first"-->
-                     <!--on-blur="autoSaving">-->
-            <!--</my-cell>-->
-        <!--</my-row>-->
-    <!--</my-body>-->
+        <my-row>
+            <my-cell size="1"
+                     text="J73">
+            </my-cell>
+            <my-cell size="3"
+                     text="tab.indirect.charges.payments.on.other.short.notice">
+            </my-cell>
+            <my-cell type="ruble"
+                     field="model.tabIndirectCharges.chargingInterestInterestPaymentsOnOtherShortNotice.first"
+                     on-blur="autoSaving">
+            </my-cell>
+        </my-row>
 
-    <!--<my-foot>-->
+        <my-row>
+            <my-cell size="1"
+                     text="J75">
+            </my-cell>
+            <my-cell size="3"
+                     text="tab.indirect.charges.payments.on.long.notice.and.credit">
+            </my-cell>
+            <my-cell type="ruble"
+                     field="model.tabIndirectCharges.chargingInterestInterestPaymentsOnLongNoticeAndCredit.first"
+                     on-blur="autoSaving">
+            </my-cell>
+        </my-row>
+    </my-body>
 
-        <!--<my-row field="chargingInterestTotalChargesFromInterest">-->
-            <!--<my-cell size="1"-->
-                     <!--text="J80">-->
-            <!--</my-cell>-->
-            <!--<my-cell size="3"-->
-                     <!--text="Итого расходы по выплате процентов">-->
-            <!--</my-cell>-->
-            <!--<my-cell type="ruble"-->
-                     <!--field="first"-->
-                     <!--my-disabled="true"-->
-                     <!--value="{{model.first=-->
-                                <!--baseModel.chargingInterestPaymentOfInterestOnOverdraft.first+-->
-                                <!--baseModel.chargingInterestInterestPaymentsOnShortNoticeAndCredit.first+-->
-                                <!--baseModel.chargingInterestInterestPaymentsOnOtherShortNotice.first+-->
-                                <!--baseModel.chargingInterestInterestPaymentsOnLongNoticeAndCredit.first}}">-->
-            <!--</my-cell>-->
-        <!--</my-row>-->
+    <my-foot>
 
-
-    <!--</my-foot>-->
-<!--</my-table>-->
-
-<!--<my-table model="model" field="tabIndirectCharges">-->
-
-    <!--<my-foot>-->
-
-        <!--<my-row field="totalIndirectCharges">-->
-            <!--<my-cell size="1"-->
-                     <!--text="J90">-->
-            <!--</my-cell>-->
-            <!--<my-cell size="3"-->
-                     <!--text="Итого непрямых расходов">-->
-            <!--</my-cell>-->
-            <!--<my-cell type="ruble"-->
-                     <!--field="first"-->
-                     <!--my-disabled="true"-->
-                     <!--value="{{model.first=-->
-                                <!--baseModel.commonChargesTotalIndirectCompanyCharges.first+-->
-                                <!--baseModel.immovablePropertyTotalCharges.first+-->
-                                <!--baseModel.chargingInterestTotalChargesFromInterest.first}}">-->
-            <!--</my-cell>-->
-        <!--</my-row>-->
+        <my-row>
+            <my-cell size="1"
+                     text="J80">
+            </my-cell>
+            <my-cell size="3"
+                     text="tab.indirect.charges.total.charges.from.interest">
+            </my-cell>
+            <my-cell type="ruble"
+                     field="model.tabIndirectCharges.chargingInterestTotalChargesFromInterest.first"
+                     my-disabled="true"
+                     value="{{model.tabIndirectCharges.chargingInterestTotalChargesFromInterest.first=
+                                model.tabIndirectCharges.chargingInterestPaymentOfInterestOnOverdraft.first+
+                                model.tabIndirectCharges.chargingInterestInterestPaymentsOnShortNoticeAndCredit.first+
+                                model.tabIndirectCharges.chargingInterestInterestPaymentsOnOtherShortNotice.first+
+                                model.tabIndirectCharges.chargingInterestInterestPaymentsOnLongNoticeAndCredit.first}}">
+            </my-cell>
+        </my-row>
 
 
-    <!--</my-foot>-->
+    </my-foot>
+</my-table>
 
-<!--</my-table>-->
+<my-table>
+
+    <my-foot>
+
+        <my-row>
+            <my-cell size="1"
+                     text="J90">
+            </my-cell>
+            <my-cell size="3"
+                     text="tab.indirect.charges.total.indirect.charges">
+            </my-cell>
+            <my-cell type="ruble"
+                     field="model.tabIndirectCharges.totalIndirectCharges.first"
+                     my-disabled="true"
+                     value="{{model.tabIndirectCharges.totalIndirectCharges.first=
+                                model.tabIndirectCharges.commonChargesTotalIndirectCompanyCharges.first+
+                                model.tabIndirectCharges.immovablePropertyTotalCharges.first+
+                                model.tabIndirectCharges.chargingInterestTotalChargesFromInterest.first}}">
+            </my-cell>
+        </my-row>
+
+
+    </my-foot>
+
+</my-table>
 
 </div>
