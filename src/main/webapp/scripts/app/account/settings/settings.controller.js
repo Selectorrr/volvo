@@ -7,6 +7,7 @@ angular.module('volvoApp')
         Principal.identity().then(function (account) {
             $scope.settingsAccount = account;
         });
+        $scope.isInRole = Principal.isInRole;
 
         $scope.save = function () {
             Auth.updateAccount($scope.settingsAccount).then(function () {

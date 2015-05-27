@@ -18,7 +18,7 @@
 
             <form name="form" role="form" novalidate ng-submit="save()" show-validation>
 
-                <div class="form-group">
+                <div class="form-group" ng-if="isInRole('ROLE_DEALER')">
                     <label translate="settings.form.organizationname">Organization Name</label>
                     <input type="text" class="form-control" name="organizationName"
                            placeholder="{{'settings.form.organizationname.placeholder' | translate}}"
