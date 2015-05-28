@@ -1,10 +1,17 @@
 package com.volvo.metis.domain;
 
-/**
- * Created by Selector on 25.05.2015.
- */
-public class MonthReport {
+public class Report {
 
+    public static final String STATUS_DRAFT = "DRAFT";
+    public static final String STATUS_UNDER_CONSIDERATION = "UNDER_CONSIDERATION";
+    public static final String STATUS_APPROVED = "APPROVED";
+
+    public Report() {
+    }
+
+    public Report(String kind) {
+        this.kind = kind;
+    }
 
     /**
      * Вкладка "Новые автомобили"
@@ -56,6 +63,9 @@ public class MonthReport {
      */
     private TabStaffQuantity tabStaffQuantity;
 
+    private String kind; //вид отчета план/факт
+
+    private String status = STATUS_DRAFT;
 
     public TabNewCars getTabNewCars() {
         return tabNewCars;
@@ -135,5 +145,21 @@ public class MonthReport {
 
     public void setTabStaffQuantity(TabStaffQuantity tabStaffQuantity) {
         this.tabStaffQuantity = tabStaffQuantity;
+    }
+
+    public String getStatus() {
+        return status;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
+    }
+
+    public String getKind() {
+        return kind;
+    }
+
+    public void setKind(String kind) {
+        this.kind = kind;
     }
 }

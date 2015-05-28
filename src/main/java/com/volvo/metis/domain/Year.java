@@ -9,28 +9,25 @@ import java.io.Serializable;
  * Отчет
  */
 @Document(collection = "T_REPORT")
-public class YearReport extends AbstractAuditingEntity implements Serializable {
+public class Year extends AbstractAuditingEntity implements Serializable {
 
     @Id
     private String id;
-    private String kind; //вид отчета план/факт
+
     private Integer year;
 
-    private MonthReport january;
-    private MonthReport february;
-    private MonthReport march;
-    private MonthReport april;
-    private MonthReport may;
-    private MonthReport june;
-    private MonthReport july;
-    private MonthReport august;
-    private MonthReport september;
-    private MonthReport october;
-    private MonthReport november;
-    private MonthReport december;
-
-    private String status; //состояние отчета черновик/согласован
-
+    private Month january;
+    private Month february;
+    private Month march;
+    private Month april;
+    private Month may;
+    private Month june;
+    private Month july;
+    private Month august;
+    private Month september;
+    private Month october;
+    private Month november;
+    private Month december;
 
     public String getId() {
         return id;
@@ -40,99 +37,99 @@ public class YearReport extends AbstractAuditingEntity implements Serializable {
         this.id = id;
     }
 
-    public MonthReport getJanuary() {
+    public Month getJanuary() {
         return january;
     }
 
-    public void setJanuary(MonthReport january) {
+    public void setJanuary(Month january) {
         this.january = january;
     }
 
-    public MonthReport getFebruary() {
+    public Month getFebruary() {
         return february;
     }
 
-    public void setFebruary(MonthReport february) {
+    public void setFebruary(Month february) {
         this.february = february;
     }
 
-    public MonthReport getMarch() {
+    public Month getMarch() {
         return march;
     }
 
-    public void setMarch(MonthReport march) {
+    public void setMarch(Month march) {
         this.march = march;
     }
 
-    public MonthReport getApril() {
+    public Month getApril() {
         return april;
     }
 
-    public void setApril(MonthReport april) {
+    public void setApril(Month april) {
         this.april = april;
     }
 
-    public MonthReport getMay() {
+    public Month getMay() {
         return may;
     }
 
-    public void setMay(MonthReport may) {
+    public void setMay(Month may) {
         this.may = may;
     }
 
-    public MonthReport getJune() {
+    public Month getJune() {
         return june;
     }
 
-    public void setJune(MonthReport june) {
+    public void setJune(Month june) {
         this.june = june;
     }
 
-    public MonthReport getJuly() {
+    public Month getJuly() {
         return july;
     }
 
-    public void setJuly(MonthReport july) {
+    public void setJuly(Month july) {
         this.july = july;
     }
 
-    public MonthReport getAugust() {
+    public Month getAugust() {
         return august;
     }
 
-    public void setAugust(MonthReport august) {
+    public void setAugust(Month august) {
         this.august = august;
     }
 
-    public MonthReport getSeptember() {
+    public Month getSeptember() {
         return september;
     }
 
-    public void setSeptember(MonthReport september) {
+    public void setSeptember(Month september) {
         this.september = september;
     }
 
-    public MonthReport getOctober() {
+    public Month getOctober() {
         return october;
     }
 
-    public void setOctober(MonthReport october) {
+    public void setOctober(Month october) {
         this.october = october;
     }
 
-    public MonthReport getNovember() {
+    public Month getNovember() {
         return november;
     }
 
-    public void setNovember(MonthReport november) {
+    public void setNovember(Month november) {
         this.november = november;
     }
 
-    public MonthReport getDecember() {
+    public Month getDecember() {
         return december;
     }
 
-    public void setDecember(MonthReport december) {
+    public void setDecember(Month december) {
         this.december = december;
     }
 
@@ -144,23 +141,19 @@ public class YearReport extends AbstractAuditingEntity implements Serializable {
         this.year = year;
     }
 
-    public String getKind() {
-        return kind;
+    public Report get(int month, String kind) {
+        Month result = get(month);
+        switch (kind) {
+            default:
+                return null;
+            case Month.KIND_PLAN:
+                return result.getPlan();
+            case Month.KIND_FACT:
+                return result.getFact();
+        }
     }
 
-    public void setKind(String kind) {
-        this.kind = kind;
-    }
-
-    public String getStatus() {
-        return status;
-    }
-
-    public void setStatus(String status) {
-        this.status = status;
-    }
-
-    public MonthReport get(int month) {
+    public Month get(int month) {
         switch (month) {
             default:
                 return null;
@@ -191,45 +184,76 @@ public class YearReport extends AbstractAuditingEntity implements Serializable {
         }
     }
 
-    public void set(int month, MonthReport monthReport) {
+    public static String getMonthName(int month) {
+        switch (month) {
+            default:
+                return null;
+            case 1:
+                return "january";
+            case 2:
+                return "february";
+            case 3:
+                return "march";
+            case 4:
+                return "april";
+            case 5:
+                return "may";
+            case 6:
+                return "june";
+            case 7:
+                return "july";
+            case 8:
+                return "august";
+            case 9:
+                return "september";
+            case 10:
+                return "october";
+            case 11:
+                return "november";
+            case 12:
+                return "december";
+        }
+    }
+
+    public void set(int month, Month report) {
         switch (month) {
             default:
                 break;
             case 1:
-                january = monthReport;
+                january = report;
                 break;
             case 2:
-                february = monthReport;
+                february = report;
                 break;
             case 3:
-                march = monthReport;
+                march = report;
                 break;
             case 4:
-                april = monthReport;
+                april = report;
                 break;
             case 5:
-                may = monthReport;
+                may = report;
                 break;
             case 6:
-                june = monthReport;
+                june = report;
                 break;
             case 7:
-                july = monthReport;
+                july = report;
                 break;
             case 8:
-                august = monthReport;
+                august = report;
                 break;
             case 9:
-                september = monthReport;
+                september = report;
                 break;
             case 10:
-                october = monthReport;
+                october = report;
                 break;
             case 11:
-                november = monthReport;
+                november = report;
                 break;
             case 12:
-                december = monthReport;
+                december = report;
                 break;
         }
     }
@@ -240,7 +264,7 @@ public class YearReport extends AbstractAuditingEntity implements Serializable {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
 
-        YearReport that = (YearReport) o;
+        Year that = (Year) o;
 
         if (id != null ? !id.equals(that.id) : that.id != null) return false;
         if (year != null ? !year.equals(that.year) : that.year != null) return false;

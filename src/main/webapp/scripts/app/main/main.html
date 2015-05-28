@@ -1,190 +1,190 @@
 <div ng-cloak>
-    <div class="row">
-        <div class="col-xs-12">
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <span translate="main.parameters">Parameters</span>
+<div class="row">
+    <div class="col-xs-12">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <span translate="main.parameters">Parameters</span>
+            </div>
+            <div class="panel-body">
+                <div class="form-group">
+                    <label for="mode" translate="main.mode">Mode</label>
+                    <br/>
+
+                    <div id="mode" class="btn-group btn-group-justified" role="group">
+                        <div class="btn-group" role="group">
+                            <button type="button" class="btn btn-default active">
+                                <span translate="main.fact">Fact</span>
+                            </button>
+                        </div>
+                        <div class="btn-group" role="group">
+                            <button type="button" class="btn btn-default" disabled>
+                                <span translate="main.plan">Plan</span>
+                            </button>
+                        </div>
+                    </div>
                 </div>
-                <div class="panel-body">
-                    <div class="form-group">
-                        <label for="mode" translate="main.mode">Mode</label>
-                        <br/>
+                <div class="form-group">
+                    <label for="monthSelector" translate="main.month">Month</label>
+                    <br/>
 
-                        <div id="mode" class="btn-group btn-group-justified" role="group">
-                            <div class="btn-group" role="group">
-                                <button type="button" class="btn btn-default active">
-                                    <span translate="main.fact">Fact</span>
-                                </button>
-                            </div>
-                            <div class="btn-group" role="group">
-                                <button type="button" class="btn btn-default" disabled>
-                                    <span translate="main.plan">Plan</span>
-                                </button>
-                            </div>
+                    <div id="monthSelector" class="btn-group btn-group-justified" role="group">
+                        <div class="btn-group" role="group">
+                            <button type="button" class="btn btn-default"
+                                    ng-click="options.month=1"
+                                    ng-class="{'active':options.month===1}">
+                                <span translate="main.months.january">January</span>
+                            </button>
+                        </div>
+                        <div class="btn-group" role="group">
+                            <button type="button" class="btn btn-default"
+                                    ng-click="options.month=2"
+                                    ng-class="{'active':options.month===2}">
+                                <span translate="main.months.february">February</span>
+                            </button>
+                        </div>
+                        <div class="btn-group" role="group">
+                            <button type="button" class="btn btn-default"
+                                    ng-click="options.month=3"
+                                    ng-class="{'active':options.month===3}">
+                                <span translate="main.months.march">March</span>
+                            </button>
+                        </div>
+                        <div class="btn-group" role="group">
+                            <button type="button" class="btn btn-default"
+                                    ng-click="options.month=4"
+                                    ng-class="{'active':options.month===4}">
+                                <span translate="main.months.april">April</span>
+                            </button>
+                        </div>
+                        <div class="btn-group" role="group">
+                            <button type="button" class="btn btn-default"
+                                    ng-click="options.month=5"
+                                    ng-class="{'active':options.month===5}">
+                                <span translate="main.months.may">May</span>
+                            </button>
+                        </div>
+                        <div class="btn-group" role="group">
+                            <button type="button" class="btn btn-default"
+                                    ng-click="options.month=6"
+                                    ng-class="{'active':options.month===6}">
+                                <span translate="main.months.june">June</span>
+                            </button>
+                        </div>
+                        <div class="btn-group" role="group">
+                            <button type="button" class="btn btn-default"
+                                    ng-click="options.month=7"
+                                    ng-class="{'active':options.month===7}">
+                                <span translate="main.months.july">July</span>
+                            </button>
+                        </div>
+                        <div class="btn-group" role="group">
+                            <button type="button" class="btn btn-default"
+                                    ng-click="options.month=8"
+                                    ng-class="{'active':options.month===8}">
+                                <span translate="main.months.august">August</span>
+                            </button>
+                        </div>
+                        <div class="btn-group" role="group">
+                            <button type="button" class="btn btn-default"
+                                    ng-click="options.month=9"
+                                    ng-class="{'active':options.month===9}">
+                                <span translate="main.months.september">September</span>
+                            </button>
+                        </div>
+                        <div class="btn-group" role="group">
+                            <button type="button" class="btn btn-default"
+                                    ng-click="options.month=10"
+                                    ng-class="{'active':options.month===10}">
+                                <span translate="main.months.october">October</span>
+                            </button>
+                        </div>
+                        <div class="btn-group" role="group">
+                            <button type="button" class="btn btn-default"
+                                    ng-click="options.month=11"
+                                    ng-class="{'active':options.month===11}">
+                                <span translate="main.months.november">November</span>
+                            </button>
+                        </div>
+                        <div class="btn-group" role="group">
+                            <button type="button" class="btn btn-default"
+                                    ng-click="options.month=12"
+                                    ng-class="{'active':options.month===12}">
+                                <span translate="main.months.december">December</span>
+                            </button>
                         </div>
                     </div>
-                    <div class="form-group">
-                        <label for="monthSelector" translate="main.month">Month</label>
-                        <br/>
-
-                        <div id="monthSelector" class="btn-group btn-group-justified" role="group">
-                            <div class="btn-group" role="group">
-                                <button type="button" class="btn btn-default"
-                                        ng-click="options.month=1"
-                                        ng-class="{'active':options.month===1}">
-                                    <span translate="main.months.january">January</span>
-                                </button>
-                            </div>
-                            <div class="btn-group" role="group">
-                                <button type="button" class="btn btn-default"
-                                        ng-click="options.month=2"
-                                        ng-class="{'active':options.month===2}">
-                                    <span translate="main.months.february">February</span>
-                                </button>
-                            </div>
-                            <div class="btn-group" role="group">
-                                <button type="button" class="btn btn-default"
-                                        ng-click="options.month=3"
-                                        ng-class="{'active':options.month===3}">
-                                    <span translate="main.months.march">March</span>
-                                </button>
-                            </div>
-                            <div class="btn-group" role="group">
-                                <button type="button" class="btn btn-default"
-                                        ng-click="options.month=4"
-                                        ng-class="{'active':options.month===4}">
-                                    <span translate="main.months.april">April</span>
-                                </button>
-                            </div>
-                            <div class="btn-group" role="group">
-                                <button type="button" class="btn btn-default"
-                                        ng-click="options.month=5"
-                                        ng-class="{'active':options.month===5}">
-                                    <span translate="main.months.may">May</span>
-                                </button>
-                            </div>
-                            <div class="btn-group" role="group">
-                                <button type="button" class="btn btn-default"
-                                        ng-click="options.month=6"
-                                        ng-class="{'active':options.month===6}">
-                                    <span translate="main.months.june">June</span>
-                                </button>
-                            </div>
-                            <div class="btn-group" role="group">
-                                <button type="button" class="btn btn-default"
-                                        ng-click="options.month=7"
-                                        ng-class="{'active':options.month===7}">
-                                    <span translate="main.months.july">July</span>
-                                </button>
-                            </div>
-                            <div class="btn-group" role="group">
-                                <button type="button" class="btn btn-default"
-                                        ng-click="options.month=8"
-                                        ng-class="{'active':options.month===8}">
-                                    <span translate="main.months.august">August</span>
-                                </button>
-                            </div>
-                            <div class="btn-group" role="group">
-                                <button type="button" class="btn btn-default"
-                                        ng-click="options.month=9"
-                                        ng-class="{'active':options.month===9}">
-                                    <span translate="main.months.september">September</span>
-                                </button>
-                            </div>
-                            <div class="btn-group" role="group">
-                                <button type="button" class="btn btn-default"
-                                        ng-click="options.month=10"
-                                        ng-class="{'active':options.month===10}">
-                                    <span translate="main.months.october">October</span>
-                                </button>
-                            </div>
-                            <div class="btn-group" role="group">
-                                <button type="button" class="btn btn-default"
-                                        ng-click="options.month=11"
-                                        ng-class="{'active':options.month===11}">
-                                    <span translate="main.months.november">November</span>
-                                </button>
-                            </div>
-                            <div class="btn-group" role="group">
-                                <button type="button" class="btn btn-default"
-                                        ng-click="options.month=12"
-                                        ng-class="{'active':options.month===12}">
-                                    <span translate="main.months.december">December</span>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="text-right">
-                        <button type="submit" class="btn btn-info" disabled>
-                            <span translate="main.apply">Apply</span>
-                        </button>
-                    </div>
+                </div>
+                <div class="text-right">
+                    <button ng-click="changeStatus('UNDER_CONSIDERATION')" class="btn btn-info" ng-disabled="isInAnyStatus('UNDER_CONSIDERATION', 'APPROVED')">
+                        <span translate="main.apply">Apply</span>
+                    </button>
                 </div>
             </div>
         </div>
     </div>
-    <div class="row">
+</div>
+<div class="row">
 
-        <div class="col-xs-12">
-            <div role="tabpanel">
-                <ul class="nav nav-tabs" role="tablist">
-                    <li role="presentation" ui-sref-active="active">
-                        <a ui-sref="tabNewCars">
-                            <span translate="main.tab.new.cars"></span>
-                        </a>
-                    </li>
-                    <li role="presentation" ui-sref-active="active">
-                        <a ui-sref="tabSecondHandCars">
-                            <span translate="main.tab.second.hand.cars"></span>
-                        </a>
-                    </li>
-                    <li role="presentation" ui-sref-active="active">
-                        <a ui-sref="tabFlittingShop">
-                            <span translate="main.tab.flitting.shop"></span>
-                        </a>
-                    </li>
-                    <li role="presentation" ui-sref-active="active">
-                        <a ui-sref="tabBodyShop">
-                            <span translate="main.tab.body.shop"></span>
-                        </a>
-                    </li>
-                    <li role="presentation" ui-sref-active="active">
-                        <a ui-sref="tabSpares">
-                            <span translate="main.tab.spares"></span>
-                        </a>
-                    </li>
-                    <li role="presentation" ui-sref-active="active">
-                        <a ui-sref="tabOtherDepartments">
-                            <span translate="main.tab.other.departments"></span>
-                        </a>
-                    </li>
-                    <li role="presentation" ui-sref-active="active">
-                        <a ui-sref="tabIndirectCharges">
-                            <span translate="main.tab.indirect.charges"></span>
-                        </a>
-                    </li>
-                    <li role="presentation" ui-sref-active="active">
-                        <a ui-sref="tabBalance">
-                            <span translate="main.tab.balance"></span>
-                        </a>
-                    </li>
-                    <li role="presentation" ui-sref-active="active">
-                        <a ui-sref="tabTotalData">
-                            <span translate="main.tab.total.data"></span>
-                        </a>
-                    </li>
-                    <li role="presentation" ui-sref-active="active">
-                        <a ui-sref="tabStaffQuantity">
-                            <span translate="main.tab.staff.quantity"></span>
-                        </a>
-                    </li>
-                </ul>
-                <div class="tab-content">
-                    <div role="tabpanel" class="tab-pane active">
-                        <div ui-view="tab-content" ng-cloak=""></div>
-                    </div>
+    <div class="col-xs-12">
+        <div role="tabpanel">
+            <ul class="nav nav-tabs" role="tablist">
+                <li role="presentation" ui-sref-active="active">
+                    <a ui-sref="tabNewCars">
+                        <span translate="main.tab.new.cars"></span>
+                    </a>
+                </li>
+                <li role="presentation" ui-sref-active="active">
+                    <a ui-sref="tabSecondHandCars">
+                        <span translate="main.tab.second.hand.cars"></span>
+                    </a>
+                </li>
+                <li role="presentation" ui-sref-active="active">
+                    <a ui-sref="tabFlittingShop">
+                        <span translate="main.tab.flitting.shop"></span>
+                    </a>
+                </li>
+                <li role="presentation" ui-sref-active="active">
+                    <a ui-sref="tabBodyShop">
+                        <span translate="main.tab.body.shop"></span>
+                    </a>
+                </li>
+                <li role="presentation" ui-sref-active="active">
+                    <a ui-sref="tabSpares">
+                        <span translate="main.tab.spares"></span>
+                    </a>
+                </li>
+                <li role="presentation" ui-sref-active="active">
+                    <a ui-sref="tabOtherDepartments">
+                        <span translate="main.tab.other.departments"></span>
+                    </a>
+                </li>
+                <li role="presentation" ui-sref-active="active">
+                    <a ui-sref="tabIndirectCharges">
+                        <span translate="main.tab.indirect.charges"></span>
+                    </a>
+                </li>
+                <li role="presentation" ui-sref-active="active">
+                    <a ui-sref="tabBalance">
+                        <span translate="main.tab.balance"></span>
+                    </a>
+                </li>
+                <li role="presentation" ui-sref-active="active">
+                    <a ui-sref="tabTotalData">
+                        <span translate="main.tab.total.data"></span>
+                    </a>
+                </li>
+                <li role="presentation" ui-sref-active="active">
+                    <a ui-sref="tabStaffQuantity">
+                        <span translate="main.tab.staff.quantity"></span>
+                    </a>
+                </li>
+            </ul>
+            <div class="tab-content">
+                <div role="tabpanel" class="tab-pane active">
+                    <div ui-view="tab-content" ng-cloak=""></div>
                 </div>
             </div>
         </div>
     </div>
+</div>
 </div>

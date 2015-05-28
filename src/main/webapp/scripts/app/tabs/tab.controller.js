@@ -6,6 +6,7 @@
 angular.module('volvoApp')
     .controller('TabController', function ($scope, ReportService, report, $timeout) {
         $scope.model = report;
+        ReportService.options.model = report;
         var timeout = null;
         $scope.options = ReportService.options;
         $scope.$watch('options.month', function (month) {
@@ -16,14 +17,17 @@ angular.module('volvoApp')
                 $timeout.cancel(timeout);
             }
             timeout = $timeout(function () {
-                ReportService.save({year: new Date().getFullYear(), month: $scope.options.month}, $scope.model)
+                // TODO: fact + plan
+                ReportService.save({year: new Date().getFullYear(), month: $scope.options.month, kind: 'fact'}, $scope.model);
             }, 500);
         };
 
         $scope.selectedMonth = new Date();
 
         function changeMonth(month) {
-            ReportService.get({year: new Date().getFullYear(), month: month}).$promise.then(function (report) {
+            // TODO: fact + plan
+            ReportService.get({year: new Date().getFullYear(), month: month, kind: 'fact'}).$promise.then(function (report) {
+                ReportService.options.model = report;
                 $scope.model = report;
             });
         }

@@ -2,7 +2,7 @@
 
 angular.module('volvoApp')
     .factory('ReportService', function ReportService($resource) {
-        var resource = $resource('/api/rest/reports/:year/:month', {}, {
+        var resource = $resource('/api/rest/reports/:year/:month/:kind', {}, {
             'query': {method: 'GET', isArray: true},
             'getList': {
                 method: 'GET',
@@ -13,7 +13,8 @@ angular.module('volvoApp')
             }
         });
         resource.options = {
-            month: new Date().getMonth() + 1
+            month: new Date().getMonth() + 1,
+            model: {}
         };
         return resource;
     });
