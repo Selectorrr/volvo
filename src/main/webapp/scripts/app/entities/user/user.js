@@ -7,7 +7,7 @@ angular.module('volvoApp')
                 parent: 'entity',
                 url: '/user',
                 data: {
-                    roles: ['ROLE_ADMIN', 'ROLE_REPRESENTATIVE'],
+                    roles: ['ROLE_ADMIN'],
                     pageTitle: 'volvoApp.user.home.title'
                 },
                 views: {

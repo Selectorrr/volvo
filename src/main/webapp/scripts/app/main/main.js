@@ -5,10 +5,9 @@ angular.module('volvoApp')
         $stateProvider
             .state('home', {
                 parent: 'site',
-                url: '',
                 abstract: true,
                 data: {
-                    roles: ['ROLE_DEALER']
+                    roles: ['ROLE_DEALER', 'ROLE_REPRESENTATIVE', 'ROLE_ADMIN']
                 },
                 views: {
                     'content@': {

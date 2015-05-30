@@ -15,6 +15,7 @@ import org.springframework.stereotype.Service;
 
 import javax.inject.Inject;
 import java.text.DateFormatSymbols;
+import java.util.List;
 
 /**
  * Service class for managing reports.
@@ -46,6 +47,10 @@ public class YearReportService {
                 Update.update(Year.getMonthName(month) + "." + report.getKind(), report), "T_REPORT");
     }
 
+    public List<Year> findByYear(Integer year) {
+        return yearReportRepository.findByYear(year);
+    }
+
     private Year getReport(User user, Integer year) {
         return yearReportRepository.findOneByCreatedByAndYear(user.getId(), year);
     }
@@ -55,6 +60,7 @@ public class YearReportService {
         Year yearReport = getReport(user, year);
         if (yearReport == null) {
             yearReport = new Year();
+            yearReport.setCode(user.getLogin());
         }
         if (yearReport.get(monthNum) == null) {
             yearReport.set(monthNum, new Month());

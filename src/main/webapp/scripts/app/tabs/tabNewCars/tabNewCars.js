@@ -8,7 +8,7 @@ angular.module('volvoApp')
         $stateProvider
             .state('tabNewCars', {
                 parent: 'home',
-                url: '/',
+                url: '/tabNewCars?code&year&month&kind&createdBy',
                 views: {
                     'tab-content@home': {
                         templateUrl: 'scripts/app/tabs/tabNewCars/tabNewCars.html',

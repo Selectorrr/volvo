@@ -13,6 +13,7 @@ public class Year extends AbstractAuditingEntity implements Serializable {
 
     @Id
     private String id;
+    private String code;
 
     private Integer year;
 
@@ -141,6 +142,14 @@ public class Year extends AbstractAuditingEntity implements Serializable {
         this.year = year;
     }
 
+    public String getCode() {
+        return code;
+    }
+
+    public void setCode(String code) {
+        this.code = code;
+    }
+
     public Report get(int month, String kind) {
         Month result = get(month);
         switch (kind) {
@@ -264,28 +273,30 @@ public class Year extends AbstractAuditingEntity implements Serializable {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
 
-        Year that = (Year) o;
+        Year year1 = (Year) o;
 
-        if (id != null ? !id.equals(that.id) : that.id != null) return false;
-        if (year != null ? !year.equals(that.year) : that.year != null) return false;
-        if (january != null ? !january.equals(that.january) : that.january != null) return false;
-        if (february != null ? !february.equals(that.february) : that.february != null) return false;
-        if (march != null ? !march.equals(that.march) : that.march != null) return false;
-        if (april != null ? !april.equals(that.april) : that.april != null) return false;
-        if (may != null ? !may.equals(that.may) : that.may != null) return false;
-        if (june != null ? !june.equals(that.june) : that.june != null) return false;
-        if (july != null ? !july.equals(that.july) : that.july != null) return false;
-        if (august != null ? !august.equals(that.august) : that.august != null) return false;
-        if (september != null ? !september.equals(that.september) : that.september != null) return false;
-        if (october != null ? !october.equals(that.october) : that.october != null) return false;
-        if (november != null ? !november.equals(that.november) : that.november != null) return false;
-        return !(december != null ? !december.equals(that.december) : that.december != null);
+        if (id != null ? !id.equals(year1.id) : year1.id != null) return false;
+        if (code != null ? !code.equals(year1.code) : year1.code != null) return false;
+        if (year != null ? !year.equals(year1.year) : year1.year != null) return false;
+        if (january != null ? !january.equals(year1.january) : year1.january != null) return false;
+        if (february != null ? !february.equals(year1.february) : year1.february != null) return false;
+        if (march != null ? !march.equals(year1.march) : year1.march != null) return false;
+        if (april != null ? !april.equals(year1.april) : year1.april != null) return false;
+        if (may != null ? !may.equals(year1.may) : year1.may != null) return false;
+        if (june != null ? !june.equals(year1.june) : year1.june != null) return false;
+        if (july != null ? !july.equals(year1.july) : year1.july != null) return false;
+        if (august != null ? !august.equals(year1.august) : year1.august != null) return false;
+        if (september != null ? !september.equals(year1.september) : year1.september != null) return false;
+        if (october != null ? !october.equals(year1.october) : year1.october != null) return false;
+        if (november != null ? !november.equals(year1.november) : year1.november != null) return false;
+        return !(december != null ? !december.equals(year1.december) : year1.december != null);
 
     }
 
     @Override
     public int hashCode() {
         int result = id != null ? id.hashCode() : 0;
+        result = 31 * result + (code != null ? code.hashCode() : 0);
         result = 31 * result + (year != null ? year.hashCode() : 0);
         result = 31 * result + (january != null ? january.hashCode() : 0);
         result = 31 * result + (february != null ? february.hashCode() : 0);
