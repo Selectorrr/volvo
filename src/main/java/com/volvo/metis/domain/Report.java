@@ -63,8 +63,14 @@ public class Report {
      */
     private TabStaffQuantity tabStaffQuantity;
 
-    private String kind; //вид отчета план/факт
+    /**
+     * Вид отчета plan/fact
+     */
+    private String kind;
 
+    /**
+     * Статус отчета
+     */
     private String status = STATUS_DRAFT;
 
     public TabNewCars getTabNewCars() {

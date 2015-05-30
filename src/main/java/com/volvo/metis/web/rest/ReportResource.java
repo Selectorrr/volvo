@@ -22,18 +22,6 @@ public class ReportResource {
     @Inject
     private YearReportService yearReportService;
 
-//    /**
-//     * Отчет за текущий период.
-//     */
-//    @RequestMapping(value = "/reports/{month}",
-//        method = RequestMethod.GET,
-//        produces = MediaType.APPLICATION_JSON_VALUE)
-//    @Timed
-//    public Report getCurrentReport() {
-//        log.debug("REST request to get current report");
-//        return yearReportService.getCurrentReport();
-//    }
-
     /**
      * Отчет за конкретный период.
      */

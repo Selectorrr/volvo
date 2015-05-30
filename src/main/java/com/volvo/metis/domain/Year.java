@@ -29,6 +29,13 @@ public class Year extends AbstractAuditingEntity implements Serializable {
     private Month november;
     private Month december;
 
+    public Year() {
+    }
+
+    public Year(Integer year) {
+        this.year = year;
+    }
+
     public String getId() {
         return id;
     }
