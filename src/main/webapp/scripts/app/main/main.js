@@ -25,13 +25,8 @@ angular.module('volvoApp')
                         $translatePartialLoader.addPart('main');
                         return $translate.refresh();
                     }],
-                    report: function (ReportService) {
-                        // TODO: fact + plan
-                        return ReportService.get({
-                            year: new Date().getFullYear(),
-                            month: ReportService.options.month,
-                            kind: 'fact'
-                        }).$promise;
+                    account: function (Principal) {
+                        return Principal.identity();
                     }
                 }
             });

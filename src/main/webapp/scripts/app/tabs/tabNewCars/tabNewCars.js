@@ -14,6 +14,11 @@ angular.module('volvoApp')
                         templateUrl: 'scripts/app/tabs/tabNewCars/tabNewCars.html',
                         controller: 'TabController'
                     }
+                },
+                resolve: {
+                    initState: function (TabService, $stateParams) {
+                        return TabService.getInitState($stateParams);
+                    }
                 }
             });
     });

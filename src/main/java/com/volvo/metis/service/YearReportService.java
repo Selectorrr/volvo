@@ -55,7 +55,7 @@ public class YearReportService {
         return yearReportRepository.findOneByCreatedByAndYear(user.getId(), year);
     }
 
-    public Report getMonthReport(Integer year, int monthNum, String kind) {
+    public Report getMonthReport(Integer year, Integer monthNum, String kind) {
         User user = userService.getUserWithAuthorities();
         Year yearReport = getReport(user, year);
         if (yearReport == null) {

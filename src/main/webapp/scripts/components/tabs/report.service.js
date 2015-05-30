@@ -12,9 +12,6 @@ angular.module('volvoApp')
                 }
             }
         });
-        resource.options = {
-            month: new Date().getMonth() + 1,
-            model: {}
-        };
+        resource.initState = {};
         return resource;
     });
