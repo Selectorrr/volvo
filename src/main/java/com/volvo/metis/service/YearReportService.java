@@ -43,8 +43,10 @@ public class YearReportService {
 //            return;
 //        }
         User user = userService.getUserWithAuthorities();
-        mongoOperations.updateFirst(new Query(Criteria.where("createdBy").is(user.getId()).where("year").is(year)),
-                Update.update(Year.getMonthName(month) + "." + report.getKind(), report), "T_REPORT");
+        log.debug("Save report for user {} with id {}, year {}, month {}", user.getLogin(), user.getId(), year, month);
+        Query query = new Query(Criteria.where("createdBy").is(user.getId()).where("year").is(year));
+        Update update = Update.update(Year.getMonthName(month) + "." + report.getKind(), report);
+        mongoOperations.updateFirst(query, update, "T_REPORT");
     }
 
     public List<Year> findByYear(Integer year) {
@@ -59,12 +61,11 @@ public class YearReportService {
         User user = userService.getUserWithAuthorities();
         Year yearReport = getReport(user, year);
         if (yearReport == null) {
-            yearReport = new Year();
+            yearReport = new Year(year);
             yearReport.setCode(user.getLogin());
         }
         if (yearReport.get(monthNum) == null) {
             yearReport.set(monthNum, new Month());
-            yearReport.setYear(year);
             yearReport = yearReportRepository.save(yearReport);
         }
         return yearReport.get(monthNum, kind);
