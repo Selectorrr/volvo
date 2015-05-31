@@ -25,6 +25,10 @@ angular.module('volvoApp')
                             Principal.isInAnyRole($state.get($rootScope.previousStateName).data.roles)) {
                             $rootScope.back();
                         } else {
+                            if (Principal.isInAnyRole(['ROLE_REPRESENTATIVE'])) {
+                                $state.go('reports');
+                                return;
+                            }
                             var toPages = ['tabNewCars', 'user'];
                             for (var i = 0; i < toPages.length; i++) {
                                 var page = toPages[i];

@@ -1,0 +1,28 @@
+{
+    "months": {
+        "january": "Январь",
+        "february": "Февраль",
+        "march": "Март",
+        "april": "Апрель",
+        "may": "Май",
+        "june": "Июнь",
+        "july": "Июль",
+        "august": "Август",
+        "september": "Сентябрь",
+        "october": "Октябрь",
+        "november": "Ноябрь",
+        "december": "Декабрь"
+    },
+    "kind": {
+        "plan": "План",
+        "fact": "Факт"
+    },
+    "status": {
+        "DRAFT": "Черновик",
+        "UNDER_CONSIDERATION": "На рассмотрении",
+        "APPROVED": "Утвержден"
+    },
+    "reports": {
+        "title": "Отчеты"
+    }
+}

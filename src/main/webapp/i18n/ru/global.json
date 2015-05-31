@@ -5,6 +5,7 @@
         "menu": {
             "home": "Главная",
             "users": "Пользователи",
+            "reports": "Отчеты",
             "entities": {
                 "main": "Сущности",
                 "additionalEntity": "JHipster добавит дополнительные сущности"

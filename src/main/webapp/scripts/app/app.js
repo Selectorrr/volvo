@@ -84,7 +84,7 @@ angular.module('volvoApp', ['LocalStorageModule', 'tmh.dynamicLocale',
         //Cache everything except rest api requests
         httpRequestInterceptorCacheBusterProvider.setMatchlist([/.*api.*/, /.*protected.*/], true);
 
-        $urlRouterProvider.otherwise('/');
+        $urlRouterProvider.otherwise('/tabNewCars');
         $stateProvider.state('site', {
             'abstract': true,
             views: {

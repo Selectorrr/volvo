@@ -8,11 +8,16 @@ angular.module('volvoApp')
         $stateProvider
             .state('tabSecondHandCars', {
                 parent: 'home',
-                url: '/tabSecondHandCars',
+                url: '/tabSecondHandCars?code&year&month&kind&createdBy',
                 views: {
                     'tab-content@home': {
                         templateUrl: 'scripts/app/tabs/tabSecondHandCars/tabSecondHandCars.html',
                         controller: 'TabController'
+                    }
+                },
+                resolve: {
+                    initState: function (TabService, $stateParams) {
+                        return TabService.getInitState($stateParams);
                     }
                 }
             });

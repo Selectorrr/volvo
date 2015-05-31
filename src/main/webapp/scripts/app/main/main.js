@@ -5,10 +5,9 @@ angular.module('volvoApp')
         $stateProvider
             .state('home', {
                 parent: 'site',
-                url: '',
                 abstract: true,
                 data: {
-                    roles: ['ROLE_DEALER']
+                    roles: ['ROLE_DEALER', 'ROLE_REPRESENTATIVE', 'ROLE_ADMIN']
                 },
                 views: {
                     'content@': {
@@ -26,13 +25,8 @@ angular.module('volvoApp')
                         $translatePartialLoader.addPart('main');
                         return $translate.refresh();
                     }],
-                    report: function (ReportService) {
-                        // TODO: fact + plan
-                        return ReportService.get({
-                            year: new Date().getFullYear(),
-                            month: ReportService.options.month,
-                            kind: 'fact'
-                        }).$promise;
+                    account: function (Principal) {
+                        return Principal.identity();
                     }
                 }
             });
