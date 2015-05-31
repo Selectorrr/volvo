@@ -57,7 +57,8 @@ angular.module('volvoApp')
                 tElement.addClass('col-xs-' + size);
                 if (tAttrs.type === 'number' || tAttrs.type === 'ruble') {
                     var myInput =
-                        '<my-input type="number" my-disabled="' + (tAttrs.myDisabled ? tAttrs.myDisabled : false) + '" addon="' +
+                        '<my-input type="number" my-disabled="' + (tAttrs.myDisabled ? tAttrs.myDisabled : false)
+                            + ' || editDisable" addon="' +
                         (tAttrs.type === 'ruble' ? 'glyphicon-ruble' : '') + '" model="' + tAttrs.field +
                         '" value="' + tAttrs.value + '" on-blur="' + tAttrs.onBlur + '"' +
                         (tAttrs.decimals ? 'decimals=' + tAttrs.decimals : '') + '>' +

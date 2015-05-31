@@ -18,9 +18,9 @@
         "fact": "Факт"
     },
     "status": {
-        "DRAFT": "Черновик",
-        "UNDER_CONSIDERATION": "На рассмотрении",
-        "APPROVED": "Утвержден"
+        "STATUS_DRAFT": "Черновик",
+        "STATUS_UNDER_CONSIDERATION": "На рассмотрении",
+        "STATUS_APPROVED": "Утвержден"
     },
     "reports": {
         "title": "Отчеты"

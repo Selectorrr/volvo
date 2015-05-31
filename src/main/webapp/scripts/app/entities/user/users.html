@@ -103,6 +103,17 @@
                                 </p>
                             </div>
                         </div>
+
+
+                        <div class="btn-group">
+                            <label class="btn btn-default" ng-repeat="role in userRoles">
+                                <input type="radio" name="selectedRole" ng-model="$parent.selectedRole"
+                                       ng-value="role.name" required>
+                               {{role.title}}
+                            </label>
+                        </div>
+
+
                         <div class="form-group">
                             <label translate="global.form.newpassword">New password</label>
                             <input type="password" class="form-control" name="password"

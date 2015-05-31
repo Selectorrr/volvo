@@ -45,20 +45,6 @@ angular.module('volvoApp')
         return {
             restrict: 'E',
             replace: true,
-            scope: {
-                type: '@',
-                label: '@',
-                decimals: '@',
-                model: '=',
-                onBlur: '=',
-                name: '@',
-                mask: '@',
-                placeholder: '@',
-                pattern: '@',
-                myDisabled: '@',
-                addon: '@',
-                value: '@'
-            },
             compile: function compile(tElement, tAttrs, transclude) {
                 var $input = $(tElement).find('input');
                 $input.attr('name', tAttrs.name);
@@ -83,19 +69,20 @@ angular.module('volvoApp')
                     $input.parent().addClass("input-group input-group-sm");
                 }
 
+                if (tAttrs.model) {
+                    $input.attr('ng-model', tAttrs.model);
+                }
+
                 return {
                     pre: function preLink(scope, tElement, tAttrs, controllers) {
 
                     },
                     post: function postLink($scope, tElement, tAttrs, controllers) {
-                        if ($scope.onBlur) {
-                            $scope.$watch('model', $scope.onBlur);
-                        }
                     }
                 }
             },
             template: '<div>' +
-            '<input value="value" class="form-control text-right simplebox" aria-describedby="sizing-addon3" ng-model="model">' +
+            '<input value="value" class="form-control text-right simplebox" aria-describedby="sizing-addon3">' +
                 '<span></span>' +
                 '</div>'
         };

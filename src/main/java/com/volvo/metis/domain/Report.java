@@ -2,9 +2,9 @@ package com.volvo.metis.domain;
 
 public class Report {
 
-    public static final String STATUS_DRAFT = "DRAFT";
-    public static final String STATUS_UNDER_CONSIDERATION = "UNDER_CONSIDERATION";
-    public static final String STATUS_APPROVED = "APPROVED";
+    public static final String STATUS_DRAFT = "STATUS_DRAFT";
+    public static final String STATUS_UNDER_CONSIDERATION = "STATUS_UNDER_CONSIDERATION";
+    public static final String STATUS_APPROVED = "STATUS_APPROVED";
 
     public Report() {
     }

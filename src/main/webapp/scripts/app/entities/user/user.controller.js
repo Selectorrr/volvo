@@ -29,6 +29,14 @@ angular.module('volvoApp')
             });
         };
 
+        // TODO: messages
+        $scope.userRoles = [
+            {name: 'ROLE_DEALER',
+                title: 'Дилер'},
+            {name: 'ROLE_REPRESENTATIVE',
+                title: 'Представитель'}
+        ];
+
         $scope.delete = function (login) {
             User.get({login: login}, function (result) {
                 $scope.user = result;
@@ -47,7 +55,7 @@ angular.module('volvoApp')
 
         $scope.clear = function () {
             $scope.isCreate = true;
-            $scope.user = {login: null, password: null, id: null};
+            $scope.user = {login: null, password: null, id: null, roles: []};
         };
 
 
@@ -61,6 +69,7 @@ angular.module('volvoApp')
         });
 
         $scope.register = function () {
+            $scope.user.roles[0] = $scope.selectedRole;
             if ($scope.user.password !== $scope.confirmPassword) {
                 $scope.doNotMatch = 'ERROR';
             } else {
