@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('volvoApp')
-    .controller('LoginController', function ($rootScope, $scope, $state, $timeout, Auth, Principal) {
+    .controller('LoginController', function ($rootScope, $scope, $state, $timeout, Auth, Principal, $stateParams) {
         $scope.user = {};
         $scope.errors = {};
 
@@ -27,6 +27,14 @@ angular.module('volvoApp')
                         } else {
                             if (Principal.isInAnyRole(['ROLE_REPRESENTATIVE'])) {
                                 $state.go('reports');
+                                return;
+                            } else if (Principal.isInAnyRole(['ROLE_DEALER'])) {
+                                $state.go('tabNewCars', {
+                                    year: $stateParams.year || new Date().getFullYear(),
+                                    month: $stateParams.month || new Date().toLocaleString("en-us", {month: "long"}).toLowerCase(),
+                                    kind: $stateParams.kind || 'fact',
+                                    createdBy: $stateParams.createdBy
+                                });
                                 return;
                             }
                             var toPages = ['tabNewCars', 'user'];
