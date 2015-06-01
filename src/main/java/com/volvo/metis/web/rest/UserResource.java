@@ -4,6 +4,8 @@ import com.codahale.metrics.annotation.Timed;
 import com.volvo.metis.domain.User;
 import com.volvo.metis.repository.UserRepository;
 import com.volvo.metis.security.AuthoritiesConstants;
+import com.volvo.metis.translator.UserTranslator;
+import com.volvo.metis.web.rest.dto.UserDTO;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.http.HttpStatus;
@@ -17,6 +19,8 @@ import org.springframework.web.bind.annotation.RestController;
 import javax.annotation.security.RolesAllowed;
 import javax.inject.Inject;
 import java.util.List;
+import java.util.Optional;
+import java.util.stream.Collectors;
 
 /**
  * REST controller for managing users.
@@ -30,6 +34,9 @@ public class UserResource {
     @Inject
     private UserRepository userRepository;
 
+    @Inject
+    private UserTranslator userTranslator;
+
     /**
      * GET  /users -> get all users.
      */
@@ -37,9 +44,11 @@ public class UserResource {
         method = RequestMethod.GET,
         produces = MediaType.APPLICATION_JSON_VALUE)
     @Timed
-    public List<User> getAll() {
+    public List<UserDTO> getAll() {
         log.debug("REST request to get all Users");
-        return userRepository.findAll();
+        List<User> all = userRepository.findAll();
+        List<UserDTO> result = all.stream().map(userTranslator::toDto).collect(Collectors.toList());
+        return result;
     }
 
     /**
@@ -50,11 +59,15 @@ public class UserResource {
         produces = MediaType.APPLICATION_JSON_VALUE)
     @Timed
     @RolesAllowed(AuthoritiesConstants.ADMIN)
-    ResponseEntity<User> getUser(@PathVariable String login) {
+    ResponseEntity<UserDTO> getUser(@PathVariable String login) {
         log.debug("REST request to get User : {}", login);
-        return userRepository.findOneByLogin(login)
-            .map(user -> new ResponseEntity<>(user, HttpStatus.OK))
-            .orElse(new ResponseEntity<>(HttpStatus.NOT_FOUND));
+        Optional<User> userByLogin = userRepository.findOneByLogin(login);
+        User user = userByLogin.get();
+        if (user == null) {
+            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+        }
+        UserDTO userDTO = userTranslator.toDto(user);
+        return new ResponseEntity<>(userDTO, HttpStatus.OK);
     }
 
     /**

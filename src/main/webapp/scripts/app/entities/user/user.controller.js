@@ -21,7 +21,18 @@ angular.module('volvoApp')
         //        });
         //};
 
+        function clearErrors() {
+            if ($scope.form) {
+                $scope.form.$setPristine();
+            }
+            $scope.doNotMatch = null;
+            $scope.error = null;
+            $scope.errorUserExists = null;
+            $scope.errorEmailExists = null;
+        }
+
         $scope.update = function (login) {
+            clearErrors();
             $scope.isCreate = false;
             User.get({login: login}, function (result) {
                 $scope.user = result;
@@ -58,12 +69,8 @@ angular.module('volvoApp')
             $scope.user = {login: null, password: null, id: null, roles: []};
         };
 
+        clearErrors();
 
-        //$scope.success = null;
-        $scope.error = null;
-        $scope.doNotMatch = null;
-        $scope.errorUserExists = null;
-        //$scope.user = {};
         $timeout(function () {
             angular.element('[ng-model="user.login"]').focus();
         });
@@ -73,13 +80,8 @@ angular.module('volvoApp')
                 $scope.doNotMatch = 'ERROR';
             } else {
                 $scope.user.langKey = $translate.use();
-                $scope.doNotMatch = null;
-                $scope.error = null;
-                $scope.errorUserExists = null;
-                $scope.errorEmailExists = null;
-
+                clearErrors();
                 Auth.createAccount($scope.user).then(function () {
-                    //$scope.success = 'OK';
                     $scope.loadAll();
                     $('#saveUserModal').modal('hide');
                     $scope.clear();

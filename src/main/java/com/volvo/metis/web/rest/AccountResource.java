@@ -2,15 +2,13 @@ package com.volvo.metis.web.rest;
 
 import com.codahale.metrics.annotation.Timed;
 import com.google.common.base.Strings;
-import com.google.common.collect.Iterables;
-import com.google.common.collect.Sets;
 import com.volvo.metis.domain.Authority;
 import com.volvo.metis.domain.User;
-import com.volvo.metis.repository.AuthorityRepository;
 import com.volvo.metis.repository.UserRepository;
 import com.volvo.metis.security.SecurityUtils;
 import com.volvo.metis.service.MailService;
 import com.volvo.metis.service.UserService;
+import com.volvo.metis.translator.UserTranslator;
 import com.volvo.metis.web.rest.dto.UserDTO;
 import org.apache.commons.lang.StringUtils;
 import org.slf4j.Logger;
@@ -49,7 +47,7 @@ public class AccountResource {
     private MailService mailService;
 
     @Inject
-    private AuthorityRepository authorityRepository;
+    private UserTranslator userTranslator;
 
     /**
      * POST  /register -> register the user.
@@ -60,22 +58,7 @@ public class AccountResource {
     @Timed
     public ResponseEntity<?> registerAccount(@Valid @RequestBody UserDTO userDTO, HttpServletRequest request) {
         if (!Strings.isNullOrEmpty(userDTO.getId())) {
-            User user = userRepository.findOne(userDTO.getId());
-            user.setLogin(userDTO.getLogin());
-            if (!Strings.isNullOrEmpty(userDTO.getPassword())) {
-                user.setPassword(userDTO.getPassword());
-            }
-            user.setOrganizationName(userDTO.getOrganizationName());
-            user.setFirstName(userDTO.getFirstName());
-            user.setLastName(userDTO.getLastName());
-            user.setMiddleName(userDTO.getMiddleName());
-            user.setPhone(userDTO.getPhone());
-            user.setEmail(userDTO.getEmail());
-            user.setLangKey(userDTO.getLangKey());
-            user.setActivated(userDTO.getActivated());
-            if (userDTO.getRoles() != null && !Iterables.isEmpty(userDTO.getRoles())) {
-                user.setAuthorities(Sets.newHashSet(authorityRepository.findAll(userDTO.getRoles())));
-            }
+            User user = userTranslator.fromDto(userDTO);
             userRepository.save(user);
             return new ResponseEntity<>(HttpStatus.OK);
         }
