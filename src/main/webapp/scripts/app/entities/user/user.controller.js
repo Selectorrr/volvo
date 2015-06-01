@@ -12,15 +12,6 @@ angular.module('volvoApp')
         };
         $scope.loadAll();
 
-        //$scope.create = function () {
-        //    User.save($scope.user,
-        //        function () {
-        //            $scope.loadAll();
-        //            $('#saveUserModal').modal('hide');
-        //            $scope.clear();
-        //        });
-        //};
-
         function clearErrors() {
             if ($scope.form) {
                 $scope.form.$setPristine();
@@ -36,6 +27,7 @@ angular.module('volvoApp')
             $scope.isCreate = false;
             User.get({login: login}, function (result) {
                 $scope.user = result;
+                $scope.confirmPassword = null;
                 $('#saveUserModal').modal('show');
             });
         };
