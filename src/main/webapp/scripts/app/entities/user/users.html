@@ -105,13 +105,9 @@
                         </div>
 
 
-                        <div class="btn-group">
-                            <label class="btn btn-default" ng-repeat="role in userRoles">
-                                <input type="radio" name="selectedRole" ng-model="$parent.selectedRole"
-                                       ng-value="role.name" required>
-                               {{role.title}}
-                            </label>
-                        </div>
+                        <select class="form-control" ng-model="user.roles[0]" required>
+                            <option value="{{role.name}}" ng-repeat="role in userRoles">{{role.title}}</option>
+                        </select>
 
 
                         <div class="form-group">

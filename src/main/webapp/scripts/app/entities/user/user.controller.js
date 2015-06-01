@@ -69,7 +69,6 @@ angular.module('volvoApp')
         });
 
         $scope.register = function () {
-            $scope.user.roles[0] = $scope.selectedRole;
             if ($scope.user.password !== $scope.confirmPassword) {
                 $scope.doNotMatch = 'ERROR';
             } else {
