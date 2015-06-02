@@ -1,11 +1,19 @@
 'use strict';
 
 angular.module('volvoApp')
-    .controller('ReportsController', function ($scope, yearReports, $filter) {
+    .controller('ReportsController', function ($scope, yearReports, $filter, ReportService) {
         $scope.year = new Date().getFullYear();
-        $scope.$watch('year', function (value) {
+        $scope.$watch('year', _.debounce(function (value) {
+            $scope.isLoading = true;
             $scope.year = !value ? new Date().getFullYear() : value;
-        });
+            ReportService.query({
+                year: $scope.year
+            }).$promise.then(function (response) {
+                    $scope.isLoading = false;
+                    $scope.reports = mapYears(response);
+                });
+
+        }, 500));
         $scope.reports = mapYears(yearReports);
         function mapYears(yearReports) {
             var result = [];

@@ -17,7 +17,8 @@
                     <th>Действия</th>
                 </tr>
                 <tr class="filters">
-                    <th><input type="number" class="form-control" placeholder="Введите год" ng-model="year" required>
+                    <th><input type="number" class="form-control" placeholder="Введите год" ng-model="year" required
+                               ng-disabled="isLoading">
                     </th>
                     <th><input type="text" class="form-control" placeholder="Введите месяц" ng-model="search.month">
                     </th>
@@ -44,6 +45,9 @@
                             createdBy:report.createdBy
                             })">Просмотреть</a>
                         </div>
+                </tr>
+                <tr ng-if="!reports.length">
+                    <td colspan="6" class="text-center">пусто</td>
                 </tr>
                 </tbody>
             </table>
