@@ -20,22 +20,22 @@
                     <th><input type="number" class="form-control" placeholder="Введите год" ng-model="year" required
                                ng-disabled="isLoading">
                     </th>
-                    <th><input type="text" class="form-control" placeholder="Введите месяц" ng-model="search.month">
+                    <th><input type="search" class="form-control" placeholder="Введите месяц" ng-model="search.month">
                     </th>
-                    <th><input type="text" class="form-control" placeholder="Введите код дилера" ng-model="search.code">
+                    <th><input type="search" class="form-control" placeholder="Введите код дилера" ng-model="search.code">
                     </th>
-                    <th><input type="text" class="form-control" placeholder="Тип отчета" ng-model="search.kind"></th>
-                    <th><input type="text" class="form-control" placeholder="Статус" ng-model="search.status"></th>
+                    <th><input type="search" class="form-control" placeholder="Тип отчета" ng-model="search.kind"></th>
+                    <th><input type="search" class="form-control" placeholder="Статус" ng-model="search.status"></th>
                     <th></th>
                 </tr>
                 </thead>
                 <tbody>
                 <tr ng-repeat="report in reports | filter:search">
-                    <td>{{report.year}}</td>
-                    <td>{{report.month}}</td>
-                    <td>{{report.code}}</td>
-                    <td>{{report.kind}}</td>
-                    <td>{{report.status}}</td>
+                    <td><a ng-click="$parent.search.year = report.year">{{report.year}}</a></td>
+                    <td><a ng-click="$parent.search.month = report.month">{{report.month}}</a></td>
+                    <td><a ng-click="$parent.search.code = report.code">{{report.code}}</a></td>
+                    <td><a ng-click="$parent.search.kind = report.kind">{{report.kind}}</a></td>
+                    <td><a ng-click="$parent.search.status = report.status">{{report.status}}</a></td>
                     <td>
                         <div class="btn-group btn-group-xs" role="group">
                             <a class="btn btn-default" ui-sref="tabNewCars({
