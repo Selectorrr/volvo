@@ -1,180 +1,192 @@
 <div ng-cloak>
-<div class="row">
-    <div class="col-xs-12">
-        <div class="panel panel-default">
-            <div class="panel-heading">
-                <span translate="main.parameters">Parameters</span>
-            </div>
-            <div class="panel-body">
-                <div class="form-group">
-                    <label for="mode" translate="main.mode">Mode</label>
-                    <br/>
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <span translate="main.parameters">Parameters</span>
+                </div>
+                <div class="panel-body">
+                    <div class="row">
+                        <div class="col-xs-9">
+                            <div class="form-group">
+                                <label for="mode" translate="main.mode">Mode</label>
+                                <br/>
 
-                    <div id="mode" class="btn-group btn-group-justified" role="group">
-                        <div class="btn-group" role="group">
-                            <a href="{{getHref({kind:'fact'})}}" class="btn btn-default"
-                               ng-class="{'active':initState.options.kind === 'fact'}">
-                                <span translate="main.fact">Fact</span>
-                            </a>
+                                <div id="mode" class="btn-group btn-group-justified" role="group">
+                                    <div class="btn-group" role="group">
+                                        <a href="{{getHref({kind:'fact'})}}" class="btn btn-default"
+                                           ng-class="{'active':initState.options.kind === 'fact'}">
+                                            <span translate="main.fact">Fact</span>
+                                        </a>
+                                    </div>
+                                    <div class="btn-group" role="group">
+                                        <a href="{{getHref({kind:'plan'})}}" class="btn btn-default"
+                                           ng-class="{'active':initState.options.kind === 'plan'}">
+                                            <span translate="main.plan">Plan</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="btn-group" role="group">
-                            <a href="{{getHref({kind:'plan'})}}" class="btn btn-default"
-                               ng-class="{'active':initState.options.kind === 'plan'}">
-                                <span translate="main.plan">Plan</span>
-                            </a>
+                        <div class="col-xs-3">
+                            <div class="form-group">
+                                <label for="year" translate="main.year">Year</label>
+                                <br/>
+                                <input id="year" type="number" class="form-control" ng-model="year">
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="form-group">
-                    <label for="monthSelector" translate="main.month">Month</label>
-                    <br/>
+                    <div class="form-group">
+                        <label for="monthSelector" translate="main.month">Month</label>
+                        <br/>
 
-                    <div id="monthSelector" class="btn-group btn-group-justified" role="group">
-                        <div class="btn-group" role="group">
-                            <a href="{{getHref({month:'january'})}}" class="btn btn-default"
-                               ng-class="{'active':initState.options.month==='january'}">
-                                <span translate="main.months.january">January</span>
-                            </a>
-                        </div>
-                        <div class="btn-group" role="group">
-                            <a href="{{getHref({month:'february'})}}" class="btn btn-default"
-                               ng-class="{'active':initState.options.month==='february'}">
-                                <span translate="main.months.february">February</span>
-                            </a>
-                        </div>
-                        <div class="btn-group" role="group">
-                            <a href="{{getHref({month:'march'})}}" class="btn btn-default"
-                               ng-class="{'active':initState.options.month==='march'}">
-                                <span translate="main.months.march">March</span>
-                            </a>
-                        </div>
-                        <div class="btn-group" role="group">
-                            <a href="{{getHref({month:'april'})}}" class="btn btn-default"
-                               ng-class="{'active':initState.options.month==='april'}">
-                                <span translate="main.months.april">April</span>
-                            </a>
-                        </div>
-                        <div class="btn-group" role="group">
-                            <a href="{{getHref({month:'may'})}}" class="btn btn-default"
-                               ng-class="{'active':initState.options.month==='may'}">
-                                <span translate="main.months.may">May</span>
-                            </a>
-                        </div>
-                        <div class="btn-group" role="group">
-                            <a href="{{getHref({month:'june'})}}" class="btn btn-default"
-                               ng-class="{'active':initState.options.month==='june'}">
-                                <span translate="main.months.june">June</span>
-                            </a>
-                        </div>
-                        <div class="btn-group" role="group">
-                            <a href="{{getHref({month:'july'})}}" class="btn btn-default"
-                               ng-class="{'active':initState.options.month==='july'}">
-                                <span translate="main.months.july">July</span>
-                            </a>
-                        </div>
-                        <div class="btn-group" role="group">
-                            <a href="{{getHref({month:'august'})}}" class="btn btn-default"
-                               ng-class="{'active':initState.options.month==='august'}">
-                                <span translate="main.months.august">August</span>
-                            </a>
-                        </div>
-                        <div class="btn-group" role="group">
-                            <a href="{{getHref({month:'september'})}}" class="btn btn-default"
-                               ng-class="{'active':initState.options.month==='september'}">
-                                <span translate="main.months.september">September</span>
-                            </a>
-                        </div>
-                        <div class="btn-group" role="group">
-                            <a href="{{getHref({month:'october'})}}" class="btn btn-default"
-                               ng-class="{'active':initState.options.month==='october'}">
-                                <span translate="main.months.october">October</span>
-                            </a>
-                        </div>
-                        <div class="btn-group" role="group">
-                            <a href="{{getHref({month:'november'})}}" class="btn btn-default"
-                               ng-class="{'active':initState.options.month==='november'}">
-                                <span translate="main.months.november">November</span>
-                            </a>
-                        </div>
-                        <div class="btn-group" role="group">
-                            <a href="{{getHref({month:'december'})}}" class="btn btn-default"
-                               ng-class="{'active':initState.options.month==='december'}">
-                                <span translate="main.months.december">December</span>
-                            </a>
+                        <div id="monthSelector" class="btn-group btn-group-justified" role="group">
+                            <div class="btn-group" role="group">
+                                <a href="{{getHref({month:'january'})}}" class="btn btn-default"
+                                   ng-class="{'active':initState.options.month==='january'}">
+                                    <span translate="main.months.january">January</span>
+                                </a>
+                            </div>
+                            <div class="btn-group" role="group">
+                                <a href="{{getHref({month:'february'})}}" class="btn btn-default"
+                                   ng-class="{'active':initState.options.month==='february'}">
+                                    <span translate="main.months.february">February</span>
+                                </a>
+                            </div>
+                            <div class="btn-group" role="group">
+                                <a href="{{getHref({month:'march'})}}" class="btn btn-default"
+                                   ng-class="{'active':initState.options.month==='march'}">
+                                    <span translate="main.months.march">March</span>
+                                </a>
+                            </div>
+                            <div class="btn-group" role="group">
+                                <a href="{{getHref({month:'april'})}}" class="btn btn-default"
+                                   ng-class="{'active':initState.options.month==='april'}">
+                                    <span translate="main.months.april">April</span>
+                                </a>
+                            </div>
+                            <div class="btn-group" role="group">
+                                <a href="{{getHref({month:'may'})}}" class="btn btn-default"
+                                   ng-class="{'active':initState.options.month==='may'}">
+                                    <span translate="main.months.may">May</span>
+                                </a>
+                            </div>
+                            <div class="btn-group" role="group">
+                                <a href="{{getHref({month:'june'})}}" class="btn btn-default"
+                                   ng-class="{'active':initState.options.month==='june'}">
+                                    <span translate="main.months.june">June</span>
+                                </a>
+                            </div>
+                            <div class="btn-group" role="group">
+                                <a href="{{getHref({month:'july'})}}" class="btn btn-default"
+                                   ng-class="{'active':initState.options.month==='july'}">
+                                    <span translate="main.months.july">July</span>
+                                </a>
+                            </div>
+                            <div class="btn-group" role="group">
+                                <a href="{{getHref({month:'august'})}}" class="btn btn-default"
+                                   ng-class="{'active':initState.options.month==='august'}">
+                                    <span translate="main.months.august">August</span>
+                                </a>
+                            </div>
+                            <div class="btn-group" role="group">
+                                <a href="{{getHref({month:'september'})}}" class="btn btn-default"
+                                   ng-class="{'active':initState.options.month==='september'}">
+                                    <span translate="main.months.september">September</span>
+                                </a>
+                            </div>
+                            <div class="btn-group" role="group">
+                                <a href="{{getHref({month:'october'})}}" class="btn btn-default"
+                                   ng-class="{'active':initState.options.month==='october'}">
+                                    <span translate="main.months.october">October</span>
+                                </a>
+                            </div>
+                            <div class="btn-group" role="group">
+                                <a href="{{getHref({month:'november'})}}" class="btn btn-default"
+                                   ng-class="{'active':initState.options.month==='november'}">
+                                    <span translate="main.months.november">November</span>
+                                </a>
+                            </div>
+                            <div class="btn-group" role="group">
+                                <a href="{{getHref({month:'december'})}}" class="btn btn-default"
+                                   ng-class="{'active':initState.options.month==='december'}">
+                                    <span translate="main.months.december">December</span>
+                                </a>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="text-right">
-                    <button ng-click="changeStatus('UNDER_CONSIDERATION')" class="btn btn-info" ng-disabled="isInAnyStatus('UNDER_CONSIDERATION', 'APPROVED')">
-                        <span translate="main.apply">Apply</span>
-                    </button>
+                    <div class="text-right">
+                        <button ng-click="changeStatus('UNDER_CONSIDERATION')" class="btn btn-info"
+                                ng-disabled="isInAnyStatus('UNDER_CONSIDERATION', 'APPROVED')">
+                            <span translate="main.apply">Apply</span>
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
-<div class="row">
+    <div class="row">
 
-    <div class="col-xs-12">
-        <div role="tabpanel">
-            <ul class="nav nav-tabs" role="tablist">
-                <li role="presentation" ng-class="{'active':state.current.name === 'tabNewCars'}">
-                    <a href="{{getHref(initState.options,'tabNewCars')}}">
-                        <span translate="main.tab.new.cars"></span>
-                    </a>
-                </li>
-                <li role="presentation" ng-class="{'active':state.current.name === 'tabSecondHandCars'}">
-                    <a href="{{getHref(initState.options,'tabSecondHandCars')}}">
-                        <span translate="main.tab.second.hand.cars"></span>
-                    </a>
-                </li>
-                <li role="presentation" ng-class="{'active':state.current.name === 'tabFlittingShop'}">
-                    <a href="{{getHref(initState.options,'tabFlittingShop')}}">
-                        <span translate="main.tab.flitting.shop"></span>
-                    </a>
-                </li>
-                <li role="presentation" ng-class="{'active':state.current.name === 'tabBodyShop'}">
-                    <a href="{{getHref(initState.options,'tabBodyShop')}}">
-                        <span translate="main.tab.body.shop"></span>
-                    </a>
-                </li>
-                <li role="presentation" ng-class="{'active':state.current.name === 'tabSpares'}">
-                    <a href="{{getHref(initState.options,'tabSpares')}}">
-                        <span translate="main.tab.spares"></span>
-                    </a>
-                </li>
-                <li role="presentation" ng-class="{'active':state.current.name === 'tabOtherDepartments'}">
-                    <a href="{{getHref(initState.options,'tabOtherDepartments')}}">
-                        <span translate="main.tab.other.departments"></span>
-                    </a>
-                </li>
-                <li role="presentation" ng-class="{'active':state.current.name === 'tabIndirectCharges'}">
-                    <a href="{{getHref(initState.options,'tabIndirectCharges')}}">
-                        <span translate="main.tab.indirect.charges"></span>
-                    </a>
-                </li>
-                <li role="presentation" ng-class="{'active':state.current.name === 'tabBalance'}">
-                    <a href="{{getHref(initState.options,'tabBalance')}}">
-                        <span translate="main.tab.balance"></span>
-                    </a>
-                </li>
-                <li role="presentation" ng-class="{'active':state.current.name === 'tabTotalData'}">
-                    <a href="{{getHref(initState.options,'tabTotalData')}}">
-                        <span translate="main.tab.total.data"></span>
-                    </a>
-                </li>
-                <li role="presentation" ng-class="{'active':state.current.name === 'tabStaffQuantity'}">
-                    <a href="{{getHref(initState.options,'tabStaffQuantity')}}">
-                        <span translate="main.tab.staff.quantity"></span>
-                    </a>
-                </li>
-            </ul>
-            <div class="tab-content">
-                <div role="tabpanel" class="tab-pane active">
-                    <div ui-view="tab-content" ng-cloak=""></div>
+        <div class="col-xs-12">
+            <div role="tabpanel">
+                <ul class="nav nav-tabs" role="tablist">
+                    <li role="presentation" ng-class="{'active':state.current.name === 'tabNewCars'}">
+                        <a href="{{getHref(initState.options,'tabNewCars')}}">
+                            <span translate="main.tab.new.cars"></span>
+                        </a>
+                    </li>
+                    <li role="presentation" ng-class="{'active':state.current.name === 'tabSecondHandCars'}">
+                        <a href="{{getHref(initState.options,'tabSecondHandCars')}}">
+                            <span translate="main.tab.second.hand.cars"></span>
+                        </a>
+                    </li>
+                    <li role="presentation" ng-class="{'active':state.current.name === 'tabFlittingShop'}">
+                        <a href="{{getHref(initState.options,'tabFlittingShop')}}">
+                            <span translate="main.tab.flitting.shop"></span>
+                        </a>
+                    </li>
+                    <li role="presentation" ng-class="{'active':state.current.name === 'tabBodyShop'}">
+                        <a href="{{getHref(initState.options,'tabBodyShop')}}">
+                            <span translate="main.tab.body.shop"></span>
+                        </a>
+                    </li>
+                    <li role="presentation" ng-class="{'active':state.current.name === 'tabSpares'}">
+                        <a href="{{getHref(initState.options,'tabSpares')}}">
+                            <span translate="main.tab.spares"></span>
+                        </a>
+                    </li>
+                    <li role="presentation" ng-class="{'active':state.current.name === 'tabOtherDepartments'}">
+                        <a href="{{getHref(initState.options,'tabOtherDepartments')}}">
+                            <span translate="main.tab.other.departments"></span>
+                        </a>
+                    </li>
+                    <li role="presentation" ng-class="{'active':state.current.name === 'tabIndirectCharges'}">
+                        <a href="{{getHref(initState.options,'tabIndirectCharges')}}">
+                            <span translate="main.tab.indirect.charges"></span>
+                        </a>
+                    </li>
+                    <li role="presentation" ng-class="{'active':state.current.name === 'tabBalance'}">
+                        <a href="{{getHref(initState.options,'tabBalance')}}">
+                            <span translate="main.tab.balance"></span>
+                        </a>
+                    </li>
+                    <li role="presentation" ng-class="{'active':state.current.name === 'tabTotalData'}">
+                        <a href="{{getHref(initState.options,'tabTotalData')}}">
+                            <span translate="main.tab.total.data"></span>
+                        </a>
+                    </li>
+                    <li role="presentation" ng-class="{'active':state.current.name === 'tabStaffQuantity'}">
+                        <a href="{{getHref(initState.options,'tabStaffQuantity')}}">
+                            <span translate="main.tab.staff.quantity"></span>
+                        </a>
+                    </li>
+                </ul>
+                <div class="tab-content">
+                    <div role="tabpanel" class="tab-pane active">
+                        <div ui-view="tab-content" ng-cloak=""></div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
 </div>

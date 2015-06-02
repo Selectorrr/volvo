@@ -1,5 +1,6 @@
 {
     "main": {
+        "year": "Год",
         "title": "Добро пожаловать, Java Hipster!",
         "subtitle": "Это ваша домашняя страница",
         "logged": {

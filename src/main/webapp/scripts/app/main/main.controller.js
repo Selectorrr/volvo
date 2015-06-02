@@ -7,7 +7,12 @@ angular.module('volvoApp')
         $scope.initState = ReportService.initState;
         $scope.isInRole = Principal.isInRole;
         $scope.state = $state;
-
+        $scope.year = parseInt($state.params.year);
+        $scope.$watch('year', _.debounce(function (year) {
+            if (year != $state.params.year) {
+                $state.go($state.current.name, _.extend($state.params, {year: year}), {reload: true})
+            }
+        }, 500));
         $scope.getHref = function (options, stateName) {
             return $state.href(stateName || $state.current.name, _.extend({}, ReportService.initState.options, options));
         };
@@ -20,5 +25,5 @@ angular.module('volvoApp')
 
         $scope.isInAnyStatus = function () {
             return _.contains(arguments, ReportService.initState.report.status);
-        }
+        };
     });
