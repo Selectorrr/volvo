@@ -23,7 +23,7 @@
                 <div ng-switch="isAuthenticated()">
                     <ul class="nav navbar-nav nav-pills navbar-right">
                         <li ui-sref-active="active" ng-show="isInRole('ROLE_DEALER')">
-                            <a ui-sref="tabNewCars">
+                            <a ui-sref="tabNewCars(params)" ui-sref-opts="{reload: true}">
                                 <span class="glyphicon glyphicon-home"></span>
                                 <span translate="global.menu.home">Home</span>
                             </a>
